@@ -1,0 +1,251 @@
+body {
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+/*Tables Structure*/
+table, table tr, table td, table th {
+  border: 1px solid !important;
+}
+
+.pdfSmallTable {
+  font-size: 10px;
+}
+
+pre code {
+  font-size: 8px;
+  color: red;
+}
+blockquote, .pdfPre {
+  border: 0px !important;
+  background-color: transparent !important;
+}
+
+.borderlessTable, .borderlessTable tr, .borderlessTable td, .borderlessTable th {
+  border: 0px !important;
+  background-color: transparent !important;
+}
+
+.docName {
+  margin-top: 2em;
+  font-size: 3em;
+}
+.version {
+  font-weight: bold;
+  margin-top: -1.5em;
+}
+.dcpInfo {
+  margin-top: -2em;
+}
+.center {
+  text-align: center;
+}
+.sourceCodeStatements {
+  white-space:pre;
+}
+.section_header {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+.subSection_header {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.underlineMe {
+  text-decoration: underline;
+}
+
+.title {
+  font-weight: bold;
+  font-family: "Muli", Times, serif;
+}
+
+
+.chapterTitle {
+  text-align: center;
+  font-family: 'Muli';
+  color: black;
+  font-weight: bold;
+}
+.top {
+  padding-top: 3em;
+  font-size: 70px;
+  page-break-before: always;
+}
+.bottom {
+  margin-top: -40px;
+  font-size: 50px;
+  page-break-after: always;
+}
+
+.pdfPageBreakAfter {
+  page-break-after: always;
+}
+.pdfPageBreakBefore {
+  page-break-before: always;
+}
+
+.longText {
+  font-size: 30px;
+}
+.bottomMargin {
+  margin-bottom: 3em;
+}
+.pdfAppendix {
+  page-break-before: always;
+}
+
+img[alt$=">"] {
+  float:right;
+}
+
+img[alt$="<"] {
+  float:left;
+}
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none !important;
+}
+img[alt^="GeosupportArchitecture"] {
+  margin-bottom: -50px;
+}
+img[alt^="NYCSeal"] {
+  width: 150px;
+  float: right !important;
+}
+img[alt^="NYCPlanningLogo"] {
+  margin-top: 10.5em;
+}
+
+
+img[alt^="GoatFunction"] {
+  width: 290px;
+}
+
+img[alt^="GoatFunction_large"] {
+  width: 1000px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+img[alt^="GoatFunction_small"] {
+  width: 600px;
+}
+
+img[alt^="GoatFunction_medium"] {
+  width: 560px;
+}
+
+.img_tagline {
+    margin-top: : -100px;
+    padding-left: 100px;
+    font-size: 10px;
+}
+
+#bend {
+  margin-top: 16em !important;
+}
+
+.imageWithFigure {
+  float: none;
+  margin-left: 20px;
+}
+
+/*.textWithImage {
+  margin-top: 5em;
+}*/
+.topMargin {
+  margin-top: 11em;
+}
+.topMargin u {
+  font-size: 26px;
+}
+#lincolnCenter {
+  margin-top: 10em;
+  margin-bottom: 6em;
+}
+
+.textImageAlignment {
+  margin-top: 12em;
+}
+
+.tableCenter  {
+  float: right;
+  padding-left: 40px;
+
+}
+.tableCenter table  {
+  margin: 10px, 10px, 10px, 10px;
+}
+
+.preInline {
+  display: inline !important;
+  border: 0px !important;
+}
+.customPre{
+  font-family: monospace;
+}
+
+.smallText {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.indent p {
+  margin-bottom: 1px;
+}
+.indent p:last-child {
+  margin-bottom: 30px;
+}
+.rightTableAlignment {
+  text-align: left;
+}
+
+
+.indentRows {
+  padding-left: 40px !important;
+}
+.centerRow {
+  text-align: center;
+}
+
+.topVerticalTD {
+  vertical-align:top !important;
+}
+
+
+.bordered-table, .bordered-table th, .bordered-table td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.indent {
+  padding-left: 2cm !important;
+}
+
+.indent-extra {
+  padding-left: 3cm !important;
+}
+
+.subheading {
+  font-size: 0.8cm !important;
+}
+
+
+
+/*.rst-content .section .docutils {
+ overflow: visible !important;
+}*/
+.smallText{
+  font-size: 13px !important;
+}
+.hljs-string, .hljs-tag .hljs-value, .hljs-phpdoc, .hljs-dartdoc, .tex .hljs-formula {
+   color: black !important;
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Muli');
+
+
+body {
+  font-style: normal;
+  font-family: 'Muli', sans-serif;
+  font-size: 20;
+  color:black;
+}
+
+.hideMe {
+  display: none !important;
+}
+.selectedNavButton {
+  display: block !important;
+  background-color: #e3e3e3;
+
+}
+.selectedNavButton li a {
+  color: rgb(128,128,128) !important;
+}
+.selectedNavButton li a:hover {
+  background-color: lightgray !important;
+}
+
+.highlightSelectedButton {
+  background-color: #fcfcfc;
+  color: black !important;
+}
+.highlightSelectedButton:hover {
+  background-color: #fcfcfc !important;
+}
+
+.currentSection {
+  display: block;
+}
+
+.notCurrent {
+  display: none;
+}
+
+.wy-side-nav-search {
+  background-color: #e3e3e3;
+}
+
+/*.subnav {
+  display: none !important;
+}*/
+
+#dynamicNav {
+  display: none;
+}
+
+.icon-home:before {
+  height: 90px;
+  width: 120px;
+  background-image: url("../img/logo_top2.png");
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 5px;
+  position: relative;
+  top: -5px;
+  content: "";
+}
+
+.docName {
+  margin-top: 2em;
+  font-size: 3em;
+}
+
+
+
+.version {
+  font-weight: bold;
+  margin-top: -1.5em;
+}
+
+.dcpInfo {
+  margin-top: -2em;
+}
+
+.center {
+  text-align: center;
+}
+.sourceCodeStatements {
+  white-space:pre;
+}
+
+.borderlessTable, .borderlessTable tr, .borderlessTable td, .borderlessTable th {
+  border: 0px !important;
+  background-color: transparent !important;
+}
+
+.section_header {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+.subSection_header {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.underlineMe {
+  text-decoration: underline;
+}
+
+.title {
+  font-weight: bold;
+  font-family: "Muli", Times, serif;
+}
+
+img[alt$=">"] {
+  float:right;
+}
+
+img[alt$="<"] {
+  float:left;
+}
+
+.chapterTitle {
+  text-align: center;
+  font-family: 'Muli';
+  color: black;
+  font-weight: bold;
+}
+
+.top {
+  margin-top: 2em;
+  font-size: 70px;
+}
+
+.bottom {
+  margin-top: -40px;
+  margin-bottom: 5em;
+  font-size: 50px;
+}
+.bottomMargin {
+  margin-bottom: 3em;
+}
+
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
+img[alt^="GeosupportArchitecture"] {
+  margin-bottom: -50px;
+}
+img[alt^="NYCSeal"] {
+  width: 220px;
+  float: right !important;
+}
+img[alt^="NYCPlanningLogo"] {
+  margin-top: 10em;
+}
+
+
+img[alt^="GoatFunction"] {
+  width: 290px;
+}
+
+img[alt^="GoatFunction_large"] {
+  width: 1000px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+img[alt^="GoatFunction_small"] {
+  width: 600px;
+}
+
+img[alt^="GoatFunction_medium"] {
+  width: 560px;
+}
+
+.img_tagline {
+    margin-top: : -100px;
+    padding-left: 100px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#bend {
+  margin-top: 16em !important;
+}
+
+.imageWithFigure {
+  float: right;
+  margin-left: 20px;
+}
+
+.textWithImage {
+  margin-top: 5em;
+}
+.topMargin {
+  margin-top: 11em;
+}
+.topMargin u {
+  font-size: 26px;
+}
+#lincolnCenter {
+  margin-top: 10em;
+  margin-bottom: 6em;
+}
+
+.textImageAlignment {
+  margin-top: 12em;
+}
+
+.tableCenter  {
+  float: right;
+  padding-left: 40px;
+
+}
+.tableCenter table  {
+  margin: 10px, 10px, 10px, 10px;
+}
+
+.preInline {
+  display: inline !important;
+}
+.customPre{
+  font-family: monospace;
+}
+
+.smallText {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.indent p {
+  margin-bottom: 1px;
+}
+.indent p:last-child {
+  margin-bottom: 30px;
+}
+.rightTableAlignment {
+  text-align: left;
+  margin-left: -15px;
+}
+
+
+.indentRows {
+  padding-left: 40px !important;
+}
+.centerRow {
+  text-align: center;
+}
+
+.topVerticalTD {
+  vertical-align:top !important;
+}
+
+
+.bordered-table, .bordered-table th, .bordered-table td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.indent {
+  padding-left: 2cm !important;
+}
+
+.indent-extra {
+  padding-left: 3cm !important;
+}
+
+.subheading {
+  font-size: 0.8cm !important;
+}
+
+
+
+/*.rst-content .section .docutils {
+ overflow: visible !important;
+}*/
+.smallText{
+  font-size: 13px !important;
+}
+.hljs-string, .hljs-tag .hljs-value, .hljs-phpdoc, .hljs-dartdoc, .tex .hljs-formula {
+   color: black !important;
+}
+
+.hljs {
+  font-size: 0.4cm !important;
+}
+
+
+.topBreak {
+  margin-top: 15em;
+}
+
+.printBtn {
+  color: black;
+  padding: 5px;
+}
+.printBtn:hover {
+  background-color: rgba(210, 210, 210, 0.8);
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+
+
+/*testing sticky */
+.sticky {
+  margin-top: 0 !important;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  border-radius: 0 0 0.5em 0.5em;
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 5px;
+}
+.btnBack {
+  background-color: white;
+}

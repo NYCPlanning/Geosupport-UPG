@@ -1,0 +1,159 @@
+site_name: DCP
+pages:
+- Home: index.md
+- Overview: overview.md
+- Chapter I:
+    - Chapter I: chapters/chapterI/chapterI.md
+    - I.1 Introduction: chapters/chapterI/section01.md
+    - I.2 System Functionality: chapters/chapterI/section02.md
+    - I.3 Introduction to Geographic Retrieval Consistency: chapters/chapterI/section03.md
+    - I.4 The Geosupport Function Suite: chapters/chapterI/section04.md
+    - I.5 Overview of System Architecture: chapters/chapterI/section05.md
+    - I.6 Technical References: chapters/chapterI/section06.md
+- Chapter II:
+    - Chapter II: chapters/chapterII/chapterII.md
+    - II.1 Introduction: chapters/chapterII/section01.md
+    - II.2 Geosupport Return Codes and Reject Handling: chapters/chapterII/section02.md
+    - II.3 Geosupport API User Programming Procedure: chapters/chapterII/section03.md
+    - II.4 One-Work-Area and Two-Work-Area Calls: chapters/chapterII/section04.md
+    - II.5 Coding Geosupport API Calls: chapters/chapterII/section05.md
+    - II.6 The Work Area C/C++ Header File and Visual Basic Typedef File: chapters/chapterII/section06.md
+    - II.7 Coding API Calls When Using Geosupport C/C++ Header Files: chapters/chapterII/section07.md
+    - II.8 Creating a Geosupport Desktop Edition Application: chapters/chapterII/section08.md
+    - II.9 Sample Programs with Descriptions: chapters/chapterII/section09.md
+    - II.10 The Long Work-Area-2 Option: chapters/chapterII/section10.md
+    - II.11 The Auxiliary Segment Option (COW Only): chapters/chapterII/section11.md
+    - II.12 The Auxiliary Segment Option (COW Only): chapters/chapterII/section12.md
+- Chapter III:
+    - Chapter III: chapters/chapterIII/chapterIII.md
+    - III.1 Introduction: chapters/chapterIII/section01.md
+    - III.2 Street Name Normalizing and the SNL Parameter: chapters/chapterIII/section02.md
+    - III.3 Street Name Sorting and Normalization Format Options: chapters/chapterIII/section03.md
+    - III.4 Partial Street Names: chapters/chapterIII/section04.md
+    - III.5 The Similar Names Feature: chapters/chapterIII/section05.md
+    - III.6 Unconventional Geographic Feature Names: chapters/chapterIII/section06.md
+    - III.7 Street Name Browsing and Functions BB and BF: chapters/chapterIII/section07.md
+    - III.8 Selection of Output Street Names (COW only): chapters/chapterIII/section08.md
+- Chapter IV:
+    - Chapter IV: chapters/chapterIV/chapterIV.md
+    - 'IV.1 Introduction: Street Codes and Geographic Retrieval Consistency': chapters/chapterIV/section01.md
+    - 'IV.2 Street Name Relationships: Aliases and Locally Valid Street Names': chapters/chapterIV/section02.md
+    - IV.3 Five-Digit and Ten-Digit Street Codes: chapters/chapterIV/section03.md
+    - IV.4 Resynchronization of Street Codes Stored in User Files: chapters/chapterIV/section04.md
+    - 'IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes': chapters/chapterIV/section05.md
+    - IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names: chapters/chapterIV/section06.md
+    - IV.7 Street Codes and Non-Addressable Place Names: chapters/chapterIV/section07.md
+    - IV.8 Street Code Input Feature: chapters/chapterIV/section08.md
+    - IV.9 Summary of Street Codes: chapters/chapterIV/section09.md
+- Chapter V:
+    - Chapter V: chapters/chapterV/chapterV.md
+    - V.1 Introduction: chapters/chapterV/section01.md
+    - 'V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND': chapters/chapterV/section02.md
+    - 'V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information': chapters/chapterV/section03.md
+    - V.4 Input Address Acceptance/Rejection and its Validation Significance: chapters/chapterV/section04.md
+    - V.5 Output Data Returned in Work Area 2 of Address Processing Functions: chapters/chapterV/section05.md
+    - V.6 Duplicate Addresses: chapters/chapterV/section06.md
+    - V.7 Marble Hill/Rikers Island: chapters/chapterV/section07.md
+    - V.8 Special Ruby Street Processing: chapters/chapterV/section08.md
+    - V.9 Vanity Addresses: chapters/chapterV/section09.md
+    - V.10 Out-of-Sequence Addresses: chapters/chapterV/section10.md
+    - V.11 ZIP Code as Input Instead of Borough Code: chapters/chapterV/section11.md
+    - V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E: chapters/chapterV/section12.md
+    - V.13 Special Place Name Processing: chapters/chapterV/section13.md
+    - V.14 ‘No Cross Street’ Segment Processing: chapters/chapterV/section14.md
+    - V.15 UNIT Information Feature (COW Only): chapters/chapterV/section15.md
+- Chapter VI:
+    - Chapter VI: chapters/chapterVI/chapterVI.md
+    - VI.1 Introduction: chapters/chapterVI/section01.md
+    - VI.2 Tax Lots and BBLs: chapters/chapterVI/section02.md
+    - VI.3 Buildings and Building Identification Numbers (BINs): chapters/chapterVI/section03.md
+    - VI.4 Condominiums and Billing BBLs: chapters/chapterVI/section04.md
+    - VI.5 Vacant Street Frontages and Pseudo-Addresses: chapters/chapterVI/section05.md
+    - VI.6 Function 1A: chapters/chapterVI/section06.md
+    - VI.7 Function BL: chapters/chapterVI/section07.md
+    - VI.8 Standard and Legacy Versions of Functions 1A and BL: chapters/chapterVI/section08.md
+    - VI.9 Function BN: chapters/chapterVI/section09.md
+    - VI.10 Function AP (COW Only): chapters/chapterVI/section10.md
+    - VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only): chapters/chapterVI/section11.md
+- Chapter VII:
+    - Chapter VII: chapters/chapterVII/chapterVII.md
+    - VII.1 Introduction: chapters/chapterVII/section01.md
+    - 'VII.2 Intersections: Function 2 and Function 2W': chapters/chapterVII/section02.md
+    - VII.3 Three-Street Configurations - Concepts and Terminology: chapters/chapterVII/section03.md
+    - 'VII.4 Street Segments and Related Configurations: Function 3': chapters/chapterVII/section04.md
+    - 'VII.5 Blockfaces: Function 3C': chapters/chapterVII/section05.md
+    - 'VII.6 Street Stretches: Function 3S': chapters/chapterVII/section06.md
+    - VII.7 Borough Boundary Processing (Functions 2, 3 and 3C): chapters/chapterVII/section07.md
+    - VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names: chapters/chapterVII/section08.md
+- Chapter VIII:
+    - Chapter VIII: chapters/chapterVIII/chapterVIII.md
+    - VIII.1 Introduction: chapters/chapterVIII/section01.md
+    - VIII.2 Review of the Geosupport API: chapters/chapterVIII/section02.md
+    - VIII.3 Coding API Calls: chapters/chapterVIII/section03.md
+    - VIII.4 The Geosupport Copy Files: chapters/chapterVIII/section04.md
+    - VIII.5 Coding API Calls When Using Geosupport COPY Files: chapters/chapterVIII/section05.md
+    - VIII.6 JCL for the Compile Step: chapters/chapterVIII/section06.md
+    - VIII.7 JCL for the Compile Step: chapters/chapterVIII/section07.md
+    - VIII.8 JCL for the Execute Step (Batch Applications): chapters/chapterVIII/section08.md
+- Chapter IX:
+    - Chapter IX: chapters/chapterIX/chapterIX.md
+    - IX.1 Introduction: chapters/chapterIX/section01.md
+    - IX.2 JCL Considerations: chapters/chapterIX/section02.md
+    - IX.3 GBAT Processing and Programmed Abnormal Terminations: chapters/chapterIX/section03.md
+    - IX.4 The Input Data File (DDNAME=INFILE or INVSAM): chapters/chapterIX/section04.md
+    - IX.5 The Input Control File (DDNAME=CARDIN): chapters/chapterIX/section05.md
+    - IX.6 The Input Alias File (DDNAME=ALIASES): chapters/chapterIX/section06.md
+    - IX.7 The Output File of Accepted Records (DDNAME=OUTFILE): chapters/chapterIX/section07.md
+    - IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx): chapters/chapterIX/section08.md
+    - IX.9 The Output Print File (DDNAME=SYSPRINT): chapters/chapterIX/section09.md
+- Chapter X:
+    - Chapter X: chapters/chapterX/chapterX.md
+    - X.1 What is GBAT?: chapters/chapterX/section01.md
+    - X.2 Using GBAT: chapters/chapterX/section02.md
+- Chapter XI:
+    - Chapter XI: chapters/chapterXI/chapterXI.md
+    - XI.1 Introduction: chapters/chapterXI/section01.md
+    - XI.2 How to Use GOAT: chapters/chapterXI/section02.md
+    - XI.3 Invoking Function 1 or Function 1E: chapters/chapterXI/section03.md
+    - XI.4 Invoking Function 1A: chapters/chapterXI/section04.md
+    - XI.5 Invoking Function 2: chapters/chapterXI/section05.md
+    - XI.6 Invoking Function 3 or Function 3C: chapters/chapterXI/section06.md
+    - XI.7 Invoking Function 3S: chapters/chapterXI/section07.md
+    - XI.8 Invoking Function B: chapters/chapterXI/section08.md
+    - XI.9 Invoking Function BL: chapters/chapterXI/section09.md
+    - XI.10 Invoking Function BN: chapters/chapterXI/section10.md
+    - XI.11 Invoking Function D: chapters/chapterXI/section11.md
+
+- Appendices and Glossary:
+    - Appendices and Glossary: appendices/appendices.md
+    - 'APPENDIX 1: GEOSUPPORT FUNCTIONS - QUICK REFERENCE': appendices/appendix01.md
+    - 'APPENDIX 2: MAINFRAME-SPECIFIC WORK AREA LAYOUTS(MSW)': appendices/appendix02.md
+    - 'APPENDIX 3: DATA ITEM DICTIONARY': appendices/appendix03.md
+    - 'APPENDIX 4: GEOSUPPORT RETURN CODES, REASON CODES AND MESSAGES': appendices/appendix04.md
+    - 'APPENDIX 5: GEOSUPPORT COPY FILES (MSW)': appendices/appendix05.md
+    - 'APPENDIX 6: USER FEEDBACK PROCEDURES': appendices/appendix06.md
+    - 'APPENDIX 7: MAINFRAME DATA CENTERS WHERE GEOSUPPORT IS INSTALLED': appendices/appendix07.md
+    - 'APPENDIX 8: SAMPLE APPLICATION PROGRAMS AND JCL': appendices/appendix08.md
+    - 'APPENDIX 9: GBAT REFERENCE TABLES': appendices/appendix09.md
+    - 'APPENDIX 10: SAMPLE GBAT JOBS': appendices/appendix10.md
+    - 'APPENDIX 11: GUIDELINES FOR APPLICATION DESIGN': appendices/appendix11.md
+    - 'APPENDIX 12: CHARACTER-ONLY WORK AREAS (COW)': appendices/appendix12.md
+    - 'APPENDIX 13: CHARACTER-ONLY WORK AREA LAYOUTS (COW)': appendices/appendix13.md
+    - 'APPENDIX 14: GEOSUPPORT COPY FILES (COW)': appendices/appendix14.md
+    - 'APPENDIX 15: 2010 CENSUS GEOGRAPHY – Functions 1, 1E, 2, 3, and 3C': appendices/appendix15.md
+    - 'APPENDIX 16: NEIGHBORHOOD TABULATION AREAS (NTAS)': appendices/appendix16.md
+    - 'APPENDIX 17: TPAD - ADDITIONAL INFORMATION': appendices/appendix17.md
+    - 'APPENDIX 18: GEOEXCEL APPLICATION': appendices/appendix18.md
+    - 'APPENDIX 19: WORK AREA LAYOUTS (COWs)': appendices/appendix19.md
+    - 'APPENDIX 20: GEOSUPPORT HEADER AND TYPEDEF FILES': appendices/appendix20.md
+    - 'APPENDIX 21: GEOSUPPORT DESKTOP EDITION': appendices/appendix21.md
+    - GLOSSARY OF TERMS AND ACRONYMS: appendices/glossary.md
+- About Us: aboutUs.md
+
+theme_dir: custom_theme
+theme: readthedocs
+
+extra_css:
+    - css/main.css
+extra_javascript:
+    - js/main.js

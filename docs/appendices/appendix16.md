@@ -1,0 +1,11 @@
+<h2 class="pdfAppendix"><center>APPENDIX 16:  NEIGHBORHOOD TABULATION AREAS (NTAS)</center></h2>
+
+Originally created as Neighborhood Projection Areas for use in population projections, these aggregations of census tracts have been updated using 2010 census tracts and renamed Neighborhood Tabulation Areas (NTAs).   The origin of Neighborhood Projection Areas as subsets of 55 Public Use Microdata Areas (PUMAs) is explained below.
+
+The Neighborhood Tabulation Areas (NTAs) have been adopted by the Population Division of DCP as a method of presenting the U.S. Census Bureau’s American Community Survey (ACS) release of census tract data for 5-year estimates.  To mitigate the small sample size and accompanying large margins of error, ACS data are aggregated to NTA geography and made available in the ACS section of the DCP Population website.  Because NTAs are subsets of PUMAs, they are important to anyone requiring ACS data for subareas of Community Districts.  Regarding the 2010 census, these geographic areas offer a good compromise between the very detailed data for census tracts (2,168) and the broad strokes provided by community districts (59).
+
+Neighborhood Projection Areas were created to project populations at a small area level, from 2000 to 2030.  First and foremost, these aggregations were driven by population size in 2000 – neighborhood projection areas had to have a minimum population of 15,000, because this reduces the error associated with the projected population.  This criterion resulted in combinations of neighborhoods that probably would not occur if one were solely designating boundaries of historical neighborhoods.  Moreover, the neighborhood names associated with the neighborhood projections areas are not intended to be definitive.
+
+Neighborhood projection areas were created using whole census tracts that were exact subdivisions of New York City’s 55 Public Use Microdata Areas (PUMAs).  (PUMAs were developed for use with the Census Bureau’s Public Use Microdata Samples (PUMS) and are approximations of Community Districts.)  Neighborhood projection areas were not permitted to cross PUMA boundaries.
+
+Users need to be cognizant of the reason why these neighborhood projection areas were created, and the demographic and geographic constraints inherent in how they were configured.
