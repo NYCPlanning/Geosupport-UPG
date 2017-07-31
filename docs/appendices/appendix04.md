@@ -17,7 +17,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 
 <table class="pdfSmallTable">
   <tr>
-    <th colspan="4"><b> GEOSUPPORT SYSTEM RETURN CODES, REASON CODES AND MESSAGES <br> (As of Geosupport Software Version 17.2 - <span class="smallText">unchanged since</span> V17.1) </b>
+    <th colspan="4"><b> GEOSUPPORT SYSTEM RETURN CODES, REASON CODES AND MESSAGES <br> (As of Geosupport Software Version 17.3 - <span class="smallText">unchanged since</span> V17.1) </b>
     </th>
   </tr>
   <tr>

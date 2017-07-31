@@ -4969,8 +4969,20 @@ each 7 bytes RJZF.</td>
                   <th><u>Meaning</u></th>
               </tr>
               <tr>
+                  <td>‘A’</td>
+                  <td>Address Place Name</td>
+              </tr>
+              <tr>
+                  <td>‘B’</td>
+                  <td>Name of bridge</td>
+              </tr>
+              <tr>
                   <td>‘C’</td>
                   <td>Building Improvement District (BID)</td>
+              </tr>
+              <tr>
+                  <td>‘D’</td>
+                  <td>Duplicate Address Pseudo-Street Name (DAPS)</td>
               </tr>
               <tr>
                   <td>‘E’</td>
@@ -4993,6 +5005,10 @@ each 7 bytes RJZF.</td>
                   <td>Intersection Name</td>
               </tr>
               <tr>
+                  <td>‘J’</td>
+                  <td>Non-physical Boundary Feature</td>
+              </tr>
+              <tr>
                   <td>‘M’</td>
                   <td>House numbers on input street are of mixed hyphenation, i.e., some are hyphenated and some are not.</td>
               </tr>
@@ -5001,12 +5017,37 @@ each 7 bytes RJZF.</td>
                   <td>Input street is a Non-Addressable Place Name (NAP)</td>
               </tr>
               <tr>
+                  <td>‘O’</td>
+                  <td>Shore Line</td>
+              </tr>
+              <tr>
+                  <td>‘P’</td>
+                  <td>Pseudo-street name</td>
+              </tr>
+              <tr>
+                  <td>‘R’</td>
+                  <td>Rail Line</td>
+              </tr>
+              <tr>
                   <td>‘S’</td>
                   <td>Front-Truncated Street Name</td>
+              </tr>
+
+              <tr>
+                  <td>‘T’</td>
+                  <td>Tunnel</td>
+              </tr>
+              <tr>
+                  <td>‘U’</td>
+                  <td>Misc. structure</td>
               </tr>
               <tr>
                   <td>‘X’</td>
                   <td>NAP Of a Constituent Entity of a Complex</td>
+              </tr>
+              <tr>
+                  <td>‘Z’</td>
+                  <td>Exit or Entrance Rampse</td>
               </tr>
               <tr>
                   <td>Blank</td>

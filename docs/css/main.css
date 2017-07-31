@@ -299,6 +299,10 @@ img[alt^="GoatFunction_medium"] {
   color: black;
   padding: 5px;
 }
+.printBtn:active, .printBtn:visited{
+  color: black;
+  text-decoration: none;
+}
 .printBtn:hover {
   background-color: rgba(210, 210, 210, 0.8);
   cursor: pointer;

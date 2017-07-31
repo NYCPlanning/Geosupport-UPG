@@ -145,7 +145,7 @@ function getAllPaths() {
 setupDocsDirectory();
 //get all paths of every single file in the docs folder.
 let mdDocs = getAllPaths();
-let pdfDoc = "all.pdf";
+let pdfDoc = "upg.pdf";
 
 //console.log(mdDocs);
 

@@ -30,7 +30,7 @@ The contents of the UPG are as follows
 * [Appendix 11](/appendices/appendix11/) contains a set of guidelines for user application design.  
 * [Appendix 12](/appendices/appendix12/) contains a description of Character-Only Work Areas (COWs) and how to use them.  
 * [Appendix 13](/appendices/appendix13/) contains layouts of the Character-Only Work Areas (COWs).  
-* [Appendix 14 contains listings of the COW Geosupport COPY files for all of the programming languages supported by the Geosupport COPY feature. (This important feature is discussed in [Chapter VIII](/chapters/chapterVIII/chapterVIII/).)  
+* [Appendix 14](/appendices/appendix14/) contains listings of the COW Geosupport COPY files for all of the programming languages supported by the Geosupport COPY feature. (This important feature is discussed in [Chapter VIII](/chapters/chapterVIII/chapterVIII/).)  
 * [Appendix 15](/appendices/appendix15/) describes where the 2010 Census Geography was incorporated into the Version 11.0 Geosupport System.  The appendix includes tables describing the offsets of the data and the field names in the COPYLIBs  
 * [Appendix 16](/appendices/appendix16/) contains a description of the history and significance of the Neighborhood Tabulation Areas.  
 * [Appendix 17](/appendices/appendix17/) contains additional TPAD information, including error processing and error message handling.  
@@ -59,10 +59,6 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 <p>--------------------</p>
 
 
-## Version 17.2
+## Version 17.3
 
-* **(COW Only) UNIT Support – GBAT and GOAT – Input and Output**
-The following utilities now support the UNIT field as input and output to Functions 1 and 1E.  
-Note: This support is in addition to previously announced support of Functions 1A and 1B.  
-    * Mainframe GBAT  
-    * Mainframe GOAT
+* Internal system enhancements and minor bug fixes that are transparent to the user

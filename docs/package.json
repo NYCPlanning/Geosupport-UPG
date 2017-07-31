@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "md-to-pdf": "^1.1.0",
-    "remarkable-classy": "0.0.1"
+    "remarkable-classy": "0.0.1",
+    "split": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {

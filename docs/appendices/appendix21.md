@@ -48,12 +48,7 @@ This General Overview serves as an introduction to the Geosupport System. It is 
 
 Geosupport is continually enhanced to provide users with new features. When a new system release is implemented, technical bulletins are distributed to users explaining changes and new features.  
 
-To receive further information about Geosupport Desktop Edition, please contact:  
-
-  BYTES of the BIG APPLE<sup>™</sup> Coordinator  
-  22 Reade Street, 5E  
-  New York, New York  
-  10007 212-720-3505  
+To receive further information about Geosupport Desktop Edition, please email: <a href="mailto:GSS_Feedback@planning.nyc.gov">GSS_Feedback@planning.nyc.gov</a>
 
 
 ## I GOALS AND OBJECTIVES OF THE GEOSUPPORT SYSTEM  
@@ -141,7 +136,7 @@ The Geosupport utility programs cannot, by themselves, satisfy every need of eve
 
   Geosupport may reject a user-supplied geographic location as invalid. For example, Geosupport appropriately rejects the inter of Second Avenue and Third Avenue in Manhattan as a non-existent inter. Moreover, Geosupport geographic files may contain an error or may not be up to date, causing Geosupport to reject a valid location.  
 
-  For rejected items that the user considers valid, a reject feedback procedure exists. The user can submit such data for review to GSS’s Data Management Unit by filling out and submitting a Geosupport System User Feedback Form (see [Appendix IV](/appendices/appendix04/)). Printouts, sketch maps or other material documenting the rejects should be attached to the form when available.  
+  For rejected items that the user considers valid, a reject feedback procedure exists. The user can submit such data for review to GSS’s Data Management Unit by filling out and submitting a Geosupport System User Feedback Form (see [Appendix VI](/appendices/appendix06/)). Printouts, sketch maps or other material documenting the rejects should be attached to the form when available.  
 
   Based on its research of user feedback, the GSS staff updates or corrects Geosupport files as appropriate. The corrections are reflected in the Geosupport System in a future Geosupport release. Before submitting rejected data to GSS, users should screen their data for misspellings, data entry errors or other obvious mistakes.  
 
