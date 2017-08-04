@@ -28,7 +28,7 @@ MkDocs User Guide can be explored at: http://www.mkdocs.org/user-guide/writing-y
 
 ## 2. Clone repository :
 ```
-git clone https://github.com/ns5001/DCPmanual.git 
+git clone https://github.com/NYCPlanning/Geosupport-UPG.git 
 ```
 ## 3. Install Node.js :
 Install Node.js from: https://nodejs.org/en/download/
