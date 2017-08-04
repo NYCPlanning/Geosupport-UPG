@@ -10,15 +10,15 @@ In existing applications in which B10SCs are not currently stored in the applica
 
 The various methods for resynchronization are discussed below.<u>It is the user’s responsibility to develop a street code resynchronization procedure for each application file in which street codes are stored, and to run that procedure as soon as possible after each new Geosupport release is placed into production</u>.  
 
-## <u>Resynchronization procedure using B5SCs</u>  
+## <span id="chapterIV.4.1"><u>Resynchronization procedure using B5SCs</u></span>
 
 When only B5SCs are stored in the application file, not the original input street names nor B10SCs, it is not possible to develop a fully automated procedure to resynchronize those B5SCs.  Instead, records in the application file that are affected by street code changes (as listed in the Street Name/Street Code Change Bulletin) must be found and individually examined and updated.  This is because of the inherent ambiguity of a B5SC value, which can be associated with more than one street name. Specifically, it is possible that two or more street names that had the same B5SC value prior to the new Geosupport release no longer have the same value in the new release.  When this occurs, the user cannot resynchronize the old B5SC value mechanically, but must determine, for each occurrence of the old B5SC value in the application file, which street name that occurrence represents in order to determine what the new B5SC value should be for that occurrence.  In order to make that determination, the user would have to individually research each record containing such a B5SC value, using any information that could help to pinpoint the location and thus to determine whether the B5SC value should be changed and what the new value should be.  Such information as an address, cross streets, a ZIP code, a community district or other district identifier, or tax block and tax lot identifiers could be helpful for this purpose.  Because this procedure is not automatic, it is the least desirable method.  
 
-## <u>Resynchronization procedure using street names</u>  
+## <span id="chapterIV.4.2"><u>Resynchronization procedure using street names</u></span>
 
 If the application file contains the original input street names in addition to B5SCs, then the user can develop a fully automated batch procedure for resynchronizing the B5SCs, albeit a less than optimal one, as follows.  The user can write a batch program that calls Function 1N to obtain, for each original input street name, the B5SC value currently (in the new Geosupport release) assigned to that name.  The program would process every record in the application file, automatically replacing the B5SC value already stored in each record with the current B5SC value obtained from Function 1N.  The program would have to provide for handling any Function 1N rejects, that is, street names that are no longer valid in the new Geosupport release.  
 
-## <u>Resynchronization procedure using B10SCs</u>  
+## <span id="chapterIV.4.3"><u>Resynchronization procedure using B10SCs</u></span>
 
 Using stored street names to resynchronize B5SCs is preferable to using just the B5SCs themselves, because the former method can be automated while the latter cannot.  Nevertheless, the former method is highly inefficient, because it necessitates processing every record in the application file, even though in each Geosupport release only a tiny portion (if any) of the city’s street names have street code assignment changes.  
 
@@ -67,7 +67,7 @@ In an application file containing stored B10SCs, the first six bytes of the B10S
 
 The resynchronization program would read the SCCF sequentially.  For each SCCF record, the program would read the application file directly using the old B10SC value in the SCCF record as the search key.  All occurrences of this B10SC value found in the application file would be replaced by the new B10SC value from the SCCF record.  (Note:  most application files contain multiple records for the same street.  Hence, if the application file is a VSAM file, in most applications, the B10SC field(s) must be defined as an alternate key(s), not as the primary key, since several records could have the same key values.  In addition, since the resynchronization program modifies a key value, the UPGRADE option should be specified in the DEFINE ALTERNATE INDEX component of the  IDCAMS control file.  Similar considerations might apply for other types of direct access files.)  
 
-## <u>Summary of Street Code Resynchronization</u>  
+## <span id="chapterIV.4.4"><u>Summary of Street Code Resynchronization</u> </span>
 
 The resynchronization of street codes stored in an application file is an important issue for application design.  If the application must retrieve records by geographic location, it is necessary to use B5SCs in the retrieval key in order to make the retrieval geographically consistent, and therefore B5SCs must be stored in the application file.  Since the street codes that are assigned to some street names can be changed in new Geosupport releases, these stored B5SCs (and/or stored B10SCs, if any) must be synchronized to reflect these changes.  However, as we have seen, the synchronization of B5SCs cannot be fully automated unless either the originally entered street names or the B10SCs corresponding to those names are stored in the record.  
 

@@ -1,4 +1,4 @@
-<h2 class="pdfAppendix"><center>APPENDIX 21: GEOSUPPORT DESKTOP EDITION: QUICK START INSTRUCTIONS</center></h2>
+<h2 class="pdfAppendix"><center>APPENDIX 21: Geosupport Desktop Edition: Quick Start Instructions</center></h2>
 
 <br>  
 <p> *Minimum system requirements:*  PC running Windows 95 or higher 800 megabytes of available harddisk space CD-Rom drive</p>  
@@ -38,7 +38,7 @@ User documentation can be found in C:\Program Files\Geosupport Desktop Editon\Do
 View C:\Program Files\Geosupport Desktop Edition\readme.txt for additional items.  
 
 
-##  GEOSUPPORT SYSTEM GENERAL OVERVIEW
+##  <span id="appendix21.1">Geosupport System General Overview</span>
 
 <h2> FOREWORD  </h2>
 
@@ -51,7 +51,7 @@ Geosupport is continually enhanced to provide users with new features. When a ne
 To receive further information about Geosupport Desktop Edition, please email: <a href="mailto:GSS_Feedback@planning.nyc.gov">GSS_Feedback@planning.nyc.gov</a>
 
 
-## I GOALS AND OBJECTIVES OF THE GEOSUPPORT SYSTEM  
+## <span id="appendix21.2">I Goals And Objectives of The Geosupport System </span>
 
 The computer applications that automate many municipal operations, such as collecting taxes, installing and repairing public infrastructure, processing citizen complaints, issuing permits, and providing social services, have similar geographic processing needs and require similar geographic information in order to be performed effectively and efficiently. Many non-governmental organizations also use geographic information for analysis and planning. Some of these common geographic processing functions are as follows:  
 
@@ -87,7 +87,7 @@ Usage of the Geosupport System has three main benefits:
 <li>Geosupport enables <u>graphic visualization</u> of geographically-related user data by facilitating computer mapping. While Geosupport does not itself produce maps, its geocoding functionality and, in particular, its provision of spatial (xy) coordinates can be used in conjunction with separate computer mapping software and City Planning’s LION street center line file or Tax Block or Lot files to enable data to be displayed cartographically.</li></ol></li>  
 </ol>
 
-## II SYSTEM REQUIREMENTS, AVAILABILITY AND ENHANCEMENTS  
+## <span id="appendix21.3">II System requirements, Availability And Enhancements  </span>
 
 The Geosupport System is easy to use, and is easily incorporated into a user’s own computer application. The way that this is accomplished is outlined in Chapter III and discussed in detail in the technical documentation. Users usually develop their own computer application using their own resources. User-written programs communicate directly with Geosupport via its Application Programming Interface (API), which is a simple, standardized and well-documented programming procedure. Geosupport performs the geographic processing <u>only</u>; all other processing is done by the user application, which has its own input and output files, screen formats and/or printed reports. A major advantage of this approach is that users have total control of their own applications, and develop them in their conventional data processing environment, using their normal programming language. This contrasts with many geographic processing packages which require users to develop their applications within the specialized environment of that package, often using a specialized, proprietary programming language.  
 
@@ -98,7 +98,7 @@ Geosupport Desktop Edition<sup>™</sup> is available to the general public thro
 
 
 
-## III ACCESSING GEOSUPPORT: THE APPLICATION PROGRAMMING INTERFACE AND UTILITY PROGRAMS  
+## <span id="appendix21.4">III Accessing Geosupport: The Application Programming Interface And Utility Programs  </span>
 
 The Geosupport System is available in both batch and online environments. Within each of these environments, Geosupport may be accessed either through user-written programs or via Geosupport utility programs. The two methods of access are described below.  
 
@@ -118,7 +118,7 @@ The Geosupport utility programs cannot, by themselves, satisfy every need of eve
 
 
 
-## IV GEOSUPPORT UPDATE CYCLES AND USER FEEDBACK  
+## <span id="appendix21.5">IV Geosupport Update Cycles And User Feedback  </span>
 
   1.** Updates Cycles **  
 

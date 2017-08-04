@@ -1,0 +1,6 @@
+#! /bin/bash
+clear
+git add .
+git commit -m "Update"
+git push
+mkdocs gh-deploy

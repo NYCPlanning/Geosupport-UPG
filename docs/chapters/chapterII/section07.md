@@ -12,7 +12,7 @@ header file users to select their own names for the work areas (but not for the 
 work areas). Prior to each call to the DLL, the program must prime Work Area 1 with the input
 data to be processed by Geosupport, as described in [Chapter II.3](/chapters/chapterII/section03).  
 
-## II.7.1 C/C++ Source Code Statement   
+## <span id="chapterII.7.1"> II.7.1 C/C++ Source Code Statement  </span>
 
 To reference the Geosupport C/C++ header file which contains the work area layouts, the C/C++
 program must contain the following statement:  

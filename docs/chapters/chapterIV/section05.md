@@ -16,7 +16,7 @@ If, in a two-work-area call, the input street name is not valid for the given in
 
 For example, the address 375 7 AVENUE in Manhattan is located south of Central Park, so the street name ADAM C POWELL BOULEVARD is invalid for this address. Therefore, a two-work-area call to Function 1E (for example) with the input address as 375 ADAM C POWELL BOULEVARD would result in a GRC ‘50’ rejection and the return of the locally valid alias street name 7 AVENUE in the List of Street Names.  On the other hand, 2019 7 AVENUE is north of Central Park, so 2019 ADAM C POWELL BOULEVARD is a valid address, and is accepted by Function 1E.  Similarly, a two-work-area call to Function 2 would reject the intersection of ADAM C POWELL BOULEVARD and WEST 56 STREET with a GRC of ‘50’ and the return of the locally valid alias street name 7 AVENUE in the List of Street Names.  
 
-## <u>Local Group Codes (LGCs)</u>  
+## <span id="chapterIV.5.1"><u>Local Group Codes (LGCs)</u></span>     
 
 Local street name validity is reflected in the sixth and seventh digits of the 10SC, which constitute the <u>Local Group Code (LGC)</u>. Street codes are assigned in such a way that <u>two names for a street have the same LGC value if and only if those names are valid for the same portion (possibly all) of the street</u>. Note that if two names are valid for overlapping portions of a street, or one is valid for a subset of the portion where the other is valid, then those names are in different local groups.  In order to be in the same local group, names must be valid for exactly the same portion of the street.  
 
@@ -24,7 +24,7 @@ Conceptually, the set of all street names for a given street can be viewed as be
 
 A LGC value is meaningful only relative to its B5SC value.  The B5SC identifies the street, and the LGC identifies a local street name group for the given street, that is, the group of all names for the given street that are valid for a particular portion (possibly all) of the street.  The B5SC concatenated with the LGC, that is, the first eight bytes of the B10SC, constitute the <u>Borough and Seven-Digit Street Code (B7SC)</u>. Two street names have the same B7SC value if and only if they are names for the same street (same B5SC value) and are valid for the same portion of the street (same LGC value relative to the given B5SC value).  
 
-## <u>Street Name Codes (SNCs)</u>  
+## <span id="chapterIV.5.2"><u>Street Name Codes (SNCs)</u></span>  
 
 The final three digits of the B10SC are called the <u>Street Name Code (SNC)</u>. Thus, the B10SC consists of the concatenation of the borough code, 5SC, LGC and SNC.  The SNC serves simply to serialize the street names within a local group, so that the full B10SC is unique to a specific spelling of a specific street name.  
 

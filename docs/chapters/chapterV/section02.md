@@ -8,7 +8,7 @@ When a house number is passed to Geosupport in the 12-byte WA1 for MSW or the 16
 
 The HNI format contains packed decimal data, and is the format that Geosupport uses internally to perform its address-matching routines.  The HNI is not documented in detail herein, and is of little direct relevance to most users.  However, to conserve disk space in application files in which house numbers must be stored in some form, users can store the 6-byte HNI in their files rather than the 12-byte HND for MSW or the 11-byte HNS in their files rather than the 16-byte HND for COW, and then use any of the display functions, Functions D, DG and DN, to obtain the house number in HND format for display, as described below.  
 
-## <u>Processing of HNIs or HNSs by the Display Functions</u>  
+## <span id="chapterV.2.1"><u>Processing of HNIs or HNSs by the Display Functions</u></span>  
 
 The processing of an input HNI or HNS by a display function consists only of forming and outputting the HND.  The successful processing of an input HNI or HNS by a display function implies that the HNI or HNS conforms to Geosupport’s format requirements for HNIs or HNSs, but does not imply that the HNI or the HNS forms part of a valid address.  
 
@@ -18,11 +18,11 @@ The display functions return one output HND for each validly formatted input HNI
 
 The display functions can also be used to obtain street names corresponding to input street codes.  (The processing of street codes by the display functions is discussed in detail in [Chapter IV.6](/chapters/chapterIV/section06/).)  In a single call, the display functions can process input HNIs or HNSs without input street codes, input street codes without HNIs or HNSs or both types of input.  If both HNIs or HNSs and street codes are provided as input data to a display function call, they are processed independently of each other and are not treated as forming an address.  In particular, the display functions perform no address validation.  
 
-## <u>HNIs or HNSs as Input to the Address-Processing Functions</u>  
+## <span id="chapterV.2.2"><u>HNIs or HNSs as Input to the Address-Processing Functions</u></span>  
 
 The user has the option of providing input house numbers to the address-processing functions in the form of an HNI or HNS instead of a ‘raw’ unprocessed house number.  This feature is useful for processing an application file that already contains house numbers in HNI or HNS format from a previous pass through Geosupport.  The use of this feature slightly improves execution efficiency by allowing Geosupport to circumvent the house number normalization routine.  
 
-## <u>House Number Format Standards</u>  
+## <span id="chapterV.2.3"><u>House Number Format Standards</u></span>
 
 'Raw' (un-normalized) input house numbers must conform to certain Geosupport standards, which are based on the characteristics of New York City’s addresses.  If an input house number does not satisfy these standards, Geosupport is unable to normalize it and rejects the call.  The house number standards include the following, among others:  
 

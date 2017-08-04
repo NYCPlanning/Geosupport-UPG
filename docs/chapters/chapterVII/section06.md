@@ -63,7 +63,7 @@ In the COW, for Function 3S, each list entry also includes a **Marble Hill/Riker
 
 Note: In COW work areas, the entries in the list of intersections include B7SCs instead of B5SCs (as had been returned prior to Version 10.6).  Users who are still using MSW work areas will find B5SCs in the list of intersections as in the past.
 
-## <u>Locally Valid Street Name or Street Code processing</u>  
+## <span id="chapterVII.6.1"><u>Locally Valid Street Name or Street Code processing</u></span>  
 In Function 3S, if the on-street is a <b><u>locally-valid street name</u></b>, e.g. ‘FASHION AVENUE’ in Manhattan, Geosupport returns only the intersections where the name ‘FASHION AVENUE’ in Manhattan is valid.  In this example, Geosupport will return approximately 16 intersections for ‘FASHION AVENUE’ in Manhattan.
 
 If the user provides street code input instead of street name input, Geosupport uses the B7SC of the input to find the stretch of the locally-valid street.  Of course, if the user supplies only the B5SC the entire street will be searched, which, hopefully, is what the user intended.
@@ -71,7 +71,7 @@ If the user provides street code input instead of street name input, Geosupport 
 In COW work areas, the entries in the list of intersections will include B7SCs instead of the B5SCs as had been returned previously.  Users who are still using MSW work areas will find B5SCs in the list of intersections as in the past.
 
 
-## <u>Roadbed Street Stretches: Function 3S Partial Implementation</u>
+## <span id="chapterVII.6.2"><u>Roadbed Street Stretches: Function 3S Partial Implementation</u></span>
 Function 3S may be used to obtain information about roadbed street stretches via the Roadbed Request Switch (as opposed to only generic street<a href="#section06-10" id="section06-10-10"><sup>10</sup></a>   stretches).  Please be aware that the roadbed processing, which is only partially implemented, may change and is being provided to enable you, the user, to take advantage of this enhancement while in its infancy.
 
 Information about generic street stretches may be obtained for the entire street stretch or for part of a street stretch.  However information about roadbed street stretches may only be obtained for certain types of stretches.  Information about certain parts of a street stretch is not fully functional and will result in a Geosupport Return Code (GRC) of 96.  It is expected to be fully functional in a future release of Geosupport.
@@ -88,7 +88,7 @@ If a user supplies a street name that is defined as a roadbed name, but does not
 
 If a user supplies a street name that is defined as a roadbed name and sets the Roadbed Request Switch to indicate that roadbed processing is requested, then only those streets within the two cross streets that intersect the specified roadbed will be returned in the output.  For example if you request the stretch for Park Avenue Northbound Roadbed and set the Roadbed Request Switch to indicate that roadbed processing is requested, then the output will include the streets that cross the northbound roadbed.
 
-## <u>Coincident Segments: Function 3S Processing</u>
+## <span id="chapterVII.6.3"><u>Coincident Segments: Function 3S Processing</u></span>
 Coincident segment processing (where one road is above another road) has become more consistent as of Release 16C.  Coincident segments (streets, subways, railroads) were sometimes being listed as cross streets in releases prior to 16C.  As of Release 16C, the B7SCs of segments coincident with the ‘on’ street are no longer listed as cross streets at both the ‘from’ node and ‘to’ node unless the coincident segment diverges at either the ‘from’ node or the ‘to’ node of the ‘on’ street. The new rules for coincident segments are as follows:
 
 i.  At a point where one of the two coincident segments’ stretch ends, the coincident segment will not be listed as a cross street.  

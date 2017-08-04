@@ -1,7 +1,7 @@
 <h2 class="pdfAppendix"><center>APPENDIX 9:  GBAT REFERENCE TABLES</center></h2>
 
 
-## <center>Table A9-1:  GBAT Control Entry Descriptions by Keyword</center>
+## <span id="appendix09.1"><center>Table A9-1: GBAT Control Entry Descriptions by Keyword</center></span>
 
 This table lists all of the control entries alphabetically by keyword.  Each control entry’s coding format is indicated, and its purpose and usage are described.  Control entry variables are indicated using ‘S’ and ‘L’ to represent the starting position and length, respectively, of a field in the input data records, and ‘V’ to represent other types of variables.  Certain control entries do not have full table entries of their own but are cross-referenced to closely related control entries.
 
@@ -153,9 +153,9 @@ This control entry is optional; if it is not coded, the default value is NO.</td
  </tr>
  <tr>
    <td class="topVerticalTD"><b>GEOCODE=V</b></td>
-   <td>Specifies whether GBAT will issue one-work-area or two-work-area calls (<a href="/chapters/chapterII/section04/">see Chapter II.4</a>;  whether OUTFILE will be produced;  and if so, what information GBAT will append to the user input records in forming the OUTFILE records (<a href="/chapters/chapterXI/section07/">see Chapter XI.7</a>.  The valid variable values for this control entry are NO, YES, ALL and VAL.  For COW Functions 1, 1E, 1A and 1B, see also keyword GEOUNIT.
+   <td>Specifies whether GBAT will issue one-work-area or two-work-area calls (<a href="../../chapters/chapterII/section04/">see Chapter II.4</a>;  whether OUTFILE will be produced;  and if so, what information GBAT will append to the user input records in forming the OUTFILE records (<a href="../../chapters/chapterXI/section07/">see Chapter XI.7</a>.  The valid variable values for this control entry are NO, YES, ALL and VAL.  For COW Functions 1, 1E, 1A and 1B, see also keyword GEOUNIT.
 
-GEOCODE=NO specifies a one-work-area call.  Only selected information from Work Area 1 is appended.  For Function BL, the BBL is appended; for Function BN, the BIN is appended;  for the other functions, normalized house numbers, normalized street names and street codes are appended.  For a detailed layout of the appended information for GEOCODE=NO, <a href="/appendices/appendix09/#table-a9-4-msw-appended-items-for-geocodeno">see Table A9-4</a> for MSW format, and <a href="/appendices/appendix12/#a12-2">see Table A12-2</a> for COW format.  In addition, for COW Functions 1, 1E, 1A and 1B, if GEOUNIT=YES is specified, the Normalized Display Format Unit output field is also appended, in the form of a 70-byte block of data, the first 14 bytes of which are the Unit output field.  For a description of the Unit fields, <a href="/chapters/chapterV/section15/">see Chapter V.15</a>.  OUTFILE is produced.
+GEOCODE=NO specifies a one-work-area call.  Only selected information from Work Area 1 is appended.  For Function BL, the BBL is appended; for Function BN, the BIN is appended;  for the other functions, normalized house numbers, normalized street names and street codes are appended.  For a detailed layout of the appended information for GEOCODE=NO, <a href="../appendix09/#table-a9-4-msw-appended-items-for-geocodeno">see Table A9-4</a> for MSW format, and <a href="../appendix12/#a12-2">see Table A12-2</a> for COW format.  In addition, for COW Functions 1, 1E, 1A and 1B, if GEOUNIT=YES is specified, the Normalized Display Format Unit output field is also appended, in the form of a 70-byte block of data, the first 14 bytes of which are the Unit output field.  For a description of the Unit fields, <a href="../../chapters/chapterV/section15/">see Chapter V.15</a>.  OUTFILE is produced.
 
 GEOCODE=YES specifies a two‑work‑area call.  Only a copy of Work Area 2 for the given function is appended.  OUTFILE is produced.
 
@@ -167,21 +167,21 @@ This control entry is optional.  The default value depends on the function:  it 
  </tr>
  <tr>
    <td class="topVerticalTD"><b>GEOUNIT=V</b></td>
-   <td>Specifies whether GBAT will append the Normalized Display Format Unit Output field.  This control entry is valid only for COW Functions 1, 1E, 1A and 1B and only when GEOCODE=NO or GEOCODE=ALL is specified.  The Normalized Display Format Unit output field is appended, in the form of a 70-byte block of data, the first 14 bytes of which are the Unit output field.  See the description of GEOCODE=V above.  The GEOUNIT control entry is optional.  The valid values are YES and NO.  The default is GEOUNIT=NO.  For a description of the Unit fields, <a href="/chapters/chapterV/section15/">see Chapter V.15.</a></td>
+   <td>Specifies whether GBAT will append the Normalized Display Format Unit Output field.  This control entry is valid only for COW Functions 1, 1E, 1A and 1B and only when GEOCODE=NO or GEOCODE=ALL is specified.  The Normalized Display Format Unit output field is appended, in the form of a 70-byte block of data, the first 14 bytes of which are the Unit output field.  See the description of GEOCODE=V above.  The GEOUNIT control entry is optional.  The valid values are YES and NO.  The default is GEOUNIT=NO.  For a description of the Unit fields, <a href="../../chapters/chapterV/section15/">see Chapter V.15.</a></td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>HNI=V</b></td>
-   <td>Specifies whether the input house number fields specified by the HOUSENUM and HOUSENUM2 control entries are House Numbers in Internal format (HNIs) (<a href="/chapters/chapterV/section02/">see Chapter V.2</a>) or are in character format, indicated by the variable values YES and NO respectively.  The HNI control entry is optional only for MSW Functions 1, 1A, 1E, D, DG and DN, and is invalid for other functions and for the COW format.  The default value depends on the function.  For MSW Functions 1, 1A and 1E, NO is the default, and YES is also valid.  For MSW Functions D, DG and DN, YES is the default and is the only valid value.</td>
+   <td>Specifies whether the input house number fields specified by the HOUSENUM and HOUSENUM2 control entries are House Numbers in Internal format (HNIs) (<a href="../../chapters/chapterV/section02/">see Chapter V.2</a>) or are in character format, indicated by the variable values YES and NO respectively.  The HNI control entry is optional only for MSW Functions 1, 1A, 1E, D, DG and DN, and is invalid for other functions and for the COW format.  The default value depends on the function.  For MSW Functions 1, 1A and 1E, NO is the default, and YES is also valid.  For MSW Functions D, DG and DN, YES is the default and is the only valid value.</td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>HNS=V</b></td>
-   <td>Specifies whether the input house number field specified by the HOUSENUM and HOUSENUM2 control entries are House Numbers in Sort format (HNSs) (<a href="/chapters/chapterV/section02/">see Chapter V.2</a>) or are in character format, indicated by the variable values YES and NO respectively.  The HNS control entry is optional for COW Functions 1, 1A, 1E, D, DG and DN, and is invalid for other functions and for the MSW format.  The default value depends on the function.  For COW Functions 1, 1A and 1E, NO is the default, and YES is also valid.  For COW Functions D, DG and DN, YES is the default and is the only valid value.</td>
+   <td>Specifies whether the input house number field specified by the HOUSENUM and HOUSENUM2 control entries are House Numbers in Sort format (HNSs) (<a href="../../chapters/chapterV/section02/">see Chapter V.2</a>) or are in character format, indicated by the variable values YES and NO respectively.  The HNS control entry is optional for COW Functions 1, 1A, 1E, D, DG and DN, and is invalid for other functions and for the MSW format.  The default value depends on the function.  For COW Functions 1, 1A and 1E, NO is the default, and YES is also valid.  For COW Functions D, DG and DN, YES is the default and is the only valid value.</td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>HOUSENUM=S or HOUSENUM=S,L</b></td>
    <td>Specifies the starting position and length of an input house number field. This control entry is optional.  It is valid for Functions 1, 1A, 1B, 1E, D, DG and DN.
 
-For Functions 1, 1A, 1B and 1E, if HOUSENUM is not coded, Geosupport assumes that the input street name field (specified by the control entry ONSTREET) contains a free‑form address (<a href="/chapters/chapterV/section03/">see ChapterV.3</a>).  If HOUSENUM is coded, the input data field it specifies may contain either a House Number in Internal format (HNI - for MSW format only - <a href="/chapters/chapterV/section02/">see ChapterV.2</a>), a House Number in Sort Format (HNS - for COW format only - <a href="/chapters/chapterV/section02/">see ChapterV.2</a>), or a house number in character format.  If it contains an HNI, then the control entry HNI=YES must be in effect (either by explicitly coding it or by default), and HOUSENUM’s length variable must either be coded with the value ‘6’ or not coded (in which case it defaults to ‘6’ by virtue of HNI=YES).  If it contains an HNS, then the control entry HNS=YES must be in effect (either by explicitly coding it or by default), and HOUSENUM’s length variable must either be coded with the value ‘11’ or not coded (in which case it defaults to ‘11’ by virtue of HNS=YES). If HOUSENUM is not an HNI or an HNS, its length variable must be a number between 5 and 12.
+For Functions 1, 1A, 1B and 1E, if HOUSENUM is not coded, Geosupport assumes that the input street name field (specified by the control entry ONSTREET) contains a free‑form address (<a href="../../chapters/chapterV/section03/">see ChapterV.3</a>).  If HOUSENUM is coded, the input data field it specifies may contain either a House Number in Internal format (HNI - for MSW format only - <a href="../../chapters/chapterV/section02/">see ChapterV.2</a>), a House Number in Sort Format (HNS - for COW format only - <a href="../../chapters/chapterV/section02/">see ChapterV.2</a>), or a house number in character format.  If it contains an HNI, then the control entry HNI=YES must be in effect (either by explicitly coding it or by default), and HOUSENUM’s length variable must either be coded with the value ‘6’ or not coded (in which case it defaults to ‘6’ by virtue of HNI=YES).  If it contains an HNS, then the control entry HNS=YES must be in effect (either by explicitly coding it or by default), and HOUSENUM’s length variable must either be coded with the value ‘11’ or not coded (in which case it defaults to ‘11’ by virtue of HNS=YES). If HOUSENUM is not an HNI or an HNS, its length variable must be a number between 5 and 12.
 
 For Functions D, DG and DN, if HOUSENUM is coded, for MSW format, the input data field it specifies must contain an HNI, and the length variable must either be coded with the value ‘6’ or not coded (in which case it defaults to ‘6’).  For COW format, the input data field it specifies must contain an HNS, and the length variable must either be coded with the value ‘11’ or not coded (in which case it defaults to ‘11’).
 </td>
@@ -192,7 +192,7 @@ For Functions D, DG and DN, if HOUSENUM is coded, for MSW format, the input data
  </tr>
  <tr>
    <td class="topVerticalTD"><b>LONGWA2=V</b></td>
-   <td>Specifies whether the Work Area 2 to be used to form the records written into the output file of accepted data (OUTFILE) is the regular WA2 or the long WA2 (<a href="/chapters/chapterII/section05/">see ChapterII.5</a>).  The valid variable values are YES and NO and are self-explanatory.  Currently, the long WA2 option is only available for MSW format Functions 1, 1E, and 3, and for both MSW and COW formats for Functions 1A and BL;  this control entry is invalid for all other functions. For the functions that have the long WA2 option, this control entry is invalid when GEOCODE=NO or VAL;  it is optional when GEOCODE=YES or ALL, and the default value is NO.</td>
+   <td>Specifies whether the Work Area 2 to be used to form the records written into the output file of accepted data (OUTFILE) is the regular WA2 or the long WA2 (<a href="../../chapters/chapterII/section05/">see ChapterII.5</a>).  The valid variable values are YES and NO and are self-explanatory.  Currently, the long WA2 option is only available for MSW format Functions 1, 1E, and 3, and for both MSW and COW formats for Functions 1A and BL;  this control entry is invalid for all other functions. For the functions that have the long WA2 option, this control entry is invalid when GEOCODE=NO or VAL;  it is optional when GEOCODE=YES or ALL, and the default value is NO.</td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>LOT=S,L</b></td>
@@ -204,11 +204,11 @@ For Functions D, DG and DN, if HOUSENUM is coded, for MSW format, the input data
  </tr>
  <tr>
    <td class="topVerticalTD"><b>MAXREJECTS=V</b></td>
-   <td>Specifies how many rejects (including warnings, if REJECTWARNINGS=YES has been specified) occurring at the beginning of the input data file, other than any records rejected for an invalid borough code, are to cause a ‘MAXREJECTS termination’, that is, would cause GBAT to terminate execution abnormally and exit with Condition Code 20 (<a href="/chapters/chapterXI/section03/">see ChapterXI.3</a>).  The variable value must be either a positive integer specifying the number of such rejects that are to cause a MAXREJECTS termination, or the value NOMAX.  If MAXREJECTS=NOMAX is coded, the entire input data file is processed, regardless of the number of rejects occurring at the beginning of the file.  The MAXREJECTS control entry is optional, and the default value is MAXREJECTS=200. </td>
+   <td>Specifies how many rejects (including warnings, if REJECTWARNINGS=YES has been specified) occurring at the beginning of the input data file, other than any records rejected for an invalid borough code, are to cause a ‘MAXREJECTS termination’, that is, would cause GBAT to terminate execution abnormally and exit with Condition Code 20 (<a href="../../chapters/chapterXI/section03/">see ChapterXI.3</a>).  The variable value must be either a positive integer specifying the number of such rejects that are to cause a MAXREJECTS termination, or the value NOMAX.  If MAXREJECTS=NOMAX is coded, the entire input data file is processed, regardless of the number of rejects occurring at the beginning of the file.  The MAXREJECTS control entry is optional, and the default value is MAXREJECTS=200. </td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>MODE=V</b></td>
-   <td>Specifies whether the Work Area 2 to be used to form the records written into the output file of accepted data (OUTFILE) is the regular WA2 or the Extended WA2 (<a href="/chapters/chapterII/section07/">see ChapterII.7</a>).  The valid variable values are X or NO.  X requests the Extended Work Area 2.  Currently, the extended WA2 option is available only for COW format (WORKAREA=COW) Functions 1, 1E, 1A, 3, 3C, BL, and BN;  this control entry is invalid for all other functions.  When MODE=X, LONGWA2 cannot be set to YES for Function 1A or BL.  All other control cards are the same for each of the Functions 1, 1E, 1A, 3, 3C, BL or BN.  For the functions that have the extended WA2 option, this control entry (MODE=X) is invalid when GEOCODE=NO or VAL;  it is optional when GEOCODE=YES or ALL, and the default value of MODE is NO.
+   <td>Specifies whether the Work Area 2 to be used to form the records written into the output file of accepted data (OUTFILE) is the regular WA2 or the Extended WA2 (<a href="../../chapters/chapterII/section07/">see ChapterII.7</a>).  The valid variable values are X or NO.  X requests the Extended Work Area 2.  Currently, the extended WA2 option is available only for COW format (WORKAREA=COW) Functions 1, 1E, 1A, 3, 3C, BL, and BN;  this control entry is invalid for all other functions.  When MODE=X, LONGWA2 cannot be set to YES for Function 1A or BL.  All other control cards are the same for each of the Functions 1, 1E, 1A, 3, 3C, BL or BN.  For the functions that have the extended WA2 option, this control entry (MODE=X) is invalid when GEOCODE=NO or VAL;  it is optional when GEOCODE=YES or ALL, and the default value of MODE is NO.
 </td>
  </tr>
  <tr>
@@ -251,7 +251,7 @@ This entry must be coded if you have node input instead of two intersecting stre
 Whenever input street name fields are specified by coding any of the three control entries ONSTREET, CROSS1 and CROSS2, an input borough code field (or fields) must also be specified, by coding the control entry BORO (and optionally CROSSBORO1 and CROSSBORO2, as appropriate).
 
 <br>
-Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input street data may be provided either in the form of street name fields, specified using the control entries ONSTREET, CROSS1 and CROSS2, or alternatively, in the form of five-digit street code fields (<a href="/chapters/chapterIV/section08/">see ChapterIV.8</a>), specified using the control entries STRTCODE, CRSCOD1 and CRSCOD2.  For those of the aforementioned functions that accept multiple input streets, either all of those input streets must take the form of street names or all must take the form of street codes;  a mixture of names and codes is not permitted.  For Function 1N, street name input fields are mandatory.
+Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input street data may be provided either in the form of street name fields, specified using the control entries ONSTREET, CROSS1 and CROSS2, or alternatively, in the form of five-digit street code fields (<a href="../../chapters/chapterIV/section08/">see ChapterIV.8</a>), specified using the control entries STRTCODE, CRSCOD1 and CRSCOD2.  For those of the aforementioned functions that accept multiple input streets, either all of those input streets must take the form of street names or all must take the form of street codes;  a mixture of names and codes is not permitted.  For Function 1N, street name input fields are mandatory.
 </td>
 </tr>
  <tr>
@@ -274,7 +274,7 @@ If this control entry is not coded, the default value is NO.</td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>REJECTWARNINGS=V</b></td>
-   <td>Specifies whether input data records that result in warnings are to be treated as accepted records or as rejects (see discussion of REJECTWARNINGS in <a href="/chapters/chapterXI/section07/">Section XI.7</a>).  The valid variable values are YES and NO.  This control entry is optional, and the default value is NO.
+   <td>Specifies whether input data records that result in warnings are to be treated as accepted records or as rejects (see discussion of REJECTWARNINGS in <a href="../../chapters/chapterXI/section07/">Section XI.7</a>).  The valid variable values are YES and NO.  This control entry is optional, and the default value is NO.
 
 If REJECTWARNINGS=YES is coded, records resulting in warnings (GRC=01) are treated as rejects;  that is, they are written into ERRFILE (or ERRFIL2) rather than OUTFILE, they are counted as rejects in the report of run statistics, and they are considered to be rejects for the purpose of determining whether a MAXREJECTS termination is to be triggered.  
 
@@ -290,7 +290,7 @@ If REJECTWARNINGS=NO is coded or is in effect by default, warnings are treated a
   </tr>
   <tr>
    <td class="topVerticalTD"><b>SNL=V</b></td>
-   <td>Specifies a value for the Street Name Normalization Length Limit (SNL) parameter (<a href="/chapters/chapterIII/section02/">see ChapterIII.2</a>).  The variable value must be a number between 4 and 32, inclusive.  This control entry is valid only for functions that return normalized street names, for which it is optional.  The default value is 32. </td>
+   <td>Specifies a value for the Street Name Normalization Length Limit (SNL) parameter (<a href="../../chapters/chapterIII/section02/">see ChapterIII.2</a>).  The variable value must be a number between 4 and 32, inclusive.  This control entry is valid only for functions that return normalized street names, for which it is optional.  The default value is 32. </td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>STATEN</b></td>
@@ -346,11 +346,11 @@ Note:  for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not Function D, input s
  </tr>
  <tr>
    <td class="topVerticalTD"><b>TPADDATA=V</b></td>
-   <td>Specifies whether TPAD processing should be performed for functions 1A, 1B, BL, and BN Work Area 2 giving more up-to-date property-level information. (<a href="/chapters/chapterVI/section11/">see ChapterVI.11</a>).The valid variable values are YES and NO.  Y requests the TPAD processing.  The TPADDATA option is available only for COW format (WORKAREA=COW) Functions 1A, 1B, BL, and BN;  this control entry is invalid for all other functions.  All other control cards are the same for each of the Functions 1A, 1B, BL or BN.  For the functions that have the TPAD option, this control entry (TPADDATA=YES) is invalid/ignored when GEOCODE=NO or VAL;  it is optional when GEOCODE=YES or ALL, and the default value of TPADDATA= NO.</td>
+   <td>Specifies whether TPAD processing should be performed for functions 1A, 1B, BL, and BN Work Area 2 giving more up-to-date property-level information. (<a href="../../chapters/chapterVI/section11/">see ChapterVI.11</a>).The valid variable values are YES and NO.  Y requests the TPAD processing.  The TPADDATA option is available only for COW format (WORKAREA=COW) Functions 1A, 1B, BL, and BN;  this control entry is invalid for all other functions.  All other control cards are the same for each of the Functions 1A, 1B, BL or BN.  For the functions that have the TPAD option, this control entry (TPADDATA=YES) is invalid/ignored when GEOCODE=NO or VAL;  it is optional when GEOCODE=YES or ALL, and the default value of TPADDATA= NO.</td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>UNIT=S,L</b></td>
-   <td>Specify the starting position and length for the input Unit field.  This control entry is valid only for COW Functions 1, 1E, 1A and 1B.  This control entry is optional and there is no default.  To have GBAT append the Normalized Display Format Unit Output field (in OUTFILE) also specify GEOUNIT=YES and either GEOCODE=NO or GEOCODE=ALL.  See the description of those control entries.  For a description of the Unit fields, <a href="/chapters/chapterV/section15/">see ChapterV.15</a>.</td>
+   <td>Specify the starting position and length for the input Unit field.  This control entry is valid only for COW Functions 1, 1E, 1A and 1B.  This control entry is optional and there is no default.  To have GBAT append the Normalized Display Format Unit Output field (in OUTFILE) also specify GEOUNIT=YES and either GEOCODE=NO or GEOCODE=ALL.  See the description of those control entries.  For a description of the Unit fields, <a href="../../chapters/chapterV/section15/">see ChapterV.15</a>.</td>
  </tr>
  <tr>
    <td class="topVerticalTD"><b>VSAM=V</b></td>
@@ -368,14 +368,14 @@ Note:  for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not Function D, input s
 
  <tr>
    <td class="topVerticalTD"><b>1ABLVERSION=V</b></td>
-   <td>Specifies that standard processing is to be performed for Functions 1A and BL (<a href="/chapters/chapterVI/section08/">see ChapterVI.8</a>).  The 1ABLVERSION control entry is valid only for Functions 1A and BL, and is required for the MSW format.  The only valid variable value for this control entry is STANDARD or S, and is self-explanatory.  Note: Legacy has been discontinued..</td>
+   <td>Specifies that standard processing is to be performed for Functions 1A and BL (<a href="../../chapters/chapterVI/section08/">see ChapterVI.8</a>).  The 1ABLVERSION control entry is valid only for Functions 1A and BL, and is required for the MSW format.  The only valid variable value for this control entry is STANDARD or S, and is self-explanatory.  Note: Legacy has been discontinued..</td>
  </tr>
 
 
 </table>  
 
 
-## <center>Table A9-2:  Summary of GBAT Control Entries by Keyword</center>
+## <span id="appendix09.2"><center>Table A9-2:  Summary of GBAT Control Entries by Keyword</center></span>
 
 This table lists all of the control entries alphabetically by keyword, indicates their coding formats, their allowable and default variable values, and the Geosupport functions for which each control entry or combination of control entry and variable value is valid.  Control entry variables are indicated using ‘S’ and ‘L’ to represent the starting position and length of a field in the input data records, respectively, and ‘V’ to represent variables of other types.
 
@@ -775,7 +775,7 @@ This table lists all of the control entries alphabetically by keyword, indicates
 </table>
 
 
-## <center>Table A9-3:  Summary of GBAT Control Entry Usage by Function</center>
+## <span id="appendix09.3"><center>Table A9-3:  Summary of GBAT Control Entry Usage by Function</center></span>
 
 This table lists, by Geosupport function, which control entries are allowable and which of those are mandatory. Control entries are represented in this table by their keywords.  Some combinations of control entries are mandatory or prohibited; such conditions are indicated in this table by using the logical connectors “and”, “or” (inclusive or) and “xor” (exclusive or) and by using underlining, as follows:
 
@@ -814,7 +814,7 @@ This table lists, by Geosupport function, which control entries are allowable an
 
   <tr>
     <td></td>
-    <td><u>Note 2</u>: For Functions 1, 1A 1B and 1E, HOUSENUM is optional in the sense that coding it is either mandatory or prohibited, depending, respectively, on whether the input data file contains free-form addresses (in which a single field contains the house number followed by the street name in non-fixed positions;  <a href="/chapters/chapterV/section03/">see ChapterV.3</a>) or parsed-form addresses (in which the house number and street name are in separate fields). When HOUSENUM is not coded, the input street must be in the form of street names rather than street codes, the input street name field must be specified by the control entry ONSTREET, and in every input data record, that field must contain either a free-form address or a Non-Addressable Place name (NAP).  When HOUSENUM is coded, and the input street is in the form of street names, GBAT assumes that the input street name field contains street names and NAPs only, not free-form addresses.</td>
+    <td><u>Note 2</u>: For Functions 1, 1A 1B and 1E, HOUSENUM is optional in the sense that coding it is either mandatory or prohibited, depending, respectively, on whether the input data file contains free-form addresses (in which a single field contains the house number followed by the street name in non-fixed positions;  <a href="../../chapters/chapterV/section03/">see ChapterV.3</a>) or parsed-form addresses (in which the house number and street name are in separate fields). When HOUSENUM is not coded, the input street must be in the form of street names rather than street codes, the input street name field must be specified by the control entry ONSTREET, and in every input data record, that field must contain either a free-form address or a Non-Addressable Place name (NAP).  When HOUSENUM is coded, and the input street is in the form of street names, GBAT assumes that the input street name field contains street names and NAPs only, not free-form addresses.</td>
   </tr>
 
   <tr>
@@ -936,7 +936,7 @@ This table lists, by Geosupport function, which control entries are allowable an
 
 ## <span id="appendix09-tblA9-4"<center>Table A9-4: MSW Appended Items for GEOCODE=NO</center></span>
 
-NOTE: For COW Appended Items for GEOCODE=NO <a href="/appendices/appendix12/#a12-2">see TABLE 12.2</a>
+NOTE: For COW Appended Items for GEOCODE=NO <a href="../appendix12/#a12-2">see TABLE 12.2</a>
 This table contains, by function or combination of function and option, a layout of the data that GBAT appends to the input data record to form the OUTFILE record for the MSW format when GEOCODE=NO has been specified.
 
 <table>
@@ -1059,7 +1059,7 @@ This table contains, by function or combination of function and option, a layout
 
 This table lists, by function and GEOCODE value, the length in bytes of the data that GBAT appends to an input data record that has been accepted by Geosupport to form the corresponding OUTFILE record.  The LRECL value that the user must specify in the OUTFILE DD statement in the JCL is computed by adding the length of the appended data as indicated in this table to the LRECL of the input data file.
 
-Note: For Functions 1, 1E, 2, 3 and 3C, when GEOCODE=ALL and CROSSSTNAMES=YES, the appended data consist of the concatenation of the GEOCODE=NO data, followed by a 320-byte block of data containing cross street names, followed by the GEOCODE=YES data.  For further information about the layout of the appended CROSSSTNAMES data, refer to the <a href="/appendices/appendix03/">Appendix 3</a> entry for the List of Street Names (see paragraph on List of Cross Street Names).
+Note: For Functions 1, 1E, 2, 3 and 3C, when GEOCODE=ALL and CROSSSTNAMES=YES, the appended data consist of the concatenation of the GEOCODE=NO data, followed by a 320-byte block of data containing cross street names, followed by the GEOCODE=YES data.  For further information about the layout of the appended CROSSSTNAMES data, refer to the <a href="../appendix03/">Appendix 3</a> entry for the List of Street Names (see paragraph on List of Cross Street Names).
 
 <table>
     <thead>

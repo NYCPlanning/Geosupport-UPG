@@ -1,4 +1,4 @@
-<h2 class="pdfAppendix"><center>GLOSSARY OF TERMS AND ACRONYMS</center></h2>
+<h2 class="pdfAppendix"><center>Glossary of Term And Acronyms</center></h2>
 
 Citations in brackets are references to sections of the UPG where the given term is defined or is principally discussed.  Phrases in <b>bold typeface</b> have entries in this glossary.
 

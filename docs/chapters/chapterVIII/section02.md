@@ -20,7 +20,7 @@ For the convenience of users whose application programs are written in COBOL, As
 
 In batch applications, the user JCL for the execute step must include JOBLIB or STEPLIB DD statements for the load libraries that contain the Geosupport foreground software.  [Chapter VIII.8](../chapterVIII/section08) describes the JCL required for batch execution, and [Appendix 8](../../appendices/appendix08/) contains examples.
 
-## <u>Important note for CICS applications written in NATURAL:</u>
+## <span id="chapterVIII.2.1"><u>Important note for CICS applications written in NATURAL:</u></span>
 
 In order for Geosupport’s CICS driver to be able to pass control to the Geosupport foreground software properly, the driver must determine whether the user program is written in NATURAL.  (This is necessary because NATURAL programs make non-standard program calls in the CICS environment.  In a standard call, the address of the parameter list is passed in Register 1.  Programs written in COBOL, Assembler, PL/1 and C generate standard calls.  However, CICS NATURAL programs use Register 1 for a different purpose.  Therefore, for NATURAL programs only, the Geosupport CICS driver uses the Transaction Work Area instead of Register 1 to pass the addresses of the work areas to Geosupport.)  
 

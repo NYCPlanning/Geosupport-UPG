@@ -26,7 +26,7 @@ The following is a list of all of the Geosupport MSW work areas, indicating the 
 | WA2, Function 3C      | 200       |
 | WA2, Function 3S      | 4,224       |
 
-## Work Area 1 (MSW) - All Functions
+## <span id="appendix02.1">Work Area 1 (MSW) - All Functions</span>
 <table>
   <tr>
     <th>Field</th>
@@ -455,7 +455,7 @@ An asterisk in the second position of a function code is used as a shorthand not
 B\* = BB, BF, BL, BN  
 D\* = D, DG, DN  
 
-## Regular Work Area 2 (MSW) Layout for Function 1  
+## <span id="appendix02.2">Regular Work Area 2 (MSW) Layout for Function 1 </span>
 
 <table>
   <tr>
@@ -720,7 +720,7 @@ D\* = D, DG, DN
   </tr>
 </table>  
 
-## Long Work Area 2 (MSW) Layout for Function 1
+## <span id="appendix02.3">Long Work Area 2 (MSW) Layout for Function 1</span>
 
 <table>
   <tr>
@@ -770,7 +770,7 @@ D\* = D, DG, DN
   </tr>
 </table>
 
-## Regular Work Area 2 (MSW) Layout for Functions 1A, BL, BN
+## <span id="appendix02.4">Regular Work Area 2 (MSW) Layout for Functions 1A, BL, BN</span>
 
 
 <table>
@@ -1114,8 +1114,7 @@ D\* = D, DG, DN
 
 <!-- ************************* -->
 
-## Long Work Area 2 (MSW) Layout for Functions 1A and BL
-
+## <span id="appendix02.5">Long Work Area 2 (MSW) Layout for Functions 1A and BL</span>
 <table>
 
   <tr>
@@ -1414,7 +1413,7 @@ D\* = D, DG, DN
 
 </table>
 
-## Regular Work Area 2 (MSW) Layout for Function 1E
+## <span id="appendix02.6">Regular Work Area 2 (MSW) Layout for Function 1E</span>
 
 <table>
 
@@ -1775,7 +1774,7 @@ D\* = D, DG, DN
 
 </table>
 
-## Long Work Area 2 (MSW) Layout for Function 1E
+## <span id="appendix02.7">Long Work Area 2 (MSW) Layout for Function 1E</span>
 
 <table>
 
@@ -1837,7 +1836,7 @@ D\* = D, DG, DN
 </table>
 
 
-## Work Area 2 (MSW) Layout for Function 2
+## <span id="appendix02.8">Work Area 2 (MSW) Layout for Function 2</span>
 
 <table>
 
@@ -2107,7 +2106,7 @@ D\* = D, DG, DN
 
 </table>
 
-## Work Area 2 (MSW) Layout for Function 3
+## <span id="appendix02.9">Work Area 2 (MSW) Layout for Function 3</span>
 
 <table>
   <tr>
@@ -2448,7 +2447,7 @@ D\* = D, DG, DN
 
 </table>
 
-## Long Work Area 2 (MSW) Layout for Function 3
+## <span id="appendix02.10">Long Work Area 2 (MSW) Layout for Function 3</span>
 
 <table>
 
@@ -2628,7 +2627,7 @@ D\* = D, DG, DN
 
 </table>
 
-## Work Area 2 (MSW) Layout for Function 3C
+## <span id="appendix02.11">Work Area 2 (MSW) Layout for Function 3C</span>
 
 <table>
 <tr>
@@ -2923,7 +2922,7 @@ D\* = D, DG, DN
 </tr>
 </table>
 
-##Work Area 2 (MSW) Layout for Function 3S
+## <span id="appendix02.12">Work Area 2 (MSW) Layout for Function 3S</span>
 
 <table>
 <tr>

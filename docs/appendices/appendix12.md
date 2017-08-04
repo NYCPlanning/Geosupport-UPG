@@ -1,7 +1,7 @@
 <h2 class="pdfAppendix"><center>APPENDIX 12: CHARACTER-ONLY WORK AREAS (COW)</center></h2>
 
 
-## Introduction
+## <span id="appendix12.1">Introduction</span>
 
 This appendix is based on Geosupport System Technical Bulletin 02-01 (dated 15 November 2002) and Geosupport Technical Bulletin 02-01 Addendum (dated 22 November 2002).  It contains information needed to create Geosupport applications using the Character-Only Work Areas (COWs).  Included are the following topics:
 
@@ -22,7 +22,7 @@ Notes:
 3. The COPY files that are printed in [Appendix 5](/appendices/appendix05/) of this User Programming Guide are for the Mainframe-Specific Work Areas (MSWs).  For the COW COPY files, [see Appendix 14](/appendices/appendix14/).
 
 
-## Overview
+## <span id="appendix12.2">Overview </span>
 
 Standard work areas with pre-defined layouts are used to pass data between the Geosupport System and user-developed application programs.  The same work areas are also used by GBAT, the Geosupport batch utility program, to pass data to and from Geosupport.
 
@@ -32,7 +32,7 @@ Each specific Geosupport work area (for example, Work Area 2 for Function 3S) ha
 
 <b>From now on, all new applications should be designed to use the COWs.</b>  We also recommend that <b>all existing applications be converted to use the COWs.</b>  Although the MSWs will continue to be supported, as of some future date (not yet determined), only the COWs will be enhanced with new data items and functionality.  Eventually, the MSWs may be de-supported.  
 
-## Comparison of COWs and MSWs
+## <span id="appendix12.3">Comparison of COWs and MSWs</span>
 
 Each non-character field in an MSW has a character field counterpart in the corresponding COW. Except for an item called the HND (discussed below in the sub-section on house number fields), each character field in an MSW appears in identical form in the corresponding COW.  However, corresponding fields do not necessarily occupy the same byte positions or occur in the same order in the corresponding MSW and COW.  In designing the COWs, the opportunity has been taken to reorganize the layouts to situate related fields near each other and to increase the amount of filler space available for adding new data items in the future.
 
@@ -73,14 +73,14 @@ Street codes appear in several forms in the Geosupport work areas.  In many of t
 <b><u>Count Fields.</u></b>  Some count fields, e.g. Number of Street Names in List, are packed decimal fields in the MSW format, and character fields in the COW format.  
 
 
-## Consideration When Using the COWs
+## <span id="appendix12.4">Consideration When Using the COWs</span>
 
 The Long Work Area 2 option that is available when using the MSWs is occasionally not needed or not supported when using the COWs, as follows:
 
 * When using the COWs, Functions 1, 1E and 3 do not have the long Work Area 2 option.  This option is unnecessary in these cases, since the COW versions of the regular Work Area 2s for these functions already accommodate all the requisite fields.  However, Functions 1A and BL continue to have the long Work Area 2 option when COWs are used.  ([See Chapter II.5](/chapters/chapterII/chapterII/) for a general discussion of the long Work Area 2 option.)
 
 
-## Work Area Lengths (COWs and MSWs)
+## <span id="appendix12.5">Work Area Lengths (COWs and MSWs)</span>
 
 The following table lists the lengths of the members of both sets of work areas.  Note that the lengths of corresponding members from the two sets differ in most cases.  
 
@@ -194,7 +194,7 @@ The following table lists the lengths of the members of both sets of work areas.
 </table>  
 
 
-## Specifying a Work Area Format (COW or MSW)
+## <span id="appendix12.6">Specifying a Work Area Format (COW or MSW)</span>
 
 To indicate which set of work areas is being used in a call to Geosupport, an application program uses a new field called the Work Area Format Indicator.  This field is one byte long and is located at position 213 of both the COW Work Area 1 and the MSW Work Area 1.
 
@@ -210,7 +210,7 @@ Note that the MSWs are the default work areas, that is, the work areas that Geos
 
 
 
-## GBAT Considerations for COWs
+## <span id="appendix12.7">GBAT Considerations for COWs</span>
 
 When executing GBAT, the set of work areas that are used affects the length and format of the records written into OUTFILE (the output file of successfully processed data records).
 
@@ -986,7 +986,7 @@ For Functions 1, 1E, 1B, 2, 3 and 3C, when GEOCODE=ALL (and, optionally, GEOUNIT
 
 
 
-## COPY Files for COWs
+## <span id="appendix12.8">COPY Files for COWs</span>
 
 For COBOL, PL/1, BAL and C programmers, copy files have been created to enable you to easily use the new work areas (COWs) in your programming work. Local Data Areas will be available for Natural programmers.  If you use the MVSP LPAR at DoITT, these items will be found in library ‘A030.GEO.COPYLIB’.  If you use any other LPAR at DoITT or if you work at a different data center, contact your system programming staff to learn the name of the library in which these members are stored.  The following table shows you the copy file name by language and Geosupport Function.
 

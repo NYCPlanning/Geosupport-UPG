@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>III.5 The Similar Names Feature - DCP</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../../css/main.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "III.5 The Similar Names Feature";
+    var mkdocs_page_input_path = "chapters/chapterIII/section05.md";
+    var mkdocs_page_url = "/chapters/chapterIII/section05/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script src="../../../js/main.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+
+        <!-- Original -->
+        <!-- <a href="../../.." class="icon icon-home" id="logoID"> DCP</a> -->
+
+        <!-- Custom -->
+        <a href="../../.." class="icon icon-home" id="logoID"> </a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../tableofcontents/">Table of Contents</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../overview/">Overview of the UPG</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter I: System Overview</a>
+    <!-- <span class="caption-text">Chapter I: System Overview</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/chapterI/">Chapter I</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section01/">I.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section02/">I.2 System Functionality</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section03/">I.3 Introduction to Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section04/">I.4 The Geosupport Function Suite</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section05/">I.5 Overview of System Architecture</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section06/">I.6 Technical References</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter II: Geosupport API Introduction</a>
+    <!-- <span class="caption-text">Chapter II: Geosupport API Introduction</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/chapterII/">Chapter II</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section01/">II.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section02/">II.2 Geosupport Return Codes and Reject Handling</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section03/">II.3 Geosupport API User Programming Procedure</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section04/">II.4 One-Work-Area and Two-Work-Area Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section05/">II.5 Coding Geosupport API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section06/">II.6 The Work Area C/C++ Header File and Visual Basic Typedef File</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section07/">II.7 Coding API Calls When Using Geosupport C/C++ Header Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section08/">II.8 Creating a Geosupport Desktop Edition Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section09/">II.9 Sample Programs with Descriptions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section10/">II.10 The Long Work-Area-2 Option</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section11/">II.11 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter III: Street Name Processing</a>
+    <!-- <span class="caption-text">Chapter III: Street Name Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../chapterIII/">Chapter III</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section01/">III.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section02/">III.2 Street Name Normalizing and the SNL Parameter</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section03/">III.3 Street Name Sorting and Normalization Format Options</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section04/">III.4 Partial Street Names</a>
+                  </li>
+                  <li class=" current" >
+                      
+    <a class="current" href="./">III.5 The Similar Names Feature</a>
+    <ul class="subnav hideMe">
+            
+    </ul>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section06/">III.6 Unconventional Geographic Feature Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section07/">III.7 Street Name Browsing and Functions BB and BF</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section08/">III.8 Selection of Output Street Names (COW only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IV: Street Codes</a>
+    <!-- <span class="caption-text">Chapter IV: Street Codes</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/chapterIV/">Chapter IV</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section01/">IV.1 Introduction: Street Codes and Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section02/">IV.2 Street Name Relationships: Aliases and Locally Valid Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section03/">IV.3 Five-Digit and Ten-Digit Street Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section04/">IV.4 Resynchronization of Street Codes Stored in User Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section05/">IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section06/">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section07/">IV.7 Street Codes and Non-Addressable Place Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section08/">IV.8 Street Code Input Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section09/">IV.9 Summary of Street Codes</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter V: Address Processing</a>
+    <!-- <span class="caption-text">Chapter V: Address Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/chapterV/">Chapter V</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section01/">V.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section02/">V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section03/">V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section04/">V.4 Input Address Acceptance/Rejection and its Validation Significance</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section05/">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section06/">V.6 Duplicate Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section07/">V.7 Marble Hill/Rikers Island</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section08/">V.8 Special Ruby Street Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section09/">V.9 Vanity Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section10/">V.10 Out-of-Sequence Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section11/">V.11 ZIP Code as Input Instead of Borough Code</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section12/">V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section13/">V.13 Special Place Name Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section14/">V.14 ‘No Cross Street’ Segment Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section15/">V.15 UNIT Information Feature (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</a>
+    <!-- <span class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/chapterVI/">Chapter VI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section01/">VI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section02/">VI.2 Tax Lots and BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section03/">VI.3 Buildings and Building Identification Numbers (BINs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section04/">VI.4 Condominiums and Billing BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section05/">VI.5 Vacant Street Frontages and Pseudo-Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section06/">VI.6 Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section07/">VI.7 Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section08/">VI.8 Standard and Legacy Versions of Functions 1A and BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section09/">VI.9 Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section10/">VI.10 Function AP (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section11/">VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VII: Street Configuration Processing</a>
+    <!-- <span class="caption-text">Chapter VII: Street Configuration Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/chapterVII/">Chapter VII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section01/">VII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section02/">VII.2 Intersections: Function 2 and Function 2W</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section03/">VII.3 Three-Street Configurations - Concepts and Terminology</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section04/">VII.4 Street Segments and Related Configurations: Function 3</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section05/">VII.5 Blockfaces: Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section06/">VII.6 Street Stretches: Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section07/">VII.7 Borough Boundary Processing (Functions 2, 3 and 3C)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section08/">VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VIII: Geosupport API</a>
+    <!-- <span class="caption-text">Chapter VIII: Geosupport API</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/chapterVIII/">Chapter VIII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section01/">VIII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section02/">VIII.2 Review of the Geosupport API</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section03/">VIII.3 Coding API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section04/">VIII.4 The Geosupport Copy Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section05/">VIII.5 Coding API Calls When Using Geosupport COPY Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section06/">VIII.6 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section07/">VIII.7 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section08/">VIII.8 JCL for the Execute Step (Batch Applications)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IX: Mainframe GBAT</a>
+    <!-- <span class="caption-text">Chapter IX: Mainframe GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/chapterIX/">Chapter IX</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section01/">IX.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section02/">IX.2 JCL Considerations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section03/">IX.3 GBAT Processing and Programmed Abnormal Terminations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section04/">IX.4 The Input Data File (DDNAME=INFILE or INVSAM)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section05/">IX.5 The Input Control File (DDNAME=CARDIN)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section06/">IX.6 The Input Alias File (DDNAME=ALIASES)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section07/">IX.7 The Output File of Accepted Records (DDNAME=OUTFILE)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section08/">IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section09/">IX.9 The Output Print File (DDNAME=SYSPRINT)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter X: Desktop Edition GBAT</a>
+    <!-- <span class="caption-text">Chapter X: Desktop Edition GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/chapterX/">Chapter X</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section01/">X.1 What is GBAT?</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section02/">X.2 Using GBAT</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter XI: Desktop Edition GOAT</a>
+    <!-- <span class="caption-text">Chapter XI: Desktop Edition GOAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/chapterXI/">Chapter XI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section01/">XI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section02/">XI.2 How to Use GOAT</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section03/">XI.3 Invoking Function 1 or Function 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section04/">XI.4 Invoking Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section05/">XI.5 Invoking Function 2</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section06/">XI.6 Invoking Function 3 or Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section07/">XI.7 Invoking Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section08/">XI.8 Invoking Function B</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section09/">XI.9 Invoking Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section10/">XI.10 Invoking Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section11/">XI.11 Invoking Function D</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Appendices and Glossary</a>
+    <!-- <span class="caption-text">Appendices and Glossary</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendices/">Appendices and Glossary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix01/">Appendix 1: Geosupport Functions - Quick Reference</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix02/">Appendix 2: Mainframe-Specific Work Area Layouts(MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix03/">Appendix 3: Data Item Dictionary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix04/">Appendix 4: Geosupport Return Codes, Reason Codes And Messages</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix05/">Appendix 5: Geosupport Copy Files (MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix06/">Appendix 6: User Feedback Procedures</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix07/">Appendix 7: Mainframe Data Centers Where Geosupport Is Installed</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix08/">Appendix 8: Sample Application Programs And JCL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix09/">Appendix 9: GBAT Reference Tables</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix10/">Appendix 10: Sample GBAT Jobs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix11/">Appendix 11: Guidelines For Application Design</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix12/">Appendix 12: Chapter-Only Work Areas (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix13/">Appendix 13: Chapter-Only Work Area LAYOUTS (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix14/">Appendix 14: Geosupport Copy Files (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix15/">Appendix 15: 2010 Census Geography – Functions 1, 1E, 2, 3, and 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix16/">Appendix 16: Neighborhood Tabulation Areas (NTAS)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix17/">Appendix 17: TPAD - Additional Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix18/">Appendix 18: GeoExcel Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix19/">Appendix 19: Work Area Layouts (COWs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix20/">Appendix 20: Geosupport Header And Typedef Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix21/">Appendix 21: Geosupport Desktop Edtion</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/glossary/">Glossary of Terms And Acronyms</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../aboutUs/">About Us</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">DCP</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <span style="float: right;" class="printLogo"><a onclick="handlePrintPage()" class="printBtn">Print Page</a>  <a href="../../../upg.pdf" target="_blank" class="printBtn">Print All</a></span>
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Chapter III: Street Name Processing &raquo;</li>
+        
+      
+    
+    <li>III.5 The Similar Names Feature</li>
+
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+
+
+
+  <hr/>
+
+
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2>III.5 The Similar Names Feature</h2>
+
+<p>Geosupport has a ‘similar names’ feature that applications can utilize when handling Geosupport rejection of input street names.  The feature consists of returning to the application a list of up to ten valid street names from the specified input borough that Geosupport deems to be ‘similar’ to the rejected input street name.  Similar names are always full (not partial) street names, normalized in sort format.  Applications can be designed to display the similar names whenever there are any, to aid the data entry operator in correcting rejected input names.</p>
+<p>Whenever an input street name is rejected, if there is at least one valid full street name in the specified input borough that Geosupport deems to be similar to the rejected name, Geosupport takes the following actions:</p>
+<ul>
+<li>
+<p>A list of the similar names, up to a maximum of ten, is returned in the List of Street Names field in WA1.</p>
+</li>
+<li>
+<p>The Geosupport Return Code value is ‘EE’.  The Reason Code value is a number from 1 to 9 or the letter ‘A’, indicating the number of similar names that are in the List of Street Names.  (The value ‘A’ indicates that there are 10 similar names.)</p>
+</li>
+<li>
+<p>An appropriate message is returned in the WA1 Message field.</p>
+</li>
+<li>
+<p>The number of similar names that are in the list is returned in the WA1 field Number of Street Names in List.</p>
+</li>
+</ul>
+<p>If there is exactly one similar name, the message explicitly indicates that name.  For example, if the input is the invalid Manhattan name DUFFEY SQUARE, there is a single similar name, DUFFY SQUARE.  The message in this case would be:</p>
+<p><center>‘DUFFEY SQUARE’ NOT RECOGNIZED. IS IT ‘DUFFY SQUARE’?</center></p>
+<p>If there is more than one similar name, then the message indicates the number of similar names but does not contain the similar names themselves.  For example, the invalid Staten Island name ABBNER ROAD has three similar names.  The message in this case would be:</p>
+<p><center>‘ABBNER ROAD’ NOT RECOGNIZED. THERE ARE 003 SIMILAR NAMES.</center></p>
+<p>To utilize the similar names feature, the user might program the application as follows.</p>
+<ul>
+<li>
+<p>Whenever a call to Geosupport generates the GRC value ‘EE’, indicating rejection of an input street name and the existence of similar names, the application displays the Geosupport message (and/or the application’s own message) and the similar names.  (When there is exactly one similar name, the Geosupport message already contains the similar name.)  </p>
+</li>
+<li>
+<p>The application then offers the data entry operator an opportunity to correct the input name, either by selecting one of the similar names (for example, by allowing the operator to use the cursor and the Enter key to make the selection) or by keying in a new name.  If the operator has selected a similar name, the application moves it to the WA1 input street name field, overlaying the original input name, while leaving the rest of the WA1 input fields unmodified.  The application then issues a second Geosupport call.  </p>
+</li>
+</ul>
+<p>Designing the application to allow the operator to select a similar name from the list lessens the need for the operator to handle street name rejects by key-entering new street name spellings, thus increasing the operator’s productivity and eliminating the possibility of new key-stroke errors.</p>
+<p><u>Applications should never be designed to replace a rejected input name with a Geosupport-provided similar name in an automatic fashion, even when there is exactly one similar name</u>.  The similar names that Geosupport provides are merely possibilities for the intended input street name, and it may well be that none of them is the intended input street name.  Human judgment should always be exercised when deciding whether to use a similar name.</p>
+<p>To optimize the contents of the similar names list that is returned to the user’s application, Geosupport takes the following steps:</p>
+<ul>
+<li>
+<p>Geosupport only returns names that could be used in the specified function call.  For example, since Non-Addressable Place Names, Addressable Place Names and Business Improvement Districts (BID) are not valid for Functions 2, 3, 3C and 3S, they will not be included in the similar names list for those functions.</p>
+</li>
+<li>
+<p>Also, roadbed street names are valid only when the Roadbed Request Switch is turned on.  Roadbed street names will therefore not be included in the similar names list unless the Roadbed Request Switch is on.  For example, in Brooklyn, if the input street name is ‘OCEAN PARTKAY’ and the Roadbed Request Switch is on, names such as OCEAN PARKWAY NORTHBOUND ROADBED will be included in the similar names list; however, if the Roadbed Request Switch is off, the roadbed street name will not be included.</p>
+</li>
+<li>
+<p>The similar names list will include only one spelling variation per locally valid street name (or 7-digit street code).  For example, in Manhattan, if the input street name is ‘ADAM’, the similar names list will include only ‘ADAM C POWELL BOULEVARD’ and not the four other valid variations of that street name.  The spelling variation selected is the first one encountered based upon sort sequence, which means it may or may not be the principal street name.</p>
+</li>
+</ul>
+<p>Although users need not be concerned with the criteria that Geosupport uses to generate similar names, the general criteria are listed here.  A valid full street name is deemed ‘similar’ to an invalid input street name if it is in the specified input borough and any of the following conditions holds:</p>
+<p>(A) The valid full street name is at least as long as the input street name, and the two names are identical for the length of the input street name.  </p>
+<p><center>For example, in Manhattan, the valid full street names YORK AVENUE and YORK STREET would be deemed similar to the invalid name YORK.  (YORK is invalid because it is an ambiguous partial street name.)</center></p>
+<p>or</p>
+<p>(B) There are no valid full street names in the specified borough that satisfy criterion (A), and the input street name begins with a compass direction word (NORTH, SOUTH, EAST or WEST) followed by a blank, and the input street name and the given valid full street name are identical up to and including the first three bytes following that blank.</p>
+<blockquote>
+<p>For example, in Manhattan, consider the invalid input name EAST HOUSTIN STREET, which is 12 bytes long.  For this name, there are no valid full Manhattan street names that satisfy criterion (A).  That is, there are no valid full Manhattan street names that are longer than 12 bytes such that the first 12 bytes consist of the character string EAST HOUSTIN STREET.  However, this input name begins with a compass direction word, EAST, and there is a valid full street name, EAST HOUSTON STREET, that is identical to EAST HOUSTIN STREET through the third byte following the blank after the word EAST (i.e., they are identical in their first eight bytes, consisting of the string ‘EAST HOU’).  Therefore, by criterion (B), EAST HOUSTON STREET is deemed similar to EAST HOUSTIN STREET.</p>
+</blockquote>
+<p>or</p>
+<p>(C) There are no valid full street names in the specified borough that satisfy criterion (A) or criterion</p>
+<blockquote>
+<p>(B), and at least the initial three bytes of the input street name and the given valid full street name are identical.  The overall process is to keep looking for a match while dropping off characters from the end of the input street name.  The streets must match on at least the first three bytes of the input street name to be considered a similar name for this criterion.  The actual algorithm is somewhat complex and a complete description of it is beyond the scope of this document.</p>
+<p>As an example, in Manhattan, if the input street name is BROADWAY TERRACH, then BROADWAY TERRACE will appear first in the list of similar names.  Other street names beginning with BROADWAY will also appear in the list.  Since BROADWAY TERRACE matches the most letters in the input street name, it appears first.  The algorithm will typically insert the name with more matches at the beginning of the list.  </p>
+<p>As another example, in Staten Island, each of the valid street names ABBEY ROAD, ABBOTT STREET and ABBY PLACE will be deemed similar to ABBNER ROAD since they all begin with the same three bytes, namely, ABB.</p>
+</blockquote>
+<p>or</p>
+<p>(D) The input street name contains numeric characters, and the input street name is identical to the valid street name up to and including the first numeric word.</p>
+<blockquote>
+<p>For example, in Manhattan, the valid street name 8 AVENUE is deemed similar to the invalid name 8 PLACE.  In Brooklyn, the valid street names BRIGHTON 6 COURT and BRIGHTON 6 STREET are both deemed similar to the invalid name BRIGHTON 6 AVENUE.</p>
+</blockquote>
+<p>or</p>
+<p>(E) In the boroughs of the Bronx and Manhattan only, the input street name is a <u>front-truncated street name</u>.  A front-truncated street name is one for which all of the following are true:</p>
+<blockquote>
+<p>(E1) The input street name can be transformed into the valid street name by adding the word EAST or WEST to the front of the input street name.</p>
+<p>(E2) The input street name has at least two words.</p>
+<p>(E3) The first word of the input street name is not END, RIVER, SIDE, ST or STREET.</p>
+<p>(E4) The last word of the input street name is not EXTENSION.</p>
+<p>The set of criteria in (E) is designed to reflect the common practice to specify street names of Bronx and Manhattan streets that begin with the word EAST or WEST without that first word.  These street names are referred to as front-truncated street names.  For example, the intersection of Broadway and West 42 Street in Manhattan is often expressed informally as “the intersection of Broadway and 42 Street”;  pursuant to criteria (E), Geosupport generates EAST 42 STREET and WEST 42 STREET as similar names for the invalid Manhattan street name 42 STREET.  Similarly, EAST HOUSTON STREET and WEST HOUSTON STREET are generated as similar names for the invalid Manhattan street name HOUSTON STREET.  Criteria (E2) through (E4) filter out certain special cases where it is not customary to drop the first word EAST or WEST.  For example, Criterion (E2) prevents the invalid Bronx input street name AVENUE from generating as similar names the valid Bronx street names EAST AVENUE and WEST AVENUE;  Criterion (E3) prevents the invalid Manhattan street names END AVENUE, RIVER DRIVE and SIDE HIGHWAY from generating as similar names EAST END AVENUE and WEST END AVENUE, EAST RIVER DRIVE, and WEST SIDE HIGHWAY, respectively.</p>
+<p>Note that, if the input street name is the invalid Manhattan name 7 STREET, then 7 AVENUE and 7 AVENUE SOUTH are similar names by virtue of criterion (D), and EAST 7 STREET is a similar name by virtue of (E), but WEST 7 STREET is not a similar name, since it is not itself a valid Manhattan street name.</p>
+</blockquote>
+<p>The similar names are returned in the List of Street Names sorted in alphabetical order, except that any front-truncated street names (i.e. similar names that satisfy criteria (E)) are listed first.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../section06/" class="btn btn-neutral float-right" id="nextButton" title="III.6 Unconventional Geographic Feature Names">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../section04/" class="btn btn-neutral" id="previousButton" title="III.4 Partial Street Names"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../section04/" style="color: #fcfcfc; float:left">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../section06/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+
+</body>
+</html>

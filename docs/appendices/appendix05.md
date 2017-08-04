@@ -91,7 +91,7 @@ The Geosupport COPY files contain source code layouts of the Geosupport work are
 (\**) Functions 1A and BL share a single long WA2 layout.  (Function BN does not have the long WA2 option.)
 See [Chapter VIII.4](/chapters/chapterVIII/section04) for a detailed discussion of the Geosupport COPY feature.
 
-## <center>COBOL COPY Files (MSW)</center>
+## <span id="appendix05.1"><center>COBOL COPY Files (MSW)</center></span>
 
 <center><b>W1COB COPY File</b></center>
 
@@ -936,7 +936,7 @@ See [Chapter VIII.4](/chapters/chapterVIII/section04) for a detailed discussion 
                       10 GEO-WA2-3S-DISTANCE                PIC S9(5) COMP-3.   00100000
                       10 GEO-WA2-3S-GAP-FLAG                PIC X.              00110000
 
-## <center>ASSEMBLER COPY FILES (MSW)</center>
+## <span id="appendix05.2"><center>ASSEMBLER COPY FILES (MSW)</center></span>
 
 <center><b>W1BAL COPY File</b></center>
 
@@ -1655,7 +1655,7 @@ See [Chapter VIII.4](/chapters/chapterVIII/section04) for a detailed discussion 
         W23SLEN  EQU   W23SEND-W2BAL3S     LENGTH OF W2BAL3S                    00002400
 
 
-## <center>PL/1 COPY Files (MSW)</center>
+## <span id="appendix05.3"><center>PL/1 COPY Files (MSW)</center></span>
 
 <center><b>W1PL1 COPY File</b></center>
 
@@ -2656,7 +2656,7 @@ See [Chapter VIII.4](/chapters/chapterVIII/section04) for a detailed discussion 
                 3 GEO_WA2_3S_DISTANCE                FIXED DEC(5),              00000120
                 3 GEO_WA2_3S_GAP_FLAG                CHAR(1);                   00000130
 
-## <center>C COPY File (MSW)</center>
+## <span id="appendix05.1"><center>C COPY File (MSW)</center></span>
 
 <center><b>WAC COPY File</b></center>
 
@@ -3147,7 +3147,7 @@ See [Chapter VIII.4](/chapters/chapterVIII/section04) for a detailed discussion 
                            CROSS_STRS cross_strs[350];/* Cross Street structure*/
                          } C_WA2_F3S;
 
-## <center>NATURAL LDAs (MSW)</center>
+## <span id="appendix05.5"><center>NATURAL LDAs (MSW)</center></span>
 
 <center><b>GEOLW1 COPY File</b></center>
 

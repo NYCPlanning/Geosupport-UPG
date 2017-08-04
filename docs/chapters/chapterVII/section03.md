@@ -12,7 +12,7 @@ This section introduces concepts and terminology needed to discuss three-street 
 
 The definitions below are based on Geosupport’s single-line map model of the city’s geography, as explained in Chapter VII.1.  Also, recall that the term ‘street’ refers to a street name or street code that satisfies the criteria delineated in Chapter VII.1.  The term ‘node’ is as defined in [Chapter VII-2](/chapters/chapterVII/section02/).
 
-## <u>Street Stretches and Street Segments</u>
+## <span id="chapterVII.3.1"><u>Street Stretches and Street Segments</u></span>
 
 A <u>street stretch</u> is a portion (possibly all) of a street (called the <u>‘on’ street</u>) between any two nodes along it (called the <u>delimiting nodes</u> of the stretch).  A street stretch is considered to comprise both sides of the ‘on’ street.
 
@@ -60,7 +60,7 @@ Street stretches can be delimited by pseudo-intersections and intersection names
 
 * Some examples of street segments in Manhattan delimited by bends are:  BARROW STREET between HUDSON STREET and BEND (also specifiable in terms of conventional streets as BARROW STREET between HUDSON STREET and COMMERCE STREET); and COMMERCE STREET between BARROW STREET and BEND (the only way to specify this segment) (see Figure VII-4).
 
-## <u>Logical Direction Assigned to Streets</u>
+## <span id="chapterVII.3.2"><u>Logical Direction Assigned to Streets</u></span>
 
 GSS has assigned a <u>logical direction</u> to every street segment in New York City.  References to the left and right sides of any segment, and references to its delimiting nodes as the ‘from’ node and ‘to’ node, are relative to the segment’s logical direction.
 
@@ -69,7 +69,7 @@ For streets that have addresses, the logical direction is always assigned as the
 For features that have no addresses, such as all railroad tracks and some highways, the logical direction is assigned arbitrarily, but consistently, along the feature’s full extent.  <u>Note that a street’s logical direction, and thus the meaning of ‘from’, ‘to’, ‘left’ and ‘right’, is unrelated to the street’s traffic direction, to its orientation with respect to the points of the compass, or to the order in which cross streets delimiting a stretch are specified.</u>
 
 
-## <u>Blockfaces</u>
+## <span id="chapterVII.3.3"><u>Blockfaces</u></span>
 
 A blockface is a continuous frontage of a physical city block along one street, ignoring the presence of any bending points or other intervening nodes.  That is, the portions of a street frontage of a block that lie on both sides of a bending point are considered to be parts of the same blockface.
 
@@ -88,7 +88,7 @@ and Park Avenues and East 51st and East 52nd Streets has the following four bloc
 
 An example of a stretch with a bending point in Manhattan is Commerce Street between Bedford and Barrow Streets (see Figure VII-4).  Both sides of this stretch are single blockfaces, even though the stretch consists of two segments connected at the bending point.
 
-## <u>T-Intersections</u>
+## <span id="chapterVII.3.4"><u>T-Intersections</u></span>
 
 
 

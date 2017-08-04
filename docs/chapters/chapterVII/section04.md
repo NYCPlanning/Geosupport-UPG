@@ -11,7 +11,7 @@ Function 3 is designed to accept as input portions of a street that are, loosely
 The following examples illustrate the types of input data acceptable and not acceptable to Function 3.  For the Lexington Avenue examples (in Manhattan), see Figure VII-16.  For the Union Avenue examples (in Staten Island), see Figure VII-17.  For the Commerce Street examples (in Manhattan), see Figure VII-4.  For the Croes Avenue example (in the Bronx), see Figure VII-3.
 
 
-## <p class="center"><b>Input Data Examples for Function 3</b></p>
+## <p class="center" id="chapterVII.4.1"><b>Input Data Examples for Function 3</b></p>
 
 | Input ‘On’ Street | One Cross Str. | Other Cross Str. | Fn 3 Action | Reason for Action |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -48,7 +48,7 @@ A successful two-work-area call to Function 3 signifies that the three input str
 <p class="img_tagline">FigureVII-18: Ambiguous <br> Segment Specification </p>
 </div>
 
-## <u>Ambiguous Function 3 Input Data</u>
+## <span id="chapterVII.4.2"><u>Ambiguous Function 3 Input Data</u></span>
 
 Some combinations of an ‘on’ street and two cross streets are ambiguous as Function 3 input data, that is, the data specify more than one stretch that satisfies Function 3’s input criteria.  An example of ambiguous Function 3 input data in Queens is ‘Alderton Street between Asquith Crescent and 64th Road’ (Figure VII-18).  This combination of streets describes two different segments of Alderton Street.
 
@@ -57,7 +57,7 @@ Function 3 rejects such ambiguous input.  Unlike Function 2, which provides a me
 
 </div>
 
-## <u>Function 3 Output Data</u>
+## <span id="chapterVII.4.3"><u>Function 3 Output Data</u></span>
 
 If a two-work-area call to Function 3 is successful, information about both sides of the input stretch is returned in WA2.  (Note that the long WA2 option is available for the MSW Function 3.  [See Section II.5](/chapters/chapterII/section05/).)  Some of the data items apply to both the left and right sides of the segment, e.g. the ‘on’ street name and street code, segment length, ‘From’ node (COW only), ‘To’ node (COW only), etc.  Many of the data items in Function 3’s WA2 (both regular and long) are paired, with one item for the left side of the ‘on’ street and another item of the same type for the right side.  For example, there are fields for left and right ZIP code, for left and right 2010 census tract, and for left and right address ranges (each range consisting of a ‘from’ house number and a ‘to’ house number).  Other examples exist in the COW WA2 for Function 3, e.g. fields for  left and right Elections District (ED), for left and right Assembly District (AD), and for left and right Blockface ID (in COW Function 3 Extended).  As explained in [Chapter VII.3](/chapters/chapterVII/section03/), left and right are determined by the ‘on’ street’s logical direction, and therefore are independent of the order in which the user specifies the input cross streets.
 
@@ -82,7 +82,7 @@ The <u>long WA2 option</u> is available for the MSW Function 3.  The additional 
 [See Section VII.8](/chapters/chapterVII/section08/) Fuzzy Street Name Search Processing for Functions 3, 3C, and 3S
 
 
-## <u>Cross Street Reversal Flag</u>
+## <span id="chapterVII.4.4"><u>Cross Street Reversal Flag</u></span>
 
 A WA2 item returned by Function 3 called the Cross Street Reversal Flag indicates whether the order of the input streets is consistent with, or opposite to, the stretch’s logical direction.  This flag can be used to determine which side of the street is the left side and which side is the right side in relation to the order of the input cross streets, as follows:
 
@@ -93,7 +93,7 @@ A WA2 item returned by Function 3 called the Cross Street Reversal Flag indicate
 For example, consider the segment of Lexington Avenue between East 42nd and East 43rd Streets.  Since the addresses on Lexington Avenue increase from south to north, East 42nd Street is at the ‘from’ end of this segment and East 43rd Street is at the ‘to’ end.  If an application specifies this segment to Function 3 by passing East 42nd Street in the First Cross Street WA1 field and East 43rd Street in the Second Cross Street WA1 field, the Cross Street Reversal Flag will be returned as a blank.  On the other hand, if East 43rd Street is passed in the First Cross Street field and East 42nd Street is passed in the Second Cross Street field, the flag will be returned containing an ‘R’.
 
 
-## <u>Segment Orientation</u>
+## <span id="chapterVII.4.5"><u>Segment Orientation</u></span>
 
 In applications that involve field operations, such as those that generate work orders to dispatch personnel to specific blockfaces, the use of  ‘left’ and ‘right’ as descriptors of the sides of a street can cause confusion for personnel in the field, because their significance is based on the street’s logical direction, which is not necessarily obvious in the field.  Compass directions, on the other hand, are absolute descriptors of the sides of a street; the west side of Lexington Avenue in Manhattan is a specific, invariant side of that street, and is independent of how an observer may be facing.  So in such applications, compass directions may be more suitable as side-of-street descriptors than ‘left’ and ‘right’.
 
@@ -107,13 +107,13 @@ Applications can use the Segment Orientation and the Cross Street Reversal Flag 
 
 See the entry for Segment Orientation in [Appendix 3](/appendices/appendix03/) for further details.
 
-## <u>Consistent Retrieval of Application Data by ‘On’ Street and Two Cross Streets</u>
+## <span id="chapterVII.4.6"><u>Consistent Retrieval of Application Data by ‘On’ Street and Two Cross Streets</u></span>
 
 
 If a street stretch has a delimiting node at which there is more than one cross street, the stretch can be specified in more than one way.  Some applications require the ability to retrieve records for stretches from an application file consistently by geographic location, that is, independently of which cross streets were used to specify a stretch at record creation time and which cross streets are used at retrieval time.  Function 3 provides items that can be used to form a key for such retrieval.  Among the output items that Function 3 returns in WA2 are two lists of street codes (in the form of PB5SCs) for all the cross streets at the two delimiting nodes.  Each list is ordered so that its first entry is always the numerically smallest PB5SC of all the entries in that list.  This arrangement facilitates the formation by the application of a key for consistent geographic retrieval.  The key would consist of a combination of the PB5SC for the ‘on’ street, the first entry in the ‘from’ cross street list, and the first entry in the ‘to’ cross street list.
 
 If the application has a need to display the street names of the cross streets, the Cross Street Names Flag in WA1 can be turned ‘on’ and the names will be returned in the List of Street Names in WA1 (see entries for Cross Street Names Flag and List of Street Names in [Appendix 3](/appendices/appendix03/)).  Note that the cross street names feature incurs processing overhead, and should only be used when necessary.
 
-## <u>Converting Address-Keyed Application Data to ‘On’ Street/Cross Streets</u>
+## <span id="chapterVII.4.7"><u>Converting Address-Keyed Application Data to ‘On’ Street/Cross Streets</u></span>
 
 As mentioned in [Chapter V.5](/chapters/chapterV/section05/), Function 1’s WA2 has two lists of cross streets for the two intersections delimiting the blockface containing the input address.  Like the cross street lists in Function 3’s WA2, Function 1’s lists are arranged so that the numerically smallest PB5SC in each list is that list’s first entry.  (However, unlike Function 3’s lists, either or both of Function 1’s lists can be empty.)  Applications can identify an input address to a street stretch by using Function 1’s cross street lists to create a stretch-type key in the same way as described above for Function 3.  This is useful in some applications that process geographically heterogeneous input data, with some input records, for example, identified by an address and others by an ‘on’ street and two cross streets.  An example of such an application is the New York City Department of Transportation’s Street Light Information and Complaints System, which generates and tracks work orders for street light repair work.  Among the ways in which this application improves the efficiency of those operations is by providing a means to consolidate all transactions involving street lights located on the same street segment into a single work order, regardless of whether the initial identification of the location is by an address or by an ‘on’ street and two cross streets.

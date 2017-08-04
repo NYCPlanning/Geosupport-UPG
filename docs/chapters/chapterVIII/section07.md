@@ -1,4 +1,4 @@
-<h2>VIII.7 JCL for the Compile Step</h2>
+<h2>VIII.7 JCL for the Linkage Editor Step</h2>
 
 In both batch and CICS applications, the Geosupport driver must be link-edited into the user program.  For applications written in NATURAL, this is done automatically with no special user action required.  For non-NATURAL applications, either batch or CICS, users must link-edit their programs as explained below.
 

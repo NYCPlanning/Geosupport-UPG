@@ -2,7 +2,7 @@
 
 The address-processing functions differ significantly with respect to the output data they return.  
 
-## <u>Function 1</u>
+## <span id="chapterV.5.1"><u>Function 1</u></span>
 Function 1, when called using two work areas, performs blockface-level processing.  Almost all of the items that Function 1 returns in WA2 are associated with the entire blockface, and do not vary with the specific input address within that blockface.  Among these items is a set of geographic district identifiers, such as Census Tract and Block, Police Precinct and Community District.  
 
 One piece of information returned by Function 1 that does vary with the specific input address is a pair of <u>spatial coordinates</u>. This identifies the approximate location of the given address on the earth’s surface.  
@@ -45,7 +45,7 @@ The long WA2 option is available for the MSW Functions 1 and 1E.  Since all the 
 
 Functions 1, 1B, and 1E allow a user to receive <u>roadbed-specific information</u> in place of information based upon the generic center line of a multi-roadbed street.  A user requests roadbed-specific information via the ‘Roadbed Request Switch’.  This means that a Function 1, 1B, or 1E call with this switch set will return the roadbed-specific geocodes, assuming that the input street has multiple roadbeds.  Examples of geocodes that would be different include Segment ID, Segment Type Code, X-Y coordinates, LION Key and possibly cross streets and Census Tracts / Blocks.  An additional file has been added to the Geosupport system to handle this data.  Users who prefer non-roadbed-specific information, which assumes a single roadbed for all roads, are not required to make any changes.  
 
-## <u>Function 1E</u>
+## <span id="chapterV.5.2"><u>Function 1E</u></span>  
 Function 1E, when called using two work areas, returns all of the WA2 data items that Function 1 returns.  In addition, Function 1E returns the following political district identifiers in WA2:  Election District, State Assembly and Senate Districts, City Council District, Congressional District and Municipal Court District.  
 
 Function 1E handles cases where a School District boundary splits a blockface in the same manner as Function 1 does.  In addition, Election District boundaries can also split blockfaces, and Function 1E handles those cases similarly.  This includes the special case of the addresses 3333A through 3333E Broadway discussed in [Chapter V.6](/chapters/chapterV/section06/).  
@@ -56,24 +56,24 @@ As indicated above, Function 1E permits roadbed-specific information to be retur
 
 <u> **Note: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch “X”, since the Cross Street Names are in the Extended part of Work Area 2,** </u> although this will not create an error if the field is set to “E”.  However, the Street Names returned in Work Area 1 with the Cross Street Names flag are based on the B5SCs (thus returning the primary street names) and not based on the updated B7SCs which allow the Extended Work Area 2 to return the principal street names.  
 
-## <u>Function 1A</u>
+## <span id="chapterV.5.3"><u>Function 1A</u></span>  
 Function 1A, when called using two work areas, performs property (i.e., tax lot) and building-level processing.  Function 1A returns information in WA2 associated with the specific property and building (if any) containing the input address.  This information includes the property identifiers (tax block and tax lot numbers), and a list of all addresses of all buildings on the property (or as many as will fit in WA2) as well as the Building Identification Numbers (BINs) if any.  Function 1A’s output information is discussed in detail in [Chapter VI.6](/chapters/chapterVI/section06/).  
 
 <u>** Function 1A Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. ** The first 246 bytes of the Extended Work Area 2 for Function 1A, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding the new Function 1A Reason Code, Warning Code, GRC and filler to the work area for Function 1A Extended, the only change is in the address list. **The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.** Note that Mode Switch of ‘X’ is not valid with the Long Work Area 2 Flag set to Y, since the Function 1A Long Work Area 2 primarily returns BINs, not street codes.  
 
-## <u>Function AP (COW Only)</u>
+## <span id="chapterV.5.4"><u>Function AP (COW Only)</u></span>  
 Function AP, when called using two work areas, performs Address Point processing and some property-level and building-level processing.  Function AP returns the Address Point ID and the X,Y spatial coordinates of the Address Point.  In addition, Function AP returns the Borough-Block-Lot of the Address Point and its BIN.   The tax-lot information in WA2 lists only one address in the lot, namely, the input address with the BIN number (if an) of the building at that address.  Function AP’s property output information is very similar to Function 1A’s output.  Function AP and Function 1A’s output information is discussed in detail in [Chapter VI.10](/chapters/chapterVI/section10/) and [Chapter VI.6](/chapters/chapterVI/section06/).  
 
 <u>** Function AP Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. **  The first 246 bytes of the Extended Work Area 2 for Function AP, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding Function AP Reason Code, Warning Code, GRC and filler to the work area 2 for Function AP Extended, the only change is in the address list. **The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.**  
 
-## <u>Function 1B (COW Only)</u>
+## <span id="chapterV.5.5"><u>Function 1B (COW Only)</u></span>  
 Function 1B returns Blockface-level information and political geography, followed by property-level information for a given input.  Work Area 2 consists of the output of a Function 1E call with Mode Switch = “X” followed by the output of a Function 1A call with Mode Switch = “X”. The input requires borough or zip code, address number if needed, and street name or street code. Function 1B processing first retrieves the property-level information (Function 1A Extended- tax lot and building) based on the input. The Function 1A Extended  processing may modify the input address (e.g. a hyphen is inserted into the address number).  In any case, the input address used by Function 1A Extended is then used to retrieve the blockface and political data (Function 1E Extended).  
 
 Function 1B (combined Function 1E Extended and 1A Extended) returns a total of 4300 bytes in Work Area 2. The first 1500 are for the Blockface portion (Function 1E, see description above) of the call. The next 2800 bytes are for the Property Level portion (Function 1A, see description above and [Chapter VI.6](/chapters/chapterVI/section06/)) of the call.  
 
 **A second set of Geosupport Return Code (GRC), Reason Code and Error/Warning Message fields is defined in <u>Work Area 1</u> to be used for Function 1B.** This new set contains the GRC, Reason Code and Error or Warning Message for the Function 1A Extended portion of the Function 1B call. The original GRC, Reason Code and Message fields in Work Area 1 contain the Return Code, Reason Code and Error or Warning Message from the Function 1E Extended portion of the Function 1B call.  It is entirely possible that Geosupport will find one set of information and not find the other.  There can be an error code and message in the new GRC and Message fields indicating property data (Function 1A) has not been found, and a 00 or 01 GRC in the original Return Code field indicating Blockface (Function 1E) information has been found or just the opposite.  
 
-## Work Area 2 for Function 1B
+## <span id="chapterV.5.6">Work Area 2 for Function 1B</span>  
 
 Function 1B returns a total of 4300 bytes in Work Area 2.  The first 1500 are for the Blockface (Function 1E Extended) portion of the call. The next 2800 bytes are for the Property Level (1A Extended) portion of the call.  
 
@@ -88,7 +88,7 @@ A new Return Code and Reason Code field are defined  in Work Area 2 for each of 
 If data has not been found for either the Blockface or Property Level request, Function 1B’s Work Area 2 will be returned to the user with all fields blank aside from the two GRC and Reason Code
 fields mentioned above.
 
-## V.5.1 Mainframe GOAT Screen for Function 1B
+## <span id="chapterV.5.7">V.5.1 Mainframe GOAT Screen for Function 1B</span>  
 
 In order to make room for more information, the Function 1B GOAT screen is formatted somewhat differently from the other GOAT screens.  Since this new screen has many changes we are making an exception and describing it in the UPG.
 

@@ -1,6 +1,6 @@
 <h2 class="pdfAppendix"><center>APPENDIX 19: WORK AREA LAYOUTS (COWs)</center></h2>  
 
-## Character-Only Work Areas  
+## <span id="appendix19.1">Character-Only Work Areas</span>  
 (as of Geosupport System Software Version 9.7.0)  
 
 This appendix contains layouts of all of the work areas used with the Geosupport System’s API. These layouts are current as of the Geosupport software version indicated above. The layouts are in the Character-Only Work Area forma<a href="#appendix19-4" id="appendix19-4-4"><sup>4</sup></a>  
@@ -58,7 +58,7 @@ The following is a list of all of the Geosupport work areas, indicating the leng
 
 [Appendix 3](/appendices/appendix03/) consists of a data item dictionary describing the fields that occur in the work areas.  
 
-## Work Area 1 (COW) - All Functions  
+## <span id="appendix19.2">Work Area 1 (COW) - All Functions </span>
 
 <table class="borderlessTable">
 <tr align="left">
@@ -538,7 +538,7 @@ D<sup>\* </sup> = D, DG, DN
 
 
 
-## Work Area 2 (COW) - Functions 1 and 1E  
+## <span id="appendix19.3">Work Area 2 (COW) - Functions 1 and 1E  </span>
 
 <h6>Blockface Defined by Address Range Along a Street</h6>  
 
@@ -973,7 +973,7 @@ D<sup>\* </sup> = D, DG, DN
 </table>  
 
 
-## Work Area 2 (COW) - Functions 1A, BL and BN  
+## <span id="appendix19.4">Work Area 2 (COW) - Functions 1A, BL and BN </span>
 
 <h6>Property Defined by Address, BBL, or BIN</h6>  
 
@@ -1474,7 +1474,7 @@ D<sup>\* </sup> = D, DG, DN
   <tr>  
 </table>  
 
-## Long Work Area 2 (COW) - Functions 1A and BL  
+## <span id="appendix19.5">Long Work Area 2 (COW) - Functions 1A and BL</span>  
 
 <h6>Property Defined by Address or BBL</h6>  
 
@@ -1517,7 +1517,7 @@ D<sup>\* </sup> = D, DG, DN
 </tr>
 </table>  
 
-## Work Area 2 (COW) - Function 2  
+## <span id="appendix19.6">Work Area 2 (COW) - Function 2 </span>
 <h6>Intersection Defined by Two Intersecting Streets</h6>  
 
 <table class="borderlessTable">
@@ -1833,7 +1833,7 @@ D<sup>\* </sup> = D, DG, DN
 </tr>
 </table>  
 
-## Work Area 2 (COW) - Function 3  
+## <span id="appendix19.7">Work Area 2 (COW) - Function 3</span>  
 <h6>Street Segment Defined by 'ON' Street and Two Cross Streets</h6>  
 
 <table class="borderlessTable">
@@ -2374,7 +2374,7 @@ D<sup>\* </sup> = D, DG, DN
 </table>  
 
 
-## Work Area 2 (COW) - Function 3C  
+## <span id="appendix19.8">Work Area 2 (COW) - Function 3C  </span>
 <h6>Blockface Defined by 'ON' Street, Two Cross Streets and Compass Direction</h6>  
 
 <table class="borderlessTable">
@@ -2751,7 +2751,7 @@ D<sup>\* </sup> = D, DG, DN
 </table>  
 
 
-## Work Area 2 (COW) - Function 3S  
+## <span id="appendix19.9">Work Area 2 (COW) - Function 3S </span>
 <h6>Street Stretch Defined by 'ON' Street and Optionally Two Cross Streets </h6>  
 
 <table class="borderlessTable">

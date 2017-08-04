@@ -6,7 +6,7 @@ The selection of street names for display is a significant consideration for any
 
 The display functions do not have a Work Area 2, and are accessed via one-work-area calls only.  (If a second work area is mistakenly supplied, it is ignored.)  Work Area 1 contains fields for the input street codes and for the output street names.  The street names that the display functions return are full street names (never partial street names), normalized in accordance with the SNL and Street Name Normalization Format Flag values that are in effect for the given call.  
 
-## <u>Input Data</u>  
+## <span id="chapterIV.6.1"><u>Input Data</u>  
 
 For the convenience of applications, each of the display functions can process up to three input street codes in a single call.  If there are multiple input street codes, they are processed independently of each other and are not treated as though they were specifying a geographic location such as an intersection.  (Similarly, if there is both an input street code and an input address number, they are not treated as though they were specifying an address.)  In particular, a successful call to a display function does not imply the validation of the input data as a geographic location.  Furthermore, the output street names returned by the display functions are not by themselves customized to be location-specific.  Function DG must be used in conjunction with a call to another function to obtain a location-customized preferred street name.  
 
@@ -22,7 +22,7 @@ For Function DG and DN, only the fields B10SC-1, B10SC-2 and B10SC-3 are used.  
 
 In a call to any of the display functions, Geosupport will process all three of the input street code fields, even if some of the fields are blank.  If a street code field is blank, Geosupport will simply skip it and process the next field.  For example. if B10SC-1 is blank, but B10SC-2 and B10SC-3 are not blank, they will be processed.  The output street names will appear in the corresponding street names fields, viz. Street Name-2 and Street Name-3.  Similarly, if B10SC-1 is not blank but B10SC-2 is blank, B10SC-3 will still be processed and the output street names will appear in Street Name-1 and Street Name-3.  An error message is generated only if all the input street code fields are blank.  Similar conditions hold for the PB5SC fields.  
 
-## <u>Output Data</u>  
+## <span id="chapterIV.6.2"><u>Output Data</u></span>    
 
 The output street names that the display functions return are as follows:  
 
@@ -34,7 +34,7 @@ The output street names that the display functions return are as follows:
 
 The display functions return one output street name for each valid input street code.  For each input street code that is invalid, the display functions return all question marks (the character ‘?’) in the corresponding output street name field.  In addition, if at least one input street code is invalid, the GRC value ‘64’ is issued along with an appropriate Message.  
 
-## <u>Preferred Street Names</u>  
+## <span id="chapterIV.6.3"><u>Preferred Street Names</u></span>  
 
 As explained above, the primary street name is not necessarily the ‘best’ name to use to express any particular location along a street.  Furthermore, although each principal street name is the ‘best’ representative of its local group of street names, there may be more than one local group valid at a particular location.  
 

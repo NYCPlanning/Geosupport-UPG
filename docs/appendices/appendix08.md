@@ -48,7 +48,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
 <a href="#appendix08-14-14"><sup id="appendix08-14">14</sup></a> <u>Note:</u>  The sample programs have been written in a skeletal fashion to illustrate the use of the Geosupport API as clearly as possible.  Thus, for example, Sample Program #1 assumes, when it gets a ’hit’ for an input address, that WA2 contains at least one cross street at each end of the block face containing the address.  In reality, this is not necessarily the case; in a real application, the program would check for the presence of cross street codes before calling Function D.
 
 
-## <center>COBOL SAMPLE PROGRAM #1</center>
+## <span id="appendix08.1"><center>COBOL SAMPLE PROGRAM #1</center></span>
 
 <center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
 <center class="middle-sub-text"><b>- Input Job Stream - COW</b></center>
@@ -770,7 +770,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
                4 165-1000     BAISLEY BLVD                     *** FUNCTION 1 GRC = 13 REASON CODE = 2
                                                                *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 
-## <center>COBOL SAMPLE PROGRAM \#2</center>
+## <span id="appendix08.2"><center>COBOL SAMPLE PROGRAM \#2</center></span>
 
 <center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
 <center class="middle-sub-text"><b>- Input Job Stream - COW</b></center>
@@ -1465,7 +1465,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
              ***** FUNCTION 2 GRC = 62 REASON CODE =  . READE STREET & DUANE STREET DO NOT INTERSECT
              1 DUANE ST                         1 READE ST
 
-## <center>ASSEMBLER SAMPLE PROGRAM #1</center>
+## <span id="appendix08.3"><center>ASSEMBLER SAMPLE PROGRAM #1</center></span>
 
 <center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
 <center class="middle-sub-text"><b>- Input Job Stream - COW</b></center>
@@ -3081,7 +3081,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
                                                                *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 
 
-## <center>ASSEMBLER SAMPLE PROGRAM #2</center>
+## <span id="appendix08.4"><center>ASSEMBLER SAMPLE PROGRAM #1</center></span>
 
 <center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
@@ -3919,7 +3919,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
                1 DUANE ST                         1 READE ST
 
 
-## <center>PL/1 SAMPLE PROGRAM #1</center>
+## <span id="appendix08.5"><center>PL/1 SAMPLE PROGRAM #1</center></span>
 
 <center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
@@ -4379,7 +4379,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
              4 165-1000     BAISLEY BLVD                     *** FUNCTION 1 GRC = 13 REASON CODE = 2
                                                              *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 
-## <center>PL/1 SAMPLE PROGRAM \#2</center>
+## <span id="appendix08.6"><center>PL/1 SAMPLE PROGRAM #2</center><span>
 
 <center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
@@ -4605,7 +4605,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
                ***** FUNCTION 2 GRC = 62 REASON =  , READE STREET & DUANE STREET DO NOT INTERSECT
                1 DUANE ST                         1 READE ST
 
-## <center>C SAMPLE PROGRAM #1</center>
+## <span id="appendix08.7"><center>C SAMPLE PROGRAM #1</center></span>
 
 <center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
@@ -5092,7 +5092,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
                                                          *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 
 
-## <center>C SAMPLE PROGRAM #2</center>
+## <span id="appendix08.8"><center>C SAMPLE PROGRAM #2</center></span>
 
 <center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
@@ -5572,7 +5572,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
            1 DUANE ST                         1 READE ST
 
 
-## <center>NATURAL SAMPLE PROGRAM \#1</center>
+## <span id="appendix08.9"><center>NATURAL SAMPLE PROGRAM \#1</center></span>
 
 <center><b>‑ Program Source Code - MSW</b></center>
 <center><b>- Program Source Code - COW</b></center>
@@ -6016,7 +6016,7 @@ In detail, the processing performed by Sample Program #1 is as follows:
                  4 165-1000     BAISLEY BLVD                     *** FUNCTION 1 GRC = 13 REASON CODE = 2
                                                                  *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 
-## <center>NATURAL SAMPLE PROGRAM #2</center>
+## <span id="appendix08.10"><center>NATURAL SAMPLE PROGRAM #2</center><span>
 
 <center><b>‑ Program Source Code - MSW</b></center>
 <center><b>- Program Source Code - COW</b></center>

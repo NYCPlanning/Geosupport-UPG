@@ -16,7 +16,7 @@ The distributed filenames are:
 
 You may use different names in your environment.  
 
-## C/C++ HEADER File  
+## <span id="appendix20.1">C/C++ HEADER File</span>  
 
     #ifndef GEOSUPPORT
     char test;    
@@ -454,7 +454,7 @@ You may use different names in your environment.
         #endif
         #endif
 
-## VISUAL BASIC TYPEDEF File  
+## <span id="appendix20.2">VISUAL BASIC TYPEDEF File</span>  
 
     Option Explicit  
 

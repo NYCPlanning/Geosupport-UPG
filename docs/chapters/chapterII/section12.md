@@ -1,4 +1,4 @@
-<h2>II.12 The Auxiliary Segment Option (COW Only)</h2>
+<h2>II.12 TheExtended Work Area 2 Option- via Mode Switch(COW Only)</h2>
 
 To accommodate additional information from Geosupport, an Extended version of Work Area 2 has been defined for various functions.  Users may request the Extended Work Area 2 by setting the Mode Switch in Work Area 1 to ‘X’.  This option is available only for COW Functions.
 

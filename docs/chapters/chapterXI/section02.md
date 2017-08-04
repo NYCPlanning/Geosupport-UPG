@@ -1,6 +1,6 @@
 <h2> XI.2 How to Use GOAT  </h2>
 
-![Goat Logo >](/img/goat_logo.png "GOAT Application Logo")  
+![Goat_Logo >](/img/goat_logo.png "GOAT Application Logo")  
 
 The GOAT icon that is displayed on the right side of this page may appear on your desktop. To invoke GOAT, click on this icon. If the icon is not on your desktop, you may invoke GOAT from the folder in which Geosupport was installed on your system via EXPLORER. The screen displayed on the next page will appear on your desktop.  
 

@@ -2,21 +2,21 @@
 
 In addition to conventional street names, Geosupport recognizes the following other types of geographic names:  the names of ‘paper streets’; the names of some non-street features; addressable and non-addressable place names;  pseudo-street names;  and intersection names.  ‘Recognizing’ a name means that a street code has been assigned to that name and Geosupport accepts the name as valid input.  The various types of unconventional names are discussed below, and there are further details on their processing in subsequent chapters.  
 
-## <u>Paper Streets</u>
+## <span id="chapterIII.6.1"><u>Paper Streets</u></span>
 
 A paper street is a street that is legally ‘mapped’ (designated as a street on the official City Map) but that does not exist physically.  The city ‘maps’ paper streets with the intention of constructing them, but there is no certainty that a particular paper street will be built.  Indeed, some paper streets have been mapped and then eventually de-mapped without ever having been built.
 
 Geosupport recognizes the <u>names</u> of paper streets, but it does not recognize <u>geographic locations</u> (addresses, intersections etc.) along a paper street.  In addition to streets that are paper streets in their entirety, there are some streets that have both portions that exist physically and portions that exist only ‘on paper’; for such a street, Geosupport recognizes geographic locations only within the portion that exists physically.
 
-## <u>Non-Street Features</u>
+## <span id="chapterIII.6.2"><u>Non-Street Features</u></spn>
 
 In the category of non-street features, as of this writing, Geosupport recognizes only the names of some railroad tracks and shorelines.  Eventually, Geosupport will be enhanced to recognize the names of other non-street geographic features in New York City, including all railroad tracks and shorelines.  Non-street features do not have addresses, but names of non-street features that are recognizable to Geosupport can serve as street name input to describe geographic locations other than addresses, such as intersections, street segments and street stretches.
 
-## <u>Addressable Place Names</u>
+## <span id="chapterIII.6.3"><u>Addressable Place Names</u></span>
 
 Addressable place names are the names of ‘places’, generally major individual buildings or building complexes, that can be combined with address numbers to form valid New York City addresses.  Such places are not streets but their names serve the same role as do ordinary street names in forming addresses that Geosupport will recognize.  An example in Manhattan that Geosupport recognizes is PENN PLAZA, a cluster of commercial buildings in the vicinity of Pennsylvania Station.  For example, 1 PENN PLAZA, 2 PENN PLAZA and 7 PENN PLAZA are all valid Manhattan addresses, recognized by the U.S. Postal Service and by Geosupport’s address processing functions.  Other examples of addressable place names recognized by Geosupport are:  in Manhattan, NEW YORK PLAZA, WASHINGTON SQUARE VILLAGE, GOVERNORS ISLAND and CONFUCIUS PLAZA;  in Brooklyn, ALBEE SQUARE, METROTECH and FORT HAMILTON MANOR.   
 
-## <u>Non-Addressable Place Names (NAPs)</u>
+## <span id="chapterIII.6.4"><u>Non-Addressable Place Names (NAPs)</u></span>
 
 Non-Addressable Place names (NAPs) are names of buildings or other geographic features that typically are not combined with an address number to form a valid address.  See discussion of <u>Support of Non-Addressable Place Names (NAPs) with Address Numbers</u> below)   Note that a building that has a NAP may or may not also have a conventional street address;  it is the place <u>name</u> that is non-addressable, not necessarily the place itself.  For example, the EMPIRE STATE BUILDING can be identified both by its name, which is a NAP, and by its conventional street address (i.e. 350 Fifth Avenue).  CITY HALL in Manhattan and YANKEE STADIUM in the Bronx are examples of NAPs referring to buildings that do not have conventional street addresses.
 
@@ -30,7 +30,7 @@ Typical geographic features that have NAPs include named buildings, stadiums, ar
 
 NAPs are accepted as input data by Function 1N and by the address-processing functions (Functions 1, 1A, 1B and 1E, but not Function AP.). <i>Currently, these functions accept a limited set of NAPs (including only some of the examples in this section).  Additional NAPs are being added over time.</i> Support of NAPs that have address numbers is described below.  For further details on NAPs, see [Chapter IV.7](/chapters/chapterIV/section07).
 
-## <u>Support of Non-Addressable Place Names (NAPs) with address numbers</u>
+## <span id="chapterIII.6.5"><u>Support of Non-Addressable Place Names (NAPs) with address numbers</u></span>
 
 <b><u>Warning: </b></u> <b>	Some users may need to modify their input NAP data to get expected results (see below).</b>
 
@@ -41,7 +41,7 @@ In order to support this type of address (i.e. a NAP with an address number), Ge
 <b><i>Note to users who enter a ‘dummy’ address number with a NAP intentionally:
  It may be necessary for these users to modify their input data</b></i>.  These users typically run applications that do not allow the data to have a blank address number, even for a NAP.  The input is submitted with a ‘dummy’ address number.  To ensure that Geosupport returns information about the NAP (and not a specific building that is now being supported), the users should <b><i>use ‘9999’ as the dummy address number</b></i>.  In all probability, the ‘9999’ address will not exist.  When the ‘9999’ address does not exist, Geosupport will ignore the ‘9999’ and treat it as blanks.  Geosupport will then give results as if the NAP was entered without the address number.
 
-## <u>Pseudo-Street Names</u>
+## <span id="chapterIII.6.6"><u>Pseudo-Street Names</u></span>
 
 Pseudo-street names are special ‘invented’ names that in certain circumstances Geosupport accepts as valid input street names, as described in [Chapters V.2](/chapters/chapterV/section02), [VII.2](/chapters/chapterVII/section02) and [VII.3](/chapters/chapterVII/section03).  Three sets of pseudo-street names are:  
 
@@ -53,7 +53,7 @@ Pseudo-street names are special ‘invented’ names that in certain circumstanc
 
 DEAD END and BEND, and their aliases, are valid in all five boroughs.  CITY LIMIT and its aliases are valid in all boroughs except Brooklyn.  These pseudo-street names may not be used to specify addresses, but they may be used to specify street intersections, and to specify the cross streets (but not the ‘on’ street) in other types of street configurations.
 
-## <u>Duplicate Address Pseudo-Street Names (DAPSs):</u>
+## <span id="chapterIII.6.7"><u>Duplicate Address Pseudo-Street Names (DAPSs):</u></span>
 Another type of pseudo-street name that Geosupport recognizes, for certain addresses only, is Duplicate Address Pseudo-Street Names (DAPSs).  DAPSs are used with Geosupport’s duplicate address processing feature (discussed in detail in [Chapter V.6](/chapters/chapterV/section06)).  New York City has a small number of duplicate addresses, which are not data errors in Geosupport files, but are situations where an address is valid in reality at two different locations on the same street.  DAPSs provide a means for a user to specify unambiguously a particular instance of a duplicate address.  The user may also provide ZIP Code input to enable Geosupport to recognize which duplicate street name should be used.
 
 An example of a street that has duplicate addresses is Hillside Avenue in Queens.  A portion of Hillside Avenue in the Bellerose neighborhood has some of the same addresses as does another portion of Hillside Avenue in the Douglaston neighborhood.  To make it possible to process these addresses, the DAPSs HILLSIDE AVENUE BELLEROSE and HILLSIDE AVENUE DOUGLASTON have been created.  Similar DAPSs have been created for each city street that has duplicate addresses.  In general, DAPSs are formed by augmenting the conventional name of the street with a neighborhood name.  
@@ -64,7 +64,7 @@ Geosupport accepts DAPSs as valid input only for certain addresses on streets th
 
 If a DAPS is supplied as input to a Function 2, 3, 3C or 3S call, the associated neighborhood name (a.k.a. town name in Queens) will be stripped off to provide a valid street name for these calls.  A warning message (Reason Code W) will be issued.  For example, if the input to a Function 2 call is “Hillside Avenue Douglaston”, the word “Douglaston” will be removed and the street name “Hillside Avenue” will be used.
 
-## <u>Intersection Names</u>
+## <span id="chapterIII.6.8"><u>Intersection Names</u></span>
 
 Certain street intersections in New York City have intersection names which can serve as an alternative way to identify such locations in addition to the conventional means of reference using the names of two intersecting streets.  For example, ISAAC STERN PLACE is an intersection name for the intersection of West 57 Street and 7 Avenue in Manhattan.  On the other hand, TIMES SQUARE is not an intersection name, because it refers to an area encompassing several intersections rather than a single street intersection.  Official intersection names are designated by the City Council, and informal intersection names develop over time through local customary usage.
 

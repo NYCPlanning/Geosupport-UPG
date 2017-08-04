@@ -1,11 +1,11 @@
 <h2>IX.8  The Output Files of Rejected Records (DDNAME=ERRFILx)</h2>
 
-## IX.8.1  ERRFILE
+## <span id="chapterIX.8.1">IX.8.1  ERRFILE</span>  
 This mandatory output file contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
 
 Each ERRFILE record consists of four bytes, followed by an exact copy of the input data record.  The four bytes consist of the two-byte GRC, followed by a one-byte filler containing a ‘-‘(dash character) for display readability, followed by the one-byte Reason Code.  The LRECL of ERRFILE must always be four greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFILE correctly in the JCL.
 
-## IX.8.2  ERRFIL2 <span class="subSection_header">(for use by Function 1B only)</span>
+## IX.8.2  ERRFIL2 <span class="subSection_header" id="chapterIX.8.2">(for use by Function 1B only)</span>
 ERRFIL2 is mandatory with RECTYPE=1B.  It contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
 
 The contents of each ERRFIL2 record is as follows:  The first 4 bytes contain the 2-byte GRC, followed by a dash, followed by the Reason Code for the Block Face level (Function 1E Extended) information. This is followed by 6 bytes of filler. Byte 11 contains the 2-byte GRC, followed by a dash, followed by the Reason Code for the Property level (Function 1A Extended) information. This is followed by 6 bytes of filler. The input record begins in byte 21. The LRECL of ERRFIL2 must always be 20 greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFIL2 correctly in the JCL.
@@ -22,7 +22,7 @@ If the input record has been rejected for both Block and Property level informat
 Note:  If you are not using Function 1B, you do not have to add ERRFIL2 to your GBAT JCL.  The file is not opened.  No changes have to be made.  However, if you are using GBAT for a Function 1B call, GBAT will abend if you do not add a DD card for ERRFIL2 to your JCL.
 
 
-## IX.8.3  ERRFIL3 <span class="subSection_header">(for use by Function 2 with RELATEDNODES=YES)</span>
+## IX.8.3  ERRFIL3 <span class="subSection_header" id="chapterIX.8.3">(for use by Function 2 with RELATEDNODES=YES)</span>
 ERRFIL3 is mandatory with RECTYPE=2 and RELATEDNODES=YES.  It contains a record for each  input data record that is rejected with GRC 03 and Reason Code B (‘many-node case’).
 
 When the requested streets intersect more than twice (GRC 03), if the user has set RELATEDNODES to YES s/he will get a special error file, ERRFIL3, with a logical record length of 3352 + length of the user’s input.  The ERRFIL3 record will include for each of the many nodes, the Node ID and the streets (as B7SCs) at the nodes.  Therefore, to process streets that intersect more than twice, the GBAT user need only add the RELATEDNODES=YES option to get the information needed.  S/He does not have to run a Function 2W GBAT run.

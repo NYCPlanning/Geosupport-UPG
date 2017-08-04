@@ -10,12 +10,12 @@ In theory, an administrative address range encompasses all of the actual address
 
 An administrative address range may also encompass nonexistent addresses, either between the low and high actual addresses of the blockface or beyond them.  For example, consider the blockface on the east side of East 28 Street between Avenues I and J in Brooklyn.  The administrative address range allocated to this blockface is 901-999.  Function 1 would accept any odd address between 901 and 999 on E 28 Street in Brooklyn as input, whether or not that input address is a valid address of an existing building.  In reality, the lowest and highest actual house numbers of existing buildings on this blockface (as of the writing of this document) are 901 and 985, and within this range there are gaps in actual addresses.  For example, there are buildings on East 28 Street with the house numbers 925 and 929, but there is not currently a building with the house number 927, nor are there buildings with any of the odd house numbers from 987 through 999.  Nevertheless, all of these house numbers will result in successful Function 1 calls, since they all fall within the administrative address range.  
 
-## <u>Function 1E</u>
+## <span id="chapterV.4.1"><u>Function 1E</u></span>
 With the exception of a rare case discussed below, Functions 1 and 1E accept the same addresses and reject the same addresses, and the validation significance of acceptance and rejection is the same for both functions.  
 
 The exceptional case is that of an address that is split among more than one Election District (ED).  As of this writing, there is only one instance of this case, 3333 Broadway in Manhattan;  it is split among three EDs.  Therefore, for this address, Function 1E is unable to determine an ED (or any of the higher-level political districts).  Since the primary purpose of Function 1E is to provide the political geography for an address, Function 1E rejects this address with a GRC value of ‘56’.  However, portions of this building in specific EDs can be identified using house number suffixes, ‘A’ through ‘E’:  3333A through 3333C Broadway are in ED 94 of Assembly District (AD) 70; 3333D Broadway is in ED 82 of AD 70; and 3333E Broadway is in ED 83 of AD 70.  Function 1E accepts these addresses as input, and returns the political districts specific to the input.  Functions 1 and 1A accept both the un-suffixed and suffixed addresses.  
 
-## <u>Function 1A</u>
+## <span id="chapterV.4.2"><u>Function 1A</u></span>
 Function 1A accepts an input address if and only if the address falls within one of the following two cases:  
 
 * <u>Valid actual address</u>. If the input address is a valid address of an existing building on a property, there is a normal completion (Geosupport Return Code = ‘00’).  
@@ -24,14 +24,14 @@ Function 1A accepts an input address if and only if the address falls within one
 
 If the input address is neither a valid address of an existing building nor a pseudo-address, Function 1A  <u>rejects</u> that input address.  This is true even if the input address falls within an administrative address range allocated to a blockface and is therefore accepted by Functions 1 and 1E.  Thus, Function 1A’s criterion for accepting an input address is typically more stringent than those of Functions 1 and 1E, and the validation significance of acceptance differs accordingly.  
 
-## <u>Function AP</u>
+## <span id="chapterV.4.3"><u>Function AP</u></span>
 Function AP accepts an input address if and only if the address falls within the following  case:  
 
 * <u>Valid actual address.</u> If the input address is a valid address of an existing building on a property, there is a <u>normal completion </u>(Geosupport Return Code = ‘00’).  
 
 Function AP’s criterion is very similar to Function 1A’s.  If the input address is not a valid address of an existing building, Function AP <u>rejects</u> that input address.  This is true even if the input address falls within an administrative address range allocated to a blockface and is therefore accepted by Functions 1 and 1E.  Thus, Function AP’s criterion for accepting an input address is typically more stringent than those of Functions 1 and 1E, and the validation significance of acceptance differs accordingly.  
 
-## <u>Function 1B Input Address Processing and Return Code Processing</u>  
+## <span id="chapterV.4.4"><u>Function 1B Input Address Processing and Return Code Processing</u></span>
 
 Function 1B makes an internal combined call to Extended Function 1A and Extended Function 1E (see descriptions of 1E and 1A above).  Extended Functions 1A and 1E return more information than the regular Functions 1A and 1E.  This is described in [Chapter V.5](/chapters/chapterV/section05/)  (Output Data Returned) below.  
 

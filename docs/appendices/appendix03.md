@@ -46,6 +46,8 @@ BF = Blank-Filled
 <b>2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
 <b>2010 CENSUS TRACT</b> - See CENSUS TRACT.  
 
+## A
+
 <table class="rightTableAlignment borderlessTable">
     <tr>
         <th colspan="2">ALLEY/CROSS STREETS FLAG (ALX)</th>
@@ -133,7 +135,7 @@ BF = Blank-Filled
     </tr>
     <tr>
         <td>Description:</td>
-        <td>This flag indicates either that the input address is in Marble Hill or Rikers Island and the alternative (rather than the legal) borough was specified (see <a href="/chapters/chapterV/section07/">Chapter V.7</a>), or that the input address is on Ruby Street in Brooklyn but it was specified using the alternative (Queens) street name 75 Street (see <a href="/chapters/chapterV/section08/">Chapter V.8).</td>
+        <td>This flag indicates either that the input address is in Marble Hill or Rikers Island and the alternative (rather than the legal) borough was specified (see <a href="../../chapters/chapterV/section07/">Chapter V.7</a>), or that the input address is on Ruby Street in Brooklyn but it was specified using the alternative (Queens) street name 75 Street (see <a href="../../chapters/chapterV/section08/">Chapter V.8).</td>
     </tr>
     <tr>
         <td></td>
@@ -259,6 +261,7 @@ BF = Blank-Filled
     </tr>
 </table>
 
+## B  
 
 <table class="rightTableAlignment borderlessTable">
     <tr>
@@ -336,8 +339,8 @@ BF = Blank-Filled
     </tr>
     <tr>
         <td>Description:</td>
-        <td>The first 6 bytes of the standard BBL consists of the 1-byte borough code followed by the 5-byte tax block field, which contains the tax block value right-justified and zero-filled.  The last 4 bytes of the standard BBL is the standard tax lot field, which contains the tax lot value right-justified and zero-filled.   See <a href="/chapters/chapterVI/section08/">Chapter VI.8</a>.
-The BBL (‘borough-block-and-lot’) identifies a parcel of real property in New York City, called a tax lot.  The BBL is composed of the concatenation of the Borough Code, Tax Block and Tax Lot.  If the property is a condominium (indicated by the Condominium Flag), the WA2 BBL field contains the billing BBL of the condominium (see <a href="/chapters/chapterVI/section04/">Chapter VI.4</a>).</td>
+        <td>The first 6 bytes of the standard BBL consists of the 1-byte borough code followed by the 5-byte tax block field, which contains the tax block value right-justified and zero-filled.  The last 4 bytes of the standard BBL is the standard tax lot field, which contains the tax lot value right-justified and zero-filled.   See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>.
+The BBL (‘borough-block-and-lot’) identifies a parcel of real property in New York City, called a tax lot.  The BBL is composed of the concatenation of the Borough Code, Tax Block and Tax Lot.  If the property is a condominium (indicated by the Condominium Flag), the WA2 BBL field contains the billing BBL of the condominium (see <a href="../../chapters/chapterVI/section04/">Chapter VI.4</a>).</td>
     </tr>
 </table>
 
@@ -735,7 +738,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
                     <td>Only Functions 1, 1A, 1B. 1E, 2, 3, and 3C.  (Not 1N, BB, BF)</td>
                 </tr>
             </table>
-            See <a href="/chapters/chapterIII/section07/">Chapter III.7</a> for use of Browse Flag with Functions BB and BF. <br> See <a href="/chapters/chapterIII/section08/">Chapter III.8 </a> for use of Browse Flag with Functions 1, 1A, 1B, 1E, 1N, 2, 3, 3C.
+            See <a href="../../chapters/chapterIII/section07/">Chapter III.7</a> for use of Browse Flag with Functions BB and BF. <br> See <a href="../../chapters/chapterIII/section08/">Chapter III.8 </a> for use of Browse Flag with Functions 1, 1A, 1B, 1E, 1N, 2, 3, 3C.
         </td>
     </tr>
 </table>
@@ -787,6 +790,8 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
 <b>CD</b> - See COMMUNITY DISTRICT or COMMUNITY DEVELOPMENT…
 
 <b>CD ELIGIBILITY FLAG</b> - See INTERIM ASSISTANCE ELIGIBILITY INDICATOR  
+
+## C
 
 <table class="rightTableAlignment borderlessTable">
     <tr>
@@ -1096,9 +1101,9 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
     </tr>
     <tr>
         <td>Description:</td>
-        <td>In the case of Function 2, the compass direction identifies, for a pair of input streets that intersect at two distinct locations, which of those two intersections is to be processed. (See <a href="/chapters/chapterVII/section02/">Chapter VII.2</a>)
+        <td>In the case of Function 2, the compass direction identifies, for a pair of input streets that intersect at two distinct locations, which of those two intersections is to be processed. (See <a href="../../chapters/chapterVII/section02/">Chapter VII.2</a>)
  	      In the case of Function 3C, the compass direction identifies which side of the street is to be processed.  (See Section VII.5)
- 	      In the case of Function 3S, if the ‘on’ street intersects the first cross street at two distinct locations, the compass direction identifies which of those two intersections is to be processed.  (See <a href="/chapters/chapterVII/section06/">Chapter VII.6</a>)
+ 	      In the case of Function 3S, if the ‘on’ street intersects the first cross street at two distinct locations, the compass direction identifies which of those two intersections is to be processed.  (See <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a>)
         </td>
     </tr>
 </table>
@@ -1145,7 +1150,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
     </tr>
     <tr>
         <td>Description:</td>
-        <td>If the ‘on’ street intersects the second cross street at two distinct locations, this compass direction identifies which of those two intersections is to be processed. (See <a href="/chapters/chapterVII/section06/">Chapter VII.6</a>) </td>
+        <td>If the ‘on’ street intersects the second cross street at two distinct locations, this compass direction identifies which of those two intersections is to be processed. (See <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a>) </td>
     </tr>
 </table>
 
@@ -1544,6 +1549,8 @@ See LIST OF CROSS STREET CODES (Function 3S)
     </tr>
 </table>
 
+## D  
+
 <table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2">DCP PREFERRED LGC</th>
@@ -1806,8 +1813,8 @@ See LIST OF CROSS STREET CODES (Function 3S)
 
 <b>DYNAMIC BOCK </b> - See ATOMIC POLYGON
 
-<table class="rightTableAlignment borderlessTable">
-
+## E
+<table class="rightTableAlignment borderlessTable">s
   <tr>
       <th colspan="2" id="appendix03-election-district">ELECTION DISTRICT (ED)</th>
   </tr>
@@ -1836,8 +1843,9 @@ See LIST OF CROSS STREET CODES (Function 3S)
 <b>EXPANDED FORMAT FLAG</b> - See CROSS STREET NAMES FLAG
 <b>EXTENDED MODE SWITCH</b> - See MODE SWTICH
 
-<table class="rightTableAlignment borderlessTable">
+## F
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2" id="appendix03-face-code">FACE CODE</th>
   </tr>
@@ -2121,8 +2129,9 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## G
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2" id="appendix03-gap-flag">GAP FLAG</th>
   </tr>
@@ -2284,7 +2293,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td></td>
-      <td>For more information on the types of ‘gaps’ that can be returned by Function 3S, see <a href="/chapters/chapterVII/section06/">Chapter VII.6</td>
+      <td>For more information on the types of ‘gaps’ that can be returned by Function 3S, see <a href="../../chapters/chapterVII/section06/">Chapter VII.6</td>
   </tr>
 </table>
 
@@ -2358,8 +2367,9 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## H
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2" id="appendix03-health-area">HEALTH AREA</th>
   </tr>
@@ -2472,11 +2482,11 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td>Length and Format:</td>
-      <td>See <a href="/chapters/chapterV/section02/">Chapter V.2</a>.</td>
+      <td>See <a href="../../chapters/chapterV/section02/">Chapter V.2</a>.</td>
   </tr>
   <tr>
       <td>Description:</td>
-      <td>If the field name indicates the house number is normalized, for MSW it is in HNI format, and for COW it is in HNS format; otherwise, it is in HND format (see <a href="/chapters/chapterV/section02/">Chapter V.2</a>).</td>
+      <td>If the field name indicates the house number is normalized, for MSW it is in HNI format, and for COW it is in HNS format; otherwise, it is in HND format (see <a href="../../chapters/chapterV/section02/">Chapter V.2</a>).</td>
   </tr>
 </table>
 
@@ -2544,7 +2554,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
 
   <tr>
       <td>Description:</td>
-      <td>Indicates the length requested for the HOUSE NUMBERS IN DISPLAY format (HNDs) in the output area.  Valid values are between 12 and 16.  If the field is left blank, the default is 12.  For more information, see <a href="/chapters/chapterV/section02/">Chapter V.2</a>.</td>
+      <td>Indicates the length requested for the HOUSE NUMBERS IN DISPLAY format (HNDs) in the output area.  Valid values are between 12 and 16.  If the field is left blank, the default is 12.  For more information, see <a href="../../chapters/chapterV/section02/">Chapter V.2</a>.</td>
   </tr>
 </table>
 
@@ -2601,6 +2611,8 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>Additional information may be found at http://www1.nyc.gov/site/em/ready/hurricane-evacuation.page</td>
   </tr>
 </table>
+
+## I  
 
 <b>INSTRUCTIONAL DIVISION</b> - See INSTRUCTIONAL REGION
 
@@ -2761,8 +2773,9 @@ See LIST OF CROSS STREET CODES (Function 3S)
 
 <b>JOINT INTEREST AREA (JIA)</b> - See COMMUNITY DISTRICT
 
-<table class="rightTableAlignment borderlessTable">
+## L
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2" id="appendix03-latitude-longitude"><b>LATITUDE, LONGITUDE</b></th>
   </tr>
@@ -2885,7 +2898,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td>Description:</td>
-      <td>List of the BUILDING IDENTIFICATION NUMBER  (BIN) of each building on the tax lot.  See <a href="/chapters/chapterVI/section06/">Chapter VI.6</a>.</td>
+      <td>List of the BUILDING IDENTIFICATION NUMBER  (BIN) of each building on the tax lot.  See <a href="../../chapters/chapterVI/section06/">Chapter VI.6</a>.</td>
   </tr>
 </table>
 
@@ -2908,7 +2921,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td>Description:</td>
-      <td>List of the BUILDING IDENTIFICATION NUMBER  (BIN) of each building on the tax lot.  See <a href="/chapters/chapterVI/section06/">Chapter VI.6</a>.</td>
+      <td>List of the BUILDING IDENTIFICATION NUMBER  (BIN) of each building on the tax lot.  See <a href="../../chapters/chapterVI/section06/">Chapter VI.6</a>.</td>
   </tr>
 </table>
 
@@ -3062,7 +3075,7 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
   <tr>
     <td>B</td>
     <td>NAUB</td>
-    <td>A Non-Addressable Un-named Building (NAUB) (see <a href="/chapters/chapterVI/section03/">Chapter VI.3</a>).  The Low and High House Number and Side of Street Indicator fields are blank.  The B5SC and DCP-Preferred LGC fields usually contain the street code and LGC, correspondingly, of the street nearest to or most accessible to the NAUB, but they may be blank.  The BIN field contains a meaningful value.  Note:  If the NAUB has frontages on more than one street, there are multiple type B entries to represent all of the NAUB’s street frontages.</td>
+    <td>A Non-Addressable Un-named Building (NAUB) (see <a href="../../chapters/chapterVI/section03/">Chapter VI.3</a>).  The Low and High House Number and Side of Street Indicator fields are blank.  The B5SC and DCP-Preferred LGC fields usually contain the street code and LGC, correspondingly, of the street nearest to or most accessible to the NAUB, but they may be blank.  The BIN field contains a meaningful value.  Note:  If the NAUB has frontages on more than one street, there are multiple type B entries to represent all of the NAUB’s street frontages.</td>
   </tr>
   <tr>
     <td>F</td>
@@ -3072,12 +3085,12 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
   <tr>
     <td>G</td>
     <td>NAP of a <br> Complex</td>
-    <td>A Non-Addressable Place name (NAP) of a complex of buildings and/or other geographic features, usually on a large site or superblock (see <a href="/chapters/chapterIII/section06/">Chapter III.6</a>).  The house number and BIN fields are empty.  The B5SC, DCP-Preferred LGC, and Side of Street Indicator fields contain the values of these items assigned to the NAP.</td>
+    <td>A Non-Addressable Place name (NAP) of a complex of buildings and/or other geographic features, usually on a large site or superblock (see <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>).  The house number and BIN fields are empty.  The B5SC, DCP-Preferred LGC, and Side of Street Indicator fields contain the values of these items assigned to the NAP.</td>
   </tr>
   <tr>
     <td>N</td>
     <td>NAP of a</td>
-    <td>A NAP of a building or other geographic feature that is not part of Simplex		a complex (see <a href="/chapters/chapterIII/section06/">Chapter III.6</a>).  The house number fields are empty.  The B5SC, DCP-Preferred LGC, and Side of Street Indicator fields contain the values of these items assigned to the given NAP.  The BIN field is non-empty only if the NAP represents a building.</td>
+    <td>A NAP of a building or other geographic feature that is not part of Simplex		a complex (see <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>).  The house number fields are empty.  The B5SC, DCP-Preferred LGC, and Side of Street Indicator fields contain the values of these items assigned to the given NAP.  The BIN field is non-empty only if the NAP represents a building.</td>
   </tr>
   <tr>
     <td>Q</td>
@@ -3087,12 +3100,12 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
   <tr>
     <td>R</td>
     <td>Real Street of a <br> Vanity Address</td>
-    <td>Entry indicates the street and the side of that street on which the building entrance having a vanity address is really located and for which no other address for that building exists.  For a discussion of vanity addresses, see <a href="/chapters/chapterV/section09/">Chapter V.9</a>.  In a type R entry, the Low and High House Number fields are empty, and there are non-empty values in the B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  Whenever the LGI contains a type R entry, it also contains a type V entry for the associated vanity address</td>
+    <td>Entry indicates the street and the side of that street on which the building entrance having a vanity address is really located and for which no other address for that building exists.  For a discussion of vanity addresses, see <a href="../../chapters/chapterV/section09/">Chapter V.9</a>.  In a type R entry, the Low and High House Number fields are empty, and there are non-empty values in the B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  Whenever the LGI contains a type R entry, it also contains a type V entry for the associated vanity address</td>
   </tr>
   <tr>
     <td>V</td>
     <td>Vanity Address</td>
-    <td>A vanity address or address range.  For a detailed discussion of vanity addresses, see <a href="/chapters/chapterV/section09/">Chapter V.9</a>.  There are non-empty values in the Low House Number, High House Number, B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  A single address is represented as an address range in which the low and high house numbers are identical. Whenever the LGI contains a type V entry, it also contains an either an address range entry or a type R entry that indicates the street on which the associated building entrance is really located.</td>
+    <td>A vanity address or address range.  For a detailed discussion of vanity addresses, see <a href="../../chapters/chapterV/section09/">Chapter V.9</a>.  There are non-empty values in the Low House Number, High House Number, B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  A single address is represented as an address range in which the low and high house numbers are identical. Whenever the LGI contains a type V entry, it also contains an either an address range entry or a type R entry that indicates the street on which the associated building entrance is really located.</td>
   </tr>
   <tr>
     <td>W</td>
@@ -3216,7 +3229,7 @@ The combination of fields in an LGI entry that contain information depends on th
 
 (\**) The BIN field is non-empty only if the NAP represents a building.
 
-The LGI’s entries are ordered so that entries with non-empty BINs are listed first, grouped by BIN.  Except for a special case (alternative borough for Marble Hill and Rikers Island - see <a href="/chapters/chapterV/section07/">Chapter V.7</a>), if the input address is a real address, the first group of entries in the LGI are those for the BIN corresponding to the input address, and (except for alternative street records for Ruby Street - see <a href="/chapters/chapterV/section08/">Chapter V.8</a>) the address range encompassing the input address is the very first entry in the LGI.  After all the entries with non-empty BINs are listed, any entries with empty BINs, such as entries for pseudo-address ranges, are listed in no particular order as space allows.  If the input address is a pseudo-address range, it may or may not appear in the LGI, depending on space and on the order in which the non-BIN entries happen to be listed.
+The LGI’s entries are ordered so that entries with non-empty BINs are listed first, grouped by BIN.  Except for a special case (alternative borough for Marble Hill and Rikers Island - see <a href="../../chapters/chapterV/section07/">Chapter V.7</a>), if the input address is a real address, the first group of entries in the LGI are those for the BIN corresponding to the input address, and (except for alternative street records for Ruby Street - see <a href="../../chapters/chapterV/section08/">Chapter V.8</a>) the address range encompassing the input address is the very first entry in the LGI.  After all the entries with non-empty BINs are listed, any entries with empty BINs, such as entries for pseudo-address ranges, are listed in no particular order as space allows.  If the input address is a pseudo-address range, it may or may not appear in the LGI, depending on space and on the order in which the non-BIN entries happen to be listed.
 
 <b>LIST OF GEOGRAPHIC IDENTIFIERS OVERFLOW FLAG</b> - See LGI OVERFLOW FLAG
 
@@ -3264,7 +3277,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
   <tr>
     <td>Description:</td>
-    <td>This list is generated only if Auxiliary Segment Switch is set to ‘Y’.  See <a href="/chapters/chapterVII/section04/">Chapter VII.4</a> and <a href="/appendices/appendix13/"> Appendix13</a>.</td>
+    <td>This list is generated only if Auxiliary Segment Switch is set to ‘Y’.  See <a href="../../chapters/chapterVII/section04/">Chapter VII.4</a> and <a href="../appendix13/"> Appendix13</a>.</td>
   </tr>
 </table>
 
@@ -3314,15 +3327,15 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
   <tr>
     <td></td>
-    <td>The <u>similar names feature</u> uses the List of Street Names to return up to ten street names deemed ‘similar’ to a rejected input street name (see <a href="/chapters/chapterIII/section05/">Chapter III.5</a>).</td>
+    <td>The <u>similar names feature</u> uses the List of Street Names to return up to ten street names deemed ‘similar’ to a rejected input street name (see <a href="../../chapters/chapterIII/section05/">Chapter III.5</a>).</td>
   </tr>
   <tr>
     <td></td>
-    <td>The <u>browse functions</u>, Functions BB and BF, use the List of Street Names to return up to ten normalized street names in alphabetical order as part of a street name browse (see <a href="/chapters/chapterIII/section07/">Chapter III.7</a>).</td>
+    <td>The <u>browse functions</u>, Functions BB and BF, use the List of Street Names to return up to ten normalized street names in alphabetical order as part of a street name browse (see <a href="../../chapters/chapterIII/section07/">Chapter III.7</a>).</td>
   </tr>
   <tr>
     <td></td>
-    <td>The <u>local street name validation feature</u> uses the List of Street Names to return up to four locally valid alias street names corresponding to a street name rejected as locally invalid (see <a href="/chapters/chapterVI/section05/">Chapter IV.5</a>). </td>
+    <td>The <u>local street name validation feature</u> uses the List of Street Names to return up to four locally valid alias street names corresponding to a street name rejected as locally invalid (see <a href="../../chapters/chapterVI/section05/">Chapter IV.5</a>). </td>
   </tr>
   <tr>
     <td></td>
@@ -3412,8 +3425,9 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
 
 <b>MARBLE HILL/RIKERS ISLAND FLAG</b>  - See ALTERNATIVE BOROUGH FLAG
 
-<table class="rightTableAlignment borderlessTable">
+## M  
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2"><b>MODE SWITCH</b></th>
   </tr>
@@ -3431,7 +3445,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
   <tr>
     <td>Description:</td>
-    <td>Indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](/appendices/appendix13/) for the Work Area layouts.  Also, see <a href="/chapters/chapterII/section07/">Chapter II.7</a>. </td>
+    <td>Indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](/appendices/appendix13/) for the Work Area layouts.  Also, see <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. </td>
   </tr>
   <tr>
       <td></td>
@@ -3456,8 +3470,9 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## N  
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2"><b>NEIGHBORHOOD TABULATION AREA (NTA) CODE</b></th>
   </tr>
@@ -3642,7 +3657,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>Description:</td>
     <td>Indicates the number of non-empty entries in the corresponding LIST OF CROSS STREETS.</td>
   </tr>
-</tables>
+</table>
 
 <b>NUMBER OF CROSS STREETS AT HIGH ADDRESS END</b> - See NUMBER OF CROSS STREETS
 
@@ -3786,7 +3801,6 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
 </table>
 
 <table class="rightTableAlignment borderlessTable">
-
   <tr>
       <th colspan="2"><b>NUMBER OF TOTAL LANES</b></th>
   </tr>
@@ -3809,7 +3823,6 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
 </table>
 
 <table class="rightTableAlignment borderlessTable">
-
   <tr>
       <th colspan="2" id="appendix03-numberof-travel-lanes"><b>NUMBER OF TRAVEL LANES</b></th>
   </tr>
@@ -3829,14 +3842,15 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>Description:</td>
     <td>The number of lanes in a carriageway (roadway) that are designated for the movement of vehicles traveling from one destination to another.  The number of travel lanes were determined by DoITT’s consultants working on the planimetric feature classes for NYC.</td>
   </tr>
-</tables>
+</table>  
+
+## P
 
 <b>PARKING LANES</b> - See NUMBER OF PARKING LANES
 
 <b>PLATFORM INDICATOR</b> - See WORK AREA FORMAT INDICATOR  
 
 <table class="rightTableAlignment borderlessTable">
-
   <tr>
       <th colspan="2"><b>POLICE PATROL BOROUGH</b></th>
   </tr>
@@ -3995,10 +4009,11 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
     <td>Description:</td>
     <td>Police Patrol Borough Commands are sub-divided into Police Precincts which are defined by the Police Department</td>
   </tr>
-</table>
+</table>  
+
+## R  
 
 <table class="rightTableAlignment borderlessTable">
-
   <tr>
       <th colspan="2"><b>REAL STREET ONLY FLAG</b> </th>
   </tr>
@@ -4070,7 +4085,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
   </tr>
   <tr>
     <td>Description:</td>
-    <td>Indicates request for Roadbed information for roads that are divided into two or more roadbeds.  If Roadbed information is requested for a street that is not divided, Geosupport returns the generic information.  For functions 1 and 1E, the Segment Type Code will indicate the type of information that is being returned.  For more information on function 3S see <a href="/chapters/chapterVII/section06/">Chapter VII.6</a>.</td>
+    <td>Indicates request for Roadbed information for roads that are divided into two or more roadbeds.  If Roadbed information is requested for a street that is not divided, Geosupport returns the generic information.  For functions 1 and 1E, the Segment Type Code will indicate the type of information that is being returned.  For more information on function 3S see <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a>.</td>
   </tr>
   <tr>
     <td></td>
@@ -4168,8 +4183,9 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## S
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2"><b>SANBORN VOLUME AND PAGE</b> </th>
   </tr>
@@ -4741,7 +4757,7 @@ each 7 bytes RJZF.</td>
   </tr>
   <tr>
       <td></td>
-      <td>The spatial coordinates returned by Functions 1/1E/1B (blockface information) for NAPs and Vanity Addresses (see <a href="/chapters/chapterV/section09/">Chapter V.9</a>) were an estimate calculated by Geosupport. As of Version 11.2, Geosupport will use the <b>Citywide Street Centerline file (CSCL)</b> X-Y Coordinates. The CSCL information guarantees that the X-Y coordinates fall within the actual location of the NAP or Vanity Address.</td>
+      <td>The spatial coordinates returned by Functions 1/1E/1B (blockface information) for NAPs and Vanity Addresses (see <a href="../../chapters/chapterV/section09/">Chapter V.9</a>) were an estimate calculated by Geosupport. As of Version 11.2, Geosupport will use the <b>Citywide Street Centerline file (CSCL)</b> X-Y Coordinates. The CSCL information guarantees that the X-Y coordinates fall within the actual location of the NAP or Vanity Address.</td>
   </tr>
   <tr>
       <td></td>
@@ -4834,11 +4850,11 @@ each 7 bytes RJZF.</td>
                     </tr>
                     <tr>
                         <td>‘C’</td>
-                        <td>The input address pertains to Ruby Street, a street along the Brooklyn-Queens border that has a unique addressing situation.  See <a href="/chapters/chapterV/section08/">ChapterV.8</a>.</td>
+                        <td>The input address pertains to Ruby Street, a street along the Brooklyn-Queens border that has a unique addressing situation.  See <a href="../../chapters/chapterV/section08/">ChapterV.8</a>.</td>
                     </tr>
                     <tr>
                         <td>‘D’</td>
-                        <td>The input address involves a duplicate address situation.  See <a href="/chapters/chapterV/section06/">Chapter V.6</a>.</td>
+                        <td>The input address involves a duplicate address situation.  See <a href="../../chapters/chapterV/section06/">Chapter V.6</a>.</td>
                     </tr>
                     <tr>
                         <td>‘E’</td>
@@ -4846,19 +4862,19 @@ each 7 bytes RJZF.</td>
                     </tr>
                     <tr>
                         <td>‘G’</td>
-                        <td>The input name or street code corresponds to a non-addressable place name of a complex.  A complex is a geographic feature that contains constituent entities that are separately geographically identifiable.  Typical examples of complexes include airports, housing projects and university and hospital campuses.  See <a href="/chapters/chapterIII/section06/">Chapter III.6</a>.</td>
+                        <td>The input name or street code corresponds to a non-addressable place name of a complex.  A complex is a geographic feature that contains constituent entities that are separately geographically identifiable.  Typical examples of complexes include airports, housing projects and university and hospital campuses.  See <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>.</td>
                     </tr>
                     <tr>
                         <td>‘N’</td>
-                        <td>The input name or street code corresponds to a non-addressable place name of a ‘stand-alone’ geographic feature (a geographic feature that is neither a complex nor a constituent entity of a complex). Typical examples are individual named buildings, such as Empire State Building, Shea Stadium, Carnegie Hall.  See <a href="/chapters/chapterIII/section06/">Chapter III.6</a>.</td>
+                        <td>The input name or street code corresponds to a non-addressable place name of a ‘stand-alone’ geographic feature (a geographic feature that is neither a complex nor a constituent entity of a complex). Typical examples are individual named buildings, such as Empire State Building, Shea Stadium, Carnegie Hall.  See <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>.</td>
                     </tr>
                     <tr>
                         <td>‘O’</td>
-                        <td>The blockface contains out-of-sequence and/or opposite-parity addresses.  An out-of-sequence address contains a house number that is out of sequence with those of the immediately adjacent buildings.  An opposite-parity address contains a house number that is of the opposite parity to the predominant parity on the blockface.  See <a href="/chapters/chapterV/section10/">Chapter V.10</a>.</td>
+                        <td>The blockface contains out-of-sequence and/or opposite-parity addresses.  An out-of-sequence address contains a house number that is out of sequence with those of the immediately adjacent buildings.  An opposite-parity address contains a house number that is of the opposite parity to the predominant parity on the blockface.  See <a href="../../chapters/chapterV/section10/">Chapter V.10</a>.</td>
                     </tr>
                     <tr>
                         <td>‘P’</td>
-                        <td>The input address contains an addressable place name.  Example: 2 Penn Plaza.  See <a href="/chapters/chapterIII/section06/">Chapter III.6</a>.</td>
+                        <td>The input address contains an addressable place name.  Example: 2 Penn Plaza.  See <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>.</td>
                     </tr>
                     <tr>
                         <td>‘S’</td>
@@ -4866,11 +4882,11 @@ each 7 bytes RJZF.</td>
                     </tr>
                     <tr>
                         <td>‘V’</td>
-                        <td>The input address is a ‘vanity address’, that is, an address in which the street name refers to a different street than the one on which the referenced building entrance is actually located.  See <a href="/chapters/chapterV/section09/">Chapter V.9</a>.</td>
+                        <td>The input address is a ‘vanity address’, that is, an address in which the street name refers to a different street than the one on which the referenced building entrance is actually located.  See <a href="../../chapters/chapterV/section09/">Chapter V.9</a>.</td>
                     </tr>
                     <tr>
                         <td>‘X’</td>
-                        <td>The input data specify a non-addressable place name of a constituent entity of a complex. Examples: AVERY FISHER HALL and NEW YORK STATE THEATER are names of constituent entities of the complex LINCOLN CENTER.  See <a href="/chapters/chapterIII/section06/">Chapter III.6</a></td>
+                        <td>The input data specify a non-addressable place name of a constituent entity of a complex. Examples: AVERY FISHER HALL and NEW YORK STATE THEATER are names of constituent entities of the complex LINCOLN CENTER.  See <a href="../../chapters/chapterIII/section06/">Chapter III.6</a></td>
                     </tr>
                 </table>
             </td>
@@ -5032,7 +5048,6 @@ each 7 bytes RJZF.</td>
                   <td>‘S’</td>
                   <td>Front-Truncated Street Name</td>
               </tr>
-
               <tr>
                   <td>‘T’</td>
                   <td>Tunnel</td>
@@ -5153,8 +5168,9 @@ If the width is consistent along the street segment then both values are identic
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## T  
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2"><b>TAX BLOCK</b></th>
   </tr>
@@ -5172,7 +5188,7 @@ If the width is consistent along the street segment then both values are identic
   </tr>
   <tr>
       <td>Description:</td>
-      <td>See <a href="/chapters/chapterVI/section02/">Chapter VI.2</a>.</td>
+      <td>See <a href="../../chapters/chapterVI/section02/">Chapter VI.2</a>.</td>
   </tr>
 </table>
 
@@ -5195,7 +5211,7 @@ If the width is consistent along the street segment then both values are identic
   </tr>
   <tr>
       <td>Description:</td>
-      <td>See <a href="/chapters/chapterVI/section02/">Chapter VI.2</a>.</td>
+      <td>See <a href="../../chapters/chapterVI/section02/">Chapter VI.2</a>.</td>
   </tr>
 </table>
 
@@ -5299,10 +5315,11 @@ If the width is consistent along the street segment then both values are identic
 
 <b>TRAVEL LANES</b> - See NUMBER OF TRAVEL LANES
 
+## U
+
 <b>UNDERLYING B7SC OF TRUE STREET</b> - See B7SC OF “TRUE” STREET
 
 <table class="rightTableAlignment borderlessTable">
-
   <tr>
       <th colspan="2"><b>UNIT INFORMATION FIELDS</b></th>
   </tr>
@@ -5320,11 +5337,11 @@ If the width is consistent along the street segment then both values are identic
   </tr>
   <tr>
       <td>Length and Format:</td>
-      <td>See <a href="/chapters/chapterV/section15/">Chapter V.15</a>  Unit Information Feature</td>
+      <td>See <a href="../../chapters/chapterV/section15/">Chapter V.15</a>  Unit Information Feature</td>
   </tr>
   <tr>
       <td>Description:</td>
-      <td>See <a href="/chapters/chapterV/section15/">Chapter V.15</a>  Unit Information Feature</td>
+      <td>See <a href="../../chapters/chapterV/section15/">Chapter V.15</a>  Unit Information Feature</td>
   </tr>
 </table>
 
@@ -5360,8 +5377,9 @@ If the width is consistent along the street segment then both values are identic
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## V
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2"><b>VACANT LOT FLAG</b></th>
   </tr>
@@ -5394,8 +5412,9 @@ If the width is consistent along the street segment then both values are identic
   </tr>
 </table>
 
-<table class="rightTableAlignment borderlessTable">
+## W  
 
+<table class="rightTableAlignment borderlessTable">
   <tr>
       <th colspan="2"><b>WORK AREA FORMAT INDICATOR</b></th>
   </tr>
@@ -5435,6 +5454,8 @@ If the width is consistent along the street segment then both values are identic
       </td>
   </tr>
 </table>
+
+## X
 
 <b>XY COORDINATES</b> - see SPATIAL COORDINATES
 

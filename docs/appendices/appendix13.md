@@ -236,7 +236,7 @@ The following is a list of all of the Geosupport COW work areas, indicating the 
 </ol>  
 
 
-## Character-Only Work Area 1 (COW) – All Functions  
+## <span id="appendix13.1">Character-Only Work Area 1 (COW) – All Functions  </span>
 
 <table>
     <tr>
@@ -899,7 +899,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 
 
 
-## Work Area 2 (COW) - Functions 1, 1E
+## <span id="appendix13.2">Work Area 2 (COW) - Functions 1, 1E</span>
 
 <h3>Block Face Defined by Address Range Along a Street</h3>
 <table>
@@ -2070,7 +2070,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 </table>
 
 
-## Work Area 2 (COW) - Functions 1, 1E Extended  
+## <span id="appendix13.3"> Work Area 2 (COW) - Functions 1, 1E Extended  </span>
 
 <h3>Block Face Defined by Address Range Along a Street</h3>  
 
@@ -3425,7 +3425,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 </table>
 
 
-## Work Area 2 (COW) - Functions 1A, BL, BN
+## <span id="appendix13.4">Work Area 2 (COW) - Functions 1A, BL, BN</span>
 
 <h3>Property Level Information Defined by Address, BBL or BIN</h3>  
 
@@ -4706,7 +4706,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 </table>
 
 
-## Long Work Area 2 (COW) - Functions 1A, BL  
+## <span id="appendix13.5">Long Work Area 2 (COW) - Functions 1A, BL  </span>
 <b>Property Level Information (BIN Number) Defined by Address, BBL</b>
 
 <table>
@@ -4758,7 +4758,7 @@ Typically, any function listed with an asterisk also includes the various forms 
   </tr>
 </table>  
 
-## TPAD Long Work Area 2 (COW) - Functions 1A, BL
+## <span id="appendix13.6">TPAD Long Work Area 2 (COW) - Functions 1A, BL</span>
 <b>Property Level Information Defined by Address/BBL</b>  
 
 <table>
@@ -4824,7 +4824,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 </table>
 
 
-## Work Area 2 (COW) - Functions 1A, BL, BN Extended
+## <span id="appendix13.7">Work Area 2 (COW) - Functions 1A, BL, BN Extended</span>
 
 <b>Property Level Information Defined by Address, BBL or BIN</b>  
 
@@ -4996,7 +4996,7 @@ Typically, any function listed with an asterisk also includes the various forms 
   </tr>
 </table>  
 
-## Work Area 2 (COW) - Function 1B
+## <span id="appendix13.8">Work Area 2 (COW) - Function 1B</span>
 
 <b>Block Face Information Defined by Address Range Along a Street & <br>
 Property Level Information Defined by Address</b>  
@@ -6743,7 +6743,7 @@ Blank – Normal</td>
 </table>
 
 
-## Work Area 2 (COW) - Function AP
+## <span id="appendix13.9">Work Area 2 (COW) - Function AP</span>
 
 <b>Address Point Information Defined by Address</b>
 
@@ -7169,7 +7169,7 @@ Blank – Normal</td>
   </tr>
 </table>  
 
-## Work Area 2 (COW) - Function AP Extended
+## <span id="appendix13.10">Work Area 2 (COW) - Function AP Extended</span>
 
 <b>Address Point Information Defined by Address</b>  
 
@@ -7327,7 +7327,7 @@ Blank – Normal</td>
   </tr>
 </table>
 
-## Work Area 2 (COW) - Function 2
+## <span id="appendix13.11">Work Area 2 (COW) - Function 2</span>
 
 <b>Intersection Defined by Two Intersecting Streets</b>   
 
@@ -7737,7 +7737,7 @@ Blank – Normal</td>
 </table>
 
 
-## Work Area 2 (COW) - Function 2W (Wide)
+## <span id="appendix13.12">Work Area 2 (COW) - Function 2W (Wide)</span>
 
 <b>Intersection Defined by Two Intersecting Streets</b>  
 
@@ -7920,7 +7920,7 @@ Each situation has up to 20 nodes
 </table>
 
 
-## Work Area 2 (COW) - Function 3
+## <span id="appendix13.13">Work Area 2 (COW) - Function 3</span>
 
 <b>Street Segment Defined By 'On' and Two Cross Streets</b>
 
@@ -9203,7 +9203,7 @@ Each situation has up to 20 nodes
 </table>
 
 
-## Work Area 2 (COW) - Function 3 with Auxiliary Segment List
+## <span id="appendix13.14">Work Area 2 (COW) - Function 3 with Auxiliary Segment List</span>
 <b>Street Segment Defined By 'On' and Two Cross Streets   (List of Segment IDs)</b>
 
 <table>
@@ -9300,7 +9300,7 @@ Each situation has up to 20 nodes
 </table>
 
 
-## Work Area 2 (COW) - Function 3 Extended
+## <span id="appendix13.15">Work Area 2 (COW) - Function 3 Extended</span>
 <b>Street Segment Defined By 'On' and Two Cross Streets</b>
 
 <table>
@@ -9884,7 +9884,7 @@ Each situation has up to 20 nodes
 </tbody>
 </table>
 
-## Work Area 2 (COW) - Function 3 Extended with Auxiliary Segment List
+## <span id="appendix13.16">Work Area 2 (COW) - Function 3 Extended with Auxiliary Segment List</span>
 
 <b>Street Segment Defined by 'On' and Two Cross Streets</b>
 
@@ -9930,7 +9930,7 @@ Each situation has up to 20 nodes
 </table>   
 
 
-## Work Area 2 (COW) - Function 3C
+## <span id="appendix13.17">Work Area 2 (COW) - Function 3C</span>
 <b>Block Face Defined by 'On' and Two Cross Streets and Compass Direction</b>
 
 
@@ -10655,7 +10655,7 @@ Each situation has up to 20 nodes
 </table>
 
 
-## Work Area 2 (COW) - Function 3C with Auxiliary Segment List
+## <span id="appendix13.18">Work Area 2 (COW) - Function 3C with Auxiliary Segment List</span>
 
 <b>Block Face Defined by 'On' and Two Cross Streets and Compass Direction</b>  
 
@@ -10702,7 +10702,7 @@ Each situation has up to 20 nodes
 </table>  
 
 
-##Work Area 2 (COW) - Function 3C Extended
+## <span id="appendix13.19">Work Area 2 (COW) - Function 3C Extended </span>
 
 <b>Block Face Defined by 'On' Street, Two Cross Streets and Compass Direction</b>
 
@@ -11001,7 +11001,7 @@ Each situation has up to 20 nodes
 </table>
 
 
-## Work Area 2 (COW) - Function 3C Extended with Auxiliary Segment List
+## <span id="appendix13.20">Work Area 2 (COW) - Function 3C Extended with Auxiliary Segment List</span>
 
 <b>Street Segment Defined By 'On' Street and Two Cross Streets</b>
 
@@ -11048,7 +11048,7 @@ Each situation has up to 20 nodes
 
 
 
-## Work Area 2 (COW) - Function 3S
+## <span id="appendix13.21">Work Area 2 (COW) - Function 3S</span>
 
 <b>Street Stretch Defined by 'On' Street and Optionally Two Cross Streets</b>  
 

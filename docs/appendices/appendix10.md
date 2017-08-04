@@ -12,7 +12,7 @@ Please note that the GBAT samples are not guaranteed to run exactly as shown in 
 Note: The GBAT samples are MSW format samples.  To run using the COW format, add the GBAT control entry WORKAREA=COW to the in-stream control files and update the LRECL of the OUTFILE DD card appropriately.
 
 
-## SAMPLE GBAT JOB #1  
+## <span id="appendix10.1">SAMPLE GBAT JOB #1  </span>
 
 <h4>SAMPLE GBAT JOB 1:  DESCRIPTION </h4>  
 
@@ -371,7 +371,7 @@ The user has chosen not to code the following control entries, the default value
                 42-         2     709 E 165 ST  
 
 
-## SAMPLE GBAT JOB #2
+## <span id="appendix10.2">SAMPLE GBAT JOB #2 </span>
 <h4> SAMPLE GBAT JOB 2:  DESCRIPTION </h4>  
 
 The control file for Sample GBAT Job 2 is as follows:  

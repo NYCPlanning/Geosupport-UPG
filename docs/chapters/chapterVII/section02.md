@@ -5,7 +5,7 @@ Note that any references to Function 2 apply to Function 2W as well, unless spec
 Function 2 is the Geosupport function that processes street intersections.  Function 2 can process not only conventional street intersections, but also node IDs (COW only), intersection names and ‘pseudo-intersections’, that is, intersections of a conventional street with a pseudo-street ([see Chapter III.6](/chapters/chapterIII/section06/)).  There are three types of pseudo-intersections:  dead ends, points at which a street intersects with the city limits, and bending points of streets.  A point is considered a bending point if the angle of the street at that point is not within the range 160-200 degrees (i.e., not within 20 degrees of a straight line).  
 
 
-## <u>Nodes</u>
+## <span id="chapterVII.2.1"><u>Nodes</u></span>
 
 We use the term <u>node</u> generically to refer to all types of intersections, both conventional and pseudo.  Each node is assigned a unique node ID.  Nodes, defined via street names and street codes, can serve not only as Function 2 input, but also as the delimiting endpoints of street stretches for input to the functions that process three-street configurations.  Node IDs can serve as input only to a COW Function 2 or Function 2W call.    
 
@@ -64,7 +64,7 @@ Given any pair of New York City streets (or a street and a pseudo-street), there
 Function 2 can process a pair of input streets in the <u>unique-node case</u> and in the <u>two-node case</u>, but a node ID is required as input in the <u>many-node case (supported only in COW)</u>.  If the user does not know the node ID, Function 2W may be used to assist the user in determining the appropriate node ID.   For a description of this process, see the <u>Overview of Function 2 Node Enhancements</u> and the discussion of the many-node case in <u>Specifying Function 2 Input Data</u> below.  Note that aside from dead ends, bends, subway lines, highways, etc., the many-node case is rare.  There are numerous streets that have more than two dead ends, and there are numerous streets that have more than two bends.
 
 
-## <u>The Two-Node Case</u>  
+## <span id="chapterVII.2.2"><u>The Two-Node Case</u></span>
 
 
 
@@ -109,7 +109,7 @@ The two-node case occurs with greater frequency than might be expected.  Some ty
 <br>
  <div class="topMargin pdfPageBreakBefore">  
 
-##  <center><u>Overview of Function 2 Node Enhancements</u></center>
+##  <span id="chapterVII.2.3"><center><u>Overview of Function 2 Node Enhancements</u></center></span>
 
 Node ID (Node Number) as Input  
 Processing the ‘Many-Node’ Case  

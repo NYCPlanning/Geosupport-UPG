@@ -18,7 +18,7 @@ For functions that involve multiple input streets, the input streets specified i
 
 Local street name validation ([see Chapter IV.5](/chapters/chapterIV/section05/)) is not performed when the street input is in the form of five-digit street codes, but it is performed with seven-digit and ten-digit street code input.  
 
-## <u>Functions 1, 1A, 1B, 1E, and AP and Street Code Input</u>  
+## <span id="chapterIV.8.1"><u>Functions 1, 1A, 1B, 1E, and AP and Street Code Input</u></span>  
 
 When a user supplies a borough and 5-digit street code as input to Functions 1, 1A, 1B and AP, Geosupport returns the DCP-preferred street name and its corresponding B10SC.  For Function 1E, Geosupport returns the BOE-preferred street name and its corresponding B10SC.  Primary street names are not returned, because primary street names do not always apply to the entire street stretch, and may produce an error when used as input for a subsequent call for that location.  Preferred street names are also often the more widely used name and therefore a better choice.  
 
@@ -26,6 +26,6 @@ The street names returned by Functions 1, 1A, 1B, AP  and Function 1E are usuall
 
 The technique of returning the preferred street name instead of the primary street name helps to insure that if the street name is used as input to Geosupport with the address number, it will be a successful call.  
 
-## <u>NAPs and Street Code Input</u>  
+## <span id="chapterIV.8.2"><u>NAPs and Street Code Input</u></span>  
 
 With respect to a NAP of a simplex, as with conventional street input, the user has the option to specify the input datum either in the form of the name (in this case, the NAP) or its B5SC.  However, <u>five-digit street code input is prohibited for a NAP of a complex or a constituent entity of a complex</u>  (it is rejected with a GRC value of ‘07’); instead, 7-digit or 10-digit street code input (B7SC or B10SC) is accepted.  The reason for this restriction is that different entities of the same complex may be located within different blockfaces, tax lots, census blocks, administrative or political districts etc., so that the B5SC may not be specific enough to enable Geosupport to determine the proper set of output data to return.

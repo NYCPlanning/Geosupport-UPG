@@ -12,7 +12,7 @@ The methodology that is used to assign street codes to the Non-addressable Place
 
 For the reader’s convenience, two reference tables summarizing street codes are below.  Table IV-1 is a summary of the various street code items used by Geosupport, conventional abbreviations for them, and their lengths in bytes.  The abbreviations listed in Table IV-1 are used throughout the remainder of the UPG.  In these abbreviations, ‘B’ represents the standard Geosupport one-byte Borough Code, as described in [Appendix 3](/appendices/appendix03/), and ‘P’ means that the item is packed.  (Note: Packed applies to MSW only.)  Table IV-2 is a summary of the three main types of street code items, indicating the display function that accepts each as input, and what street name that display function returns as output.  Table IV-2 is written to describe the assignment of street codes to street names, but it applies analogously as well to the NAPs of a complex and its constituent entities.  
 
-## <p class = "section_header underlineMe center">Table IV-1: Notation for Street Code Items</p>  
+## <span id="chapterIV.9.1"><p class = "section_header underlineMe center">Table IV-1: Notation for Street Code Items</p></span>   
 
 |<u>Item Abbreviation</u>|  <u>Item Name</u> | <u>Length (Bytes)</u> |
 | :----- | :----- | :-----: |   
@@ -31,7 +31,7 @@ For the reader’s convenience, two reference tables summarizing street codes ar
 B5SC + LGC = B7SC  
 B5SC + LGC + SNC = B7SC + SNC = B10SC  
 
-## <p class = "section_header underlineMe center">Table IV-2: Summary of Street Code Items</p>  
+## <span id="chapterIV.9.2"><p class = "section_header underlineMe center">Table IV-2: Summary of Street Code Items</p></span>    
 
 
 | Type of  Street Code | Geography  Represented | Corresponding Street Name(s) | Applicable Display Function and Its Output Datum |

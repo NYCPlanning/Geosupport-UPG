@@ -1,6 +1,6 @@
 <h2 class="pdfAppendix"><center>APPENDIX 1: GEOSUPPORT FUNCTIONS - QUICK REFERENCE</center></h2>
 
-## Introduction
+## <span id="appendix01.1"> Introduction </span>
 
 This appendix contains a summary description of each Geosupport function.  The entry for each function includes the following elements:
 
@@ -118,7 +118,7 @@ The generic street input field names, ‘Street-1’, ‘Street-2’ and ‘Stre
 
 
 
-## Function 1
+## <span id="appendix01.2"> Function 1 </span>
 
 <u><b>Description:</b></u>  Function 1 processes an input address or input Non-Addressable Place name (NAP) (see [Chapter III.6](/chapters/chapterIII/section06/)).  When called using two work areas, Function 1 returns information about the blockface containing the input address or NAP.  This information includes the cross streets at the two intersections delimiting the blockface, and a set of geographic district identifiers including ZIP code, census tract and community district.  MSW Function 1 can be called with the long WA2 option.  COW Function 1 may be called with the Extended Mode Switch.      
 
@@ -145,12 +145,12 @@ See [Chapter V](/chapters/chapterV/chapterV/) for a detailed discussion of Funct
 <tr>
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format <br>Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a>.</td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a>.</td>
 </tr>
 <tr>
 <td>Mode Switch</td>
 <td>‘X’ = Extended Mode Work Area 2 <br> Blank = normal mode</td>
-<td>Optional; COW Only.  See <a href="/chapters/chapterII/section07/">Chapter II.7</a>.</td>
+<td>Optional; COW Only.  See <a href="../../chapters/chapterII/section07/">Chapter II.7</a>.</td>
 </tr>
 <tr>
 <td>Borough Code-1 (or ZIP Code)</td>
@@ -160,12 +160,12 @@ See [Chapter V](/chapters/chapterV/chapterV/) for a detailed discussion of Funct
 <tr>
 <td>House Number</td>
 <td></td>
-<td>Required for address input except free-form addresses (see <a href="/chapters/chapterV/section03/">Chapter V.3</a>).  Typically not used for NAP input (see <a href="/chapters/chapterIII/section06/"> Chapter III.6</a>).</td>
+<td>Required for address input except free-form addresses (see <a href="../../chapters/chapterV/section03/">Chapter V.3</a>).  Typically not used for NAP input (see <a href="../../chapters/chapterIII/section06/"> Chapter III.6</a>).</td>
 </tr>
 <tr>
 <td>Long WA2 Flag (MSW Only)</td>
 <td>‘L’ = Long WA2, <br> Blank = regular WA2</td>
-<td>Optional; default (blank) is regular WA2.  See <a href="/chapters/chapterII/section05/">Chapter II.5</a>.</td>
+<td>Optional; default (blank) is regular WA2.  See <a href="../chapters/chapterII/section05/">Chapter II.5</a>.</td>
 </tr>
 <tr>
 <td>Street-1</td>
@@ -175,12 +175,12 @@ See [Chapter V](/chapters/chapterV/chapterV/) for a detailed discussion of Funct
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2<a/>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2<a/>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, <br> Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>Cross Street Names Flag</td>
@@ -190,7 +190,7 @@ See [Chapter V](/chapters/chapterV/chapterV/) for a detailed discussion of Funct
 <tr>
 <td>ZIP Code</td>
 <td></td>
-<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="/chapters/chapterIII/section06/"> Chapter III.6</a> and <a href="/chapters/chapterV/section06/">Chapter V.6</a>.</td>
+<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="../../chapters/chapterIII/section06/"> Chapter III.6</a> and <a href="../../chapters/chapterV/section06/">Chapter V.6</a>.</td>
 </tr>
 <tr>
 <td>Roadbed Request Switch</td>
@@ -204,7 +204,7 @@ See [Chapter V](/chapters/chapterV/chapterV/) for a detailed discussion of Funct
 ‘R’= DCP preferred street name / code
 Blank = input street name / code</td>
 <td>Optional; may be used to  select output street name / code.
-Default (blank) requests use of input street name / code.  See <a href="/chapters/chapterIII/section08/"> Chapter III.8</a></td>
+Default (blank) requests use of input street name / code.  See <a href="../../chapters/chapterIII/section08/"> Chapter III.8</a></td>
 </tr>
 </table>
 
@@ -219,11 +219,11 @@ Default (blank) requests use of input street name / code.  See <a href="/chapter
 | 29 | Intersection name cannot be used as ‘on’ Street. |
 | 41 | The input street name is valid but this entire street has no addresses |
 | 42 | The input address does not fall within a valid range of addresses for a blockface of the input street. |
-| 50 | The input street name is not valid for the portion of the street where the input house number is located.  See <a href="/chapters/chapterIV/section05/">Chapter IV.5</a>. |
-| 75 | The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user data error, but an address that is duplicated on this street in reality.)  See <a href="/chapters/chapterV/section06/"> Chapter V.6</a>. |
+| 50 | The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>. |
+| 75 | The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user data error, but an address that is duplicated on this street in reality.)  See <a href="../../chapters/chapterV/section06/"> Chapter V.6</a>. |
 | 89 | Long workarea2 option is invalid for COW format for function 1.  It is only valid for MSW for this function |  
 
-## Function 1A  
+## <span id="appendix01.3">Function 1A</span>
 
 <u><b>Description:</b></u>  Function 1A processes an input address or input NAP.  When successfully called using two work areas, it returns information in WA2 about the tax lot and the building (if any) identified by the input address or NAP.  See [Chapter VI](/chapters/chapterVI/chapterVI/) and particularly [Chapters VI.6](/chapters/chapterVI/section06/).
 
@@ -255,12 +255,12 @@ The regular and extended WA2s for Function 1A is identical to that for Function 
 <tr>
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format <br> Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a>.</td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a>.</td>
 </tr>
 <tr>
 <td>Mode Switch</td>
 <td>‘X’ = Extended Mode Work Area 2 <br> Blank = normal mode</td>
-<td>Optional; COW Only.  See <a href="/chapters/chapterII/section07/">Chapter II.7</a>. </td>
+<td>Optional; COW Only.  See <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. </td>
 </tr>
 <tr>
 <td>Borough Code-1 (or ZIP Code)</td>
@@ -270,7 +270,7 @@ The regular and extended WA2s for Function 1A is identical to that for Function 
 <tr>
 <td>House Number</td>
 <td></td>
-<td>Required for address input except free-form addresses (see <a href="/chapters/chapterV/section03/"> Chapter V.3</a>).  Typically not used for NAP input (see <a href="/chapters/chapterIII/section06/">Chapter III.6</a>).</td>
+<td>Required for address input except free-form addresses (see <a href="../../chapters/chapterV/section03/"> Chapter V.3</a>).  Typically not used for NAP input (see <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>).</td>
 </tr>
 <tr>
 <td>Street-1</td>
@@ -280,42 +280,42 @@ The regular and extended WA2s for Function 1A is identical to that for Function 
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2</a>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, <br> Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/"> Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/"> Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>ZIP Code</td>
 <td></td>
-<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="/chapters/chapterIII/section06/"> Chapter III.6</a> and <a href="/chapters/chapterV/section06/"> Chapter V.6</a>.</td>
+<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="../../chapters/chapterIII/section06/"> Chapter III.6</a> and <a href="../../chapters/chapterV/section06/"> Chapter V.6</a>.</td>
 </tr>
 <tr>
 <td>Browse Flag (COW Only)</td>
 <td>‘P’ = primary street name / code <br> ‘F’ = principal street name / code <br>‘R’ = DCP preferred street name <br> Blank = input street name / code</td>
-<td>Optional; may be used to select output street name / code. Default (blank) requests use of input street name / code.  <a href="/chapters/chapterIII/section08/">Chapter III.8</a></td>
+<td>Optional; may be used to select output street name / code. Default (blank) requests use of input street name / code.  <a href="../../chapters/chapterIII/section08/">Chapter III.8</a></td>
 </tr>
 <tr>
 <td>Long WA2 Flag</td>
 <td>‘L’ = Long WA2, <br> Blank = regular WA2</td>
-<td>Optional; default (blank) is regular WA2.  See <a href="/chapters/chapterII/section05/">Chapters II.5</a> and <a href="/chapters/chapterVI/section06/">VI.6</a>.</td>
+<td>Optional; default (blank) is regular WA2.  See <a href="../../chapters/chapterII/section05/">Chapters II.5</a> and <a href="../../chapters/chapterVI/section06/">VI.6</a>.</td>
 </tr>
 <tr>
 <td>TPAD Request Switch (COW Only)</td>
 <td>‘Y’ = TPAD information  requested <br> Blank or ‘N’ = TPAD not requested</td>
-<td>Optional; may be used to request Transitional PAD information. <br> See <a href="/chapters/chapterVI/section11/"> Chapter VI.11</a></td>
+<td>Optional; may be used to request Transitional PAD information. <br> See <a href="../../chapters/chapterVI/section11/"> Chapter VI.11</a></td>
 </tr>
 <tr>
 <td>1A/BL Version Switch</td>
 <td>‘S’ = standard version(MSW or COW) <br> Blank = standard version; (COW Only)</td>
-<td>‘S’ is required for MSW; Optional for COW. See <a href="/chapters/chapterVI/section08/">Chapter VI.8</a>.</td>
+<td>‘S’ is required for MSW; Optional for COW. See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>.</td>
 </tr>
 <tr>
 <td>1A/BL Version Switch</td>
 <td>‘S’ = standard version, <br> Blank = standard version; valid only for COW</td>
-<td>Required for MSW; Optional for COW. See <a href="/chapters/chapterVI/section08/">Chapter VI.8</a>.</td>
+<td>Required for MSW; Optional for COW. See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>.</td>
 </tr>
 </table>
 
@@ -325,18 +325,18 @@ The regular and extended WA2s for Function 1A is identical to that for Function 
 | :------------- | :------------- |
 | 01/8       | (Warning) Input address is a pseudo-address.       |
 | 01/A | (Warning) Function 1A has been called with the regular WA2, but the tax lot identified by the input address or NAP has the List of Geographic Identifiers (LGI) overflow condition, and therefore the LGI in WA2 is incomplete.  If a complete list of BINs for the tax lot is required, Function 1A may be called with the long WA2 option for the same input data to retrieve the BINs of all buildings on the tax lot. |
-| 01/* | (Warning) [related to TPAD]See <a href="/chapters/chapterVI/section11/">Chapter VI.11</a>.Various messages are returned with this reason code.  The Conflict flag is set to correspond to the specific warning message |
-| 04 | An invalid value has been specified for the 1A/BL Version Switch.  Must be ‘S’ for standard.  See <a href="/chapters/chapterVI/section08/">Chapter VI.8</a>. |
+| 01/* | (Warning) [related to TPAD]See <a href="../../chapters/chapterVI/section11/">Chapter VI.11</a>.Various messages are returned with this reason code.  The Conflict flag is set to correspond to the specific warning message |
+| 04 | An invalid value has been specified for the 1A/BL Version Switch.  Must be ‘S’ for standard.  See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>. |
 | 07 | The input street was specified as a B5SC (or PB5SC) representing a NAP that is the name of a complex.  Five-digit street code input is not permitted for the name of a complex.  Either the NAP itself (the name of the complex) must be specified in the input street name field, or its B7SC or B10SC must be specified in the appropriate input street code field. |
 | 41 | The input street name is valid but this entire street has no addresses. |
-| 42 | The input address is not valid (as defined in <a href="/chapters/chapterV/section04/">Chapter V.4</a>). |
-| 50 | The input street name is not valid for the portion of the street where the input house number is located.  See <a href="/chapters/chapterIV/section05/">Chapter IV.5</a>. |
+| 42 | The input address is not valid (as defined in <a href="../../chapters/chapterV/section04/">Chapter V.4</a>). |
+| 50 | The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>. |
 | 69/B | Invalid TPAD Request Switch. Must be Y, N or blank |
 | 73 | Legacy version of Function 1A is discontinued.  See Technical Bulletin 05-1. |
-| 75 | The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user input data error, but an address duplication that exists in reality.)  See <a href="/chapters/chapterV/section06/">Chapter V.6</a>. |
+| 75 | The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user input data error, but an address duplication that exists in reality.)  See <a href="../../chapters/chapterV/section06/">Chapter V.6</a>. |
 | 90 | Invalid value specified for Long WA2 Flag – must be ‘L’ or blank |
 
-## Function 1E
+## <span id="appendix01.4"> Function 1E </span>
 
 <u><b>Description:</b></u>  Function 1E processes an input address or input NAP.  When called using two work areas, it returns the same WA2 information that is returned by Function 1, and additionally, it returns a set of political districts, including Election, State Assembly and Senate, City Council and Congressional Districts.  The layouts of WA2 for Functions 1 and 1E are identical, except for the political district fields, which are fillers in Function 1’s WA2.  
 
@@ -347,7 +347,7 @@ The regular and extended WA2s for Function 1A is identical to that for Function 
 <td>Browse Flag (COW Only)</td>
 <td>‘P’ = primary street name / code <br> ‘F’ = principal street name / code <br> ‘R’ = BOE preferred street name / code <br> Blank = input street name / code</td>
 <td>
-Optional; may be used to select output street name / code.<br> Default (blank) requests use of input street name / code. See <a href="/chapters/chapterIII/section08/">Chapter III.8</a>
+Optional; may be used to select output street name / code.<br> Default (blank) requests use of input street name / code. See <a href="../../chapters/chapterIII/section08/">Chapter III.8</a>
 </td>
 </tr>
 </table>
@@ -356,7 +356,7 @@ Browse Flag	‘P’ = primary street name / code	Optional; may be used to
 (COW Only)	‘F’ = principal street name / code	select output street name / code.
 	‘R’ = BOE preferred street name 	Default (blank) requests use of
 		   / code	input street name / code.  See
- 	Blank = input street name / code	<a href="/chapters/chapterIII/section08/">Chapter III.8</a>
+ 	Blank = input street name / code	<a href="../../chapters/chapterIII/section08/">Chapter III.8</a>
 
 <u><b>Validation:</b></u> Same as Function 1.
 
@@ -367,10 +367,10 @@ Function 1E’s possible GRC values include all of the ones for Function 1, and 
 | GRC Value/ Reason Code Value     | Meaning     |
 | :------------- | :------------- |
 | 01/E       | (Warning) The output address range returned in WA2 is split by an election district boundary.  Therefore, the election district value returned in WA2 applies to only a portion of that address range.       |
-| 56 | The input address is associated with more than one Election District (ED). Function 1E requires that this address be specified with a house number suffix to identify a portion of the building specific to one ED.  See <a href="/chapters/chapterV/section04/">Chapter V.4</a>.|
+| 56 | The input address is associated with more than one Election District (ED). Function 1E requires that this address be specified with a house number suffix to identify a portion of the building specific to one ED.  See <a href="../../chapters/chapterV/section04/">Chapter V.4</a>.|
 
 
-## Function 1B
+## <span id="appendix01.5">Function 1B</span>
 
 <u><b>Description:</b></u>  Function 1B processes an input address or input Non-Addressable Place name (NAP) (see [Chapter III.6](/chapters/chapterIII/section06/)).  When called using two work areas, Function 1B returns information about the blockface as well as information about the tax lot and the building (if any) identified by the input address or NAP.   The information that is returned in WA2 includes the cross streets at the two intersections delimiting the blockface, and a set of geographic district identifiers including ZIP code, census tract and community district. Information about the tax lot and the building (if any) identified by the input address or NAP is also returned.  This information includes the Borough‑Block‑and‑Lot (BBL), which is the Department of Finance’s (DOF) identifier for the tax lot;  the DOF building class code;  the number of buildings on the lot;  the number of street frontages of the lot;  a flag indicating whether the lot is a condominium; and the Building Identification Number (BIN) (see [Chapter VI.3](/chapters/chapterVI/section03/)) of the building identified by the input address
 
@@ -406,16 +406,16 @@ Function 1E’s possible GRC values include all of the ones for Function 1, and 
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/"> Chapter III.2</a>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/"> Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>ZIP Code</td>
-<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="/chapters/chapterIII/section06/">Chapter III.6</a> and <a href="/chapters/chapterV/section06/">Chapter V.6</a>.</td>
+<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="../../chapters/chapterIII/section06/">Chapter III.6</a> and <a href="../../chapters/chapterV/section06/">Chapter V.6</a>.</td>
 <td></td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ Function 1E’s possible GRC values include all of the ones for Function 1, and 
 Blank = input street name / code</td>
 <td>Optional; may be used to select Output street name / code.<br>
 Default (blank) requests use of Input street name / code. <br>
-See <a href="/chapters/chapterIII/section08/">Chapter III.8</a>.</td>
+See <a href="../../chapters/chapterIII/section08/">Chapter III.8</a>.</td>
 </tr>
 </table>
 
@@ -439,7 +439,7 @@ See <a href="/chapters/chapterIII/section08/">Chapter III.8</a>.</td>
 | ??/1 (MSW Only)       | INVALID FUNCTION CODE – AVAILABLE IN COW FORMAT ONLY       |
 
 
-## Function 1N
+## <span id="appendix01.6">Function 1N </span>
 
 <u><b>Description:</b></u>  Function 1N is used to normalize a street name and obtain its street code.  Functions 1, 1A and 1E can do this also, but those functions require an input house number.  The purpose of Function 1N is to provide a way to process a street name alone, without a house number.  Note that since the input to Function 1N is not a specific location along a street, Function 1N does not perform local street name validation.  
 
@@ -463,7 +463,7 @@ Function 1N does not have a Work Area 2, and can only be called using one work a
 <td>Work Area Format Indicator</td>
 <td>C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a></td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a></td>
 </tr>
 <tr>
 <td>Borough Code-1</td>
@@ -478,13 +478,13 @@ Blank = MSW format</td>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2</a>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, <br>
 Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>Browse Flag (COW Only)</td>
@@ -501,7 +501,7 @@ Blank = input street name / code</td>
 
 
 
-##Function 2 (and 2W)
+## <span id="appendix01.7">Function 2 (and 2W) </span>
 
 <u><b>Description:</b></u>  Function 2 processes an input intersection specified either in terms of an intersection name, or in terms of two streets (and, when necessary, a compass direction), or in terms of a node ID.  If two input streets intersect exactly once, the user should not specify an input compass direction.  If the two input streets intersect at two distinct locations, a compass direction must be specified; it serves to identify which of the two intersections the user wishes Geosupport to process.  Geosupport has the ability to process a pair of input streets that intersect more than twice, only if the user can identify the intersection by its node ID.  If the user does not know the node ID, the user may issue Function 2W to find the node ID.  Function 2W is basically identical to Function 2 except when streets intersect more than twice, Function 2W will reject the call and return a Work Area 2 that includes the node IDs and street codes/street names for all the intersections at the various nodes.  Function 2 and Function 2W are discussed in detail in [Chapter VII.2](/chapters/chapterVII/section02/).
 
@@ -532,7 +532,7 @@ In COW format only, Function 2 also returns political geography and CD Eligibili
 <td>Work Area Format Indicator</td>
 <td>C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a>.</td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a>.</td>
 </tr>
 <tr>
 <td>Borough Code-1</td>
@@ -574,7 +574,7 @@ Optional at other nodes.  May be used instead of borough and street names.</td>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, <br>
 Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>Cross Street Names Flag</td>
@@ -590,7 +590,7 @@ F’ = principal street names / codes <br>
 R’ = DCP preferred street names/Codes <br>
 Blank = input street names / codes</td>
 <td>Optional; may be used to select output street names / codes.
-Default (blank) requests use of input street names / codes.  See <a href="/chapters/chapterIII/section08/">Chapter III.8</a></td>
+Default (blank) requests use of input street names / codes.  See <a href="../../chapters/chapterIII/section08/">Chapter III.8</a></td>
 </tr>
 </table>
 (<sup>●</sup>) Note: If either Street 1 or Street 2 contains an intersection name, then the other input street field may either be left blank or it may contain any street that exists at the given intersection.
@@ -662,7 +662,7 @@ Default (blank) requests use of input street names / codes.  See <a href="/chapt
 </tr>
 <tr>
 <td>50</td>
-<td>An input street name is not valid for the portion of the street where the input intersection is located.  See <a href="/chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
+<td>An input street name is not valid for the portion of the street where the input intersection is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
 </tr>
 <tr>
 <td>62</td>
@@ -672,7 +672,7 @@ Default (blank) requests use of input street names / codes.  See <a href="/chapt
 
 
 
-## Function 3
+## <span id="appendix01.7">Function 3 </span>
 
 <u><b>Description:</b></u>   Function 3 processes street segments and closely related three-street configurations.  A street segment is a part of a street (called the ‘on' street) between two consecutive cross streets.  For example, Madison Avenue (in Manhattan) between East 51st Street and East 52nd Street is a street segment.  Madison Avenue between East 51st Street and East 53rd Street is not a street segment, because there is an intervening street, East 52nd Street, between the given cross streets.  An exception to the requirement that the input cross streets be consecutive along the ‘on’ street is the case of a T‑intersection: Function 3 accepts as input a street configuration that defines the long blockface of a T‑intersection.  (For precise definitions of the terms ‘three-street configuration’, ‘street segment’, and ‘T-intersection’, see [Chapter VII.3](/chapters/chapterVII/section03/).)  A street segment intersecting with or lying on a borough boundary can be specified in terms of streets from both boroughs, by using the WA1 input fields Borough Code 2 and Borough Code 3, as described in [Chapter VII.7](/chapters/chapterVII/section07/).
 
@@ -709,13 +709,13 @@ For a detailed discussion of Function 3, see [Chapter VII.4](/chapters/chapterVI
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a>.</td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a>.</td>
 </tr>
 <tr>
 <td>Mode Switch</td>
 <td>‘X’ = Extended Mode Work Area 2 <br>
 Blank = normal mode</td>
-<td>Optional; COW Only.  See <a href="/chapters/chapterII/section07/">Chapter II.7</a>.</td>
+<td>Optional; COW Only.  See <a href="../../chapters/chapterII/section07/">Chapter II.7</a>.</td>
 </tr>
 <tr>
 <td>Borough Code-1</td>
@@ -750,12 +750,12 @@ Blank = normal mode</td>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2</a>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>Cross Street Names Flag</td>
@@ -766,14 +766,14 @@ Blank = do not return names</td>
 <tr>
 <td>Long WA2 Flag <br> (MSW only)</td>
 <td>‘L’ = Long WA2, Blank = regular WA2</td>
-<td>Optional; default (blank) is regular WA2.  See <a href="/chapters/chapterII/section05/">Chapter II.5</a>.</td>
+<td>Optional; default (blank) is regular WA2.  See <a href="../../chapters/chapterII/section05/">Chapter II.5</a>.</td>
 </tr>
 <tr>
 <td>Auxiliary Segment Switch <br>
 (COW only)</td>
 <td>‘Y’ = return all segment IDs <br>
 ‘N’ or Blank = regular WA2</td>
-<td>Optional; default (blank) is regular WA2.  See <a href="/chapters/chapterII/section06/">Chapter II.6</a></td>
+<td>Optional; default (blank) is regular WA2.  See <a href="../../chapters/chapterII/section06/">Chapter II.6</a></td>
 </tr>
 <tr>
 <td>Browse Flag <br>
@@ -782,7 +782,7 @@ Blank = do not return names</td>
 ‘F’ = principal street names / codes <br>
 ‘R’ = DCP preferred street names / codes <br>
 Blank = input street names / codes</td>
-<td>Optional; may be used to select output street names / codes. Default (blank) requests use of input street names / codes. See <a href="/chapters/chapterIII/section08/">Chapter III.8</a></td>
+<td>Optional; may be used to select output street names / codes. Default (blank) requests use of input street names / codes. See <a href="../../chapters/chapterIII/section08/">Chapter III.8</a></td>
 </tr>
 </table>
 
@@ -801,7 +801,7 @@ Blank = input street names / codes</td>
 </tr>
 <tr>
 <td>01/Q</td>
-<td>These streets involve a dogleg, Shortest Stretch provided. (See <a href="/chapters/chapterII/section02/">Chapter VII.2</a>)</td>
+<td>These streets involve a dogleg, Shortest Stretch provided. (See <a href="../../chapters/chapterII/section02/">Chapter VII.2</a>)</td>
 </tr>
 <tr>
 <td>45</td>
@@ -813,7 +813,7 @@ Blank = input street names / codes</td>
 </tr>
 <tr>
 <td>50</td>
-<td>An input street name is not valid for the portion of the street where the input street segment is located.  See <a href="/chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
+<td>An input street name is not valid for the portion of the street where the input street segment is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
 </tr>
 <tr>
 <td>55</td>
@@ -834,7 +834,7 @@ Blank = input street names / codes</td>
 </table>
 
 
-## Function 3C
+## <span id="appendix01.8">Function 3C </span>
 
 <u><b>Description:</b></u>  Function 3C processes blockfaces specified in terms of an input ‘on’ street, two cross streets and a compass direction designating the side of the street, such as ‘the west side of Madison Avenue between East 53rd Street and East 54th Street’.  A blockface intersecting with or lying on a borough boundary can be specified in terms of streets from both boroughs, by using the WA1 input fields Borough Code 2 and Borough Code 3, as described in [Chapter VII.7](/chapters/chapterVI/section07/).
 
@@ -864,13 +864,13 @@ Function 3C is discussed in detail in [Chapter VII.5](/chapters/chapterVII/secti
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a>.</td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a>.</td>
 </tr>
 <tr>
 <td>Mode Switch</td>
 <td>‘X’ = Extended Mode Work Area 2 <br>
 Blank = normal mode</td>
-<td>Optional; COW Only.  See <a href="/chapters/chapterII/section07/">Chapter II.7</a>.</td>
+<td>Optional; COW Only.  See <a href="../../chapters/chapterII/section07/">Chapter II.7</a>.</td>
 </tr>
 <tr>
 <td>Borough Code-1</td>
@@ -905,17 +905,17 @@ Blank = normal mode</td>
 <tr>
 <td>Compass Direction</td>
 <td>‘N’, ‘S’, ‘E’ or ‘W’</td>
-<td>Required.  Specifies side of street of blockface (relative to street’s ‘logical direction’ - see <a href="/chapters/chapterVII/section03/">Chapter VII.3</a>).</td>
+<td>Required.  Specifies side of street of blockface (relative to street’s ‘logical direction’ - see <a href="../../chapters/chapterVII/section03/">Chapter VII.3</a>).</td>
 </tr>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32. See <a href="/chapters/chapterIII/section02/">Chapter III.2</a>.</td>
+<td>Optional; default is 32. See <a href="../../chapters/chapterIII/section02/">Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>Cross Street Names Flag</td>
@@ -927,14 +927,14 @@ Blank = do not return names</td>
 <td>Long WA2 Flag <br>
 (MSW only)</td>
 <td>‘L’ = Long WA2, Blank = regular WA2</td>
-<td>Optional; default (blank) is regular WA2.  See <a href="/chapters/chapterII/section05/">Chapter II.5</a>.</td>
+<td>Optional; default (blank) is regular WA2.  See <a href="../../chapters/chapterII/section05/">Chapter II.5</a>.</td>
 </tr>
 <tr>
 <td>Auxiliary Segment Switch <br>
 (COW only)</td>
 <td>‘Y’ = return all segment IDs <br>
 ‘N’ or Blank = regular WA2</td>
-<td>Optional; default (blank) is regular WA2.  See <a href="/chapters/chapterII/section05/">Chapter II.6</a></td>
+<td>Optional; default (blank) is regular WA2.  See <a href="../../chapters/chapterII/section05/">Chapter II.6</a></td>
 </tr>
 <tr>
 <td>Browse Flag <br>
@@ -943,7 +943,7 @@ Blank = do not return names</td>
 ‘F’ = principal street names / codes <br>
 ‘R’= DCP preferred street names / codes <br>
 Blank= input street names / codes</td>
-<td>Optional; may be used to select output street names / codes. Default (blank) requests use of input street names / codes.  See <a href="/chapters/chapterIII/section08/">Chapter III.8</a></td>
+<td>Optional; may be used to select output street names / codes. Default (blank) requests use of input street names / codes.  See <a href="../../chapters/chapterIII/section08/">Chapter III.8</a></td>
 </tr>
 </table>
 
@@ -977,7 +977,7 @@ Blank= input street names / codes</td>
 </tr>
 <tr>
 <td>50</td>
-<td>An input street name is not valid for the portion of the street where the input blockface is located.  See <a href="/chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
+<td>An input street name is not valid for the portion of the street where the input blockface is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
 </tr>
 <tr>
 <td>69/A</td>
@@ -985,7 +985,7 @@ Blank= input street names / codes</td>
 </tr>
 </table>
 
-## Function 3S
+## <span id="appendix01.9">Function 3S </span>
 
 <u><b>Description:</b></u>  Function 3S processes input street stretches.  A street stretch is a portion of a street between any two cross streets.  If an input cross street intersects with the ‘on’ street twice, an input compass direction is required to identify which of the two intersections is intended.  If the user application does not specify input cross streets, Function 3S returns information about the full length of the ‘on’ street.  Note that, in a Function 3S call, the input cross streets need not be consecutive along the ‘on’ street.
 
@@ -1017,7 +1017,7 @@ Function 3S is discussed in detail in [Chapter VII.6](/chapters/chapterVII/secti
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a></td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a></td>
 </tr>
 <tr>
 <td>Borough Code-1</td>
@@ -1052,24 +1052,24 @@ Blank = MSW format</td>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2.</a></td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2.</a></td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, Blank = sort format</td>
-<td>Optional; default (blank) requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3.</a></td>
+<td>Optional; default (blank) requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3.</a></td>
 </tr>
 <tr>
 <td>Real Street Only Flag <br> (COW Only)</td>
 <td>‘R’ = real streets only <br>
 Blank = all streets</td>
-<td>Optional; default (blank) requests all streets.  See <a href="/chapters/chapterVII/section06/">Chapter VII.6]</a>.</td>
+<td>Optional; default (blank) requests all streets.  See <a href="../../chapters/chapterVII/section06/">Chapter VII.6]</a>.</td>
 </tr>
 <tr>
 <td>Roadbed Request Switch</td>
 <td>R’ = Roadbed info requested <br>
 Blank = Generic info requested</td>
-<td>Optional; default (blank) requests generic information See <a href="/chapters/chapterVII/section06/">Chapter VII.6</a></td>
+<td>Optional; default (blank) requests generic information See <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a></td>
 </tr>
 </table>
 
@@ -1128,7 +1128,7 @@ Blank = Generic info requested</td>
 </table>
 
 
-## Function AP
+## <span id="appendix01.10">Function AP </span>
 
 <u><b>Description:</b></u>  Function AP processes an input address.  When successfully called using two work areas, it returns information in WA2 about the CSCL Address Point identified by the input address.  See [Chapter VI](/chapters/chapterVI/chapterVI/) and particularly [Chapter VI.10](/chapters/chapterVI/section10/).  Function AP and its data are currently available to Geosupport users.
 
@@ -1174,7 +1174,7 @@ Blank = normal mode</td>
 <tr>
 <td>House Number</td>
 <td></td>
-<td>Required for address input except free-form addresses (see <a href="/chapters/chapterV/section03/">Chapter V.3</a>).</td>
+<td>Required for address input except free-form addresses (see <a href="../../chapters/chapterV/section03/">Chapter V.3</a>).</td>
 </tr>
 <tr>
 <td>Street-1</td>
@@ -1184,19 +1184,19 @@ Blank = normal mode</td>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2</a>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, <br>
 Blank = sort format</td>
 <td>Optional; default (blank) <br>
-requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+requests sort format.  See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 <tr>
 <td>ZIP Code</td>
 <td></td>
-<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="/chapters/chapterIII/section06/"> Chapter III.6</a> and <a href="/chapters/chapterV/section06/"> Chapter V.6</a>.</td>
+<td>Optional; may be used instead of Borough Code, or to identify a DAPS.  See <a href="../../chapters/chapterIII/section06/"> Chapter III.6</a> and <a href="../../chapters/chapterV/section06/"> Chapter V.6</a>.</td>
 </tr>
 <tr>
 <td>Browse Flag <br>
@@ -1206,7 +1206,7 @@ requests sort format.  See <a href="/chapters/chapterIII/section03/">Chapter III
 ‘R’ = DCP preferred street name <br>
 Blank = input street name / code</td>
 <td>Optional; may be used to select output street name / code. <br>
-Default (blank) requests use of input street name / code. <a href="/chapters/chapterIII/section08/"> Chapter III.8</a></td>
+Default (blank) requests use of input street name / code. <a href="../../chapters/chapterIII/section08/"> Chapter III.8</a></td>
 </tr>
 </table>
 
@@ -1220,19 +1220,19 @@ Default (blank) requests use of input street name / code. <a href="/chapters/cha
 </tr>
 <tr>
 <td>42</td>
-<td>The input address is not valid (as defined in <a href="/chapters/chapterV/section04/">Chapter V.4 </a>.</td>
+<td>The input address is not valid (as defined in <a href="../../chapters/chapterV/section04/">Chapter V.4 </a>.</td>
 </tr>
 <tr>
 <td>50</td>
-<td>The input street name is not valid for the portion of the street where the input house number is located.  See <a href="/chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
+<td>The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
 </tr>
 <tr>
 <td>75</td>
-<td>The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user input data error, but an address duplication that exists in reality.) See <a href="/chapters/chapterV/section06/"> Chapter V.6</a>.</td>
+<td>The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user input data error, but an address duplication that exists in reality.) See <a href="../../chapters/chapterV/section06/"> Chapter V.6</a>.</td>
 </tr>
 </table>
 
-## Functions BB and BF
+## <span id="appendix01.11">Functions BB and BF </span>
 
 <u><b>Description:</b></u>  Function  BB ("browse backward") and BF ("browse forward") enable applications to develop street name browse capability, in order to assist user data entry staff to determine valid spellings of street names that have been rejected.  Functions BB and BF can only be called using one work area.
 
@@ -1262,7 +1262,7 @@ For a detailed discussion of Functions BB and BF, see [Chapter III.7](/chapters/
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a></td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a></td>
 </tr>
 <tr>
 <td>Borough Code-1</td>
@@ -1280,7 +1280,7 @@ Blank = MSW format</td>
 <td>‘P’ = primary street names’ <br>
 ‘F’ = principal street names <br>
 Blank = all street names</td>
-<td>Optional; default (blank) See <a href="/chapters/chapterIII/section07/"> Chapter III.7</a>.</td>
+<td>Optional; default (blank) See <a href="../../chapters/chapterIII/section07/"> Chapter III.7</a>.</td>
 </tr>
 </table>
 
@@ -1302,7 +1302,7 @@ Blank = all street names</td>
 </tr>
 </table>
 
-## Function BL
+## <span id="appendix01.12">Function BL </span>
 
 <u><b>Description:</b></u>  Function BL processes a parcel of real property, or tax lot, specified in terms of a standard Department of Finance set of tax lot identifiers, consisting of a combination of a borough code, a tax block number and a tax lot number, collectively called the BBL.  When successfully called using two work areas, Function BL returns information about the tax lot in WA2.  The WA2 layouts for Function BL are identical to those for Function 1A.  Function 1A enables the user to retrieve this information by address, while Function BL enables retrieval by BBL.
 
@@ -1327,13 +1327,13 @@ For a detailed discussion of Function BL, see [Chapter VI](/chapters/chapterVI/c
 <tr>
 <td>Work Area Format Indicator</td>
 <td>‘C’ = COW format Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a></td>
+<td>Optional; default (blank) requests MSW format. See <a href="../appendix12/">Appendix 12</a></td>
 </tr>
 <tr>
 <td>Mode Switch</td>
 <td>‘X’ = Extended Mode Work Area 2 <br>
 Blank = normal mode</td>
-<td>Optional; COW Only.  See <a href="/chapters/chapterII/section07/"> Chapter II.7</a>. </td>
+<td>Optional; COW Only.  See <a href="../../chapters/chapterII/section07/"> Chapter II.7</a>. </td>
 </tr>
 <tr>
 <td>Borough-Block-Lot (BBL)</td>
@@ -1344,20 +1344,20 @@ Blank = normal mode</td>
 <td>Long WA2 Flag</td>
 <td>‘L’ = Long <br>
 Blank = regular WA2</td>
-<td>Optional default (blank) is regular WA2.  See <a href="/chapters/chapterII/section05/">Chapter II.5</a>.</td>
+<td>Optional default (blank) is regular WA2.  See <a href="../../chapters/chapterII/section05/">Chapter II.5</a>.</td>
 </tr>
 <tr>
 <td>TPAD Request Switch <br>
 (COW Only)</td>
 <td>‘Y’ = TPAD information  requested <br>
 Blank or ‘N’ = TPAD not requested</td>
-<td>Optional; may be used to request Transitional PAD information. See <a href="/chapters/chapterVI/section11/"> Chapter VI.11</a></td>
+<td>Optional; may be used to request Transitional PAD information. See <a href="../../chapters/chapterVI/section11/"> Chapter VI.11</a></td>
 </tr>
 <tr>
 <td>1A/BL Version Switch</td>
 <td>‘S’ = standard version, <br>
 Blank = standard version; valid only for COW</td>
-<td>Required for MSW; optional for COW.  See <a href="/chapters/chapterVI/section08/"> Chapter VI.8</a>.</td>
+<td>Required for MSW; optional for COW.  See <a href="../../chapters/chapterVI/section08/"> Chapter VI.8</a>.</td>
 </tr>
 </table>
 
@@ -1376,11 +1376,11 @@ Blank = standard version; valid only for COW</td>
 </tr>
 <tr>
 <td>04</td>
-<td>An invalid value has been specified for the 1A/BL Version Switch.  See <a href="/chapters/chapterVI/section08/"> Chapter VI.8</a>.</td>
+<td>An invalid value has been specified for the 1A/BL Version Switch.  See <a href="../../chapters/chapterVI/section08/"> Chapter VI.8</a>.</td>
 </tr>
 <tr>
 <td>01/* </td>
-<td>(Warning) [related to TPAD]See <a href="/chapters/chapterVI/section11/"> Chapter VI.11</a> and <a href="/appendices/appendix04/">Appendix 4</a>.Various messages are returned with this reason code. The Conflict flag is set to correspond the specific warning message.</td>
+<td>(Warning) [related to TPAD]See <a href="../../chapters/chapterVI/section11/"> Chapter VI.11</a> and <a href="../../appendices/appendix04/">Appendix 4</a>.Various messages are returned with this reason code. The Conflict flag is set to correspond the specific warning message.</td>
 </tr>
 <tr>
 <td>69/B</td>
@@ -1396,7 +1396,7 @@ Blank = standard version; valid only for COW</td>
 </tr>
 </table>
 
-## Function BN
+## <span id="appendix01.13">Function BN </span>
 
 <u><b>Description:</b></u> Function BN processes a building specified by an input Building Identification Number (BIN).  For a discussion of BINs, see [Chapter VI.3](/chapters/chapterVI/section03/).
 
@@ -1424,13 +1424,13 @@ Function BN is discussed in detail in [Chapter VI](/chapters/chapterIV/chapterIV
 <td>Work Area Format Indicator</td>
 <td>C’ = COW format <br>
 Blank = MSW format</td>
-<td>Optional; default (blank) requests MSW format.  See <a href="/appendices/appendix12/">Appendix 12</a>.</td>
+<td>Optional; default (blank) requests MSW format.  See <a href="../appendix12/">Appendix 12</a>.</td>
 </tr>
 <tr>
 <td>Mode Switch</td>
 <td>‘X’ = Extended Mode Work Area 2 <br>
 Blank = normal mode</td>
-<td>Optional; COW Only.  See <a href="/chapters/chapterII/section07/">Chapter II.7</a>.</td>
+<td>Optional; COW Only.  See <a href="../../chapters/chapterII/section07/">Chapter II.7</a>.</td>
 </tr>
 <tr>
 <td>BIN</td>
@@ -1468,7 +1468,7 @@ Blank = normal mode</td>
 </tr>
 </table>
 
-## Functions D, DG and DN
+## <span id="appendix01.14">Functions D, DG and DN </span>
 
 <u><b>Description:</b></u>  Functions D, DG and DN are the ‘display’ functions.  They do not actually display anything themselves, but can be used to obtain data items that applications can use to format geographic locations for display on reports, screens, mailing labels etc.  
 
@@ -1505,7 +1505,7 @@ Functions D, DG and DN differ in the type of street code each processes and in t
 <td>‘C’ = COW format <br>
 Blank = MSW format</td>
 <td>Optional; default (blank) <br>
- requests MSW format. See <a href="/appendices/appendix12/">Appendix 12</a></td>
+ requests MSW format. See <a href="../appendix12/">Appendix 12</a></td>
 </tr>
 <tr>
 <td>HNI-1 or HNS-1</td>
@@ -1558,13 +1558,13 @@ Blank = MSW format</td>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32.  See <a href="/chapters/chapterIII/section02/">Chapter III.2</a>.</td>
+<td>Optional; default is 32.  See <a href="../../chapters/chapterIII/section02/">Chapter III.2</a>.</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
 <td>‘C’ = compact format, <br>
 Blank = sort format </td>
-<td>Optional; default (blank) requests sort format. See <a href="/chapters/chapterIII/section03/">Chapter III.3</a>.</td>
+<td>Optional; default (blank) requests sort format. See <a href="../../chapters/chapterIII/section03/">Chapter III.3</a>.</td>
 </tr>
 </table>
 

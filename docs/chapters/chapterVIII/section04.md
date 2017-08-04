@@ -3,7 +3,7 @@ This section describes an optional feature of Geosupport, its COPY files.  The G
 
 In this section, basic concepts of COPY files are explained, and the organization of the Geosupport COPY libraries is described.  In [Chapter VIII.5](../chapterVIII/section05), the specific source code statements that users must code in their programs to utilize the Geosupport COPY files are described.  [Chapter VIII.6](../chapterVIII/section06) describes the JCL required to compile a program that utilizes the Geosupport COPY files.
 
-## <center><u>Overview of COPY Files in General</u></center>
+## <span id="chapterVIII.4.1"><center><u>Overview of COPY Files in General</u></center></span>
 
 Many programming languages, including COBOL, Assembler, PL/1, C and NATURAL, have a facility for referring, within the source code of a program, to external files (generically referred to as ‘COPY files’ in this document) containing source code to be inserted into the program at compile time. (C ‘COPY files’ are usually called header files; NATURAL ‘COPY files’ are called Local Data Areas (LDAs).)  Each programming language has a declarative command (‘COPY’ in COBOL and Assembler, ‘%INCLUDE’ in PL/1, ‘#include’ in C, ‘LOCAL USING’ in NATURAL) for referring to such external COPY files.  During program compilation, when the compiler encounters such a command, it dynamically retrieves the source code stored in the named COPY file and processes that source code as if it were an integral part of the program source code.  The source code retrieved at compile time from the COPY file serves as input to the compiler only;  it is not inserted permanently into the user’s program source code file.  Only the declarative statement that refers to the COPY file is permanently present in the program source code.  <u>Note</u>:  declarative statements referencing external source code COPY files are not to be confused with external program calls.  Declarative statements are directives to the compiler, and are processed at source code compilation time;  program calls are executable statements, performed at application execution time.
 
@@ -13,7 +13,7 @@ An ideal situation in which to use COPY files is when numerous programs in an ap
 
 Of course, the source code in a program that references a COPY file must be written so that it is compatible with the source code in that COPY file.  In particular, for fields that are defined in the COPY file and referred to in the program, the program must use the same data names and must assume the same data types and lengths as does the COPY file.
 
-## <center><u>The Geosupport COPY Libraries</u></center>
+## <span id="chapterVIII.4.1"><center><u>The Geosupport COPY Libraries</u></center></span>
 
 There are two Geosupport COPY libraries that collectively contain COBOL, Assembler, PL/1 and  C source code COPY files for all of the Geosupport API work area layouts.  Geosupport also has a set of NATURAL LDAs for the work area layouts.  The use of these facilities can greatly facilitate user application programming.  Among the potential productivity benefits are the following:
 

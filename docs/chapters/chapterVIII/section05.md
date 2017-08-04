@@ -9,7 +9,7 @@ In [Chapter VIII.3](../chapterVIII/section03), the forms of calls to the driver 
 
 The declarative statements referencing COPY files cause the compiler to process the source code contained therein as if it were present within the application program’s own source code at the point in the program where the declarative statement is located.  Application programs need only reference those Geosupport COPY files that are required for the Geosupport function(s) the program actually calls, although referencing other COPY files does no harm.
 
-## <center><u>COBOL Source Code Statements</u></center>
+## <span id="chapterVIII.5.1"><center><u>COBOL Source Code Statements</u></center></span>
 
 To reference Geosupport MSW COPY files, COBOL programs must contain the appropriate one (or more) of the following statements in WORKING-STORAGE:
 
@@ -52,7 +52,7 @@ To reference Geosupport <b>COW COPY files</b> include the appropriate COPY files
 
 \* To choose the appropriate COW COPY file, see Table VIII-2.*
 
-## <center><u>Assembler Source Code Statements</u></center>
+## <span id="chapterVIII.5.2"><center><u>Assembler Source Code Statements</u></center></span>
 
 To reference Geosupport <b>MSW COPY files</b>, Assembler programs must contain the appropriate one (or more) of the following statements:
 
@@ -87,7 +87,7 @@ To reference Geosupport <b>COW COPY files</b> include the appropriate COPY files
 
 \* To choose the appropriate COW COPY file, see Table VIII-2. *
 
-## <center><u>PL/1 Source Code Statements</u></center>
+## <span id="chapterVIII.5.3"><center><u>PL/1 Source Code Statements</u></center></span>
 
 To reference Geosupport <b>MSW COPY files</b>, PL/1 programs must contain the appropriate one(s) of the following statements:
 
@@ -123,7 +123,7 @@ To reference the Geosupport <b>COW COPY files</b> include the appropriate copy f
 
 /* To choose the appropriate COW COPY file, see Table VIII-2. *
 
-## <center><u>IBM/C Source Code Statements</u></center>
+## <span id="chapterVIII.5.4"><center><u>IBM/C Source Code Statements</u></center></span>
 
 To reference the Geosupport <b>MSW COPY file</b> IBM/C programs must contain the following statement:
 
@@ -185,7 +185,7 @@ For C programs that will be executed in the <b>batch environment</b> and that us
 
 To reference the Geosupport <b>COW COPY files</b> include the PAC COPY file instead of the WAC COPY file. Note that in the COW format, there is no long WA2 for Functions 1, 1E, and 3.  Note, also, that there are additional function options in the COW format.
 
-## <center><u>NATURAL Source Code Statements</u></center>
+## <span id="chapterVIII.5.5"><center><u>NATURAL Source Code Statements</u></center></span>
 
 <b><u>NATURAL Source Code Statements</b></u>
 NATURAL programs reference Geosupport MSW LDAs by containing one or more of the following statements in DEFINE DATA:

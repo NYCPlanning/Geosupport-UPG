@@ -8,7 +8,7 @@ This section contains:
 Please note that the sample programs are not guaranteed to work and are provided as
 programming aides.  
 
-## II.9.1 C/C++ Sample Program with Description   
+## <span id="chapterII.9.1">II.9.1 C/C++ Sample Program with Description   </span>
 
 *This section walks you through writing a C/C++ program that makes Geosupport Desktop
 Edition calls. It assumes that you are familiar with your Integrated Development Environment
@@ -346,7 +346,7 @@ Listing II.8 below contains the complete program used in this section.
     free (convstr);
     } // end of main  
 
-## II.9.2 Visual Basic (VB/VBA) Sample Program with Description
+## <span id="chapterII.9.2"> II.9.2 Visual Basic (VB/VBA) Sample Program with Description </span>
 
 *This section walks you through writing a Visual Basic (VB) or Visual Basic for Applications (VBA) program that makes Geosupport Desktop Edition calls. It assumes that you are familiar with your Integrated Development Environment (IDE) and that you know how to code in VB or VBA. This sample program is based on a simple form that provides input fields and output fields to display the returned data. The code is attached to a command button and responds to a "click" event. Please note: The program in this section represents just one of many styles of coding in Visual Basic. It may be used as a sample. It is not guaranteed.*  
 

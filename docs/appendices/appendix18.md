@@ -1,4 +1,4 @@
-<h2 class="pdfAppendix"><center>APPENDIX 17: GEOEXCEL, A GEOCODING SOLUTION FOR EXCEL</center></h2>
+<h2 class="pdfAppendix"><center>APPENDIX 18: GEOEXCEL, A GEOCODING SOLUTION FOR EXCEL</center></h2>
 
 
 <div class=center>Updated: 5/22/2016</div>  

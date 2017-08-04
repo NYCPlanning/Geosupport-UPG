@@ -1,16 +1,16 @@
 <h2> X.2 Using GBAT  </h2>
 
-##  X.2.1 Before You Begin  
+##  <span id="chapterX.2.1"> X.2.1 Before You Begin </span>
 
 Use the Geosupport Desktop Edition Installation CD to install the Geosupport Desktop Edition package.  
 
 It is recommended that you use GBAT on machines with the latest versions of the “Microsoft Data Access Components” and “Microsoft Jet”. If you want to make certain that you are up to date, download and install the following files from Microsoft’s web site: Mdac_typ.exe,Jet40Sp3_Comp.exe, and Jet40SP6_9xNT.exe.  
 
-##  X.2.2 Starting the Application    
+##  <span id="chapterX.2.2">X.2.2 Starting the Application </span>   
 
-To start the application, find and double-click the NYCgbat.exe program icon which appears as shown on the right side, ![Gbat Logo>](/img/gbat_2.2.1.jpg "GBAT logo") in My Computer or Windows Explorer.  
+To start the application, find and double-click the NYCgbat.exe program icon which appears as shown on the right side, ![Gbat_Logo>](/img/gbat_2.2.1.jpg "GBAT logo") in My Computer or Windows Explorer.  
 
-##  X.2.3 Selecting an ODBC Data Source   
+##  <span id="chapterX.2.3">X.2.3 Selecting an ODBC Data Source </span>   
 
 Upon starting the application, you will be presented with the following ODBC data source selection screen.  
 ![GoatFunction_medium<>](/img/gbat2.3.1.jpg "GBAT DataSource")  
@@ -21,7 +21,7 @@ Creating a data source using a database that you are familiar with should be a f
 
 Creating a data source for text files is more complicated. Follow the steps indicated in [Chapter X.2.4](#x24-configuring-a-new-text-data-source) to create a data source for the text files.  
 
-## X.2.4 Configuring a New Text Data Source  
+## <span id="chapterX.2.4"> X.2.4 Configuring a New Text Data Source </span>
 
 First, click on the New button in the Select Data Source Window, which is illustrated above. You will be presented with a list of drivers for which a data source can be set up as illustrated below on the “Create New Data Source” window. Select the Microsoft Text Driver and click on the Next button.  
 
@@ -82,7 +82,7 @@ This file contains an Address Number field beginning at position one that is fiv
 
 When you’ve finished setting up your table, you can select another text file to configure from the Tables list box. After you have configured all of your tables, click on the OK button to return to the “ODBC Text Setup” window. Click on the OK button in this window. You have now finished setting up your Text ODBC Data Source. Select your newly created data source in the window labeled “Select Data Source”, which should be displayed now. Click on the OK button to continue to the next step.  
 
-## X.2.5 Function Selection  
+## <span id="chapterX.2.5"> X.2.5 Function Selection </span>
 
 ![GoatFunction_medium<>](/img/gbat2.5.1.jpg "GBAT Function_Selection")  
 
@@ -96,7 +96,7 @@ You must also choose the Geosupport function that will be used to process your d
 
 Click on the Next button to continue on to the next screen.  
 
-## X.2.6 Function-Specific Configuration  
+## <span id="chapterX.2.6"> X.2.6 Function-Specific Configuration </span>
 
 <h4><u>X.2.6.1 Function 1 and Function 1E</u></h4>  
 
@@ -226,7 +226,7 @@ Please ensure that all of the street codes you provide are of the same length; t
 
 Once you have finished configuring these options, click on the Next button to move on to the next screen, which is described in [Chapter X.2.7](#x27-general-input-configuration) labeled “General Input Configuration”.  
 
-## X.2.7 General Input Configuration  
+## <span id="chapterX.2.7"> X.2.7 General Input Configuration </span>  
 
 The General Input Configuration Window should now be displayed:  
 
@@ -251,7 +251,7 @@ Once you have finished configuring the options in this window, click on the “N
 ---
 <sup id="section02-3">3</sup>The standard borough codes are 1=Manhattan, 2= Bronx, 3=Brooklyn, 4=Queens and 5=Staten Island.  
 
-## X.2.8 Output Configuration  
+## <span id="chapterX.2.8"> X.2.8 Output Configuration </span>
 
 You should now see the following Output Configuration window:  
 
@@ -273,7 +273,7 @@ When you are finished setting up these configuration options, you can save them 
 
 Click on the Next button to move to the next screen, which is described in [Chapter X.2.9](#x29-function-processing), which is labeled Function Processing.  
 
-## X.2.9 Function Processing  
+## <span id="chapterX.2.9"> X.2.9 Function Processing </span>  
 
 At this point everything is prepared for the actual GBAT execution. The Function Processing window should now appear on your display unit:  
 
