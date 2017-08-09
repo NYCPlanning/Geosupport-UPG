@@ -52,16 +52,30 @@ body {
 }
 
 .icon-home:before {
-  height: 90px;
-  width: 120px;
-  background-image: url("../img/logo_top2.png");
+  //height: 100px;
+  //width: 150px;
   background-size: cover;
   vertical-align: middle;
   margin-right: 5px;
   position: relative;
-  top: -5px;
   content: "";
+
 }
+
+.nycplanning:before {
+  height: 100px;
+  width: 180px;
+  background-image: url("../img/logo_NYCtop.png");
+
+}
+.homeLogo:before {
+  height: 40px;
+  width: 245px;
+  background-image: url("../img/logo_GSSDoc.png");
+  margin-top: -65px;
+}
+
+
 
 .docName {
   margin-top: 2em;

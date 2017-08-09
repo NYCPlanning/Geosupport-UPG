@@ -28,19 +28,17 @@ function getCurrentButton() {
 	return getButtonByIndex(getButtonPositionFor(CURRENTINDEX));
 }
 function isCustomButton(button) {
-	if (button.lastElementChild.firstElementChild != null) {
-		//if greater, then it has the # and therefore it is not a custom button
-		if (button.lastElementChild.firstElementChild.firstElementChild.href.indexOf("#") > -1) {
-			return false;
-		} else {
-			return true;
+	if (button != undefined){
+		if (button.lastElementChild.firstElementChild != null) {
+			//if greater, then it has the # and therefore it is not a custom button
+			if (button.lastElementChild.firstElementChild.firstElementChild.href.indexOf("#") > -1) {
+				return false;
+			} else {
+				return true;
+			}
 		}
-		//the following is not supported in IE
-	// 	return !button.lastElementChild.firstElementChild.firstElementChild.href.includes("#")
-	// } else {
-	// 	return false;
-	// }
 	}
+
 }
 function isLastSubSection() {
 	return document.querySelector(".subnav.selectedNavButton").lastChild.previousSibling.classList.contains("current");
