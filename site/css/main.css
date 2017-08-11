@@ -78,8 +78,8 @@ body {
 
 
 .docName {
-  margin-top: 2em;
-  font-size: 3em;
+  margin-top: 1em;
+  font-size: 2em;
 }
 
 
@@ -156,7 +156,7 @@ img[alt$="<"] {
 
 img[alt$="<>"] {
     display: block;
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     margin: auto;
     float: none!important;
@@ -169,7 +169,7 @@ img[alt^="NYCSeal"] {
   float: right !important;
 }
 img[alt^="NYCPlanningLogo"] {
-  margin-top: 10em;
+  margin-top: 7em;
 }
 
 
@@ -190,7 +190,12 @@ img[alt^="GoatFunction_small"] {
 img[alt^="GoatFunction_medium"] {
   width: 560px;
 }
-
+.textalign{
+  padding-left:1cm;
+}
+.mobile{
+    background-color: #33333em !important;
+}
 .img_tagline {
     margin-top: : -100px;
     padding-left: 100px;
