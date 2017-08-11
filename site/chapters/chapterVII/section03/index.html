@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>VII.3 Three-Street Configurations - Concepts and Terminology - DCP</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../../css/main.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "VII.3 Three-Street Configurations - Concepts and Terminology";
+    var mkdocs_page_input_path = "chapters\\chapterVII\\section03.md";
+    var mkdocs_page_url = "/chapters/chapterVII/section03/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script src="../../../js/main.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+
+        <!-- Original -->
+        <!-- <a href="../../.." class="icon icon-home" id="logoID"> DCP</a> -->
+
+        <!-- Custom -->
+        <a href="http://www1.nyc.gov/site/planning/index.page" class="icon icon-home nycplanning" ></a><br>
+        <a href="../../.." class="icon icon-home homeLogo" id="logoID"></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../tableofcontents/">Table of Contents</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../overview/">Overview of the UPG</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter I: System Overview</a>
+    <!-- <span class="caption-text">Chapter I: System Overview</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/chapterI/">Chapter I</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section01/">I.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section02/">I.2 System Functionality</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section03/">I.3 Introduction to Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section04/">I.4 The Geosupport Function Suite</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section05/">I.5 Overview of System Architecture</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section06/">I.6 Technical References</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter II: Geosupport API Introduction</a>
+    <!-- <span class="caption-text">Chapter II: Geosupport API Introduction</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/chapterII/">Chapter II</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section01/">II.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section02/">II.2 Geosupport Return Codes and Reject Handling</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section03/">II.3 Geosupport API User Programming Procedure</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section04/">II.4 One-Work-Area and Two-Work-Area Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section05/">II.5 Coding Geosupport API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section06/">II.6 The Work Area C/C++ Header File and Visual Basic Typedef File</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section07/">II.7 Coding API Calls When Using Geosupport C/C++ Header Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section08/">II.8 Creating a Geosupport Desktop Edition Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section09/">II.9 Sample Programs with Descriptions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section10/">II.10 The Long Work-Area-2 Option</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section11/">II.11 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter III: Street Name Processing</a>
+    <!-- <span class="caption-text">Chapter III: Street Name Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/chapterIII/">Chapter III</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section01/">III.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section02/">III.2 Street Name Normalizing and the SNL Parameter</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section03/">III.3 Street Name Sorting and Normalization Format Options</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section04/">III.4 Partial Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section05/">III.5 The Similar Names Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section06/">III.6 Unconventional Geographic Feature Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section07/">III.7 Street Name Browsing and Functions BB and BF</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section08/">III.8 Selection of Output Street Names (COW only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IV: Street Codes</a>
+    <!-- <span class="caption-text">Chapter IV: Street Codes</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/chapterIV/">Chapter IV</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section01/">IV.1 Introduction: Street Codes and Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section02/">IV.2 Street Name Relationships: Aliases and Locally Valid Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section03/">IV.3 Five-Digit and Ten-Digit Street Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section04/">IV.4 Resynchronization of Street Codes Stored in User Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section05/">IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section06/">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section07/">IV.7 Street Codes and Non-Addressable Place Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section08/">IV.8 Street Code Input Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section09/">IV.9 Summary of Street Codes</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter V: Address Processing</a>
+    <!-- <span class="caption-text">Chapter V: Address Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/chapterV/">Chapter V</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section01/">V.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section02/">V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section03/">V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section04/">V.4 Input Address Acceptance/Rejection and its Validation Significance</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section05/">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section06/">V.6 Duplicate Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section07/">V.7 Marble Hill/Rikers Island</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section08/">V.8 Special Ruby Street Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section09/">V.9 Vanity Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section10/">V.10 Out-of-Sequence Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section11/">V.11 ZIP Code as Input Instead of Borough Code</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section12/">V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section13/">V.13 Special Place Name Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section14/">V.14 ‘No Cross Street’ Segment Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section15/">V.15 UNIT Information Feature (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</a>
+    <!-- <span class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/chapterVI/">Chapter VI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section01/">VI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section02/">VI.2 Tax Lots and BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section03/">VI.3 Buildings and Building Identification Numbers (BINs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section04/">VI.4 Condominiums and Billing BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section05/">VI.5 Vacant Street Frontages and Pseudo-Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section06/">VI.6 Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section07/">VI.7 Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section08/">VI.8 Standard and Legacy Versions of Functions 1A and BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section09/">VI.9 Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section10/">VI.10 Function AP (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section11/">VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VII: Street Configuration Processing</a>
+    <!-- <span class="caption-text">Chapter VII: Street Configuration Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../chapterVII/">Chapter VII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section01/">VII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section02/">VII.2 Intersections: Function 2 and Function 2W</a>
+                  </li>
+                  <li class=" current" >
+                      
+    <a class="current" href="./">VII.3 Three-Street Configurations - Concepts and Terminology</a>
+    <ul class="subnav hideMe">
+            
+    <li class="toctree-l3"><a href="#street-stretches-and-street-segments">Street Stretches and Street Segments</a></li>
+    
+
+    <li class="toctree-l3"><a href="#logical-direction-assigned-to-streets">Logical Direction Assigned to Streets</a></li>
+    
+
+    <li class="toctree-l3"><a href="#blockfaces">Blockfaces</a></li>
+    
+
+    <li class="toctree-l3"><a href="#t-intersections">T-Intersections</a></li>
+    
+
+    </ul>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section04/">VII.4 Street Segments and Related Configurations: Function 3</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section05/">VII.5 Blockfaces: Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section06/">VII.6 Street Stretches: Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section07/">VII.7 Borough Boundary Processing (Functions 2, 3 and 3C)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section08/">VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VIII: Geosupport API</a>
+    <!-- <span class="caption-text">Chapter VIII: Geosupport API</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/chapterVIII/">Chapter VIII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section01/">VIII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section02/">VIII.2 Review of the Geosupport API</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section03/">VIII.3 Coding API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section04/">VIII.4 The Geosupport Copy Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section05/">VIII.5 Coding API Calls When Using Geosupport COPY Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section06/">VIII.6 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section07/">VIII.7 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section08/">VIII.8 JCL for the Execute Step (Batch Applications)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IX: Mainframe GBAT</a>
+    <!-- <span class="caption-text">Chapter IX: Mainframe GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/chapterIX/">Chapter IX</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section01/">IX.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section02/">IX.2 JCL Considerations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section03/">IX.3 GBAT Processing and Programmed Abnormal Terminations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section04/">IX.4 The Input Data File (DDNAME=INFILE or INVSAM)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section05/">IX.5 The Input Control File (DDNAME=CARDIN)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section06/">IX.6 The Input Alias File (DDNAME=ALIASES)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section07/">IX.7 The Output File of Accepted Records (DDNAME=OUTFILE)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section08/">IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section09/">IX.9 The Output Print File (DDNAME=SYSPRINT)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter X: Desktop Edition GBAT</a>
+    <!-- <span class="caption-text">Chapter X: Desktop Edition GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/chapterX/">Chapter X</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section01/">X.1 What is GBAT?</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section02/">X.2 Using GBAT</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter XI: Desktop Edition GOAT</a>
+    <!-- <span class="caption-text">Chapter XI: Desktop Edition GOAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/chapterXI/">Chapter XI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section01/">XI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section02/">XI.2 How to Use GOAT</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section03/">XI.3 Invoking Function 1 or Function 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section04/">XI.4 Invoking Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section05/">XI.5 Invoking Function 2</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section06/">XI.6 Invoking Function 3 or Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section07/">XI.7 Invoking Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section08/">XI.8 Invoking Function B</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section09/">XI.9 Invoking Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section10/">XI.10 Invoking Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section11/">XI.11 Invoking Function D</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Appendices and Glossary</a>
+    <!-- <span class="caption-text">Appendices and Glossary</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendices/">Appendices and Glossary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix01/">Appendix 1: Geosupport Functions - Quick Reference</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix02/">Appendix 2: Mainframe-Specific Work Area Layouts(MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix03/">Appendix 3: Data Item Dictionary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix04/">Appendix 4: Geosupport Return Codes, Reason Codes And Messages</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix05/">Appendix 5: Geosupport Copy Files (MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix06/">Appendix 6: User Feedback Procedures</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix07/">Appendix 7: Mainframe Data Centers Where Geosupport Is Installed</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix08/">Appendix 8: Sample Application Programs And JCL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix09/">Appendix 9: GBAT Reference Tables</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix10/">Appendix 10: Sample GBAT Jobs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix11/">Appendix 11: Guidelines For Application Design</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix12/">Appendix 12: Chapter-Only Work Areas (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix13/">Appendix 13: Chapter-Only Work Area LAYOUTS (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix14/">Appendix 14: Geosupport Copy Files (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix15/">Appendix 15: 2010 Census Geography – Functions 1, 1E, 2, 3, and 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix16/">Appendix 16: Neighborhood Tabulation Areas (NTAS)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix17/">Appendix 17: TPAD - Additional Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix18/">Appendix 18: GeoExcel Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix19/">Appendix 19: Work Area Layouts (COWs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix20/">Appendix 20: Geosupport Header And Typedef Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix21/">Appendix 21: Geosupport Desktop Edtion</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/glossary/">Glossary of Terms And Acronyms</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../aboutUs/">About Us</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">DCP</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <span style="float: right;" class="printLogo"><a onclick="handlePrintPage()" class="printBtn">Print Page</a>  <a href="../../../upg.pdf" target="_blank" class="printBtn">Print All</a></span>
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Chapter VII: Street Configuration Processing &raquo;</li>
+        
+      
+    
+    <li>VII.3 Three-Street Configurations - Concepts and Terminology</li>
+
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+
+
+
+  <hr/>
+
+
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2>VII.3 Three-Street Configurations - Concepts and Terminology</h2>
+
+<p>There are many applications in which geographic locations to be processed are identified in terms of an ‘on’ street between two cross streets.  Geosupport can process several types of such locations, namely street segments, blockfaces and street stretches.  We refer generically to all these types of locations as three-street configurations.</p>
+<p>This section introduces concepts and terminology needed to discuss three-street configurations.  The three succeeding sections discuss the Geosupport functions that process the various types of three-street configurations:</p>
+<ul>
+<li>
+<p><a href="../../../chapters/chapterVII/section04/">Chapter VII.4</a> discusses Function 3, which processes street segments</p>
+</li>
+<li>
+<p><a href="../../../chapters/chapterVII/section05/">Chapter VII.5</a> discusses Function 3C, which processes blockfaces</p>
+</li>
+<li>
+<p><a href="../../../chapters/chapterVII/section06/">Chapter VII.6</a> discusses Function 3S, which processes street stretches.</p>
+</li>
+</ul>
+<p>The definitions below are based on Geosupport’s single-line map model of the city’s geography, as explained in Chapter VII.1.  Also, recall that the term ‘street’ refers to a street name or street code that satisfies the criteria delineated in Chapter VII.1.  The term ‘node’ is as defined in <a href="../../../chapters/chapterVII/section02/">Chapter VII-2</a>.</p>
+<h2 id="street-stretches-and-street-segments"><span id="chapterVII.3.1"><u>Street Stretches and Street Segments</u></span></h2>
+<p>A <u>street stretch</u> is a portion (possibly all) of a street (called the <u>‘on’ street</u>) between any two nodes along it (called the <u>delimiting nodes</u> of the stretch).  A street stretch is considered to comprise both sides of the ‘on’ street.</p>
+<p>For Geosupport purposes, <u>a street segment is defined as a street stretch between a pair of delimiting nodes which may not coincide with an intersecting street .  A street segment can therefore consist of a set of one or more CSCL segments. </u></p>
+<p>In Geosupport, the general term ‘street segment’ is used to describe two situations.</p>
+<ul>
+<li>
+<p>A street segment is strictly defined as a street stretch such that the two delimiting nodes are consecutive along the ‘on’ street.  Every such segment is uniquely identified by a segment ID.</p>
+</li>
+<li>
+<p>For Geosupport purposes, a street segment often refers to a street stretch consisting of more than one segment, such that at least one side of the street stretch is a single entire blockface.  This street stretch is defined by multiple segments id’s, all of which may optionally be returned to the user.  For a more detailed discussion <a href="../../../chapters/chapterVII/section04/">see Chapter VII.4</a>, which describes Function 3.</p>
+</li>
+</ul>
+<p>Every street stretch is composed of a set of one or more street segments, which do not necessarily form a continuously connected chain.  That is, a street stretch can encompass gaps in the street.</p>
+<p>Some examples of street stretches and segments follow.</p>
+<div class="textWithImage">
+
+<div class="imageWithFigure">
+<img src="../../../img/figureVII-12.png" alt="FigureVII-12" />
+<p class="img_tagline">Figure V11-12: Street Stretch</p>
+</div>
+
+<ul>
+<li>The stretch of Madison Avenue between East 51st Street and East 52nd Street in Manhattan (see Figure VII-12) is a street segment.  The stretch of Madison Avenue between East 51st Street and East 54th Street is not a segment because its delimiting nodes are not consecutive along the ‘on’ street; it is a stretch consisting of three segments.</li>
+</ul>
+</div>
+
+<div class="textWithImage" id="lincolnCenter" >
+
+<div class="imageWithFigure">
+<img src="../../../img/figureVII-13.png" alt="FigureVII-13" />
+<p class="img_tagline">FigureV11-13: Street Stretch <br> Containing Gap</p>
+</div>
+
+<ul>
+<li>An example of a street stretch that is not connected is Manhattan’s West 64th Street between Central Park West and West End Avenue (see Figure VII-13).  West 64th Street has a gap (does not exist) between Columbus Avenue and Amsterdam Avenue, where it is interrupted by Lincoln Center.  As a result, the stretch in question consists of two sub-stretches that are not connected to each other.</li>
+</ul>
+</div>
+
+<p>Street stretches can be delimited by pseudo-intersections and intersection names as well as conventional street intersections:</p>
+<ul>
+<li>
+<p>An example of a street segment in the Bronx delimited by a dead end is CROES AVENUE between WATSON AVENUE and DEAD END (see Figure VII-3).</p>
+</li>
+<li>
+<p>An example of a street stretch in Queens delimited by the city limits is LINDEN BOULEVARD between CROSS ISLAND PARKWAY and CITY LIMITS (see Figure VII-2).</p>
+</li>
+<li>
+<p>Some examples of street segments in Manhattan delimited by bends are:  BARROW STREET between HUDSON STREET and BEND (also specifiable in terms of conventional streets as BARROW STREET between HUDSON STREET and COMMERCE STREET); and COMMERCE STREET between BARROW STREET and BEND (the only way to specify this segment) (see Figure VII-4).</p>
+</li>
+</ul>
+<h2 id="logical-direction-assigned-to-streets"><span id="chapterVII.3.2"><u>Logical Direction Assigned to Streets</u></span></h2>
+<p>GSS has assigned a <u>logical direction</u> to every street segment in New York City.  References to the left and right sides of any segment, and references to its delimiting nodes as the ‘from’ node and ‘to’ node, are relative to the segment’s logical direction.</p>
+<p>For streets that have addresses, the logical direction is always assigned as the direction of increasing addresses. Therefore, for any street with addresses, the ‘from’ node of any segment is always the node at its low address end, and the ‘to’ node is the node at the high address end; the left and right sides of the segment are determined accordingly.</p>
+<p>For features that have no addresses, such as all railroad tracks and some highways, the logical direction is assigned arbitrarily, but consistently, along the feature’s full extent.  <u>Note that a street’s logical direction, and thus the meaning of ‘from’, ‘to’, ‘left’ and ‘right’, is unrelated to the street’s traffic direction, to its orientation with respect to the points of the compass, or to the order in which cross streets delimiting a stretch are specified.</u></p>
+<h2 id="blockfaces"><span id="chapterVII.3.3"><u>Blockfaces</u></span></h2>
+<p>A blockface is a continuous frontage of a physical city block along one street, ignoring the presence of any bending points or other intervening nodes.  That is, the portions of a street frontage of a block that lie on both sides of a bending point are considered to be parts of the same blockface.</p>
+<div class="imageWithFigure">
+<img src="../../../img/figureVII-14.png" alt="FigureVII-14" />
+<p class="img_tagline">FigureV11-14: Block with Four <br>Blockfaces</p>
+</div>
+
+<p>For example, the Manhattan block bounded by Madison
+and Park Avenues and East 51st and East 52nd Streets has the following four blockfaces (see Figure VII-14, which, unlike most of the figures in this chapter, contains a double-line map to illustrate clearly the concept of a blockface):</p>
+<ul>
+<li>The east side of Madison Avenue between East 51st and East 52nd Streets</li>
+<li>The south side of East 52nd Street between Madison and Park Avenues</li>
+<li>The west side of Park Avenue between East 51st and   East 52nd Streets</li>
+<li>The north side of East 51st Street between Madison and Park Avenues</li>
+</ul>
+<p>An example of a stretch with a bending point in Manhattan is Commerce Street between Bedford and Barrow Streets (see Figure VII-4).  Both sides of this stretch are single blockfaces, even though the stretch consists of two segments connected at the bending point.</p>
+<h2 id="t-intersections"><span id="chapterVII.3.4"><u>T-Intersections</u></span></h2>
+<div class="textWithImage">
+
+<div class="imageWithFigure">
+<img src="../../../img/figureVII-15.png" alt="FigureVII-15" />
+<p class="img_tagline">Figure VII-15: T-Intersection</p>
+</div>
+
+<p>A street stretch, and in particular a street segment, is considered to comprise both sides of the ‘on’ street.  In the case of a street segment, each side necessarily is either a single entire blockface or a portion of one.  Many segments consist of a pair of facing entire blockfaces along the ‘on’ street.  However, this is not the case at a street configuration called a T-intersection.  A T-intersection (so named because the streets are configured like the letter ‘T’) is an intersection where a cross street intersects the ‘on’ street on one side of the ‘on’ street only, and there are no cross streets on the other side of the ‘on’ street at that intersection.  At a T-intersection, the ‘on’ street has a blockface that encompasses more than one segment, and conversely, at least one side of each of those segments consists of only a portion of that blockface.</p>
+</div>
+
+<p>An example of a T-intersection in Manhattan is the intersection of Fifth Avenue and East 41st Street (Figure VII-15).  Because of the presence of the New York Public Library main building along the west side of Fifth Avenue between West 40th and West 42nd Streets, there are no cross streets on the west side of Fifth Avenue where it intersects with East 41st Street.  The long blockface on the west side of Fifth Avenue encompasses two segments, each consisting of a portion of this long blockface facing a shorter entire blockface on the east side of Fifth Avenue.</p>
+<div class="textWithImage">
+
+<div class="imageWithFigure">
+<img src="../../../img/figureVII-16.png" alt="FigureVII-16" />
+<p class="img_tagline">Figure V11-16: Two Consecutive <br> T- Intersections </p>
+</div>
+
+<p>It is possible for a street to have T-intersections at several consecutive nodes.  An example in Manhattan is the three-segment stretch of Lexington Avenue between East 42nd and East 45th Streets (Figure VII-16).  Because of the presence of the Grand Central Terminal complex on the west side of Lexington Avenue, East 43rd Street and East 44th Street intersect Lexington Avenue only on its east side, forming two consecutive T-intersections along Lexington Avenue.  As a result, the west side of this stretch is a single long blockface, which faces three shorter blockfaces on the east side of Lexington Avenue.</p>
+</div>
+
+<div class="textWithImage">
+
+<div class="imageWithFigure">
+<img src="../../../img/figureVII-16.png" alt="FigureVII-16" />
+<p class="img_tagline">Figure VII-17: T-Intersections on <br> Alternating Sides of street </p>
+</div>
+
+When a street has consecutive T-intersections at which the cross streets are on alternating sides of the ‘on’ street, then long blockfaces on both sides of the ‘on’ street face each other in overlapping fashion, forming segments both sides of which consist of portions of those long blockfaces.  Union Avenue in Staten Island is an example (Figure VII-17).  Note that Union Avenue between Leyden Avenue and Walloon Street is a street segment, because the two delimiting intersections are consecutive along Union Avenue, even though the cross streets are on opposite sides of the ‘on’ street. </div>
+
+<p><br>
+<br></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../section04/" class="btn btn-neutral float-right" id="nextButton" title="VII.4 Street Segments and Related Configurations: Function 3">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../section02/" class="btn btn-neutral" id="previousButton" title="VII.2 Intersections: Function 2 and Function 2W"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../section02/" style="color: #fcfcfc; float:left">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../section04/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+
+</body>
+</html>
