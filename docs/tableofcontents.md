@@ -1385,9 +1385,75 @@
     <td class="indentRows"><a href="../appendices/appendix21/#appendix21.5">IV Geosupport Update Cycles And User Feedback</a></td>
     <td>959</td>
   </tr>
+
+  <!-- ============Appendix 22=============================== -->
+  <tr>
+    <td><b><a href="../appendices/appendix22">APPENDIX 22: GeoX Programming Guide</a></b></td>
+    <td>967</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#geox-overview">GeoX Overview</a></td>
+    <td>967</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#setup">Setup</a></td>
+    <td>967</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#using-geox-in-a-net-program">Using GeoX in a .NET Program</a></td>
+    <td>967</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#sample-code-for-function-1e">Sample Code for Function 1E</a></td>
+    <td>968</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#sample-code-for-function-bl">Sample Code for Function BL</a></td>
+    <td>970</td>
+  </tr>
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#selecting-the-broker-to-use">Selecting the Broker to Use</a></td>
+    <td>971</td>
+  </tr>
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#which-functions-to-use">Which Functions to Use</a></td>
+    <td>973</td>
+  </tr>
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#which-options-to-use">Which Options to Use</a></td>
+    <td>973</td>
+  </tr>
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#selecting-the-proper-work-area-2">Selecting the Proper Work Area 2</a></td>
+    <td>975</td>
+  </tr>
+
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#list-of-classes-and-overview">List of Classes and Overview</a></td>
+    <td>976</td>
+  </tr>
+
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#classes">Classes</a></td>
+    <td>977</td>
+  </tr>
+
+
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix22/#supporting-classes-for-work-areas">Supporting Classes for Work Areas</a></td>
+    <td>978</td>
+  </tr>
+
+
   <!-- ============Glossary of Terms And Acronyms=============================== -->
   <tr>
     <td><b><a href="../appendices/glossary">Glossary of Term And Acronyms</a></b></td>
-    <td>961</td>
+    <td>980</td>
   </tr>
 </table>

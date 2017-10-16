@@ -10,10 +10,9 @@ Function 2 is the Geosupport function that processes street intersections.  Func
 We use the term <u>node</u> generically to refer to all types of intersections, both conventional and pseudo.  Each node is assigned a unique node ID.  Nodes, defined via street names and street codes, can serve not only as Function 2 input, but also as the delimiting endpoints of street stretches for input to the functions that process three-street configurations.  Node IDs can serve as input only to a COW Function 2 or Function 2W call.    
 
 
-Formally, a node is a point along a street where one of the following occurs:
-<div class="textWithImage">
+Formally, a node is a point along a street where one of the following occurs:  
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-2.png" alt="FigureVII-2" />
+<img class="smallImg" src="../../../img/figureVII-2.png" alt="FigureVII-2" />
 <p class="img_tagline testCaption"> Figure VII-2: City Limit Point </p>  
 </div>
 <!-- //![FigureVII-2 >](/img/figureVII-2.png "Figure VII-2") -->
@@ -22,24 +21,16 @@ Formally, a node is a point along a street where one of the following occurs:
 <br>
 * <u>City Limit Point:</u> The street (or non-street feature e.g. bridge or tunnel) intersects with the city limits.  (The street may terminate at that point or it may continue as a suburban street).  City Limit points occur at the Bronx-Westchester County border,  the Queens-Nassau County border, the New York-New Jersey border and the Staten Island –New Jersey border. The New Jersey borders occur in the Hudson River, for  example  HOLLAND TUNNEL and CITY LIMIT in  Manhattan.  An example of Queens city limit is (see  Figure VII-2): ‘LINDEN BOULEVARD at the CITY LIMITS in Queens’
 
-</div>
-
-<div class="textWithImage">
-
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-3.png" alt="FigureVII-3" />
+<img class="smallImg" src="../../../img/figureVII-3.png" alt="FigureVII-3" />
 <p class="img_tagline testCaption"> Figure VII-3: Dead End </p>  
 </div>
 
-* <u> Dead End:</u>  The street has a termination point (called a dead end) that is not at the city limits and at which there are no cross streets. Example (see Figure VII-3):  ‘DEAD END of CROES AVENUE in the Bronx’. City limit points are excluded from being treated as possible dead ends because city streets may continue across the city limits into the adjacent suburban county.)  
+* <u> Dead End:</u>  The street has a termination point (called a dead end) that is not at the city limits and at which there are no cross streets. Example (see Figure VII-3):  ‘DEAD END of CROES AVENUE in the Bronx’. City limit points are excluded from being treated as possible dead ends because city streets may continue across the city limits into the adjacent suburban county.)</div>
 
-</div>
-
- <div class="textWithImage" id="bend">
-
+ <div id="bend">
 <div class="imageWithFigure">
-
-<img src="../../../img/figureVII-4.png" alt="FigureVII-4" />
+<img class="smallImg" src="../../../img/figureVII-4.png" alt="FigureVII-4" />
 <p class="img_tagline testCaption">Figure VII-4: Bends</p>  
 </div>  
 
@@ -69,28 +60,26 @@ Function 2 can process a pair of input streets in the <u>unique-node case</u> an
 
 
 The two-node case occurs with greater frequency than might be expected.  Some types of situations in which the two-node case occurs are the following:  
-<div>
+
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-5.png" alt="FigureVII-5" />
-<p class="img_tagline">Figure VII-5: Street Intersecting </br> Twice with Curved Street</p>  
+<img class="smallImg" src="../../../img/figureVII-5.png" alt="FigureVII-5" />
+<p class="img_tagline">Figure VII-5: Street Intersecting <br class="removeBr"> Twice with Curved Street</p>  
 </div>  
 
 * A street bends or curves, causing it to intersect  with a second street at two different points.  An example in Queens is the two intersections of the curved street Cromwell Crescent with Alderton Street (see Figure VII-5).
-</div>
 
-<div>
+
 <div class="textImageAlignment topBreak">
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-6.png" alt="FigureVII-6" />
+<img class="smallImg" src="../../../img/figureVII-6.png" alt="FigureVII-6" />
 <p class="img_tagline">FigureV11-6: ‘Dogleg’</p>  
 </div>
 
 * A street has a displacement or offset as it crosses another street (a configuration sometimes called a ‘dogleg’), so that there are two points where the two streets intersect.  An example in Brooklyn is Ditmas Avenue where it crosses Coney Island Avenue (Figure VII-6).
 </div>  
-
 <div class="textImageAlignment">
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-7.png" alt="FigureVII-7" />
+<img class="smallImg" src="../../../img/figureVII-7.png" alt="FigureVII-7" />
 <p class="img_tagline">Figure VII-7: Street Fork</p>  
 </div>
 
@@ -99,21 +88,22 @@ The two-node case occurs with greater frequency than might be expected.  Some ty
 
 <div class="textImageAlignment">
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-8.png" alt="FigureVII-8" />
-<p class="img_tagline">Figure VII-8: Street With <br> Two Dead Ends</p>  
+<img class="smallImg" src="../../../img/figureVII-8.png" alt="FigureVII-8" />
+<p class="img_tagline">Figure VII-8: Street With <br class="removeBr"> Two Dead Ends</p>  
 </div>
 
 * A street has exactly two dead ends.  An example in the Bronx is Odell Street (Figure VII-8). The two pseudo-intersections of Odell Street with the pseudo-street DEAD END are considered to be an instance of the two-node case. Similarly, streets that have exactly two intersections with the city limit, and streets that have exactly two bending points, are instances of the two-node case.
 </div>  
 
 <br>
- <div class="topMargin pdfPageBreakBefore">  
+<div class="topMargin">  
 
-##  <span id="chapterVII.2.3"><center><u>Overview of Function 2 Node Enhancements</u></center></span>
+## <u id="chapterVII.2.3">Overview of Function 2 Node Enhancements</u>
 
+<b>(COW Only)</b>  
 Node ID (Node Number) as Input  
 Processing the ‘Many-Node’ Case  
-<b>(COW Only)</b>  
+
 
 </div>  
 
@@ -145,15 +135,15 @@ Note that when a GBAT entry is rejected with GRC03 it will not be written to the
 <u><b>GOAT support of Streets that Intersect more than twice</b></u>  
 When input streets intersect more than twice, Mainframe GOAT (CICS) and the web version of GOAT on the Web display a list of up to 20 nodes and the cross streets at these nodes, with  their street codes and street names.  The user can then more easily choose a node and reissue the GOAT call using the chosen node as input.  
 
-<u><b>Specifying Function 2 Input Data</b></u>  
+## <u>Specifying Function 2 Input Data</u>  
 
 Applications pass input to Function 2/2W by specifying either an intersection name, or two distinct streets (i.e., two streets that have different B5SCs), or a node ID (COW only) identifying the intersection.  If the input information is in the form of an <u>intersection name</u>, it may be passed in either WA1 input street name field, and the other field should preferably be left blank or it may contain any conventional street that exists at the given intersection.   If the input data are in the form of <u>two streets</u> that are an instance of the <u>two-node case</u>, an input compass direction (‘N’, ‘S’, ‘E’ or ‘W’) must also be specified.  The compass direction identifies which of the two nodes is to be processed, by specifying that node’s spatial position relative to the other one.  For example, if ‘N’ is specified as the input compass direction, then Function 2 will process the northernmost of the two nodes.  If the user knows the node ID of the intersection, this may be used as input instead of the two streets and a compass direction.  If the input information is in the form of a <u>node ID</u>, a borough code is not required and is ignored if supplied.  
 
 <!-- ![FigureVII-9 >](../../../img/figureVII-9.png "FigureVII")   -->
 
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-9.png" alt="FigureVII-9" />
-<p class="img_tagline">Figure V11-9: Simultaneous <br>2-Node and Unique-Node Case</p>  
+<img class="smallImg" src="../../../img/figureVII-9.png" alt="FigureVII-9" />
+<p class="img_tagline">Figure V11-9: Simultaneous <br class="removeBr">2-Node and Unique-Node Case</p>  
 </div>
 
 Note that an intersection may be an instance of the two-node case when specified (with a compass direction) in
@@ -190,7 +180,7 @@ The user can now modify his application to issue a COW Function 2W call and proc
 
 > Note: The GRC 03 message returns ‘blank’, ‘A’, or ‘B’ as the Reason Code.  It no longer returns the number of intersections (3 through 9) as the Reason Code .
 
-<b>Possible Outcomes of a Function 2 or 2W Call</b>  
+## Possible Outcomes of a Function 2 or 2W Call
 
 Table VII-2 lists possible outcomes of a Function 2 or 2W call by Geosupport Return Code (GRC).  Table VII-2 does not include standard reject conditions that are applicable to most Geosupport functions, such as an inability to normalize or recognize an input street name.  In Table VII-2, the term ‘intersection’ also encompasses pseudo-intersections.
 
@@ -269,7 +259,7 @@ Possible Outcomes of a Function 2 and 2W Call
 </table>
 
 
-<b><u>Function 2 Output Data</u></b>  
+## <u>Function 2 Output Data</u>  
 
 Among COW Function 2’s WA1 output items are the following:  
 
@@ -288,39 +278,25 @@ Since Function 2 treats street intersections as if they were single points, Geos
 
 For example, the intersection of East 116 Street and Fifth Avenue in Manhattan lies on the boundaries of three different School Districts (SDs) (see Figure VII-10).  Two of the four block corners at this intersection lie in SD 3, one lies in SD 4 and one lies in SD 5.  For this intersection, Function 2 returns SD 3, and provides no indication that the intersection lies on a SD boundary.
 
+<div>
+<img class="smallImg" src="../../../img/figureVII-10.png" alt="FigureVII-10"/>
+<p>Figure V11-10: Multiple Districts at an Intersection</p>  
+</div>  
 
-
- <div class="textWithImage">
-
-<div class="imageWithFigure">
-<img src="../../../img/figureVII-10.png" alt="FigureVII-10" />
-<p class="img_tagline">Figure V11-10: Multiple Districts <br> at an Intersection</p>  
-</div>
-<b><u>Political Geography Returned with Function 2 Call (COW Only)</u></b>
-
-Political geography and CD Eligibility are returned in the Character-Only Work Area 2 for Function 2 calls.  Since it is possible that multiple political geographies may exist at an intersection, Geosupport returns the political geography associated with the most frequently occurring ED/AD.  If there is no one political geography that occurs more frequently than any other, then the political geography associated with the ED/AD that is one of the most frequently occurring ED/ADs and that has the lowest numeric value is selected.  This insures that the same data will be returned from one data cycle to the next data cycle.  The only exception should be the changes in the political geography associated with the decennial census conducted by the federal government.
-
-</div>
-
- <div class="textWithImage">
-
-<div class="imageWithFigure">
-<img src="../../../img/figureVII-11.png" alt="FigureVII-11" />
-<p class="img_tagline">Figure V11-11: Three - Street <br> Intersection</p>  
-</div>
-<b><u>Multi-Street Intersections and Retrieval Consistency</u></b>
+## <u>Multi-Street Intersections and Retrieval Consistency</u>
 
 This subsection discusses the common situation of intersections at which there are more than two streets.  Geosupport accepts any pair of those streets as a valid input specification for the intersection.  (The concept of an intersection of multiple streets should not be confused with the concept of two streets that intersect at multiple points, which was discussed in the preceding subsection.)
 
 For example, consider the three-street intersection of Hudson Street, Chambers Street and West Broadway in Manhattan (Figure VII-11).  The user can specify this intersection as input to Function 2 in three ways:  as the intersection of Hudson Street and Chambers Street;   Hudson Street and West Broadway; or Chambers Street and West Broadway.  
+<div>
+<img class="smallImg" src="../../../img/figureVII-11.png" alt="FigureVII-11" />
+<p>Figure V11-11: Three - Street Intersection</p></div>  
 
 Similarly, a four-street intersection can be specified in six ways, etc.  Function 2 returns identical WA2 information (other than that related to which streets were the input streets for the call) for an intersection regardless of which pair of streets is used to specify it.			                           	                   
 Since an intersection of more than two streets can be specified in more than one way, an important issue for some applications that process data by intersection is the ability to retrieve or match data from an application file consistently by intersection.  (For a general discussion of the concept of application file geographic retrieval consistency, [see Section I.3](/chapters/chapterI/section03/).)  That is, it is desirable for applications to be able to retrieve data successfully for a multi-street intersection regardless of which pair of streets is used to identify the intersection.  A data item called the Node ID, which is returned in Function 2's WA2, is designed to serve effectively as a unique, consistent intersection identifier.  It is able to so serve because the same Node ID Number is returned regardless of how the intersection is specified.  Moreover, the Node ID assigned to an intersection is kept constant over time.  That is, the same Node ID is returned for a given intersection by every Geosupport release, even in cases where there is a change in the set of streets defining an intersection (such as the presence of a new street, the closure of an existing street, or a change in the street code assigned to a street).
 
 
-</div>
-
-<b><u>Fuzzy Intersection Processing (Function 2) - Front-truncated street names</u></b>
+## <u>Fuzzy Intersection Processing (Function 2) - Front-truncated street names</u>
 
 Under certain conditions, Function 2 will return data when front-truncated street names are given as input; e.g. 14 STREET instead of EAST 14 STREET or WEST 14 STREET.  If a user supplies a front-truncated street name as one of the names that define an intersection, Geosupport will attempt to find the intersection using the appropriate street names.  If Geosupport is successful in finding the intersection, it will process the call and issue a warning message (Reason Code J) indicating which street name was assumed.  The following are a number of examples and special cases of this processing.
 
@@ -332,5 +308,5 @@ If the user supplies the front-truncated street name 177 STREET and JEROME AVENU
 
 Non-addressable Place Names (NAPs) will not be considered when processing truncated street names at an intersection.  For example, if the user supplies ‘33’ and MADISON AVENUE in Manhattan as the input to a Function 2 call, Geosupport will find that in addition to EAST 33 STREET and WEST 33 STREET, there is also 33 POLICE PRECINCT.  33 Police Precinct is eliminated as a possibility because it is a NAP which may not be used in a Function 2 call.  This leaves only East and West 33 Street as possibilities and since only East 33 Street intersects Madison Avenue in Manhattan, the call will be processed successfully and a warning message will indicate a street name change.
 
-<b><u>Note Concerning the ‘Vestigial’ Function 2C:</u></b>  A Geosupport enhancement that was implemented in Version 9.5 (March 1998) enabled Function 2 to process pairs of streets that intersect twice, using the input compass direction field to identify the specific intersection to be processed.  Prior to that enhancement, Function 2 could only process pairs of streets that intersect once, and a separate function, Function 2C, had to be used to process pairs of streets that intersect twice.  The enhancement enabled Function 2 to process both types of intersection input, rendering Function 2C obsolete.  Function 2C is a ‘vestigial’ function, in the sense in which this term is described in [Chapter I.5](/chapters/chapterI/section05/).  In particular, <u>all new applications should be designed to perform all intersection processing using Function 2 only.  It is recommended that users modify existing applications by replacing all Function 2C calls with Function 2 calls</u>.  To do so, it may be necessary or appropriate to modify the application’s reject handling routines to reflect the situations and GRC’s delineated in Table VII-2.  Function 2C is not further documented in this *User Programming Guide*.
-</div> </div>
+## <u>Note Concerning the ‘Vestigial’ Function 2C:</u>  
+A Geosupport enhancement that was implemented in Version 9.5 (March 1998) enabled Function 2 to process pairs of streets that intersect twice, using the input compass direction field to identify the specific intersection to be processed.  Prior to that enhancement, Function 2 could only process pairs of streets that intersect once, and a separate function, Function 2C, had to be used to process pairs of streets that intersect twice.  The enhancement enabled Function 2 to process both types of intersection input, rendering Function 2C obsolete.  Function 2C is a ‘vestigial’ function, in the sense in which this term is described in [Chapter I.5](/chapters/chapterI/section05/).  In particular, <u>all new applications should be designed to perform all intersection processing using Function 2 only.  It is recommended that users modify existing applications by replacing all Function 2C calls with Function 2 calls</u>.  To do so, it may be necessary or appropriate to modify the application’s reject handling routines to reflect the situations and GRC’s delineated in Table VII-2.  Function 2C is not further documented in this *User Programming Guide*.

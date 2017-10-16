@@ -12,7 +12,7 @@ Each entry consists of an appropriate combination of the following elements:
 
 <div class="indent">
   <p>1 * = 1, 1A, 1B, 1E, 1N; also 1Extended, 1A Extended, 1E Extended</p>
-  <p>2 * = 2, 2W??</p>  
+  <p>2 * = 2, 2W</p>  
   <p>3 * = 3, 3C, 3S, 3 & 3C with Auxiliary Segments, 3 & 3C Extended (with or without Auxiliary Segments)</p>  
   <p>B * = BB, BF, BL, BN</p>  
   <p>D * = D, DG, DN</p>
@@ -33,27 +33,27 @@ BF = Blank-Filled
 *	<u>Description.</u>  A brief narrative description of the data item.  The description may include citations to sections of the UPG where the data item is principally discussed.  Data items that are self‑explanatory have no description and/or citations.
 
 * <u>Valid Values and Code Meanings.</u>  The values or ranges of values valid for this data item and, if the item consists of codes, the meaning of each code value.  
+## Numeric
 
-
-
-
-<b>1A/BL VERSION FLAG</b> - See FUNCTION 1A/BL VERSION FLAG.  
-<b>1990 CENSUS TRACT</b> - See CENSUS TRACT.  
-<b>2000 CENSUS BLOCK</b> - See CENSUS BLOCK.  
-<b>2000 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
-<b>2000 CENSUS TRACT</b> - See CENSUS TRACT.  
-<b>2010 CENSUS BLOCK</b> - See CENSUS BLOCK.  
-<b>2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
-<b>2010 CENSUS TRACT</b> - See CENSUS TRACT.  
+<table class="rightTableAlignment borderlessTable">
+<tr><td><b>1A/BL VERSION FLAG</b> - See FUNCTION 1A/BL VERSION FLAG.</td></tr>
+<tr><td><b>1990 CENSUS TRACT</b> - See CENSUS TRACT.</td></tr>  
+<tr><td><b>2000 CENSUS BLOCK</b> - See CENSUS BLOCK.</td></tr>  
+<tr><td><b>2000 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.</td></tr>  
+<tr><td><b>2000 CENSUS TRACT</b> - See CENSUS TRACT.</td></tr>  
+<tr><td><b>2010 CENSUS BLOCK</b> - See CENSUS BLOCK.</td></tr>  
+<tr><td><b>2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.</td></tr>  
+<tr><td>2010 CENSUS TRACT - See CENSUS TRACT.</td></tr>  
+</table>
 
 ## A
 
 <table class="rightTableAlignment borderlessTable">
     <tr>
-        <th colspan="2">ALLEY/CROSS STREETS FLAG (ALX)</th>
+        <th colspan="2" >ALLEY/CROSS STREETS FLAG (ALX)</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1E</td>
     </tr>
     <tr>
@@ -65,7 +65,7 @@ BF = Blank-Filled
         <td>1 byte</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Indicates if the segment has been split by alleys, or if the cross streets named in the segment have been copied from a previous or subsequent segment because the segment itself has no cross streets.</td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ BF = Blank-Filled
         <th colspan="2">ALTERNATE LOW AND HIGH HOUSE NUMBERS</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>3C</td>
     </tr>
     <tr>
@@ -112,7 +112,7 @@ BF = Blank-Filled
         <td>See HOUSE NUMBER</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>These two fields are non-blank only if this blockface has addresses of both parities (the parity of a number is its attribute of being odd or even).  Such a blockface is said to have ‘continuous parity’.  If the blockface has continuous parity, the Continuous Parity Indicator is non-blank, the Low and High House Number fields contain the address range for one parity, and the Alternate Low and High House Number fields contain the address range for the other parity.  (Which parity is in which set of house number fields is unpredictable.)</td>
     </tr>
 </table>
@@ -122,7 +122,7 @@ BF = Blank-Filled
         <th colspan="2">ALTERNATIVE BOROUGH FLAG</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1A, 1B, 1E, 2, 3, 3C, 3S (COW only), BL, BN</td>
     </tr>
     <tr>
@@ -134,7 +134,7 @@ BF = Blank-Filled
         <td>1 byte</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This flag indicates either that the input address is in Marble Hill or Rikers Island and the alternative (rather than the legal) borough was specified (see <a href="../../chapters/chapterV/section07/">Chapter V.7</a>), or that the input address is on Ruby Street in Brooklyn but it was specified using the alternative (Queens) street name 75 Street (see <a href="../../chapters/chapterV/section08/">Chapter V.8).</td>
     </tr>
     <tr>
@@ -165,7 +165,8 @@ BF = Blank-Filled
     </tr>
 </table>
 
-<b>ALX FLAG</b> - See ALLEY/CROSS STREETS FLAG  
+<b>ALX FLAG</b> - See ALLEY/CROSS STREETS FLAG<br>      
+
 <b>ANNOTATION POINT</b> - No longer used by Geosupport.  See SPATIAL COORDINATES OF THE TAX LOT CENTROID  
 
 <table class="rightTableAlignment borderlessTable">
@@ -173,11 +174,11 @@ BF = Blank-Filled
         <th colspan="2" id="appendix03-assembly-district">ASSEMBLY DISTRICT</th>
     </tr>
     <tr>
-        <td>Field Names:</td>
+        <td class="widthTD">Field Names:</td>
         <td>LEFT ASSEMBLY DISTRICT <br> RIGHT ASSEMBLY DISTRICT</td>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1E, 2 (COW only), 3 (COW only), 3C (COW only)</td>
     </tr>
     <tr>
@@ -189,7 +190,7 @@ BF = Blank-Filled
         <td>2 bytes. RJZF</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>A district of the lower house of the New York State legislature.  Consists of an aggregation of Election Districts</td>
     </tr>
 </table>
@@ -199,7 +200,7 @@ BF = Blank-Filled
         <th colspan="2" id="appendix03-atomic-polygon">ATOMIC POLYGON - Previously known as DYNAMIC BLOCK</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1B, 1E, 3(MSW:  Long WA2), 3(COW), 3C</td>
     </tr>
     <tr>
@@ -211,7 +212,7 @@ BF = Blank-Filled
         <td>3 bytes RJZF</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>An atomic polygon is an un-subdivided polygon .  Atomic polygons are created based on the New York City CSCL (Citywide Street Centerline) database.  Atomic polygons are numbered uniquely within census tract.</td>
     </tr>
 </table>
@@ -223,7 +224,7 @@ BF = Blank-Filled
         <th colspan="2">AUXILIARY SEGMENT SWITCH (auxseg or segaux)</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>3, 3C, 3 & 3C Extended</td>
     </tr>
     <tr>
@@ -235,7 +236,7 @@ BF = Blank-Filled
         <td>1 byte character.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>When this flag is set to ‘Y’, the list of all the Segment IDs that comprise the segment will be added to the end of Work Area 2 for Functions 3 or 3C.</td>
     </tr>
     <tr>
@@ -268,7 +269,7 @@ BF = Blank-Filled
         <th colspan="2">B7SC OF “TRUE” STREET (a.k.a. B7SC OF “UNDERLYING” STREET)</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1and 1E (MSW:  Long WA2 only); 1, 1B and 1E (COW)</td>
     </tr>
     <tr>
@@ -280,7 +281,7 @@ BF = Blank-Filled
         <td>8 bytes (B7SC)</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This item typically applies to Addressable Place Names, Non-addressable Place Names and Vanity Addresses.  It item contains the B7SC of the street segment upon which the address specified is actually located.  This is the street segment that is identified by the field SEGMENT-ID and by the fields FACE CODE and SEQUENCE NUMBER.  In most cases, the B5SC portion of this item is identical to the B5SC specified in the key.  However, the two B5SCs differ when the SPECIAL ADDRESS GENERATED RECORD FLAG is either ‘B’, ‘N’, ‘P’, or ‘V’.</td>
     </tr>
 </table>
@@ -290,7 +291,7 @@ BF = Blank-Filled
         <th colspan="2">BBL</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, BL, BN, AP</td>
     </tr>
     <tr>
@@ -338,7 +339,7 @@ BF = Blank-Filled
       </td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>The first 6 bytes of the standard BBL consists of the 1-byte borough code followed by the 5-byte tax block field, which contains the tax block value right-justified and zero-filled.  The last 4 bytes of the standard BBL is the standard tax lot field, which contains the tax lot value right-justified and zero-filled.   See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>.
 The BBL (‘borough-block-and-lot’) identifies a parcel of real property in New York City, called a tax lot.  The BBL is composed of the concatenation of the Borough Code, Tax Block and Tax Lot.  If the property is a condominium (indicated by the Condominium Flag), the WA2 BBL field contains the billing BBL of the condominium (see <a href="../../chapters/chapterVI/section04/">Chapter VI.4</a>).</td>
     </tr>
@@ -354,7 +355,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>BIKE LANE is being replaced by BIKE LANE 2. See also BIKE LANE 2 </td>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1 Extended, 1B, 1E Extended, 3 Extended, 3C Extended</td>
     </tr>
     <tr>
@@ -366,11 +367,11 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte</td>
     </tr>
     <tr>
-        <td>Notice:</td>
+        <td class="topVerticalTD">Notice:</td>
         <td>As of Release 16D, Bike Lane has 11 codes, instead of 7.  A new two-byte field, BIKE LANE 2, is being introduced.  The original one-byte Bike Lane field still exists to give users a chance to update their applications.  In the one-byte Bike Lane field, the value ‘A’ will appear when the new code is ‘10’, and the value ‘B’ will appear when the new code is ‘11’.  We recommend that users update their applications to refer to the new Bike Lane-2 since the one-byte Bike Lane field will be deleted in a later release.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Defines which street segments are part of the bicycle network as defined by the Department of Transportation.</td>
     </tr>
     <tr>
@@ -438,7 +439,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">BIKE LANE 2</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1 Extended, 1B, 1E Extended, 3 Extended, 3C Extended</td>
     </tr>
     <tr>
@@ -450,7 +451,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes, RJBF</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Defines which street segments are part of the bicycle network as defined by the Department of Transportation. <br> Note: As of Geosupport Version 16.4, Bike Lane 2 is being introduced to replace Bike Lane</td>
     </tr>
     <tr>
@@ -529,7 +530,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">BIKE TRAFFIC DIRECTION</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1 Extended, 1B, 1E Extended, 3 Extended, 3C Extended</td>
     </tr>
     <tr>
@@ -541,7 +542,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes, RJBF</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Defines the traffic direction of the bike lanes on a segment.</td>
     </tr>
     <tr>
@@ -591,7 +592,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>LEFT BLOCKFACE ID <br> RIGHT BLOCKFACE ID</td>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1 Extended, 1B, 1E Extended, 3 Extended, 3C Extended</td>
     </tr>
     <tr>
@@ -603,17 +604,18 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>10 bytes. RJZF</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Left Blockface ID is a ten digit number identifying the block face on the left hand side of a segment.  Correspondingly, Right Blockface ID identifies the block face on the right hand side of a segment.  Block Face is defined as one continuous side of a physical block that is intersected on that side by two other physical through streets.  Blockface IDs were established by DoITT’s consultants working on the planimetric feature classes for NYC and are not maintained by the Department of City Planning.</td>
     </tr>
-</table>
+</table>  
+
 
 <table class="rightTableAlignment borderlessTable">
     <tr>
         <th colspan="2">BOARD OF ELECTIONS PREFERRED LGC</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1E</td>
     </tr>
     <tr>
@@ -625,7 +627,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes. RJZF</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This item is the LGC (the sixth and seventh digits of the 10-digit street code) that corresponds to the NYC Board of Elections’ preferred street name for a given location.</td>
     </tr>
 </table>  
@@ -636,7 +638,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">BOROUGH CODE</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>All functions</td>
     </tr>
     <tr>
@@ -648,7 +650,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.  Numeric.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td></td>
     </tr>
     <tr>
@@ -695,7 +697,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">BROWSE FLAG</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1A, 1B, 1E, 1N, 2, 3, 3C, BB, BF</td>
     </tr>
     <tr>
@@ -707,7 +709,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.  Alphabetic</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td></td>
     </tr>
     <tr>
@@ -748,7 +750,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">BUILDING IDENTIFICATION NUMBER (BIN)</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, BL, BN, 1B (COW only) and AP (COW only)</td>
     </tr>
     <tr>
@@ -760,7 +762,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>7 bytes.  Numeric</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Building Identification Number.  A permanent BIN is a seven-digit numerical identifier unique to each building in the City of New York.  The first digit is the Borough Code.  There are also two types of temporary BINs; those maintained by the Dept. of Buildings (DOB) and those maintained by the Dept. of City Planning (DCP).  The temporary BINs assigned by DOB contain the number ‘8’ as the second digit, and the temporary BINs assigned by DCP contain a ‘9’ in the same position.  DCP is currently in the process of phasing out all of its temporary BINs.</td>
     </tr>
 </table>
@@ -770,7 +772,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2" id="appendix03-BID">BUSINESS IMPROVEMENT DISTRICT (BID)</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, 1B, BL, BN</td>
     </tr>
     <tr>
@@ -782,7 +784,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>6 bytes, B5SC</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>The Business Improvement District (BID) field (which was requested by the Fire Department) consists of a borough and five-digit street code (B5SC).  Function D may be used to obtain the 32-byte name of the BID.  The ‘Street Attribute Indicator’ is set to ‘C’ for BIDs.  An example of a Business Improvement District is ‘5 AVE BID’  Note that a BID may not be used as input to Function 1, 1A, 1B, 1E, 2*, and 3*.</td>
     </tr>
 </table>
@@ -811,7 +813,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         </td>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1 & 1E (MSW: for 2010 - Regular WA2, for 2000 - Long WA2 Only;), 1 & 1E(COW). 2, 3 (MSW: Long WA2 Only), 3(COW), 3C </td>
     </tr>
     <tr>
@@ -823,7 +825,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>4 bytes, numeric</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>When appended by the CENSUS BLOCK SUFFIX, this area is the smallest geographic area defined by the U.S. Census Bureau for tabulating the census.  Generally (but not always) corresponds to a physical city block.  Each census block is numbered uniquely within its census tract.</td>
     </tr>
 </table>
@@ -847,7 +849,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         </td>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1&1E (MSW: for 2010 - Regular WA2, for 2000 - Long WA2 Only;), 1, 1B &1E(COW)  2, 3 (MSW: Long WA2 Only), 3(COW), 3C</td>
     </tr>
     <tr>
@@ -859,7 +861,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This suffix is defined by the U.S. Census Bureau.  At the government’s discretion, this field may, or may not, contain data.</td>
     </tr>
 </table>
@@ -885,7 +887,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         </td>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1E, 1B, 2, 3 (MSW: 2010 - Regular WA2; 2000 - Long WA2 Only), 3(COW), 3C</td>
     </tr>
     <tr>
@@ -897,7 +899,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>6 bytes, consisting of numeric 4-digit root followed by numeric 2-digit suffix.  The root subfield is RJBF and the suffix subfield is RJZF if any.  If the tract number contains no suffix, then the suffix subfield is blank.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>Geographic area defined by the U.S. Census Bureau for the various decennial censuses.  Census tracts for a particular census year are numbered uniquely within  borough.</td>
     </tr>
 </table>
@@ -907,7 +909,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2" id="appendix03-city-council-district">CITY COUNCIL DISTRICT</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1B (COW), 1E, 2(COW only)</td>
     </tr>
     <tr>
@@ -919,7 +921,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>A district represented by a member of the New York City Council.  Consists of an aggregation of Election Districts.  There are currently 51 City Council Districts.</td>
     </tr>
 </table>
@@ -929,7 +931,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">CIVIL COURT DISTRICT</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1E, 1B (COW), 2(COW only)</td>
     </tr>
     <tr>
@@ -941,7 +943,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>A district from which a Civil Court judge is elected.  Consists of an aggregation of Election Districts.</td>
     </tr>
 </table>
@@ -951,7 +953,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2" id="appendix03-coincident-segment-count">COINCIDENT SEGMENT COUNT</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1E, 3, 3C</td>
     </tr>
     <tr>
@@ -963,7 +965,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte, numeric</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>The Coincident Segment Count indicates the situation where one road is above another road.  Most streets, such as Broadway in Manhattan have a value of ‘1’ in the Coincident Segment Count.  However, there are a few streets where the Coincident Segment Count is greater than one.  An example of this is Third Avenue and the Gowanus Expressway in Brooklyn.  The Gowanus Expressway is above Third Avenue from about 18th Street until 63rd Street.  For these segments, the Coincident Segment Count is ‘2’.</td>
     </tr>
 </table>
@@ -979,7 +981,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
           <th colspan="2" id="appendix03-community-district">COMMUNITY DISTRICT (CD)</th>
       </tr>
       <tr>
-          <td>Functions:</td>
+          <td class="widthTD">Functions:</td>
           <td>1, 1E, 2, 3, 3C, 1B (COW)</td>
       </tr>
       <tr>
@@ -991,7 +993,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
           <td>3 bytes.  Numeric.  The first byte is the Community District Borough Code, and the second and third bytes are the Community District Number, RJZF.</td>
       </tr>
       <tr>
-          <td>Description:</td>
+          <td class="topVerticalTD">Description:</td>
           <td>There are 59 community districts in the City of New York, as well as 12 Joint Interest Areas (JIAs).  The JIAs are major parks and airports that are not contained within any CD.  Examples are Central Park, Van Cortlandt Park, LaGuardia and JFK Airports.  The JIAs are the numerically highest items in each borough.</td>
       </tr>
       <tr>
@@ -1088,7 +1090,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2" id="appendix03-compass-direction">COMPASS DIRECTION</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>2, 3C, 3S</td>
     </tr>
     <tr>
@@ -1100,7 +1102,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>In the case of Function 2, the compass direction identifies, for a pair of input streets that intersect at two distinct locations, which of those two intersections is to be processed. (See <a href="../../chapters/chapterVII/section02/">Chapter VII.2</a>)
  	      In the case of Function 3C, the compass direction identifies which side of the street is to be processed.  (See Section VII.5)
  	      In the case of Function 3S, if the ‘on’ street intersects the first cross street at two distinct locations, the compass direction identifies which of those two intersections is to be processed.  (See <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a>)
@@ -1113,7 +1115,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">COMPASS DIRECTION FOR INTERSECTION KEY</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>2</td>
     </tr>
     <tr>
@@ -1125,7 +1127,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>If the first two entries in the LIST OF INTERSECTING STREETS are an instance of the two-node case (i.e., they intersect twice), this field contains a compass direction value identifying the intersection in terms of those two streets.  If the two streets are not an instance of the two-node case, this field is blank.  If both a ‘longitudinal’ compass direction (‘N’ or ‘S’) and a ‘latitudinal’ compass direction (‘E’ or ‘W ’) are valid for this intersection, the longitudinal compass direction value appears in this field.</td>
     </tr>
 </table>
@@ -1137,7 +1139,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">COMPASS DIRECTION FOR 2nd INTERSECTION</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>3S</td>
     </tr>
     <tr>
@@ -1149,7 +1151,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>If the ‘on’ street intersects the second cross street at two distinct locations, this compass direction identifies which of those two intersections is to be processed. (See <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a>) </td>
     </tr>
 </table>
@@ -1160,7 +1162,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">CONDOMINIUM FLAG</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, BL, BN, 1B (COW), AP</td>
     </tr>
     <tr>
@@ -1172,7 +1174,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td></td>
     </tr>
     <tr>
@@ -1205,7 +1207,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">CONDOMINIUM IDENTIFICATION NUMBER</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, BL, BN, 1B (COW), AP</td>
     </tr>
     <tr>
@@ -1217,7 +1219,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>4 bytes</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>An identification number assigned by the Department of Finance to each condominium in the city.  This field is blank for non-condominiums.</td>
     </tr>
 </table>
@@ -1227,7 +1229,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2" id="appendix03-congressional-district">CONGRESSIONAL DISTRICT</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1E, 1B (COW), 2 (COW only)</td>
     </tr>
     <tr>
@@ -1239,7 +1241,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>A district of the U.S. House of Representatives.  Consists of an aggregation of Election Districts.</td>
     </tr>
 </table>
@@ -1249,7 +1251,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">CONTINUOUS PARITY INDICATOR</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1E, 3, 3C, 1B (COW)</td>
     </tr>
     <tr>
@@ -1261,7 +1263,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>An ‘address range’ is a sequence of house numbers along an ‘on’ street between (and including) a Low House Number and a High House Number.  Every address range has one of three possible parities: odd, even or continuous.  An address range of odd parity consists of all odd house numbers along the ‘on’ street between the Low and High House Numbers.  An even-parity range consists of all even house numbers between the Low and High House Numbers.  A continuous-parity range consists of all house numbers (both even and odd) between the Low and High House Numbers.  Most New York City blockfaces contain an address range that is either of even or odd parity.  However, some blockfaces have a continuous-parity address range, usually where the opposite side of the street is non-addressable because it is a park, a body of water, etc.  Some examples of the continuous parity case in Manhattan are Central Park West (the east side of the street runs along Central Park and is non-addressable, while the west side has both odd and even addresses);  Riverside Drive;  and the portion of Fifth Avenue that runs alongside Central Park. <br><br> If a New York City blockface has a continuous parity address range, Geosupport represents this range as two separate ranges, an odd-parity range and an even-parity range.  The practical effect of this depends on the Geosupport function.  For Functions 1 and 1E, if an input address lies on a continuous-parity blockface, only the range (i.e., the Low and High House Numbers) whose parity is the same as that of the input address is returned in WA2.  For Function 3, if an input street segment contains a continuous parity address range, both the odd and the even ranges are returned, in the WA2 fields called Left Low House Number and Left High House Number for the range of one parity, and in the fields Right Low and High House Numbers for the range of the other parity;  note that in this case, in reality both the odd and the even ranges are on the same side of the street, even though they are returned in fields called ‘left’ and ‘right’.  For Function 3C, if an input blockface is on a street segment containing a continuous parity address range (regardless of whether the input blockface is on the addressable or the non-addressable side of the segment), both the odd and the even ranges are returned, in the WA2 fields called Low House Number and High House Number for the range of one parity, and in the fields Alternate Low House Number and Alternate High House Number for the range of the other parity.  <br><br> The field Continuous Parity Indicator indicates, for Functions 1, 1E, 3 and 3C, whether the street segment containing or corresponding to the user input is of the continuous parity type, and if so, which side of the segment is addressable.</td>
     </tr>
     <tr>
@@ -1293,7 +1295,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">COOPERATIVE IDENTIFICATION NUMBER</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, BL, BN, 1B (COW)</td>
     </tr>
     <tr>
@@ -1305,7 +1307,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>4 bytes.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This is an identification number assigned by the Department of Finance to each cooperative in the city.  This field is blank for non-coops.</td>
     </tr>
 </table>
@@ -1316,7 +1318,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2" id="appendix03-corner-code">CORNER CODE</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1A, BL, BN, 1B (COW)</td>
     </tr>
     <tr>
@@ -1328,7 +1330,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>2 bytes</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td></td>
     </tr>
     <tr>
@@ -1363,7 +1365,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <th colspan="2">COUNTY BOUNDARY INDICATOR</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>3, 3C</td>
     </tr>
     <tr>
@@ -1375,7 +1377,7 @@ The BBL (‘borough-block-and-lot’) identifies a parcel of real property in Ne
         <td>1 byte</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This field is non-blank when the street segment lies along a borough boundary.  
 The value of this field indicates which side of the segment is out of borough. </td>
     </tr>
@@ -1411,7 +1413,7 @@ The value of this field indicates which side of the segment is out of borough. <
         <th colspan="2">CROSS STREET NAMES FLAG (a.k.a. EXPANDED FORMAT FLAG)</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>1, 1E, 2, 3, 3C, 1B (COW)</td>
     </tr>
     <tr>
@@ -1423,7 +1425,7 @@ The value of this field indicates which side of the segment is out of borough. <
         <td>1 byte character.</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>When this flag is set to ‘E’, the LIST OF STREET NAMES is used to return street names corresponding to the street codes in the LIST OF CROSS STREETS (Functions 1, 1B, 1E, 3 and 3C) or in the LIST OF INTERSECTING STREETS (Function 2).  See LIST OF STREET NAMES for related details. <br> <br> When possible, the BBL and BIN are returned in the output area of Work Area 1  for Functions 1, 1A, 1B, and 1E. <br> <br> The cross street names feature incurs processing overhead, and should only be used when necessary.  Note that Function 1B returns the principal street codes and street names of the cross streets in the Blockface portion of Work Area 2.  Therefore it is typically not necessary to set the Cross Street Names flag with Function 1B. </td>
     </tr>
     <tr>
@@ -1455,7 +1457,7 @@ The value of this field indicates which side of the segment is out of borough. <
         <th colspan="2">CROSS STREET REVERSAL FLAG</th>
     </tr>
     <tr>
-        <td>Functions:</td>
+        <td class="widthTD">Functions:</td>
         <td>3, 3C</td>
     </tr>
     <tr>
@@ -1467,7 +1469,7 @@ The value of this field indicates which side of the segment is out of borough. <
         <td>1 byte</td>
     </tr>
     <tr>
-        <td>Description:</td>
+        <td class="topVerticalTD">Description:</td>
         <td>This flag indicates the relationship between the order in which the user specified the input cross streets and the direction of increasing addresses along the ‘on’ street.</td>
     </tr>
     <tr>
@@ -1503,7 +1505,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
         <th colspan="2" id="appendix03-curve-flag">CURVE FLAG</th>
     </tr>
     <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 3, 3C, 1B (COW)</td>
     </tr>
     <tr>
@@ -1515,7 +1517,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte character</td>
     </tr>
     <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This flag indicates whether the given geographic feature segment is in reality curved.  If so, the curve may be an arc of a circle or an irregular curve.  When the segment specified by the input data is an arc of a circle, Functions 1 and 1E return Spatial Coordinates that are positioned relative to this arc rather than to the segment’s chord (the imaginary straight line joining the curved feature’s endpoints).  When the segment specified by the input data is an irregular curve, Functions 1 and 1E return blanks in the Spatial Coordinate fields (q.v.), and issue a warning with Reason Code value ‘P’.  In the case of Functions 3 and 3C, if the input data define a street stretch encompassing more than one segment (because of a T-intersection or bend), the Curve Flag is set ‘on’ (non-blank) if at least one of the constituent segments of the stretch is curved.  See also discussion of Segment Length.</td>
     </tr>
     <tr>
@@ -1556,7 +1558,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">DCP PREFERRED LGC</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1A and BL (regular WA2 only), 2, 3, 3C, BN</td>
   </tr>
   <tr>
@@ -1568,7 +1570,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>2 bytes RJZF</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Identifies the local group of  street names designated by the Department of City Planning as ‘preferred’ for display purposes for a specific location on a street.</td>
   </tr>
 </table>
@@ -1580,7 +1582,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">DISTANCE BETWEEN DUPLICATE INTERSECTIONS</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>2</td>
   </tr>
   <tr>
@@ -1592,7 +1594,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>5 bytes numeric</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>When the two input streets intersect exactly twice, this field contains the distance, in feet, between those two intersections.</td>
   </tr>
 </table>
@@ -1602,7 +1604,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">DOGLEG FLAG</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>3</td>
   </tr>
   <tr>
@@ -1614,7 +1616,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>A dogleg is a street configuration in which a street has a displacement or offset as it crosses another street.  A non-blank value in the Dogleg Flag indicates that at least one of the cross streets forms a dogleg as it crosses the ‘on’ street, in such a way that at least one side of the ‘on’ street has a blockface encompassing more than one segment. </td>
   </tr>
   <tr>
@@ -1665,7 +1667,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="3">DOT STREET LIGHT CONTRACTOR AREA</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 2, 3, 3C, 1B (COW)</td>
     <td></td>
   </tr>
@@ -1680,7 +1682,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td></td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -1729,7 +1731,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2" id="appendix03-DSNY-Pcode">DSNY SNOW PRIORITY CODE</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1/1E, 1/1E Extended, 1B, 3, 3 Extended, 3C, 3C Extended</td>
   </tr>
   <tr>
@@ -1741,7 +1743,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>1 byte character</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>DSNY (Department of Sanitation) Snow Priority code is used during snow emergencies.  It helps DSNY to determine the snow removal schedule, routes and resources needed.</td>
   </tr>
   <tr>
@@ -1835,7 +1837,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>3 bytes</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>A set of districts defined by the NYC Board of Elections to conduct elections.  There are approximately 6,000 Election Districts (EDs) in NYC.  Each ED is numbered uniquely within its Assembly District.  All of NYC’s higher-level political districts, namely Assembly Districts, City Council Districts, Municipal Court Districts, Congressional Districts and State Senatorial Districts, are defined as aggregates of Eds.</td>
   </tr>
 </table>
@@ -1862,7 +1864,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>4 bytes.  Numeric</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>A Face Code is assigned to each linear geographic feature represented in the LION file.  These consist of streets and certain non-street features, such as census boundaries, shorelines and railroad tracks.  Face Codes serve as part of LION keys, which identify a unique LION record. Face Code values are assigned uniquely within borough.</td>
   </tr>
 </table>
@@ -1885,7 +1887,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Identifies the type of geographic feature represented by the work area</td>
   </tr>
   <tr>
@@ -1961,7 +1963,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">FIRE BATTALION</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 2, 3 (MSW: Long WA2),  3 (COW), 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -1973,7 +1975,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>2 bytes</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>An administrative fire district composed of Fire Companies/</td>
   </tr>
 </table>
@@ -1984,7 +1986,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">FIRE COMPANY NUMBER </th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 2, 3 (MSW: Long WA2),  3 (COW), 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -1996,7 +1998,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>3 bytes.  Numeric RJZF</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>The smallest kind of administrative fire district defined by the NYC Fire Department.  There are three types, indicated by the Fire Company Type: engine companies, Squad and ladder companies.</td>
   </tr>
 </table>
@@ -2007,7 +2009,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">FIRE COMPANY NUMBER </th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 2, 3 (MSW: Long WA2),  3 (COW), 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -2019,7 +2021,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Fire companies are characterized by the type of apparatus they use to fight fires.</td>
   </tr>
   <tr>
@@ -2067,7 +2069,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>An administrative fire district composed of Fire Battalions.</td>
   </tr>
 </table>
@@ -2082,7 +2084,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">FUNCTION 1A/BL VERSION FLAG</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL </td>
   </tr>
   <tr>
@@ -2103,7 +2105,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td><u>Meaning</u></td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -2136,7 +2138,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2" id="appendix03-gap-flag">GAP FLAG</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3S</td>
   </tr>
   <tr>
@@ -2148,7 +2150,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -2188,7 +2190,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>An administrative fire district composed of Fire Battalions.</td>
   </tr>
 </table>
@@ -2215,7 +2217,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -2247,7 +2249,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">GAP FLAG</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3S</td>
   </tr>
   <tr>
@@ -2259,7 +2261,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -2303,7 +2305,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">GENERATED RECORD FLAG</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3, 3C</td>
   </tr>
   <tr>
@@ -2315,7 +2317,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte/td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This flag indicates that the geography defined by the input ‘on’ street and two cross streets is not a conventional street segment.  There are several cases:  a segment one of whose cross-features is a pseudo-street name (codes C, D);  a street stretch formed by consolidating more than one consecutive LION segment (codes B, L, M, R, S and T);  or a segment that is part of such a street stretch (types F, G).  If the input data simultaneously satisfy the criteria for a Generated Record Flag value of C or D and for some other value, the flag contains the value other than C or D.</td>
   </tr>
   <tr>
@@ -2374,7 +2376,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2" id="appendix03-health-area">HEALTH AREA</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 2, 3, 3C, 1B</td>
   </tr>
   <tr>
@@ -2386,7 +2388,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>4 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Districts defined by the NYC Department of Health and used to report statistics on births, deaths, communicable diseases etc. Health Areas are aggregates of Census Tracts.</td>
   </tr>
 </table>
@@ -2397,7 +2399,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2" id="appendix03-health-center-district">HEALTH CENTER DISTRICT</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 2 (COW only), 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -2409,7 +2411,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Districts defined by the NYC Department of Health for administrative purposes.  Health Center Districts are aggregates of Health Areas.</td>
   </tr>
 </table>
@@ -2473,7 +2475,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
                                          1E-MSW: Long WA2, 1, 1B, and 1EE-COW, AP? )</td>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1A, 1E, 3, 3C, 1B COW only)</td>
   </tr>
   <tr>
@@ -2485,7 +2487,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>See <a href="../../chapters/chapterV/section02/">Chapter V.2</a>.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>If the field name indicates the house number is normalized, for MSW it is in HNI format, and for COW it is in HNS format; otherwise, it is in HND format (see <a href="../../chapters/chapterV/section02/">Chapter V.2</a>).</td>
   </tr>
 </table>
@@ -2496,7 +2498,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">HOUSE NUMBER JUSTIFICATION FLAG</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1A, D, DG, DN, 1B?</td>
   </tr>
   <tr>
@@ -2508,7 +2510,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates whether the HOUSE NUMBERS IN DISPLAY format (HNDs) in the output area should be left-justified or right-justified.</td>
   </tr>
   <tr>
@@ -2540,7 +2542,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2">HOUSE NUMBER NORMALIZATION LENGTH</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1A, 1B, D, DG, DN</td>
   </tr>
   <tr>
@@ -2553,7 +2555,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
 
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates the length requested for the HOUSE NUMBERS IN DISPLAY format (HNDs) in the output area.  Valid values are between 12 and 16.  If the field is left blank, the default is 12.  For more information, see <a href="../../chapters/chapterV/section02/">Chapter V.2</a>.</td>
   </tr>
 </table>
@@ -2576,7 +2578,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>2 bytes, numeric, LJBF </td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Information used by Emergency Management (previously known as Office of Emergency Management (OEM)) in emergency situations.</td>
   </tr>
   <tr>
@@ -2608,7 +2610,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td></td>
-      <td>Additional information may be found at http://www1.nyc.gov/site/em/ready/hurricane-evacuation.page</td>
+      <td>Additional information may be found at <a href="http://www1.nyc.gov/site/em/ready/hurricane-evacuation.page"> http://www1.nyc.gov/site/em/ready/hurricane-evacuation.page</a></td>
   </tr>
 </table>
 
@@ -2624,7 +2626,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>INTERIM ASSISTANCE ELIGIBILITY INDICATOR (IAEI)</b> - a.k.a. CD Eligibility Flag</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 2 (COW only), 3, 3C, 1B</td>
   </tr>
   <tr>
@@ -2636,7 +2638,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates whether the input location is in a census tract that is eligible for Community Development Block Grant (CDBG) funding.  A census tract is eligible for CDBG funding if at least 51.00% of the residents are low- and moderate-income persons (less than 80% of the Median Family Income) <u>and</u> 50% of its total floor area must be comprised of residential usage.  All other census tracts are ineligible.</td>
   </tr>
   <tr>
@@ -2676,7 +2678,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>INTERSECTION REPLICATION COUNTER </b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>2</td>
   </tr>
   <tr>
@@ -2688,7 +2690,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte, numeric</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The Intersection Replication Counter is non-blank only if the two streets intersect more than once, in which case this field contains the number of such intersections.</td>
   </tr>
 </table>
@@ -2699,7 +2701,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>INTERIOR LOT FLAG</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN</td>
   </tr>
   <tr>
@@ -2711,7 +2713,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -2739,7 +2741,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>IRREGULARLY-SHAPED LOT FLAG</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN</td>
   </tr>
   <tr>
@@ -2751,7 +2753,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>
           <table class="borderlessTable">
               <tr>
@@ -2780,7 +2782,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2" id="appendix03-latitude-longitude"><b>LATITUDE, LONGITUDE</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1/1E Extended, all variations of 1A/BL/BN (viz. Regular, Long and Extended),  1B, 2W, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -2792,7 +2794,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>Latitude: 9 bytes<br>Longitude: 11 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Spatial coordinates based on the lines of latitude and longitude.  Lines of latitude measure the north-south position between the poles with the equator defined as 0 degrees. Lines of longitude (or meridians) measure the east-west position, with the prime meridian running through Greenwich, England.  For NYC, Latitude is always positive and Longitude is always negative. </td>
   </tr>
   <tr>
@@ -2818,7 +2820,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>LENGTH IN FEET FROM PREVIOUS NODE</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3S</td>
   </tr>
   <tr>
@@ -2830,7 +2832,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>MSW: 3 bytes packed;  COW: 5 bytes numeric RJZF</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The length between two nodes.</td>
   </tr>
 </table>
@@ -2843,7 +2845,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2" id="appendix03-lion-key"><b>LION KEY</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -2855,7 +2857,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>10 bytes. Numeric</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The LION Key identifies a record in the CSCL file and relates to predecessor file known as LION.  It consists of:</td>
   </tr>
   <tr>
@@ -2885,7 +2887,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>LIST OF BUILDINGS ON TAX LOT</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A and BL - Long WA2 only</td>
   </tr>
   <tr>
@@ -2897,7 +2899,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>17,500 bytes, consisting of 2,500 slots for 7-byte BINs</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>List of the BUILDING IDENTIFICATION NUMBER  (BIN) of each building on the tax lot.  See <a href="../../chapters/chapterVI/section06/">Chapter VI.6</a>.</td>
   </tr>
 </table>
@@ -2908,7 +2910,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>LIST OF BUILDINGS ON TAX LOT</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A and BL - Long WA2 only</td>
   </tr>
   <tr>
@@ -2920,7 +2922,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <td>17,500 bytes, consisting of 2,500 slots for 7-byte BINs</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>List of the BUILDING IDENTIFICATION NUMBER  (BIN) of each building on the tax lot.  See <a href="../../chapters/chapterVI/section06/">Chapter VI.6</a>.</td>
   </tr>
 </table>
@@ -2931,7 +2933,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
       <th colspan="2"><b>LIST OF CROSS STREET CODES</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3S</td>
   </tr>
   <tr>
@@ -2944,7 +2946,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
 COW: 40 bytes, numeric, consisting of 5 slots for intersecting B7SCs.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>MSW: For each intersecting street, in general, this is the lowest and second lowest PB5SCs for the cross streets, as described below in COW.
 COW: For each intersecting street, this is a list of up to five B7SCs, starting, in general (see Note below), with the lowest B7SC, followed by the next lowest, followed by the remaining B7SCs in ascending order.<br>The purpose of the ordering of the first two street codes is to facilitate the ability of users to form consistent keys for geographic retrieval of application data.
 <br>Note 1: In order to provide the user with the most meaningful information, ‘normal’ streets will be listed first, followed by ‘special’ streets, such as Ramps and Exits. Railroads, Shorelines and Borough Boundaries will appear next, followed by Named Intersections, CITY LIMITs, DEAD ENDs and BENDs. This will occur even if the ‘special’ streets have lower street codes than the ‘normal’.
@@ -2963,7 +2965,7 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
     <td>LIST OF CROSS STREETS AT LOW ADDRESS END<br>LIST OF CROSS STREETS AT HIGH ADDRESS END</td>
 </tr>
 <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1/1E Regular, 1/1E Extended (COW), 3, 3C, 1B (COW only)</td>
 </tr>
 <tr>
@@ -2983,7 +2985,7 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
     <td>•	COW (1/1E Extended): 40 bytes, consisting of slots for up to five 8-byte B7SCs. ‘Empty’ slots contain either numeric zeros or blanks. This list is in addition to the B5SC (30 bytes) list. </td>
 </tr>
 <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>A list of PB5SCs for MSW and B5SCs (and B7SCs)  for COW (and COW 1/1E Extended), for up to five streets incident upon a delimiting node (endpoint) of a blockface or street segment.  The number of non-empty list entries is returned in the corresponding WA2 field NUMBER OF CROSS STREETS AT (LOW or HIGH) ADDRESS END.  It is possible for the list to be entirely empty.  If the node lies on a borough boundary, the list may contain streets from both boroughs.  Subject to the space limitation, the list may include the pseudo-streets ‘City Limit’, ‘Dead End’ and ‘Bend’.  The inclusion of ‘Bend’ in the list indicates that the node is a bending point of the ‘on’ street, not that it is a bending point of a cross street (although that may also be true). The purpose of the ordering of the first two street codes is to facilitate the ability of users to form consistent keys for geographic retrieval of application data.</td>
 </tr>
 <tr>
@@ -3030,7 +3032,7 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
       <th colspan="2"><b>LIST OF GEOGRAPHIC IDENTIFIERS (LGI)</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A and BL - regular WA2, BN</td>
   </tr>
   <tr>
@@ -3052,7 +3054,7 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
           Side of Street Indicator.<br></td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The List of Geographic Identifiers (LGI) is intended to provide a comprehensive geographic profile of a tax lot by listing, so far as the information is known and space allows, all of the lot’s buildings; all of the street addresses and non-addressable street frontages of each building; all of the lot’s ‘vacant frontages’ (i.e., street frontages of the lot not associated with buildings); and any NAPs associated with the lot.  The LGI contains space for up to 21 entries.  The number of non-empty entries is indicated in the WA2 field NUMBER OF GEOGRAPHIC IDENTIFIERS. The types of entries that the LGI can contain are as follows:</td>
   </tr>
 </table>
@@ -3063,58 +3065,58 @@ COW: For each intersecting street, this is a list of up to five B7SCs, starting,
       <th colspan="3"><b><u>List of Geographic Identifiers - Possible Entry Types</u></b></th>
   </tr>
   <tr>
-    <td><u>Entry Type Code</u></td>
-    <td><u>Represents</u></td>
+    <td class="widthTDsmall"><u>Entry Type Code</u></td>
+    <td class="widthTDsmall"><u>Represents</u></td>
     <td><u>Description</u></td>
   </tr>
   <tr>
-    <td>Blank</td>
-    <td>Address range</td>
+    <td class="topVerticalTD">Blank</td>
+    <td class="topVerticalTD">Address range</td>
     <td>A real address range of a building on a given tax lot.  There are values in the Low House Number, High House Number, B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  A single address is represented as an address range in which the low and high house numbers are identical.</td>
   </tr>
   <tr>
-    <td>B</td>
-    <td>NAUB</td>
+    <td class="topVerticalTD">B</td>
+    <td class="topVerticalTD">NAUB</td>
     <td>A Non-Addressable Un-named Building (NAUB) (see <a href="../../chapters/chapterVI/section03/">Chapter VI.3</a>).  The Low and High House Number and Side of Street Indicator fields are blank.  The B5SC and DCP-Preferred LGC fields usually contain the street code and LGC, correspondingly, of the street nearest to or most accessible to the NAUB, but they may be blank.  The BIN field contains a meaningful value.  Note:  If the NAUB has frontages on more than one street, there are multiple type B entries to represent all of the NAUB’s street frontages.</td>
   </tr>
   <tr>
-    <td>F</td>
-    <td>Vacant Street<br>Frontage</td>
+    <td class="topVerticalTD">F</td>
+    <td class="topVerticalTD">Vacant Street<br>Frontage</td>
     <td>A street frontage of the tax lot at which there are no buildings (including NAUBs) and to which no pseudo-addresses have been assigned.  The Low and High House Number, BIN and Side of Street Indicator fields are empty.  There are values in the B5SC and DCP-Preferred LGC fields.</td>
   </tr>
   <tr>
-    <td>G</td>
-    <td>NAP of a <br> Complex</td>
+    <td class="topVerticalTD">G</td>
+    <td class="topVerticalTD">NAP of a <br> Complex</td>
     <td>A Non-Addressable Place name (NAP) of a complex of buildings and/or other geographic features, usually on a large site or superblock (see <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>).  The house number and BIN fields are empty.  The B5SC, DCP-Preferred LGC, and Side of Street Indicator fields contain the values of these items assigned to the NAP.</td>
   </tr>
   <tr>
-    <td>N</td>
-    <td>NAP of a</td>
+    <td class="topVerticalTD">N</td>
+    <td class="topVerticalTD">NAP of a</td>
     <td>A NAP of a building or other geographic feature that is not part of Simplex		a complex (see <a href="../../chapters/chapterIII/section06/">Chapter III.6</a>).  The house number fields are empty.  The B5SC, DCP-Preferred LGC, and Side of Street Indicator fields contain the values of these items assigned to the given NAP.  The BIN field is non-empty only if the NAP represents a building.</td>
   </tr>
   <tr>
-    <td>Q</td>
-    <td>Pseudo-Address Range</td>
+    <td class="topVerticalTD">Q</td>
+    <td class="topVerticalTD">Pseudo-Address Range</td>
     <td>A pseudo-address range assigned to a vacant street frontage of the tax lot. There are values in the Low House Number, High House Number, B5SC, DCP-Preferred LGC and Side of Street Indicator fields. A single address is represented as an address range in which the low and high house numbers are identical. The BIN field is empty</td>
   </tr>
   <tr>
-    <td>R</td>
-    <td>Real Street of a <br> Vanity Address</td>
+    <td class="topVerticalTD">R</td>
+    <td class="topVerticalTD">Real Street of a <br> Vanity Address</td>
     <td>Entry indicates the street and the side of that street on which the building entrance having a vanity address is really located and for which no other address for that building exists.  For a discussion of vanity addresses, see <a href="../../chapters/chapterV/section09/">Chapter V.9</a>.  In a type R entry, the Low and High House Number fields are empty, and there are non-empty values in the B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  Whenever the LGI contains a type R entry, it also contains a type V entry for the associated vanity address</td>
   </tr>
   <tr>
-    <td>V</td>
-    <td>Vanity Address</td>
+    <td class="topVerticalTD">V</td>
+    <td class="topVerticalTD">Vanity Address</td>
     <td>A vanity address or address range.  For a detailed discussion of vanity addresses, see <a href="../../chapters/chapterV/section09/">Chapter V.9</a>.  There are non-empty values in the Low House Number, High House Number, B5SC, DCP-Preferred LGC, Side of Street Indicator and BIN fields.  A single address is represented as an address range in which the low and high house numbers are identical. Whenever the LGI contains a type V entry, it also contains an either an address range entry or a type R entry that indicates the street on which the associated building entrance is really located.</td>
   </tr>
   <tr>
-    <td>W</td>
-    <td>Blank-Wall Bldg Frontage</td>
+    <td class="topVerticalTD">W</td>
+    <td class="topVerticalTD">Blank-Wall Bldg Frontage</td>
     <td>A building frontage along a street that is not associated with any addresses, such as some building facades with no entrances.  The Low and High House Number and Side of Street Indicator fields are blank. There are values in the B5SC and DCP-Preferred LGC fields.  The BIN field contains a meaningful value.  Note:  Type W entries exist only for buildings that also have at least one real address range entry.  If a building has no real address ranges, the building is a NAUB, and its street frontages, if any, are represented by type B entries rather than type W entries.</td>
   </tr>
   <tr>
-    <td>X</td>
-    <td>NAP of a Constituent Entity of a Complex</td>
+    <td class="topVerticalTD">X</td>
+    <td class="topVerticalTD">NAP of a Constituent Entity of a Complex</td>
     <td>A NAP of a constituent entity of a complex.  (The NAP of the entire complex is represented by a separate entry of type G.) The house number fields are empty.  The B5SC, DCP-Preferred LGC and Side of Street Indicator fields contain the values of these items assigned to the NAP.  The BIN field is non-empty only if the NAP represents a building. </td>
   </tr>
 </table>
@@ -3239,7 +3241,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <th colspan="2"><b>LIST OF INTERSECTING STREETS</b> – See also LIST OF CROSS STREETS</th>
 </tr>
 <tr>
-  <td>Function:</td>
+  <td class="widthTD">Function:</td>
   <td>2</td>
 </tr>
 <tr>
@@ -3252,7 +3254,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
  	COW: 30 bytes, consisting of slots for up to five 6-byte B5SCs.  ‘Empty’ slots contain numeric zeros or blanks.</td>
 </tr>
 <tr>
-  <td>Description:</td>
+  <td class="topVerticalTD">Description:</td>
   <td>A list of PB5SCS for MSWs and B5SCs for COWs for up to five streets incident upon the intersection.  The field NUMBER OF INTERSECTING STREETS contains the number of non-empty entries in the list.  If the intersection lies on a borough boundary, the list may contain streets from both boroughs.  Subject to the space limitation, the list may include the two input streets, and may include the pseudo-streets ‘City Limit’ and ‘Dead End’.  The list never includes the pseudo-street ‘Bend’.  The list always contains at least one entry (it contains precisely one entry in the case of a bending point of a street at which there are no other streets). The street codes of the input streets may, or may not, be included in the list (depending upon their numerical value.)
 	Note, special handling has been given to Railroads, Coincident Street Features, etc.  As a result of this special handling, the first one or two street codes in the list of intersecting streets may not always be the lowest two street codes.  See LIST OF CROSS STREETS for further description and examples of the special handling.</td>
 </tr>
@@ -3264,7 +3266,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>LIST OF SEGMENT IDS</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>3 and 3C</td>
   </tr>
   <tr>
@@ -3276,7 +3278,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>500 bytes, consisting of a count of segment ids and 70 slots for 7-byte Segment IDs</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>This list is generated only if Auxiliary Segment Switch is set to ‘Y’.  See <a href="../../chapters/chapterVII/section04/">Chapter VII.4</a> and <a href="../appendix13/"> Appendix13</a>.</td>
   </tr>
 </table>
@@ -3287,7 +3289,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>LIST OF STREET CODES</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1*, 2, 3*, BB, BF</td>
   </tr>
   <tr>
@@ -3299,7 +3301,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>80 bytes, consisting of 10 fields for B7SCs</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>List of borough and 7-byte street codes, corresponding to the LIST OF STREET NAMES.  The number of street codes in the list is returned in the WA1 output field NUMBER OF STREET CODES AND STREET NAMES IN LIST.</td>
   </tr>
 </table>
@@ -3310,7 +3312,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>LIST OF STREET NAMES (WA1 output field)</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1*, 2, 3*, BB, BF</td>
   </tr>
   <tr>
@@ -3322,7 +3324,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>320 bytes, consisting of 10 fields for street names, each 32 bytes.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>This field is used by several Geosupport features (see below) to return a list of street names.  The number of street names in the list is returned in the WA1 output field NUMBER OF STREET NAMES IN LIST for MSWs, and in the WA1 output field NUMBER OF STREET CODES AND STREET NAMES IN LIST for COWs. </td>
   </tr>
   <tr>
@@ -3353,7 +3355,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2" id="appendix03-locational-statusof-segment"><b>LOCATIONAL STATUS OF SEGMENT</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>3, 3C</td>
   </tr>
   <tr>
@@ -3365,7 +3367,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates locational status of segment per codes below.</td>
   </tr>
   <tr>
@@ -3432,7 +3434,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>MODE SWITCH</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 1A, 3, 3C, BL, BN</td>
   </tr>
   <tr>
@@ -3444,7 +3446,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](/appendices/appendix13/) for the Work Area layouts.  Also, see <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. </td>
   </tr>
   <tr>
@@ -3481,7 +3483,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>NTA or NTA CODE</td>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1 Extended, 1E, 1E Extended, 1B, 3, 3 Extended, 3C, 3C Extended</td>
   </tr>
   <tr>
@@ -3493,7 +3495,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>4 bytes alphanumeric</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>The Neighborhood Tabulation Areas (NTAs) are aggregations of census tracts that reflect the 2010 Census.  The NTAs are assigned a 4-byte code and a 75-byte name.  They are used by the Population Division of the Department of City Planning.  See [Appendix 16](/appendices/appendix16/) for a description of the NTA’s history and significance.</td>
   </tr>
   <tr>
@@ -3554,7 +3556,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
 	      TO NODE ID</td>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>2, 3 (COW only), 3C (COW Only), 3S (COW Only), 1B (COW Only)</td>
   </tr>
   <tr>
@@ -3566,7 +3568,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>7 bytes. Numeric</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>A node is an endpoint of a geographic feature segment represented in CSCL/LION.  Most nodes are points where a feature bends or terminates or where two features intersect in CSCL/LION. Each node has a node ID assigned to it, which is unique in the entire city.  Node ID assignments are permanent; if a node is deleted from CSCL, its node ID is retired and is never reassigned to a different node.</td>
   </tr>
   <tr>
@@ -3591,7 +3593,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>NTA NAME </td>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1 Extended, 1E Extended, 1B, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -3603,7 +3605,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>75 bytes alphanumeric</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>See NEIGHBORHOOD TABULATION AREA (NTA) CODE</td>
   </tr>
 </table>
@@ -3614,7 +3616,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF BUILDINGS ON TAX LOT</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1A, BL - long WA2 only</td>
   </tr>
   <tr>
@@ -3626,7 +3628,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>4 bytes numeric.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of entries in the LIST OF BUILDINGS.  Maximum value is 2,500</td>
   </tr>
 </table>
@@ -3642,7 +3644,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     NUMBER OF CROSS STREETS AT HIGH ADDRESS END</td>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -3654,7 +3656,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>One byte, containing a numeric digit from 0 to 5.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of non-empty entries in the corresponding LIST OF CROSS STREETS.</td>
   </tr>
 </table>
@@ -3669,7 +3671,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF GEOGRAPHIC IDENTIFIERS</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1A and BL - regular WA2 only, BN, AP</td>
   </tr>
   <tr>
@@ -3681,7 +3683,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes for MSW; 4 bytes for COW</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of entries in the LIST OF GEOGRAPHIC IDENTIFIERS. For Function AP, the number is always ‘0001’</td>
   </tr>
 </table>
@@ -3692,7 +3694,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF INTERSECTING STREETS</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>2</td>
   </tr>
   <tr>
@@ -3704,7 +3706,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>One byte, containing a numeric digit from 1 to 5.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of non-empty entries in the LIST OF INTERSECTING STREETS.</td>
   </tr>
 </table>
@@ -3714,7 +3716,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2" id="appendix03-numberof-parking-lanes"><b>NUMBER OF PARKING LANES</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1/1E Extended, 1B, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -3726,7 +3728,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes, RJBF.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>The number of lanes in a carriageway (roadway) that are reserved for parking of vehicles.  The number of parking lanes were determined by DoITT’s consultants working on the planimetric feature classes for NYC.</td>
   </tr>
 </table>
@@ -3737,7 +3739,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF STREET CODES AND STREET NAMES IN LIST</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1*, 2, 3*, BB, BF</td>
   </tr>
   <tr>
@@ -3749,7 +3751,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes, Numeric</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of street names returned in the LIST OF STREET NAMES, corresponding to the number of street codes returned in the LIST OF STREET CODES..</td>
   </tr>
 </table>
@@ -3760,7 +3762,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF STREET FRONTAGES OF LOT</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1A, BL, BN </td>
   </tr>
   <tr>
@@ -3772,7 +3774,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes, RJZF. </td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of streets on which the given lot has at least one frontage.</td>
   </tr>
 </table>
@@ -3783,7 +3785,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF STREET NAMES IN LIST (WA1 output item)</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1*, 2, 3*, BB, BF</td>
   </tr>
   <tr>
@@ -3795,7 +3797,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes, packed decimal</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates the number of street names returned in the LIST OF STREET NAMES.</td>
   </tr>
 </table>
@@ -3805,7 +3807,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>NUMBER OF TOTAL LANES</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1/1E Extended, 1B, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -3817,7 +3819,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes, RJBF.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>The total number of lanes in a carriageway (roadway) including travel lanes and parking lanes.  The total number of lanes were determined by DoITT’s consultants working on the planimetric feature classes for NYC.</td>
   </tr>
 </table>
@@ -3827,7 +3829,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2" id="appendix03-numberof-travel-lanes"><b>NUMBER OF TRAVEL LANES</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1/1E Extended,  1B, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -3839,7 +3841,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes, RJBF</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>The number of lanes in a carriageway (roadway) that are designated for the movement of vehicles traveling from one destination to another.  The number of travel lanes were determined by DoITT’s consultants working on the planimetric feature classes for NYC.</td>
   </tr>
 </table>  
@@ -3855,7 +3857,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>POLICE PATROL BOROUGH</b></th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1X, 1E, 1EX, 2, 2W, 3, 3X, 3C, 3CX, 1B</td>
   </tr>
   <tr>
@@ -3867,7 +3869,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>2 bytes</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Police Patrol Boroughs are sub-borough geographic areas defined by the Police Department.  They are composed of Police Precincts.
 	Since the Police Department is supporting the Police Patrol Borough field, it is recommended that it be used..  Geosupport still returns the 1-byte POLICE PATROL BOROUGH COMMAND field to support those existing applications that access it.</td>
   </tr>
@@ -3925,7 +3927,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
       <th colspan="2"><b>POLICE PATROL BOROUGH COMMAND</b> (See also POLICE PATROL BOROUGH)</th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 2, 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -3937,7 +3939,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>These are sub-borough geographic areas defined by the Police Department.  They are composed of Police Precincts.</td>
   </tr>
   <tr>
@@ -3994,7 +3996,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2" id="appendix03-police-precinct"><b>POLICE PRECINCT</b> </th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>1, 1E, 2, 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4006,7 +4008,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
     <td>3 bytes. RJZF.</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Police Patrol Borough Commands are sub-divided into Police Precincts which are defined by the Police Department</td>
   </tr>
 </table>  
@@ -4018,7 +4020,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>REAL STREET ONLY FLAG</b> </th>
   </tr>
   <tr>
-    <td>Functions:</td>
+    <td class="widthTD">Functions:</td>
     <td>3S</td>
   </tr>
   <tr>
@@ -4030,7 +4032,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
     <td>1 byte.  Alphabetic</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>  <tr>
               <td>
                   <table class="borderlessTable">
@@ -4084,7 +4086,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
     <td>1 byte</td>
   </tr>
   <tr>
-    <td>Description:</td>
+    <td class="topVerticalTD">Description:</td>
     <td>Indicates request for Roadbed information for roads that are divided into two or more roadbeds.  If Roadbed information is requested for a street that is not divided, Geosupport returns the generic information.  For functions 1 and 1E, the Segment Type Code will indicate the type of information that is being returned.  For more information on function 3S see <a href="../../chapters/chapterVII/section06/">Chapter VII.6</a>.</td>
   </tr>
   <tr>
@@ -4116,7 +4118,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2" id="appendix03-RPAD-building-classification-code"><b>RPAD BUILDING CLASSIFICATION CODE</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4132,7 +4134,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This is a set of land use/building classification codes defined by the Real Property Assessment Division (RPAD) of the Department of Finance.  If a tax lot has more than one building or land use, RPAD assigns the building class code they deem to describe best the ‘principal’ building or the ‘predominant’ land use on the tax lot.  The values and meanings of this set of codes can be obtained from the Department of Finance.</td>
   </tr>
 </table>
@@ -4143,7 +4145,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>RPAD CONDO IDENTIFICATION NUMBER</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4166,7 +4168,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>RPAD SELF-CHECK CODE (SCC) FOR BBL</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4178,7 +4180,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>For each BBL value, the Department of Finance has computed a Self-Check Code (SCC).  This is a one-digit number computed from the BBL value using an algorithm chosen by DOF.  The purpose of the SCC is to assist in validating key-entered BBLs.  For more information on SCCs inquire to the information technology division of the Department of Finance.</td>
   </tr>
 </table>
@@ -4190,7 +4192,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SANBORN VOLUME AND PAGE</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 2, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4202,7 +4204,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>The Volume field is 3 bytes (2-digit volume number + 1-digit character suffix). The Page field is 4 bytes (3-digit page number + 1-digit character suffix).</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The Sanborn Map Company maintains a 79 volume atlas of New York City geography that is widely used by New York city agencies.  The atlases contain approximately 6000 maps covering all five boroughs</td>
   </tr>-
 
@@ -4214,7 +4216,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SANITATION BULK ITEMS PICKUP</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1/1E, 1/1E Extended, 1B</td>
   </tr>
   <tr>
@@ -4226,7 +4228,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>5 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This field contains the schedule for the Department of Sanitation (DSNY) pilot program of scheduled Bulk Items Pickup.  Release 16D includes the implementation of scheduled collection of disposed Bulk Items for specific locations across the City (previously, disposed bulk items were collected in these areas on regular refuse collection.
 	This field indicates which days of the week the Department of Sanitation will pick up recycling at the given address.
 	See SANITATION ORGANICS RECYCLING PICKUP  for the codes.</td>
@@ -4239,7 +4241,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SANITATION COLLECTION SCHEDULING SECTION AND SUBSECTION</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1B (COW only), 2 (COW only??)</td>
   </tr>
   <tr>
@@ -4251,7 +4253,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>District Sections and Subsections defined by the Department of Sanitation for waste collection.</td>
   </tr>
 </table>
@@ -4271,7 +4273,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
 	bytes are the District Number.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Districts defined by the Department of Sanitation for waste collection.</td>
   </tr>
 </table>
@@ -4282,7 +4284,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SANITATION ORGANICS RECYCLING PICKUP</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1/1E Extended, 1B</td>
   </tr>
   <tr>
@@ -4294,7 +4296,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>5 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates which days of the week the Department of Sanitation (DSNY) will pick up organics (compostable waste) recycling at the given address.  Organics recycling is currently only available in pilot areas.  In Release 16D, the pilot program was expanded to include more ‘Large Buildings (+10 units)’ (as defined by DSNY)</td>
   </tr>
   <tr>
@@ -4350,7 +4352,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SANITATION RECYCLING PICKUP</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1B (COW only)??</td>
   </tr>
   <tr>
@@ -4362,7 +4364,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>3 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates which days of the week the Department of Sanitation will pick up recycling at the given address.
 	See SANITATION ORGANICS RECYCLING PICKUP for the codes.</td>
   </tr>
@@ -4374,7 +4376,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SANITATION REGULAR PICKUP</b> </th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4386,7 +4388,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>5 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates which days of the week the Department of Sanitation will pick up non-recycling waste at the given address.
 	See SANITATION ORGANICS RECYCLING PICKUP  for the codes.</td>
   </tr>
@@ -4398,7 +4400,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SCHOOL DISTRICT</b> (previously known as Community School District)</th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 2, 3, 3C, 1B (COW)</td>
   </tr>
   <tr>
@@ -4410,7 +4412,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>School district code</td>
   </tr>
 </table>
@@ -4421,7 +4423,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SEGMENT AZIMUTH</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3, 3C</td>
   </tr>
   <tr>
@@ -4433,7 +4435,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>3 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This item represents the direction in which the segment lies on the earth’s surface, expressed as an angle in degrees measured counterclockwise from due east.  The segment is considered to be pointing in the direction of increasing addresses, and the azimuth value can range from 0 to 359 degrees, inclusive. For example, a segment pointing due east has an azimuth of 0; one pointing due north has an azimuth of 90; one pointing due west has an azimuth of 180; one pointing halfway between due west and due south (i.e., pointing due southwest) has an azimuth of 225.</td>
   </tr>
 </table>
@@ -4444,7 +4446,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2"><b>SEGMENT ID</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1 and 1E (MSW: Long WA2 only), 1 and 1E (COW), 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4456,7 +4458,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>7 bytes. RJZF</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Identifies, uniquely within the entire city, a geographic feature segment represented in the CSCL/LION file.</td>
   </tr>
 </table>
@@ -4467,7 +4469,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <th colspan="2" id="appendix03-segment-length"><b>SEGMENT LENGTH IN FEET </b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4480,7 +4482,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
 COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Except for curved segments <b>(see Curve Flag)</b>, the Segment Length is computed from the <b>Spatial Coordinates</b> of the segment’s endpoints, as digitized in the LION file.  For curved segments, the Segment Length is computed by summing the lengths of the small straight line segments that approximate the curve in the GIS version of LION; this is a more accurate approximation to the true arc length of the curve than would be the segment’s ‘secant length’, that is, the straight line distance between the curve’s extreme endpoints.  In the case of Functions 3 and 3C, if the input data define a street stretch encompassing more than one segment (because of a T-intersection or bend), the Segment Length returned is the sum of the lengths of the constituent segments of the stretch.  Similarly for Functions 1 and 1E, if the input lies on a segment that is generated from multiple segments, the Segment Length returned is the sum of the lengths of the constituent segments.  In all cases, the Segment Length has a very approximate level of accuracy only, and <u>should not be used in applications requiring high precision.</u> </td>
   </tr>
 </table>
@@ -4491,7 +4493,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <th colspan="2"><b>SEGMENT ORIENTATION</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>3, 3C</td>
   </tr>
   <tr>
@@ -4503,7 +4505,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <td>1 byte character</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This item is a set of codes grouping the possible azimuth values of a segment into eight categories.  The categories are "approximately" due north, south, east and west, and the four quadrants of the rectangular coordinate system for segments that do not lie approximately due north, south, east or west.  "Approximately" as used here means "within 5 degrees".  In Manhattan, all orientation codes are defined with a 30‑degree clockwise shift (i.e., 30 is subtracted from the azimuth value) in order to conform to the conventional concept that the midtown streets and avenues lie due east‑west and due north‑south, respectively.  For example, "approximately due north" means "within 5 degrees of due north"; for the boroughs other than Manhattan, this corresponds to the range of azimuth values from 85 to 95; in Manhattan, the corresponding azimuth value range is 55 to 65. There is a ninth orientation category, with a code value of ‘U’, meaning Geosupport could not determine the segment’s orientation because of a problem with the segment’s <b>Spatial Coordinates</b>.  All occurrences of an orientation code of ‘U’ should be reported to Geographic Systems Section staff.</td>
   </tr>
   <tr>
@@ -4588,7 +4590,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <th colspan="2"><b>SEGMENT TYPE CODE</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 3, 3C, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4600,7 +4602,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <td>1 byte </td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates type of segment</td>
   </tr>
   <tr>
@@ -4655,7 +4657,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       "><b>SEQUENCE NUMBER</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 3, 3C, 1B (COW only) </td>
   </tr>
   <tr>
@@ -4667,7 +4669,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <td>5 bytes </td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Identifies a CSCL/LION record uniquely within Face Code.  Generally,Sequence Numbers are assigned in the geographic order in which the corresponding segments occur along the geographic feature identified by the given face code.  The Borough Code, Face Code and Sequence Number concatenated form the LION key, which serves as a unique identifier for one CSCL/LION record.</td>
   </tr>
 </table>
@@ -4679,7 +4681,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <th colspan="2"><b>SIDE OF STREET INDICATOR</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1A - regular WA2, 3C</td>
   </tr>
   <tr>
@@ -4691,7 +4693,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <td>1 byte character</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This field indicates on which side of the street, left or right, the blockface containing the input address lies.  Left and right are defined with respect to the direction of <u>increasing</u> addresses along the ‘on’ street.</td>
   </tr>
   <tr>
@@ -4725,7 +4727,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
       <th colspan="2"><b>SPATIAL COORDINATES (See also SPATIAL COORDINATES OF TAX LOT CENTROID)</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1B (blockface information), 1E, 2, 3 Extended, 3C Extended, AP
 	(For Function 1A, BL, BN, 1B (property level information) see also SPATIAL
 	COORDINATES OF TAX LOT CENTROID)</td>
@@ -4740,7 +4742,7 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
 each 7 bytes RJZF.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Spatial coordinates are a pair of numbers that specify a location on the earth’s surface.  Geosupport returns spatial coordinates for an input address (Functions 1, 1B (blockface information), 1E, and AP), intersection (Function 2), and nodes at the end of a blockface (Functions 3 Extended and 3C Extended).  Spatial coordinates are often used in conjunction with separate computer mapping and Geographic Information System (GIS) software to generate maps and for spatial analysis, although the Geosupport System does not itself provide users with such capabilities.  <b><u>Note: For Functions 1, 1B (blockface information) and 1E, the spatial coordinates that Geosupport returns are imprecise approximations of real-world locations, and are not appropriate for use in applications that require a high level of spatial accuracy.</u></b> </td>
   </tr>
   <tr>
@@ -4783,7 +4785,7 @@ each 7 bytes RJZF.</td>
       <th colspan="2"><b>SPATIAL COORDINATES OF THE TAX LOT CENTROID</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4796,7 +4798,7 @@ each 7 bytes RJZF.</td>
 		 each 7 bytes RJZF.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Note: Internal Label Points and Annotation Points are no longer used  They are
 		replaced by Tax Lot Centroid.</td>
   </tr>
@@ -4816,7 +4818,7 @@ each 7 bytes RJZF.</td>
       <th colspan="2"><b>SPECIAL ADDRESS GENERATED RECORD FLAG  (a.k.a. SAF FLAG or SPECIAL ADDRESS FLAG)</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1E, 1B (COW only)</td>
   </tr>
   <tr>
@@ -4828,7 +4830,7 @@ each 7 bytes RJZF.</td>
       <td>1 byte character</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>A non-blank value in this flag indicates one of a variety of special addressing
 	situations.</td>
   </tr>
@@ -4911,7 +4913,7 @@ each 7 bytes RJZF.</td>
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>  
           <table class="borderlessTable">
               <tr>
@@ -4950,7 +4952,7 @@ each 7 bytes RJZF.</td>
       <td>2 bytes.  Numeric.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>A district of the upper house of the New York State legislature.  Consists of an aggregation of Election Districts/td>
   </tr>
 </table>
@@ -4961,7 +4963,7 @@ each 7 bytes RJZF.</td>
       <th colspan="2"><b>STREET ATTRIBUTE INDICATOR (a.k.a. ATTRIBUTE BYTE)</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>WA1 output field - 1, 1A, 1B, 1E, 1N, AP, D, DG, DN</td>
   </tr>
   <tr>
@@ -4973,7 +4975,7 @@ each 7 bytes RJZF.</td>
       <td>1 byte character</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Indicates certain characteristics of selected streets</td>
   </tr>
   <tr>
@@ -5079,7 +5081,7 @@ each 7 bytes RJZF.</td>
       <th colspan="2"><b>STREET NAME NORMALIZATION FORMAT FLAG</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1A, 1E, 1N, 2, 3, 3C, 3S, D, DG, DN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -5091,7 +5093,7 @@ each 7 bytes RJZF.</td>
       <td>1 byte.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Specifies the format in which Geosupport is to return output normalized street names.  The default is to return street names in the sort format.</td>
   </tr>
   <tr>
@@ -5125,7 +5127,7 @@ each 7 bytes RJZF.</td>
       <th colspan="2"><b>STREET NAME NORMALIZATION LENGTH LIMIT (SNL)</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>WA1 input item, Functions 1, 1A, 1E, 1N, 2, 3, 3C, 3S, D, DG, DN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -5137,7 +5139,7 @@ each 7 bytes RJZF.</td>
       <td>2 bytes, blank or numeric, either LJBF or RJZF.</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>Specifies the maximum length in bytes within which Geosupport is to normalize street names.  The minimum and maximum permissible SNL values are 4 and 32.  The default that is in effect if the application does not specify an SNL value is 32</td>
   </tr>
 </table>
@@ -5148,7 +5150,7 @@ each 7 bytes RJZF.</td>
       <th colspan="2" id="appendix03-street-width-max"><b>STREET WIDTH<br>STREEET WIDTH MAXIMUM</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1/1E Extended, 1B, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -5160,7 +5162,7 @@ each 7 bytes RJZF.</td>
       <td>Street Width: 3 bytes, RJBF<br>Street Width Maximum, 3 bytes, RJBF</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The width, in feet, of the paved area of the street.
 Street Width contains the width at the narrowest part of the street.
 Street Width Maximum contains the width at the widest part of the street.
@@ -5175,7 +5177,7 @@ If the width is consistent along the street segment then both values are identic
       <th colspan="2"><b>TAX BLOCK</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -5187,7 +5189,7 @@ If the width is consistent along the street segment then both values are identic
       <td>5 bytes </td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>See <a href="../../chapters/chapterVI/section02/">Chapter VI.2</a>.</td>
   </tr>
 </table>
@@ -5210,7 +5212,7 @@ If the width is consistent along the street segment then both values are identic
       <td>4 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>See <a href="../../chapters/chapterVI/section02/">Chapter VI.2</a>.</td>
   </tr>
 </table>
@@ -5235,7 +5237,7 @@ If the width is consistent along the street segment then both values are identic
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The Department of Finance real property tax maps are organized into sections; each section is organized into volumes; and each volume consists of pages.  Tax Map Section values are unique within borough</td>
   </tr>
 </table>
@@ -5246,7 +5248,7 @@ If the width is consistent along the street segment then both values are identic
       <th colspan="2"><b>TAX MAP VOLUME</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1A, BL, BN, 1B (COW only)</td>
   </tr>
   <tr>
@@ -5258,7 +5260,7 @@ If the width is consistent along the street segment then both values are identic
       <td>2 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>See description at <b>Tax Map Section</b>. Tax Map Volume values are unique within Tax Map Section.</td>
   </tr>
 </table>
@@ -5273,7 +5275,7 @@ If the width is consistent along the street segment then both values are identic
       <th colspan="2"><b>TRAFFIC DIRECTION</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1/1E Extended, 1B, 3 Extended, 3C Extended</td>
   </tr>
   <tr>
@@ -5285,7 +5287,7 @@ If the width is consistent along the street segment then both values are identic
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>  
           <table class="borderlessTable">
               <tr>
@@ -5328,7 +5330,7 @@ If the width is consistent along the street segment then both values are identic
       <td>UNIT INPUT<br>UNIT – SORT FORMAT<br>UNIT – TYPE<br>UNIT – IDENTIFIER<br>UNIT – DISPLAY FORMAT</td>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1* (COW only)</td>
   </tr>
   <tr>
@@ -5340,7 +5342,7 @@ If the width is consistent along the street segment then both values are identic
       <td>See <a href="../../chapters/chapterV/section15/">Chapter V.15</a>  Unit Information Feature</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>See <a href="../../chapters/chapterV/section15/">Chapter V.15</a>  Unit Information Feature</td>
   </tr>
 </table>
@@ -5351,7 +5353,7 @@ If the width is consistent along the street segment then both values are identic
       <th colspan="2"><b>USPS PREFERRED CITY NAME</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1/1E Extended, 1B</td>
   </tr>
   <tr>
@@ -5363,7 +5365,7 @@ If the width is consistent along the street segment then both values are identic
       <td>25 bytes</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>The USPS (United States Postal Service) Preferred City Name (e.g. Astoria, Jackson Heights) is of particular importance for Queens addresses.</td>
   </tr>
   <tr>
@@ -5392,7 +5394,7 @@ If the width is consistent along the street segment then both values are identic
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>  
           <table class="borderlessTable">
               <tr>
@@ -5419,7 +5421,7 @@ If the width is consistent along the street segment then both values are identic
       <th colspan="2"><b>WORK AREA FORMAT INDICATOR</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>All</td>
   </tr>
   <tr>
@@ -5431,7 +5433,7 @@ If the width is consistent along the street segment then both values are identic
       <td>1 byte</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>This indicator specifies which work area layouts are to be used in an API call.  Note: This indicator is also known as the Platform Indicator.</td>
   </tr>
   <tr>
@@ -5467,7 +5469,7 @@ If the width is consistent along the street segment then both values are identic
       <th colspan="2"><b>ZIP CODE</b></th>
   </tr>
   <tr>
-      <td>Functions:</td>
+      <td class="widthTD">Functions:</td>
       <td>1, 1A, 1E, 2, 3, 3C, 1B</td>
   </tr>
   <tr>
@@ -5479,7 +5481,7 @@ If the width is consistent along the street segment then both values are identic
       <td>5 bytes.  Numeric</td>
   </tr>
   <tr>
-      <td>Description:</td>
+      <td class="topVerticalTD">Description:</td>
       <td>U.S. Postal Service’s 5-digit ZIP code</td>
   </tr>
   <tr>

@@ -1,6 +1,6 @@
 <h2>VII.3 Three-Street Configurations - Concepts and Terminology</h2>
 
-There are many applications in which geographic locations to be processed are identified in terms of an ‘on’ street between two cross streets.  Geosupport can process several types of such locations, namely street segments, blockfaces and street stretches.  We refer generically to all these types of locations as three-street configurations.
+There are many applications in which geographic locations to be processed are identified in terms of an ‘on’ street between two cross streets.  Geosupport can process several types of such locations, namely street segments, blockfaces and street stretches.  We refer generically to all these types of locations as <u>three-street configurations</u>.
 
 This section introduces concepts and terminology needed to discuss three-street configurations.  The three succeeding sections discuss the Geosupport functions that process the various types of three-street configurations:
 
@@ -28,25 +28,18 @@ Every street stretch is composed of a set of one or more street segments, which 
 
 Some examples of street stretches and segments follow.
 
- <div class="textWithImage">
-
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-12.png" alt="FigureVII-12" />
+<img class="smallImg" src="../../../img/figureVII-12.png" alt="FigureVII-12" />
 <p class="img_tagline">Figure V11-12: Street Stretch</p>
-</div>
+
 
 * The stretch of Madison Avenue between East 51st Street and East 52nd Street in Manhattan (see Figure VII-12) is a street segment.  The stretch of Madison Avenue between East 51st Street and East 54th Street is not a segment because its delimiting nodes are not consecutive along the ‘on’ street; it is a stretch consisting of three segments.
 
-</div>
-
-
-
- <div class="textWithImage" id="lincolnCenter" >
-
+<div id="lincolnCenter">
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-13.png" alt="FigureVII-13" />
-<p class="img_tagline">FigureV11-13: Street Stretch <br> Containing Gap</p>
-</div>
+<img class="smallImg" src="../../../img/figureVII-13.png" alt="FigureVII-13" />
+<p class="img_tagline">FigureV11-13: Street Stretch <br class="removeBr"> Containing Gap</p>
+
 
 * An example of a street stretch that is not connected is Manhattan’s West 64th Street between Central Park West and West End Avenue (see Figure VII-13).  West 64th Street has a gap (does not exist) between Columbus Avenue and Amsterdam Avenue, where it is interrupted by Lincoln Center.  As a result, the stretch in question consists of two sub-stretches that are not connected to each other.
 
@@ -74,8 +67,8 @@ For features that have no addresses, such as all railroad tracks and some highwa
 A blockface is a continuous frontage of a physical city block along one street, ignoring the presence of any bending points or other intervening nodes.  That is, the portions of a street frontage of a block that lie on both sides of a bending point are considered to be parts of the same blockface.
 
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-14.png" alt="FigureVII-14" />
-<p class="img_tagline">FigureV11-14: Block with Four <br>Blockfaces</p>
+<img class="smallImg" src="../../../img/figureVII-14.png" alt="FigureVII-14" />
+<p class="img_tagline">FigureV11-14: Block with Four <br class="removeBr">Blockfaces</p>
 </div>
 
 For example, the Manhattan block bounded by Madison
@@ -86,16 +79,11 @@ and Park Avenues and East 51st and East 52nd Streets has the following four bloc
 * The west side of Park Avenue between East 51st and   East 52nd Streets
 * The north side of East 51st Street between Madison and Park Avenues
 
-An example of a stretch with a bending point in Manhattan is Commerce Street between Bedford and Barrow Streets (see Figure VII-4).  Both sides of this stretch are single blockfaces, even though the stretch consists of two segments connected at the bending point.
+An example of a stretch with a bending point in Manhattan is Commerce Street between Bedford and Barrow Streets (see Figure VII-4).  Both sides of this stretch are single blockfaces, even though the stretch consists of two segments connected at the bending point.  
 
-## <span id="chapterVII.3.4"><u>T-Intersections</u></span>
-
-
-
- <div class="textWithImage">
-
+## <span id="chapterVII.3.4"><u>T-Intersections</u></span>  
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-15.png" alt="FigureVII-15" />
+<img class="smallImg" src="../../../img/figureVII-15.png" alt="FigureVII-15" />
 <p class="img_tagline">Figure VII-15: T-Intersection</p>
 </div>
 
@@ -105,23 +93,16 @@ A street stretch, and in particular a street segment, is considered to comprise 
 
 An example of a T-intersection in Manhattan is the intersection of Fifth Avenue and East 41st Street (Figure VII-15).  Because of the presence of the New York Public Library main building along the west side of Fifth Avenue between West 40th and West 42nd Streets, there are no cross streets on the west side of Fifth Avenue where it intersects with East 41st Street.  The long blockface on the west side of Fifth Avenue encompasses two segments, each consisting of a portion of this long blockface facing a shorter entire blockface on the east side of Fifth Avenue.
 
- <div class="textWithImage">
-
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-16.png" alt="FigureVII-16" />
-<p class="img_tagline">Figure V11-16: Two Consecutive <br> T- Intersections </p>
+<img class="smallImg" src="../../../img/figureVII-16.png" alt="FigureVII-16" />
+<p class="img_tagline">Figure V11-16: Two Consecutive <br class="removeBr"> T- Intersections </p>
 </div>
 
 It is possible for a street to have T-intersections at several consecutive nodes.  An example in Manhattan is the three-segment stretch of Lexington Avenue between East 42nd and East 45th Streets (Figure VII-16).  Because of the presence of the Grand Central Terminal complex on the west side of Lexington Avenue, East 43rd Street and East 44th Street intersect Lexington Avenue only on its east side, forming two consecutive T-intersections along Lexington Avenue.  As a result, the west side of this stretch is a single long blockface, which faces three shorter blockfaces on the east side of Lexington Avenue.
 
-</div>
-
-<div class="textWithImage">
-
 <div class="imageWithFigure">
-<img src="../../../img/figureVII-16.png" alt="FigureVII-16" />
-<p class="img_tagline">Figure VII-17: T-Intersections on <br> Alternating Sides of street </p>
-</div>
+<img class="smallImg" src="../../../img/figureVII-16.png" alt="FigureVII-16" />
+<p class="img_tagline">Figure VII-17: T-Intersections on <br class="removeBr"> Alternating Sides of street </p>
 
 When a street has consecutive T-intersections at which the cross streets are on alternating sides of the ‘on’ street, then long blockfaces on both sides of the ‘on’ street face each other in overlapping fashion, forming segments both sides of which consist of portions of those long blockfaces.  Union Avenue in Staten Island is an example (Figure VII-17).  Note that Union Avenue between Leyden Avenue and Walloon Street is a street segment, because the two delimiting intersections are consecutive along Union Avenue, even though the cross streets are on opposite sides of the ‘on’ street. </div>  
 <br>

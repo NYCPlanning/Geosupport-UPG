@@ -32,7 +32,7 @@ Geosupport processes street configurations based on a simplified model of the ci
 [http://www1.nyc.gov/site/planning/data-maps/open-data.page#lion](http://www1.nyc.gov/site/planning/data-maps/open-data.page#lion)
 
 ![FigureVII-1 <>](/img/figureVII-1.png "Figure VII-1")
-<div class="img_tagline"> Figure VII-1: Single Line and double-Line Maps Contrasted </div>
+<div class="img_tagline"> Figure VII-1: Single Line and Double-Line Maps Contrasted </div>
 
 
 

@@ -278,6 +278,13 @@ img[alt^="GoatFunction_medium"] {
 .topVerticalTD {
   vertical-align:top !important;
 }
+.widthTD{
+  width: 180px !important;
+}
+.widthTDsmall{
+  width: 145px !important;
+}
+
 
 
 .bordered-table, .bordered-table th, .bordered-table td {

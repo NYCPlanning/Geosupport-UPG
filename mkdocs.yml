@@ -148,6 +148,7 @@ pages:
     - 'Appendix 19: Work Area Layouts (COWs)': appendices/appendix19.md
     - 'Appendix 20: Geosupport Header And Typedef Files': appendices/appendix20.md
     - 'Appendix 21: Geosupport Desktop Edtion': appendices/appendix21.md
+    - 'Appendix 22: GeoX Programming Guide': appendices/appendix22.md
     - Glossary of Terms And Acronyms: appendices/glossary.md
 - About Us: aboutUs.md
 

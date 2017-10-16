@@ -162,12 +162,13 @@ img[alt^="GoatFunction_medium"] {
 /*.textWithImage {
   margin-top: 5em;
 }*/
-.topMargin {
+/*deleted to style pdf -ch7.2*/
+/*.topMargin {
   margin-top: 11em;
 }
 .topMargin u {
   font-size: 26px;
-}
+}*/
 #lincolnCenter {
   margin-top: 10em;
   margin-bottom: 6em;
@@ -257,4 +258,13 @@ a:after {
 a {
   color: #0a0101 !important;
   text-decoration: none !important;
+}
+
+.smallImg {
+  height: 250px;
+  width: 60%;
+}
+
+.removeBr {
+  display: none !important;
 }
