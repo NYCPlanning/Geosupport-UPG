@@ -8,7 +8,7 @@ An important purpose of Function 1A is to provide the BBLs for which addresses a
 
 If the property is part of a Business Improvement District (BID), the BID is returned in Work Area 2 as a borough and five-digit street code (B5SC).  Function D may be used to obtain the name of the BID.
 
-The latitude and longitude of the location are also returned by COW Function 1A.
+The latitude and longitude of the location are also returned by COW Function 1A.  In addition, COW Function 1A returns the DCP Zoning Map number.
 
 The long WA2 option (COW and MSW) as well as the Extended WA2 option (COW only) are available for Function 1A.  Note that Extended WA2 is not valid if Long Work Area 2 is in effect.  All three WA2s (viz. regular, long, and extended) for Function 1A contain a set of data organized into a list.  The list in the regular WA2 and the Extended WA2  is a List of Geographic Identifiers (LGI).  The LGI is intended to provide a comprehensive geographic profile of the tax lot by listing, so far as the information is known and space allows, all of the buildings the lot contains; all of the street addresses and non-addressable street frontages of each of those buildings; all of the vacant street frontages of the lot;  and all NAPs associated with the lot.  See the entry for the List of Geographic Identifiers in [Appendix 3](/appendices/appendix03/) for a detailed discussion of the contents of the LGI.
 

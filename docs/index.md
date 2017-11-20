@@ -1,7 +1,7 @@
 ![geoSystemLogo <>](img/geoSystemLogo.png "Ge")
 
 <h1 class = "docName"><center>User Programming Guide (UPG)</center></h1>
-<p class = "version"><center>SOFTWARE VERSION 17.3</center></p>  
+<p class = "version"><center>SOFTWARE VERSION 17.4 </center></p>  
 
 <center>![NYCPlanningLogo <>](img/logo2.png "NYC Logo")</center>
 

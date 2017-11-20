@@ -25,7 +25,7 @@ If a COW application has a need to <u>display the street names of the cross stre
 
 In the Extended Function 1 and 1E work area 2, the <u>BOE Preferred LGC</u> and associated street name will be returned in new fields that are defined in the “Extended” portion of Work Area 2.  
 
-The Extended Function 1 and 1E work area 2 includes additional fields such as USPS Preferred City Name, Latitude and Longitude, Neighborhood Tabulation Area Name, Bike Lane 2, Bike Traffic Direction, Street Width, Street Width Maximum, etc.  For a complete list, see the Work Area layout in [Appendix 13](/appendices/appendix13/).  
+The Extended Function 1 and 1E work area 2 includes additional fields such as USPS Preferred City Name, Latitude and Longitude, Neighborhood Tabulation Area Name, Bike Lane 2, Bike Traffic Direction, Street Width, Street Width Maximum, Speed Limit, etc.  For a complete list, see the Work Area layout in [Appendix 13](/appendices/appendix13/).  
 
 <u>** Underlying Street Name or Street Address ** </u>  
 

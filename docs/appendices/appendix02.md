@@ -1,5 +1,5 @@
 <h2 class="pdfAppendix"><center>APPENDIX 2: MAINFRAME-SPECIFIC WORK AREA LAYOUTS(MSW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 17.3 - unchanged since 15.3)</center></h6>
+<h6><center>(as of Geosupport System Software Version 17.4 - unchanged since 15.3)</center></h6>
 
 This appendix contains layouts of all of the work MSW areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  
 

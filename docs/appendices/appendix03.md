@@ -1555,7 +1555,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
 
 <table class="rightTableAlignment borderlessTable">
   <tr>
-      <th colspan="2">DCP PREFERRED LGC</th>
+      <th colspan="2"><B>DCP PREFERRED LGC</B></th>
   </tr>
   <tr>
     <td class="widthTD">Functions:</td>
@@ -1572,6 +1572,28 @@ See LIST OF CROSS STREET CODES (Function 3S)
   <tr>
     <td class="topVerticalTD">Description:</td>
     <td>Identifies the local group of  street names designated by the Department of City Planning as ‘preferred’ for display purposes for a specific location on a street.</td>
+  </tr>
+</table>
+<table class="rightTableAlignment borderlessTable">
+
+  <tr>
+      <th colspan="2"><b>DCP ZONING MAP</b></th>
+  </tr>
+  <tr>
+      <td>Functions:</td>
+      <td>1A/BL/BN, 1A/BL/BN Extended, 1A/BL Long WA2, 1A/BL TPAD Long WA2, 1B</td>
+  </tr>
+  <tr>
+      <td>Work Area Format:</td>
+      <td>COW</td>
+  </tr>
+  <tr>
+      <td>Length and Format:</td>
+      <td>3 bytes</td>
+  </tr>
+  <tr>
+      <td class="topVerticalTD">Description:</td>
+      <td>The DCP Zoning Map field contains the DCP Zoning Map number. </td>
   </tr>
 </table>
 
@@ -4894,6 +4916,36 @@ each 7 bytes RJZF.</td>
             </td>
   </tr>
 </table>
+
+
+<table class="rightTableAlignment borderlessTable">
+
+  <tr>
+      <th colspan="2"><b>SPEED LIMIT</b></th>
+  </tr>
+  <tr>
+      <td>Function:</td>
+      <td>1/1E Extended, 1B, 3/3C Extended</td>
+  </tr>
+  <tr>
+      <td>Work Area Format:</td>
+      <td>COW</td>
+  </tr>
+  <tr>
+      <td>Length and Format:</td>
+      <td>2 bytes, blank if no data.</td>
+  </tr>
+  <tr>
+      <td class="topVerticalTD">Description:</td>
+      <td>The Speed Limit field contains the speed limit, in miles per hour, of the paved area of the input location.<br><br>
+
+Speed Limit data was provided by the NYC Department of Transportation and currently does not cover the entire city.  Additional data will be made available in future releases.  
+
+ </td>
+  </tr>
+</table>
+
+
 
 <table class="rightTableAlignment borderlessTable">
 

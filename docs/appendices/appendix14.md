@@ -344,11 +344,11 @@
                                OCCURS 10 TIMES.                          01030010
     
 ## <span id="appendix14.3"><center>P2COB COPY File</center></span>
-
     ******************************************************************   00010032
     ****                     P2COB                                  **   00011082
     ****          LAST MODIFIED DECEMBER 2016                       **   00012082
-    **** ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION    YNL 12/16 V17,1   **   00013082
+    **** ADD NEW 2 BYTE SPEED LIMIT               YNL 09/17 V17,4   **   00014084
+    **** ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION    YNL 12/16 V17,1   **   00015084
     **** THIS IS THE COBOL- STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM**   00020032
     **** INDEPENDENT WORK AREA 2 FOR FUNCTIONS: 1, 1E, 2, 2C, 3,    **   00030032
     **** 3C, AND 5.                                                 **   00040032
@@ -864,21 +864,23 @@
                    15  PIWA2-3X-BIKE-LANE-2            PIC X(2).         02692979
                    15  PIWA2-3X-STR-WIDTH-MAX          PIC X(3).         02693079
                    15  PIWA2-3X-BIKE-TRAFFIC-DIR       PIC X(2).         02693181
-                   15  FILLER                          PIC X(213).       02693281
-       ****        15  FILLER   V17.1                  PIC X(215).       02693381
-       ****        15  FILLER   V16.4                  PIC X(220).       02693481
-       ****        15  FILLER   V16.1                  PIC X(246).       02693581
-       ****        15  FILLER   V15.3                  PIC X(286).       02693681
-                                                                         02693781
-            05  PIWA2-AUX-FUNCTION3X REDEFINES PIWA2.                    02693881
-               10  FILLER                              PIC X(1000).      02693981
-               10  PIWA2-3X-SEGAUX.                                      02694081
-                   15  PIWA2-3X-SEGAUX-FILL            PIC X(6).         02694181
-                   15  PIWA2-3X-SEGAUX-CTR             PIC X(4).         02694281
-                   15  PIWA2-3X-SEGAUX-SEGS OCCURS 70 TIMES              02694381
-                                                       PIC X(7).         02694481
-                                                                         02694581
-    ******************************************************************   02694681
+                   15  PIWA2-3X-SPEED-LIMIT            PIC X(2).         02693283
+                   15  FILLER                          PIC X(211).       02693383
+       ****        15  FILLER   V17.4                  PIC X(213).       02693483
+       ****        15  FILLER   V17.1                  PIC X(215).       02693583
+       ****        15  FILLER   V16.4                  PIC X(220).       02693683
+       ****        15  FILLER   V16.1                  PIC X(246).       02693783
+       ****        15  FILLER   V15.3                  PIC X(286).       02693883
+                                                                         02693983
+            05  PIWA2-AUX-FUNCTION3X REDEFINES PIWA2.                    02694083
+               10  FILLER                              PIC X(1000).      02694183
+               10  PIWA2-3X-SEGAUX.                                      02694283
+                   15  PIWA2-3X-SEGAUX-FILL            PIC X(6).         02694383
+                   15  PIWA2-3X-SEGAUX-CTR             PIC X(4).         02694483
+                   15  PIWA2-3X-SEGAUX-SEGS OCCURS 70 TIMES              02694583
+                                                       PIC X(7).         02694683
+                                                                         02694783
+    ******************************************************************   02694883
     ****     FOR: FUNCTION  3C          ******************************   02695076
                                                                          02700032
             05  PIWA2-FUNCTION3C  REDEFINES PIWA2.                       02710032
@@ -1077,33 +1079,32 @@
                    15  PIWA2-3CX-BIKE-LANE-2          PIC X(2).          03499379
                    15  PIWA2-3CX-STR-WIDTH-MAX        PIC X(3).          03499479
                    15  PIWA2-3CX-BIKE-TRAFFIC-DIR     PIC X(2).          03499581
-                   15  FILLER                         PIC X(298).        03499681
-       ****        15  FILLER   V17.1                 PIC X(300).        03499781
-       ****        15  FILLER   V16.4                 PIC X(305).        03499881
-       ****        15  FILLER   V16.1                 PIC X(321).        03499981
-       ****        15  FILLER   V15.3                 PIC X(361).        03500081
-                                                                         03500181
-            05  PIWA2-AUX-FUNCTION3CX REDEFINES PIWA2.                   03500281
-               10  FILLER                            PIC X(850).         03500381
-               10  PIWA2-3CX-SEGAUX.                                     03500481
-                   15  PIWA2-3CX-SEGAUX-FILL          PIC X(4).          03500581
-                   15  PIWA2-3CX-SEGAUX-CTR           PIC X(4).          03500681
-                   15  PIWA2-3CX-SEGAUX-SEGS OCCURS 70 TIMES             03500781
-                                                      PIC X(7).          03500881
-                                                                         03500981
-    ******************************************************************   03501081
+                   15  PIWA2-3CX-SPEED-LIMIT          PIC X(2).          03499683
+                   15  FILLER                         PIC X(296).        03499983
+       ****        15  FILLER   V17.4                 PIC X(298).        03500083
+       ****        15  FILLER   V17.1                 PIC X(300).        03500183
+       ****        15  FILLER   V16.4                 PIC X(305).        03500283
+       ****        15  FILLER   V16.1                 PIC X(321).        03500383
+       ****        15  FILLER   V15.3                 PIC X(361).        03500483
+                                                                         03500583
+            05  PIWA2-AUX-FUNCTION3CX REDEFINES PIWA2.                   03500683
+               10  FILLER                            PIC X(850).         03500783
+               10  PIWA2-3CX-SEGAUX.                                     03500883
+                   15  PIWA2-3CX-SEGAUX-FILL          PIC X(4).          03500983
+                   15  PIWA2-3CX-SEGAUX-CTR           PIC X(4).          03501083
+                   15  PIWA2-3CX-SEGAUX-SEGS OCCURS 70 TIMES             03501183
+                                                      PIC X(7).          03501283
+                                                                         03501383
+    ******************************************************************   03501483
     ****     FOR: FUNCTION 5            ******************************   03502081
                                                                          03510032
             05  PIWA2-FUNCTION5   REDEFINES PIWA2.                       03520032
                10  GEO-WA2-FN5-ADDR-MATCHING-KEY      PIC X(33).         03530034
 
-    
-
-## <span id="appendix14.4"><center>P2COB1A COPY File</center></span>  
-
-
+## <span id="appendix14.4"><center>P2COB1A COPY File</center></span>
     *****************************************************************  00010007
-    **  THIS IS THE COBOL STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM **  00020007
+    **  YL 9/27/2017 ADDED DCP ZONE MAP FIELD                      **  00020011
+    **  THIS IS THE COBOL STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM **  00021011
     **  INDEPENDENT REGULAR WORK AREA 2 FOR FUNCTIONS: 1A, BL, AND **  00030007
     **  BN.  THESE THREE FUNCTIONS SHARE A SINGLE WORK AREA 2      **  00040007
     **  LAYOUT.  COPY FILE - P2COB1A.                 10/10/97     **  00050007
@@ -1164,7 +1165,8 @@
           05  PIWA2-1A-TPAD-NEW-BIN              PIC X(7).             00580007
           05  PIWA2-1A-TPAD-NEW-BIN-ST           PIC X.                00590007
           05  PIWA2-1A-TPAD-CONFLICT             PIC X.                00600007
-          05  FILLER                             PIC X(9).             00610007
+          05  PIWA2-1A-DCP-ZONE-MAP              PIC X(3).             00601011
+          05  FILLER                             PIC X(6).             00610011
           05  FILLER-GSS                         PIC X(8).             00620007
           05  PIWA2-1A-NUM-OF-ADDR               PIC X(4).             00630007
           05  PIWA2-1A-ADDR-LIST                 OCCURS 21 TIMES.      00640007
@@ -1179,596 +1181,601 @@
              10  PIWA2-1A-TPAD-STATUS            PIC X.                00730007
              10  FILLER                          PIC X(3).             00740007
 
-    
-
-## <span id="appendix14.5"><center>P2COB1AL COPY File</center></span>
-
-    *****************************************************************  00001006
-    **                     P2COBIAL                                **  00001134
-    **          LAST MODIFIED DECEMBER 2016                        **  00001234
-    ** ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION    YNL 12/16 V17,1    **  00001334
-    **  THIS IS THE COBOL STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM **  00002006
-    **  INDEPENDENT LONG WORK AREA 2 FOR FUNCTIONS: 1A, AND BL.    **  00003006
-    **  THESE TWO FUNCTIONS SHARE A SINGLE LONG WORK AREA 2 LAYOU. **  00004006
-    **  COPY FILE - P2COB1AL.                         11/06/97     **  00005006
-    *****************************************************************  00006006
-    **              LAST MODIFIED OCTOBER  2016                    **  00006130
-    *****************************************************************  00006227
-    **  JANUARY 2011 YNL ADDED THREE WORK AREAS:                   **  00007006
-    **  1. P2COB1EX - FUNCTION 1E EXTENDED.                        **  00008007
-    **  2. P2COB1AX - FUNCTION 1A   EXTENDED.                      **  00009006
-    **  2. P2COB1B  - P2COB1EX COMBINED WITH P2COB1AX              **  00009116
-    *****************************************************************  00009206
-          03  PIWA2                               PIC X(17750).        00009406
-    ******************************************************************   00009606
-    ****     FOR: FUNCTION 1A LONG      ******************************   00009706
-                                                                       00009806
-          03  PIWA2-FUNCTION1AL  REDEFINES PIWA2.                      00009906
-                                                                       00010006
-           05 GEO-WA2-1AL-ACCESS-KEY              PIC X(21).           00010106
-           05 GEO-WA2-1AL-CONT-PARITY             PIC X.               00010206
-           05 PIWA2-1AL-LOW-HOUSENUM              PIC X(11).           00010306
-           05 GEO-WA2-1AL-ALTKEY-1.                                    00010406
-             10 GEO-WA2-1AL-ALTKEY-1-BORO         PIC X.               00010506
-             10 GEO-WA2-1AL-ALTKEY-1-TAXBLOCK     PIC X(5).            00010606
-             10 GEO-WA2-1AL-ALTKEY-1-TAXLOT       PIC X(4).            00010706
-           05 FILLER                              PIC X.               00010806
-           05 GEO-WA2-1AL-SCC                     PIC X.               00010906
-           05 FILLER                              PIC X.               00011006
-           05 GEO-WA2-1AL-GENERAL-LOT-INFO.                            00011106
-             10 GEO-WA2-1AL-RPAD-BLDG-CLASS       PIC X(2).            00011206
-             10 GEO-WA2-1AL-CORNER-CODE           PIC X(2).            00011306
-             10 GEO-WA2-1AL-NUM-OF-STRUCTURES     PIC X(4).            00011406
-             10 GEO-WA2-1AL-NUM-OF-BLOCKFACES     PIC X(2).            00011506
-             10 GEO-WA2-1AL-INTERIOR-FLAG         PIC X.               00011606
-             10 GEO-WA2-1AL-VACANT-FLAG           PIC X.               00011706
-             10 GEO-WA2-1AL-IRREG-FLAG            PIC X.               00011806
-           05 GEO-WA2-1AL-ALT-BORO-FLAG           PIC X.               00011906
-           05 FILLER                              PIC X.               00012006
-           05 PIWA2-1AL-STROLL-KEY                PIC X(19).           00012106
-           05 FILLER-GSS                          PIC X.               00012206
-           05 GEO-WA2-1AL-BLDG-ID-NUM             PIC X(7).            00012306
-           05 GEO-WA2-1AL-CONDO-LOT-FLAG          PIC X.               00012406
-           05 FILLER                              PIC X.               00012506
-           05 GEO-WA2-1AL-RPAD-COND-NUM           PIC X(4).            00012606
-           05 FILLER                              PIC X(7).            00012706
-           05 GEO-WA2-1AL-CONDO-BILLING-BBL       PIC X(10).           00012806
-           05 FILLER                              PIC X.               00012906
-           05 GEO-WA2-1AL-CONDO-BILL-BBL-SCC      PIC X.               00013006
-           05 GEO-WA2-1AL-CONDO-LOW-BBL           PIC X(10).           00013106
-           05 FILLER                              PIC X.               00013206
-           05 GEO-WA2-1AL-CONDO-HIGH-BBL          PIC X(10).           00013306
-           05 FILLER                              PIC X.               00013406
-           05 FILLER                              PIC X(15).           00013506
-           05 GEO-WA2-1AL-CO-OP-NBR               PIC X(4).            00013606
-           05 GEO-WA2-1AL-SANBORN-BVOLPAGE.                            00013706
-              10  GEO-WA2-1AL-SANBORN-BORO        PIC X(1).            00013806
-              10  GEO-WA2-1AL-SANBORN-VOL-PAGE.                        00013906
-                15  GEO-WA2-1AL-SANBORN-VOL-NUM   PIC X(3).            00014006
-                15  GEO-WA2-1AL-SANBORN-PAGE-NUM  PIC X(4).            00014106
-           05 GEO-WA2-1AL-COMMERC-DIST            PIC X(5).            00014206
-           05 PIWA2-1AL-DOF-MAP-BORO              PIC X.               00014306
-           05 PIWA2-1AL-DOF-MAP-SECVOL            PIC X(4).            00014406
-     *******  PIWA2-1AL-DOF-MAP-PAGE  NOT IMPLEMENTED                  00014506
-           05 PIWA2-1AL-DOF-MAP-PAGE              PIC X(4).            00014606
-           05 FILLER                              PIC X(3).            00014719
-           05 PIWA2-1AL-LATITUDE                  PIC X(9).            00014819
-           05 PIWA2-1AL-LONGITUDE                 PIC X(11).           00014919
-           05 PIWA2-1AL-X-COORD                   PIC X(7).            00015019
-           05 PIWA2-1AL-Y-COORD                   PIC X(7).            00015119
-           05 PIWA2-1AL-BID                       PIC X(6).            00015219
-           05 PIWA2-1AL-TPAD-BIN-ST               PIC X.               00015319
-           05 PIWA2-1AL-TPAD-NEW-BIN              PIC X(7).            00015419
-           05 PIWA2-1AL-TPAD-NEW-BIN-ST           PIC X.               00015519
-           05 PIWA2-1AL-TPAD-CONFLICT             PIC X.               00015619
-           05 FILLER                              PIC X(9).            00015719
-           05 FILLER-GSS                          PIC X(8).            00015819
-           05 GEO-WA2-1AL-NUM-OF-BINS             PIC X(4).            00015919
-           05 PIWA2-1AL-TPAD-BINLIST.                                  00016019
-              10 PIWA2-1AL-TPAD-BINS OCCURS 2187 TIMES.                00016119
-                15 PIWA2-1AL-TPAD-BINS-BIN         PIC X(7).           00016219
-                15 PIWA2-1AL-TPAD-BINS-STAT        PIC X.              00016319
-              10 PIWA2-1AL-TPAD-FILL               PIC X(4).           00016419
-           05 GEO-WA2-1AL-BINS REDEFINES PIWA2-1AL-TPAD-BINLIST        00016519
-              PIC X(7)  OCCURS 2500 TIMES.                             00016619
-                                                                       00016719
-     ***************************************************************   00016819
-     ***   FOR: FUNCTION 1/1E EXTENDED  *****************3**********   00016919
-                                                                       00017019
-          03  PIWA2-FUNCTION1EX   REDEFINES PIWA2.                     00017119
-                                                                       00017219
-           05 PIWA2-FN1EX-ACCESS-KEY              PIC X(21).           00017319
-           05 PIWA2-FN1EX-CONT-PARITY             PIC X.               00017419
-           05 PIWA2-FN1EX-LOW-HOUSENUM-SORT       PIC X(11).           00017519
-           05 PIWA2-FN1EX-HI-HOUSENUM-SORT        PIC X(11).           00017619
-           05 PIWA2-FN1EX-PREFERRED-LGC           PIC X(2).            00017719
-           05 PIWA2-FN1EX-NUM-X-ST-LOW-END        PIC X.               00017819
-           05 PIWA2-FN1EX-LOW-B5SC                PIC X(6)             00017919
-                                                   OCCURS 5 TIMES.     00018019
-           05 PIWA2-FN1EX-NUM-X-ST-HI-END         PIC X.               00018119
-           05 PIWA2-FN1EX-HI-B5SC                 PIC X(6)             00018219
-                                                   OCCURS 5 TIMES.     00018319
-           05 PIWA2-FN1EX-LIONKEY.                                     00018419
-               10  PIWA2-FN1EX-LION-BORO          PIC X.               00018519
-               10  PIWA2-FN1EX-LIONFACECODE       PIC X(4).            00018619
-               10  PIWA2-FN1EX-LIONSEQ            PIC X(5).            00018719
-           05 PIWA2-FN1EX-SPECIAL-ADDR-FLAG       PIC X(1).            00018819
-           05 PIWA2-FN1EX-SIDE-OF-STR             PIC X.               00018919
-           05 PIWA2-FN1EX-SEGMENTLENGTH           PIC X(5).            00019019
-           05 PIWA2-FN1EX-XCOORD                  PIC X(7).            00019119
-           05 PIWA2-FN1EX-YCOORD                  PIC X(7).            00019219
-           05 FILLER-GSS                          PIC X(8).            00019319
-           05 PIWA2-FN1EX-MARBLE-RIKER-FLAG       PIC X(1).            00019419
-           05 PIWA2-FN1EX-SLA                     PIC X.               00019519
-           05 PIWA2-FN1EX-COMDIST.                                     00019619
-               10  PIWA2-FN1EX-COMDIST-BORO       PIC X(1).            00019719
-               10  PIWA2-FN1EX-COMDIST-NUMBER     PIC X(2).            00019819
-           05 PIWA2-FN1EX-ZIP                     PIC X(5).            00019919
-                                                                       00020019
-           05 PIWA2-FN1EX-ELECTDIST               PIC X(3).            00020119
-           05 PIWA2-FN1EX-ASSEMDIST               PIC X(2).            00020219
-           05 PIWA2-FN1EX-SPLIT-ED-FLAG           PIC X(1).            00020319
-           05 PIWA2-FN1EX-CONGDIST                PIC X(2).            00020419
-           05 PIWA2-FN1EX-SENATEDIST              PIC X(2).            00020519
-           05 PIWA2-FN1EX-COURTDIST               PIC X(2).            00020619
-           05 PIWA2-FN1EX-COUNCILDIST             PIC X(2).            00020719
-                                                                       00020819
-           05 PIWA2-FN1EX-HCD                     PIC X(2).            00020919
-           05 PIWA2-FN1EX-HEALTHAREA              PIC X(4).            00021019
-           05 PIWA2-FN1EX-SANIDIST.                                    00021119
-               10  PIWA2-FN1EX-SANIDIST-BORO      PIC X(1).            00021219
-               10  PIWA2-FN1EX-SANIDIST-NUMBER    PIC X(2).            00021319
-           05 PIWA2-FN1EX-SANITATION-SUBSEC       PIC X(2).            00021419
-           05 PIWA2-FN1EX-SANI-REG                PIC X(5).            00021519
-           05 PIWA2-FN1EX-SANI-REC                PIC X(3).            00021619
-           05 PIWA2-FN1EX-POLICEDIST.                                  00021719
-                15 PIWA2-FN1EX-POL-PATR-BORO-CMD PIC X(1).             00021819
-                15 PIWA2-FN1EX-POL-PRECINCT       PIC X(3).            00021919
-     ** NOTE:10  PIWA2-FN1EX-FIRESEC ==> FIRE DIVISION **              00022019
-           05 PIWA2-FN1EX-FIRESEC                 PIC X(2).            00022119
-           05 PIWA2-FN1EX-FIREBAT                 PIC X(2).            00022219
-           05 PIWA2-FN1EX-FIRECO.                                      00022319
-               10  PIWA2-FN1EX-FIRECO-TYPE        PIC X(1).            00022419
-               10  PIWA2-FN1EX-FIRECO-NUM         PIC X(3).            00022519
-           05 PIWA2-FN1EX-SPLIT-SCHOOL-FLAG       PIC X.               00022619
-           05 PIWA2-FN1EX-SCHOOLDIST              PIC X(2).            00022719
-           05 PIWA2-FN1EX-DYN-BLOCK               PIC X(3).            00022819
-           05 PIWA2-FN1EX-POLICE-PAT-BORO         PIC X(2).            00023022
-           05 PIWA2-FN1EX-FEATURE-TYPE            PIC X.               00023119
-           05 PIWA2-FN1EX-SEGMENT-TYPE            PIC X.               00023219
-           05 PIWA2-FN1EX-ALX                     PIC X.               00023319
-           05 PIWA2-FN1EX-COINCIDENT-CNT          PIC X.               00023419
-           05 FILLER                              PIC X(3).            00023519
-           05 PIWA2-FN1EX-1990-CENSUSTRACT        PIC X(6).            00023619
-           05 PIWA2-FN1EX-2010-CENS-TRCT          PIC X(6).            00023719
-           05 PIWA2-FN1EX-2010-CENS-BLK           PIC X(4).            00023819
-           05 PIWA2-FN1EX-2010-CENS-BLK-SFX       PIC X.               00023919
-           05 PIWA2-FN1EX-2000-CENS-TRCT          PIC X(6).            00024019
-           05 PIWA2-FN1EX-2000-CENS-BLK           PIC X(4).            00024119
-           05 PIWA2-FN1EX-2000-CENS-BLK-SFX       PIC X.               00024219
-           05 PIWA2-FN1EX-NTA                     PIC X(4).            00024319
-           05 PIWA2-FN1EX-SANIT-SNOW-PRRTY        PIC X.               00024419
-           05 PIWA2-FN1EX-SANIT-ORGANICS          PIC X(5).            00024519
-           05 PIWA2-FN1EX-SANIT-BULK-PICK-UP      PIC X(5).            00024630
-     ****  05 PIWA2-FN1EX-SANIT-RESERVED V16.4    PIC X(5).            00024730
-           05 PIWA2-FN1EX-HURRICANE-ZONE          PIC XX.              00024829
-           05 FILLER                              PIC X(11).           00024929
-           05 PIWA2-FN1EX-TRUE-HNS                PIC X(11).           00025029
-           05 PIWA2-FN1EX-TRUE-B7SC               PIC X(8).            00025129
-           05 PIWA2-FN1EX-SEG-ID                  PIC X(7).            00025229
-           05 PIWA2-FN1EX-CURVE-FLAG              PIC X(1).            00025329
-           05 PIWA2-FN1EX-LGCS                    PIC X(8).            00025429
-           05 PIWA2-FN1EX-BOE-PTR                 PIC X(1).            00025529
-           05 PIWA2-FN1EX-AZIMUTH                 PIC X(3).            00025629
-           05 PIWA2-FN1EX-ORIENT                  PIC X(1).            00025729
-           05 PIWA2-FN1EX-X-LOW                   PIC X(7).            00025829
-           05 PIWA2-FN1EX-Y-LOW                   PIC X(7).            00025929
-           05 PIWA2-FN1EX-Z-LOW                   PIC X(7).            00026029
-           05 PIWA2-FN1EX-X-HI                    PIC X(7).            00026129
-           05 PIWA2-FN1EX-Y-HI                    PIC X(7).            00026229
-           05 PIWA2-FN1EX-Z-HI                    PIC X(7).            00026329
-           05 PIWA2-FN1EX-X-CC                    PIC X(7).            00026429
-           05 PIWA2-FN1EX-Y-CC                    PIC X(7).            00026529
-           05 PIWA2-FN1EX-Z-CC                    PIC X(7).            00026629
-           05 PIWA2-FN1EX-RADIUS                  PIC X(7).            00026729
-           05 PIWA2-FN1EX-SECANT                  PIC X(1).            00026829
-           05 PIWA2-FN1EX-ANGLE-FROM              PIC X(5).            00026929
-           05 PIWA2-FN1EX-ANGLE-TO                PIC X(5).            00027029
-           05 PIWA2-FN1EX-NODE-FROM               PIC X(7).            00027129
-           05 PIWA2-FN1EX-NODE-TO                 PIC X(7).            00027229
-           05 PIWA2-FN1EX-VANITY-LION             PIC X(10).           00027329
-           05 PIWA2-FN1EX-SOS                     PIC X(1).            00027429
-           05 PIWA2-FN1EX-SPLIT-LOHSN             PIC X(11).           00027529
-           05 PIWA2-FN1EX-TD                      PIC X(1).            00027629
-           05 PIWA2-FN1EX-TR                      PIC X(10).           00027729
-           05 PIWA2-FN1EX-CURVE-FRACTION          PIC X(3).            00027829
-           05 PIWA2-FN1EX-ROADWAY-TYPE            PIC X(2).            00027929
-           05 PIWA2-FN1EX-PHYICAL-ID              PIC X(7).            00028029
-           05 PIWA2-FN1EX-GENERIC-ID              PIC X(7).            00028129
-           05 PIWA2-FN1EX-NYPD-ID-FILL            PIC X(7).            00028229
-           05 PIWA2-FN1EX-FDNY-ID-FILL            PIC X(7).            00028329
-           05 PIWA2-FN1EX-BIKE-LANE-2             PIC X(2).            00028429
-           05 PIWA2-FN1EX-BIKE-TRAFFIC-DIR        PIC X(2).            00028535
-           05 FILLER                              PIC X(3).            00028633
-     ****  05 FILLER              ******V17.1 **  PIC X(5).            00028833
-     ****  05 FILLER              ******V16.4 **  PIC X(7).            00028933
-     ****  05 PIWA2-FN1EX-BLOCKFACE-ID *V16.1 **  PIC X(7) ***         00029033
-           05 PIWA2-FN1EX-STREET-STATUS           PIC X(1).            00029133
-           05 PIWA2-FN1EX-STREET-WIDTH            PIC X(3).            00029233
-           05 PIWA2-FN1EX-STREET-WIDTH-IRR        PIC X(1).            00029333
-           05 PIWA2-FN1EX-BIKE-LANE               PIC X(1).            00029433
-           05 PIWA2-FN1EX-FED-CLASS-CODE          PIC X(2).            00029533
-           05 PIWA2-FN1EX-ROW-TYPE                PIC X(1).            00029633
-           05 PIWA2-FN1EX-LGC-LIST-2              PIC X(10).           00029733
-           05 PIWA2-FN1EX-LEGACY-SEG-ID           PIC X(7).            00029833
-           05 PIWA2-FN1EX-LGC-LIST-FROM-1         PIC X(10).           00029933
-           05 PIWA2-FN1EX-LGC-LIST-TO-1           PIC X(10).           00030033
-           05 PIWA2-FN1EX-LGC-LIST-FROM-2         PIC X(10).           00030133
-           05 PIWA2-FN1EX-LGC-LIST-TO-2           PIC X(10).           00030233
-           05 PIWA2-FN1EX-NOCROSS-FLG             PIC X(1).            00030333
-           05 PIWA2-FN1EX-IND-SEG-LEN             PIC X(5).            00030433
-           05 PIWA2-FN1EX-NTA-NAME                PIC X(75).           00030533
-           05 PIWA2-FN1EX-USPS-CITY-NAME          PIC X(25).           00030633
-           05 PIWA2-FN1EX-LATITUDE                PIC X(9).            00030733
-           05 PIWA2-FN1EX-LONGITUDE               PIC X(11).           00030833
-           05 PIWA2-FN1EX-SEG-FROM-NODE           PIC X(7).            00030933
-           05 PIWA2-FN1EX-SEG-TO-NODE             PIC X(7).            00031033
-           05 PIWA2-FN1EX-SEG-FROM-XYZ            PIC X(21).           00031133
-           05 PIWA2-FN1EX-SEG-TO-XYZ              PIC X(21).           00031233
-           05 PIWA2-FN1EX-BLOCKFACE-ID            PIC X(10).           00031333
-           05 PIWA2-FN1EX-NBR-TRAVEL-LANES        PIC X(2).            00031433
-           05 PIWA2-FN1EX-NBR-PARK-LANES          PIC X(2).            00031533
-           05 PIWA2-FN1EX-NBR-TOTAL-LANES         PIC X(2).            00031633
-           05 PIWA2-FN1EX-STREET-WIDTH-MAX        PIC X(3).            00031733
-           05 PIWA2-FN1EX-FILL500                 PIC X(252).          00031833
-     ****  05 PIWA2-FN1EX-FILL500   ** V16.4 **   PIC X(255).          00031933
-     ****  05 PIWA2-FN1EX-FILL500   ** V16.1 **   PIC X(271) ***       00032033
-     ****  05 PIWA2-FN1EX-FILL500   ** V15.3 **   PIC X(327) ***       00032133
-     ****************************************************************/ 00032233
-     *                                                            ***/ 00032333
-     *THE FOLLOWING FIELDS ARE AN ADDITION TO GRID1               ***/ 00032433
-     ****************************************************************/ 00032533
-           05 PIWA2-FN1EX-REASON-CODE             PIC X(1).            00032633
-           05 PIWA2-FN1EX-REASON-CODE-QUAL        PIC X(1).            00032733
-           05 PIWA2-FN1EX-WARN-CODE               PIC X(2).            00032833
-           05 PIWA2-FN1EX-RETURN-CODE             PIC X(2).            00032933
-           05 PIWA2-FN1EX-NUM-X-STS-LO-END        PIC X(1).            00033033
-           05 PIWA2-FN1EX-LO-B7SC OCCURS 5 TIMES  PIC X(8).            00033133
-           05 PIWA2-FN1EX-NUM-X-STS-HI-END        PIC X(1).            00033233
-           05 PIWA2-FN1EX-HI-B7SC OCCURS 5 TIMES  PIC X(8).            00033333
-           05 PIWA2-FN1EX-LO-ST-NAME OCCURS 5 TIMES PIC X(32).         00033433
-           05 PIWA2-FN1EX-HI-ST-NAME OCCURS 5 TIMES PIC X(32).         00033533
-           05 PIWA2-FN1EX-BOE-B7SC                PIC X(8).            00033633
-           05 PIWA2-FN1EX-BOE-ST-NAME             PIC X(32).           00033733
-           05 PIWA2-FN1EX-FILL600                 PIC X(52).           00033833
-                                                                       00033933
-     ***************************************************************   00034033
-     ***   FOR: FUNCTION 1A   EXTENDED  ****************************   00034133
-                                                                       00034233
-          03  PIWA2-FUNCTION1AX  REDEFINES PIWA2.                      00034333
-           05 PIWA2-1AX-ACCESS-KEY                PIC X(21).           00034433
-           05 PIWA2-1AX-CONT-PARITY               PIC X.               00034533
-           05 PIWA2-1AX-LOW-HOUSENUM              PIC X(11).           00034633
-           05 PIWA2-1AX-ALTKEY-1.                                      00034733
-             10 PIWA2-1AX-ALTKEY-1-BORO           PIC X.               00034833
-             10 PIWA2-1AX-ALTKEY-1-TAXBLOCK       PIC X(5).            00034933
-             10 PIWA2-1AX-ALTKEY-1-TAXLOT         PIC X(4).            00035033
-           05 FILLER                              PIC X.               00035133
-           05 PIWA2-1AX-SCC                       PIC X(1).            00035233
-           05 FILLER                              PIC X.               00035333
-           05 PIWA2-1AX-GENERAL-LOT-INFO.                              00035433
-             10 PIWA2-1AX-RPAD-BLDG-CLASS         PIC X(2).            00035533
-             10 PIWA2-1AX-CORNER-CODE             PIC X(2).            00035633
-             10 PIWA2-1AX-TOT-NBR-BLDG            PIC X(4).            00035733
-             10 PIWA2-1AX-NUM-OF-BLOCKFACES       PIC X(2).            00035833
-             10 PIWA2-1AX-INTERIOR-FLAG           PIC X.               00035933
-             10 PIWA2-1AX-VACANT-FLAG             PIC X.               00036033
-             10 PIWA2-1AX-IRREG-FLAG              PIC X.               00036133
-           05 PIWA2-1AX-ALT-BORO-FLAG             PIC X.               00036233
-           05 PIWA2-1AX-OVERFLOW-FLAG             PIC X(1).            00036333
-           05 PIWA2-1AX-STROLL-KEY                PIC X(19).           00036433
-           05 FILLER-GSS                          PIC X.               00036533
-           05 PIWA2-1AX-BLDG-ID-NUM               PIC X(7).            00036633
-           05 PIWA2-1AX-CONDO-LOT-FLAG            PIC X.               00036733
-           05 FILLER                              PIC X.               00036833
-           05 PIWA2-1AX-RPAD-COND-NUM             PIC X(4).            00036933
-           05 FILLER                              PIC X(7).            00037033
-           05 PIWA2-1AX-CONDO-BILLING-BBL         PIC X(10).           00037133
-           05 FILLER                              PIC X.               00037233
-           05 PIWA2-1AX-CONDO-BILL-BBL-SCC        PIC X(1).            00037333
-           05 PIWA2-1AX-CONDO-LOW-BBL             PIC X(10).           00037433
-           05 FILLER                              PIC X.               00037533
-           05 PIWA2-1AX-CONDO-HIGH-BBL            PIC X(10).           00037633
-           05 FILLER                              PIC X.               00037733
-           05 FILLER                              PIC X(15).           00037833
-           05 PIWA2-1AX-CO-OP-NBR                 PIC X(4).            00037933
-           05 PIWA2-1AX-SANBORN-BVOLPAGE.                              00038033
-              10  PIWA2-1AX-SANBORN-BORO          PIC X(1).            00038133
-              10  PIWA2-1AX-SANBORN-VOL-PAGE.                          00038233
-                15  PIWA2-1AX-SANBORN-VOL-NUM     PIC X(3).            00038333
-                15  PIWA2-1AX-SANBORN-PAGE-NUM    PIC X(4).            00038433
-           05 PIWA2-1AX-COMMERC-DIST              PIC X(5).            00038533
-           05 PIWA2-1AX-DOF-MAP-BOROUGH           PIC X.               00038633
-           05 PIWA2-1AX-TAX-MAP-NBR               PIC X(4).            00038733
-           05 FILLER-FOR-TAX-MAP-PAGE             PIC X(4).            00038833
-           05 FILLER                              PIC X(3).            00038933
-           05 PIWA2-1AX-LATITUDE                  PIC X(9).            00039033
-           05 PIWA2-1AX-LONGITUDE                 PIC X(11).           00039133
-           05 PIWA2-1AX-X-COORD                   PIC X(7).            00039233
-           05 PIWA2-1AX-Y-COORD                   PIC X(7).            00039333
-           05 PIWA2-1AX-BID                       PIC X(6).            00039433
-           05 PIWA2-1AX-TPAD-BIN-ST               PIC X.               00039533
-           05 PIWA2-1AX-TPAD-NEW-BIN              PIC X(7).            00039633
-           05 PIWA2-1AX-TPAD-NEW-BIN-ST           PIC X.               00039733
-           05 PIWA2-1AX-TPAD-CONFLICT             PIC X.               00039833
-           05 FILLER                              PIC X(9).            00039933
-           05 FILLER-GSS                          PIC X(8).            00040033
-           05 PIWA2-1AX-REASON-CODE               PIC X(1).            00040133
-           05 PIWA2-1AX-REASON-CODE-QUAL          PIC X(1).            00040233
-           05 PIWA2-1AX-WARN-CODE                 PIC X(2).            00040333
-           05 PIWA2-1AX-RETURN-CODE               PIC X(2).            00040433
-           05 PIWA2-1AX-FILLER                    PIC X(108).          00040533
-           05 PIWA2-1AX-NUM-OF-ADDR               PIC X(4).            00040633
-           05 PIWA2-1AX-ADDR-LIST                OCCURS 21 TIMES.      00040733
-             10  PIWA2-1AX-LIST-LOW-HOUSENUM      PIC X(16).           00040833
-             10  PIWA2-1AX-LIST-HI-HOUSENUM       PIC X(16).           00040933
-             10  PIWA2-1AX-LIST-BORO              PIC X.               00041033
-             10  PIWA2-1AX-LIST-5SC               PIC X(5).            00041133
-             10  PIWA2-1AX-LIST-LGC               PIC X(2).            00041233
-             10  PIWA2-1AX-LIST-BIN               PIC X(7).            00041333
-             10  PIWA2-1AX-LIST-SOS               PIC X.               00041433
-             10  PIWA2-1AX-ADDR-TYPE              PIC X.               00041533
-             10  PIWA2-1AX-TPAD-STATUS            PIC X.               00041633
-             10  PIWA2-1AX-ST-NAME                PIC X(32).           00041733
-             10  FILLER                           PIC X(34).           00041833
-                                                                       00041933
-     ***************************************************************   00042033
-     ***   FOR: FUNCTION 1B             ****************************   00042133
-                                                                       00042233
-          03  PIWA2-FUNCTION1B   REDEFINES PIWA2.                      00042333
-                                                                       00042433
-           05 PIWA2-1B-1-ACCESS-KEY               PIC X(21).           00042533
-           05 PIWA2-1B-1-CONT-PARITY              PIC X.               00042633
-           05 PIWA2-1B-1-LOW-HOUSENUM-SORT        PIC X(11).           00042733
-           05 PIWA2-1B-1-HI-HOUSENUM-SORT         PIC X(11).           00042833
-           05 PIWA2-1B-1-PREFERRED-LGC            PIC X(2).            00042933
-           05 PIWA2-1B-1-NUM-X-ST-LOW-END         PIC X.               00043033
-           05 PIWA2-1B-1-LOW-B5SC                 PIC X(6)             00043133
-                                                   OCCURS 5 TIMES.     00043233
-           05 PIWA2-1B-1-NUM-X-ST-HI-END          PIC X.               00043333
-           05 PIWA2-1B-1-HI-B5SC                  PIC X(6)             00043433
-                                                   OCCURS 5 TIMES.     00043533
-           05 PIWA2-1B-1-LIONKEY.                                      00043633
-               10  PIWA2-1B-1-LION-BORO           PIC X.               00043733
-               10  PIWA2-1B-1-LIONFACECODE        PIC X(4).            00043833
-               10  PIWA2-1B-1-LIONSEQ             PIC X(5).            00043933
-           05 PIWA2-1B-1-SPECIAL-ADDR-FLAG        PIC X(1).            00044033
-           05 PIWA2-1B-1-SIDE-OF-STR              PIC X.               00044133
-           05 PIWA2-1B-1-SEGMENTLENGTH            PIC X(5).            00044233
-           05 PIWA2-1B-1-XCOORD                   PIC X(7).            00044333
-           05 PIWA2-1B-1-YCOORD                   PIC X(7).            00044433
-           05 FILLER-GSS                          PIC X(8).            00044533
-           05 PIWA2-1B-1-MARBLE-RIKER-FLAG        PIC X(1).            00044633
-           05 PIWA2-1B-1-SLA                      PIC X.               00044733
-           05 PIWA2-1B-1-COMDIST.                                      00044833
-               10  PIWA2-1B-1-COMDIST-BORO        PIC X(1).            00044933
-               10  PIWA2-1B-1-COMDIST-NUMBER      PIC X(2).            00045033
-           05 PIWA2-1B-1-ZIP                      PIC X(5).            00045133
-                                                                       00045233
-           05 PIWA2-1B-1-ELECTDIST                PIC X(3).            00045333
-           05 PIWA2-1B-1-ASSEMDIST                PIC X(2).            00045433
-           05 PIWA2-1B-1-SPLIT-ED-FLAG            PIC X(1).            00045533
-           05 PIWA2-1B-1-CONGDIST                 PIC X(2).            00045633
-           05 PIWA2-1B-1-SENATEDIST               PIC X(2).            00045733
-           05 PIWA2-1B-1-COURTDIST                PIC X(2).            00045833
-           05 PIWA2-1B-1-COUNCILDIST              PIC X(2).            00045933
-                                                                       00046033
-           05 PIWA2-1B-1-HCD                      PIC X(2).            00046133
-           05 PIWA2-1B-1-HEALTHAREA               PIC X(4).            00046233
-           05 PIWA2-1B-1-SANIDIST.                                     00046333
-               10  PIWA2-1B-1-SANIDIST-BORO       PIC X(1).            00046433
-               10  PIWA2-1B-1-SANIDIST-NUMBER     PIC X(2).            00046533
-           05 PIWA2-1B-1-SANITATION-SUBSEC        PIC X(2).            00046633
-           05 PIWA2-1B-1-SANI-REG                 PIC X(5).            00046733
-           05 PIWA2-1B-1-SANI-REC                 PIC X(3).            00046833
-           05 PIWA2-1B-1-POLICEDIST.                                   00046933
-                15 PIWA2-1B-1-POL-PATR-BORO-CMD PIC X(1).              00047033
-                15 PIWA2-1B-1-POL-PRECINCT        PIC X(3).            00047133
-     ** NOTE:10  PIWA2-1B-1-FIRESEC ==> FIRE DIVISION **               00047233
-           05 PIWA2-1B-1-FIRESEC                  PIC X(2).            00047333
-           05 PIWA2-1B-1-FIREBAT                  PIC X(2).            00047433
-           05 PIWA2-1B-1-FIRECO.                                       00047533
-               10  PIWA2-1B-1-FIRECO-TYPE         PIC X(1).            00047633
-               10  PIWA2-1B-1-FIRECO-NUM          PIC X(3).            00047733
-           05 PIWA2-1B-1-SPLIT-SCHOOL-FLAG        PIC X.               00047833
-           05 PIWA2-1B-1-SCHOOLDIST               PIC X(2).            00047933
-           05 PIWA2-1B-1-DYN-BLOCK                PIC X(3).            00048033
-           05 PIWA2-1B-1-POLICE-PAT-BORO          PIC X(2).            00048133
-           05 PIWA2-1B-1-FEATURE-TYPE             PIC X.               00048233
-           05 PIWA2-1B-1-SEGMENT-TYPE             PIC X.               00048333
-           05 PIWA2-1B-1-ALX                      PIC X.               00048433
-           05 PIWA2-1B-1-COINCIDENT-CNT           PIC X.               00048533
-           05 FILLER                              PIC X(3).            00048633
-           05 PIWA2-1B-1-1990-CENSUSTRACT         PIC X(6).            00048733
-           05 PIWA2-1B-1-2010-CENS-TRCT           PIC X(6).            00048833
-           05 PIWA2-1B-1-2010-CENS-BLK            PIC X(4).            00048933
-           05 PIWA2-1B-1-2010-CENS-BLK-SFX        PIC X.               00049033
-           05 PIWA2-1B-1-2000-CENS-TRCT           PIC X(6).            00049133
-           05 PIWA2-1B-1-2000-CENS-BLK            PIC X(4).            00049233
-           05 PIWA2-1B-1-2000-CENS-BLK-SFX        PIC X.               00049333
-           05 PIWA2-1B-1-NTA                      PIC X(4).            00049433
-           05 PIWA2-1B-1-SANIT-SNOW-PRRTY         PIC X.               00049533
-           05 PIWA2-1B-1-SANIT-ORGANICS           PIC X(5).            00049633
-           05 PIWA2-1B-1-SANIT-BULK-PICK-UP       PIC X(5).            00049733
-     ****  05 PIWA2-1B-1-SANIT-RESERVED V16.4     PIC X(5).            00049833
-           05 PIWA2-1B-1-HURRICANE-ZONE           PIC XX.              00049933
-           05 FILLER                              PIC X(11).           00050033
-           05 PIWA2-1B-1-TRUE-HNS                 PIC X(11).           00050133
-           05 PIWA2-1B-1-TRUE-B7SC                PIC X(8).            00050233
-           05 PIWA2-1B-1-SEG-ID                   PIC X(7).            00050333
-           05 PIWA2-1B-1-CURVE-FLAG               PIC X(1).            00050433
-           05 PIWA2-1B-1-LGCS                     PIC X(8).            00050533
-           05 PIWA2-1B-1-BOE-PTR                  PIC X(1).            00050633
-           05 PIWA2-1B-1-AZIMUTH                  PIC X(3).            00050733
-           05 PIWA2-1B-1-ORIENT                   PIC X(1).            00050833
-           05 PIWA2-1B-1-X-LOW                    PIC X(7).            00050933
-           05 PIWA2-1B-1-Y-LOW                    PIC X(7).            00051033
-           05 PIWA2-1B-1-Z-LOW                    PIC X(7).            00051133
-           05 PIWA2-1B-1-X-HI                     PIC X(7).            00051233
-           05 PIWA2-1B-1-Y-HI                     PIC X(7).            00051333
-           05 PIWA2-1B-1-Z-HI                     PIC X(7).            00051433
-           05 PIWA2-1B-1-X-CC                     PIC X(7).            00051533
-           05 PIWA2-1B-1-Y-CC                     PIC X(7).            00051633
-           05 PIWA2-1B-1-Z-CC                     PIC X(7).            00051733
-           05 PIWA2-1B-1-RADIUS                   PIC X(7).            00051833
-           05 PIWA2-1B-1-SECANT                   PIC X(1).            00051933
-           05 PIWA2-1B-1-ANGLE-FROM               PIC X(5).            00052033
-           05 PIWA2-1B-1-ANGLE-TO                 PIC X(5).            00052133
-           05 PIWA2-1B-1-NODE-FROM                PIC X(7).            00052233
-           05 PIWA2-1B-1-NODE-TO                  PIC X(7).            00052333
-           05 PIWA2-1B-1-VANITY-LION              PIC X(10).           00052433
-           05 PIWA2-1B-1-SOS                      PIC X(1).            00052533
-           05 PIWA2-1B-1-SPLIT-LOHSN              PIC X(11).           00052633
-           05 PIWA2-1B-1-TD                       PIC X(1).            00052733
-           05 PIWA2-1B-1-TR                       PIC X(10).           00052833
-           05 PIWA2-1B-1-CURVE-FRACTION           PIC X(3).            00052933
-           05 PIWA2-1B-1-ROADWAY-TYPE             PIC X(2).            00053033
-           05 PIWA2-1B-1-PHYICAL-ID               PIC X(7).            00053133
-           05 PIWA2-1B-1-GENERIC-ID               PIC X(7).            00053233
-           05 PIWA2-1B-1-NYPD-ID-FILL             PIC X(7).            00053333
-           05 PIWA2-1B-1-FDNY-ID-FILL             PIC X(7).            00053433
-           05 PIWA2-1B-1-BIKE-LANE-2              PIC X(2).            00053533
-           05 PIWA2-1B-1-BIKE-TRAFFIC-DIR         PIC X(2).            00053633
-           05 FILLER                              PIC X(3).            00053733
-     ****  05 FILLER                  ** V17.1 ** PIC X(5) ***         00053833
-     ****  05 FILLER                  ** V16.4 ** PIC X(7) ***         00053933
-     ****  05 PIWA2-FN-1-BLOCKFACE-ID ** V16.1 ** PIC X(7) ***         00054033
-           05 PIWA2-1B-1-STREET-STATUS            PIC X(1).            00054133
-           05 PIWA2-1B-1-STREET-WIDTH             PIC X(3).            00054233
-           05 PIWA2-1B-1-STREET-WIDTH-IRR         PIC X(1).            00054333
-           05 PIWA2-1B-1-BIKE-LANE                PIC X(1).            00054433
-           05 PIWA2-1B-1-FED-CLASS-CODE           PIC X(2).            00054533
-           05 PIWA2-1B-1-ROW-TYPE                 PIC X(1).            00054633
-           05 PIWA2-1B-1-LGC-LIST-2               PIC X(10).           00054733
-           05 PIWA2-1B-1-LEGACY-SEG-ID            PIC X(7).            00054833
-           05 PIWA2-1B-1-LGC-LIST-FROM-1          PIC X(10).           00054933
-           05 PIWA2-1B-1-LGC-LIST-TO-1            PIC X(10).           00055033
-           05 PIWA2-1B-1-LGC-LIST-FROM-2          PIC X(10).           00055133
-           05 PIWA2-1B-1-LGC-LIST-TO-2            PIC X(10).           00055233
-           05 PIWA2-1B-1-NOCROSS-FLG              PIC X(1).            00055333
-           05 PIWA2-1B-1-IND-SEG-LEN              PIC X(5).            00055433
-           05 PIWA2-1B-1-NTA-NAME                 PIC X(75).           00055533
-           05 PIWA2-1B-1-USPS-CITY-NAME           PIC X(25).           00055633
-           05 PIWA2-1B-1-LATITUDE                 PIC X(9).            00055733
-           05 PIWA2-1B-1-LONGITUDE                PIC X(11).           00055833
-           05 PIWA2-1B-1-SEG-FROM-NODE            PIC X(7).            00055933
-           05 PIWA2-1B-1-SEG-TO-NODE              PIC X(7).            00056033
-           05 PIWA2-1B-1-SEG-FROM-XYZ             PIC X(21).           00056133
-           05 PIWA2-1B-1-SEG-TO-XYZ               PIC X(21).           00056233
-           05 PIWA2-1B-1-BLOCKFACE-ID             PIC X(10).           00056333
-           05 PIWA2-1B-1-NBR-TRAVEL-LANES         PIC X(2).            00056433
-           05 PIWA2-1B-1-NBR-PARK-LANES           PIC X(2).            00056533
-           05 PIWA2-1B-1-NBR-TOTAL-LANES          PIC X(2).            00056633
-           05 PIWA2-1B-1-STREET-WIDTH-MAX         PIC X(3).            00056733
-           05 PIWA2-1B-1-FILL500                  PIC X(252).          00056833
-     ****  05 PIWA2-1B-1-FILL500   ** V16.4 **    PIC X(255).          00056933
-     ****  05 PIWA2-1B-1-FILL500   ** V16.1 **    PIC X(271) **        00057033
-     ****  05 PIWA2-1B-1-FILL500   ** V15,3 **    PIC X(327) **        00057133
-     ****************************************************************/ 00057233
-     *                                                            ***/ 00057333
-     *THE FOLLOWING FIELDS ARE AN ADDITION TO 1/1E                ***/ 00057433
-     ****************************************************************/ 00057533
-           05 PIWA2-1B-1-REASON-CODE              PIC X(1).            00057633
-           05 PIWA2-1B-1-REASON-CODE-QUAL         PIC X(1).            00057733
-           05 PIWA2-1B-1-WARN-CODE                PIC X(2).            00057833
-           05 PIWA2-1B-1-RETURN-CODE              PIC X(2).            00057933
-           05 PIWA2-1B-1-NUM-X-STS-LO-END         PIC X(1).            00058033
-           05 PIWA2-1B-1-LO-B7SC OCCURS 5 TIMES   PIC X(8).            00058133
-           05 PIWA2-1B-1-NUM-X-STS-HI-END         PIC X(1).            00058233
-           05 PIWA2-1B-1-HI-B7SC OCCURS 5 TIMES   PIC X(8).            00058333
-           05 PIWA2-1B-1-LO-ST-NAME OCCURS 5 TIMES PIC X(32).          00058433
-           05 PIWA2-1B-1-HI-ST-NAME OCCURS 5 TIMES PIC X(32).          00058533
-           05 PIWA2-1B-1-BOE-B7SC                 PIC X(8).            00058633
-           05 PIWA2-1B-1-BOE-ST-NAME              PIC X(32).           00058733
-           05 PIWA2-1B-1-FILL600                  PIC X(52).           00058833
-                                                                       00058933
-           05 PIWA2-1B-1A-ACCESS-KEY              PIC X(21).           00059033
-           05 PIWA2-1B-1A-CONT-PARITY             PIC X.               00059133
-           05 PIWA2-1B-1A-LOW-HOUSENUM            PIC X(11).           00059233
-           05 PIWA2-1B-1A-ALTKEY-1.                                    00059333
-             10 PIWA2-1B-1A-ALTKEY-1-BORO         PIC X.               00059433
-             10 PIWA2-1B-1A-ALTKEY-1-TAXBLOCK     PIC X(5).            00059533
-             10 PIWA2-1B-1A-ALTKEY-1-TAXLOT       PIC X(4).            00059633
-           05 FILLER                              PIC X.               00059733
-           05 PIWA2-1B-1A-SCC                     PIC X(1).            00059833
-           05 FILLER                              PIC X.               00059933
-           05 PIWA2-1B-1A-GENERAL-LOT-INFO.                            00060033
-             10 PIWA2-1B-1A-RPAD-BLDG-CLASS       PIC X(2).            00060133
-             10 PIWA2-1B-1A-CORNER-CODE           PIC X(2).            00060233
-             10 PIWA2-1B-1A-TOT-NBR-BLDG          PIC X(4).            00060333
-             10 PIWA2-1B-1A-NUM-OF-BLOCKFACES     PIC X(2).            00060433
-             10 PIWA2-1B-1A-INTERIOR-FLAG         PIC X.               00060533
-             10 PIWA2-1B-1A-VACANT-FLAG           PIC X.               00060633
-             10 PIWA2-1B-1A-IRREG-FLAG            PIC X.               00060733
-           05 PIWA2-1B-1A-ALT-BORO-FLAG           PIC X.               00060833
-           05 PIWA2-1B-1A-OVERFLOW-FLAG           PIC X(1).            00060933
-           05 PIWA2-1B-1A-STROLL-KEY              PIC X(19).           00061033
-           05 FILLER-GSS                          PIC X.               00061133
-           05 PIWA2-1B-1A-BLDG-ID-NUM             PIC X(7).            00061233
-           05 PIWA2-1B-1A-CONDO-LOT-FLAG          PIC X.               00061333
-           05 FILLER                              PIC X.               00061433
-           05 PIWA2-1B-1A-RPAD-COND-NUM           PIC X(4).            00061533
-           05 FILLER                              PIC X(7).            00061633
-           05 PIWA2-1B-1A-CONDO-BILLING-BBL       PIC X(10).           00061733
-           05 FILLER                              PIC X.               00061833
-           05 PIWA2-1B-1A-CONDO-BILL-BBL-SCC      PIC X(1).            00061933
-           05 PIWA2-1B-1A-CONDO-LOW-BBL           PIC X(10).           00062033
-           05 FILLER                              PIC X.               00062133
-           05 PIWA2-1B-1A-CONDO-HIGH-BBL          PIC X(10).           00062233
-           05 FILLER                              PIC X.               00062333
-           05 FILLER                              PIC X(15).           00062433
-           05 PIWA2-1B-1A-CO-OP-NBR               PIC X(4).            00062533
-           05 PIWA2-1B-1A-SANBORN-BVOLPAGE.                            00062633
-              10  PIWA2-1B-1A-SANBORN-BORO        PIC X(1).            00062733
-              10  PIWA2-1B-1A-SANBORN-VOL-PAGE.                        00062833
-                15  PIWA2-1B-1A-SANBORN-VOL-NUM   PIC X(3).            00062933
-                15  PIWA2-1B-1A-SANBORN-PAGE-NUM  PIC X(4).            00063033
-           05 PIWA2-1B-1A-COMMERC-DIST            PIC X(5).            00063133
-           05 PIWA2-1B-1A-DOF-MAP-BOROUGH         PIC X.               00063233
-           05 PIWA2-1B-1A-TAX-MAP-NBR             PIC X(4).            00063333
-           05 FILLER-FOR-TAX-MAP-PAGE             PIC X(4).            00063433
-           05 FILLER                              PIC X(3).            00063533
-           05 PIWA2-1B-1A-LATITUDE                PIC X(9).            00063633
-           05 PIWA2-1B-1A-LONGITUDE               PIC X(11).           00063733
-           05 PIWA2-1B-1A-X-COORD                 PIC X(7).            00063833
-           05 PIWA2-1B-1A-Y-COORD                 PIC X(7).            00063933
-           05 PIWA2-1B-1A-BID                     PIC X(6).            00064033
-           05 PIWA2-1B-1A-TPAD-BIN-ST             PIC X.               00064133
-           05 PIWA2-1B-1A-TPAD-NEW-BIN            PIC X(7).            00064233
-           05 PIWA2-1B-1A-TPAD-NEW-BIN-ST         PIC X.               00064333
-           05 PIWA2-1B-1A-TPAD-CONFLICT           PIC X.               00064433
-           05 FILLER                              PIC X(9).            00064533
-           05 FILLER-GSS                          PIC X(8).            00064633
-           05 PIWA2-1B-1A-REASON-CODE             PIC X(1).            00064733
-           05 PIWA2-1B-1A-REASON-CODE-QUAL        PIC X(1).            00064833
-           05 PIWA2-1B-1A-WARN-CODE               PIC X(2).            00064933
-           05 PIWA2-1B-1A-RETURN-CODE             PIC X(2).            00065033
-           05 FILLER                              PIC X(108).          00065133
-           05 PIWA2-1B-1A-NUM-OF-ADDR             PIC X(4).            00065233
-           05 PIWA2-1B-1A-ADDR-LIST              OCCURS 21 TIMES.      00065333
-             10  PIWA2-1B-1A-LIST-LOW-HOUSENUM    PIC X(16).           00065433
-             10  PIWA2-1B-1A-LIST-HI-HOUSENUM     PIC X(16).           00065533
-             10  PIWA2-1B-1A-LIST-BORO            PIC X.               00065633
-             10  PIWA2-1B-1A-LIST-5SC             PIC X(5).            00065733
-             10  PIWA2-1B-1A-LIST-LGC             PIC X(2).            00065833
-             10  PIWA2-1B-1A-LIST-BIN             PIC X(7).            00065933
-             10  PIWA2-1B-1A-LIST-SOS             PIC X.               00066033
-             10  PIWA2-1B-1A-ADDR-TYPE            PIC X.               00066133
-             10  PIWA2-1B-1A-TPAD-STATUS          PIC X.               00066233
-             10  PIWA2-1B-1A-ST-NAME              PIC X(32).           00066333
-             10  FILLER                           PIC X(34).           00067028
-                                                                       00070010
-    
+## <span id="appendix14.5"><center>P2COB1AL COPY File</center></span>    
+    *****************************************************************  00010006
+    **                     P2COBIAL                                **  00020034
+    **          LAST MODIFIED DECEMBER 2016                        **  00030034
+    **  YL 9/27/2017 ADDED DCP ZONE MAP FIELD                      **  00040037
+    ** ADD NEW 2 BYTE SPEED LIMIT               YNL 09/17 V17,4    **  00050036
+    ** ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION    YNL 12/16 V17,1    **  00060036
+    **  THIS IS THE COBOL STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM **  00070006
+    **  INDEPENDENT LONG WORK AREA 2 FOR FUNCTIONS: 1A, AND BL.    **  00080006
+    **  THESE TWO FUNCTIONS SHARE A SINGLE LONG WORK AREA 2 LAYOU. **  00090006
+    **  COPY FILE - P2COB1AL.                         11/06/97     **  00100006
+    *****************************************************************  00110006
+    **              LAST MODIFIED OCTOBER  2016                    **  00120030
+    *****************************************************************  00130027
+    **  JANUARY 2011 YNL ADDED THREE WORK AREAS:                   **  00140006
+    **  1. P2COB1EX - FUNCTION 1E EXTENDED.                        **  00150007
+    **  2. P2COB1AX - FUNCTION 1A   EXTENDED.                      **  00160006
+    **  2. P2COB1B  - P2COB1EX COMBINED WITH P2COB1AX              **  00170016
+    *****************************************************************  00180006
+          03  PIWA2                               PIC X(17750).        00190006
+    ******************************************************************   00200006
+    ****     FOR: FUNCTION 1A LONG      ******************************   00210006
+                                                                       00220006
+          03  PIWA2-FUNCTION1AL  REDEFINES PIWA2.                      00230006
+                                                                       00240006
+           05 GEO-WA2-1AL-ACCESS-KEY              PIC X(21).           00250006
+           05 GEO-WA2-1AL-CONT-PARITY             PIC X.               00260006
+           05 PIWA2-1AL-LOW-HOUSENUM              PIC X(11).           00270006
+           05 GEO-WA2-1AL-ALTKEY-1.                                    00280006
+             10 GEO-WA2-1AL-ALTKEY-1-BORO         PIC X.               00290006
+             10 GEO-WA2-1AL-ALTKEY-1-TAXBLOCK     PIC X(5).            00300006
+             10 GEO-WA2-1AL-ALTKEY-1-TAXLOT       PIC X(4).            00310006
+           05 FILLER                              PIC X.               00320006
+           05 GEO-WA2-1AL-SCC                     PIC X.               00330006
+           05 FILLER                              PIC X.               00340006
+           05 GEO-WA2-1AL-GENERAL-LOT-INFO.                            00350006
+             10 GEO-WA2-1AL-RPAD-BLDG-CLASS       PIC X(2).            00360006
+             10 GEO-WA2-1AL-CORNER-CODE           PIC X(2).            00370006
+             10 GEO-WA2-1AL-NUM-OF-STRUCTURES     PIC X(4).            00380006
+             10 GEO-WA2-1AL-NUM-OF-BLOCKFACES     PIC X(2).            00390006
+             10 GEO-WA2-1AL-INTERIOR-FLAG         PIC X.               00400006
+             10 GEO-WA2-1AL-VACANT-FLAG           PIC X.               00410006
+             10 GEO-WA2-1AL-IRREG-FLAG            PIC X.               00420006
+           05 GEO-WA2-1AL-ALT-BORO-FLAG           PIC X.               00430006
+           05 FILLER                              PIC X.               00440006
+           05 PIWA2-1AL-STROLL-KEY                PIC X(19).           00450006
+           05 FILLER-GSS                          PIC X.               00460006
+           05 GEO-WA2-1AL-BLDG-ID-NUM             PIC X(7).            00470006
+           05 GEO-WA2-1AL-CONDO-LOT-FLAG          PIC X.               00480006
+           05 FILLER                              PIC X.               00490006
+           05 GEO-WA2-1AL-RPAD-COND-NUM           PIC X(4).            00500006
+           05 FILLER                              PIC X(7).            00510006
+           05 GEO-WA2-1AL-CONDO-BILLING-BBL       PIC X(10).           00520006
+           05 FILLER                              PIC X.               00530006
+           05 GEO-WA2-1AL-CONDO-BILL-BBL-SCC      PIC X.               00540006
+           05 GEO-WA2-1AL-CONDO-LOW-BBL           PIC X(10).           00550006
+           05 FILLER                              PIC X.               00560006
+           05 GEO-WA2-1AL-CONDO-HIGH-BBL          PIC X(10).           00570006
+           05 FILLER                              PIC X.               00580006
+           05 FILLER                              PIC X(15).           00590006
+           05 GEO-WA2-1AL-CO-OP-NBR               PIC X(4).            00600006
+           05 GEO-WA2-1AL-SANBORN-BVOLPAGE.                            00610006
+              10  GEO-WA2-1AL-SANBORN-BORO        PIC X(1).            00620006
+              10  GEO-WA2-1AL-SANBORN-VOL-PAGE.                        00630006
+                15  GEO-WA2-1AL-SANBORN-VOL-NUM   PIC X(3).            00640006
+                15  GEO-WA2-1AL-SANBORN-PAGE-NUM  PIC X(4).            00650006
+           05 GEO-WA2-1AL-COMMERC-DIST            PIC X(5).            00660006
+           05 PIWA2-1AL-DOF-MAP-BORO              PIC X.               00670006
+           05 PIWA2-1AL-DOF-MAP-SECVOL            PIC X(4).            00680006
+     *******  PIWA2-1AL-DOF-MAP-PAGE  NOT IMPLEMENTED                  00690006
+           05 PIWA2-1AL-DOF-MAP-PAGE              PIC X(4).            00700006
+           05 FILLER                              PIC X(3).            00710019
+           05 PIWA2-1AL-LATITUDE                  PIC X(9).            00720019
+           05 PIWA2-1AL-LONGITUDE                 PIC X(11).           00730019
+           05 PIWA2-1AL-X-COORD                   PIC X(7).            00740019
+           05 PIWA2-1AL-Y-COORD                   PIC X(7).            00750019
+           05 PIWA2-1AL-BID                       PIC X(6).            00760019
+           05 PIWA2-1AL-TPAD-BIN-ST               PIC X.               00770019
+           05 PIWA2-1AL-TPAD-NEW-BIN              PIC X(7).            00780019
+           05 PIWA2-1AL-TPAD-NEW-BIN-ST           PIC X.               00790019
+           05 PIWA2-1AL-TPAD-CONFLICT             PIC X.               00800019
+           05 PIWA2-1AL-DCP-ZONE-MAP              PIC X(3).            00810037
+           05 FILLER                              PIC X(6).            00820037
+           05 FILLER-GSS                          PIC X(8).            00830037
+           05 GEO-WA2-1AL-NUM-OF-BINS             PIC X(4).            00840037
+           05 PIWA2-1AL-TPAD-BINLIST.                                  00850037
+              10 PIWA2-1AL-TPAD-BINS OCCURS 2187 TIMES.                00860037
+                15 PIWA2-1AL-TPAD-BINS-BIN         PIC X(7).           00870037
+                15 PIWA2-1AL-TPAD-BINS-STAT        PIC X.              00880037
+              10 PIWA2-1AL-TPAD-FILL               PIC X(4).           00890037
+           05 GEO-WA2-1AL-BINS REDEFINES PIWA2-1AL-TPAD-BINLIST        00900037
+              PIC X(7)  OCCURS 2500 TIMES.                             00910037
+                                                                       00920037
+     ***************************************************************   00930037
+     ***   FOR: FUNCTION 1/1E EXTENDED  *****************3**********   00940037
+                                                                       00950037
+          03  PIWA2-FUNCTION1EX   REDEFINES PIWA2.                     00960037
+                                                                       00970037
+           05 PIWA2-FN1EX-ACCESS-KEY              PIC X(21).           00980037
+           05 PIWA2-FN1EX-CONT-PARITY             PIC X.               00990037
+           05 PIWA2-FN1EX-LOW-HOUSENUM-SORT       PIC X(11).           01000037
+           05 PIWA2-FN1EX-HI-HOUSENUM-SORT        PIC X(11).           01010037
+           05 PIWA2-FN1EX-PREFERRED-LGC           PIC X(2).            01020037
+           05 PIWA2-FN1EX-NUM-X-ST-LOW-END        PIC X.               01030037
+           05 PIWA2-FN1EX-LOW-B5SC                PIC X(6)             01040037
+                                                   OCCURS 5 TIMES.     01050037
+           05 PIWA2-FN1EX-NUM-X-ST-HI-END         PIC X.               01060037
+           05 PIWA2-FN1EX-HI-B5SC                 PIC X(6)             01070037
+                                                   OCCURS 5 TIMES.     01080037
+           05 PIWA2-FN1EX-LIONKEY.                                     01090037
+               10  PIWA2-FN1EX-LION-BORO          PIC X.               01100037
+               10  PIWA2-FN1EX-LIONFACECODE       PIC X(4).            01110037
+               10  PIWA2-FN1EX-LIONSEQ            PIC X(5).            01120037
+           05 PIWA2-FN1EX-SPECIAL-ADDR-FLAG       PIC X(1).            01130037
+           05 PIWA2-FN1EX-SIDE-OF-STR             PIC X.               01140037
+           05 PIWA2-FN1EX-SEGMENTLENGTH           PIC X(5).            01150037
+           05 PIWA2-FN1EX-XCOORD                  PIC X(7).            01160037
+           05 PIWA2-FN1EX-YCOORD                  PIC X(7).            01170037
+           05 FILLER-GSS                          PIC X(8).            01180037
+           05 PIWA2-FN1EX-MARBLE-RIKER-FLAG       PIC X(1).            01190037
+           05 PIWA2-FN1EX-SLA                     PIC X.               01200037
+           05 PIWA2-FN1EX-COMDIST.                                     01210037
+               10  PIWA2-FN1EX-COMDIST-BORO       PIC X(1).            01220037
+               10  PIWA2-FN1EX-COMDIST-NUMBER     PIC X(2).            01230037
+           05 PIWA2-FN1EX-ZIP                     PIC X(5).            01240037
+                                                                       01250037
+           05 PIWA2-FN1EX-ELECTDIST               PIC X(3).            01260037
+           05 PIWA2-FN1EX-ASSEMDIST               PIC X(2).            01270037
+           05 PIWA2-FN1EX-SPLIT-ED-FLAG           PIC X(1).            01280037
+           05 PIWA2-FN1EX-CONGDIST                PIC X(2).            01290037
+           05 PIWA2-FN1EX-SENATEDIST              PIC X(2).            01300037
+           05 PIWA2-FN1EX-COURTDIST               PIC X(2).            01310037
+           05 PIWA2-FN1EX-COUNCILDIST             PIC X(2).            01320037
+                                                                       01330037
+           05 PIWA2-FN1EX-HCD                     PIC X(2).            01340037
+           05 PIWA2-FN1EX-HEALTHAREA              PIC X(4).            01350037
+           05 PIWA2-FN1EX-SANIDIST.                                    01360037
+               10  PIWA2-FN1EX-SANIDIST-BORO      PIC X(1).            01370037
+               10  PIWA2-FN1EX-SANIDIST-NUMBER    PIC X(2).            01380037
+           05 PIWA2-FN1EX-SANITATION-SUBSEC       PIC X(2).            01390037
+           05 PIWA2-FN1EX-SANI-REG                PIC X(5).            01400037
+           05 PIWA2-FN1EX-SANI-REC                PIC X(3).            01410037
+           05 PIWA2-FN1EX-POLICEDIST.                                  01420037
+                15 PIWA2-FN1EX-POL-PATR-BORO-CMD PIC X(1).             01430037
+                15 PIWA2-FN1EX-POL-PRECINCT       PIC X(3).            01440037
+     ** NOTE:10  PIWA2-FN1EX-FIRESEC ==> FIRE DIVISION **              01450037
+           05 PIWA2-FN1EX-FIRESEC                 PIC X(2).            01460037
+           05 PIWA2-FN1EX-FIREBAT                 PIC X(2).            01470037
+           05 PIWA2-FN1EX-FIRECO.                                      01480037
+               10  PIWA2-FN1EX-FIRECO-TYPE        PIC X(1).            01490037
+               10  PIWA2-FN1EX-FIRECO-NUM         PIC X(3).            01500037
+           05 PIWA2-FN1EX-SPLIT-SCHOOL-FLAG       PIC X.               01510037
+           05 PIWA2-FN1EX-SCHOOLDIST              PIC X(2).            01520037
+           05 PIWA2-FN1EX-DYN-BLOCK               PIC X(3).            01530037
+           05 PIWA2-FN1EX-POLICE-PAT-BORO         PIC X(2).            01540037
+           05 PIWA2-FN1EX-FEATURE-TYPE            PIC X.               01550037
+           05 PIWA2-FN1EX-SEGMENT-TYPE            PIC X.               01560037
+           05 PIWA2-FN1EX-ALX                     PIC X.               01570037
+           05 PIWA2-FN1EX-COINCIDENT-CNT          PIC X.               01580037
+           05 FILLER                              PIC X(3).            01590037
+           05 PIWA2-FN1EX-1990-CENSUSTRACT        PIC X(6).            01600037
+           05 PIWA2-FN1EX-2010-CENS-TRCT          PIC X(6).            01610037
+           05 PIWA2-FN1EX-2010-CENS-BLK           PIC X(4).            01620037
+           05 PIWA2-FN1EX-2010-CENS-BLK-SFX       PIC X.               01630037
+           05 PIWA2-FN1EX-2000-CENS-TRCT          PIC X(6).            01640037
+           05 PIWA2-FN1EX-2000-CENS-BLK           PIC X(4).            01650037
+           05 PIWA2-FN1EX-2000-CENS-BLK-SFX       PIC X.               01660037
+           05 PIWA2-FN1EX-NTA                     PIC X(4).            01670037
+           05 PIWA2-FN1EX-SANIT-SNOW-PRRTY        PIC X.               01680037
+           05 PIWA2-FN1EX-SANIT-ORGANICS          PIC X(5).            01690037
+           05 PIWA2-FN1EX-SANIT-BULK-PICK-UP      PIC X(5).            01700037
+     ****  05 PIWA2-FN1EX-SANIT-RESERVED V16.4    PIC X(5).            01710037
+           05 PIWA2-FN1EX-HURRICANE-ZONE          PIC XX.              01720037
+           05 FILLER                              PIC X(11).           01730037
+           05 PIWA2-FN1EX-TRUE-HNS                PIC X(11).           01740037
+           05 PIWA2-FN1EX-TRUE-B7SC               PIC X(8).            01750037
+           05 PIWA2-FN1EX-SEG-ID                  PIC X(7).            01760037
+           05 PIWA2-FN1EX-CURVE-FLAG              PIC X(1).            01770037
+           05 PIWA2-FN1EX-LGCS                    PIC X(8).            01780037
+           05 PIWA2-FN1EX-BOE-PTR                 PIC X(1).            01790037
+           05 PIWA2-FN1EX-AZIMUTH                 PIC X(3).            01800037
+           05 PIWA2-FN1EX-ORIENT                  PIC X(1).            01810037
+           05 PIWA2-FN1EX-X-LOW                   PIC X(7).            01820037
+           05 PIWA2-FN1EX-Y-LOW                   PIC X(7).            01830037
+           05 PIWA2-FN1EX-Z-LOW                   PIC X(7).            01840037
+           05 PIWA2-FN1EX-X-HI                    PIC X(7).            01850037
+           05 PIWA2-FN1EX-Y-HI                    PIC X(7).            01860037
+           05 PIWA2-FN1EX-Z-HI                    PIC X(7).            01870037
+           05 PIWA2-FN1EX-X-CC                    PIC X(7).            01880037
+           05 PIWA2-FN1EX-Y-CC                    PIC X(7).            01890037
+           05 PIWA2-FN1EX-Z-CC                    PIC X(7).            01900037
+           05 PIWA2-FN1EX-RADIUS                  PIC X(7).            01910037
+           05 PIWA2-FN1EX-SECANT                  PIC X(1).            01920037
+           05 PIWA2-FN1EX-ANGLE-FROM              PIC X(5).            01930037
+           05 PIWA2-FN1EX-ANGLE-TO                PIC X(5).            01940037
+           05 PIWA2-FN1EX-NODE-FROM               PIC X(7).            01950037
+           05 PIWA2-FN1EX-NODE-TO                 PIC X(7).            01960037
+           05 PIWA2-FN1EX-VANITY-LION             PIC X(10).           01970037
+           05 PIWA2-FN1EX-SOS                     PIC X(1).            01980037
+           05 PIWA2-FN1EX-SPLIT-LOHSN             PIC X(11).           01990037
+           05 PIWA2-FN1EX-TD                      PIC X(1).            02000037
+           05 PIWA2-FN1EX-TR                      PIC X(10).           02010037
+           05 PIWA2-FN1EX-CURVE-FRACTION          PIC X(3).            02020037
+           05 PIWA2-FN1EX-ROADWAY-TYPE            PIC X(2).            02030037
+           05 PIWA2-FN1EX-PHYICAL-ID              PIC X(7).            02040037
+           05 PIWA2-FN1EX-GENERIC-ID              PIC X(7).            02050037
+           05 PIWA2-FN1EX-NYPD-ID-FILL            PIC X(7).            02060037
+           05 PIWA2-FN1EX-FDNY-ID-FILL            PIC X(7).            02070037
+           05 PIWA2-FN1EX-BIKE-LANE-2             PIC X(2).            02080037
+           05 PIWA2-FN1EX-BIKE-TRAFFIC-DIR        PIC X(2).            02090037
+           05 FILLER                              PIC X(3).            02100037
+     ****  05 FILLER              ******V17.1 **  PIC X(5).            02110033
+     ****  05 FILLER              ******V16.4 **  PIC X(7).            02120033
+     ****  05 PIWA2-FN1EX-BLOCKFACE-ID *V16.1 **  PIC X(7) ***         02130033
+           05 PIWA2-FN1EX-STREET-STATUS           PIC X(1).            02140033
+           05 PIWA2-FN1EX-STREET-WIDTH            PIC X(3).            02150033
+           05 PIWA2-FN1EX-STREET-WIDTH-IRR        PIC X(1).            02160033
+           05 PIWA2-FN1EX-BIKE-LANE               PIC X(1).            02170033
+           05 PIWA2-FN1EX-FED-CLASS-CODE          PIC X(2).            02180033
+           05 PIWA2-FN1EX-ROW-TYPE                PIC X(1).            02190033
+           05 PIWA2-FN1EX-LGC-LIST-2              PIC X(10).           02200033
+           05 PIWA2-FN1EX-LEGACY-SEG-ID           PIC X(7).            02210033
+           05 PIWA2-FN1EX-LGC-LIST-FROM-1         PIC X(10).           02220033
+           05 PIWA2-FN1EX-LGC-LIST-TO-1           PIC X(10).           02230033
+           05 PIWA2-FN1EX-LGC-LIST-FROM-2         PIC X(10).           02240033
+           05 PIWA2-FN1EX-LGC-LIST-TO-2           PIC X(10).           02250033
+           05 PIWA2-FN1EX-NOCROSS-FLG             PIC X(1).            02260033
+           05 PIWA2-FN1EX-IND-SEG-LEN             PIC X(5).            02270033
+           05 PIWA2-FN1EX-NTA-NAME                PIC X(75).           02280033
+           05 PIWA2-FN1EX-USPS-CITY-NAME          PIC X(25).           02290033
+           05 PIWA2-FN1EX-LATITUDE                PIC X(9).            02300033
+           05 PIWA2-FN1EX-LONGITUDE               PIC X(11).           02310033
+           05 PIWA2-FN1EX-SEG-FROM-NODE           PIC X(7).            02320033
+           05 PIWA2-FN1EX-SEG-TO-NODE             PIC X(7).            02330033
+           05 PIWA2-FN1EX-SEG-FROM-XYZ            PIC X(21).           02340033
+           05 PIWA2-FN1EX-SEG-TO-XYZ              PIC X(21).           02350033
+           05 PIWA2-FN1EX-BLOCKFACE-ID            PIC X(10).           02360033
+           05 PIWA2-FN1EX-NBR-TRAVEL-LANES        PIC X(2).            02370033
+           05 PIWA2-FN1EX-NBR-PARK-LANES          PIC X(2).            02380033
+           05 PIWA2-FN1EX-NBR-TOTAL-LANES         PIC X(2).            02390033
+           05 PIWA2-FN1EX-STREET-WIDTH-MAX        PIC X(3).            02400033
+           05 PIWA2-FN1EX-SPEED-LIMIT             PIC X(2).            02410036
+           05 PIWA2-FN1EX-FILL500                 PIC X(250).          02420036
+     ****  05 PIWA2-FN1EX-FILL500   ** V17.4 **   PIC X(252).          02430036
+     ****  05 PIWA2-FN1EX-FILL500   ** V16.4 **   PIC X(255).          02440036
+     ****  05 PIWA2-FN1EX-FILL500   ** V16.1 **   PIC X(271) ***       02450036
+     ****  05 PIWA2-FN1EX-FILL500   ** V15.3 **   PIC X(327) ***       02460036
+     ****************************************************************/ 02470036
+     *                                                            ***/ 02480036
+     *THE FOLLOWING FIELDS ARE AN ADDITION TO GRID1               ***/ 02490036
+     ****************************************************************/ 02500036
+           05 PIWA2-FN1EX-REASON-CODE             PIC X(1).            02510036
+           05 PIWA2-FN1EX-REASON-CODE-QUAL        PIC X(1).            02520036
+           05 PIWA2-FN1EX-WARN-CODE               PIC X(2).            02530036
+           05 PIWA2-FN1EX-RETURN-CODE             PIC X(2).            02540036
+           05 PIWA2-FN1EX-NUM-X-STS-LO-END        PIC X(1).            02550036
+           05 PIWA2-FN1EX-LO-B7SC OCCURS 5 TIMES  PIC X(8).            02560036
+           05 PIWA2-FN1EX-NUM-X-STS-HI-END        PIC X(1).            02570036
+           05 PIWA2-FN1EX-HI-B7SC OCCURS 5 TIMES  PIC X(8).            02580036
+           05 PIWA2-FN1EX-LO-ST-NAME OCCURS 5 TIMES PIC X(32).         02590036
+           05 PIWA2-FN1EX-HI-ST-NAME OCCURS 5 TIMES PIC X(32).         02600036
+           05 PIWA2-FN1EX-BOE-B7SC                PIC X(8).            02610036
+           05 PIWA2-FN1EX-BOE-ST-NAME             PIC X(32).           02620036
+           05 PIWA2-FN1EX-FILL600                 PIC X(52).           02630036
+                                                                       02640036
+     ***************************************************************   02650036
+     ***   FOR: FUNCTION 1A   EXTENDED  ****************************   02660036
+                                                                       02670036
+          03  PIWA2-FUNCTION1AX  REDEFINES PIWA2.                      02680036
+           05 PIWA2-1AX-ACCESS-KEY                PIC X(21).           02690036
+           05 PIWA2-1AX-CONT-PARITY               PIC X.               02700036
+           05 PIWA2-1AX-LOW-HOUSENUM              PIC X(11).           02710036
+           05 PIWA2-1AX-ALTKEY-1.                                      02720036
+             10 PIWA2-1AX-ALTKEY-1-BORO           PIC X.               02730036
+             10 PIWA2-1AX-ALTKEY-1-TAXBLOCK       PIC X(5).            02740036
+             10 PIWA2-1AX-ALTKEY-1-TAXLOT         PIC X(4).            02750036
+           05 FILLER                              PIC X.               02760036
+           05 PIWA2-1AX-SCC                       PIC X(1).            02770036
+           05 FILLER                              PIC X.               02780036
+           05 PIWA2-1AX-GENERAL-LOT-INFO.                              02790036
+             10 PIWA2-1AX-RPAD-BLDG-CLASS         PIC X(2).            02800036
+             10 PIWA2-1AX-CORNER-CODE             PIC X(2).            02810036
+             10 PIWA2-1AX-TOT-NBR-BLDG            PIC X(4).            02820036
+             10 PIWA2-1AX-NUM-OF-BLOCKFACES       PIC X(2).            02830036
+             10 PIWA2-1AX-INTERIOR-FLAG           PIC X.               02840036
+             10 PIWA2-1AX-VACANT-FLAG             PIC X.               02850036
+             10 PIWA2-1AX-IRREG-FLAG              PIC X.               02860036
+           05 PIWA2-1AX-ALT-BORO-FLAG             PIC X.               02870036
+           05 PIWA2-1AX-OVERFLOW-FLAG             PIC X(1).            02880036
+           05 PIWA2-1AX-STROLL-KEY                PIC X(19).           02890036
+           05 FILLER-GSS                          PIC X.               02900036
+           05 PIWA2-1AX-BLDG-ID-NUM               PIC X(7).            02910036
+           05 PIWA2-1AX-CONDO-LOT-FLAG            PIC X.               02920036
+           05 FILLER                              PIC X.               02930036
+           05 PIWA2-1AX-RPAD-COND-NUM             PIC X(4).            02940036
+           05 FILLER                              PIC X(7).            02950036
+           05 PIWA2-1AX-CONDO-BILLING-BBL         PIC X(10).           02960036
+           05 FILLER                              PIC X.               02970036
+           05 PIWA2-1AX-CONDO-BILL-BBL-SCC        PIC X(1).            02980036
+           05 PIWA2-1AX-CONDO-LOW-BBL             PIC X(10).           02990036
+           05 FILLER                              PIC X.               03000036
+           05 PIWA2-1AX-CONDO-HIGH-BBL            PIC X(10).           03010036
+           05 FILLER                              PIC X.               03020036
+           05 FILLER                              PIC X(15).           03030036
+           05 PIWA2-1AX-CO-OP-NBR                 PIC X(4).            03040036
+           05 PIWA2-1AX-SANBORN-BVOLPAGE.                              03050036
+              10  PIWA2-1AX-SANBORN-BORO          PIC X(1).            03060036
+              10  PIWA2-1AX-SANBORN-VOL-PAGE.                          03070036
+                15  PIWA2-1AX-SANBORN-VOL-NUM     PIC X(3).            03080036
+                15  PIWA2-1AX-SANBORN-PAGE-NUM    PIC X(4).            03090036
+           05 PIWA2-1AX-COMMERC-DIST              PIC X(5).            03100036
+           05 PIWA2-1AX-DOF-MAP-BOROUGH           PIC X.               03110036
+           05 PIWA2-1AX-TAX-MAP-NBR               PIC X(4).            03120036
+           05 FILLER-FOR-TAX-MAP-PAGE             PIC X(4).            03130036
+           05 FILLER                              PIC X(3).            03140036
+           05 PIWA2-1AX-LATITUDE                  PIC X(9).            03150036
+           05 PIWA2-1AX-LONGITUDE                 PIC X(11).           03160036
+           05 PIWA2-1AX-X-COORD                   PIC X(7).            03170036
+           05 PIWA2-1AX-Y-COORD                   PIC X(7).            03180036
+           05 PIWA2-1AX-BID                       PIC X(6).            03190036
+           05 PIWA2-1AX-TPAD-BIN-ST               PIC X.               03200036
+           05 PIWA2-1AX-TPAD-NEW-BIN              PIC X(7).            03210036
+           05 PIWA2-1AX-TPAD-NEW-BIN-ST           PIC X.               03220036
+           05 PIWA2-1AX-TPAD-CONFLICT             PIC X.               03230036
+           05 PIWA2-1AX-DCP-ZONE-MAP              PIC X(3).            03240038
+           05 FILLER                              PIC X(6).            03250038
+           05 FILLER-GSS                          PIC X(8).            03260036
+           05 PIWA2-1AX-REASON-CODE               PIC X(1).            03270036
+           05 PIWA2-1AX-REASON-CODE-QUAL          PIC X(1).            03280036
+           05 PIWA2-1AX-WARN-CODE                 PIC X(2).            03290036
+           05 PIWA2-1AX-RETURN-CODE               PIC X(2).            03300036
+           05 PIWA2-1AX-FILLER                    PIC X(108).          03310036
+           05 PIWA2-1AX-NUM-OF-ADDR               PIC X(4).            03320036
+           05 PIWA2-1AX-ADDR-LIST                OCCURS 21 TIMES.      03330036
+             10  PIWA2-1AX-LIST-LOW-HOUSENUM      PIC X(16).           03340036
+             10  PIWA2-1AX-LIST-HI-HOUSENUM       PIC X(16).           03350036
+             10  PIWA2-1AX-LIST-BORO              PIC X.               03360036
+             10  PIWA2-1AX-LIST-5SC               PIC X(5).            03370036
+             10  PIWA2-1AX-LIST-LGC               PIC X(2).            03380036
+             10  PIWA2-1AX-LIST-BIN               PIC X(7).            03390036
+             10  PIWA2-1AX-LIST-SOS               PIC X.               03400036
+             10  PIWA2-1AX-ADDR-TYPE              PIC X.               03410036
+             10  PIWA2-1AX-TPAD-STATUS            PIC X.               03420036
+             10  PIWA2-1AX-ST-NAME                PIC X(32).           03430036
+             10  FILLER                           PIC X(34).           03440036
+                                                                       03450036
+     ***************************************************************   03460036
+     ***   FOR: FUNCTION 1B             ****************************   03470036
+                                                                       03480036
+          03  PIWA2-FUNCTION1B   REDEFINES PIWA2.                      03490036
+                                                                       03500036
+           05 PIWA2-1B-1-ACCESS-KEY               PIC X(21).           03510036
+           05 PIWA2-1B-1-CONT-PARITY              PIC X.               03520036
+           05 PIWA2-1B-1-LOW-HOUSENUM-SORT        PIC X(11).           03530036
+           05 PIWA2-1B-1-HI-HOUSENUM-SORT         PIC X(11).           03540036
+           05 PIWA2-1B-1-PREFERRED-LGC            PIC X(2).            03550036
+           05 PIWA2-1B-1-NUM-X-ST-LOW-END         PIC X.               03560036
+           05 PIWA2-1B-1-LOW-B5SC                 PIC X(6)             03570036
+                                                   OCCURS 5 TIMES.     03580036
+           05 PIWA2-1B-1-NUM-X-ST-HI-END          PIC X.               03590036
+           05 PIWA2-1B-1-HI-B5SC                  PIC X(6)             03600036
+                                                   OCCURS 5 TIMES.     03610036
+           05 PIWA2-1B-1-LIONKEY.                                      03620036
+               10  PIWA2-1B-1-LION-BORO           PIC X.               03630036
+               10  PIWA2-1B-1-LIONFACECODE        PIC X(4).            03640036
+               10  PIWA2-1B-1-LIONSEQ             PIC X(5).            03650036
+           05 PIWA2-1B-1-SPECIAL-ADDR-FLAG        PIC X(1).            03660036
+           05 PIWA2-1B-1-SIDE-OF-STR              PIC X.               03670036
+           05 PIWA2-1B-1-SEGMENTLENGTH            PIC X(5).            03680036
+           05 PIWA2-1B-1-XCOORD                   PIC X(7).            03690036
+           05 PIWA2-1B-1-YCOORD                   PIC X(7).            03700036
+           05 FILLER-GSS                          PIC X(8).            03710036
+           05 PIWA2-1B-1-MARBLE-RIKER-FLAG        PIC X(1).            03720036
+           05 PIWA2-1B-1-SLA                      PIC X.               03730036
+           05 PIWA2-1B-1-COMDIST.                                      03740036
+               10  PIWA2-1B-1-COMDIST-BORO        PIC X(1).            03750036
+               10  PIWA2-1B-1-COMDIST-NUMBER      PIC X(2).            03760036
+           05 PIWA2-1B-1-ZIP                      PIC X(5).            03770036
+                                                                       03780036
+           05 PIWA2-1B-1-ELECTDIST                PIC X(3).            03790036
+           05 PIWA2-1B-1-ASSEMDIST                PIC X(2).            03800036
+           05 PIWA2-1B-1-SPLIT-ED-FLAG            PIC X(1).            03810036
+           05 PIWA2-1B-1-CONGDIST                 PIC X(2).            03820036
+           05 PIWA2-1B-1-SENATEDIST               PIC X(2).            03830036
+           05 PIWA2-1B-1-COURTDIST                PIC X(2).            03840036
+           05 PIWA2-1B-1-COUNCILDIST              PIC X(2).            03850036
+                                                                       03860036
+           05 PIWA2-1B-1-HCD                      PIC X(2).            03870036
+           05 PIWA2-1B-1-HEALTHAREA               PIC X(4).            03880036
+           05 PIWA2-1B-1-SANIDIST.                                     03890036
+               10  PIWA2-1B-1-SANIDIST-BORO       PIC X(1).            03900036
+               10  PIWA2-1B-1-SANIDIST-NUMBER     PIC X(2).            03910036
+           05 PIWA2-1B-1-SANITATION-SUBSEC        PIC X(2).            03920036
+           05 PIWA2-1B-1-SANI-REG                 PIC X(5).            03930036
+           05 PIWA2-1B-1-SANI-REC                 PIC X(3).            03940036
+           05 PIWA2-1B-1-POLICEDIST.                                   03950036
+                15 PIWA2-1B-1-POL-PATR-BORO-CMD PIC X(1).              03960036
+                15 PIWA2-1B-1-POL-PRECINCT        PIC X(3).            03970036
+     ** NOTE:10  PIWA2-1B-1-FIRESEC ==> FIRE DIVISION **               03980036
+           05 PIWA2-1B-1-FIRESEC                  PIC X(2).            03990036
+           05 PIWA2-1B-1-FIREBAT                  PIC X(2).            04000036
+           05 PIWA2-1B-1-FIRECO.                                       04010036
+               10  PIWA2-1B-1-FIRECO-TYPE         PIC X(1).            04020036
+               10  PIWA2-1B-1-FIRECO-NUM          PIC X(3).            04030036
+           05 PIWA2-1B-1-SPLIT-SCHOOL-FLAG        PIC X.               04040036
+           05 PIWA2-1B-1-SCHOOLDIST               PIC X(2).            04050036
+           05 PIWA2-1B-1-DYN-BLOCK                PIC X(3).            04060036
+           05 PIWA2-1B-1-POLICE-PAT-BORO          PIC X(2).            04070036
+           05 PIWA2-1B-1-FEATURE-TYPE             PIC X.               04080036
+           05 PIWA2-1B-1-SEGMENT-TYPE             PIC X.               04090036
+           05 PIWA2-1B-1-ALX                      PIC X.               04100036
+           05 PIWA2-1B-1-COINCIDENT-CNT           PIC X.               04110036
+           05 FILLER                              PIC X(3).            04120036
+           05 PIWA2-1B-1-1990-CENSUSTRACT         PIC X(6).            04130036
+           05 PIWA2-1B-1-2010-CENS-TRCT           PIC X(6).            04140036
+           05 PIWA2-1B-1-2010-CENS-BLK            PIC X(4).            04150036
+           05 PIWA2-1B-1-2010-CENS-BLK-SFX        PIC X.               04160036
+           05 PIWA2-1B-1-2000-CENS-TRCT           PIC X(6).            04170036
+           05 PIWA2-1B-1-2000-CENS-BLK            PIC X(4).            04180036
+           05 PIWA2-1B-1-2000-CENS-BLK-SFX        PIC X.               04190036
+           05 PIWA2-1B-1-NTA                      PIC X(4).            04200036
+           05 PIWA2-1B-1-SANIT-SNOW-PRRTY         PIC X.               04210036
+           05 PIWA2-1B-1-SANIT-ORGANICS           PIC X(5).            04220036
+           05 PIWA2-1B-1-SANIT-BULK-PICK-UP       PIC X(5).            04230036
+     ****  05 PIWA2-1B-1-SANIT-RESERVED V16.4     PIC X(5).            04240036
+           05 PIWA2-1B-1-HURRICANE-ZONE           PIC XX.              04250036
+           05 FILLER                              PIC X(11).           04260036
+           05 PIWA2-1B-1-TRUE-HNS                 PIC X(11).           04270036
+           05 PIWA2-1B-1-TRUE-B7SC                PIC X(8).            04280036
+           05 PIWA2-1B-1-SEG-ID                   PIC X(7).            04290036
+           05 PIWA2-1B-1-CURVE-FLAG               PIC X(1).            04300036
+           05 PIWA2-1B-1-LGCS                     PIC X(8).            04310036
+           05 PIWA2-1B-1-BOE-PTR                  PIC X(1).            04320036
+           05 PIWA2-1B-1-AZIMUTH                  PIC X(3).            04330036
+           05 PIWA2-1B-1-ORIENT                   PIC X(1).            04340036
+           05 PIWA2-1B-1-X-LOW                    PIC X(7).            04350036
+           05 PIWA2-1B-1-Y-LOW                    PIC X(7).            04360036
+           05 PIWA2-1B-1-Z-LOW                    PIC X(7).            04370036
+           05 PIWA2-1B-1-X-HI                     PIC X(7).            04380036
+           05 PIWA2-1B-1-Y-HI                     PIC X(7).            04390036
+           05 PIWA2-1B-1-Z-HI                     PIC X(7).            04400036
+           05 PIWA2-1B-1-X-CC                     PIC X(7).            04410036
+           05 PIWA2-1B-1-Y-CC                     PIC X(7).            04420036
+           05 PIWA2-1B-1-Z-CC                     PIC X(7).            04430036
+           05 PIWA2-1B-1-RADIUS                   PIC X(7).            04440036
+           05 PIWA2-1B-1-SECANT                   PIC X(1).            04450036
+           05 PIWA2-1B-1-ANGLE-FROM               PIC X(5).            04460036
+           05 PIWA2-1B-1-ANGLE-TO                 PIC X(5).            04470036
+           05 PIWA2-1B-1-NODE-FROM                PIC X(7).            04480036
+           05 PIWA2-1B-1-NODE-TO                  PIC X(7).            04490036
+           05 PIWA2-1B-1-VANITY-LION              PIC X(10).           04500036
+           05 PIWA2-1B-1-SOS                      PIC X(1).            04510036
+           05 PIWA2-1B-1-SPLIT-LOHSN              PIC X(11).           04520036
+           05 PIWA2-1B-1-TD                       PIC X(1).            04530036
+           05 PIWA2-1B-1-TR                       PIC X(10).           04540036
+           05 PIWA2-1B-1-CURVE-FRACTION           PIC X(3).            04550036
+           05 PIWA2-1B-1-ROADWAY-TYPE             PIC X(2).            04560036
+           05 PIWA2-1B-1-PHYICAL-ID               PIC X(7).            04570036
+           05 PIWA2-1B-1-GENERIC-ID               PIC X(7).            04580036
+           05 PIWA2-1B-1-NYPD-ID-FILL             PIC X(7).            04590036
+           05 PIWA2-1B-1-FDNY-ID-FILL             PIC X(7).            04600036
+           05 PIWA2-1B-1-BIKE-LANE-2              PIC X(2).            04610036
+           05 PIWA2-1B-1-BIKE-TRAFFIC-DIR         PIC X(2).            04620036
+           05 FILLER                              PIC X(3).            04630036
+     ****  05 FILLER                  ** V17.1 ** PIC X(5) ***         04640036
+     ****  05 FILLER                  ** V16.4 ** PIC X(7) ***         04650036
+     ****  05 PIWA2-FN-1-BLOCKFACE-ID ** V16.1 ** PIC X(7) ***         04660036
+           05 PIWA2-1B-1-STREET-STATUS            PIC X(1).            04670036
+           05 PIWA2-1B-1-STREET-WIDTH             PIC X(3).            04680036
+           05 PIWA2-1B-1-STREET-WIDTH-IRR         PIC X(1).            04690036
+           05 PIWA2-1B-1-BIKE-LANE                PIC X(1).            04700036
+           05 PIWA2-1B-1-FED-CLASS-CODE           PIC X(2).            04710036
+           05 PIWA2-1B-1-ROW-TYPE                 PIC X(1).            04720036
+           05 PIWA2-1B-1-LGC-LIST-2               PIC X(10).           04730036
+           05 PIWA2-1B-1-LEGACY-SEG-ID            PIC X(7).            04740036
+           05 PIWA2-1B-1-LGC-LIST-FROM-1          PIC X(10).           04750036
+           05 PIWA2-1B-1-LGC-LIST-TO-1            PIC X(10).           04760036
+           05 PIWA2-1B-1-LGC-LIST-FROM-2          PIC X(10).           04770036
+           05 PIWA2-1B-1-LGC-LIST-TO-2            PIC X(10).           04780036
+           05 PIWA2-1B-1-NOCROSS-FLG              PIC X(1).            04790036
+           05 PIWA2-1B-1-IND-SEG-LEN              PIC X(5).            04800036
+           05 PIWA2-1B-1-NTA-NAME                 PIC X(75).           04810036
+           05 PIWA2-1B-1-USPS-CITY-NAME           PIC X(25).           04820036
+           05 PIWA2-1B-1-LATITUDE                 PIC X(9).            04830036
+           05 PIWA2-1B-1-LONGITUDE                PIC X(11).           04840036
+           05 PIWA2-1B-1-SEG-FROM-NODE            PIC X(7).            04850036
+           05 PIWA2-1B-1-SEG-TO-NODE              PIC X(7).            04860036
+           05 PIWA2-1B-1-SEG-FROM-XYZ             PIC X(21).           04870036
+           05 PIWA2-1B-1-SEG-TO-XYZ               PIC X(21).           04880036
+           05 PIWA2-1B-1-BLOCKFACE-ID             PIC X(10).           04890036
+           05 PIWA2-1B-1-NBR-TRAVEL-LANES         PIC X(2).            04900036
+           05 PIWA2-1B-1-NBR-PARK-LANES           PIC X(2).            04910036
+           05 PIWA2-1B-1-NBR-TOTAL-LANES          PIC X(2).            04920036
+           05 PIWA2-1B-1-STREET-WIDTH-MAX         PIC X(3).            04930036
+           05 PIWA2-1B-1-SPEED-LIMIT              PIC X(2).            04940036
+           05 PIWA2-1B-1-FILL500                  PIC X(250).          04950036
+     ****  05 PIWA2-1B-1-FILL500   ** V17.4 **    PIC X(252).          04960036
+     ****  05 PIWA2-1B-1-FILL500   ** V16.4 **    PIC X(255).          04970036
+     ****  05 PIWA2-1B-1-FILL500   ** V16.1 **    PIC X(271) **        04980036
+     ****  05 PIWA2-1B-1-FILL500   ** V15,3 **    PIC X(327) **        04990036
+     ****************************************************************/ 05000036
+     *                                                            ***/ 05010036
+     *THE FOLLOWING FIELDS ARE AN ADDITION TO 1/1E                ***/ 05020036
+     ****************************************************************/ 05030036
+           05 PIWA2-1B-1-REASON-CODE              PIC X(1).            05040036
+           05 PIWA2-1B-1-REASON-CODE-QUAL         PIC X(1).            05050036
+           05 PIWA2-1B-1-WARN-CODE                PIC X(2).            05060036
+           05 PIWA2-1B-1-RETURN-CODE              PIC X(2).            05070036
+           05 PIWA2-1B-1-NUM-X-STS-LO-END         PIC X(1).            05080036
+           05 PIWA2-1B-1-LO-B7SC OCCURS 5 TIMES   PIC X(8).            05090036
+           05 PIWA2-1B-1-NUM-X-STS-HI-END         PIC X(1).            05100036
+           05 PIWA2-1B-1-HI-B7SC OCCURS 5 TIMES   PIC X(8).            05110036
+           05 PIWA2-1B-1-LO-ST-NAME OCCURS 5 TIMES PIC X(32).          05120036
+           05 PIWA2-1B-1-HI-ST-NAME OCCURS 5 TIMES PIC X(32).          05130036
+           05 PIWA2-1B-1-BOE-B7SC                 PIC X(8).            05140036
+           05 PIWA2-1B-1-BOE-ST-NAME              PIC X(32).           05150036
+           05 PIWA2-1B-1-FILL600                  PIC X(52).           05160036
+                                                                       05170036
+           05 PIWA2-1B-1A-ACCESS-KEY              PIC X(21).           05180036
+           05 PIWA2-1B-1A-CONT-PARITY             PIC X.               05190036
+           05 PIWA2-1B-1A-LOW-HOUSENUM            PIC X(11).           05200036
+           05 PIWA2-1B-1A-ALTKEY-1.                                    05210036
+             10 PIWA2-1B-1A-ALTKEY-1-BORO         PIC X.               05220036
+             10 PIWA2-1B-1A-ALTKEY-1-TAXBLOCK     PIC X(5).            05230036
+             10 PIWA2-1B-1A-ALTKEY-1-TAXLOT       PIC X(4).            05240036
+           05 FILLER                              PIC X.               05250036
+           05 PIWA2-1B-1A-SCC                     PIC X(1).            05260036
+           05 FILLER                              PIC X.               05270036
+           05 PIWA2-1B-1A-GENERAL-LOT-INFO.                            05280036
+             10 PIWA2-1B-1A-RPAD-BLDG-CLASS       PIC X(2).            05290036
+             10 PIWA2-1B-1A-CORNER-CODE           PIC X(2).            05300036
+             10 PIWA2-1B-1A-TOT-NBR-BLDG          PIC X(4).            05310036
+             10 PIWA2-1B-1A-NUM-OF-BLOCKFACES     PIC X(2).            05320036
+             10 PIWA2-1B-1A-INTERIOR-FLAG         PIC X.               05330036
+             10 PIWA2-1B-1A-VACANT-FLAG           PIC X.               05340036
+             10 PIWA2-1B-1A-IRREG-FLAG            PIC X.               05350036
+           05 PIWA2-1B-1A-ALT-BORO-FLAG           PIC X.               05360036
+           05 PIWA2-1B-1A-OVERFLOW-FLAG           PIC X(1).            05370036
+           05 PIWA2-1B-1A-STROLL-KEY              PIC X(19).           05380036
+           05 FILLER-GSS                          PIC X.               05390036
+           05 PIWA2-1B-1A-BLDG-ID-NUM             PIC X(7).            05400036
+           05 PIWA2-1B-1A-CONDO-LOT-FLAG          PIC X.               05410036
+           05 FILLER                              PIC X.               05420036
+           05 PIWA2-1B-1A-RPAD-COND-NUM           PIC X(4).            05430036
+           05 FILLER                              PIC X(7).            05440036
+           05 PIWA2-1B-1A-CONDO-BILLING-BBL       PIC X(10).           05450036
+           05 FILLER                              PIC X.               05460036
+           05 PIWA2-1B-1A-CONDO-BILL-BBL-SCC      PIC X(1).            05470036
+           05 PIWA2-1B-1A-CONDO-LOW-BBL           PIC X(10).           05480036
+           05 FILLER                              PIC X.               05490036
+           05 PIWA2-1B-1A-CONDO-HIGH-BBL          PIC X(10).           05500036
+           05 FILLER                              PIC X.               05510036
+           05 FILLER                              PIC X(15).           05520036
+           05 PIWA2-1B-1A-CO-OP-NBR               PIC X(4).            05530036
+           05 PIWA2-1B-1A-SANBORN-BVOLPAGE.                            05540036
+              10  PIWA2-1B-1A-SANBORN-BORO        PIC X(1).            05550036
+              10  PIWA2-1B-1A-SANBORN-VOL-PAGE.                        05560036
+                15  PIWA2-1B-1A-SANBORN-VOL-NUM   PIC X(3).            05570036
+                15  PIWA2-1B-1A-SANBORN-PAGE-NUM  PIC X(4).            05580036
+           05 PIWA2-1B-1A-COMMERC-DIST            PIC X(5).            05590036
+           05 PIWA2-1B-1A-DOF-MAP-BOROUGH         PIC X.               05600036
+           05 PIWA2-1B-1A-TAX-MAP-NBR             PIC X(4).            05610036
+           05 FILLER-FOR-TAX-MAP-PAGE             PIC X(4).            05620036
+           05 FILLER                              PIC X(3).            05630036
+           05 PIWA2-1B-1A-LATITUDE                PIC X(9).            05640036
+           05 PIWA2-1B-1A-LONGITUDE               PIC X(11).           05650036
+           05 PIWA2-1B-1A-X-COORD                 PIC X(7).            05660036
+           05 PIWA2-1B-1A-Y-COORD                 PIC X(7).            05670036
+           05 PIWA2-1B-1A-BID                     PIC X(6).            05680036
+           05 PIWA2-1B-1A-TPAD-BIN-ST             PIC X.               05690036
+           05 PIWA2-1B-1A-TPAD-NEW-BIN            PIC X(7).            05700036
+           05 PIWA2-1B-1A-TPAD-NEW-BIN-ST         PIC X.               05710036
+           05 PIWA2-1B-1A-TPAD-CONFLICT           PIC X.               05720036
+           05 PIWA2-1B-1A-DCP-ZONE-MAP            PIC X(3).            05721038
+           05 FILLER                              PIC X(6).            05722038
+           05 FILLER-GSS                          PIC X(8).            05740036
+           05 PIWA2-1B-1A-REASON-CODE             PIC X(1).            05750036
+           05 PIWA2-1B-1A-REASON-CODE-QUAL        PIC X(1).            05760036
+           05 PIWA2-1B-1A-WARN-CODE               PIC X(2).            05770036
+           05 PIWA2-1B-1A-RETURN-CODE             PIC X(2).            05780036
+           05 FILLER                              PIC X(108).          05790036
+           05 PIWA2-1B-1A-NUM-OF-ADDR             PIC X(4).            05800036
+           05 PIWA2-1B-1A-ADDR-LIST              OCCURS 21 TIMES.      05810036
+             10  PIWA2-1B-1A-LIST-LOW-HOUSENUM    PIC X(16).           05820036
+             10  PIWA2-1B-1A-LIST-HI-HOUSENUM     PIC X(16).           05830036
+             10  PIWA2-1B-1A-LIST-BORO            PIC X.               05840036
+             10  PIWA2-1B-1A-LIST-5SC             PIC X(5).            05850036
+             10  PIWA2-1B-1A-LIST-LGC             PIC X(2).            05860036
+             10  PIWA2-1B-1A-LIST-BIN             PIC X(7).            05870036
+             10  PIWA2-1B-1A-LIST-SOS             PIC X.               05880036
+             10  PIWA2-1B-1A-ADDR-TYPE            PIC X.               05890036
+             10  PIWA2-1B-1A-TPAD-STATUS          PIC X.               05900036
+             10  PIWA2-1B-1A-ST-NAME              PIC X(32).           05910036
+             10  FILLER                           PIC X(34).           05920028
+                                                                       05930010
 
 ## <span id="appendix14.6"><center>P2COB3S COPY File</center></span>
 
@@ -1794,7 +1801,6 @@
              10 PIWA2-3S-B7SC                    PIC X(8)              00002000
                                                  OCCURS 5 TIMES.       00002100
 
-    
 ## <span id="appendix14.7"><center>P2COBAP COPY File</center></span>
 
     *****************************************************************  00010006
@@ -1910,6 +1916,7 @@
              10  PIWA2-APX-ST-NAME                PIC X(32).           01120024
              10  FILLER                           PIC X(34).           01130024
                                                                        01140024
+
 
 ## <span id="appendix14.8"><center>ASSEMBLER COPY Files (COW)</center> </span>
 
@@ -2044,11 +2051,7 @@
     P1END    EQU   *                                                        00990000
     P1LENGTH EQU   P1END-P1BAL    LENGTH OF P1BAL                           01000000   
 
-
-
 ## <span id="appendix14.9"><center>P2BAL COPY File</center></span>
-
-
     */********************************************************************/ 00010092
     */*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE P2BAL,    ***/ 00020092
     */*****  CONTAINING THE LAYOUT OF WORK AREA 2 FOR FUNCTIONS        ***/ 00030092
@@ -2064,7 +2067,9 @@
     */*****  Replaced "Saniitation Reserved" with "Sanitation Bulk     ***/ 00130092
     */*****  Pick Up" for function 1                          10/2016  ***/ 00140092
     */*****  ADDED 2 bytes field "Bike Traffic Direction" for          ***/ 00150092
-    */*****  for functions 1/1E (extended),1B,3X,3CX           12/2016 ***/ 00160092
+    */*****  for functions 1/1E (extended),1B,3X,3CX          12/2016  ***/ 00160093
+    */*****  ADDED 2 bytes field "Speed Limit"                09/2017  ***/ 00161093
+    */*****  for functions 3,3C (extended).                            ***/ 00162094
     */********************************************************************/ 00170092
     */*****        Last Date Modified -   FEBRUARY 2016                ***/ 00180092
     */********************************************************************/ 00190092
@@ -2566,7 +2571,8 @@
     P23XBL2  DS    CL2           Bike Lane 2 (has 2 bytes numeric value)    05150092
     P23XSTWX DS    CL3           Street Width Maximum                       05160092
     P23XBTD  DS    CL2           Bike Traffic Direction                     05170092
-    P23XFILL DS    CL213         FILLER                                     05180092
+    P23XSPDL DS    CL2           Speed Limit                                05171094
+    P23XFILL DS    CL211         FILLER                                     05180094
     P23XEND  EQU   *                                                        05190092
     P23XLEN  EQU   P23XEND-P2BAL      Length of WA 2 for Fn 3 Extended      05200092
     *                                                                       05210092
@@ -2780,7 +2786,8 @@
     P2CXBL2  DS    CL2           Bike Lane2 (has 2bytes numeric value)      07290092
     P2CXSTWX DS    CL3           Street Width Maximum                       07300092
     P2CXBTD  DS    CL2           Bike Traffic Direction                     07310092
-    P2CXFILL DS    CL298         FILLER                                     07320092
+    P2CXSPDL DS    CL2           Speed Limit                                07311094
+    P2CXFILL DS    CL296         FILLER                                     07320094
     P2CXEND  EQU   *                                                        07330092
     P2CXLEN  EQU   P2CXEND-P2BAL      Length of WA 2 for Fn 3C              07340092
     ********************************************************************    07350092
@@ -2804,11 +2811,7 @@
     P2F5LEN  EQU   P2F5END-P2BAL      Length of WA 2 for Fn 5               07530092
              ORG                                                            07540092
 
-
 ## <span id="appendix14.10"><center>P2BAL1A COPY File</center></span>
-
-
-
     */********************************************************************/ 00010064
     */*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE P2BAL1A,  ***/ 00020064
     */*****  CONTAINING THE LAYOUT OF WORK AREA 2 FOR FUNCTION         ***/ 00030064
@@ -2829,6 +2832,10 @@
     */*****  Pick Up" for functions 1E,1B             October   2016   ***/ 00144070
     */*****  ADDED 2 bytes field "Bike Traffic Direction" for          ***/ 00145072
     */*****  for functions 1/1E (extended),1B,3X,3CX           12/2016 ***/ 00146071
+    */*****  ADDED 2 bytes field "Speed Limit"                 09/2017 ***/ 00147073
+    */*****  for functions 1/1E (extended),1B                          ***/ 00148074
+    */*****  ADDED 3 bytes field "DCP Zoning Map"              09/2017 ***/ 00149075
+    */*****  for functions 1A,BL,BN, 1A,BL,BN(extended) and 1B         ***/ 00149175
     */********************************************************************/ 00150064
     */*****          LAST UPDATE -  February 2016                      ***/ 00160066
     */********************************************************************/ 00170064
@@ -2886,7 +2893,8 @@
     P21ATPNB DS    CL7           TPAD New BIN                               00690064
     P21ATPNS DS    CL1           TPAD New BIN Status                        00700064
     P21ATPCF DS    CL1           TPAD Conflict Flag                         00710064
-             DS    CL9           FILLER                                     00720064
+    P21AZMAP DS    CL3           DCP Zoning Map                             00711075
+             DS    CL6           FILLER                                     00720075
              DS    CL8           Internal Use                               00730064
     P21A#ADR DS    CL4           TOTAL ADDRESSES FOR LOT                    00740064
     P21ALIST DS   0CL1113        LIST OF ADDRESSES, MAXIMUM OF 21           00750064
@@ -3067,7 +3075,8 @@
     P2EX#PKL DS    CL2           nbr of parking lanes                       02490064
     P2EX#TLL DS    CL2           nbr of total lanes on street               02500067
     P2EXSTWX DS    CL3           Street Width-Maximum                       02501068
-             DS    CL252         Filler                                     02510067
+    P2EXSPDL DS    CL2           Speed Limit                                02502073
+             DS    CL250         Filler                                     02510073
     P2EXRC   DS    CL1           REASON CODE                                02520064
     P2EXRCQ  DS    CL1           REASON CODE QUALIFIER                      02530064
     P2EXWC   DS    CL2           WARNING CODE FILLER                        02540064
@@ -3145,7 +3154,8 @@
     P2AXTPNB DS    CL7           TPAD New BIN                               03260064
     P2AXTPNS DS    CL1           TPAD New BIN Status                        03270064
     P2AXTPCF DS    CL1           TPAD Conflict Flag                         03280064
-             DS    CL9           FILLER                                     03290064
+    P2AXZMAP DS    CL3           DCP Zoning Map                             03281075
+             DS    CL6           FILLER                                     03290075
              DS    CL8           Internal Use - LGCS                        03300064
     P2AXRC   DS    CL1           REASON CODE                                03310064
     P2AXRCQ  DS    CL1           REASON CODE QUALIFIER                      03320064
@@ -3315,7 +3325,8 @@
     P21B#PKL DS    CL2           nbr of parking lanes                       04894065
     P21B#TLL DS    CL2           nbr of total lanes                         04895065
     P21BSTWX DS    CL3           Street Width Maximum                       04895168
-             DS    CL252         Filler                                     04896068
+    P21BSPDL DS    CL2           Speed Limit                                04895274
+             DS    CL250         Filler                                     04895374
     P21BRC   DS    CL1           REASON CODE                                04910064
     P21BRC1  DS    CL1           REASON CODE QUALIFIER                      04920064
     P21BWC   DS    CL2           WARNING CODE FILLER                        04930064
@@ -3383,7 +3394,8 @@
     P21BTPNB DS    CL7           TPAD New BIN                               05550064
     P21BTPNS DS    CL1           TPAD New BIN Status                        05560064
     P21BTPCF DS    CL1           TPAD Conflict Flag                         05570064
-             DS    CL9           FILLER                                     05580064
+    P21BZMAP DS    CL3           DCP Zoning Map                             05571075
+             DS    CL6           FILLER                                     05580075
              DS    CL8           Internal Use - LGCS                        05590064
     P21BRCS2 DS    CL1           REASON CODE                                05600064
     P21BRCQ2 DS    CL1           REASON CODE QUALIFIER                      05610064
@@ -3411,7 +3423,6 @@
     *                                                                       05830064
              ORG  ,                                                         05840064
     **********************************************************************  05850064
-
 
 ## <span id="appendix14.11"><center>P2BAL3S COPY File</center></span>
 
@@ -3447,7 +3458,6 @@
     P23SREST DS    CL19195      REMAINING INTERSECTIONS Assuming Max size   00003402
     P23SEND  EQU   *                                                        00003500
     P23SLEN  EQU   P23SEND-P2BAL3S     LENGTH OF P2BAL3S                    00003600  
-
 
 ## <span id="appendix14.12"><center>P2BALAP COPY File</center></span>  
 
@@ -3738,15 +3748,13 @@
      DCL WORK1PL1   BASED(PP1)               CHAR(1200);                  00012027
      PP1=ADDR(P1PL1);                                                     00020018
 
-
-
 ## <span id="appendix14.15"><center>P2PL1 COPY File</center></span>  
-
     /*******************************************************************/ 00010099
     /***                      P2PL1                                  ***/ 00011099
     /***           LAST MODIFIED DECEMBER 2016                       ***/ 00012099
-    /*  ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION           YNL 12/16 V17,1*/ 00015099
-    /*  ADD NEW 2 BYTE BIKE LANE AND MAX STR WIDTH      YNL 10/16 V16.4*/ 00015199
+    /*  ADD NEW 2 BYTE SPEED LIMIT                      TLV 09/17 V17.4*/ 00015099
+    /*  ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION           YNL 12/16 V17,1*/ 00015199
+    /*  ADD NEW 2 BYTE BIKE LANE AND MAX STR WIDTH      YNL 10/16 V16.4*/ 00015299
     /*                                                                 */ 00016099
     /***  THIS IS THE PL/1 STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM  ***/ 00030099
     /***  INDEPENDENT WORK AREA 2 FOR FUNCTIONS: 1, 1E, 2, 2C, 3,    ***/ 00040099
@@ -4293,7 +4301,9 @@
        2   PIWA2_3X_BIKE_LANE_2             CHAR(2),                      05431099
        2   PIWA2_3X_STR_WIDTH_MAX           CHAR(3),                      05432099
        2   PIWA2_3X_BIKE_TRAFFIC_DIR        CHAR(2),                      05433099
-       2   PIWA2_3X_FILL2                   CHAR(213),                    05440099
+       2   PIWA2_3X_SPEED_LIMIT             CHAR(2),                      05434099
+       2   PIWA2_3X_FILL2                   CHAR(211),                    05440099
+    /* 2   PIWA2_3X_FILL2 ** V17.4   ***    CHAR(213), **/                05440199
     /* 2   PIWA2_3X_FILL2 ** V17.1   ***    CHAR(215), **/                05441099
     /* 2   PIWA2_3X_FILL2 ** V16.4   ***    CHAR(220), **/                05442099
     /* 2   PIWA2_3X_FILL2 ** V16.1   ***    CHAR(246)  **/                05450099
@@ -4504,7 +4514,9 @@
        2   PIWA2_3CX_BIKE_LANE_2            CHAR(2),                      07491099
        2   PIWA2_3CX_STREET_WIDTH_MAX       CHAR(3),                      07492099
        2   PIWA2_3CX_BIKE_TRAFFIC_DIR       CHAR(2),                      07493099
-       2   PIWA2_3CX_FILL1560               CHAR(298),                    07500099
+       2   PIWA2_3CX_SPEED_LIMIT            CHAR(2),                      07494099
+       2   PIWA2_3CX_FILL1560               CHAR(296),                    07495099
+    /* 2   PIWA2_3CX_FILL1560 ** V17.4 **   CHAR(298), **/                07500099
     /* 2   PIWA2_3CX_FILL1560 ** V17.1 **   CHAR(300), **/                07501099
     /* 2   PIWA2_3CX_FILL1560 ** V16.4 **   CHAR(305), **/                07502099
     /* 2   PIWA2_3CX_FILL1560 ** V16.1 **   CHAR(321)  **/                07510099
@@ -4523,9 +4535,7 @@
                                                                           07640099
     PP2=ADDR(P2PL1);                                                       07650099
 
-
 ## <span id="appendix14.16"><center>P2PL11A COPY File</center></span>  
-
     /*******************************************************************/  00000100
     /***  THIS IS THE PL/1 STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM  ***/  00000200
     /***  INDEPENDENT REGULAR WORK AREA 2 FOR FUNCTIONS: 1A , BL,    ***/  00000300
@@ -4596,496 +4606,501 @@
        2 PIWA2_1A_TPAD_NEW_BIN              CHAR(07),  /*NEW BIN       */  00006810
        2 PIWA2_1A_TPAD_NEW_BIN_ST           CHAR(01),  /*NEW BIN STATUS*/  00006910
        2 PIWA2_1A_TPAD_CONFLICT             CHAR(01),  /*CONFLICT FLAG */  00007010
-       2 FILLER_650                         CHAR(09),                      00007110
-       2 FILLER_700                         CHAR(8),  /* LGC - GSS USE*/   00007210
-       2 PIWA2_1A_NUM_OF_ADDR               CHAR(4),                       00007310
-       2 PIWA2_1A_ADDR_LIST(21),                                           00007410
-         3 PIWA2_1A_LIST_LOW_HOUSENUM       CHAR(16), /*DISPLAY FORMAT*/   00007510
-         3 PIWA2_1A_LIST_HI_HOUSENUM        CHAR(16), /*DISPLAY FORMAT*/   00007610
-         3 PIWA2_1A_LIST_BORO               CHAR(1),                       00007710
-         3 PIWA2_1A_LIST_5SC                CHAR(5),                       00007810
-         3 PIWA2_1A_LIST_LGC                CHAR(2),                       00007910
-         3 PIWA2_1A_LIST_BIN                CHAR(7),                       00008010
-         3 PIWA2_1A_LIST_SIDE_OF_STR        CHAR(1),  /* L, R */           00008110
-         3 PIWA2_1A_ADDR_TYPE               CHAR(1),  /*               */  00008210
-                                                      /* BLANK = NORMAL*/  00008310
-         3 PIWA2_1A_TPAD_STATUS             CHAR(1),  /* 0 - 9         */  00008410
-         3 FILLER_800                       CHAR(3);                       00008510
-                                                                           00008610
-    DCL  PIWA2_1A_SANBORN_BVOLPAGE          CHAR(8)                        00008710
-            BASED(ADDR(PIWA2_1A_SANBORN));                                 00008810
-    DCL  PIWA2_1A_STROLLKEY                 CHAR(19)                       00008910
-            BASED(ADDR(PIWA2_1A_STROLL_KEY));                              00009004
+       2 PIWA2_1A_DCP_ZONE_MAP              CHAR(03),  /*DCP ZONING MAP*/  00007111
+       2 FILLER_650                         CHAR(06),                      00007211
+       2 FILLER_700                         CHAR(8),  /* LGC - GSS USE*/   00007311
+       2 PIWA2_1A_NUM_OF_ADDR               CHAR(4),                       00007411
+       2 PIWA2_1A_ADDR_LIST(21),                                           00007511
+         3 PIWA2_1A_LIST_LOW_HOUSENUM       CHAR(16), /*DISPLAY FORMAT*/   00007611
+         3 PIWA2_1A_LIST_HI_HOUSENUM        CHAR(16), /*DISPLAY FORMAT*/   00007711
+         3 PIWA2_1A_LIST_BORO               CHAR(1),                       00007811
+         3 PIWA2_1A_LIST_5SC                CHAR(5),                       00007911
+         3 PIWA2_1A_LIST_LGC                CHAR(2),                       00008011
+         3 PIWA2_1A_LIST_BIN                CHAR(7),                       00008111
+         3 PIWA2_1A_LIST_SIDE_OF_STR        CHAR(1),  /* L, R */           00008211
+         3 PIWA2_1A_ADDR_TYPE               CHAR(1),  /*               */  00008311
+                                                      /* BLANK = NORMAL*/  00008411
+         3 PIWA2_1A_TPAD_STATUS             CHAR(1),  /* 0 - 9         */  00008511
+         3 FILLER_800                       CHAR(3);                       00008611
+                                                                           00008711
+    DCL  PIWA2_1A_SANBORN_BVOLPAGE          CHAR(8)                        00008811
+            BASED(ADDR(PIWA2_1A_SANBORN));                                 00008911
+    DCL  PIWA2_1A_STROLLKEY                 CHAR(19)                       00009011
+            BASED(ADDR(PIWA2_1A_STROLL_KEY));                              00010011
 
-    
-## <span id="appendix14.17"><center>P2PL11AL COPY File</center></span>
+## <span id="appendix14.17"><center>P2PL11AL COPY File</center></span>    
     /*******************************************************************/  00000100
     /*********************************************************************/00000276
     /*                                                                   */00000376
-    /***                      P2PL11AL                                 ***/00000480
+    /***                      P2PL1AL                                  ***/00000480
     /***           LAST MODIFIED DECEMBER 2016                         ***/00000580
-    /*  ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION            YNL 12/16  V17.1*/00000680
-    /*  REPLACED SANIT_RESERVED WITH SANIT_BULK_PICK_UP  YNL 10/16  V16.4*/00000776
-    /*  ADD NEW 2 BYTE BIKE LANE AND MAX STR WIDTH       YNL 10/16  V16.4*/00000876
-    /*                                                                   */00000976
-    /*********************************************************************/00001076
-    /***  THIS IS THE PL/1 STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM  ***/  00001100
-    /***  INDEPENDENT LONG WORK AREA 2 FOR FUNCTIONS: 1A , AND BL.   ***/  00001200
-    /***  THESE TWO FUNCTIONS SHARE A SINGLE LONG WORK AREA 2 LAYOUT.***/  00001300
-    /***  THIS IS ALSO THE PL/1 STRUCTURE FOR GEOSUPPORT SYSTEM      ***/  00001415
-    /***   PLATFORM INDEPENDENT EXTENDED WORK AREA 2 FOR             ***/  00001515
-    /***   FUNCTIONS 1E AND 1A, AND FOR FUNCTION 1B WHICH IS A       ***/  00001635
-    /***   COMBINATION OF EXTENDED 1/1E AND EXTENDED 1A)             ***/  00001726
-    /***                                                             ***/  00001800
-    /***                           LAST MODIFIED OCTOBER  2016       ***/  00001976
-    /***  COPY FILE - P2PL11AL.                          10/11/2000  ***/  00002026
-    /*******************************************************************/  00002126
-                                                                           00002226
-    DCL                                                                    00002326
-     1 P2PL11AL,                                                           00002426
-       2 PIWA2_1AL_ACCESS_KEY               CHAR(21),                      00002526
-       2 PIWA2_1AL_CONT_PARITY              CHAR(1), /*(OR DUP ADDR IND)*/ 00002626
-       2 PIWA2_1AL_LOW_HOUSENUM             CHAR(11), /* SORT FORMAT */    00002726
-       2 PIWA2_1AL_BBL,                                                    00002826
-         3 PIWA2_1AL_BBL_BORO               CHAR(1),                       00002926
-         3 PIWA2_1AL_BLOCK                  CHAR(5),                       00003026
-         3 PIWA2_1AL_LOT                    CHAR(4),                       00003126
-       2 PIWA2_1AL_LOT_VER                  CHAR(1),                       00003226
-       2 PIWA2_1AL_SCC                      CHAR(1),                       00003326
-       2 FILLER_100                         CHAR(1),                       00003426
-       2 PIWA2_1AL_GENERAL_LOT_INFO,                                       00003526
-         3 PIWA2_1AL_RPAD_BLDG_CLASS        CHAR(2),                       00003626
-         3 PIWA2_1AL_CORNER_CODE            CHAR(2),                       00003726
-         3 PIWA2_1AL_NUM_OF_STRUCTURES      CHAR(4),                       00003826
-         3 PIWA2_1AL_NUM_OF_BLOCKFACES      CHAR(2),                       00003926
-         3 PIWA2_1AL_INTERIOR_FLAG          CHAR(1),                       00004026
-         3 PIWA2_1AL_VACANT_FLAG            CHAR(1),                       00004126
-         3 PIWA2_1AL_IRREG_LOT_FLAG         CHAR(1),                       00004226
-       2 PIWA2_1AL_MARBLE_RIKERS_FLAG       CHAR(1),                       00004326
-       2 PIWA2_1AL_ADDR_LIST_OVFLOW_FLAG    CHAR(1),                       00004426
-       2 PIWA2_1AL_STROLL_KEY,                                             00004526
-         3 PIWA2_1AL_STROLL_BORO            CHAR(1),                       00004626
-         3 PIWA2_1AL_STROLL_5SC             CHAR(5),                       00004726
-         3 PIWA2_1AL_STROLL_SIDE_OF_STR     CHAR(1),  /* L, R */           00004826
-         3 PIWA2_1AL_STROLL_HI_HOUSENUM     CHAR(11), /* SORT FORMAT */    00004926
-         3 FILLER_200                       CHAR(1),                       00005026
-       2 FILLER_300                         CHAR(1),  /* FOR GSS USE*/     00005126
-       2 PIWA2_1AL_BIN                      CHAR(7),                       00005226
-       2 PIWA2_1AL_CONDO_FLAG               CHAR(1),                       00005326
-       2 FILLER_400                         CHAR(1),                       00005426
-       2 PIWA2_1AL_RPAD_CONDO_ID_NUM        CHAR(4),                       00005526
-       2 PIWA2_1AL_CONDO_UNIT_ID_NUM        CHAR(7),                       00005626
-       2 PIWA2_1AL_CONDO_BILL_BBL           CHAR(10),                      00005726
-       2 PIWA2_1AL_CONDO_BILL_BBL_VER       CHAR(1),                       00005826
-       2 PIWA2_1AL_CONDO_BILL_BBL_SCC       CHAR(1),                       00005926
-       2 PIWA2_1AL_CONDO_LOW_BBL            CHAR(10),                      00006026
-       2 PIWA2_1AL_CONDO_LOW_BBL_VER        CHAR(1),                       00006126
-       2 PIWA2_1AL_CONDO_HIGH_BBL           CHAR(10),                      00006226
-       2 PIWA2_1AL_CONDO_HIGH_BBL_VER       CHAR(1),                       00006326
-       2 FILLER_500                         CHAR(15),                      00006426
-       2 PIWA2_1AL_COOP_NUM                 CHAR(4),                       00006526
-       2 PIWA2_1AL_SANBORN,                                                00006626
-         3 PIWA2_1AL_SANBORN_BORO           CHAR(1),                       00006726
-         3 PIWA2_1AL_SANBORN_VOL            CHAR(3),                       00006826
-         3 PIWA2_1AL_SANBORN_PAGE           CHAR(4),                       00006926
-       2 PIWA2_1AL_COMMERC_DIST             CHAR(5),                       00007026
-       2 PIWA2_1AL_DOF_MAP_BORO             CHAR(1),                       00007126
-       2 PIWA2_1AL_DOF_MAP_SECVOL           CHAR(4),                       00007226
-       2 PIWA2_1AL_DOF_MAP_PAGE             CHAR(4),                       00007326
-       2 FILLER_600                         CHAR(3),                       00007465
-       2 PIWA2_1AL_LATITUDE                 CHAR(9),                       00007565
-       2 PIWA2_1AL_LONGITUDE                CHAR(11),                      00007665
-       2 PIWA2_1AL_X_COORD                  CHAR(07),                      00007765
-       2 PIWA2_1AL_Y_COORD                  CHAR(07),                      00007865
-       2 PIWA2_1AL_BID                      CHAR(06),                      00007965
-       2 PIWA2_1AL_TPAD_BIN_ST              CHAR(01), /*CURRENT STATUS*/   00008065
-       2 PIWA2_1AL_TPAD_NEW_BIN             CHAR(07), /*NEW BIN       */   00008165
-       2 PIWA2_1AL_TPAD_NEW_BIN_ST          CHAR(01), /*NEW BIN STATUS*/   00008265
-       2 PIWA2_1AL_TPAD_CONFLICT            CHAR(01), /*CONFLICT FLAG */   00008365
-       2 FILLER_650                         CHAR(09),                      00008465
-       2 FILLER_700                         CHAR(8),  /*LGC -GSS USE*/     00008565
-       2 PIWA2_1AL_NUM_OF_BINS              CHAR(4),                       00008665
-       2 PIWA2_1AL_BINS(2500)               CHAR(7);                       00008765
-                                                                           00008865
-    DCL 1 PIWA2_1AL_TPAD_BINLIST BASED(ADDR(PIWA2_1AL_BINS)),              00008965
-          2 PIWA2_1AL_TPAD_BINS(2187),                                     00009065
-            3 PIWA2_1AL_TPAD_BINS_BIN   CHAR (7),                          00009165
-            3 PIWA2_1AL_TPAD_BINS_STAT  CHAR (1),                          00009265
-          2 PIWA2_1AL_TPAD_FILL         CHAR (4);                          00009365
-                                                                           00009465
-    DCL  PIWA2_1AL_SANBORN_BVOLPAGE         CHAR(8)                        00009565
-            BASED(ADDR(PIWA2_1AL_SANBORN));                                00009665
-    DCL  PIWA2_1AL_STROLLKEY                CHAR(19)                       00009765
-            BASED(ADDR(PIWA2_1AL_STROLL_KEY));                             00009865
-                                                                           00009965
-                                                                           00010065
-    DCL 1 PIWA2_1EX BASED(ADDR(P2PL11AL)),                                 00010165
-                                                                           00010265
-     /*******************************************************************/ 00010365
-     /***              WORK AREA 2 FOR FUNCTION 1/1E EXTENDED         ***/ 00010465
-     /***                                                             ***/ 00010565
-     /*******************************************************************/ 00010665
-     /*******************************************************************/ 00010765
-                                                                           00010865
-     /*******************************************************************/ 00010915
-     /***                                                             ***/ 00011015
-     /*** THE FOLLOWING FIELDS ARE FROM FUNCTION 1/1E                 ***/ 00011115
-     /*******************************************************************/ 00011215
-        2 PIWA2_1EX_ACCESS_KEY            CHAR(21),                        00011338
-        2 PIWA2_1EX_CONT_PARITY           CHAR(1),/*(OR DUP ADDR IND)*/    00011438
-        2 PIWA2_1EX_LOW_HOUSENUM          CHAR(11),/* SORT FORMAT */       00011538
-        2 PIWA2_1EX_HI_HOUSENUM           CHAR(11),/* SORT FORMAT */       00011638
-        2 PIWA2_1EX_DCP_PREF_LGC          CHAR(2),                         00011738
-        2 PIWA2_1EX_NUM_X_ST_LOW_END      CHAR(1),                         00011838
-        2 PIWA2_1EX_LOW_B5SC(5)           CHAR(6),                         00011938
-        2 PIWA2_1EX_NUM_X_ST_HI_END       CHAR(1),                         00012038
-        2 PIWA2_1EX_HI_B5SC(5)            CHAR(6),                         00012138
-        2 PIWA2_1EX_LIONKEY,                                               00012238
-          3 PIWA2_1EX_LION_BORO           CHAR(1),                         00012338
-          3 PIWA2_1EX_LION_FACECODE       CHAR(4),                         00012438
-          3 PIWA2_1EX_LION_SEQ            CHAR(5),                         00012538
-        2 PIWA2_1EX_SPECIAL_ADDR_FLAG     CHAR(1),                         00012638
-        2 PIWA2_1EX_SIDE_OF_STR           CHAR(1),                         00012738
-        2 PIWA2_1EX_SEG_LEN               CHAR(5),                         00012838
-        2 PIWA2_1EX_XCOORD                CHAR(7),                         00012938
-        2 PIWA2_1EX_YCOORD                CHAR(7),                         00013038
-        2 FILLER_1EX_100                  CHAR(7), /* FOR ZCOORD */        00013138
-        2 FILLER_1EX_200                  CHAR(1), /* FOR GSS USE*/        00013238
-        2 PIWA2_1EX_MARBLE_RIKERS_FLAG    CHAR(1),                         00013338
-        2 PIWA2_1EX_DOT_SLA               CHAR(1),                         00013438
-        2 PIWA2_1EX_COM_DIST,                                              00013538
-          3 PIWA2_1EX_COM_DIST_BORO       CHAR(1),                         00013638
-          3 PIWA2_1EX_COM_DIST_NUM        CHAR(2),                         00013738
-        2 PIWA2_1EX_ZIP                   CHAR(5),                         00013838
-                                                                           00013915
-        2 PIWA2_1EX_ELECT_DIST            CHAR(3), /*****************/     00014038
-        2 PIWA2_1EX_ASSEM_DIST            CHAR(2), /* FUNCTION 1E   */     00014138
-        2 PIWA2_1EX_SPLIT_ED_FLAG         CHAR(1), /* FIELDS        */     00014238
-        2 PIWA2_1EX_CONG_DIST             CHAR(2), /*               */     00014338
-        2 PIWA2_1EX_SENATE_DIST           CHAR(2), /*               */     00014438
-        2 PIWA2_1EX_COURT_DIST            CHAR(2), /*               */     00014538
-        2 PIWA2_1EX_COUNCIL_DIST          CHAR(2), /*****************/     00014638
-                                                                           00014715
-        2 PIWA2_1EX_HEALTH_CENTER_DIST    CHAR(2), /*HEALTH CENTER*/       00014854
-        2 PIWA2_1EX_HEALTH_AREA           CHAR(4), /*HEALTH AREA*/         00014954
-        2 PIWA2_1EX_SANI_DIST,                                             00015038
-          3 PIWA2_1EX_SANI_DIST_BORO      CHAR(1),                         00015138
-          3 PIWA2_1EX_SANI_DIST_NUM       CHAR(2),                         00015238
-        2 PIWA2_1EX_SANI_SUBSEC           CHAR(2),                         00015338
-        2 PIWA2_1EX_SANI_REG              CHAR(5),                         00015438
-        2 PIWA2_1EX_SANI_REC              CHAR(3),                         00015538
-        2 PIWA2_1EX_POLICE_DIST,                                           00015638
-          3  PIWA2_1EX_POL_PAT_BORO_CMD   CHAR(1),                         00015738
-          3  PIWA2_1EX_POL_PRECINCT       CHAR(3),                         00015838
-        2 PIWA2_1EX_FIRE_DIV              CHAR(2),                         00015938
-        2 PIWA2_1EX_FIRE_BAT              CHAR(2),                         00016038
-        2 PIWA2_1EX_FIRE_CO,                                               00016138
-          3 PIWA2_1EX_FIRE_CO_TYPE        CHAR(1),                         00016238
-          3 PIWA2_1EX_FIRE_CO_NUM         CHAR(3),                         00016338
-        2 PIWA2_1EX_FILL_DIST_SPLT_FLAG   CHAR(1),                         00016438
-        2 PIWA2_1EX_SCHL_DIST             CHAR(2),                         00016538
-        2 PIWA2_1EX_DYN_BLK               CHAR(3), /*ATOMIC POLYGON*/      00016638
-        2 PIWA2_1EX_POLICE_PAT_BORO       CHAR(2),                         00016769
-        2 PIWA2_1EX_FEATURE_TYPE          CHAR(1),                         00016838
-        2 PIWA2_1EX_SEGMENT_TYPE          CHAR(1),                         00016938
-        2 PIWA2_1EX_ALX                   CHAR(1),                         00017038
-        2 PIWA2_1EX_COINCIDENT_SEG_CTR    CHAR(1),                         00017138
-        2 FILLER_1EX_290                  CHAR(2),                         00017255
-        2 PIWA2_1EX_CENS_TRCT_BORO        CHAR(1),  /*USED FOR GRIDGEN*/   00017355
-        2 PIWA2_1EX_1990_CENS_TRCT        CHAR(6),                         00017455
-        2 PIWA2_1EX_2010_CENSUS_TRACT     CHAR(6),                         00017555
-        2 PIWA2_1EX_2010_CENSUS_BLOCK     CHAR(4),                         00017655
-        2 PIWA2_1EX_2010_CENSUS_BLK_SF    CHAR(1), /*NOT IMPLEMENTED*/     00017755
-        2 PIWA2_1EX_2000_CENS_TRACT       CHAR(6),                         00017855
-        2 PIWA2_1EX_2000_CENS_BLOCK       CHAR(4),                         00017955
-        2 PIWA2_1EX_2000_CENS_BLK_S       CHAR(1),                         00018055
-        2 PIWA2_1EX_NTA                   CHAR(4), /*NEIGHBORHOOD     */   00018155
-                                                   /*TABULATION AREA  */   00018255
-        2 PIWA2_1EX_SANIT_SNOW_PRIORITY   CHAR(1), /*SANITATION STRT  */   00018355
-                                                   /*SNOW PRIORITY    */   00018455
-        2 PIWA2_1EX_SANIT_ORGANICS        CHAR(5), /*SANITATION       */   00018559
-                                                   /*ORGANIC PICK UP  */   00018657
-        2 PIWA2_1EX_SANIT_BULK_PICK_UP    CHAR(5), /*SANITATION BULK  */   00018776
-     /* 2 PIWA2_1EX_SANIT_RESERVED *V16.4*CHAR(5),  *SANITATION RESERVE*/  00018876
-        2 PIWA2_1EX_HURRICANE_ZONE        CHAR(2), /*OEM HURRICANE     */  00018976
-                                                   /*EVACUATION ZONE   */  00019076
-        2 FILLER_1EX_400                  CHAR(11),                        00019176
-        2 PIWA2_1EX_UHNS                  CHAR(11),                        00019276
-        2 PIWA2_1EX_REAL_B7SC             CHAR(8),                         00019376
-        2 PIWA2_1EX_SEGMENT_ID            CHAR(7),                         00019476
-        2 PIWA2_1EX_CURVE_FLAG            CHAR(1),                         00019576
-        2 PIWA2_1EX_LGCS                  CHAR(8),                         00019676
-        2 PIWA2_1EX_BOE_PTR               CHAR(1),                         00019776
-        2 PIWA2_1EX_AZIMUTH               CHAR(3),                         00019876
-        2 PIWA2_1EX_ORIENT                CHAR(1),                         00019976
-        2 PIWA2_1EX_X_LOW                 CHAR(7),                         00020076
-        2 PIWA2_1EX_Y_LOW                 CHAR(7),                         00020176
-        2 PIWA2_1EX_Z_LOW                 CHAR(7), /*NOT IMPLEMENTED*/     00020276
-        2 PIWA2_1EX_X_HI                  CHAR(7),                         00020376
-        2 PIWA2_1EX_Y_HI                  CHAR(7),                         00020476
-        2 PIWA2_1EX_Z_HI                  CHAR(7), /*NOT IMPLEMENTED*/     00020576
-        /* SPATIAL COORDINATES OF CENTER OF CURVATURE                 */   00020676
-        2 PIWA2_1EX_X_CC                  CHAR(7),                         00020776
-        2 PIWA2_1EX_Y_CC                  CHAR(7),                         00020876
-        2 PIWA2_1EX_Z_CC                  CHAR(7), /*NOT IMPLEMENTED*/     00020976
-        2 PIWA2_1EX_RADIUS                CHAR(7),                         00021076
-        2 PIWA2_1EX_SECANT                CHAR(1),                         00021176
-        2 PIWA2_1EX_ANGLE_FROM            CHAR(5),                         00021276
-        2 PIWA2_1EX_ANGLE_TO              CHAR(5),                         00021376
-        2 PIWA2_1EX_NODE_FROM             CHAR(7),                         00021476
-        2 PIWA2_1EX_NODE_TO               CHAR(7),                         00021576
-        2 PIWA2_1EX_VANITY_LION           CHAR(10),                        00021676
-        2 PIWA2_1EX_SOS                   CHAR(1),                         00021776
-        2 PIWA2_1EX_SPLIT_LOHSN           CHAR(11),                        00021876
-        2 PIWA2_1EX_TD                    CHAR(1),                         00021976
-        2 PIWA2_1EX_TR                    CHAR(10),                        00022076
-        2 PIWA2_1EX_CURVE_FRACTION        CHAR(3),                         00022176
-        2 PIWA2_1EX_ROADWAY_TYPE          CHAR(2),                         00022276
-        2 PIWA2_1EX_PHYSICAL_ID           CHAR(7),                         00022376
-        2 PIWA2_1EX_GENERIC_ID            CHAR(7),                         00022476
-        2 PIWA2_1EX_INTP_ID               CHAR(7),  /*INTERNAL USE*/       00022576
-        2 PIWA2_1EX_INTF_ID               CHAR(7),  /*INTERNAL USE*/       00022676
-        2 PIWA2_1EX_BIKE_LANE_2           CHAR(2),                         00022776
-        2 PIWA2_1EX_BIKE_TRAFFIC_DIR      CHAR(2),                         00022879
-        2 PIWA2_1EX_FILL450               CHAR(3),                         00022979
-     /* 2 PIWA2_1EX_FILL450  * V17.1 *    CHAR(5),  **/                    00023079
-     /* 2 PIWA2_1EX_FILL450  * V16.4 *    CHAR(7),  **/                    00023179
-     /* 2 PIWA2_1EX_BLOCKFACE_ID * V16.1* CHAR(7),  **/                    00023279
-        2 PIWA2_1EX_STREET_STATUS         CHAR(1),                         00023379
-        2 PIWA2_1EX_STREET_WIDTH          CHAR(3),                         00023479
-        2 PIWA2_1EX_STREET_WIDTH_IRR      CHAR(1),                         00023579
-        2 PIWA2_1EX_BIKE_LANE             CHAR(1),                         00023679
-        2 PIWA2_1EX_FED_CLASS_CODE        CHAR(2),                         00023779
-        2 PIWA2_1EX_ROW_TYPE              CHAR(1),                         00023879
-        2 PIWA2_1EX_LGC_LIST_2            CHAR(10),                        00023979
-        2 PIWA2_1EX_LEGACY_SEG_ID         CHAR(7),                         00024079
-        2 PIWA2_1EX_LGC_LIST_FROM_1       CHAR(10),                        00024179
-        2 PIWA2_1EX_LGC_LIST_TO_1         CHAR(10),                        00024279
-        2 PIWA2_1EX_LGC_LIST_FROM_2       CHAR(10),                        00024379
-        2 PIWA2_1EX_LGC_LIST_TO_2         CHAR(10),                        00024479
-        2 PIWA2_1EX_NOCROSS_FLG           CHAR(1),                         00024579
-        2 PIWA2_1EX_IND_SEG_LEN           CHAR(5),                         00024679
-        2 PIWA2_1EX_NTA_NAME              CHAR(75),                        00024779
-        2 PIWA2_1EX_USPS_CITY_NAME        CHAR(25),                        00024879
-        2 PIWA2_1EX_LATITUDE              CHAR(9),                         00024979
-        2 PIWA2_1EX_LONGITUDE             CHAR(11),                        00025079
-        2 PIWA2_1EX_SEG_FROM_NODE         CHAR(7),                         00025179
-        2 PIWA2_1EX_SEG_TO_NODE           CHAR(7),                         00025279
-        2 PIWA2_1EX_SEG_FROM_XYZ          CHAR(21),                        00025379
-        2 PIWA2_1EX_SEG_TO_XYZ            CHAR(21),                        00025479
-        2 PIWA2_1EX_BLOCKFACE_ID          CHAR(10),                        00025579
-        2 PIWA2_1EX_NBR_TRAVEL_LANES      CHAR(2),                         00025679
-        2 PIWA2_1EX_NBR_PARK_LANES        CHAR(2),                         00025779
-        2 PIWA2_1EX_NBR_TOTAL_LANES       CHAR(2),                         00025879
-        2 PIWA2_1EX_STR_WIDTH_MAX         CHAR(3),                         00025979
-        2 PIWA2_1EX_FILL500               CHAR(252),                       00026079
-     /* 2 PIWA2_1EX_FILL500 ** V16.4 **   CHAR(255) **/                    00026179
-     /* 2 PIWA2_1EX_FILL500 ** V16.1 **   CHAR(271) **/                    00026279
-     /* 2 PIWA2_1EX_FILL500 ** V15.3 **   CHAR(327) **/                    00026379
-     /*******************************************************************/ 00026479
-     /***                                                             ***/ 00026579
-     /*** THE FOLLOWING FIELDS ARE AN ADDITION TO 1E                  ***/ 00026679
-     /*******************************************************************/ 00026779
-        2 PIWA2_1EX_REASON_CODE           CHAR(1),                         00026879
-        2 PIWA2_1EX_REASON_CODE_QUAL      CHAR(1),                         00026979
-        2 PIWA2_1EX_WARN_CODE             CHAR(2),                         00027079
-        2 PIWA2_1EX_RETURN_CODE           CHAR(2),                         00027179
-        2 PIWA2_1EX_NUM_X_STS_LO_END      CHAR(1),                         00027279
-        2 PIWA2_1EX_LO_B7SC(5)            CHAR(8),                         00027379
-        2 PIWA2_1EX_NUM_X_STS_HI_END      CHAR(1),                         00027479
-        2 PIWA2_1EX_HI_B7SC(5)            CHAR(8),                         00027579
-        2 PIWA2_1EX_LO_ST_NAME(5)         CHAR(32),                        00027679
-        2 PIWA2_1EX_HI_ST_NAME(5)         CHAR(32),                        00027779
-        2 PIWA2_1EX_BOE_B7SC              CHAR(8),                         00027879
-        2 PIWA2_1EX_BOE_ST_NAME           CHAR(32),                        00027979
-        2 PIWA2_1EX_FILL600               CHAR(52);                        00028079
-                                                                           00028179
-                                                                           00028279
-                                                                           00028379
-    DCL 1 PIWA2_FN1AX BASED(ADDR(P2PL11AL)),                               00028479
-     /*******************************************************************/ 00028579
-     /***              WORK AREA 2 FOR FUNCTION 1A EXTENDED           ***/ 00028679
-     /***                                                             ***/ 00028779
-     /*******************************************************************/ 00028879
-                                                                           00028979
-                                                                           00029079
-       2 PIWA2_1AX_ACCESS_KEY               CHAR(21),                      00029179
-       2 PIWA2_1AX_CONT_PARITY              CHAR(1), /*(OR DUP ADDR IND)*/ 00029279
-       2 PIWA2_1AX_LOW_HOUSENUM             CHAR(11), /* SORT FORMAT */    00029379
-       2 PIWA2_1AX_BBL,                                                    00029479
-         3 PIWA2_1AX_BBL_BORO               CHAR(1),                       00029579
-         3 PIWA2_1AX_BLOCK                  CHAR(5),                       00029679
-         3 PIWA2_1AX_LOT                    CHAR(4),                       00029779
-       2 PIWA2_1AX_LOT_VER                  CHAR(1),                       00029879
-       2 PIWA2_1AX_SCC                      CHAR(1),                       00029979
-       2 FILLER_1AX1                        CHAR(1),                       00030079
-       2 PIWA2_1AX_GENERAL_LOT_INFO,                                       00030179
-         3 PIWA2_1AX_RPAD_BLDG_CLASS        CHAR(2),                       00030279
-         3 PIWA2_1AX_CORNER_CODE            CHAR(2),                       00030379
-         3 PIWA2_1AX_NUM_OF_STRUCTURES      CHAR(4),                       00030479
-         3 PIWA2_1AX_NUM_OF_BLOCKFACES      CHAR(2),                       00030579
-         3 PIWA2_1AX_INTERIOR_FLAG          CHAR(1),                       00030679
-         3 PIWA2_1AX_VACANT_FLAG            CHAR(1),                       00030779
-         3 PIWA2_1AX_IRREG_LOT_FLAG         CHAR(1),                       00030879
-       2 PIWA2_1AX_MARBLE_RIKERS_FLAG       CHAR(1),                       00030979
-       2 PIWA2_1AX_ADDR_LIST_OVFLOW_FLAG    CHAR(1),                       00031079
-       2 PIWA2_1AX_STROLL_KEY,                                             00031179
-         3 PIWA2_1AX_STROLL_BORO            CHAR(1),                       00031279
-         3 PIWA2_1AX_STROLL_5SC             CHAR(5),                       00031379
-         3 PIWA2_1AX_STROLL_SIDE_OF_STR     CHAR(1),    /* L, R */         00031479
-         3 PIWA2_1AX_STROLL_HI_HOUSENUM     CHAR(11), /* SORT FORMAT */    00031579
-         3 FILLER_1AX2                      CHAR(1),                       00031679
-       2 FILLER_1AX3                        CHAR(1),  /* FOR GSS USE*/     00031779
-       2 PIWA2_1AX_BIN                      CHAR(7),                       00031879
-       2 PIWA2_1AX_CONDO_FLAG               CHAR(1),                       00031979
-       2 FILLER_1AX4                        CHAR(1),                       00032079
-       2 PIWA2_1AX_RPAD_CONDO_ID_NUM        CHAR(4),                       00032179
-       2 PIWA2_1AX_CONDO_UNIT_ID_NUM        CHAR(7),                       00032279
-       2 PIWA2_1AX_CONDO_BILL_BBL           CHAR(10),                      00032379
-       2 PIWA2_1AX_CONDO_BILL_BBL_VER       CHAR(1),                       00032479
-       2 PIWA2_1AX_CONDO_BILL_BBL_SCC       CHAR(1),                       00032579
-       2 PIWA2_1AX_CONDO_LOW_BBL            CHAR(10),                      00032679
-       2 PIWA2_1AX_CONDO_LOW_BBL_VER        CHAR(1),                       00032779
-       2 PIWA2_1AX_CONDO_HIGH_BBL           CHAR(10),                      00032879
-       2 PIWA2_1AX_CONDO_HIGH_BBL_VER       CHAR(1),                       00032979
-       2 FILLER_1AX5                        CHAR(15),                      00033079
-       2 PIWA2_1AX_COOP_NUM                 CHAR(4),                       00033179
-       2 PIWA2_1AX_SANBORN,                                                00033279
-         3 PIWA2_1AX_SANBORN_BORO           CHAR(1),                       00033379
-         3 PIWA2_1AX_SANBORN_VOL            CHAR(3),                       00033479
-         3 PIWA2_1AX_SANBORN_PAGE           CHAR(4),                       00033579
-       2 PIWA2_1AX_COMMERC_DIST             CHAR(5),                       00033679
-       2 PIWA2_1AX_DOF_MAP_BORO             CHAR(1),                       00033779
-       2 PIWA2_1AX_DOF_MAP_SECVOL           CHAR(4),                       00033879
-       2 PIWA2_1AX_DOF_MAP_PAGE             CHAR(4),                       00033979
-       2 PIWA2_1AX_RESERVED                 CHAR(03),                      00034079
-       2 PIWA2_1AX_LATITUDE                 CHAR(09),                      00034179
-       2 PIWA2_1AX_LONGITUDE                CHAR(11),                      00034279
-       2 PIWA2_1AX_X_COORD                  CHAR(07),                      00034379
-       2 PIWA2_1AX_Y_COORD                  CHAR(07),                      00034479
-       2 PIWA2_1AX_BID                      CHAR(06),                      00034579
-       2 PIWA2_1AX_TPAD_BIN_ST              CHAR(01),  /*CURRENT STATUS*/  00034679
-       2 PIWA2_1AX_TPAD_NEW_BIN             CHAR(07),  /*NEW BIN       */  00034779
-       2 PIWA2_1AX_TPAD_NEW_BIN_ST          CHAR(01),  /*NEW BIN STATUS*/  00034879
-       2 PIWA2_1AX_TPAD_CONFLICT            CHAR(01),  /*CONFLICT FLAG */  00034979
-       2 FILLER_1AX7                        CHAR(09),                      00035079
-       2 FILLER_1AX8                        CHAR(8),  /* LGC - GSS USE*/   00035179
-       2 PIWA2_1AX_REASON_CODE              CHAR(01),                      00035279
-       2 PIWA2_1AX_REASON_CODE_QUAL         CHAR(01),                      00035379
-       2 PIWA2_1AX_WARN_CODE                CHAR(02),                      00035479
-       2 PIWA2_1AX_RETURN_CODE              CHAR(02),                      00035579
-       2 FILLER_1AX9                        CHAR(108),                     00035679
-       2 PIWA2_1AX_NUM_OF_ADDR              CHAR(4),                       00035779
-       2 PIWA2_1AX_ADDR_LIST(21),                                          00035879
-         3 PIWA2_1AX_LIST_LOW_HOUSENUM      CHAR(16), /*DISPLAY FORMAT*/   00035979
-         3 PIWA2_1AX_LIST_HI_HOUSENUM       CHAR(16), /*DISPLAY FORMAT*/   00036079
-         3 PIWA2_1AX_LIST_BORO              CHAR(1),                       00036179
-         3 PIWA2_1AX_LIST_5SC               CHAR(5),                       00036279
-         3 PIWA2_1AX_LIST_LGC               CHAR(2),                       00036379
-         3 PIWA2_1AX_LIST_BIN               CHAR(7),                       00036479
-         3 PIWA2_1AX_LIST_SIDE_OF_STR       CHAR(1),  /* L, R */           00036579
-         3 PIWA2_1AX_ADDR_TYPE              CHAR(1),  /*               */  00036679
-                                                      /* BLANK = NORMAL*/  00036779
-         3 PIWA2_1AX_TPAD_STATUS            CHAR(1),                       00036879
-         3 PIWA2_1AX_ST_NAME                CHAR(32),                      00036979
-         3 FILLER_1AX10                     CHAR(34);                      00037079
-                                                                           00037179
-                                                                           00037279
-    DCL 1 PIWA2_FN1B BASED(ADDR(P2PL11AL)),                                00037379
-                                                                           00037479
-     /*******************************************************************/ 00037579
-     /***              WORK AREA 2 FOR FUNCTION 1B                    ***/ 00037679
-     /***                                                             ***/ 00037779
-     /*******************************************************************/ 00037879
-        2 PIWA2_1B_1_ACCESS_KEY               CHAR(21),                    00037979
-        2 PIWA2_1B_1_CONT_PARITY              CHAR(1),  /*(DUP ADDR IND)*/ 00038079
-        2 PIWA2_1B_1_LOW_HOUSENUM             CHAR(11), /* SORT FORMAT */  00038179
-        2 PIWA2_1B_1_HI_HOUSENUM              CHAR(11), /* SORT FORMAT */  00038279
-        2 PIWA2_1B_1_PREF_LGC                 CHAR(2),                     00038379
-        2 PIWA2_1B_1_NUM_X_ST_LOW_END         CHAR(1),                     00038479
-        2 PIWA2_1B_1_LOW_B5SC(5)              CHAR(6),                     00038579
-        2 PIWA2_1B_1_NUM_X_ST_HI_END          CHAR(1),                     00038679
-        2 PIWA2_1B_1_HI_B5SC(5)               CHAR(6),                     00038779
-        2 PIWA2_1B_1_LIONKEY,                                              00038879
-          3 PIWA2_1B_1_LION_BORO              CHAR(1),                     00038979
-          3 PIWA2_1B_1_LION_FACECODE          CHAR(4),                     00039079
-          3 PIWA2_1B_1_LION_SEQ               CHAR(5),                     00039179
-        2 PIWA2_1B_1_SPECIAL_ADDR_FLAG        CHAR(1),                     00039279
-        2 PIWA2_1B_1_SIDE_OF_STR              CHAR(1),                     00039379
-        2 PIWA2_1B_1_SEG_LEN                  CHAR(5),                     00039479
-        2 PIWA2_1B_1_XCOORD                   CHAR(7),                     00039579
-        2 PIWA2_1B_1_YCOORD                   CHAR(7),                     00039679
-        2 FILLER_1B_1_100                     CHAR(7), /* FOR ZCOORD */    00039779
-        2 FILLER_1B_1_200                     CHAR(1), /* FOR GSS USE*/    00039879
-        2 PIWA2_1B_1_MARBLE_RIKERS_FLAG       CHAR(1),                     00039979
-        2 PIWA2_1B_1_DOT_SLA                  CHAR(1),                     00040079
-        2 PIWA2_1B_1_COM_DIST,                                             00040179
-          3 PIWA2_1B_1_COM_DIST_BORO          CHAR(1),                     00040279
-          3 PIWA2_1B_1_COM_DIST_NUM           CHAR(2),                     00040379
-        2 PIWA2_1B_1_ZIP                      CHAR(5),                     00040479
-                                                                           00040579
-        2 PIWA2_1B_1_ELECT_DIST               CHAR(3), /*****************/ 00040679
-        2 PIWA2_1B_1_ASSEM_DIST               CHAR(2), /* FUNCTION 1E   */ 00040779
-        2 PIWA2_1B_1_SPLIT_ED_FLAG            CHAR(1), /* FIELDS        */ 00040879
-        2 PIWA2_1B_1_CONG_DIST                CHAR(2), /*               */ 00040979
-        2 PIWA2_1B_1_SENATE_DIST              CHAR(2), /*               */ 00041079
-        2 PIWA2_1B_1_COURT_DIST               CHAR(2), /*               */ 00041179
-        2 PIWA2_1B_1_COUNCIL_DIST             CHAR(2), /*****************/ 00041279
-                                                                           00041379
-        2 PIWA2_1B_1_HEALTH_CENTER_DIST       CHAR(2),                     00041479
-        2 PIWA2_1B_1_HEALTH_AREA              CHAR(4),                     00041579
-        2 PIWA2_1B_1_SANI_DIST,                                            00041679
-          3 PIWA2_1B_1_SANI_DIST_BORO         CHAR(1),                     00041779
-          3 PIWA2_1B_1_SANI_DIST_NUM          CHAR(2),                     00041879
-        2 PIWA2_1B_1_SANI_SUBSEC              CHAR(2),                     00041979
-        2 PIWA2_1B_1_SANI_REG                 CHAR(5),                     00042079
-        2 PIWA2_1B_1_SANI_REC                 CHAR(3),                     00042179
-        2 PIWA2_1B_1_POLICE_DIST,                                          00042279
-          3  PIWA2_1B_1_POL_PAT_BORO_CMD      CHAR(1),                     00042379
-          3  PIWA2_1B_1_POL_PRECINCT          CHAR(3),                     00042479
-        2 PIWA2_1B_1_FIRE_DIV                 CHAR(2),                     00042579
-        2 PIWA2_1B_1_FIRE_BAT                 CHAR(2),                     00042679
-        2 PIWA2_1B_1_FIRE_CO,                                              00042779
-          3 PIWA2_1B_1_FIRE_CO_TYPE           CHAR(1),                     00042879
-          3 PIWA2_1B_1_FIRE_CO_NUM            CHAR(3),                     00042979
-        2 PIWA2_1B_1_FILL_DIST_SPLIT_FLAG     CHAR(1),                     00043079
-        2 PIWA2_1B_1_SCHL_DIST                CHAR(2),                     00043179
-        2 PIWA2_1B_1_DYN_BLK                  CHAR(3), /*ATOMIC POLYGON*/  00043279
-        2 PIWA2_1B_1_POLICE_PAT_BORO          CHAR(2),                     00043379
-        2 PIWA2_1B_1_FEATURE_TYPE             CHAR(1),                     00043479
-        2 PIWA2_1B_1_SEGMENT_TYPE             CHAR(1),                     00043579
-        2 PIWA2_1B_1_ALX                      CHAR(1),                     00043679
-        2 PIWA2_1B_1_COINCIDENT_SEG_CTR       CHAR(1),                     00043779
-        2 FILLER_1B_1_290                     CHAR(2),                     00043879
-        2 PIWA2_1B_1_CENS_TRCT_BORO           CHAR(1),                     00043979
-        2 PIWA2_1B_1_1990_CENS_TRCT           CHAR(6),                     00044079
-        2 PIWA2_1B_1_2010_CENSUS_TRACT        CHAR(6),                     00044179
-        2 PIWA2_1B_1_2010_CENSUS_BLOCK        CHAR(4),                     00044279
-        2 PIWA2_1B_1_2010_CENSUS_BLK_SF       CHAR(1), /*NOT IMPLELMENTED*/00044379
-        2 PIWA2_1B_1_2000_CENS_TRACT          CHAR(6),                     00044479
-        2 PIWA2_1B_1_2000_CENS_BLOCK          CHAR(4),                     00044579
-        2 PIWA2_1B_1_2000_CENS_BLK_S          CHAR(1),                     00044679
-        2 PIWA2_1B_1_NTA                      CHAR(4), /*NEIGHBORHOOD    */00044779
-                                                       /*TABULATION AREA */00044879
-        2 PIWA2_1B_1_SANIT_SNOW_PRIORITY      CHAR(1), /*SANITATION STRT*/ 00044979
-                                                       /*SNOW PRIORITY */  00045079
-        2 PIWA2_1B_1_SANIT_ORGANICS           CHAR(5), /*SANITATION */     00045179
-                                                       /*ORGANIC PICK UP*/ 00045279
-        2 PIWA2_1B_1_SANIT_BULK_PICK_UP       CHAR(5), /*SANIT BULK   */   00045379
-     /* 2 PIWA2_1B_1_SANIT_RESERVE *V16.4 **  CHAR(5),  *SANIT RESERVE*/   00045479
-        2 PIWA2_1B_1_HURRICANE_ZONE           CHAR(2), /*OEM HURRICANE */  00045579
-                                                       /*EVACUATION ZONE*/ 00045679
-        2 FILLER_1B_1_400                     CHAR(11),                    00045779
-        2 PIWA2_1B_1_UHNS                     CHAR(11),                    00045879
-        2 PIWA2_1B_1_REAL_B7SC                CHAR(8),                     00045979
-        2 PIWA2_1B_1_SEGMENT_ID               CHAR(7),                     00046079
-        2 PIWA2_1B_1_CURVE_FLAG               CHAR(1),                     00046179
-        2 PIWA2_1B_1_LGCS                     CHAR(8),                     00046279
-        2 PIWA2_1B_1_BOE_PTR                  CHAR(1),                     00046379
-        2 PIWA2_1B_1_AZIMUTH                  CHAR(3),                     00046479
-        2 PIWA2_1B_1_ORIENT                   CHAR(1),                     00046579
-        2 PIWA2_1B_1_X_LOW                    CHAR(7),                     00046679
-        2 PIWA2_1B_1_Y_LOW                    CHAR(7),                     00047027
+    /*  ADD NEW 2 BYTE SPEED LIMIT                        TLV 09/17 V17.4*/00000682
+    /*  ADD NEW 2 BYTE BIKE TRAFFIC DIRECTION             YNL 12/16 V17,1*/00000780
+    /*  REPLACED SANIT_RESERVED WITH SANIT_BULK_PICK_UP   YNL 10/16 V16.4*/00000882
+    /*  ADD NEW 2 BYTE BIKE LANE AND MAX STR WIDTH        YNL 10/16 V16.4*/00000982
+    /*                                                                   */00001076
+    /*********************************************************************/00001176
+    /***  THIS IS THE PL/1 STRUCTURE FOR GEOSUPPORT SYSTEM PLATFORM  ***/  00001200
+    /***  INDEPENDENT LONG WORK AREA 2 FOR FUNCTIONS: 1A , AND BL.   ***/  00001300
+    /***  THESE TWO FUNCTIONS SHARE A SINGLE LONG WORK AREA 2 LAYOUT.***/  00001400
+    /***  THIS IS ALSO THE PL/1 STRUCTURE FOR GEOSUPPORT SYSTEM      ***/  00001515
+    /***   PLATFORM INDEPENDENT EXTENDED WORK AREA 2 FOR             ***/  00001615
+    /***   FUNCTIONS 1E AND 1A, AND FOR FUNCTION 1B WHICH IS A       ***/  00001735
+    /***   COMBINATION OF EXTENDED 1/1E AND EXTENDED 1A)             ***/  00001826
+    /***                                                             ***/  00001900
+    /***                           LAST MODIFIED OCTOBER  2016       ***/  00002076
+    /***  COPY FILE - P2PL11AL.                          10/11/2000  ***/  00002126
+    /*******************************************************************/  00002226
+                                                                           00002326
+    DCL                                                                    00002426
+     1 P2PL11AL,                                                           00002526
+       2 PIWA2_1AL_ACCESS_KEY               CHAR(21),                      00002626
+       2 PIWA2_1AL_CONT_PARITY              CHAR(1), /*(OR DUP ADDR IND)*/ 00002726
+       2 PIWA2_1AL_LOW_HOUSENUM             CHAR(11), /* SORT FORMAT */    00002826
+       2 PIWA2_1AL_BBL,                                                    00002926
+         3 PIWA2_1AL_BBL_BORO               CHAR(1),                       00003026
+         3 PIWA2_1AL_BLOCK                  CHAR(5),                       00003126
+         3 PIWA2_1AL_LOT                    CHAR(4),                       00003226
+       2 PIWA2_1AL_LOT_VER                  CHAR(1),                       00003326
+       2 PIWA2_1AL_SCC                      CHAR(1),                       00003426
+       2 FILLER_100                         CHAR(1),                       00003526
+       2 PIWA2_1AL_GENERAL_LOT_INFO,                                       00003626
+         3 PIWA2_1AL_RPAD_BLDG_CLASS        CHAR(2),                       00003726
+         3 PIWA2_1AL_CORNER_CODE            CHAR(2),                       00003826
+         3 PIWA2_1AL_NUM_OF_STRUCTURES      CHAR(4),                       00003926
+         3 PIWA2_1AL_NUM_OF_BLOCKFACES      CHAR(2),                       00004026
+         3 PIWA2_1AL_INTERIOR_FLAG          CHAR(1),                       00004126
+         3 PIWA2_1AL_VACANT_FLAG            CHAR(1),                       00004226
+         3 PIWA2_1AL_IRREG_LOT_FLAG         CHAR(1),                       00004326
+       2 PIWA2_1AL_MARBLE_RIKERS_FLAG       CHAR(1),                       00004426
+       2 PIWA2_1AL_ADDR_LIST_OVFLOW_FLAG    CHAR(1),                       00004526
+       2 PIWA2_1AL_STROLL_KEY,                                             00004626
+         3 PIWA2_1AL_STROLL_BORO            CHAR(1),                       00004726
+         3 PIWA2_1AL_STROLL_5SC             CHAR(5),                       00004826
+         3 PIWA2_1AL_STROLL_SIDE_OF_STR     CHAR(1),  /* L, R */           00004926
+         3 PIWA2_1AL_STROLL_HI_HOUSENUM     CHAR(11), /* SORT FORMAT */    00005026
+         3 FILLER_200                       CHAR(1),                       00005126
+       2 FILLER_300                         CHAR(1),  /* FOR GSS USE*/     00005226
+       2 PIWA2_1AL_BIN                      CHAR(7),                       00005326
+       2 PIWA2_1AL_CONDO_FLAG               CHAR(1),                       00005426
+       2 FILLER_400                         CHAR(1),                       00005526
+       2 PIWA2_1AL_RPAD_CONDO_ID_NUM        CHAR(4),                       00005626
+       2 PIWA2_1AL_CONDO_UNIT_ID_NUM        CHAR(7),                       00005726
+       2 PIWA2_1AL_CONDO_BILL_BBL           CHAR(10),                      00005826
+       2 PIWA2_1AL_CONDO_BILL_BBL_VER       CHAR(1),                       00005926
+       2 PIWA2_1AL_CONDO_BILL_BBL_SCC       CHAR(1),                       00006026
+       2 PIWA2_1AL_CONDO_LOW_BBL            CHAR(10),                      00006126
+       2 PIWA2_1AL_CONDO_LOW_BBL_VER        CHAR(1),                       00006226
+       2 PIWA2_1AL_CONDO_HIGH_BBL           CHAR(10),                      00006326
+       2 PIWA2_1AL_CONDO_HIGH_BBL_VER       CHAR(1),                       00006426
+       2 FILLER_500                         CHAR(15),                      00006526
+       2 PIWA2_1AL_COOP_NUM                 CHAR(4),                       00006626
+       2 PIWA2_1AL_SANBORN,                                                00006726
+         3 PIWA2_1AL_SANBORN_BORO           CHAR(1),                       00006826
+         3 PIWA2_1AL_SANBORN_VOL            CHAR(3),                       00006926
+         3 PIWA2_1AL_SANBORN_PAGE           CHAR(4),                       00007026
+       2 PIWA2_1AL_COMMERC_DIST             CHAR(5),                       00007126
+       2 PIWA2_1AL_DOF_MAP_BORO             CHAR(1),                       00007226
+       2 PIWA2_1AL_DOF_MAP_SECVOL           CHAR(4),                       00007326
+       2 PIWA2_1AL_DOF_MAP_PAGE             CHAR(4),                       00007426
+       2 FILLER_600                         CHAR(3),                       00007565
+       2 PIWA2_1AL_LATITUDE                 CHAR(9),                       00007665
+       2 PIWA2_1AL_LONGITUDE                CHAR(11),                      00007765
+       2 PIWA2_1AL_X_COORD                  CHAR(07),                      00007865
+       2 PIWA2_1AL_Y_COORD                  CHAR(07),                      00007965
+       2 PIWA2_1AL_BID                      CHAR(06),                      00008065
+       2 PIWA2_1AL_TPAD_BIN_ST              CHAR(01), /*CURRENT STATUS*/   00008165
+       2 PIWA2_1AL_TPAD_NEW_BIN             CHAR(07), /*NEW BIN       */   00008265
+       2 PIWA2_1AL_TPAD_NEW_BIN_ST          CHAR(01), /*NEW BIN STATUS*/   00008365
+       2 PIWA2_1AL_TPAD_CONFLICT            CHAR(01), /*CONFLICT FLAG */   00008465
+       2 PIWA2_1AL_DCP_ZONE_MAP             CHAR(03), /*DCP ZONING MAP*/   00008583
+       2 FILLER_650                         CHAR(06),                      00008683
+       2 FILLER_700                         CHAR(8),  /*LGC -GSS USE*/     00008783
+       2 PIWA2_1AL_NUM_OF_BINS              CHAR(4),                       00008883
+       2 PIWA2_1AL_BINS(2500)               CHAR(7);                       00008983
+                                                                           00009083
+    DCL 1 PIWA2_1AL_TPAD_BINLIST BASED(ADDR(PIWA2_1AL_BINS)),              00009183
+          2 PIWA2_1AL_TPAD_BINS(2187),                                     00009283
+            3 PIWA2_1AL_TPAD_BINS_BIN   CHAR (7),                          00009383
+            3 PIWA2_1AL_TPAD_BINS_STAT  CHAR (1),                          00009483
+          2 PIWA2_1AL_TPAD_FILL         CHAR (4);                          00009583
+                                                                           00009683
+    DCL  PIWA2_1AL_SANBORN_BVOLPAGE         CHAR(8)                        00009783
+            BASED(ADDR(PIWA2_1AL_SANBORN));                                00009883
+    DCL  PIWA2_1AL_STROLLKEY                CHAR(19)                       00009983
+            BASED(ADDR(PIWA2_1AL_STROLL_KEY));                             00010083
+                                                                           00010183
+                                                                           00010283
+    DCL 1 PIWA2_1EX BASED(ADDR(P2PL11AL)),                                 00010383
+                                                                           00010483
+     /*******************************************************************/ 00010583
+     /***              WORK AREA 2 FOR FUNCTION 1/1E EXTENDED         ***/ 00010683
+     /***                                                             ***/ 00010783
+     /*******************************************************************/ 00010883
+     /*******************************************************************/ 00010983
+                                                                           00011083
+     /*******************************************************************/ 00011183
+     /***                                                             ***/ 00011283
+     /*** THE FOLLOWING FIELDS ARE FROM FUNCTION 1/1E                 ***/ 00011383
+     /*******************************************************************/ 00011483
+        2 PIWA2_1EX_ACCESS_KEY            CHAR(21),                        00011583
+        2 PIWA2_1EX_CONT_PARITY           CHAR(1),/*(OR DUP ADDR IND)*/    00011683
+        2 PIWA2_1EX_LOW_HOUSENUM          CHAR(11),/* SORT FORMAT */       00011783
+        2 PIWA2_1EX_HI_HOUSENUM           CHAR(11),/* SORT FORMAT */       00011883
+        2 PIWA2_1EX_DCP_PREF_LGC          CHAR(2),                         00011983
+        2 PIWA2_1EX_NUM_X_ST_LOW_END      CHAR(1),                         00012083
+        2 PIWA2_1EX_LOW_B5SC(5)           CHAR(6),                         00012183
+        2 PIWA2_1EX_NUM_X_ST_HI_END       CHAR(1),                         00012283
+        2 PIWA2_1EX_HI_B5SC(5)            CHAR(6),                         00012383
+        2 PIWA2_1EX_LIONKEY,                                               00012483
+          3 PIWA2_1EX_LION_BORO           CHAR(1),                         00012583
+          3 PIWA2_1EX_LION_FACECODE       CHAR(4),                         00012683
+          3 PIWA2_1EX_LION_SEQ            CHAR(5),                         00012783
+        2 PIWA2_1EX_SPECIAL_ADDR_FLAG     CHAR(1),                         00012883
+        2 PIWA2_1EX_SIDE_OF_STR           CHAR(1),                         00012983
+        2 PIWA2_1EX_SEG_LEN               CHAR(5),                         00013083
+        2 PIWA2_1EX_XCOORD                CHAR(7),                         00013183
+        2 PIWA2_1EX_YCOORD                CHAR(7),                         00013283
+        2 FILLER_1EX_100                  CHAR(7), /* FOR ZCOORD */        00013383
+        2 FILLER_1EX_200                  CHAR(1), /* FOR GSS USE*/        00013483
+        2 PIWA2_1EX_MARBLE_RIKERS_FLAG    CHAR(1),                         00013583
+        2 PIWA2_1EX_DOT_SLA               CHAR(1),                         00013683
+        2 PIWA2_1EX_COM_DIST,                                              00013783
+          3 PIWA2_1EX_COM_DIST_BORO       CHAR(1),                         00013883
+          3 PIWA2_1EX_COM_DIST_NUM        CHAR(2),                         00013983
+        2 PIWA2_1EX_ZIP                   CHAR(5),                         00014083
+                                                                           00014183
+        2 PIWA2_1EX_ELECT_DIST            CHAR(3), /*****************/     00014283
+        2 PIWA2_1EX_ASSEM_DIST            CHAR(2), /* FUNCTION 1E   */     00014383
+        2 PIWA2_1EX_SPLIT_ED_FLAG         CHAR(1), /* FIELDS        */     00014483
+        2 PIWA2_1EX_CONG_DIST             CHAR(2), /*               */     00014583
+        2 PIWA2_1EX_SENATE_DIST           CHAR(2), /*               */     00014683
+        2 PIWA2_1EX_COURT_DIST            CHAR(2), /*               */     00014783
+        2 PIWA2_1EX_COUNCIL_DIST          CHAR(2), /*****************/     00014883
+                                                                           00014983
+        2 PIWA2_1EX_HEALTH_CENTER_DIST    CHAR(2), /*HEALTH CENTER*/       00015083
+        2 PIWA2_1EX_HEALTH_AREA           CHAR(4), /*HEALTH AREA*/         00015183
+        2 PIWA2_1EX_SANI_DIST,                                             00015283
+          3 PIWA2_1EX_SANI_DIST_BORO      CHAR(1),                         00015383
+          3 PIWA2_1EX_SANI_DIST_NUM       CHAR(2),                         00015483
+        2 PIWA2_1EX_SANI_SUBSEC           CHAR(2),                         00015583
+        2 PIWA2_1EX_SANI_REG              CHAR(5),                         00015683
+        2 PIWA2_1EX_SANI_REC              CHAR(3),                         00015783
+        2 PIWA2_1EX_POLICE_DIST,                                           00015883
+          3  PIWA2_1EX_POL_PAT_BORO_CMD   CHAR(1),                         00015983
+          3  PIWA2_1EX_POL_PRECINCT       CHAR(3),                         00016083
+        2 PIWA2_1EX_FIRE_DIV              CHAR(2),                         00016183
+        2 PIWA2_1EX_FIRE_BAT              CHAR(2),                         00016283
+        2 PIWA2_1EX_FIRE_CO,                                               00016383
+          3 PIWA2_1EX_FIRE_CO_TYPE        CHAR(1),                         00016483
+          3 PIWA2_1EX_FIRE_CO_NUM         CHAR(3),                         00016583
+        2 PIWA2_1EX_FILL_DIST_SPLT_FLAG   CHAR(1),                         00016683
+        2 PIWA2_1EX_SCHL_DIST             CHAR(2),                         00016783
+        2 PIWA2_1EX_DYN_BLK               CHAR(3), /*ATOMIC POLYGON*/      00016883
+        2 PIWA2_1EX_POLICE_PAT_BORO       CHAR(2),                         00016983
+        2 PIWA2_1EX_FEATURE_TYPE          CHAR(1),                         00017083
+        2 PIWA2_1EX_SEGMENT_TYPE          CHAR(1),                         00017183
+        2 PIWA2_1EX_ALX                   CHAR(1),                         00017283
+        2 PIWA2_1EX_COINCIDENT_SEG_CTR    CHAR(1),                         00017383
+        2 FILLER_1EX_290                  CHAR(2),                         00017483
+        2 PIWA2_1EX_CENS_TRCT_BORO        CHAR(1),  /*USED FOR GRIDGEN*/   00017583
+        2 PIWA2_1EX_1990_CENS_TRCT        CHAR(6),                         00017683
+        2 PIWA2_1EX_2010_CENSUS_TRACT     CHAR(6),                         00017783
+        2 PIWA2_1EX_2010_CENSUS_BLOCK     CHAR(4),                         00017883
+        2 PIWA2_1EX_2010_CENSUS_BLK_SF    CHAR(1), /*NOT IMPLEMENTED*/     00017983
+        2 PIWA2_1EX_2000_CENS_TRACT       CHAR(6),                         00018083
+        2 PIWA2_1EX_2000_CENS_BLOCK       CHAR(4),                         00018183
+        2 PIWA2_1EX_2000_CENS_BLK_S       CHAR(1),                         00018283
+        2 PIWA2_1EX_NTA                   CHAR(4), /*NEIGHBORHOOD     */   00018383
+                                                   /*TABULATION AREA  */   00018483
+        2 PIWA2_1EX_SANIT_SNOW_PRIORITY   CHAR(1), /*SANITATION STRT  */   00018583
+                                                   /*SNOW PRIORITY    */   00018683
+        2 PIWA2_1EX_SANIT_ORGANICS        CHAR(5), /*SANITATION       */   00018783
+                                                   /*ORGANIC PICK UP  */   00018883
+        2 PIWA2_1EX_SANIT_BULK_PICK_UP    CHAR(5), /*SANITATION BULK  */   00018983
+     /* 2 PIWA2_1EX_SANIT_RESERVED *V16.4*CHAR(5),  *SANITATION RESERVE*/  00019083
+        2 PIWA2_1EX_HURRICANE_ZONE        CHAR(2), /*OEM HURRICANE     */  00019183
+                                                   /*EVACUATION ZONE   */  00019283
+        2 FILLER_1EX_400                  CHAR(11),                        00019383
+        2 PIWA2_1EX_UHNS                  CHAR(11),                        00019483
+        2 PIWA2_1EX_REAL_B7SC             CHAR(8),                         00019583
+        2 PIWA2_1EX_SEGMENT_ID            CHAR(7),                         00019683
+        2 PIWA2_1EX_CURVE_FLAG            CHAR(1),                         00019783
+        2 PIWA2_1EX_LGCS                  CHAR(8),                         00019883
+        2 PIWA2_1EX_BOE_PTR               CHAR(1),                         00019983
+        2 PIWA2_1EX_AZIMUTH               CHAR(3),                         00020083
+        2 PIWA2_1EX_ORIENT                CHAR(1),                         00020183
+        2 PIWA2_1EX_X_LOW                 CHAR(7),                         00020283
+        2 PIWA2_1EX_Y_LOW                 CHAR(7),                         00020383
+        2 PIWA2_1EX_Z_LOW                 CHAR(7), /*NOT IMPLEMENTED*/     00020483
+        2 PIWA2_1EX_X_HI                  CHAR(7),                         00020583
+        2 PIWA2_1EX_Y_HI                  CHAR(7),                         00020683
+        2 PIWA2_1EX_Z_HI                  CHAR(7), /*NOT IMPLEMENTED*/     00020783
+        /* SPATIAL COORDINATES OF CENTER OF CURVATURE                 */   00020883
+        2 PIWA2_1EX_X_CC                  CHAR(7),                         00020983
+        2 PIWA2_1EX_Y_CC                  CHAR(7),                         00021083
+        2 PIWA2_1EX_Z_CC                  CHAR(7), /*NOT IMPLEMENTED*/     00021183
+        2 PIWA2_1EX_RADIUS                CHAR(7),                         00021283
+        2 PIWA2_1EX_SECANT                CHAR(1),                         00021383
+        2 PIWA2_1EX_ANGLE_FROM            CHAR(5),                         00021483
+        2 PIWA2_1EX_ANGLE_TO              CHAR(5),                         00021583
+        2 PIWA2_1EX_NODE_FROM             CHAR(7),                         00021683
+        2 PIWA2_1EX_NODE_TO               CHAR(7),                         00021783
+        2 PIWA2_1EX_VANITY_LION           CHAR(10),                        00021883
+        2 PIWA2_1EX_SOS                   CHAR(1),                         00021983
+        2 PIWA2_1EX_SPLIT_LOHSN           CHAR(11),                        00022083
+        2 PIWA2_1EX_TD                    CHAR(1),                         00022183
+        2 PIWA2_1EX_TR                    CHAR(10),                        00022283
+        2 PIWA2_1EX_CURVE_FRACTION        CHAR(3),                         00022383
+        2 PIWA2_1EX_ROADWAY_TYPE          CHAR(2),                         00022483
+        2 PIWA2_1EX_PHYSICAL_ID           CHAR(7),                         00022583
+        2 PIWA2_1EX_GENERIC_ID            CHAR(7),                         00022683
+        2 PIWA2_1EX_INTP_ID               CHAR(7),  /*INTERNAL USE*/       00022783
+        2 PIWA2_1EX_INTF_ID               CHAR(7),  /*INTERNAL USE*/       00022883
+        2 PIWA2_1EX_BIKE_LANE_2           CHAR(2),                         00022983
+        2 PIWA2_1EX_BIKE_TRAFFIC_DIR      CHAR(2),                         00023083
+        2 PIWA2_1EX_FILL450               CHAR(3),                         00023183
+     /* 2 PIWA2_1EX_FILL450  * V17.1 *    CHAR(5),  **/                    00023283
+     /* 2 PIWA2_1EX_FILL450  * V16.4 *    CHAR(7),  **/                    00023383
+     /* 2 PIWA2_1EX_BLOCKFACE_ID * V16.1* CHAR(7),  **/                    00023483
+        2 PIWA2_1EX_STREET_STATUS         CHAR(1),                         00023583
+        2 PIWA2_1EX_STREET_WIDTH          CHAR(3),                         00023683
+        2 PIWA2_1EX_STREET_WIDTH_IRR      CHAR(1),                         00023783
+        2 PIWA2_1EX_BIKE_LANE             CHAR(1),                         00023883
+        2 PIWA2_1EX_FED_CLASS_CODE        CHAR(2),                         00023983
+        2 PIWA2_1EX_ROW_TYPE              CHAR(1),                         00024083
+        2 PIWA2_1EX_LGC_LIST_2            CHAR(10),                        00024183
+        2 PIWA2_1EX_LEGACY_SEG_ID         CHAR(7),                         00024283
+        2 PIWA2_1EX_LGC_LIST_FROM_1       CHAR(10),                        00024383
+        2 PIWA2_1EX_LGC_LIST_TO_1         CHAR(10),                        00024483
+        2 PIWA2_1EX_LGC_LIST_FROM_2       CHAR(10),                        00024583
+        2 PIWA2_1EX_LGC_LIST_TO_2         CHAR(10),                        00024683
+        2 PIWA2_1EX_NOCROSS_FLG           CHAR(1),                         00024783
+        2 PIWA2_1EX_IND_SEG_LEN           CHAR(5),                         00024883
+        2 PIWA2_1EX_NTA_NAME              CHAR(75),                        00024983
+        2 PIWA2_1EX_USPS_CITY_NAME        CHAR(25),                        00025083
+        2 PIWA2_1EX_LATITUDE              CHAR(9),                         00025183
+        2 PIWA2_1EX_LONGITUDE             CHAR(11),                        00025283
+        2 PIWA2_1EX_SEG_FROM_NODE         CHAR(7),                         00025383
+        2 PIWA2_1EX_SEG_TO_NODE           CHAR(7),                         00025483
+        2 PIWA2_1EX_SEG_FROM_XYZ          CHAR(21),                        00025583
+        2 PIWA2_1EX_SEG_TO_XYZ            CHAR(21),                        00025683
+        2 PIWA2_1EX_BLOCKFACE_ID          CHAR(10),                        00025783
+        2 PIWA2_1EX_NBR_TRAVEL_LANES      CHAR(2),                         00025883
+        2 PIWA2_1EX_NBR_PARK_LANES        CHAR(2),                         00025983
+        2 PIWA2_1EX_NBR_TOTAL_LANES       CHAR(2),                         00026083
+        2 PIWA2_1EX_STR_WIDTH_MAX         CHAR(3),                         00026183
+        2 PIWA2_1EX_SPEED_LIMIT           CHAR(2),                         00026283
+        2 PIWA2_1EX_FILL500               CHAR(250),                       00026383
+     /* 2 PIWA2_1EX_FILL500 ** V17.4 **   CHAR(252),**/                    00026483
+     /* 2 PIWA2_1EX_FILL500 ** V16.4 **   CHAR(255) **/                    00026583
+     /* 2 PIWA2_1EX_FILL500 ** V16.1 **   CHAR(271) **/                    00026683
+     /* 2 PIWA2_1EX_FILL500 ** V15.3 **   CHAR(327) **/                    00026783
+     /*******************************************************************/ 00026883
+     /***                                                             ***/ 00026983
+     /*** THE FOLLOWING FIELDS ARE AN ADDITION TO 1E                  ***/ 00027083
+     /*******************************************************************/ 00027183
+        2 PIWA2_1EX_REASON_CODE           CHAR(1),                         00027283
+        2 PIWA2_1EX_REASON_CODE_QUAL      CHAR(1),                         00027383
+        2 PIWA2_1EX_WARN_CODE             CHAR(2),                         00027483
+        2 PIWA2_1EX_RETURN_CODE           CHAR(2),                         00027583
+        2 PIWA2_1EX_NUM_X_STS_LO_END      CHAR(1),                         00027683
+        2 PIWA2_1EX_LO_B7SC(5)            CHAR(8),                         00027783
+        2 PIWA2_1EX_NUM_X_STS_HI_END      CHAR(1),                         00027883
+        2 PIWA2_1EX_HI_B7SC(5)            CHAR(8),                         00027983
+        2 PIWA2_1EX_LO_ST_NAME(5)         CHAR(32),                        00028083
+        2 PIWA2_1EX_HI_ST_NAME(5)         CHAR(32),                        00028183
+        2 PIWA2_1EX_BOE_B7SC              CHAR(8),                         00028283
+        2 PIWA2_1EX_BOE_ST_NAME           CHAR(32),                        00028383
+        2 PIWA2_1EX_FILL600               CHAR(52);                        00028483
+                                                                           00028583
+                                                                           00028683
+                                                                           00028783
+    DCL 1 PIWA2_FN1AX BASED(ADDR(P2PL11AL)),                               00028883
+     /*******************************************************************/ 00028983
+     /***              WORK AREA 2 FOR FUNCTION 1A EXTENDED           ***/ 00029083
+     /***                                                             ***/ 00029183
+     /*******************************************************************/ 00029283
+                                                                           00029383
+                                                                           00029483
+       2 PIWA2_1AX_ACCESS_KEY               CHAR(21),                      00029583
+       2 PIWA2_1AX_CONT_PARITY              CHAR(1), /*(OR DUP ADDR IND)*/ 00029683
+       2 PIWA2_1AX_LOW_HOUSENUM             CHAR(11), /* SORT FORMAT */    00029783
+       2 PIWA2_1AX_BBL,                                                    00029883
+         3 PIWA2_1AX_BBL_BORO               CHAR(1),                       00029983
+         3 PIWA2_1AX_BLOCK                  CHAR(5),                       00030083
+         3 PIWA2_1AX_LOT                    CHAR(4),                       00030183
+       2 PIWA2_1AX_LOT_VER                  CHAR(1),                       00030283
+       2 PIWA2_1AX_SCC                      CHAR(1),                       00030383
+       2 FILLER_1AX1                        CHAR(1),                       00030483
+       2 PIWA2_1AX_GENERAL_LOT_INFO,                                       00030583
+         3 PIWA2_1AX_RPAD_BLDG_CLASS        CHAR(2),                       00030683
+         3 PIWA2_1AX_CORNER_CODE            CHAR(2),                       00030783
+         3 PIWA2_1AX_NUM_OF_STRUCTURES      CHAR(4),                       00030883
+         3 PIWA2_1AX_NUM_OF_BLOCKFACES      CHAR(2),                       00030983
+         3 PIWA2_1AX_INTERIOR_FLAG          CHAR(1),                       00031083
+         3 PIWA2_1AX_VACANT_FLAG            CHAR(1),                       00031183
+         3 PIWA2_1AX_IRREG_LOT_FLAG         CHAR(1),                       00031283
+       2 PIWA2_1AX_MARBLE_RIKERS_FLAG       CHAR(1),                       00031383
+       2 PIWA2_1AX_ADDR_LIST_OVFLOW_FLAG    CHAR(1),                       00031483
+       2 PIWA2_1AX_STROLL_KEY,                                             00031583
+         3 PIWA2_1AX_STROLL_BORO            CHAR(1),                       00031683
+         3 PIWA2_1AX_STROLL_5SC             CHAR(5),                       00031783
+         3 PIWA2_1AX_STROLL_SIDE_OF_STR     CHAR(1),    /* L, R */         00031883
+         3 PIWA2_1AX_STROLL_HI_HOUSENUM     CHAR(11), /* SORT FORMAT */    00031983
+         3 FILLER_1AX2                      CHAR(1),                       00032083
+       2 FILLER_1AX3                        CHAR(1),  /* FOR GSS USE*/     00032183
+       2 PIWA2_1AX_BIN                      CHAR(7),                       00032283
+       2 PIWA2_1AX_CONDO_FLAG               CHAR(1),                       00032383
+       2 FILLER_1AX4                        CHAR(1),                       00032483
+       2 PIWA2_1AX_RPAD_CONDO_ID_NUM        CHAR(4),                       00032583
+       2 PIWA2_1AX_CONDO_UNIT_ID_NUM        CHAR(7),                       00032683
+       2 PIWA2_1AX_CONDO_BILL_BBL           CHAR(10),                      00032783
+       2 PIWA2_1AX_CONDO_BILL_BBL_VER       CHAR(1),                       00032883
+       2 PIWA2_1AX_CONDO_BILL_BBL_SCC       CHAR(1),                       00032983
+       2 PIWA2_1AX_CONDO_LOW_BBL            CHAR(10),                      00033083
+       2 PIWA2_1AX_CONDO_LOW_BBL_VER        CHAR(1),                       00033183
+       2 PIWA2_1AX_CONDO_HIGH_BBL           CHAR(10),                      00033283
+       2 PIWA2_1AX_CONDO_HIGH_BBL_VER       CHAR(1),                       00033383
+       2 FILLER_1AX5                        CHAR(15),                      00033483
+       2 PIWA2_1AX_COOP_NUM                 CHAR(4),                       00033583
+       2 PIWA2_1AX_SANBORN,                                                00033683
+         3 PIWA2_1AX_SANBORN_BORO           CHAR(1),                       00033783
+         3 PIWA2_1AX_SANBORN_VOL            CHAR(3),                       00033883
+         3 PIWA2_1AX_SANBORN_PAGE           CHAR(4),                       00033983
+       2 PIWA2_1AX_COMMERC_DIST             CHAR(5),                       00034083
+       2 PIWA2_1AX_DOF_MAP_BORO             CHAR(1),                       00034183
+       2 PIWA2_1AX_DOF_MAP_SECVOL           CHAR(4),                       00034283
+       2 PIWA2_1AX_DOF_MAP_PAGE             CHAR(4),                       00034383
+       2 PIWA2_1AX_RESERVED                 CHAR(03),                      00034483
+       2 PIWA2_1AX_LATITUDE                 CHAR(09),                      00034583
+       2 PIWA2_1AX_LONGITUDE                CHAR(11),                      00034683
+       2 PIWA2_1AX_X_COORD                  CHAR(07),                      00034783
+       2 PIWA2_1AX_Y_COORD                  CHAR(07),                      00034883
+       2 PIWA2_1AX_BID                      CHAR(06),                      00034983
+       2 PIWA2_1AX_TPAD_BIN_ST              CHAR(01),  /*CURRENT STATUS*/  00035083
+       2 PIWA2_1AX_TPAD_NEW_BIN             CHAR(07),  /*NEW BIN       */  00035183
+       2 PIWA2_1AX_TPAD_NEW_BIN_ST          CHAR(01),  /*NEW BIN STATUS*/  00035283
+       2 PIWA2_1AX_TPAD_CONFLICT            CHAR(01),  /*CONFLICT FLAG */  00035383
+       2 PIWA2_1AX_DCP_ZONE_MAP             CHAR(03),  /*DCP ZONING MAP*/  00035483
+       2 FILLER_1AX7                        CHAR(06),                      00035583
+       2 FILLER_1AX8                        CHAR(8),  /* LGC - GSS USE*/   00035683
+       2 PIWA2_1AX_REASON_CODE              CHAR(01),                      00035783
+       2 PIWA2_1AX_REASON_CODE_QUAL         CHAR(01),                      00035883
+       2 PIWA2_1AX_WARN_CODE                CHAR(02),                      00035983
+       2 PIWA2_1AX_RETURN_CODE              CHAR(02),                      00036083
+       2 FILLER_1AX9                        CHAR(108),                     00036183
+       2 PIWA2_1AX_NUM_OF_ADDR              CHAR(4),                       00036283
+       2 PIWA2_1AX_ADDR_LIST(21),                                          00036383
+         3 PIWA2_1AX_LIST_LOW_HOUSENUM      CHAR(16), /*DISPLAY FORMAT*/   00036483
+         3 PIWA2_1AX_LIST_HI_HOUSENUM       CHAR(16), /*DISPLAY FORMAT*/   00036583
+         3 PIWA2_1AX_LIST_BORO              CHAR(1),                       00036683
+         3 PIWA2_1AX_LIST_5SC               CHAR(5),                       00036783
+         3 PIWA2_1AX_LIST_LGC               CHAR(2),                       00036883
+         3 PIWA2_1AX_LIST_BIN               CHAR(7),                       00036983
+         3 PIWA2_1AX_LIST_SIDE_OF_STR       CHAR(1),  /* L, R */           00037083
+         3 PIWA2_1AX_ADDR_TYPE              CHAR(1),  /*               */  00037183
+                                                      /* BLANK = NORMAL*/  00037283
+         3 PIWA2_1AX_TPAD_STATUS            CHAR(1),                       00037383
+         3 PIWA2_1AX_ST_NAME                CHAR(32),                      00037483
+         3 FILLER_1AX10                     CHAR(34);                      00037583
+                                                                           00037683
+                                                                           00037783
+    DCL 1 PIWA2_FN1B BASED(ADDR(P2PL11AL)),                                00037883
+                                                                           00037983
+     /*******************************************************************/ 00038083
+     /***              WORK AREA 2 FOR FUNCTION 1B                    ***/ 00038183
+     /***                                                             ***/ 00038283
+     /*******************************************************************/ 00038383
+        2 PIWA2_1B_1_ACCESS_KEY               CHAR(21),                    00038483
+        2 PIWA2_1B_1_CONT_PARITY              CHAR(1),  /*(DUP ADDR IND)*/ 00038583
+        2 PIWA2_1B_1_LOW_HOUSENUM             CHAR(11), /* SORT FORMAT */  00038683
+        2 PIWA2_1B_1_HI_HOUSENUM              CHAR(11), /* SORT FORMAT */  00038783
+        2 PIWA2_1B_1_PREF_LGC                 CHAR(2),                     00038883
+        2 PIWA2_1B_1_NUM_X_ST_LOW_END         CHAR(1),                     00038983
+        2 PIWA2_1B_1_LOW_B5SC(5)              CHAR(6),                     00039083
+        2 PIWA2_1B_1_NUM_X_ST_HI_END          CHAR(1),                     00039183
+        2 PIWA2_1B_1_HI_B5SC(5)               CHAR(6),                     00039283
+        2 PIWA2_1B_1_LIONKEY,                                              00039383
+          3 PIWA2_1B_1_LION_BORO              CHAR(1),                     00039483
+          3 PIWA2_1B_1_LION_FACECODE          CHAR(4),                     00039583
+          3 PIWA2_1B_1_LION_SEQ               CHAR(5),                     00039683
+        2 PIWA2_1B_1_SPECIAL_ADDR_FLAG        CHAR(1),                     00039783
+        2 PIWA2_1B_1_SIDE_OF_STR              CHAR(1),                     00039883
+        2 PIWA2_1B_1_SEG_LEN                  CHAR(5),                     00039983
+        2 PIWA2_1B_1_XCOORD                   CHAR(7),                     00040083
+        2 PIWA2_1B_1_YCOORD                   CHAR(7),                     00040183
+        2 FILLER_1B_1_100                     CHAR(7), /* FOR ZCOORD */    00040283
+        2 FILLER_1B_1_200                     CHAR(1), /* FOR GSS USE*/    00040383
+        2 PIWA2_1B_1_MARBLE_RIKERS_FLAG       CHAR(1),                     00040483
+        2 PIWA2_1B_1_DOT_SLA                  CHAR(1),                     00040583
+        2 PIWA2_1B_1_COM_DIST,                                             00040683
+          3 PIWA2_1B_1_COM_DIST_BORO          CHAR(1),                     00040783
+          3 PIWA2_1B_1_COM_DIST_NUM           CHAR(2),                     00040883
+        2 PIWA2_1B_1_ZIP                      CHAR(5),                     00040983
+                                                                           00041083
+        2 PIWA2_1B_1_ELECT_DIST               CHAR(3), /*****************/ 00041183
+        2 PIWA2_1B_1_ASSEM_DIST               CHAR(2), /* FUNCTION 1E   */ 00041283
+        2 PIWA2_1B_1_SPLIT_ED_FLAG            CHAR(1), /* FIELDS        */ 00041383
+        2 PIWA2_1B_1_CONG_DIST                CHAR(2), /*               */ 00041483
+        2 PIWA2_1B_1_SENATE_DIST              CHAR(2), /*               */ 00041583
+        2 PIWA2_1B_1_COURT_DIST               CHAR(2), /*               */ 00041683
+        2 PIWA2_1B_1_COUNCIL_DIST             CHAR(2), /*****************/ 00041783
+                                                                           00041883
+        2 PIWA2_1B_1_HEALTH_CENTER_DIST       CHAR(2),                     00041983
+        2 PIWA2_1B_1_HEALTH_AREA              CHAR(4),                     00042083
+        2 PIWA2_1B_1_SANI_DIST,                                            00042183
+          3 PIWA2_1B_1_SANI_DIST_BORO         CHAR(1),                     00042283
+          3 PIWA2_1B_1_SANI_DIST_NUM          CHAR(2),                     00042383
+        2 PIWA2_1B_1_SANI_SUBSEC              CHAR(2),                     00042483
+        2 PIWA2_1B_1_SANI_REG                 CHAR(5),                     00042583
+        2 PIWA2_1B_1_SANI_REC                 CHAR(3),                     00042683
+        2 PIWA2_1B_1_POLICE_DIST,                                          00042783
+          3  PIWA2_1B_1_POL_PAT_BORO_CMD      CHAR(1),                     00042883
+          3  PIWA2_1B_1_POL_PRECINCT          CHAR(3),                     00042983
+        2 PIWA2_1B_1_FIRE_DIV                 CHAR(2),                     00043083
+        2 PIWA2_1B_1_FIRE_BAT                 CHAR(2),                     00043183
+        2 PIWA2_1B_1_FIRE_CO,                                              00043283
+          3 PIWA2_1B_1_FIRE_CO_TYPE           CHAR(1),                     00043383
+          3 PIWA2_1B_1_FIRE_CO_NUM            CHAR(3),                     00043483
+        2 PIWA2_1B_1_FILL_DIST_SPLIT_FLAG     CHAR(1),                     00043583
+        2 PIWA2_1B_1_SCHL_DIST                CHAR(2),                     00043683
+        2 PIWA2_1B_1_DYN_BLK                  CHAR(3), /*ATOMIC POLYGON*/  00043783
+        2 PIWA2_1B_1_POLICE_PAT_BORO          CHAR(2),                     00043883
+        2 PIWA2_1B_1_FEATURE_TYPE             CHAR(1),                     00043983
+        2 PIWA2_1B_1_SEGMENT_TYPE             CHAR(1),                     00044083
+        2 PIWA2_1B_1_ALX                      CHAR(1),                     00044183
+        2 PIWA2_1B_1_COINCIDENT_SEG_CTR       CHAR(1),                     00044283
+        2 FILLER_1B_1_290                     CHAR(2),                     00044383
+        2 PIWA2_1B_1_CENS_TRCT_BORO           CHAR(1),                     00044483
+        2 PIWA2_1B_1_1990_CENS_TRCT           CHAR(6),                     00044583
+        2 PIWA2_1B_1_2010_CENSUS_TRACT        CHAR(6),                     00044683
+        2 PIWA2_1B_1_2010_CENSUS_BLOCK        CHAR(4),                     00044783
+        2 PIWA2_1B_1_2010_CENSUS_BLK_SF       CHAR(1), /*NOT IMPLELMENTED*/00044883
+        2 PIWA2_1B_1_2000_CENS_TRACT          CHAR(6),                     00044983
+        2 PIWA2_1B_1_2000_CENS_BLOCK          CHAR(4),                     00045083
+        2 PIWA2_1B_1_2000_CENS_BLK_S          CHAR(1),                     00045183
+        2 PIWA2_1B_1_NTA                      CHAR(4), /*NEIGHBORHOOD    */00045283
+                                                       /*TABULATION AREA */00045383
+        2 PIWA2_1B_1_SANIT_SNOW_PRIORITY      CHAR(1), /*SANITATION STRT*/ 00045483
+                                                       /*SNOW PRIORITY */  00045583
+        2 PIWA2_1B_1_SANIT_ORGANICS           CHAR(5), /*SANITATION */     00045683
+                                                       /*ORGANIC PICK UP*/ 00045783
+        2 PIWA2_1B_1_SANIT_BULK_PICK_UP       CHAR(5), /*SANIT BULK   */   00045883
+     /* 2 PIWA2_1B_1_SANIT_RESERVE *V16.4 **  CHAR(5),  *SANIT RESERVE*/   00045983
+        2 PIWA2_1B_1_HURRICANE_ZONE           CHAR(2), /*OEM HURRICANE */  00046083
+                                                       /*EVACUATION ZONE*/ 00046183
+        2 FILLER_1B_1_400                     CHAR(11),                    00046283
+        2 PIWA2_1B_1_UHNS                     CHAR(11),                    00046383
+        2 PIWA2_1B_1_REAL_B7SC                CHAR(8),                     00046483
+        2 PIWA2_1B_1_SEGMENT_ID               CHAR(7),                     00046583
+        2 PIWA2_1B_1_CURVE_FLAG               CHAR(1),                     00046683
+        2 PIWA2_1B_1_LGCS                     CHAR(8),                     00046783
+        2 PIWA2_1B_1_BOE_PTR                  CHAR(1),                     00046883
+        2 PIWA2_1B_1_AZIMUTH                  CHAR(3),                     00046983
+        2 PIWA2_1B_1_ORIENT                   CHAR(1),                     00047083
+        2 PIWA2_1B_1_X_LOW                    CHAR(7),                     00047183
+        2 PIWA2_1B_1_Y_LOW                    CHAR(7),                     00047283
         2 PIWA2_1B_1_Z_LOW                    CHAR(7), /*NOT IMPLEMENTED*/ 00048027
         2 PIWA2_1B_1_X_HI                     CHAR(7),                     00049027
         2 PIWA2_1B_1_Y_HI                     CHAR(7),                     00049127
@@ -5144,20 +5159,22 @@
         2 PIWA2_1B_1_NBR_PARK_LANES           CHAR(2),                     00061679
         2 PIWA2_1B_1_NBR_TOTAL_LANES          CHAR(2),                     00061779
         2 PIWA2_1B_1_STREET_WIDTH_MAX         CHAR(3),                     00061879
-        2 PIWA2_1B_1_FILL500                  CHAR(252),                   00061979
-     /* 2 PIWA2_1B_1_FILL500 ** V16.4 **      CHAR(255) **/                00062079
-     /**2 PIWA2_1B_1_FILL500 ** V16.1  **     CHAR(271) **/                00062173
-     /**2 PIWA2_1B_1_FILL500 ** V15.3  **     CHAR(327) **/                00062270
-     /*******************************************************************/ 00062370
-     /***                                                             ***/ 00062470
-     /*** THE FOLLOWING FIELDS ARE AN ADDITION TO 1/1E                ***/ 00062570
-     /*******************************************************************/ 00062670
-        2 PIWA2_1B_1_REASON_CODE              CHAR(1),                     00062770
-        2 PIWA2_1B_1_REASON_CODE_QUAL         CHAR(1),                     00062870
-        2 PIWA2_1B_1_WARN_CODE                CHAR(2),                     00062970
-        2 PIWA2_1B_1_RETURN_CODE              CHAR(2),                     00063070
-        2 PIWA2_1B_1_NUM_X_STS_LO_END         CHAR(1),                     00063127
-        2 PIWA2_1B_1_LO_B7SC(5)               CHAR(8),                     00063227
+        2 PIWA2_1B_1_SPEED_LIMIT              CHAR(2),                     00061982
+        2 PIWA2_1B_1_FILL500                  CHAR(250),                   00062282
+     /* 2 PIWA2_1B_1_FILL500 ** V17.4  **     CHAR(252),**/                00062382
+     /* 2 PIWA2_1B_1_FILL500 ** V16.4  **     CHAR(255) **/                00062482
+     /**2 PIWA2_1B_1_FILL500 ** V16.1  **     CHAR(271) **/                00062582
+     /**2 PIWA2_1B_1_FILL500 ** V15.3  **     CHAR(327) **/                00062682
+     /*******************************************************************/ 00062782
+     /***                                                             ***/ 00062882
+     /*** THE FOLLOWING FIELDS ARE AN ADDITION TO 1/1E                ***/ 00062982
+     /*******************************************************************/ 00063082
+        2 PIWA2_1B_1_REASON_CODE              CHAR(1),                     00063182
+        2 PIWA2_1B_1_REASON_CODE_QUAL         CHAR(1),                     00063282
+        2 PIWA2_1B_1_WARN_CODE                CHAR(2),                     00063382
+        2 PIWA2_1B_1_RETURN_CODE              CHAR(2),                     00063482
+        2 PIWA2_1B_1_NUM_X_STS_LO_END         CHAR(1),                     00063582
+        2 PIWA2_1B_1_LO_B7SC(5)               CHAR(8),                     00063682
         2 PIWA2_1B_1_NUM_X_STS_HI_END         CHAR(1),                     00064027
         2 PIWA2_1B_1_HI_B7SC(5)               CHAR(8),                     00065027
         2 PIWA2_1B_1_LO_ST_NAME(5)            CHAR(32),                    00066027
@@ -5230,7 +5247,8 @@
        2 PIWA2_1B_1A_TPAD_NEW_BIN             CHAR(07), /*NEW BIN       */ 00100164
        2 PIWA2_1B_1A_TPAD_NEW_BIN_ST          CHAR(01), /*NEW BIN STATUS*/ 00100264
        2 PIWA2_1B_1A_TPAD_CONFLICT            CHAR(01), /*CONFLICT FLAG */ 00101027
-       2 FILLER_1B_1A_7                       CHAR(09),                    00102027
+       2 PIWA2_1B_1A_DCP_ZONE_MAP             CHAR(03), /*DCP ZONING MAP*/ 00101183
+       2 FILLER_1B_1A_7                       CHAR(06),                    00102083
        2 FILLER_1B_1A_8                       CHAR(8),  /*LGC M GSS USE*/  00103070
        2 PIWA2_1B_1A_REASON_CODE              CHAR(01),                    00104027
        2 PIWA2_1B_1A_REASON_CODE_QUAL         CHAR(01),                    00105052
@@ -5279,7 +5297,6 @@
          3 FILLER_100                       CHAR(7),                       00002200
          3 PIWA2_3S_NUM_OF_STR              CHAR(1),                       00002300
          3 PIWA2_3S_B7SC(5)                 CHAR(8);                       00002400
-
 
 ## <span id="appendix14.19"><center>P2PL1AP COPY File</center></span>
 
@@ -5408,7 +5425,6 @@
 ## <span id="appendix14.20"><center>C COPY File (COW)</center></span>  
 
 ## <span id="appendix14.21"><center>PAC COPY File</center></span>
-
     #ifndef GEOSUPPORT
     #define GEOSUPPORT
     #ifdef __cplusplus
@@ -5416,6 +5432,10 @@
     #endif
      /*********************************************************************/
      /*                                                                   */
+     /*  Add new 3 bytes field 'DCP Zoning Map' in       TLV 09/2017 V17.4*/
+     /*  functions: 1A,BL,BN; 1A,BL,BN(extended) and 1B.                  */
+     /*  Add new 2 bytes field 'Speed Limit' in          TLV 09/2017 V17.4*/
+     /*  functions: 1/1E(extended), 1B, 3X, 3CX.                          */
      /*  Add new 2 bytes Bike Traffic Direction          TLV 12/2016 V17.1*/
      /*  Replaced sanit_reserved with sanit_bulk_pick_up TLV  9/2016 V16.4*/
      /*  Added 'unit' fields to WA1                      TLV  9/2016 V16.4*/
@@ -5860,7 +5880,9 @@
       char nbr_park_lanes[2];                /* nbr of parking lanes     */
       char nbr_total_lanes[2];               /* total nbr of lanes       */
       char str_width_max[3];                 /*street width maximum      */
-      char filler6[252];                     /* Future Use               */
+      char speed_limit[2];                   /* Speed Limit              */
+      char filler6[250];                     /* Future Use               */
+    //char filler6[252];                     /* Future Use               */
       char reason_code;                      /* Reason Code              */
       char reason_code_qual;                 /* Reason Code Qualifier    */
       char warn_code[2];                     /* Warning Return Code      */
@@ -5938,7 +5960,8 @@
       char TPAD_new_bin[7];                  /* BIN for New Building     */
       char TPAD_new_bin_status;              /* Status of New Buildng BIN*/
       char TPAD_conflict_flag;               /* From TPAD                */
-      char filler12[9];
+      char dcp_zone_map[3];                  /* DCP Zoning Map           */
+      char filler12[6];
 
       char int_use[8];                       /* Internal Use             */
       char reason_code;                      /* Reason Code              */
@@ -6020,7 +6043,8 @@
        char TPAD_new_bin[7];    /* BIN for New Building job */
        char TPAD_new_bin_status;/* Status of New Buildng BIN*/
        char TPAD_conflict_flag; /* From TPAD                */
-       char filler12[9];
+       char dcp_zone_map[3];    /* DCP Zoning Map           */
+       char filler12[6];
        char int_use[8];        /* Internal Use             */
        char nbr_addr[4];       /* Nbr of Addr Ranges or Nbr*/
                                /* of BINs in List          */
@@ -6350,7 +6374,9 @@
                                              /* numeric value            */
       char str_width_max[3];                 /*Street width maximum      */
       char bike_traffic_dir[2];             //V17.1 Bike Traffic Direction
-      char filler05[213];                    // V17.1
+      char speed_limit[2];                   //V17.4 Speed Limit
+      char filler05[211];                    // V17.4
+    //char filler05[213];                    // V17.1
     } C_WA2_F3X;
 
     typedef struct {                         /* Fn 3 Extended with       */
@@ -6458,7 +6484,9 @@
                                              /* numeric value            */
       char str_width_max[3];                 /*street width maximum      */
       char bike_traffic_dir[2];              //V17.1 Bike Traffic Direction
-      char filler05[298];                    // V17.1
+      char speed_limit[2];                   //V17.4 Speed Limit
+      char filler05[296];                    // V17.4
+    //char filler05[298];                    // V17.1
     } C_WA2_F3CX;
 
     typedef struct {                         /* Fn 3C Extended with      */
@@ -6483,8 +6511,6 @@
            }
     #endif
     #endif
-
-
 
 
 ## <span id="appendix14.22"><center>NATURAL LDAs (COW)</center></span>  
@@ -6592,1479 +6618,1483 @@
        2 PIWA1-OUT-SIMILAR-B7SC           A          8 (1:10)                         
        2 PIWA1-OUT-SIMILAR-NAMES          A         32 (1:10)                         
 
+## <span id="appendix14.24"><center>GEOLP2 COPY File</center></span>
+    0010      1 GEOLP2                                                                         DSR     0744
+    0020   *    THE FIELD P2NAT IS USED AS A        PARAMETER TO CALL GEOSUPPORT FOR ALLLL     C
+    0030   *        FUNCTIONS THAT ARE REDEFINED           ON GEOLP2                           C                                        
+    0040   *  * MAXIMUM LENGTH 2W - 4000 BYTES                                                 C
+    0050      2 P2NAT                            A         21                                  DK      0746
+    0060   R  2 P2NAT                                                                          DRR     0747
+    0070   *  *  BEGINNING OF FUNCTION 1 LAYOUT  *       **** *******                          C
+    0080      3 PIWA2-FN1-ACCESS-KEY             A         21                                  DFR     0748
+    0090      2 PIWA2-FN1-CONT-PARITY            A          1 /* (OR DUP ADDR IND)             DK      0749
+    0100      2 PIWA2-FN1-LOW-HOUSENUM           A         11 /* SORT FORMAT                   DK      0750
+    0110      2 PIWA2-FN1-HI-HOUSENUM            A         11 /* SORT FORMAT                   DK      0751
+    0120      2 PIWA2-FN1-PREFERRED-LGC          A          2                                  DK      0752
+    0130      2 PIWA2-FN1-NUM-X-ST-LOW-END       A          1                                  DK      0753
+    0140      2 PIWA2-FN1-LOW-B5SC               A          6 (1:5) /* 30-BYTES                DK I1   0754     M
+    0150      2 PIWA2-FN1-NUM-X-ST-HI-END        A          1                                  DK      0755
+    0160      2 PIWA2-FN1-HI-B5SC                A          6 (1:5) /* 30-BYTES                DK I1   0756     M
+    0170      2 PIWA2-FN1-LIONKEY                A         10                                  DK      0757
+    0180   R  2 PIWA2-FN1-LIONKEY                                                              DRR     0758
+    0190      3 PIWA2-FN1-LION-BORO              A          1                                  DFR     0759
+    0200      3 PIWA2-FN1-LION-FACECODE          A          4                                  DFR     0760
+    0210      3 PIWA2-FN1-LION-SEQ               A          5                                  DFR     0761
+    0220      2 PIWA2-FN1-SPECIAL-ADDR-FLAG      A          1                                  DK      0762
+    0230      2 PIWA2-FN1-SIDE-OF-STR            A          1                                  DK      0763
+    0240      2 PIWA2-FN1-SEG-LEN                A          5                                  DK      0764
+    0250      2 PIWA2-FN1-X-COORD                A          7                                  DK      0765
+    0260      2 PIWA2-FN1-Y-COORD                A          7                                  DK      0766
+    0270      2 FILLER-100                       A          7 /* FOR ZCOORD                    DK      0767
+    0280      2 FILLER-200                       A          1 /* FOR GSS USE                   DK      0768
+    0290      2 PIWA2-FN1-MARBLE-RIKERS-FLAG     A          1                                  DK      0769
+    0300      2 PIWA2-FN1-DOT-SLA                A          1                                  DK      0770
+    0310      2 PIWA2-FN1-COM-DIST               A          3                                  DK      0771
+    0320   R  2 PIWA2-FN1-COM-DIST                                                             DRR     0772
+    0330      3 PIWA2-FN1-COM-DIST-BORO          A          1                                  DFR     0773
+    0340      3 PIWA2-FN1-COM-DIST-NUM           A          2                                  DFR     0774
+    0350      2 PIWA2-FN1-ZIP                    A          5                                  DK      0775
+    0360   *  *                                  *       **** *****                            C
+    0370   *  *  THE FN1E FIELDS ARE VALID ONLY  *       **** *****                            C
+    0380   *  *  FOR FUNCTION 1E, NOT FUNC 1.    *       **** *****                            C
+    0390      2 PIWA2-FN1E-ELECT-DIST            A          3                                  DK      0776
+    0400      2 PIWA2-FN1E-ASSEM-DIST            A          2                                  DK      0777
+    0410      2 PIWA2-FN1E-SPLIT-ED-FLAG         A          1                                  DK      0778
+    0420      2 PIWA2-FN1E-CONG-DIST             A          2                                  DK      0779
+    0430      2 PIWA2-FN1E-SENATE-DIST           A          2                                  DK      0780
+    0440      2 PIWA2-FN1E-COURT-DIST            A          2                                  DK      0781
+    0450      2 PIWA2-FN1E-COUNCIL-DIST          A          2                                  DK      0782
+    0460   *  *                                  *       **** *****                            C
+    0470      2 PIWA2-FN1-HEALTH-CENTER-DIST     A          2                                  DK      0783
+    0480      2 PIWA2-FN1-HEALTH-AREA            A          4                                  DK      0784
+    0490      2 PIWA2-FN1-SANI-DIST              A          3                                  DK      0785
+    0500   R  2 PIWA2-FN1-SANI-DIST                                                            DRR     0786
+    0510      3 PIWA2-FN1-SANI-DIST-BORO         A          1                                  DFR     0787
+    0520      3 PIWA2-FN1-SANI-DIST-NUM          A          2                                  DFR     0788
+    0530      2 PIWA2-FN1-SANI-SUBSEC            A          2                                  DK      0789
+    0540      2 PIWA2-FN1-SANI-REG               A          5                                  DK      0790
+    0550      2 PIWA2-FN1-SANI-REC               A          3                                  DK      0791
+    0560      2 PIWA2-FN1-POLICE-DIST            A          4                                  DK      0792
+    0570   R  2 PIWA2-FN1-POLICE-DIST                                                          DRR     0793
+    0580      3 PIWA2-FN1-POL-PAT-BORO-CMD       A          1                                  DFR     0794
+    0590      3 PIWA2-FN1-POL-PRECINCT           A          3                                  DFR     0795
+    0600      2 PIWA2-FN1-FIRE-DIV               A          2                                  DK      0796
+    0610      2 PIWA2-FN1-FIRE-BAT               A          2                                  DK      0797
+    0620      2 PIWA2-FN1-FIRE-CO                A          4                                  DK      0798
+    0630   R  2 PIWA2-FN1-FIRE-CO                                                              DRR     0799
+    0640      3 PIWA2-FN1-FIRE-CO-TYPE           A          1                                  DFR     0800
+    0650      3 PIWA2-FN1-FIRE-CO-NUM            A          3                                  DFR     0801
+    0660      2 PIWA2-FN1-SCHL-DIST-SPLIT-FLAG   A          1                                  DK      0802
+    0670      2 PIWA2-FN1-SCHL-DIST              A          2                                  DK      0803
+    0680      2 PIWA2-FN1-DYN-BLK                A          3                                  DK      0804
+    0690      2 PIWA2-FN1-POLICE-PAT-BORO        A          2                                  DK      0805
+    0700      2 PIWA2-FN1-FEATURE-TYPE           A          1                                  DK      0806
+    0710      2 PIWA2-FN1-SEGMENT-TYPE           A          1                                  DK      0807
+    0720      2 PIWA2-FN1-ALX                    A          1                                  DK      0808
+    0730      2 PIWA2-FN1-COINCIDENT-SEG-CTR     A          1                                  DK      0809
+    0740      2 FILLER-290                       A          3                                  DK      0810
+    0750      2 PIWA2-FN1-1990-CENSUS-TRACT      A          6                                  DK      0811
+    0760      2 PIWA2-FN1-2010-CENSUS-TRACT      A          6                                  DK      0812
+    0770      2 PIWA2-FN1-2010-CENSUS-BLOCK      A          4                                  DK      0813
+    0780      2 PIWA2-FN1-2010-CENSUS-BLOCK-SUF  A          1 /* NA                            DK      0814
+    0790      2 PIWA2-FN1-2000-CENS-TRACT        A          6                                  DK      0815
+    0800      2 PIWA2-FN1-2000-CENS-BLOCK        A          4                                  DK      0816
+    0810      2 PIWA2-FN1-2000-CENS-BLOCK-SUF    A          1 /* NA                            DK      0817
+    0820      2 PIWA2-FN1-NTA                    A          4                                  DK      0818
+    0830      2 PIWA2-FN1-SANIT-SNOW-PRIORITY    A          1                                  DK      0819
+    0840      2 PIWA2-FN1-SANIT-ORGANICS         A          5                                  DK      0820
+    0850      2 PIWA2-FN1-SANIT-BULK-PICK-UP     A          5 /* V16.4 ADDITION                DK      0821
+    0860   *  2 PIWA2-FN1-SANIT-RESERVED         A          5 /*FOR POSSIBLE FUTURE USE        CK      0821
+    0870      2 PIWA2-FN1-HURRICANE-ZONE         A          2 /*OEM HURRICANE EVAC ZONE        DK      0822
+    0880      2 FILLER-300                       A         11                                  DK      0823
+    0890      2 PIWA2-FN1-UHNS                   A         11 /* UNDERLYING HNS                DK      0824
+    0900      2 PIWA2-FN1-REAL-B7SC              A          8                                  DK      0825
+    0910      2 PIWA2-FN1-SEGMENT-ID             A          7                                  DK      0826
+    0920      2 PIWA2-FN1-CURVE-FLAG             A          1                                  DK      0827
+    0930      2 PIWA2-FN1-PSEUDO-FILLER          A       3700 /*MAX RECORD 2W IS 4000          DK      0828
+    0940   *  *  END OF FUNCTION 1 LAYOUT        *       **** *******                          C
+    0950   *  - -------------------------------- -       ---- -------------------------------- C
+    0960   *  *  BEGINNING OF FUNCTION 2                                                       C
+    0970   *  *           & FUNCTION 2C LAYOUT   * ********** *******                          C
+    0980   R  1 GEOLP2                                                                         DRR     0829
+    0990      2 PIWA2-FN2-ACCESS-KEY             A         21 /* FOR FUNCTIONS 2 & 2C          DFR     0830
+    1000      2 PIWA2-FN2-DUP-INTERSECT-FLAG     A          1                                  DFR     0831
+    1010      2 PIWA2-FN2-PREFERRED-LGC1         A          2                                  DFR     0832
+    1020      2 PIWA2-FN2-PREFERRED-LGC2         A          2                                  DFR     0833
+    1030      2 PIWA2-FN2-NUM-OF-INTERSECTS      A          1                                  DFR     0834
+    1040      2 PIWA2-FN2-INTERSECT-B5SC         A          6 (1:5) /* 30-BYTES                DFRI1   0835     M
+    1050      2 PIWA2-FN2-COMP-DIR               A          1                                  DFR     0836
+    1060      2 PIWA2-FN2-ATOMIC-POLYGON         A          3                                  DFR     0837
+    1070      2 FILLER-350                       A          2                                  DFR     0838
+    1080      2 PIWA2-FN2-NODE-NUM               A          7                                  DFR     0839
+    1090      2 PIWA2-FN2-X-COORD                A          7                                  DFR     0840
+    1100      2 PIWA2-FN2-Y-COORD                A          7                                  DFR     0841
+    1110      2 FILLER-400                       A          7 /* FOR ZCOORD                    DFR     0842
+    1120      2 PIWA2-FN2-SANBORN1               A          8                                  DFR     0843
+    1130   R  2 PIWA2-FN2-SANBORN1                                                             DRR     0844
+    1140      3 PIWA2-FN2-SANBORN1-BORO          A          1                                  DFR     0845
+    1150      3 PIWA2-FN2-SANBORN1-VOL           A          3                                  DFR     0846
+    1160      3 PIWA2-FN2-SANBORN1-PAGE          A          4                                  DFR     0847
+    1170      2 PIWA2-FN2-SANBORN2               A          8                                  DFR     0848
+    1180   R  2 PIWA2-FN2-SANBORN2                                                             DRR     0849
+    1190      3 PIWA2-FN2-SANBORN2-BORO          A          1                                  DFR     0850
+    1200      3 PIWA2-FN2-SANBORN2-VOL           A          3                                  DFR     0851
+    1210      3 PIWA2-FN2-SANBORN2-PAGE          A          4                                  DFR     0852
+    1220      2 PIWA2-FN2-MARBLE-RIKERS-FLAG     A          1                                  DFR     0853
+    1230      2 PIWA2-FN2-DOT-SLA                A          1                                  DFR     0854
+    1240      2 PIWA2-FN2-COM-DIST               A          3                                  DFR     0855
+    1250   R  2 PIWA2-FN2-COM-DIST                                                             DRR     0856
+    1260      3 PIWA2-FN2-COM-DIST-BORO          A          1                                  DFR     0857
+    1270      3 PIWA2-FN2-COM-DIST-NUM           A          2                                  DFR     0858
+    1280      2 PIWA2-FN2-ZIP                    A          5                                  DFR     0859
+    1290      2 PIWA2-FN2-HEALTH-AREA            A          4                                  DFR     0860
+    1300      2 PIWA2-FN2-POLICE-DIST            A          4                                  DFR     0861
+    1310   R  2 PIWA2-FN2-POLICE-DIST                                                          DRR     0862
+    1320      3 PIWA2-FN2-POL-PAT-BORO-CMD       A          1                                  DFR     0863
+    1330      3 PIWA2-FN2-POL-PRECINCT           A          3                                  DFR     0864
+    1340      2 PIWA2-FN2-FIRE-DIV               A          2                                  DFR     0865
+    1350      2 PIWA2-FN2-FIRE-BAT               A          2                                  DFR     0866
+    1360      2 PIWA2-FN2-FIRE-CO                A          4                                  DFR     0867
+    1370   R  2 PIWA2-FN2-FIRE-CO                                                              DRR     0868
+    1380      3 PIWA2-FN2-FIRE-CO-TYPE           A          1                                  DFR     0869
+    1390      3 PIWA2-FN2-FIRE-CO-NUM            A          3                                  DFR     0870
+    1400      2 PIWA2-FN2-SCHL-DIST              A          2                                  DFR     0871
+    1410      2 PIWA2-FN2-2010-CENSUS-TRACT      A          6                                  DFR     0872
+    1420      2 PIWA2-FN2-1990-CENSUS-TRACT      A          6                                  DFR     0873
+    1430      2 PIWA2-FN2-LEVEL-CODE-TBL         A         10                                  DFR     0874
+    1440   R  2 PIWA2-FN2-LEVEL-CODE-TBL                                                       DRR     0875
+    1450      3 PIWA2-FN2-LEVEL-CODE             A          1 (5,2) /* 10-BYTES                DFRI2   0876     M
+    1460      2 PIWA2-FN2-POLICE-PAT-BORO        A          2                                  DFR     0877
+    1470      2 PIWA2-FN2-ASSEM-DIST             A          2                                  DFR     0878
+    1480      2 PIWA2-FN2-CONG-DIST              A          2                                  DFR     0879
+    1490      2 PIWA2-FN2-SENATE-DIST            A          2                                  DFR     0880
+    1500      2 PIWA2-FN2-COURT-DIST             A          2                                  DFR     0881
+    1510      2 PIWA2-FN2-COUNCIL-DIST           A          2                                  DFR     0882
+    1520      2 PIWA2-FN2-CD-ELIGIBLE            A          1                                  DFR     0883
+    1530      2 PIWA2-FN2-DUP-INTERSECT-DIST     A          5                                  DFR     0884
+    1540      2 PIWA2-FN2-2000-CENS-TRACT        A          6                                  DFR     0885
+    1550      2 PIWA2-FN2-HEALTH-CENTER-DIST     A          2                                  DFR     0886
+    1560      2 PIWA2-FN2-SANITATION-DIST        A          3                                  DFR     0887
+    1570      2 PIWA2-FN2-SANITATION-SUBSEC      A          2                                  DFR     0888
+    1580      2 FILLER-500                       A         12                                  DFR     0889
+    1590   *  2 PIWA2-FN2-PSEUDO-FILLER          A       3800                                  CFR     0789
+    1600   *  *  END OF FUNCTION 2               * ********** ********                         C
+    1610   *  *       & FUNCTION 2C LAYOUT       * ********** ********                         C
+    1620   *  * -------------------------------- - ---------- -----------------                C
+    1630   *  *  BEGINNING OF FUNCTION 2W        * ********** *******                          C
+    1640   R  1 GEOLP2                                                                         DRR     0890
+    1650      2 PIWA2-FN2W-ACCESS-KEY            A         21 /* FOR FUNCTION 2W               DFR     0891
+    1660      2 PIWA2-FN2W-DUP-INTERSECT-FLAG    A          1                                  DFR     0892
+    1670      2 PIWA2-FN2W-PREFERRED-LGC1        A          2                                  DFR     0893
+    1680      2 PIWA2-FN2W-PREFERRED-LGC2        A          2                                  DFR     0894
+    1690      2 PIWA2-FN2W-NUM-OF-INTERSECTS     A          1                                  DFR     0895
+    1700      2 PIWA2-FN2W-INTERSECT-B5SC        A          6 (1:5) /* 30-BYTES                DFRI1   0896     M
+    1710      2 PIWA2-FN2W-COMP-DIR              A          1                                  DFR     0897
+    1720      2 PIWA2-FN2W-ATOMIC-POLYGON        A          3                                  DFR     0898
+    1730      2 FILLER-350W                      A          2                                  DFR     0899
+    1740      2 PIWA2-FN2W-NODE-NUM              A          7                                  DFR     0900
+    1750      2 PIWA2-FN2W-X-COORD               A          7                                  DFR     0901
+    1760      2 PIWA2-FN2W-Y-COORD               A          7                                  DFR     0902
+    1770      2 FILLER-400W                      A          7 /* FOR ZCOORD                    DFR     0903
+    1780      2 PIWA2-FN2W-SANBORN1              A          8                                  DFR     0904
+    1790   R  2 PIWA2-FN2W-SANBORN1                                                            DRR     0905
+    1800      3 PIWA2-FN2W-SANBORN1-BORO         A          1                                  DFR     0906
+    1810      3 PIWA2-FN2W-SANBORN1-VOL          A          3                                  DFR     0907
+    1820      3 PIWA2-FN2W-SANBORN1-PAGE         A          4                                  DFR     0908
+    1830      2 PIWA2-FN2W-SANBORN2              A          8                                  DFR     0909
+    1840   R  2 PIWA2-FN2W-SANBORN2                                                            DRR     0910
+    1850      3 PIWA2-FN2W-SANBORN2-BORO         A          1                                  DFR     0911
+    1860      3 PIWA2-FN2W-SANBORN2-VOL          A          3                                  DFR     0912
+    1870      3 PIWA2-FN2W-SANBORN2-PAGE         A          4                                  DFR     0913
+    1880      2 PIWA2-FN2W-MARBLE-RIKERS-FLAG    A          1                                  DFR     0914
+    1890      2 PIWA2-FN2W-DOT-SLA               A          1                                  DFR     0915
+    1900      2 PIWA2-FN2W-COM-DIST              A          3                                  DFR     0916
+    1910   R  2 PIWA2-FN2W-COM-DIST                                                            DRR     0917
+    1920      3 PIWA2-FN2W-COM-DIST-BORO         A          1                                  DFR     0918
+    1930      3 PIWA2-FN2W-COM-DIST-NUM          A          2                                  DFR     0919
+    1940      2 PIWA2-FN2W-ZIP                   A          5                                  DFR     0920
+    1950      2 PIWA2-FN2W-HEALTH-AREA           A          4                                  DFR     0921
+    1960      2 PIWA2-FN2W-POLICE-DIST           A          4                                  DFR     0922
+    1970   R  2 PIWA2-FN2W-POLICE-DIST                                                         DRR     0923
+    1980      3 PIWA2-FN2W-POL-PAT-BORO-CMD      A          1                                  DFR     0924
+    1990      3 PIWA2-FN2W-POL-PRECINCT          A          3                                  DFR     0925
+    2000      2 PIWA2-FN2W-FIRE-DIV              A          2                                  DFR     0926
+    2010      2 PIWA2-FN2W-FIRE-BAT              A          2                                  DFR     0927
+    2020      2 PIWA2-FN2W-FIRE-CO               A          4                                  DFR     0928
+    2030   R  2 PIWA2-FN2W-FIRE-CO                                                             DRR     0929
+    2040      3 PIWA2-FN2W-FIRE-CO-TYPE          A          1                                  DFR     0930
+    2050      3 PIWA2-FN2W-FIRE-CO-NUM           A          3                                  DFR     0931
+    2060      2 PIWA2-FN2W-SCHL-DIST             A          2                                  DFR     0932
+    2070      2 PIWA2-FN2W-2010-CENSUS-TRACT     A          6                                  DFR     0933
+    2080      2 PIWA2-FN2W-1990-CENSUS-TRACT     A          6                                  DFR     0934
+    2090      2 PIWA2-FN2W-LEVEL-CODE-TBL        A         10                                  DFR     0935
+    2100   R  2 PIWA2-FN2W-LEVEL-CODE-TBL                                                      DRR     0936
+    2110      3 PIWA2-FN2W-LEVEL-CODE            A          1 (5,2) /* 10-BYTES                DFRI2   0937     M
+    2120      2 PIWA2-FN2W-POLICE-PAT-BORO       A          2                                  DFR     0938
+    2130      2 PIWA2-FN2W-ASSEM-DIST            A          2                                  DFR     0939
+    2140      2 PIWA2-FN2W-CONG-DIST             A          2                                  DFR     0940
+    2150      2 PIWA2-FN2W-SENATE-DIST           A          2                                  DFR     0941
+    2160      2 PIWA2-FN2W-COURT-DIST            A          2                                  DFR     0942
+    2170      2 PIWA2-FN2W-COUNCIL-DIST          A          2                                  DFR     0943
+    2180      2 PIWA2-FN2W-CD-ELIGIBLE           A          1                                  DFR     0944
+    2190      2 PIWA2-FN2W-DUP-INTERSECT-DIST    A          5                                  DFR     0945
+    2200      2 PIWA2-FN2W-2000-CENS-TRACT       A          6                                  DFR     0946
+    2210      2 PIWA2-FN2W-HEALTH-CENTER-DIST    A          2                                  DFR     0947
+    2220      2 PIWA2-FN2W-SANITATION-DIST       A          3                                  DFR     0948
+    2230      2 PIWA2-FN2W-SANITATION-SUBSEC     A          2                                  DFR     0949
+    2240      2 FILLER-500W                      A         12                                  DFR     0950
+    2250      2 PIWA2-FN2W-FILLER-GRIDGEN        A         22 /*INTERNAL USE                   DFR     0951
+    2260      2 PIWA2-FN2W-LGCS-FIRST-INTERSCT   A          2 (1:4) /*UP TO 4 LGCS             DFRI1   0952     M
+    2270      2 PIWA2-FN2W-LGCS-SECOND-INTERSCT  A          2 (1:4) /*UP TO 4 LGCS             DFRI1   0953     M
+    2280      2 PIWA2-FN2W-TURN-RESTRICTIONS     A          1 (1:10)                           DFRI1   0954     M
+    2290      2 PIWA2-FN2W-INTERSECT-B5SC-LGCS   A          2 (1:5) /*LGCS FOR LIST            DFRI1   0955     M
+    2300   *                                                  /*OF INTERSECTING STS            C
+    2310      2 PIWA2-FN2W-REPLICATION-CNTR      A          2                                  DFR     0956
+    2320      2 PIWA2-FN2W-NODE-LIST             A          7 (1:20) /*UP TO 20 NODES          DFRI1   0957     M
+    2330      2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS  A       3200                                  DFR     0958
+    2340   R  2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS               /* REDEF. BEGIN : PIWA2-FN2W-NOD DRR     0959
+    2350      3 PIWA2-FN2W-NODE-LIST-B7SCS-TBL   A        160 (20)                             DFRI1   0960     M
+    2360   R  2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS               /* REDEF. BEGIN : PIWA2-FN2W-NOD DRR     0961
+    2370      3 PIWA2-FN2W-NODE-LIST-B7SCS-STS   A         32 (20,5)                           DFRI2   0962     M
+    2380   R  2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS               /* REDEF. BEGIN : PIWA2-FN2W-NOD DRR     0963
+    2390      3 PIWA2-FN2W-NODE-LIST-B7SCS       A          8 (20,5,4)                         DFRI3   0964     M
+    2400      2 PIWA2-FN2W-REASON-CODE           A          1                                  DFR     0965
+    2410      2 PIWA2-FN2W-REASON-CODE-QUAL      A          1                                  DFR     0966
+    2420      2 PIWA2-FN2W-WARN-CODE             A          2                                  DFR     0967
+    2430      2 PIWA2-FN2W-RETURN-CODE           A          2                                  DFR     0968
+    2440      2 PIWA2-FN2W-LATITUDE              A          9                                  DFR
+    2450      2 PIWA2-FN2W-LONGITUDE             A         11                                  DFR
+    2460      2 PIWA2-FN2W-FILLER2W              A        374                                  DFR     0969
+    2470   *  *  END OF FUNCTION 2W              * ********** ********                         C
+    2480   *  * -------------------------------- - ---------- -----------------                C
+    2490   *  *  BEGINNING OF FUNCTION 3 LAYOUT  * ********** *********                        CSR     0096
+    2500   R  1 GEOLP2                                                                         DRR     0970
+    2510      2 PIWA2-FN3-ACCESS-KEY             A         21                                  DFR     0971
+    2520      2 PIWA2-FN3-DUP-KEY-FLAG           A          1 /* OR CONTI PARITY               DFR     0972
+    2530      2 PIWA2-FN3-LOCATION-STATUS        A          1                                  DFR     0973
+    2540      2 PIWA2-FN3-COUNTY-BOUNDARY        A          1                                  DFR     0974
+    2550      2 PIWA2-FN3-PREFERRED-LGC1         A          2                                  DFR     0975
+    2560      2 PIWA2-FN3-PREFERRED-LGC2         A          2                                  DFR     0976
+    2570      2 PIWA2-FN3-PREFERRED-LGC3         A          2                                  DFR     0977
+    2580      2 PIWA2-FN3-NUM-X-ST-LOW-END       A          1                                  DFR     0978
+    2590      2 PIWA2-FN3-LOW-B5SC               A          6 (1:5) /* 30-BYTES                DFRI1   0979     M
+    2600      2 PIWA2-FN3-NUM-X-ST-HI-END        A          1                                  DFR     0980
+    2610      2 PIWA2-FN3-HI-B5SC                A          6 (1:5) /* 30-BYTES                DFRI1   0981     M
+    2620      2 PIWA2-FN3-REVERSAL-FLAG          A          1                                  DFR     0982
+    2630      2 PIWA2-FN3-LION-KEY               A         10                                  DFR     0983
+    2640   R  2 PIWA2-FN3-LION-KEY                                                             DRR     0984
+    2650      3 PIWA2-FN3-LION-BORO              A          1                                  DFR     0985
+    2660      3 PIWA2-FN3-LION-FACECODE          A          4                                  DFR     0986
+    2670      3 PIWA2-FN3-LION-SEQ               A          5                                  DFR     0987
+    2680      2 PIWA2-FN3-GENREC-FLAG            A          1                                  DFR     0988
+    2690      2 PIWA2-FN3-SEG-LENGTH             A          5                                  DFR     0989
+    2700      2 PIWA2-FN3-SEG-SLOP               A          3                                  DFR     0990
+    2710      2 PIWA2-FN3-SEG-ORIENT             A          1                                  DFR     0991
+    2720      2 PIWA2-FN3-MARBLE-RIKERS-FLAG     A          1                                  DFR     0992
+    2730      2 PIWA2-FN3-FROM-NODE              A          7                                  DFR     0993
+    2740      2 PIWA2-FN3-TO-NODE                A          7                                  DFR     0994
+    2750      2 PIWA2-FN3-SANIT-SNOW-PRIORITY    A          1 /*SANITATION STRT                DFR     0995
+    2760   *  *                                               /*SNOW PRIORITY                  C
+    2770      2 FILLER-600                       A          4                                  DFR     0996
+    2780      2 PIWA2-FN3-SEGMENT-ID             A          7                                  DFR     0997
+    2790      2 PIWA2-FN3-DOT-SLA                A          1                                  DFR     0998
+    2800      2 PIWA2-FN3-CURVE-FLAG             A          1                                  DFR     0999
+    2810      2 PIWA2-FN3-DOG-LEG                A          1                                  DFR     1000
+    2820      2 PIWA2-FN3-FEATURE-TYPE           A          1                                  DFR     1001
+    2830      2 PIWA2-FN3-SEGMENT-TYPE           A          1                                  DFR     1002
+    2840      2 PIWA2-FN3-COINCIDENT-SEG-CTR     A          1                                  DFR     1003
+    2850      2 FILLER-700                       A          4                                  DFR     1004
+    2860   *  * *** LEFT SIDE OF THE STREET **** * ********** ******                           C
+    2870      2 PIWA2-FN3-LEFT-SIDE-OF-STR       A        150                                  DFR     1005
+    2880   R  2 PIWA2-FN3-LEFT-SIDE-OF-STR                                                     DRR     1006
+    2890      3 PIWA2-FN3-L-COM-DIST             A          3                                  DFR     1007
+    2900   R  3 PIWA2-FN3-L-COM-DIST                                                           DRR     1008
+    2910      4 PIWA2-FN3-L-COM-DIST-BORO        A          1                                  DFR     1009
+    2920      4 PIWA2-FN3-L-COM-DIST-NUM         A          2                                  DFR     1010
+    2930      3 PIWA2-FN3-L-LOW-HOUSENUM         A         16 /* DISPLAY FORMAT                DFR     1011
+    2940      3 PIWA2-FN3-L-HI-HOUSENUM          A         16 /* DISPLAY FORMAT                DFR     1012
+    2950      3 FILLER-800                       A         32 /* FOR FUTURE USE                DFR     1013
+    2960      3 PIWA2-FN3-L-CD-ELIGIBLE          A          1                                  DFR     1014
+    2970      3 PIWA2-FN3-L-ZIP                  A          5                                  DFR     1015
+    2980      3 PIWA2-FN3-L-HEALTH-AREA          A          4                                  DFR     1016
+    2990      3 PIWA2-FN3-L-POLICE-DIST          A          4                                  DFR     1017
+    3000   R  3 PIWA2-FN3-L-POLICE-DIST                                                        DRR     1018
+    3010      4 PIWA2-FN3-L-POL-PAT-BORO-CMD     A          1                                  DFR     1019
+    3020      4 PIWA2-FN3-L-POL-PRECINCT         A          3                                  DFR     1020
+    3030      3 PIWA2-FN3-L-FIRE-DIV             A          2                                  DFR     1021
+    3040      3 PIWA2-FN3-L-FIRE-BAT             A          2                                  DFR     1022
+    3050      3 PIWA2-FN3-L-FIRE-CO              A          4                                  DFR     1023
+    3060   R  3 PIWA2-FN3-L-FIRE-CO                                                            DRR     1024
+    3070      4 PIWA2-FN3-L-FIRE-CO-TYPE         A          1                                  DFR     1025
+    3080      4 PIWA2-FN3-L-FIRE-CO-NUM          A          3                                  DFR     1026
+    3090      3 PIWA2-FN3-L-SCHL-DIST            A          2                                  DFR     1027
+    3100      3 PIWA2-FN3-L-DYN-BLK              A          3                                  DFR     1028
+    3110      3 PIWA2-FN3-L-ED                   A          3                                  DFR     1029
+    3120      3 PIWA2-FN3-L-AD                   A          2                                  DFR     1030
+    3130      3 PIWA2-FN3-L-POLICE-PAT-BORO      A          2                                  DFR
+    3140      3 FILLER-880                       A          1                                  DFR     1031
+    3150      3 PIWA2-FN3-L-BORO                 A          1                                  DFR     1032
+    3160      3 PIWA2-FN3-L-1990-CENSUS-TRACT    A          6                                  DFR     1033
+    3170      3 PIWA2-FN3-L-2010-CENSUS-TRACT    A          6                                  DFR     1034
+    3180      3 PIWA2-FN3-L-2010-CENSUS-BLOCK    A          4                                  DFR     1035
+    3190      3 PIWA2-FN3-L-2010-CENSUS-BLK-SUF  A          1 /* NA                            DFR     1036
+    3200      3 PIWA2-FN3-L-2000-CENS-TRACT      A          6                                  DFR     1037
+    3210      3 PIWA2-FN3-L-2000-CENS-BLOCK      A          4                                  DFR     1038
+    3220      3 PIWA2-FN3-L-2000-CENS-BLK-SUF    A          1 /* NA                            DFR     1039
+    3230      3 PIWA2-FN3-L-FILLER-890           A          7 /* V16.1 REPLACEMENT             DFR     1040
+    3240      3 PIWA2-FN3-L-NTA                  A          4 /*NEIGHBORHOOD                   DFR     1041
+    3250   *  *                                               /*TABULATION AREA                C
+    3260      3 FILLER-900                       A          8                                  DFR     1042
+    3270   *  * *** RIGHT SIDE OF THE STREET *** * ********** ***********                      C
+    3280      2 PIWA2-FN3-RIGHT-SIDE-OF-STR      A        150                                  DFR     1043
+    3290   R  2 PIWA2-FN3-RIGHT-SIDE-OF-STR                                                    DRR     1044
+    3300      3 PIWA2-FN3-R-COM-DIST             A          3                                  DFR     1045
+    3310   R  3 PIWA2-FN3-R-COM-DIST                                                           DRR     1046
+    3320      4 PIWA2-FN3-R-COM-DIST-BORO        A          1                                  DFR     1047
+    3330      4 PIWA2-FN3-R-COM-DIST-NUM         A          2                                  DFR     1048
+    3340      3 PIWA2-FN3-R-LOW-HOUSENUM         A         16 /* DISPLAY FORMAT                DFR     1049
+    3350      3 PIWA2-FN3-R-HI-HOUSENUM          A         16 /* DISPLAY FORMAT                DFR     1050
+    3360      3 FILLER-1000                      A         32 /* FOR FUTURE USE                DFR     1051
+    3370      3 PIWA2-FN3-R-CD-ELIGIBLE          A          1                                  DFR     1052
+    3380      3 PIWA2-FN3-R-ZIP                  A          5                                  DFR     1053
+    3390      3 PIWA2-FN3-R-HEALTH-AREA          A          4                                  DFR     1054
+    3400      3 PIWA2-FN3-R-POLICE-DIST          A          4                                  DFR     1055
+    3410   R  3 PIWA2-FN3-R-POLICE-DIST                                                        DRR     1056
+    3420      4 PIWA2-FN3-R-POL-PAT-BORO-CMD     A          1                                  DFR     1057
+    3430      4 PIWA2-FN3-R-POL-PRECINCT         A          3                                  DFR     1058
+    3440      3 PIWA2-FN3-R-FIRE-DIV             A          2                                  DFR     1059
+    3450      3 PIWA2-FN3-R-FIRE-BAT             A          2                                  DFR     1060
+    3460      3 PIWA2-FN3-R-FIRE-CO              A          4                                  DFR     1061
+    3470   R  3 PIWA2-FN3-R-FIRE-CO                                                            DRR     1062
+    3480      4 PIWA2-FN3-R-FIRE-CO-TYPE         A          1                                  DFR     1063
+    3490      4 PIWA2-FN3-R-FIRE-CO-NUM          A          3                                  DFR     1064
+    3500      3 PIWA2-FN3-R-SCHL-DIST            A          2                                  DFR     1065
+    3510      3 PIWA2-FN3-R-DYN-BLK              A          3                                  DFR     1066
+    3520      3 PIWA2-FN3-R-ED                   A          3                                  DFR     1067
+    3530      3 PIWA2-FN3-R-AD                   A          2                                  DFR     1068
+    3540      3 PIWA2-FN3-R-POLICE-PAT-BORO      A          2                                  DFR
+    3550      3 FILLER-1080                      A          1                                  DFR     1069
+    3560      3 PIWA2-FN3-R-BORO                 A          1                                  DFR     1070
+    3570      3 PIWA2-FN3-R-1990-CENSUS-TRACT    A          6                                  DFR     1071
+    3580      3 PIWA2-FN3-R-2010-CENSUS-TRACT    A          6                                  DFR     1072
+    3590      3 PIWA2-FN3-R-2010-CENSUS-BLOCK    A          4                                  DFR     1073
+    3600      3 PIWA2-FN3-R-2010-CENSUS-BLK-SUF  A          1 /* NA                            DFR     1074
+    3610      3 PIWA2-FN3-R-2000-CENS-TRACT      A          6                                  DFR     1075
+    3620      3 PIWA2-FN3-R-2000-CENS-BLOCK      A          4                                  DFR     1076
+    3630      3 PIWA2-FN3-R-2000-CENS-BLK-SUF    A          1 /* NA                            DFR     1077
+    3640      3 PIWA2-FN3-R-FILLER-1090          A          7 /* V16.1 REPLACEMENT             DFR     1078
+    3650      3 PIWA2-FN3-R-NTA                  A          4 /*NEIGHBORHOOD                   DFR     1079
+    3660   *  *                                               /*TABULATION AREA                C
+    3670      3 FILLER-1100                      A          8                                  DFR     1080
+    3680   *  2 PIWA2-FN3-PSEUDO-FILLER          A       3550                                  CFR     0901
+    3690   *  * ******************************** * ********** **********                       C
+    3700   * ** *** END OF FUNCTION 3 LAYOUT**** * ********** **********                       C
+    3710   R  1 GEOLP2                                                                         DRR     1081
+    3720      2 PIWA2-FN3-SEGAUX                 A        450 /* SAME AS FN3                   DFR     1082
+    3730      2 PIWA2-FN3-FILLER-SEGAUX          A          6 /* FOR FUTURE USE                DFR     1083
+    3740      2 PIWA2-FN3-SEGAUX-COUNTER         A          4                                  DFR     1084
+    3750      2 PIWA2-FN3-SEGAUX-SEGMENTS        A          7 (1:70)                           DFRI1   1085     M
+    3760   *  2 PIWA2-FN3-SEGAUX-PSEUDO-FILLER   A       3050                                  CFR     0905
+    3770   *  * ******************************** * ********** FOR AUX SEGS                     C
+    3780   *  *  END OF FUNCTION 3 AUX LAYOUT    * ********** ********                         C
+    3790   *  * -------------------------------- - ---------- --------                         C
+    3800   *  *  START OF FUNCTION 3 EXTENDED      LAYOUT     ********                         CSR     0096
+    3810   R  1 GEOLP2                                                                         DRR     1086
+    3820      2 PIWA2-3X-ACCESS-KEY              A         21                                  DFR     1087
+    3830      2 PIWA2-3X-DUP-KEY-FLAG            A          1 /* OR CONTI PARITY               DFR     1088
+    3840      2 PIWA2-3X-LOCATION-STATUS         A          1                                  DFR     1089
+    3850      2 PIWA2-3X-COUNTY-BOUNDARY         A          1                                  DFR     1090
+    3860      2 PIWA2-3X-PREFERRED-LGC1          A          2                                  DFR     1091
+    3870      2 PIWA2-3X-PREFERRED-LGC2          A          2                                  DFR     1092
+    3880      2 PIWA2-3X-PREFERRED-LGC3          A          2                                  DFR     1093
+    3890      2 PIWA2-3X-NUM-X-ST-LOW-END        A          1                                  DFR     1094
+    3900      2 PIWA2-3X-LOW-B5SC                A          6 (1:5) /* 30-BYTES                DFRI1   1095     M
+    3910      2 PIWA2-3X-NUM-X-ST-HI-END         A          1                                  DFR     1096
+    3920      2 PIWA2-3X-HI-B5SC                 A          6 (1:5) /* 30-BYTES                DFRI1   1097     M
+    3930      2 PIWA2-3X-REVERSAL-FLAG           A          1                                  DFR     1098
+    3940      2 PIWA2-3X-LION-KEY                A         10                                  DFR     1099
+    3950   R  2 PIWA2-3X-LION-KEY                                                              DRR     1100
+    3960      3 PIWA2-3X-LION-BORO               A          1                                  DFR     1101
+    3970      3 PIWA2-3X-LION-FACECODE           A          4                                  DFR     1102
+    3980      3 PIWA2-3X-LION-SEQ                A          5                                  DFR     1103
+    3990      2 PIWA2-3X-GENREC-FLAG             A          1                                  DFR     1104
+    4000      2 PIWA2-3X-SEG-LENGTH              A          5                                  DFR     1105
+    4010      2 PIWA2-3X-SEG-SLOP                A          3                                  DFR     1106
+    4020      2 PIWA2-3X-SEG-ORIENT              A          1                                  DFR     1107
+    4030      2 PIWA2-3X-MARBLE-RIKERS-FLAG      A          1                                  DFR     1108
+    4040      2 PIWA2-3X-FROM-NODE               A          7                                  DFR     1109
+    4050      2 PIWA2-3X-TO-NODE                 A          7                                  DFR     1110
+    4060      2 PIWA2-3X-SANIT-SNOW-PRIORITY     A          1 /*SANITATION STRT                DFR     1111
+    4070   *  *                                               /*SNOW PRIORITY                  C
+    4080      2 FILLER-3X-600                    A          4                                  DFR     1112
+    4090      2 PIWA2-3X-SEGMENT-ID              A          7                                  DFR     1113
+    4100      2 PIWA2-3X-DOT-SLA                 A          1                                  DFR     1114
+    4110      2 PIWA2-3X-CURVE-FLAG              A          1                                  DFR     1115
+    4120      2 PIWA2-3X-DOG-LEG                 A          1                                  DFR     1116
+    4130      2 PIWA2-3X-FEATURE-TYPE            A          1                                  DFR     1117
+    4140      2 PIWA2-3X-SEGMENT-TYPE            A          1                                  DFR     1118
+    4150      2 PIWA2-3X-COINCIDENT-SEG-CTR      A          1                                  DFR     1119
+    4160      2 FILLER-3X-700                    A          4                                  DFR     1120
+    4170   *  * *** LEFT SIDE OF THE STREET **** * *** ****** ******                           C
+    4180      2 PIWA2-3X-LEFT-SIDE-OF-STR        A        150                                  DFR     1121
+    4190   R  2 PIWA2-3X-LEFT-SIDE-OF-STR                                                      DRR     1122
+    4200      3 PIWA2-3X-L-COM-DIST              A          3                                  DFR     1123
+    4210   R  3 PIWA2-3X-L-COM-DIST                                                            DRR     1124
+    4220      4 PIWA2-3X-L-COM-DIST-BORO         A          1                                  DFR     1125
+    4230      4 PIWA2-3X-L-COM-DIST-NUM          A          2                                  DFR     1126
+    4240      3 PIWA2-3X-L-LOW-HOUSENUM          A         16 /* DISPLAY FORMAT                DFR     1127
+    4250      3 PIWA2-3X-L-HI-HOUSENUM           A         16 /* DISPLAY FORMAT                DFR     1128
+    4260      3 FILLER-3X-800                    A         32 /* FOR FUTURE USE                DFR     1129
+    4270      3 PIWA2-3X-L-CD-ELIGIBLE           A          1                                  DFR     1130
+    4280      3 PIWA2-3X-L-ZIP                   A          5                                  DFR     1131
+    4290      3 PIWA2-3X-L-HEALTH-AREA           A          4                                  DFR     1132
+    4300      3 PIWA2-3X-L-POLICE-DIST           A          4                                  DFR     1133
+    4310   R  3 PIWA2-3X-L-POLICE-DIST                                                         DRR     1134
+    4320      4 PIWA2-3X-L-POL-PAT-BORO-CMD      A          1                                  DFR     1135
+    4330      4 PIWA2-3X-L-POL-PRECINCT          A          3                                  DFR     1136
+    4340      3 PIWA2-3X-L-FIRE-DIV              A          2                                  DFR     1137
+    4350      3 PIWA2-3X-L-FIRE-BAT              A          2                                  DFR     1138
+    4360      3 PIWA2-3X-L-FIRE-CO               A          4                                  DFR     1139
+    4370   R  3 PIWA2-3X-L-FIRE-CO                                                             DRR     1140
+    4380      4 PIWA2-3X-L-FIRE-CO-TYPE          A          1                                  DFR     1141
+    4390      4 PIWA2-3X-L-FIRE-CO-NUM           A          3                                  DFR     1142
+    4400      3 PIWA2-3X-L-SCHL-DIST             A          2                                  DFR     1143
+    4410      3 PIWA2-3X-L-DYN-BLK               A          3                                  DFR     1144
+    4420      3 PIWA2-3X-L-ED                    A          3                                  DFR     1145
+    4430      3 PIWA2-3X-L-AD                    A          2                                  DFR     1146
+    4440      3 PIWA2-3X-L-POLICE-PAT-BORO       A          2                                  DFR
+    4450      3 FILLER-3X-880                    A          1                                  DFR     1147
+    4460      3 PIWA2-3X-L-BORO                  A          1                                  DFR     1148
+    4470      3 PIWA2-3X-L-1990-CENSUS-TRACT     A          6                                  DFR     1149
+    4480      3 PIWA2-3X-L-2010-CENSUS-TRACT     A          6                                  DFR     1150
+    4490      3 PIWA2-3X-L-2010-CENSUS-BLOCK     A          4                                  DFR     1151
+    4500      3 PIWA2-3X-L-2010-CENSUS-BLK-SUF   A          1 /* NA                            DFR     1152
+    4510      3 PIWA2-3X-L-2000-CENS-TRACT       A          6                                  DFR     1153
+    4520      3 PIWA2-3X-L-2000-CENS-BLOCK       A          4                                  DFR     1154
+    4530      3 PIWA2-3X-L-2010-CENS-BLK-SUF     A          1 /* NA                            DFR     1155
+    4540      3 PIWA2-3X-L-FILLER-890            A          7 /* V16.1 REPLACEMENT             DFR     1156
+    4550      3 PIWA2-3X-L-NTA                   A          4 /*NEIGHBORHOOD                   DFR     1157
+    4560   *  *                                               /*TABULATION AREA                C
+    4570      3 FILLER-3X-900                    A          8                                  DFR     1158
+    4580   *  * *** RIGHT SIDE OF THE STREET *** * ********** ***********                      C
+    4590      2 PIWA2-3X-RIGHT-SIDE-OF-STR       A        150                                  DFR     1159
+    4600   R  2 PIWA2-3X-RIGHT-SIDE-OF-STR                                                     DRR     1160
+    4610      3 PIWA2-3X-R-COM-DIST              A          3                                  DFR     1161
+    4620   R  3 PIWA2-3X-R-COM-DIST                                                            DRR     1162
+    4630      4 PIWA2-3X-R-COM-DIST-BORO         A          1                                  DFR     1163
+    4640      4 PIWA2-3X-R-COM-DIST-NUM          A          2                                  DFR     1164
+    4650      3 PIWA2-3X-R-LOW-HOUSENUM          A         16 /* DISPLAY FORMAT                DFR     1165
+    4660      3 PIWA2-3X-R-HI-HOUSENUM           A         16 /* DISPLAY FORMAT                DFR     1166
+    4670      3 FILLER-3X-1000                   A         32 /* FOR FUTURE USE                DFR     1167
+    4680      3 PIWA2-3X-R-CD-ELIGIBLE           A          1                                  DFR     1168
+    4690      3 PIWA2-3X-R-ZIP                   A          5                                  DFR     1169
+    4700      3 PIWA2-3X-R-HEALTH-AREA           A          4                                  DFR     1170
+    4710      3 PIWA2-3X-R-POLICE-DIST           A          4                                  DFR     1171
+    4720   R  3 PIWA2-3X-R-POLICE-DIST                                                         DRR     1172
+    4730      4 PIWA2-3X-R-POL-PAT-BORO-CMD      A          1                                  DFR     1173
+    4740      4 PIWA2-3X-R-POL-PRECINCT          A          3                                  DFR     1174
+    4750      3 PIWA2-3X-R-FIRE-DIV              A          2                                  DFR     1175
+    4760      3 PIWA2-3X-R-FIRE-BAT              A          2                                  DFR     1176
+    4770      3 PIWA2-3X-R-FIRE-CO               A          4                                  DFR     1177
+    4780   R  3 PIWA2-3X-R-FIRE-CO                                                             DRR     1178
+    4790      4 PIWA2-3X-R-FIRE-CO-TYPE          A          1                                  DFR     1179
+    4800      4 PIWA2-3X-R-FIRE-CO-NUM           A          3                                  DFR     1180
+    4810      3 PIWA2-3X-R-SCHL-DIST             A          2                                  DFR     1181
+    4820      3 PIWA2-3X-R-DYN-BLK               A          3                                  DFR     1182
+    4830      3 PIWA2-3X-R-ED                    A          3                                  DFR     1183
+    4840      3 PIWA2-3X-R-AD                    A          2                                  DFR     1184
+    4850      3 PIWA2-3X-R-POLICE-PAT-BORO       A          2                                  DFR
+    4860      3 FILLER-3X-1080                   A          1                                  DFR     1185
+    4870      3 PIWA2-3X-R-BORO                  A          1                                  DFR     1186
+    4880      3 PIWA2-3X-R-1990-CENSUS-TRACT     A          6                                  DFR     1187
+    4890      3 PIWA2-3X-R-2010-CENSUS-TRACT     A          6                                  DFR     1188
+    4900      3 PIWA2-3X-R-2010-CENSUS-BLOCK     A          4                                  DFR     1189
+    4910      3 PIWA2-3X-R-2010-CENSUS-BLK-SUF   A          1 /* NA                            DFR     1190
+    4920      3 PIWA2-3X-R-2000-CENS-TRACT       A          6                                  DFR     1191
+    4930      3 PIWA2-3X-R-2000-CENS-BLOCK       A          4                                  DFR     1192
+    4940      3 PIWA2-3X-R-2000-CENS-BLK-SUF     A          1 /* NA                            DFR     1193
+    4950      3 PIWA2-3X-R-FILLER-1090           A          7 /* V16.1 REPLACEMENT             DFR     1194
+    4960      3 PIWA2-3X-R-NTA                   A          4 /*NEIGHBORHOOD                   DFR     1195
+    4970   *  *                                               /*TABULATION AREA                C
+    4980      3 FILLER-3X-1100                   A          8                                  DFR     1196
+    4990      2 PIWA2-3X-LGCS                    A          8                                  DFR     1197
+    5000      2 PIWA2-3X-LGCS-FROM               A          8                                  DFR     1198
+    5010      2 PIWA2-3X-LGCS-TO                 A          8                                  DFR     1199
+    5020      2 PIWA2-3X-L-HEALTH-CTR-DIST       A          2                                  DFR     1200
+    5030      2 PIWA2-3X-R-HEALTH-CTR-DIST       A          2                                  DFR     1201
+    5040      2 PIWA2-3X-FILL1                   A          1                                  DFR     1202
+    5050      2 PIWA2-3X-TRAFFIC-DIR             A          1                                  DFR     1203
+    5060      2 PIWA2-3X-ROADWAY-TYPE            A          2                                  DFR     1204
+    5070      2 PIWA2-3X-PHYSICAL-ID             A          7                                  DFR     1205
+    5080      2 PIWA2-3X-GENERIC-ID              A          7                                  DFR     1206
+    5090      2 PIWA2-3X-INTP-ID                 A          7 /* INTERNAL USE                  DFR     1207
+    5100      2 PIWA2-3X-INTF-ID                 A          7 /* INTERNAL USE                  DFR     1208
+    5110      2 PIWA2-3X-STR-STATUS              A          1                                  DFR     1209
+    5120      2 PIWA2-3X-STR-WIDTH               A          3                                  DFR     1210
+    5130      2 PIWA2-3X-STR-WIDTH-IRREG         A          1                                  DFR     1211
+    5140      2 PIWA2-3X-BIKE-LANE               A          1                                  DFR     1212
+    5150      2 PIWA2-3X-FED-CLASS-CODE          A          2                                  DFR     1213
+    5160      2 PIWA2-3X-ROW-TYPE                A          1                                  DFR     1214
+    5170      2 PIWA2-3X-LGC-LIST                A         10                                  DFR     1215
+    5180      2 PIWA2-3X-LEGACY-ID               A          7                                  DFR     1216
+    5190      2 PIWA2-3X-L-NTA-NAME              A         75                                  DFR     1217
+    5200      2 PIWA2-3X-R-NTA-NAME              A         75                                  DFR     1218
+    5210      2 PIWA2-3X-FROM-XCOORD             A          7                                  DFR     1219
+    5220      2 PIWA2-3X-FROM-YCOORD             A          7                                  DFR     1220
+    5230      2 PIWA2-3X-TO-XCOORD               A          7                                  DFR     1221
+    5240      2 PIWA2-3X-TO-YCOORD               A          7                                  DFR     1222
+    5250      2 PIWA2-3X-FROM-LATITUDE           A          9                                  DFR
+    5260      2 PIWA2-3X-FROM-LONGITUDE          A         11                                  DFR
+    5270      2 PIWA2-3X-TO-LATITUDE             A          9                                  DFR
+    5280      2 PIWA2-3X-TO-LONGITUDE            A         11                                  DFR
+    5290      2 PIWA2-3X-L-BLOCKFACE-ID          A         10 /* V16.1 ADD                     DFR
+    5300      2 PIWA2-3X-R-BLOCKFACE-ID          A         10 /* V16.1 ADD                     DFR
+    5310      2 PIWA2-3X-NBR-TRAVEL-LANES        A          2 /* V16.1 ADD                     DFR
+    5320      2 PIWA2-3X-NBR-PARK-LANES          A          2 /* V16.1 ADD                     DFR
+    5330      2 PIWA2-3X-NBR-TOTAL-LANES         A          2 /* V16.1 ADD                     DFR
+    5340      2 PIWA2-3X-BIKE-LANE-2             A          2 /* V16.4 ADDITION                DFR
+    5350      2 PIWA2-3X-STR-WIDTH-MAX           A          3 /* V16.4 ADDITION                DFR
+    5360      2 PIWA2-3X-BIKE-TRAFFIC-DIR        A          2 /* V17.1 ADDITION                DFR
+    5370      2 PIWA2-3X-SPEED-LIMIT             A          2 /* V17.4 ADDITION                DFR
+    5380      2 FILLER-3X-FILL2                  A        211 /* V17.1 ALTERATION              DFR     1223
+    5390   *  2 FILLER-3X-FILL2                  A        215 /* V16.4 ALTERATION              CFR     1223
+    5400   *  2 FILLER-3X-FILL2                  A        220 /* V16.1 MOD                     CFR     1223
+    5410   *  2 PIWA2-3X-PSEUDO-FILLER           A       3000                                  CFR     1038
+    5420   *  * ******************************** * ********** **********                       C
+    5430   *  * END OF FCT 3 EXTENDED LAYOUT *** * ********** **********                       C
+    5440   R  1 GEOLP2                                                                         DRR     1224
+    5450      2 PIWA2-3X-SEGAUX                  A       1000 /* SAME AS FN 3X                 DFR     1225
+    5460      2 PIWA2-3X-FILLER-SEGAUX           A          6 /* FOR FUTURE USE                DFR     1226
+    5470      2 PIWA2-3X-SEGAUX-COUNTER          A          4                                  DFR     1227
+    5480      2 PIWA2-3X-SEGAUX-SEGMENTS         A          7 (1:70)                           DFRI1   1228     M
+    5490   *  * ******************************** * ********** FOR AUX SEGS                     C
+    5500   *  * END OF FCT 3 EXTENDED AUX LAYOUT * ********** *************                    C
+    5510   *  * -------------------------------- - ---------- --------                         C
+    5520   *  *  BEGINNING OF FUNCTION 3C LAYOUT * ********** ********                         C
+    5530   R  1 GEOLP2                                                                         DRR     1229
+    5540      2 PIWA2-FN3C-ACCESS-KEY            A         21                                  DFR     1230
+    5550      2 PIWA2-FN3C-DUP-KEY-FLAG          A          1 /* OR CONTI PARITY               DFR     1231
+    5560      2 PIWA2-FN3C-LOCATION-STATUS       A          1                                  DFR     1232
+    5570      2 PIWA2-FN3C-COUNTY-BOUNDARY       A          1                                  DFR     1233
+    5580      2 PIWA2-FN3C-PREFERRED-LGC1        A          2                                  DFR     1234
+    5590      2 PIWA2-FN3C-PREFERRED-LGC2        A          2                                  DFR     1235
+    5600      2 PIWA2-FN3C-PREFERRED-LGC3        A          2                                  DFR     1236
+    5610      2 PIWA2-FN3C-NUM-X-ST-LOW-END      A          1                                  DFR     1237
+    5620      2 PIWA2-FN3C-LOW-B5SC              A          6 (1:5) /* 30-BYTES                DFRI1   1238     M
+    5630      2 PIWA2-FN3C-NUM-X-ST-HI-END       A          1                                  DFR     1239
+    5640      2 PIWA2-FN3C-HI-B5SC               A          6 (1:5) /* 30-BYTES                DFRI1   1240     M
+    5650      2 PIWA2-FN3C-REVERSAL-FLAG         A          1                                  DFR     1241
+    5660      2 PIWA2-FN3C-LIONKEY               A         10                                  DFR     1242
+    5670   R  2 PIWA2-FN3C-LIONKEY                                                             DRR     1243
+    5680      3 PIWA2-FN3C-LION-BORO             A          1                                  DFR     1244
+    5690      3 PIWA2-FN3C-LION-FACECODE         A          4                                  DFR     1245
+    5700      3 PIWA2-FN3C-LION-SEQ              A          5                                  DFR     1246
+    5710      2 PIWA2-FN3C-GENREC-FLAG           A          1                                  DFR     1247
+    5720      2 PIWA2-FN3C-SEG-LENGTH            A          5                                  DFR     1248
+    5730      2 PIWA2-FN3C-SEG-AZIMUTH           A          3                                  DFR     1249
+    5740      2 PIWA2-FN3C-SEG-ORIENT            A          1                                  DFR     1250
+    5750      2 PIWA2-FN3C-MARBLE-RIKERS-FLAG    A          1                                  DFR     1251
+    5760      2 PIWA2-FN3C-FROM-NODE             A          7                                  DFR     1252
+    5770      2 PIWA2-FN3C-TO-NODE               A          7                                  DFR     1253
+    5780      2 PIWA2-FN3C-SANIT-SNOW-PRIORITY   A          1 /*SANITATION STRT                DFR     1254
+    5790   *  *                                               /*SNOW PRIORITY                  C
+    5800      2 FILLER-1200                      A          4                                  DFR     1255
+    5810      2 PIWA2-FN3C-SEGMENT-ID            A          7                                  DFR     1256
+    5820      2 PIWA2-FN3C-DOT-SLA               A          1                                  DFR     1257
+    5830      2 PIWA2-FN3C-SIDE-OF-STR           A          1                                  DFR     1258
+    5840      2 PIWA2-FN3C-CURVE-FLAG            A          1                                  DFR     1259
+    5850      2 PIWA2-FN3C-FEATURE-TYPE          A          1                                  DFR     1260
+    5860      2 PIWA2-FN3C-SEGMENT-TYPE          A          1                                  DFR     1261
+    5870      2 PIWA2-FN3C-COINCIDENT-SEG-CTR    A          1                                  DFR     1262
+    5880      2 FILLER-1300                      A          4                                  DFR     1263
+    5890   *  * *** FCT 3C BLOCKFACE INFORMATION * ********** ******************               CRR     0545
+    5900      2 PIWA2-FN3C-BLOCKFACE-INFO        A        150                                  DFR     1264
+    5910   R  2 PIWA2-FN3C-BLOCKFACE-INFO                                                      DRR     1265
+    5920      3 PIWA2-FN3C-COM-DIST              A          3                                  DFR     1266
+    5930   R  3 PIWA2-FN3C-COM-DIST                                                            DRR     1267
+    5940      4 PIWA2-FN3C-COMDIST-BORO          A          1                                  DFR     1268
+    5950      4 PIWA2-FN3C-COMDIST-NUM           A          2                                  DFR     1269
+    5960      3 PIWA2-FN3C-LOW-HOUSENUM          A         16 /* DISPLAY FORMAT                DFR     1270
+    5970      3 PIWA2-FN3C-HI-HOUSENUM           A         16 /* DISPLAY FORMAT                DFR     1271
+    5980      3 PIWA2-FN3C-LOW-HOUSENUM2         A         16 /* DISPLAY FORMAT                DFR     1272
+    5990      3 PIWA2-FN3C-HI-HOUSENUM2          A         16 /* DISPLAY FORMAT                DFR     1273
+    6000      3 PIWA2-FN3C-FILLER-1400           A          1 /* FOR GSS USE                   DFR     1274
+    6010      3 PIWA2-FN3C-ZIP                   A          5                                  DFR     1275
+    6020      3 PIWA2-FN3C-HEALTH-AREA           A          4                                  DFR     1276
+    6030      3 PIWA2-FN3C-POLICE-DIST           A          4                                  DFR     1277
+    6040   R  3 PIWA2-FN3C-POLICE-DIST                                                         DRR     1278
+    6050      4 PIWA2-FN3C-POL-PAT-BORO-CMD      A          1                                  DFR     1279
+    6060      4 PIWA2-FN3C-POL-PRECINCT          A          3                                  DFR     1280
+    6070      3 PIWA2-FN3C-FIRE-DIV              A          2                                  DFR     1281
+    6080      3 PIWA2-FN3C-FIRE-BAT              A          2                                  DFR     1282
+    6090      3 PIWA2-FN3C-FIRE-CO               A          4                                  DFR     1283
+    6100   R  3 PIWA2-FN3C-FIRE-CO                                                             DRR     1284
+    6110      4 PIWA2-FN3C-FIRE-CO-TYPE          A          1                                  DFR     1285
+    6120      4 PIWA2-FN3C-FIRE-CO-NUM           A          3                                  DFR     1286
+    6130      3 PIWA2-FN3C-SCHL-DIST             A          2                                  DFR     1287
+    6140      3 PIWA2-FN3C-DYN-BLK               A          3                                  DFR     1288
+    6150      3 PIWA2-FN3C-ED                    A          3                                  DFR     1289
+    6160      3 PIWA2-FN3C-AD                    A          2                                  DFR     1290
+    6170      3 PIWA2-FN3C-POLICE-PAT-BORO       A          2                                  DFR
+    6180      3 FILLER-1480                      A          1                                  DFR     1291
+    6190      3 PIWA2-FN3C-BORO                  A          1                                  DFR     1292
+    6200      3 PIWA2-FN3C-1900-CENSUS-TRACT     A          6                                  DFR     1293
+    6210      3 PIWA2-FN3C-2010-CENSUS-TRACT     A          6                                  DFR     1294
+    6220      3 PIWA2-FN3C-2010-CENSUS-BLOCK     A          4                                  DFR     1295
+    6230      3 PIWA2-FN3C-2010-CENSUS-BLOCK-SUF A          1 /* NA                            DFR     1296
+    6240      3 PIWA2-FN3C-2000-CENS-TRACT       A          6                                  DFR     1297
+    6250      3 PIWA2-FN3C-2000-CENS-BLOCK       A          4                                  DFR     1298
+    6260      3 PIWA2-FN3C-2000-CENS-BLK-SUF     A          1 /* NA                            DFR     1299
+    6270      3 PIWA2-FN3C-FILLER-1490           A          7 /* V16.1 REPLACEMENT             DFR     1300
+    6280      3 PIWA2-FN3C-NTA                   A          4 /*NEIGHBORHOOD                   DFR     1301
+    6290   *  *                                               /*TABULATION AREA                C
+    6300   *  3 FILLER-1500                      A          8                                  CFR     1057
+    6310   *  * PIWA2-FN3C-PSEUDO-FILLER         A       3700 /*LEVEL 2 IN DEF                 CFR     1093
+    6320   *  * ******************************** * ********** ******                           C
+    6330   *  *  END OF FCT 3C LAYOUT ********** * ********** ******                           C
+    6340   R  1 GEOLP2                                                                         DRR     1302
+    6350      2 PIWA2-FN3C-SEGAUX                A        300 /*SAME AS FN3C                   DFR     1303
+    6360      2 PIWA2-FN3C-SEGAUX-FILL           A          6                                  DFR     1304
+    6370      2 PIWA2-FN3C-SEGAUX-CTR            A          4                                  DFR     1305
+    6380      2 PIWA2-FN3C-SEGAUX-SEGS           A          7 (1:70)                           DFRI1   1306     M
+    6390   *  2 PIWA2-FN3C-AUX-PSEUDO-FILLER     A       3200                                  CFR     1121
+    6400   * ** ******************************** * ********** FN3C AUX SEGS                    C
+    6410   *  *  END OF FCT 3C AUX LAYOUT ****** * ********** *******                          C
+    6420   * ** ******************************** * ********** *************                    C
+    6430   * ** ******************************** * ********** *************                    C
+    6440   *  *  START OF FUNCTION 3CX LAYOUT    * ********** ********                         C
+    6450   R  1 GEOLP2                                                                         DRR     1307
+    6460      2 PIWA2-3CX-ACCESS-KEY             A         21                                  DFR     1308
+    6470      2 PIWA2-3CX-DUP-KEY-FLAG           A          1 /* OR CONTI PARITY               DFR     1309
+    6480      2 PIWA2-3CX-LOCATION-STATUS        A          1                                  DFR     1310
+    6490      2 PIWA2-3CX-COUNTY-BOUNDARY        A          1                                  DFR     1311
+    6500      2 PIWA2-3CX-PREFERRED-LGC1         A          2                                  DFR     1312
+    6510      2 PIWA2-3CX-PREFERRED-LGC2         A          2                                  DFR     1313
+    6520      2 PIWA2-3CX-PREFERRED-LGC3         A          2                                  DFR     1314
+    6530      2 PIWA2-3CX-NUM-X-ST-LOW-END       A          1                                  DFR     1315
+    6540      2 PIWA2-3CX-LOW-B5SC               A          6 (1:5) /* 30-BYTES                DFRI1   1316     M
+    6550      2 PIWA2-3CX-NUM-X-ST-HI-END        A          1                                  DFR     1317
+    6560      2 PIWA2-3CX-HI-B5SC                A          6 (1:5) /* 30-BYTES                DFRI1   1318     M
+    6570      2 PIWA2-3CX-REVERSAL-FLAG          A          1                                  DFR     1319
+    6580      2 PIWA2-3CX-LIONKEY                A         10                                  DFR     1320
+    6590   R  2 PIWA2-3CX-LIONKEY                                                              DRR     1321
+    6600      3 PIWA2-3CX-LION-BORO              A          1                                  DFR     1322
+    6610      3 PIWA2-3CX-LION-FACECODE          A          4                                  DFR     1323
+    6620      3 PIWA2-3CX-LION-SEQ               A          5                                  DFR     1324
+    6630      2 PIWA2-3CX-GENREC-FLAG            A          1                                  DFR     1325
+    6640      2 PIWA2-3CX-SEG-LENGTH             A          5                                  DFR     1326
+    6650      2 PIWA2-3CX-SEG-SLOPE              A          3                                  DFR     1327
+    6660      2 PIWA2-3CX-SEG-ORIENT             A          1                                  DFR     1328
+    6670      2 PIWA2-3CX-MARBLE-RIKERS-FLAG     A          1                                  DFR     1329
+    6680      2 PIWA2-3CX-FROM-NODE              A          7                                  DFR     1330
+    6690      2 PIWA2-3CX-TO-NODE                A          7                                  DFR     1331
+    6700      2 PIWA2-3CX-SANIT-SNOW-PRIORITY    A          1 /*SANITATION STRT                DFR     1332
+    6710   *  *                                               /*SNOW PRIORITY                  C
+    6720      2 FILLER-3CX-1200                  A          4                                  DFR     1333
+    6730      2 PIWA2-3CX-SEGMENT-ID             A          7                                  DFR     1334
+    6740      2 PIWA2-3CX-DOT-SLA                A          1                                  DFR     1335
+    6750      2 PIWA2-3CX-SIDE-OF-STR            A          1                                  DFR     1336
+    6760      2 PIWA2-3CX-CURVE-FLAG             A          1                                  DFR     1337
+    6770      2 PIWA2-3CX-FEATURE-TYPE           A          1                                  DFR     1338
+    6780      2 PIWA2-3CX-SEGMENT-TYPE           A          1                                  DFR     1339
+    6790      2 PIWA2-3CX-COINCIDENT-SEG-CTR     A          1                                  DFR     1340
+    6800      2 FILLER-3CX-1300                  A          4                                  DFR     1341
+    6810   *  * ***FCT 3C BLOCKFACE INFORMATION  * ********** ******************               CRR     0545
+    6820      2 PIWA2-3CX-BLOCKFACE-INFO         A        150                                  DFR     1342
+    6830   R  2 PIWA2-3CX-BLOCKFACE-INFO                                                       DRR     1343
+    6840      3 PIWA2-3CX-COM-DIST               A          3                                  DFR     1344
+    6850   R  3 PIWA2-3CX-COM-DIST                                                             DRR     1345
+    6860      4 PIWA2-3CX-COMDIST-BORO           A          1                                  DFR     1346
+    6870      4 PIWA2-3CX-COMDIST-NUM            A          2                                  DFR     1347
+    6880      3 PIWA2-3CX-LOW-HOUSENUM           A         16 /* DISPLAY FORMAT                DFR     1348
+    6890      3 PIWA2-3CX-HI-HOUSENUM            A         16 /* DISPLAY FORMAT                DFR     1349
+    6900      3 PIWA2-3CX-LOW-HOUSENUM2          A         16 /* DISPLAY FORMAT                DFR     1350
+    6910      3 PIWA2-3CX-HI-HOUSENUM2           A         16 /* DISPLAY FORMAT                DFR     1351
+    6920      3 FIWA2-3CX-CD-ELIGIBLE            A          1                                  DFR     1352
+    6930      3 PIWA2-3CX-ZIP                    A          5                                  DFR     1353
+    6940      3 PIWA2-3CX-HEALTH-AREA            A          4                                  DFR     1354
+    6950      3 PIWA2-3CX-POLICE-DIST            A          4                                  DFR     1355
+    6960   R  3 PIWA2-3CX-POLICE-DIST                                                          DRR     1356
+    6970      4 PIWA2-3CX-POL-PAT-BORO-CMD       A          1                                  DFR     1357
+    6980      4 PIWA2-3CX-POL-PRECINCT           A          3                                  DFR     1358
+    6990      3 PIWA2-3CX-FIRE-DIV               A          2                                  DFR     1359
+    7000      3 PIWA2-3CX-FIRE-BAT               A          2                                  DFR     1360
+    7010      3 PIWA2-3CX-FIRE-CO                A          4                                  DFR     1361
+    7020   R  3 PIWA2-3CX-FIRE-CO                                                              DRR     1362
+    7030      4 PIWA2-3CX-FIRE-CO-TYPE           A          1                                  DFR     1363
+    7040      4 PIWA2-3CX-FIRE-CO-NUM            A          3                                  DFR     1364
+    7050      3 PIWA2-3CX-SCHL-DIST              A          2                                  DFR     1365
+    7060      3 PIWA2-3CX-DYN-BLK                A          3                                  DFR     1366
+    7070      3 PIWA2-3CX-ED                     A          3                                  DFR     1367
+    7080      3 PIWA2-3CX-AD                     A          2                                  DFR     1368
+    7090      3 PIWA2-3CX-POLICE-PAT-BORO        A          2                                  DFR
+    7100      3 FILLER-3CX-1480                  A          1                                  DFR     1369
+    7110      3 PIWA2-3CX-BORO                   A          1                                  DFR     1370
+    7120      3 PIWA2-3CX-1990-CENSUS-TRACT      A          6                                  DFR     1371
+    7130      3 PIWA2-3CX-2010-CENSUS-TRACT      A          6                                  DFR     1372
+    7140      3 PIWA2-3CX-2010-CENSUS-BLOCK      A          4                                  DFR     1373
+    7150      3 PIWA2-3CX-2010-CENSUS-BLOCK-SUF  A          1 /* NA                            DFR     1374
+    7160      3 PIWA2-3CX-2000-CENS-TRACT        A          6                                  DFR     1375
+    7170      3 PIWA2-3CX-2000-CENS-BLOCK        A          4                                  DFR     1376
+    7180      3 PIWA2-3CX-2000-CENS-BLK-SUF      A          1 /* NA                            DFR     1377
+    7190      3 PIWA2-3CX-FILLER-1490            A          7 /* V16.1 REPLACEMENT             DFR     1378
+    7200      3 PIWA2-3CX-NTA                    A          4 /*NEIGHBORHOOD                   DFR     1379
+    7210   *  *                                               /*TABULATION AREA                C
+    7220      3 FILLER-1500                      A          8                                  DFR     1380
+    7230      2 PIWA2-3CX-LGCS                   A          8                                  DFR     1381
+    7240      2 PIWA2-3CX-LGCS-FROM              A          8                                  DFR     1382
+    7250      2 PIWA2-3CX-LGCS-TO                A          8                                  DFR     1383
+    7260      2 PIWA2-3CX-L-HEALTH-CTR-DIST      A          2                                  DFR     1384
+    7270      2 PIWA2-3CX-R-HEALTH-CTR-DIST      A          2                                  DFR     1385
+    7280      2 PIWA2-3CX-FILL1                  A          1                                  DFR     1386
+    7290      2 PIWA2-3CX-TRAFFIC-DIR            A          1                                  DFR     1387
+    7300      2 PIWA2-3CX-ROADWAY-TYPE           A          2                                  DFR     1388
+    7310      2 PIWA2-3CX-PHYSICAL-ID            A          7                                  DFR     1389
+    7320      2 PIWA2-3CX-GENERIC-ID             A          7                                  DFR     1390
+    7330      2 PIWA2-3CX-INTP-ID                A          7 /* INTERNAL USE                  DFR     1391
+    7340      2 PIWA2-3CX-INTF-ID                A          7 /* INTERNAL USE                  DFR     1392
+    7350      2 PIWA2-3CX-STREET-STATUS          A          1                                  DFR     1393
+    7360      2 PIWA2-3CX-STREET-WIDTH           A          3                                  DFR     1394
+    7370      2 PIWA2-3CX-STREET-WIDTH-IRREG     A          1                                  DFR     1395
+    7380      2 PIWA2-3CX-BIKE-LANE              A          1                                  DFR     1396
+    7390      2 PIWA2-3CX-FED-CLASS-CODE         A          2                                  DFR     1397
+    7400      2 PIWA2-3CX-ROW-TYPE               A          1                                  DFR     1398
+    7410      2 PIWA2-3CX-LGC-LIST               A         10                                  DFR     1399
+    7420      2 PIWA2-3CX-LEGACY-ID              A          7                                  DFR     1400
+    7430      2 PIWA2-3CX-NTA-NAME               A         75                                  DFR     1401
+    7440      2 PIWA2-3CX-FROM-XCOORD            A          7                                  DFR     1402
+    7450      2 PIWA2-3CX-FROM-YCOORD            A          7                                  DFR     1403
+    7460      2 PIWA2-3CX-TO-XCOORD              A          7                                  DFR     1404
+    7470      2 PIWA2-3CX-TO-YCOORD              A          7                                  DFR     1405
+    7480      2 PIWA2-3CX-FROM-LATITUDE          A          9                                  DFR
+    7490      2 PIWA2-3CX-FROM-LONGITUDE         A         11                                  DFR
+    7500      2 PIWA2-3CX-TO-LATITUDE            A          9                                  DFR
+    7510      2 PIWA2-3CX-TO-LONGITUDE           A         11                                  DFR
+    7520      2 PIWA2-3CX-BLOCKFACE-ID           A         10 /* V16.1 ADD                     DFR
+    7530      2 PIWA2-3CX-NBR-TRAVEL-LANES       A          2 /* V16.1 ADD                     DFR
+    7540      2 PIWA2-3CX-NBR-PARK-LANES         A          2 /* V16.1 ADD                     DFR
+    7550      2 PIWA2-3CX-NBR-TOTAL-LANES        A          2 /* V16.1 ADD                     DFR
+    7560      2 PIWA2-3CX-BIKE-LANE-2            A          2 /* V16.4 ADDITION                DFR
+    7570      2 PIWA2-3CX-STR-WIDTH-MAX          A          3 /* V16.4 ADDITION                DFR
+    7580      2 PIWA2-3CX-BIKE-TRAFFIC-DIR       A          2 /* V17.1 ADDITION                DFR
+    7590      2 PIWA2-3CX-SPEED-LIMIT            A          2 /* V17.4 ADDITION                DFR
+    7600      2 FILLER-3CX-FILL1560              A        296 /* V17.1 ALTERATION              DFR     1406
+    7610   *  2 FILLER-3CX-FILL1560              A        300 /* V16.4 ALTERATION              CFR     1406
+    7620   *  2 FILLER-3CX-FILL1560              A        305 /* V16.1 MOD                     CFR     1406
+    7630   *  2 PIWA2-3CX-PSEUDO-FILER           A       3150                                  CFR     1225
+    7640   *  * ******************************** * ********** ******                           C
+    7650   *  *  END OF FCT 3CX LAYOUT ********* * ********** ******                           C
+    7660   R  1 GEOLP2                                                                         DRR     1407
+    7670      2 PIWA2-3CX-SEGAUX                 A        850 /* SAME AS FN 3CX                DFR     1408
+    7680      2 PIWA2-3CX-SEGAUX-FILL            A          6                                  DFR     1409
+    7690      2 PIWA2-3CX-SEGAUX-CTR             A          4                                  DFR     1410
+    7700      2 PIWA2-3CX-SEGAUX-SEGS            A          7 (1:70)                           DFRI1   1411     M
+    7710   *  2 PIWA2-3CX-AUX-PSEUDO-FILLER      A       2650                                  CFR     1223
+    7720   * ** ******************************** * ********** FN3C AUX SEGS                    C
+    7730   *  *  END OF FCT 3CX AUX LAYOUT*****  * ********** *******                          C
+    7740   * ** ******************************** * ********** *************                    C
+    7750   * ** ******************************** * ********** *************                    C
+    7760   *  *  BEGINNING OF FUNCTION 5 LAYOUT  *       **** *******                          C
+    7770   R  1 GEOLP2                                                                         DRR     1412
+    7780      2 PIWA2-FN5-ADDR-MATCHING-KEY      A         33                                  DFR     1413
+    7790      2 FILLER-1600                      A        267                                  DFR     1414
+    7800   *  *  END OF FUNCTION 5 LAYOUT        *       **** *******                          C
+    7810   *  - -------------------------------- -       ---- -------------------------------- C
+    ***** End of List *****
 
-## <span id="appendix14.24"><center>GEOLP2 COPY File</center></span>  
+## <span id="appendix14.25"><center>GEOLP21A COPY File</center></span>
+    0010      1 GEOLP21A                                      /*FCT 1A,BL USE SAME WA2  AYOUT  DS      0082
+    0020   *  * THE FIELD P2NAT1A IS USED AS A      PARAMETER TO CALL GEOSUPPORT               C
+    0030      2 P2NAT1A                          A         21                                  DK      0084
+    0040   R  2 P2NAT1A                                                                        DRR     0085
+    0050      3 PIWA2-1A-ACCESS-KEY              A         21                                  DFR     0086
+    0060      2 PIWA2-1A-CONT-PARITY             A          1 /* OR DUP ADDR IND               DK      0087
+    0070      2 PIWA2-1A-LOW-HOUSENUM            A         11 /* SORT FORMAT                   DK      0088
+    0080      2 PIWA2-1A-BBL                     A         10                                  DK      0089
+    0090   R  2 PIWA2-1A-BBL                                                                   DRR     0090
+    0100      3 PIWA2-1A-BBL-BORO                A          1                                  DFR     0091
+    0110      3 PIWA2-1A-BLOCK                   A          5                                  DFR     0092
+    0120      3 PIWA2-1A-LOT                     A          4                                  DFR     0093
+    0130      2 PIWA2-1A-LOT-VERSION             A          1 /* NYI */                        DK      0094
+    0140      2 PIWA2-1A-SCC                     A          1                                  DK      0095
+    0150      2 FILLER-100                       A          1                                  DK      0096
+    0160      2 PIWA2-1A-GENERAL-LOT-INFO                                                      DS      0097
+    0170      3 PIWA2-1A-RPAD-BLDG-CLASS         A          2                                  DK      0098
+    0180      3 PIWA2-1A-CORNER-CODE             A          2                                  DK      0099
+    0190      3 PIWA2-1A-NUM-OF-STRUCTURES       A          4                                  DK      0100
+    0200      3 PIWA2-1A-NUM-OF-BLOCKFACES       A          2                                  DK      0101
+    0210      3 PIWA2-1A-INTERIOR-FLAG           A          1                                  DK      0102
+    0220      3 PIWA2-1A-VACANT-FLAG             A          1                                  DK      0103
+    0230      3 PIWA2-1A-IRREG-LOT-FLAG          A          1                                  DK      0104
+    0240      2 PIWA2-1A-MARBLE-RIKERS-FLAG      A          1                                  DK      0105
+    0250      2 PIWA2-1A-ADDR-LIST-OVFLOW-FLAG   A          1                                  DK      0106
+    0260      2 PIWA2-1A-STROLL-KEY              A         19                                  DK      0107
+    0270   R  2 PIWA2-1A-STROLL-KEY                                                            DRR     0108
+    0280      3 PIWA2-1A-STROLL-BORO             A          1                                  DFR     0109
+    0290      3 PIWA2-1A-STROLL-5SC              A          5                                  DFR     0110
+    0300      3 PIWA2-1A-STROLL-SIDE-OF-STR      A          1 /* L OR R                        DFR     0111
+    0310      3 PIWA2-1A-STROLL-HI-HOUSENUM      A         11 /* SORT FORMAT                   DFR     0112
+    0320      3 FILLER-200                       A          1                                  DFR     0113
+    0330      2 FILLER-300                       A          1 /* FOR GSS USE                   DK      0114
+    0340      2 PIWA2-1A-BIN                     A          7                                  DK      0115
+    0350      2 PIWA2-1A-CONDO-FLAG              A          1                                  DK      0116
+    0360      2 FILLER-400                       A          1                                  DK      0117
+    0370      2 PIWA2-1A-RPAD-CONDO-ID-NUM       A          4                                  DK      0118
+    0380      2 PIWA2-1A-CONDO-UNIT-ID-NUM       A          7                                  DK      0119
+    0390      2 PIWA2-1A-CONDO-BILL-BBL          A         10                                  DK      0120
+    0400      2 PIWA2-1A-CONDO-BILL-BBL-VER      A          1                                  DK      0121
+    0410      2 PIWA2-1A-CONDO-BILL-BBL-SCC      A          1                                  DK      0122
+    0420      2 PIWA2-1A-CONDO-LOW-BBL           A         10                                  DK      0123
+    0430      2 PIWA2-1A-CONDO-LOW-BBL-VER       A          1                                  DK      0124
+    0440      2 PIWA2-1A-CONDO-HIGH-BBL          A         10                                  DK      0125
+    0450      2 PIWA2-1A-CONDO-HIGH-BBL-VER      A          1                                  DK      0126
+    0460      2 FILLER-500                       A         15                                  DK      0127
+    0470      2 PIWA1-1A-COOP-NUM                A          4                                  DK      0128
+    0480      2 PIWA2-1A-SANBORN                 A          8                                  DK      0129
+    0490   R  2 PIWA2-1A-SANBORN                                                               DRR     0130
+    0500      3 PIWA2-1A-SANBORN-BORO            A          1                                  DFR     0131
+    0510      3 PIWA2-1A-SANBORN-VOL             A          3                                  DFR     0132
+    0520      3 PIWA2-1A-SANBORN-PAGE            A          4                                  DFR     0133
+    0530      2 PIWA2-1A-COMMERC-DIST            A          5                                  DK      0134
+    0540      2 PIWA2-1A-DOF-MAP-BORO            A          1                                  DK      0135
+    0550      2 PIWA2-1A-DOF-MAP-SECVOL          A          4                                  DK      0136
+    0560      2 PIWA2-1A-DOF-MAP-PAGE            A          4                                  DK      0137
+    0570      2 FILLER-1A-RESERVED-DCP           A          3                                  DK      0138
+    0580      2 PIWA2-1A-LATITUDE                A          9                                  DK      0139
+    0590      2 PIWA2-1A-LONGITUDE               A         11                                  DK      0140
+    0600      2 PIWA2-1A-X-COORD                 A          7                                  DK      0141
+    0610      2 PIWA2-1A-Y-COORD                 A          7                                  DK      0142
+    0620      2 PIWA2-1A-BID                     A          6                                  DK      0143
+    0630      2 PIWA2-1A-TPAD-BIN-ST             A          1 /* CURRENT STATUS */             DK      0144
+    0640      2 PIWA2-1A-TPAD-NEW-BIN            A          7 /* NEW BIN */                    DK      0145
+    0650      2 PIWA2-1A-TPAD-NEW-BIN-ST         A          1 /* NEW BIN STATUS */             DK      0146
+    0660      2 PIWA2-1A-TPAD-CONFLICT           A          1 /* CONFLICT FLAG */              DK      0147
+    0670      2 PIWA2-1A-DCP-ZONE-MAP            A          3 /* V17.4 ADDITION                DK
+    0680      2 FILLER-650                       A          6                                  DK      0148
+    0690      2 FILLER-700                       A          8 /* FOR GSS USE                   DK      0149
+    0700      2 PIWA2-1A-NUM-OF-ADDR             A          4                                  DK      0150
+    0710      2 PIWA2-1A-LIST-OF-ADDR                         (1:21)                           DS I1   0151     M
+    0720      3 PIWA2-1A-LIST-LOW-HOUSENUM       A         16 /* DISPLAY FORMAT                DK      0152
+    0730      3 PIWA2-1A-LIST-HI-HOUSENUM        A         16 /* DISPLAY FORMAT                DK      0153
+    0740      3 PIWA2-1A-LIST-BORO               A          1                                  DK      0154                             
+    0750      3 PIWA2-1A-LIST-5SC                A          5                                  DK      0155
+    0760      3 PIWA2-1A-LIST-LGC                A          2                                  DK      0156
+    0770      3 PIWA2-1A-LIST-BIN                A          7                                  DK      0157
+    0780      3 PIWA2-1A-LIST-SIDE-OF-STR        A          1 /* L OR R                        DK      0158
+    0790      3 PIWA2-1A-LIST-ADDR-TYPE          A          1 /* P=NAP, B=NAB,          MAL    DK      0159
+    0800   *  *                                               /* BLANK=NORMAL                  C
+    0810      3 PIWA2-1A-LIST-TPAD-STATUS        A          1 /* 0 - 9                         DK      0160
+    0820      3 FILLER-800                       A          3                                  DK      0161
+    ***** End of List *****
 
-    1 GEOLP2                                                                       
-    *    THE FIELD P2NAT IS USED AS A        PARAMETER TO CALL GEOSUPPORT FOR ALLLL   
-    *        FUNCTIONS THAT ARE REDEFINED           ON GEOLP2                         
-    *  * MAXIMUM LENGTH 2W - 4000 BYTES                                               
-    2 P2NAT                            A         21                                
-    R  2 P2NAT                                                                        
-    *  *  BEGINNING OF FUNCTION 1 LAYOUT  *       **** *******                        
-    3 PIWA2-FN1-ACCESS-KEY             A         21                                
-    2 PIWA2-FN1-CONT-PARITY            A          1 /* (OR DUP ADDR IND)           
-    2 PIWA2-FN1-LOW-HOUSENUM           A         11 /* SORT FORMAT                 
-    2 PIWA2-FN1-HI-HOUSENUM            A         11 /* SORT FORMAT                 
-    2 PIWA2-FN1-PREFERRED-LGC          A          2                                
-    2 PIWA2-FN1-NUM-X-ST-LOW-END       A          1                                
-    2 PIWA2-FN1-LOW-B5SC               A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN1-NUM-X-ST-HI-END        A          1                                
-    2 PIWA2-FN1-HI-B5SC                A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN1-LIONKEY                A         10                                
-    R  2 PIWA2-FN1-LIONKEY                                                            
-    3 PIWA2-FN1-LION-BORO              A          1                                
-    3 PIWA2-FN1-LION-FACECODE          A          4                                
-    3 PIWA2-FN1-LION-SEQ               A          5                                
-    2 PIWA2-FN1-SPECIAL-ADDR-FLAG      A          1                                
-    2 PIWA2-FN1-SIDE-OF-STR            A          1                                
-    2 PIWA2-FN1-SEG-LEN                A          5                                
-    2 PIWA2-FN1-X-COORD                A          7                                
-    2 PIWA2-FN1-Y-COORD                A          7                                
-    2 FILLER-100                       A          7 /* FOR ZCOORD                  
-    2 FILLER-200                       A          1 /* FOR GSS USE                 
-    2 PIWA2-FN1-MARBLE-RIKERS-FLAG     A          1                                
-    2 PIWA2-FN1-DOT-SLA                A          1                                
-    2 PIWA2-FN1-COM-DIST               A          3                                
-    R  2 PIWA2-FN1-COM-DIST                                                           
-    3 PIWA2-FN1-COM-DIST-BORO          A          1                                
-    3 PIWA2-FN1-COM-DIST-NUM           A          2                                
-    2 PIWA2-FN1-ZIP                    A          5                                
-    *  *                                  *       **** *****                          
-    *  *  THE FN1E FIELDS ARE VALID ONLY  *       **** *****                          
-    *  *  FOR FUNCTION 1E, NOT FUNC 1.    *       **** *****                          
-    2 PIWA2-FN1E-ELECT-DIST            A          3                                
-    2 PIWA2-FN1E-ASSEM-DIST            A          2                                
-    2 PIWA2-FN1E-SPLIT-ED-FLAG         A          1                                
-    2 PIWA2-FN1E-CONG-DIST             A          2                                
-    2 PIWA2-FN1E-SENATE-DIST           A          2                                
-    2 PIWA2-FN1E-COURT-DIST            A          2                                
-    2 PIWA2-FN1E-COUNCIL-DIST          A          2                                
-    *  *                                  *       **** *****                          
-    2 PIWA2-FN1-HEALTH-CENTER-DIST     A          2                                
-    2 PIWA2-FN1-HEALTH-AREA            A          4                                
-    2 PIWA2-FN1-SANI-DIST              A          3                                
-    R  2 PIWA2-FN1-SANI-DIST                                                          
-    3 PIWA2-FN1-SANI-DIST-BORO         A          1                                
-    3 PIWA2-FN1-SANI-DIST-NUM          A          2                                
-    2 PIWA2-FN1-SANI-SUBSEC            A          2                                
-    2 PIWA2-FN1-SANI-REG               A          5                                
-    2 PIWA2-FN1-SANI-REC               A          3                                
-    2 PIWA2-FN1-POLICE-DIST            A          4                                
-    R  2 PIWA2-FN1-POLICE-DIST                                                        
-    3 PIWA2-FN1-POL-PAT-BORO-CMD       A          1                                
-    3 PIWA2-FN1-POL-PRECINCT           A          3                                
-    2 PIWA2-FN1-FIRE-DIV               A          2                                
-    2 PIWA2-FN1-FIRE-BAT               A          2                                
-    2 PIWA2-FN1-FIRE-CO                A          4                                
-    R  2 PIWA2-FN1-FIRE-CO                                                            
-    3 PIWA2-FN1-FIRE-CO-TYPE           A          1                                
-    3 PIWA2-FN1-FIRE-CO-NUM            A          3                                
-    2 PIWA2-FN1-SCHL-DIST-SPLIT-FLAG   A          1                                
-    2 PIWA2-FN1-SCHL-DIST              A          2                                
-    2 PIWA2-FN1-DYN-BLK                A          3                                
-    2 PIWA2-FN1-POLICE-PAT-BORO        A          2                                
-    2 PIWA2-FN1-FEATURE-TYPE           A          1                                
-    2 PIWA2-FN1-SEGMENT-TYPE           A          1                                
-    2 PIWA2-FN1-ALX                    A          1                                
-    2 PIWA2-FN1-COINCIDENT-SEG-CTR     A          1                                
-    2 FILLER-290                       A          3                                
-    2 PIWA2-FN1-1990-CENSUS-TRACT      A          6                                
-    2 PIWA2-FN1-2010-CENSUS-TRACT      A          6                                
-    2 PIWA2-FN1-2010-CENSUS-BLOCK      A          4                                
-    2 PIWA2-FN1-2010-CENSUS-BLOCK-SUF  A          1 /* NA                          
-    2 PIWA2-FN1-2000-CENS-TRACT        A          6                                
-    2 PIWA2-FN1-2000-CENS-BLOCK        A          4                                
-    2 PIWA2-FN1-2000-CENS-BLOCK-SUF    A          1 /* NA                          
-    2 PIWA2-FN1-NTA                    A          4                                
-    2 PIWA2-FN1-SANIT-SNOW-PRIORITY    A          1                                
-    2 PIWA2-FN1-SANIT-ORGANICS         A          5                                
-    2 PIWA2-FN1-SANIT-BULK-PICK-UP     A          5 /* V16.4 ADDITION              
-    *  2 PIWA2-FN1-SANIT-RESERVED         A          5 /*FOR POSSIBLE FUTURE USE      
-    2 PIWA2-FN1-HURRICANE-ZONE         A          2 /*OEM HURRICANE EVAC ZONE      
-    2 FILLER-300                       A         11                                
-    2 PIWA2-FN1-UHNS                   A         11 /* UNDERLYING HNS              
-    2 PIWA2-FN1-REAL-B7SC              A          8                                
-    2 PIWA2-FN1-SEGMENT-ID             A          7                                
-    2 PIWA2-FN1-CURVE-FLAG             A          1                                
-    2 PIWA2-FN1-PSEUDO-FILLER          A       3700 /*MAX RECORD 2W IS 4000        
-    *  *  END OF FUNCTION 1 LAYOUT        *       **** *******                        
-    *  - -------------------------------- -       ---- -------------------------------
-    *  *  BEGINNING OF FUNCTION 2                                                     
-    *  *           & FUNCTION 2C LAYOUT   * ********** *******                        
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN2-ACCESS-KEY             A         21 /* FOR FUNCTIONS 2 & 2C        
-    2 PIWA2-FN2-DUP-INTERSECT-FLAG     A          1                                
-    2 PIWA2-FN2-PREFERRED-LGC1         A          2                                
-    2 PIWA2-FN2-PREFERRED-LGC2         A          2                                
-    2 PIWA2-FN2-NUM-OF-INTERSECTS      A          1                                
-    2 PIWA2-FN2-INTERSECT-B5SC         A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN2-COMP-DIR               A          1                                
-    2 PIWA2-FN2-ATOMIC-POLYGON         A          3                                
-    2 FILLER-350                       A          2                                
-    2 PIWA2-FN2-NODE-NUM               A          7                                
-    2 PIWA2-FN2-X-COORD                A          7                                
-    2 PIWA2-FN2-Y-COORD                A          7                                
-    2 FILLER-400                       A          7 /* FOR ZCOORD                  
-    2 PIWA2-FN2-SANBORN1               A          8                                
-    R  2 PIWA2-FN2-SANBORN1                                                           
-    3 PIWA2-FN2-SANBORN1-BORO          A          1                                
-    3 PIWA2-FN2-SANBORN1-VOL           A          3                                
-    3 PIWA2-FN2-SANBORN1-PAGE          A          4                                
-    2 PIWA2-FN2-SANBORN2               A          8                                
-    R  2 PIWA2-FN2-SANBORN2                                                           
-    3 PIWA2-FN2-SANBORN2-BORO          A          1                                
-    3 PIWA2-FN2-SANBORN2-VOL           A          3                                
-    3 PIWA2-FN2-SANBORN2-PAGE          A          4                                
-    2 PIWA2-FN2-MARBLE-RIKERS-FLAG     A          1                                
-    2 PIWA2-FN2-DOT-SLA                A          1                                
-    2 PIWA2-FN2-COM-DIST               A          3                                
-    R  2 PIWA2-FN2-COM-DIST                                                           
-    3 PIWA2-FN2-COM-DIST-BORO          A          1                                
-    3 PIWA2-FN2-COM-DIST-NUM           A          2                                
-    2 PIWA2-FN2-ZIP                    A          5                                
-    2 PIWA2-FN2-HEALTH-AREA            A          4                                
-    2 PIWA2-FN2-POLICE-DIST            A          4                                
-    R  2 PIWA2-FN2-POLICE-DIST                                                        
-    3 PIWA2-FN2-POL-PAT-BORO-CMD       A          1                                
-    3 PIWA2-FN2-POL-PRECINCT           A          3                                
-    2 PIWA2-FN2-FIRE-DIV               A          2                                
-    2 PIWA2-FN2-FIRE-BAT               A          2                                
-    2 PIWA2-FN2-FIRE-CO                A          4                                
-    R  2 PIWA2-FN2-FIRE-CO                                                            
-    3 PIWA2-FN2-FIRE-CO-TYPE           A          1                                
-    3 PIWA2-FN2-FIRE-CO-NUM            A          3                                
-    2 PIWA2-FN2-SCHL-DIST              A          2                                
-    2 PIWA2-FN2-2010-CENSUS-TRACT      A          6                                
-    2 PIWA2-FN2-1990-CENSUS-TRACT      A          6                                
-    2 PIWA2-FN2-LEVEL-CODE-TBL         A         10                                
-    R  2 PIWA2-FN2-LEVEL-CODE-TBL                                                     
-    3 PIWA2-FN2-LEVEL-CODE             A          1 (5,2) /* 10-BYTES              
-    2 PIWA2-FN2-POLICE-PAT-BORO        A          2                                
-    2 PIWA2-FN2-ASSEM-DIST             A          2                                
-    2 PIWA2-FN2-CONG-DIST              A          2                                
-    2 PIWA2-FN2-SENATE-DIST            A          2                                
-    2 PIWA2-FN2-COURT-DIST             A          2                                
-    2 PIWA2-FN2-COUNCIL-DIST           A          2                                
-    2 PIWA2-FN2-CD-ELIGIBLE            A          1                                
-    2 PIWA2-FN2-DUP-INTERSECT-DIST     A          5                                
-    2 PIWA2-FN2-2000-CENS-TRACT        A          6                                
-    2 PIWA2-FN2-HEALTH-CENTER-DIST     A          2                                
-    2 PIWA2-FN2-SANITATION-DIST        A          3                                
-    2 PIWA2-FN2-SANITATION-SUBSEC      A          2                                
-    2 FILLER-500                       A         12                                
-    *  2 PIWA2-FN2-PSEUDO-FILLER          A       3800                                
-    *  *  END OF FUNCTION 2               * ********** ********                       
-    *  *       & FUNCTION 2C LAYOUT       * ********** ********                       
-    *  * -------------------------------- - ---------- -----------------              
-    *  *  BEGINNING OF FUNCTION 2W        * ********** *******                        
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN2W-ACCESS-KEY            A         21 /* FOR FUNCTION 2W             
-    2 PIWA2-FN2W-DUP-INTERSECT-FLAG    A          1                                
-    2 PIWA2-FN2W-PREFERRED-LGC1        A          2                                
-    2 PIWA2-FN2W-PREFERRED-LGC2        A          2                                
-    2 PIWA2-FN2W-NUM-OF-INTERSECTS     A          1                                
-    2 PIWA2-FN2W-INTERSECT-B5SC        A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN2W-COMP-DIR              A          1                                
-    2 PIWA2-FN2W-ATOMIC-POLYGON        A          3                                
-    2 FILLER-350W                      A          2                                
-    2 PIWA2-FN2W-NODE-NUM              A          7                                
-    2 PIWA2-FN2W-X-COORD               A          7                                
-    2 PIWA2-FN2W-Y-COORD               A          7                                
-    2 FILLER-400W                      A          7 /* FOR ZCOORD                  
-    2 PIWA2-FN2W-SANBORN1              A          8                                
-    R  2 PIWA2-FN2W-SANBORN1                                                          
-    3 PIWA2-FN2W-SANBORN1-BORO         A          1                                
-    3 PIWA2-FN2W-SANBORN1-VOL          A          3                                
-    3 PIWA2-FN2W-SANBORN1-PAGE         A          4                                
-    2 PIWA2-FN2W-SANBORN2              A          8                                
-    R  2 PIWA2-FN2W-SANBORN2                                                          
-    3 PIWA2-FN2W-SANBORN2-BORO         A          1                                
-    3 PIWA2-FN2W-SANBORN2-VOL          A          3                                
-    3 PIWA2-FN2W-SANBORN2-PAGE         A          4                                
-    2 PIWA2-FN2W-MARBLE-RIKERS-FLAG    A          1                                
-    2 PIWA2-FN2W-DOT-SLA               A          1                                
-    2 PIWA2-FN2W-COM-DIST              A          3                                
-    R  2 PIWA2-FN2W-COM-DIST                                                          
-    3 PIWA2-FN2W-COM-DIST-BORO         A          1                                
-    3 PIWA2-FN2W-COM-DIST-NUM          A          2                                
-    2 PIWA2-FN2W-ZIP                   A          5                                
-    2 PIWA2-FN2W-HEALTH-AREA           A          4                                
-    2 PIWA2-FN2W-POLICE-DIST           A          4                                
-    R  2 PIWA2-FN2W-POLICE-DIST                                                       
-    3 PIWA2-FN2W-POL-PAT-BORO-CMD      A          1                                
-    3 PIWA2-FN2W-POL-PRECINCT          A          3                                
-    2 PIWA2-FN2W-FIRE-DIV              A          2                                
-    2 PIWA2-FN2W-FIRE-BAT              A          2                                
-    2 PIWA2-FN2W-FIRE-CO               A          4                                
-    R  2 PIWA2-FN2W-FIRE-CO                                                           
-    3 PIWA2-FN2W-FIRE-CO-TYPE          A          1                                
-    3 PIWA2-FN2W-FIRE-CO-NUM           A          3                                
-    2 PIWA2-FN2W-SCHL-DIST             A          2                                
-    2 PIWA2-FN2W-2010-CENSUS-TRACT     A          6                                
-    2 PIWA2-FN2W-1990-CENSUS-TRACT     A          6                                
-    2 PIWA2-FN2W-LEVEL-CODE-TBL        A         10                                
-    R  2 PIWA2-FN2W-LEVEL-CODE-TBL                                                    
-    3 PIWA2-FN2W-LEVEL-CODE            A          1 (5,2) /* 10-BYTES              
-    2 PIWA2-FN2W-POLICE-PAT-BORO       A          2                                
-    2 PIWA2-FN2W-ASSEM-DIST            A          2                                
-    2 PIWA2-FN2W-CONG-DIST             A          2                                
-    2 PIWA2-FN2W-SENATE-DIST           A          2                                
-    2 PIWA2-FN2W-COURT-DIST            A          2                                
-    2 PIWA2-FN2W-COUNCIL-DIST          A          2                                
-    2 PIWA2-FN2W-CD-ELIGIBLE           A          1                                
-    2 PIWA2-FN2W-DUP-INTERSECT-DIST    A          5                                
-    2 PIWA2-FN2W-2000-CENS-TRACT       A          6                                
-    2 PIWA2-FN2W-HEALTH-CENTER-DIST    A          2                                
-    2 PIWA2-FN2W-SANITATION-DIST       A          3                                
-    2 PIWA2-FN2W-SANITATION-SUBSEC     A          2                                
-    2 FILLER-500W                      A         12                                
-    2 PIWA2-FN2W-FILLER-GRIDGEN        A         22 /*INTERNAL USE                 
-    2 PIWA2-FN2W-LGCS-FIRST-INTERSCT   A          2 (1:4) /*UP TO 4 LGCS           
-    2 PIWA2-FN2W-LGCS-SECOND-INTERSCT  A          2 (1:4) /*UP TO 4 LGCS           
-    2 PIWA2-FN2W-TURN-RESTRICTIONS     A          1 (1:10)                         
-    2 PIWA2-FN2W-INTERSECT-B5SC-LGCS   A          2 (1:5) /*LGCS FOR LIST          
-    *                                                  /*OF INTERSECTING STS          
-    2 PIWA2-FN2W-REPLICATION-CNTR      A          2                                
-    2 PIWA2-FN2W-NODE-LIST             A          7 (1:20) /*UP TO 20 NODES        
-    2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS  A       3200                                
-    R  2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS               /* REDEF. BEGIN : PIWA2-FN2W-NO
-    3 PIWA2-FN2W-NODE-LIST-B7SCS-TBL   A        160 (20)                           
-    R  2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS               /* REDEF. BEGIN : PIWA2-FN2W-NO
-    3 PIWA2-FN2W-NODE-LIST-B7SCS-STS   A         32 (20,5)                         
-    R  2 PIWA2-FN2W-NODE-LIST-B7SCS-TBLS               /* REDEF. BEGIN : PIWA2-FN2W-NO
-    3 PIWA2-FN2W-NODE-LIST-B7SCS       A          8 (20,5,4)                       
-    2 PIWA2-FN2W-REASON-CODE           A          1                                
-    2 PIWA2-FN2W-REASON-CODE-QUAL      A          1                                
-    2 PIWA2-FN2W-WARN-CODE             A          2                                
-    2 PIWA2-FN2W-RETURN-CODE           A          2                                
-    2 PIWA2-FN2W-LATITUDE              A          9                                
-    2 PIWA2-FN2W-LONGITUDE             A         11                                
-    2 PIWA2-FN2W-FILLER2W              A        374                                
-    *  *  END OF FUNCTION 2W              * ********** ********                       
-    *  * -------------------------------- - ---------- -----------------              
-    *  *  BEGINNING OF FUNCTION 3 LAYOUT  * ********** *********                      
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN3-ACCESS-KEY             A         21                                
-    2 PIWA2-FN3-DUP-KEY-FLAG           A          1 /* OR CONTI PARITY             
-    2 PIWA2-FN3-LOCATION-STATUS        A          1                                
-    2 PIWA2-FN3-COUNTY-BOUNDARY        A          1                                
-    2 PIWA2-FN3-PREFERRED-LGC1         A          2                                
-    2 PIWA2-FN3-PREFERRED-LGC2         A          2                                
-    2 PIWA2-FN3-PREFERRED-LGC3         A          2                                
-    2 PIWA2-FN3-NUM-X-ST-LOW-END       A          1                                
-    2 PIWA2-FN3-LOW-B5SC               A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN3-NUM-X-ST-HI-END        A          1                                
-    2 PIWA2-FN3-HI-B5SC                A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN3-REVERSAL-FLAG          A          1                                
-    2 PIWA2-FN3-LION-KEY               A         10                                
-    R  2 PIWA2-FN3-LION-KEY                                                           
-    3 PIWA2-FN3-LION-BORO              A          1                                
-    3 PIWA2-FN3-LION-FACECODE          A          4                                
-    3 PIWA2-FN3-LION-SEQ               A          5                                
-    2 PIWA2-FN3-GENREC-FLAG            A          1                                
-    2 PIWA2-FN3-SEG-LENGTH             A          5                                
-    2 PIWA2-FN3-SEG-SLOP               A          3                                
-    2 PIWA2-FN3-SEG-ORIENT             A          1                                
-    2 PIWA2-FN3-MARBLE-RIKERS-FLAG     A          1                                
-    2 PIWA2-FN3-FROM-NODE              A          7                                
-    2 PIWA2-FN3-TO-NODE                A          7                                
-    2 PIWA2-FN3-SANIT-SNOW-PRIORITY    A          1 /*SANITATION STRT              
-    *  *                                               /*SNOW PRIORITY                
-    2 FILLER-600                       A          4                                
-    2 PIWA2-FN3-SEGMENT-ID             A          7                                
-    2 PIWA2-FN3-DOT-SLA                A          1                                
-    2 PIWA2-FN3-CURVE-FLAG             A          1                                
-    2 PIWA2-FN3-DOG-LEG                A          1                                
-    2 PIWA2-FN3-FEATURE-TYPE           A          1                                
-    2 PIWA2-FN3-SEGMENT-TYPE           A          1                                
-    2 PIWA2-FN3-COINCIDENT-SEG-CTR     A          1                                
-    2 FILLER-700                       A          4                                
-    *  * *** LEFT SIDE OF THE STREET **** * ********** ******                         
-    2 PIWA2-FN3-LEFT-SIDE-OF-STR       A        150                                
-    R  2 PIWA2-FN3-LEFT-SIDE-OF-STR                                                   
-    3 PIWA2-FN3-L-COM-DIST             A          3                                
-    R  3 PIWA2-FN3-L-COM-DIST                                                         
-    4 PIWA2-FN3-L-COM-DIST-BORO        A          1                                
-    4 PIWA2-FN3-L-COM-DIST-NUM         A          2                                
-    3 PIWA2-FN3-L-LOW-HOUSENUM         A         16 /* DISPLAY FORMAT              
-    3 PIWA2-FN3-L-HI-HOUSENUM          A         16 /* DISPLAY FORMAT              
-    3 FILLER-800                       A         32 /* FOR FUTURE USE              
-    3 PIWA2-FN3-L-CD-ELIGIBLE          A          1                                
-    3 PIWA2-FN3-L-ZIP                  A          5                                
-    3 PIWA2-FN3-L-HEALTH-AREA          A          4                                
-    3 PIWA2-FN3-L-POLICE-DIST          A          4                                
-    R  3 PIWA2-FN3-L-POLICE-DIST                                                      
-    4 PIWA2-FN3-L-POL-PAT-BORO-CMD     A          1                                
-    4 PIWA2-FN3-L-POL-PRECINCT         A          3                                
-    3 PIWA2-FN3-L-FIRE-DIV             A          2                                
-    3 PIWA2-FN3-L-FIRE-BAT             A          2                                
-    3 PIWA2-FN3-L-FIRE-CO              A          4                                
-    R  3 PIWA2-FN3-L-FIRE-CO                                                          
-    4 PIWA2-FN3-L-FIRE-CO-TYPE         A          1                                
-    4 PIWA2-FN3-L-FIRE-CO-NUM          A          3                                
-    3 PIWA2-FN3-L-SCHL-DIST            A          2                                
-    3 PIWA2-FN3-L-DYN-BLK              A          3                                
-    3 PIWA2-FN3-L-ED                   A          3                                
-    3 PIWA2-FN3-L-AD                   A          2                                
-    3 PIWA2-FN3-L-POLICE-PAT-BORO      A          2                                
-    3 FILLER-880                       A          1                                
-    3 PIWA2-FN3-L-BORO                 A          1                                
-    3 PIWA2-FN3-L-1990-CENSUS-TRACT    A          6                                
-    3 PIWA2-FN3-L-2010-CENSUS-TRACT    A          6                                
-    3 PIWA2-FN3-L-2010-CENSUS-BLOCK    A          4                                
-    3 PIWA2-FN3-L-2010-CENSUS-BLK-SUF  A          1 /* NA                          
-    3 PIWA2-FN3-L-2000-CENS-TRACT      A          6                                
-    3 PIWA2-FN3-L-2000-CENS-BLOCK      A          4                                
-    3 PIWA2-FN3-L-2000-CENS-BLK-SUF    A          1 /* NA                          
-    3 PIWA2-FN3-L-FILLER-890           A          7 /* V16.1 REPLACEMENT           
-    3 PIWA2-FN3-L-NTA                  A          4 /*NEIGHBORHOOD                 
-    *  *                                               /*TABULATION AREA              
-    3 FILLER-900                       A          8                                
-    *  * *** RIGHT SIDE OF THE STREET *** * ********** ***********                    
-    2 PIWA2-FN3-RIGHT-SIDE-OF-STR      A        150                                
-    R  2 PIWA2-FN3-RIGHT-SIDE-OF-STR                                                  
-    3 PIWA2-FN3-R-COM-DIST             A          3                                
-    R  3 PIWA2-FN3-R-COM-DIST                                                         
-    4 PIWA2-FN3-R-COM-DIST-BORO        A          1                                
-    4 PIWA2-FN3-R-COM-DIST-NUM         A          2                                
-    3 PIWA2-FN3-R-LOW-HOUSENUM         A         16 /* DISPLAY FORMAT              
-    3 PIWA2-FN3-R-HI-HOUSENUM          A         16 /* DISPLAY FORMAT              
-    3 FILLER-1000                      A         32 /* FOR FUTURE USE              
-    3 PIWA2-FN3-R-CD-ELIGIBLE          A          1                                
-    3 PIWA2-FN3-R-ZIP                  A          5                                
-    3 PIWA2-FN3-R-HEALTH-AREA          A          4                                
-    3 PIWA2-FN3-R-POLICE-DIST          A          4                                
-    R  3 PIWA2-FN3-R-POLICE-DIST                                                      
-    4 PIWA2-FN3-R-POL-PAT-BORO-CMD     A          1                                
-    4 PIWA2-FN3-R-POL-PRECINCT         A          3                                
-    3 PIWA2-FN3-R-FIRE-DIV             A          2                                
-    3 PIWA2-FN3-R-FIRE-BAT             A          2                                
-    3 PIWA2-FN3-R-FIRE-CO              A          4                                
-    R  3 PIWA2-FN3-R-FIRE-CO                                                          
-    4 PIWA2-FN3-R-FIRE-CO-TYPE         A          1                                
-    4 PIWA2-FN3-R-FIRE-CO-NUM          A          3                                
-    3 PIWA2-FN3-R-SCHL-DIST            A          2                                
-    3 PIWA2-FN3-R-DYN-BLK              A          3                                
-    3 PIWA2-FN3-R-ED                   A          3                                
-    3 PIWA2-FN3-R-AD                   A          2                                
-    3 PIWA2-FN3-R-POLICE-PAT-BORO      A          2                                
-    3 FILLER-1080                      A          1                                
-    3 PIWA2-FN3-R-BORO                 A          1                                
-    3 PIWA2-FN3-R-1990-CENSUS-TRACT    A          6                                
-    3 PIWA2-FN3-R-2010-CENSUS-TRACT    A          6                                
-    3 PIWA2-FN3-R-2010-CENSUS-BLOCK    A          4                                
-    3 PIWA2-FN3-R-2010-CENSUS-BLK-SUF  A          1 /* NA                          
-    3 PIWA2-FN3-R-2000-CENS-TRACT      A          6                                
-    3 PIWA2-FN3-R-2000-CENS-BLOCK      A          4                                
-    3 PIWA2-FN3-R-2000-CENS-BLK-SUF    A          1 /* NA                          
-    3 PIWA2-FN3-R-FILLER-1090          A          7 /* V16.1 REPLACEMENT           
-    3 PIWA2-FN3-R-NTA                  A          4 /*NEIGHBORHOOD                 
-    *  *                                               /*TABULATION AREA              
-    3 FILLER-1100                      A          8                                
-    *  2 PIWA2-FN3-PSEUDO-FILLER          A       3550                                
-    *  * ******************************** * ********** **********                     
-    * ** *** END OF FUNCTION 3 LAYOUT**** * ********** **********                     
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN3-SEGAUX                 A        450 /* SAME AS FN3                 
-    2 PIWA2-FN3-FILLER-SEGAUX          A          6 /* FOR FUTURE USE              
-    2 PIWA2-FN3-SEGAUX-COUNTER         A          4                                
-    2 PIWA2-FN3-SEGAUX-SEGMENTS        A          7 (1:70)                         
-    *  2 PIWA2-FN3-SEGAUX-PSEUDO-FILLER   A       3050                                
-    *  * ******************************** * ********** FOR AUX SEGS                   
-    *  *  END OF FUNCTION 3 AUX LAYOUT    * ********** ********                       
-    *  * -------------------------------- - ---------- --------                       
-    *  *  START OF FUNCTION 3 EXTENDED      LAYOUT     ********                       
-    R  1 GEOLP2                                                                       
-    2 PIWA2-3X-ACCESS-KEY              A         21                                
-    2 PIWA2-3X-DUP-KEY-FLAG            A          1 /* OR CONTI PARITY             
-    2 PIWA2-3X-LOCATION-STATUS         A          1                                
-    2 PIWA2-3X-COUNTY-BOUNDARY         A          1                                
-    2 PIWA2-3X-PREFERRED-LGC1          A          2                                
-    2 PIWA2-3X-PREFERRED-LGC2          A          2                                
-    2 PIWA2-3X-PREFERRED-LGC3          A          2                                
-    2 PIWA2-3X-NUM-X-ST-LOW-END        A          1                                
-    2 PIWA2-3X-LOW-B5SC                A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-3X-NUM-X-ST-HI-END         A          1                                
-    2 PIWA2-3X-HI-B5SC                 A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-3X-REVERSAL-FLAG           A          1                                
-    2 PIWA2-3X-LION-KEY                A         10                                
-    R  2 PIWA2-3X-LION-KEY                                                            
-    3 PIWA2-3X-LION-BORO               A          1                                
-    3 PIWA2-3X-LION-FACECODE           A          4                                
-    3 PIWA2-3X-LION-SEQ                A          5                                
-    2 PIWA2-3X-GENREC-FLAG             A          1                                
-    2 PIWA2-3X-SEG-LENGTH              A          5                                
-    2 PIWA2-3X-SEG-SLOP                A          3                                
-    2 PIWA2-3X-SEG-ORIENT              A          1                                
-    2 PIWA2-3X-MARBLE-RIKERS-FLAG      A          1                                
-    2 PIWA2-3X-FROM-NODE               A          7                                
-    2 PIWA2-3X-TO-NODE                 A          7                                
-    2 PIWA2-3X-SANIT-SNOW-PRIORITY     A          1 /*SANITATION STRT              
-    *  *                                               /*SNOW PRIORITY                
-    2 FILLER-3X-600                    A          4                                
-    2 PIWA2-3X-SEGMENT-ID              A          7                                
-    2 PIWA2-3X-DOT-SLA                 A          1                                
-    2 PIWA2-3X-CURVE-FLAG              A          1                                
-    2 PIWA2-3X-DOG-LEG                 A          1                                
-    2 PIWA2-3X-FEATURE-TYPE            A          1                                
-    2 PIWA2-3X-SEGMENT-TYPE            A          1                                
-    2 PIWA2-3X-COINCIDENT-SEG-CTR      A          1                                
-    2 FILLER-3X-700                    A          4                                
-    *  * *** LEFT SIDE OF THE STREET **** * *** ****** ******                         
-    2 PIWA2-3X-LEFT-SIDE-OF-STR        A        150                                
-    R  2 PIWA2-3X-LEFT-SIDE-OF-STR                                                    
-    3 PIWA2-3X-L-COM-DIST              A          3                                
-    R  3 PIWA2-3X-L-COM-DIST                                                          
-    4 PIWA2-3X-L-COM-DIST-BORO         A          1                                
-    4 PIWA2-3X-L-COM-DIST-NUM          A          2                                
-    3 PIWA2-3X-L-LOW-HOUSENUM          A         16 /* DISPLAY FORMAT              
-    3 PIWA2-3X-L-HI-HOUSENUM           A         16 /* DISPLAY FORMAT              
-    3 FILLER-3X-800                    A         32 /* FOR FUTURE USE              
-    3 PIWA2-3X-L-CD-ELIGIBLE           A          1                                
-    3 PIWA2-3X-L-ZIP                   A          5                                
-    3 PIWA2-3X-L-HEALTH-AREA           A          4                                
-    3 PIWA2-3X-L-POLICE-DIST           A          4                                
-    R  3 PIWA2-3X-L-POLICE-DIST                                                       
-    4 PIWA2-3X-L-POL-PAT-BORO-CMD      A          1                                
-    4 PIWA2-3X-L-POL-PRECINCT          A          3                                
-    3 PIWA2-3X-L-FIRE-DIV              A          2                                
-    3 PIWA2-3X-L-FIRE-BAT              A          2                                
-    3 PIWA2-3X-L-FIRE-CO               A          4                                
-    R  3 PIWA2-3X-L-FIRE-CO                                                           
-    4 PIWA2-3X-L-FIRE-CO-TYPE          A          1                                
-    4 PIWA2-3X-L-FIRE-CO-NUM           A          3                                
-    3 PIWA2-3X-L-SCHL-DIST             A          2                                
-    3 PIWA2-3X-L-DYN-BLK               A          3                                
-    3 PIWA2-3X-L-ED                    A          3                                
-    3 PIWA2-3X-L-AD                    A          2                                
-    3 PIWA2-3X-L-POLICE-PAT-BORO       A          2                                
-    3 FILLER-3X-880                    A          1                                
-    3 PIWA2-3X-L-BORO                  A          1                                
-    3 PIWA2-3X-L-1990-CENSUS-TRACT     A          6                                
-    3 PIWA2-3X-L-2010-CENSUS-TRACT     A          6                                
-    3 PIWA2-3X-L-2010-CENSUS-BLOCK     A          4                                
-    3 PIWA2-3X-L-2010-CENSUS-BLK-SUF   A          1 /* NA                          
-    3 PIWA2-3X-L-2000-CENS-TRACT       A          6                                
-    3 PIWA2-3X-L-2000-CENS-BLOCK       A          4                                
-    3 PIWA2-3X-L-2010-CENS-BLK-SUF     A          1 /* NA                          
-    3 PIWA2-3X-L-FILLER-890            A          7 /* V16.1 REPLACEMENT           
-    3 PIWA2-3X-L-NTA                   A          4 /*NEIGHBORHOOD                 
-    *  *                                               /*TABULATION AREA              
-    3 FILLER-3X-900                    A          8                                
-    *  * *** RIGHT SIDE OF THE STREET *** * ********** ***********                    
-    2 PIWA2-3X-RIGHT-SIDE-OF-STR       A        150                                
-    R  2 PIWA2-3X-RIGHT-SIDE-OF-STR                                                   
-    3 PIWA2-3X-R-COM-DIST              A          3                                
-    R  3 PIWA2-3X-R-COM-DIST                                                          
-    4 PIWA2-3X-R-COM-DIST-BORO         A          1                                
-    4 PIWA2-3X-R-COM-DIST-NUM          A          2                                
-    3 PIWA2-3X-R-LOW-HOUSENUM          A         16 /* DISPLAY FORMAT              
-    3 PIWA2-3X-R-HI-HOUSENUM           A         16 /* DISPLAY FORMAT              
-    3 FILLER-3X-1000                   A         32 /* FOR FUTURE USE              
-    3 PIWA2-3X-R-CD-ELIGIBLE           A          1                                
-    3 PIWA2-3X-R-ZIP                   A          5                                
-    3 PIWA2-3X-R-HEALTH-AREA           A          4                                
-    3 PIWA2-3X-R-POLICE-DIST           A          4                                
-    R  3 PIWA2-3X-R-POLICE-DIST                                                       
-    4 PIWA2-3X-R-POL-PAT-BORO-CMD      A          1                                
-    4 PIWA2-3X-R-POL-PRECINCT          A          3                                
-    3 PIWA2-3X-R-FIRE-DIV              A          2                                
-    3 PIWA2-3X-R-FIRE-BAT              A          2                                
-    3 PIWA2-3X-R-FIRE-CO               A          4                                
-    R  3 PIWA2-3X-R-FIRE-CO                                                           
-    4 PIWA2-3X-R-FIRE-CO-TYPE          A          1                                
-    4 PIWA2-3X-R-FIRE-CO-NUM           A          3                                
-    3 PIWA2-3X-R-SCHL-DIST             A          2                                
-    3 PIWA2-3X-R-DYN-BLK               A          3                                
-    3 PIWA2-3X-R-ED                    A          3                                
-    3 PIWA2-3X-R-AD                    A          2                                
-    3 PIWA2-3X-R-POLICE-PAT-BORO       A          2                                
-    3 FILLER-3X-1080                   A          1                                
-    3 PIWA2-3X-R-BORO                  A          1                                
-    3 PIWA2-3X-R-1990-CENSUS-TRACT     A          6                                
-    3 PIWA2-3X-R-2010-CENSUS-TRACT     A          6                                
-    3 PIWA2-3X-R-2010-CENSUS-BLOCK     A          4                                
-    3 PIWA2-3X-R-2010-CENSUS-BLK-SUF   A          1 /* NA                          
-    3 PIWA2-3X-R-2000-CENS-TRACT       A          6                                
-    3 PIWA2-3X-R-2000-CENS-BLOCK       A          4                                
-    3 PIWA2-3X-R-2000-CENS-BLK-SUF     A          1 /* NA                          
-    3 PIWA2-3X-R-FILLER-1090           A          7 /* V16.1 REPLACEMENT           
-    3 PIWA2-3X-R-NTA                   A          4 /*NEIGHBORHOOD                 
-    *  *                                               /*TABULATION AREA              
-    3 FILLER-3X-1100                   A          8                                
-    2 PIWA2-3X-LGCS                    A          8                                
-    2 PIWA2-3X-LGCS-FROM               A          8                                
-    2 PIWA2-3X-LGCS-TO                 A          8                                
-    2 PIWA2-3X-L-HEALTH-CTR-DIST       A          2                                
-    2 PIWA2-3X-R-HEALTH-CTR-DIST       A          2                                
-    2 PIWA2-3X-FILL1                   A          1                                
-    2 PIWA2-3X-TRAFFIC-DIR             A          1                                
-    2 PIWA2-3X-ROADWAY-TYPE            A          2                                
-    2 PIWA2-3X-PHYSICAL-ID             A          7                                
-    2 PIWA2-3X-GENERIC-ID              A          7                                
-    2 PIWA2-3X-INTP-ID                 A          7 /* INTERNAL USE                
-    2 PIWA2-3X-INTF-ID                 A          7 /* INTERNAL USE                
-    2 PIWA2-3X-STR-STATUS              A          1                                
-    2 PIWA2-3X-STR-WIDTH               A          3                                
-    2 PIWA2-3X-STR-WIDTH-IRREG         A          1                                
-    2 PIWA2-3X-BIKE-LANE               A          1                                
-    2 PIWA2-3X-FED-CLASS-CODE          A          2                                
-    2 PIWA2-3X-ROW-TYPE                A          1                                
-    2 PIWA2-3X-LGC-LIST                A         10                                
-    2 PIWA2-3X-LEGACY-ID               A          7                                
-    2 PIWA2-3X-L-NTA-NAME              A         75                                
-    2 PIWA2-3X-R-NTA-NAME              A         75                                
-    2 PIWA2-3X-FROM-XCOORD             A          7                                
-    2 PIWA2-3X-FROM-YCOORD             A          7                                
-    2 PIWA2-3X-TO-XCOORD               A          7                                
-    2 PIWA2-3X-TO-YCOORD               A          7                                
-    2 PIWA2-3X-FROM-LATITUDE           A          9                                
-    2 PIWA2-3X-FROM-LONGITUDE          A         11                                
-    2 PIWA2-3X-TO-LATITUDE             A          9                                
-    2 PIWA2-3X-TO-LONGITUDE            A         11                                
-    2 PIWA2-3X-L-BLOCKFACE-ID          A         10 /* V16.1 ADD                   
-    2 PIWA2-3X-R-BLOCKFACE-ID          A         10 /* V16.1 ADD                   
-    2 PIWA2-3X-NBR-TRAVEL-LANES        A          2 /* V16.1 ADD                   
-    2 PIWA2-3X-NBR-PARK-LANES          A          2 /* V16.1 ADD                   
-    2 PIWA2-3X-NBR-TOTAL-LANES         A          2 /* V16.1 ADD                   
-    2 PIWA2-3X-BIKE-LANE-2             A          2 /* V16.4 ADDITION              
-    2 PIWA2-3X-STR-WIDTH-MAX           A          3 /* V16.4 ADDITION              
-    2 PIWA2-3X-BIKE-TRAFFIC-DIR        A          2 /* V17.1 ADDITION              
-    2 FILLER-3X-FILL2                  A        213 /* V17.1 ALTERATION            
-    *  2 FILLER-3X-FILL2                  A        215 /* V16.4 ALTERATION            
-    *  2 FILLER-3X-FILL2                  A        220 /* V16.1 MOD                   
-    *  2 PIWA2-3X-PSEUDO-FILLER           A       3000                                
-    *  * ******************************** * ********** **********                     
-    *  * END OF FCT 3 EXTENDED LAYOUT *** * ********** **********                     
-    R  1 GEOLP2                                                                       
-    2 PIWA2-3X-SEGAUX                  A       1000 /* SAME AS FN 3X               
-    2 PIWA2-3X-FILLER-SEGAUX           A          6 /* FOR FUTURE USE              
-    2 PIWA2-3X-SEGAUX-COUNTER          A          4                                
-    2 PIWA2-3X-SEGAUX-SEGMENTS         A          7 (1:70)                         
-    *  * ******************************** * ********** FOR AUX SEGS                   
-    *  * END OF FCT 3 EXTENDED AUX LAYOUT * ********** *************                  
-    *  * -------------------------------- - ---------- --------                       
-    *  *  BEGINNING OF FUNCTION 3C LAYOUT * ********** ********                       
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN3C-ACCESS-KEY            A         21                                
-    2 PIWA2-FN3C-DUP-KEY-FLAG          A          1 /* OR CONTI PARITY             
-    2 PIWA2-FN3C-LOCATION-STATUS       A          1                                
-    2 PIWA2-FN3C-COUNTY-BOUNDARY       A          1                                
-    2 PIWA2-FN3C-PREFERRED-LGC1        A          2                                
-    2 PIWA2-FN3C-PREFERRED-LGC2        A          2                                
-    2 PIWA2-FN3C-PREFERRED-LGC3        A          2                                
-    2 PIWA2-FN3C-NUM-X-ST-LOW-END      A          1                                
-    2 PIWA2-FN3C-LOW-B5SC              A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN3C-NUM-X-ST-HI-END       A          1                                
-    2 PIWA2-FN3C-HI-B5SC               A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-FN3C-REVERSAL-FLAG         A          1                                
-    2 PIWA2-FN3C-LIONKEY               A         10                                
-    R  2 PIWA2-FN3C-LIONKEY                                                           
-    3 PIWA2-FN3C-LION-BORO             A          1                                
-    3 PIWA2-FN3C-LION-FACECODE         A          4                                
-    3 PIWA2-FN3C-LION-SEQ              A          5                                
-    2 PIWA2-FN3C-GENREC-FLAG           A          1                                
-    2 PIWA2-FN3C-SEG-LENGTH            A          5                                
-    2 PIWA2-FN3C-SEG-AZIMUTH           A          3                                
-    2 PIWA2-FN3C-SEG-ORIENT            A          1                                
-    2 PIWA2-FN3C-MARBLE-RIKERS-FLAG    A          1                                
-    2 PIWA2-FN3C-FROM-NODE             A          7                                
-    2 PIWA2-FN3C-TO-NODE               A          7                                
-    2 PIWA2-FN3C-SANIT-SNOW-PRIORITY   A          1 /*SANITATION STRT              
-    *  *                                               /*SNOW PRIORITY                
-    2 FILLER-1200                      A          4                                
-    2 PIWA2-FN3C-SEGMENT-ID            A          7                                
-    2 PIWA2-FN3C-DOT-SLA               A          1                                
-    2 PIWA2-FN3C-SIDE-OF-STR           A          1                                
-    2 PIWA2-FN3C-CURVE-FLAG            A          1                                
-    2 PIWA2-FN3C-FEATURE-TYPE          A          1                                
-    2 PIWA2-FN3C-SEGMENT-TYPE          A          1                                
-    2 PIWA2-FN3C-COINCIDENT-SEG-CTR    A          1                                
-    2 FILLER-1300                      A          4                                
-    *  * *** FCT 3C BLOCKFACE INFORMATION * ********** ******************             
-    2 PIWA2-FN3C-BLOCKFACE-INFO        A        150                                
-    R  2 PIWA2-FN3C-BLOCKFACE-INFO                                                    
-    3 PIWA2-FN3C-COM-DIST              A          3                                
-    R  3 PIWA2-FN3C-COM-DIST                                                          
-    4 PIWA2-FN3C-COMDIST-BORO          A          1                                
-    4 PIWA2-FN3C-COMDIST-NUM           A          2                                
-    3 PIWA2-FN3C-LOW-HOUSENUM          A         16 /* DISPLAY FORMAT              
-    3 PIWA2-FN3C-HI-HOUSENUM           A         16 /* DISPLAY FORMAT              
-    3 PIWA2-FN3C-LOW-HOUSENUM2         A         16 /* DISPLAY FORMAT              
-    3 PIWA2-FN3C-HI-HOUSENUM2          A         16 /* DISPLAY FORMAT              
-    3 PIWA2-FN3C-FILLER-1400           A          1 /* FOR GSS USE                 
-    3 PIWA2-FN3C-ZIP                   A          5                                
-    3 PIWA2-FN3C-HEALTH-AREA           A          4                                
-    3 PIWA2-FN3C-POLICE-DIST           A          4                                
-    R  3 PIWA2-FN3C-POLICE-DIST                                                       
-    4 PIWA2-FN3C-POL-PAT-BORO-CMD      A          1                                
-    4 PIWA2-FN3C-POL-PRECINCT          A          3                                
-    3 PIWA2-FN3C-FIRE-DIV              A          2                                
-    3 PIWA2-FN3C-FIRE-BAT              A          2                                
-    3 PIWA2-FN3C-FIRE-CO               A          4                                
-    R  3 PIWA2-FN3C-FIRE-CO                                                           
-    4 PIWA2-FN3C-FIRE-CO-TYPE          A          1                                
-    4 PIWA2-FN3C-FIRE-CO-NUM           A          3                                
-    3 PIWA2-FN3C-SCHL-DIST             A          2                                
-    3 PIWA2-FN3C-DYN-BLK               A          3                                
-    3 PIWA2-FN3C-ED                    A          3                                
-    3 PIWA2-FN3C-AD                    A          2                                
-    3 PIWA2-FN3C-POLICE-PAT-BORO       A          2                                
-    3 FILLER-1480                      A          1                                
-    3 PIWA2-FN3C-BORO                  A          1                                
-    3 PIWA2-FN3C-1900-CENSUS-TRACT     A          6                                
-    3 PIWA2-FN3C-2010-CENSUS-TRACT     A          6                                
-    3 PIWA2-FN3C-2010-CENSUS-BLOCK     A          4                                
-    3 PIWA2-FN3C-2010-CENSUS-BLOCK-SUF A          1 /* NA                          
-    3 PIWA2-FN3C-2000-CENS-TRACT       A          6                                
-    3 PIWA2-FN3C-2000-CENS-BLOCK       A          4                                
-    3 PIWA2-FN3C-2000-CENS-BLK-SUF     A          1 /* NA                          
-    3 PIWA2-FN3C-FILLER-1490           A          7 /* V16.1 REPLACEMENT           
-    3 PIWA2-FN3C-NTA                   A          4 /*NEIGHBORHOOD                 
-    *  *                                               /*TABULATION AREA              
-    *  3 FILLER-1500                      A          8                                
-    *  * PIWA2-FN3C-PSEUDO-FILLER         A       3700 /*LEVEL 2 IN DEF               
-    *  * ******************************** * ********** ******                         
-    *  *  END OF FCT 3C LAYOUT ********** * ********** ******                         
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN3C-SEGAUX                A        300 /*SAME AS FN3C                 
-    2 PIWA2-FN3C-SEGAUX-FILL           A          6                                
-    2 PIWA2-FN3C-SEGAUX-CTR            A          4                                
-    2 PIWA2-FN3C-SEGAUX-SEGS           A          7 (1:70)                         
-    *  2 PIWA2-FN3C-AUX-PSEUDO-FILLER     A       3200                                
-    * ** ******************************** * ********** FN3C AUX SEGS                  
-    *  *  END OF FCT 3C AUX LAYOUT ****** * ********** *******                        
-    * ** ******************************** * ********** *************                  
-    * ** ******************************** * ********** *************                  
-    *  *  START OF FUNCTION 3CX LAYOUT    * ********** ********                       
-    R  1 GEOLP2                                                                       
-    2 PIWA2-3CX-ACCESS-KEY             A         21                                
-    2 PIWA2-3CX-DUP-KEY-FLAG           A          1 /* OR CONTI PARITY             
-    2 PIWA2-3CX-LOCATION-STATUS        A          1                                
-    2 PIWA2-3CX-COUNTY-BOUNDARY        A          1                                
-    2 PIWA2-3CX-PREFERRED-LGC1         A          2                                
-    2 PIWA2-3CX-PREFERRED-LGC2         A          2                                
-    2 PIWA2-3CX-PREFERRED-LGC3         A          2                                
-    2 PIWA2-3CX-NUM-X-ST-LOW-END       A          1                                
-    2 PIWA2-3CX-LOW-B5SC               A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-3CX-NUM-X-ST-HI-END        A          1                                
-    2 PIWA2-3CX-HI-B5SC                A          6 (1:5) /* 30-BYTES              
-    2 PIWA2-3CX-REVERSAL-FLAG          A          1                                
-    2 PIWA2-3CX-LIONKEY                A         10                                
-    R  2 PIWA2-3CX-LIONKEY                                                            
-    3 PIWA2-3CX-LION-BORO              A          1                                
-    3 PIWA2-3CX-LION-FACECODE          A          4                                
-    3 PIWA2-3CX-LION-SEQ               A          5                                
-    2 PIWA2-3CX-GENREC-FLAG            A          1                                
-    2 PIWA2-3CX-SEG-LENGTH             A          5                                
-    2 PIWA2-3CX-SEG-SLOPE              A          3                                
-    2 PIWA2-3CX-SEG-ORIENT             A          1                                
-    2 PIWA2-3CX-MARBLE-RIKERS-FLAG     A          1                                
-    2 PIWA2-3CX-FROM-NODE              A          7                                
-    2 PIWA2-3CX-TO-NODE                A          7                                
-    2 PIWA2-3CX-SANIT-SNOW-PRIORITY    A          1 /*SANITATION STRT              
-    *  *                                               /*SNOW PRIORITY                
-    2 FILLER-3CX-1200                  A          4                                
-    2 PIWA2-3CX-SEGMENT-ID             A          7                                
-    2 PIWA2-3CX-DOT-SLA                A          1                                
-    2 PIWA2-3CX-SIDE-OF-STR            A          1                                
-    2 PIWA2-3CX-CURVE-FLAG             A          1                                
-    2 PIWA2-3CX-FEATURE-TYPE           A          1                                
-    2 PIWA2-3CX-SEGMENT-TYPE           A          1                                
-    2 PIWA2-3CX-COINCIDENT-SEG-CTR     A          1                                
-    2 FILLER-3CX-1300                  A          4                                
-    *  * ***FCT 3C BLOCKFACE INFORMATION  * ********** ******************             
-    2 PIWA2-3CX-BLOCKFACE-INFO         A        150                                
-    R  2 PIWA2-3CX-BLOCKFACE-INFO                                                     
-    3 PIWA2-3CX-COM-DIST               A          3                                
-    R  3 PIWA2-3CX-COM-DIST                                                           
-    4 PIWA2-3CX-COMDIST-BORO           A          1                                
-    4 PIWA2-3CX-COMDIST-NUM            A          2                                
-    3 PIWA2-3CX-LOW-HOUSENUM           A         16 /* DISPLAY FORMAT              
-    3 PIWA2-3CX-HI-HOUSENUM            A         16 /* DISPLAY FORMAT              
-    3 PIWA2-3CX-LOW-HOUSENUM2          A         16 /* DISPLAY FORMAT              
-    3 PIWA2-3CX-HI-HOUSENUM2           A         16 /* DISPLAY FORMAT              
-    3 FIWA2-3CX-CD-ELIGIBLE            A          1                                
-    3 PIWA2-3CX-ZIP                    A          5                                
-    3 PIWA2-3CX-HEALTH-AREA            A          4                                
-    3 PIWA2-3CX-POLICE-DIST            A          4                                
-    R  3 PIWA2-3CX-POLICE-DIST                                                        
-    4 PIWA2-3CX-POL-PAT-BORO-CMD       A          1                                
-    4 PIWA2-3CX-POL-PRECINCT           A          3                                
-    3 PIWA2-3CX-FIRE-DIV               A          2                                
-    3 PIWA2-3CX-FIRE-BAT               A          2                                
-    3 PIWA2-3CX-FIRE-CO                A          4                                
-    R  3 PIWA2-3CX-FIRE-CO                                                            
-    4 PIWA2-3CX-FIRE-CO-TYPE           A          1                                
-    4 PIWA2-3CX-FIRE-CO-NUM            A          3                                
-    3 PIWA2-3CX-SCHL-DIST              A          2                                
-    3 PIWA2-3CX-DYN-BLK                A          3                                
-    3 PIWA2-3CX-ED                     A          3                                
-    3 PIWA2-3CX-AD                     A          2                                
-    3 PIWA2-3CX-POLICE-PAT-BORO        A          2                                
-    3 FILLER-3CX-1480                  A          1                                
-    3 PIWA2-3CX-BORO                   A          1                                
-    3 PIWA2-3CX-1990-CENSUS-TRACT      A          6                                
-    3 PIWA2-3CX-2010-CENSUS-TRACT      A          6                                
-    3 PIWA2-3CX-2010-CENSUS-BLOCK      A          4                                
-    3 PIWA2-3CX-2010-CENSUS-BLOCK-SUF  A          1 /* NA                          
-    3 PIWA2-3CX-2000-CENS-TRACT        A          6                                
-    3 PIWA2-3CX-2000-CENS-BLOCK        A          4                                
-    3 PIWA2-3CX-2000-CENS-BLK-SUF      A          1 /* NA                          
-    3 PIWA2-3CX-FILLER-1490            A          7 /* V16.1 REPLACEMENT           
-    3 PIWA2-3CX-NTA                    A          4 /*NEIGHBORHOOD                 
-    *  *                                               /*TABULATION AREA              
-    3 FILLER-1500                      A          8                                
-    2 PIWA2-3CX-LGCS                   A          8                                
-    2 PIWA2-3CX-LGCS-FROM              A          8                                
-    2 PIWA2-3CX-LGCS-TO                A          8                                
-    2 PIWA2-3CX-L-HEALTH-CTR-DIST      A          2                                
-    2 PIWA2-3CX-R-HEALTH-CTR-DIST      A          2                                
-    2 PIWA2-3CX-FILL1                  A          1                                
-    2 PIWA2-3CX-TRAFFIC-DIR            A          1                                
-    2 PIWA2-3CX-ROADWAY-TYPE           A          2                                
-    2 PIWA2-3CX-PHYSICAL-ID            A          7                                
-    2 PIWA2-3CX-GENERIC-ID             A          7                                
-    2 PIWA2-3CX-INTP-ID                A          7 /* INTERNAL USE                
-    2 PIWA2-3CX-INTF-ID                A          7 /* INTERNAL USE                
-    2 PIWA2-3CX-STREET-STATUS          A          1                                
-    2 PIWA2-3CX-STREET-WIDTH           A          3                                
-    2 PIWA2-3CX-STREET-WIDTH-IRREG     A          1                                
-    2 PIWA2-3CX-BIKE-LANE              A          1                                
-    2 PIWA2-3CX-FED-CLASS-CODE         A          2                                
-    2 PIWA2-3CX-ROW-TYPE               A          1                                
-    2 PIWA2-3CX-LGC-LIST               A         10                                
-    2 PIWA2-3CX-LEGACY-ID              A          7                                
-    2 PIWA2-3CX-NTA-NAME               A         75                                
-    2 PIWA2-3CX-FROM-XCOORD            A          7                                
-    2 PIWA2-3CX-FROM-YCOORD            A          7                                
-    2 PIWA2-3CX-TO-XCOORD              A          7                                
-    2 PIWA2-3CX-TO-YCOORD              A          7                                
-    2 PIWA2-3CX-FROM-LATITUDE          A          9                                
-    2 PIWA2-3CX-FROM-LONGITUDE         A         11                                
-    2 PIWA2-3CX-TO-LATITUDE            A          9                                
-    2 PIWA2-3CX-TO-LONGITUDE           A         11                                
-    2 PIWA2-3CX-BLOCKFACE-ID           A         10 /* V16.1 ADD                   
-    2 PIWA2-3CX-NBR-TRAVEL-LANES       A          2 /* V16.1 ADD                   
-    2 PIWA2-3CX-NBR-PARK-LANES         A          2 /* V16.1 ADD                   
-    2 PIWA2-3CX-NBR-TOTAL-LANES        A          2 /* V16.1 ADD                   
-    2 PIWA2-3CX-BIKE-LANE-2            A          2 /* V16.4 ADDITION              
-    2 PIWA2-3CX-STR-WIDTH-MAX          A          3 /* V16.4 ADDITION              
-    2 PIWA2-3CX-BIKE-TRAFFIC-DIR       A          2 /* V17.1 ADDITION              
-    2 FILLER-3CX-FILL1560              A        298 /* V17.1 ALTERATION            
-    *  2 FILLER-3CX-FILL1560              A        300 /* V16.4 ALTERATION            
-    *  2 FILLER-3CX-FILL1560              A        305 /* V16.1 MOD                   
-    *  2 PIWA2-3CX-PSEUDO-FILER           A       3150                                
-    *  * ******************************** * ********** ******                         
-    *  *  END OF FCT 3CX LAYOUT ********* * ********** ******                         
-    R  1 GEOLP2                                                                       
-    2 PIWA2-3CX-SEGAUX                 A        850 /* SAME AS FN 3CX              
-    2 PIWA2-3CX-SEGAUX-FILL            A          6                                
-    2 PIWA2-3CX-SEGAUX-CTR             A          4                                
-    2 PIWA2-3CX-SEGAUX-SEGS            A          7 (1:70)                         
-    *  2 PIWA2-3CX-AUX-PSEUDO-FILLER      A       2650                                
-    * ** ******************************** * ********** FN3C AUX SEGS                  
-    *  *  END OF FCT 3CX AUX LAYOUT*****  * ********** *******                        
-    * ** ******************************** * ********** *************                  
-    * ** ******************************** * ********** *************                  
-    *  *  BEGINNING OF FUNCTION 5 LAYOUT  *       **** *******                        
-    R  1 GEOLP2                                                                       
-    2 PIWA2-FN5-ADDR-MATCHING-KEY      A         33                                
-    2 FILLER-1600                      A        267                                
-    *  *  END OF FUNCTION 5 LAYOUT        *       **** *******                        
-    *  - -------------------------------- -       ---- -------------------------------
-
-
-## <span id="appendix14.25"><center>GEOLP21A COPY File</center></span>  
-
-    1 GEOLP21A                                      /*FCT 1A,BL USE SAME WA2 LAY
-    *  * THE FIELD P2NAT1A IS USED AS A      PARAMETER TO CALL GEOSUPPORT              
-    2 P2NAT1A                          A         21                                 
-    R  2 P2NAT1A                                                                       
-    3 PIWA2-1A-ACCESS-KEY              A         21                                 
-    2 PIWA2-1A-CONT-PARITY             A          1 /* OR DUP ADDR IND              
-    2 PIWA2-1A-LOW-HOUSENUM            A         11 /* SORT FORMAT                  
-    2 PIWA2-1A-BBL                     A         10                                 
-    R  2 PIWA2-1A-BBL                                                                  
-    3 PIWA2-1A-BBL-BORO                A          1                                 
-    3 PIWA2-1A-BLOCK                   A          5                                 
-    3 PIWA2-1A-LOT                     A          4                                 
-    2 PIWA2-1A-LOT-VERSION             A          1 /* NYI */                       
-    2 PIWA2-1A-SCC                     A          1                                 
-    2 FILLER-100                       A          1                                 
-    2 PIWA2-1A-GENERAL-LOT-INFO                                                     
-    3 PIWA2-1A-RPAD-BLDG-CLASS         A          2                                 
-    3 PIWA2-1A-CORNER-CODE             A          2                                 
-    3 PIWA2-1A-NUM-OF-STRUCTURES       A          4                                 
-    3 PIWA2-1A-NUM-OF-BLOCKFACES       A          2                                 
-    3 PIWA2-1A-INTERIOR-FLAG           A          1                                 
-    3 PIWA2-1A-VACANT-FLAG             A          1                                 
-    3 PIWA2-1A-IRREG-LOT-FLAG          A          1                                 
-    2 PIWA2-1A-MARBLE-RIKERS-FLAG      A          1                                 
-    2 PIWA2-1A-ADDR-LIST-OVFLOW-FLAG   A          1                                 
-    2 PIWA2-1A-STROLL-KEY              A         19                                 
-    R  2 PIWA2-1A-STROLL-KEY                                                           
-    3 PIWA2-1A-STROLL-BORO             A          1                                 
-    3 PIWA2-1A-STROLL-5SC              A          5                                 
-    3 PIWA2-1A-STROLL-SIDE-OF-STR      A          1 /* L OR R                       
-    3 PIWA2-1A-STROLL-HI-HOUSENUM      A         11 /* SORT FORMAT                  
-    3 FILLER-200                       A          1                                 
-    2 FILLER-300                       A          1 /* FOR GSS USE                  
-    2 PIWA2-1A-BIN                     A          7                                 
-    2 PIWA2-1A-CONDO-FLAG              A          1                                 
-    2 FILLER-400                       A          1                                 
-    2 PIWA2-1A-RPAD-CONDO-ID-NUM       A          4                                 
-    2 PIWA2-1A-CONDO-UNIT-ID-NUM       A          7                                 
-    2 PIWA2-1A-CONDO-BILL-BBL          A         10                                 
-    2 PIWA2-1A-CONDO-BILL-BBL-VER      A          1                                 
-    2 PIWA2-1A-CONDO-BILL-BBL-SCC      A          1                                 
-    2 PIWA2-1A-CONDO-LOW-BBL           A         10                                 
-    2 PIWA2-1A-CONDO-LOW-BBL-VER       A          1                                 
-    2 PIWA2-1A-CONDO-HIGH-BBL          A         10                                 
-    2 PIWA2-1A-CONDO-HIGH-BBL-VER      A          1                                 
-    2 FILLER-500                       A         15                                 
-    2 PIWA1-1A-COOP-NUM                A          4                                 
-    2 PIWA2-1A-SANBORN                 A          8                                 
-    R  2 PIWA2-1A-SANBORN                                                              
-    3 PIWA2-1A-SANBORN-BORO            A          1                                 
-    3 PIWA2-1A-SANBORN-VOL             A          3                                 
-    3 PIWA2-1A-SANBORN-PAGE            A          4                                 
-    2 PIWA2-1A-COMMERC-DIST            A          5                                 
-    2 PIWA2-1A-DOF-MAP-BORO            A          1                                 
-    2 PIWA2-1A-DOF-MAP-SECVOL          A          4                                 
-    2 PIWA2-1A-DOF-MAP-PAGE            A          4                                 
-    2 FILLER-1A-RESERVED-DCP           A          3                                 
-    2 PIWA2-1A-LATITUDE                A          9                                 
-    2 PIWA2-1A-LONGITUDE               A         11                                 
-    2 PIWA2-1A-X-COORD                 A          7                                 
-    2 PIWA2-1A-Y-COORD                 A          7                                 
-    2 PIWA2-1A-BID                     A          6                                 
-    2 PIWA2-1A-TPAD-BIN-ST             A          1 /* CURRENT STATUS */            
-    2 PIWA2-1A-TPAD-NEW-BIN            A          7 /* NEW BIN */                   
-    2 PIWA2-1A-TPAD-NEW-BIN-ST         A          1 /* NEW BIN STATUS */            
-    2 PIWA2-1A-TPAD-CONFLICT           A          1 /* CONFLICT FLAG */             
-    2 FILLER-650                       A          9                                 
-    2 FILLER-700                       A          8 /* FOR GSS USE                  
-    2 PIWA2-1A-NUM-OF-ADDR             A          4                                 
-    2 PIWA2-1A-LIST-OF-ADDR                         (1:21)                          
-    3 PIWA2-1A-LIST-LOW-HOUSENUM       A         16 /* DISPLAY FORMAT               
-    3 PIWA2-1A-LIST-HI-HOUSENUM        A         16 /* DISPLAY FORMAT               
-    3 PIWA2-1A-LIST-BORO               A          1                                 
-    3 PIWA2-1A-LIST-5SC                A          5                                 
-    3 PIWA2-1A-LIST-LGC                A          2                                 
-    3 PIWA2-1A-LIST-BIN                A          7                                 
-    3 PIWA2-1A-LIST-SIDE-OF-STR        A          1 /* L OR R                       
-    3 PIWA2-1A-LIST-ADDR-TYPE          A          1 /* P=NAP, B=NAB,          MAL   
-    *  *                                               /* BLANK=NORMAL                 
-    3 PIWA2-1A-LIST-TPAD-STATUS        A          1 /* 0 - 9                        
-    3 FILLER-800                       A          3                                 
-
-
-## <span id="appendix14.26"><center>GEOLP2AL COPY File</center></span>  
-
-    1 GEOLP2AL                                      /* FCT 1A, BL LONG WA2    WA2   
-    *  * THE FIELD P2NAT1AL IS USED AS A     PARAMETER TO CALL GEOSUPPORT              
-    2 P2NAT1AL                         A         21                                 
-    R  2 P2NAT1AL                                                                      
-    3 PIWA2-1AL-ACCESS-KEY             A         21                                 
-    *  * BEGINNING OF FUNCTION 1AL LAYOUT * ********** *******************             
-    2 PIWA2-1AL-CONT-PARITY            A          1 /* OR DUP ADDR IND              
-    2 PIWA2-1AL-LOW-HOUSENUM           A         11 /* SORT FORMAT                  
-    2 PIWA2-1AL-BBL                    A         10                                 
-    R  2 PIWA2-1AL-BBL                                                                 
-    3 PIWA2-1AL-BBL-BORO               A          1                                 
-    3 PIWA2-1AL-BLOCK                  A          5                                 
-    3 PIWA2-1AL-LOT                    A          4                                 
-    2 FILLER-1AL-LOT-VERSION           A          1 /* NA                           
-    2 PIWA2-1AL-SCC                    A          1                                 
-    2 FILLER-100                       A          1                                 
-    2 PIWA2-1AL-GENERAL-LOT-INFO                                                    
-    3 PIWA2-1AL-RPAD-BLDG-CLASS        A          2                                 
-    3 PIWA2-1AL-CORNER-CODE            A          2                                 
-    3 PIWA2-1AL-NUM-OF-STRUCTURES      A          4                                 
-    3 PIWA2-1AL-NUM-OF-BLOCKFACES      A          2                                 
-    3 PIWA2-1AL-INTERIOR-FLAG          A          1                                 
-    3 PIWA2-1AL-VACANT-FLAG            A          1                                 
-    3 PIWA2-1AL-IRREG-LOT-FLAG         A          1                                 
-    2 PIWA2-1AL-MARBLE-RIKERS-FLAG     A          1                                 
-    2 PIWA2-1AL-ADDR-LIST-OVFLOW-FLAG  A          1                                 
-    2 PIWA2-1AL-STROLL-KEY             A         19                                 
-    R  2 PIWA2-1AL-STROLL-KEY                                                          
-    3 PIWA2-1AL-STROLL-KEY-BORO        A          1                                 
-    3 PIWA2-1AL-STROLL-KEY-5SC         A          5                                 
-    3 PIWA2-1AL-STROLL-SIDE-OF-STR     A          1 /* L OR R                       
-    3 PIWA2-1AL-STROLL-HI-HOUSENUM     A         11 /* SORT FORMAT                  
-    3 FILLER-200                       A          1                                 
-    2 FILLER-300                       A          1 /* FOR GSS USE                  
-    2 PIWA2-1AL-BIN                    A          7                                 
-    2 PIWA2-1AL-CONDO-FLAG             A          1                                 
-    2 FILLER-400                       A          1                                 
-    2 PIWA2-1AL-RPAD-CONDO-ID-NUM      A          4                                 
-    2 PIWA2-1AL-CONDO-UNIT-ID-NUM      A          7                                 
-    2 PIWA2-1AL-CONDO-BILL-BBL         A         10                                 
-    2 PIWA2-1AL-CONDO-BILL-BBL-VER     A          1                                 
-    2 PIWA2-1AL-CONDO-BILL-BBL-SCC     A          1                                 
-    2 PIWA2-1AL-CONDO-LOW-BBL          A         10                                 
-    2 PIWA2-1AL-CONDO-LOW-BBL-VER      A          1                                 
-    2 PIWA2-1AL-CONDO-HIGH-BBL         A         10                                 
-    2 PIWA2-1AL-CONDO-HIGH-BBL-VER     A          1                                 
-    2 FILLER-500                       A         15                                 
-    2 PIWA2-1AL-COOP-NUM               A          4                                 
-    2 PIWA2-1AL-SANBORN                A          8                                 
-    R  2 PIWA2-1AL-SANBORN                                                             
-    3 PIWA2-1AL-SANBORN-BORO           A          1                                 
-    3 PIWA2-1AL-SANBORN-VOL            A          3                                 
-    3 PIWA2-1AL-SANBORN-PAGE           A          4                                 
-    2 PIWA2-1AL-COMMERC-DIST           A          5                                 
-    2 PIWA2-1AL-DOF-MAP-BORO           A          1                                 
-    2 PIWA2-1AL-DOF-MAP-SECVOL         A          4                                 
-    2 PIWA2-1AL-DOF-MAP-PAGE           A          4                                 
-    2 FILLER-600                       A          3                                 
-    2 PIWA2-1AL-LATITUDE               A          9                                 
-    2 PIWA2-1AL-LONGITUDE              A         11                                 
-    2 PIWA2-1AL-X-COORD                A          7                                 
-    2 PIWA2-1AL-Y-COORD                A          7                                 
-    2 PIWA2-1AL-BID                    A          6                                 
-    2 PIWA2-1AL-TPAD-BIN-ST            A          1 /*CURRENT STATUS                
-    2 PIWA2-1AL-TPAD-NEW-BIN           A          7 /*NEW BIN                       
-    2 PIWA2-1AL-TPAD-NEW-BIN-ST        A          1 /*NEW BIN STATUS                
-    2 PIWA2-1AL-TPAD-CONFLICT          A          1 /*CONFLICT FLAG                 
-    2 FILLER-650                       A          9                                 
-    2 FILLER-700                       A          8 /* LGC GSS USE                  
-    2 PIWA2-1AL-NUM-OF-BINS            A          4                                 
-    2 PIWA2-1AL-TPAD-BINLIST           A      17500                                 
-    R  2 PIWA2-1AL-TPAD-BINLIST                        /* REDEF. BEGIN : PIWA2-1AL-TPAD
-    3 PIWA2-1AL-TPAD-BINS                           (1:2187)                        
-    4 PIWA2-1AL-TPAD-BIN               A          7                                 
-    4 PIWA2-1AL-TPAD-BINS-STAT         A          1                                 
-    3 PIWA2-1AL-TPAD-FILL              A          4                                 
-    R  2 PIWA2-1AL-TPAD-BINLIST                                                        
-    3 PIWA2-1AL-BINS                   A          7 (1:2500)                        
-    * ** END OF FUNCTION 1AL LAYOUT ***** * ********** **********************          
-    * -- -------------------------------- - ---------- --------------------------      
-    * ** BEGINNING OF FCT 1/1E EXTENDED * * ********** **********************          
-    R  1 GEOLP2AL                                                                      
-    2 PIWA2-1EX-ACCESS-KEY             A         21                                 
-    2 PIWA2-1EX-CONT-PARITY            A          1 /* (OR DUP ADDR IND)            
-    2 PIWA2-1EX-LOW-HOUSENUM           A         11 /* SORT FORMAT                  
-    2 PIWA2-1EX-HI-HOUSENUM            A         11 /* SORT FORMAT                  
-    2 PIWA2-1EX-PREFERRED-LGC          A          2                                 
-    2 PIWA2-1EX-NUM-X-ST-LOW-END       A          1                                 
-    2 PIWA2-1EX-LOW-B5SC               A          6 (1:5) /* 30-BYTES               
-    2 PIWA2-1EX-NUM-X-ST-HI-END        A          1                                 
-    2 PIWA2-1EX-HI-B5SC                A          6 (1:5) /* 30-BYTES               
-    2 PIWA2-1EX-LIONKEY                A         10                                 
-    R  2 PIWA2-1EX-LIONKEY                                                             
-    3 PIWA2-1EX-LION-BORO              A          1                                 
-    3 PIWA2-1EX-LION-FACECODE          A          4                                 
-    3 PIWA2-1EX-LION-SEQ               A          5                                 
-    2 PIWA2-1EX-SPECIAL-ADDR-FLAG      A          1                                 
-    2 PIWA2-1EX-SIDE-OF-STR            A          1                                 
-    2 PIWA2-1EX-SEG-LEN                A          5                                 
-    2 PIWA2-1EX-X-COORD                A          7                                 
-    2 PIWA2-1EX-Y-COORD                A          7                                 
-    2 FILLER-1EX-100                   A          7 /* FOR ZCOORD                   
-    2 FILLER-1EX-200                   A          1 /* FOR GSS USE                  
-    2 PIWA2-1EX-MARBLE-RIKERS-FLAG     A          1                                 
-    2 PIWA2-1EX-DOT-SLA                A          1                                 
-    2 PIWA2-1EX-COM-DIST               A          3                                 
-    R  2 PIWA2-1EX-COM-DIST                                                            
-    3 PIWA2-1EX-COM-DIST-BORO          A          1                                 
-    3 PIWA2-1EX-COM-DIST-NUM           A          2                                 
-    2 PIWA2-1EX-ZIP                    A          5                                 
-    *  *                                  *       **** *****                           
-    *  *  THE FN1E FIELDS ARE VALID ONLY  *       **** *****                           
-    *  *  FOR FUNCTION 1E, NOT FUNC 1.    *       **** *****                           
-    2 PIWA2-1EX-ELECT-DIST             A          3                                 
-    2 PIWA2-1EX-ASSEM-DIST             A          2                                 
-    2 PIWA2-1EX-SPLIT-ED-FLAG          A          1                                 
-    2 PIWA2-1EX-CONG-DIST              A          2                                 
-    2 PIWA2-1EX-SENATE-DIST            A          2                                 
-    2 PIWA2-1EX-COURT-DIST             A          2                                 
-    2 PIWA2-1EX-COUNCIL-DIST           A          2                                 
-    *  *                                  *       **** *****                           
-    2 PIWA2-1EX-HEALTH-CENTER-DIST     A          2                                 
-    2 PIWA2-1EX-HEALTH-AREA            A          4                                 
-    2 PIWA2-1EX-SANI-DIST              A          3                                 
-    R  2 PIWA2-1EX-SANI-DIST                                                           
-    3 PIWA2-1EX-SANI-DIST-BORO         A          1                                 
-    3 PIWA2-1EX-SANI-DIST-NUM          A          2                                 
-    2 PIWA2-1EX-SANI-SUBSEC            A          2                                 
-    2 PIWA2-1EX-SANI-REG               A          5                                 
-    2 PIWA2-1EX-SANI-REC               A          3                                 
-    2 PIWA2-1EX-POLICE-DIST            A          4                                 
-    R  2 PIWA2-1EX-POLICE-DIST                                                         
-    3 PIWA2-1EX-POL-PAT-BORO-CMD       A          1                                 
-    3 PIWA2-1EX-POL-PRECINCT           A          3                                 
-    2 PIWA2-1EX-FIRE-DIV               A          2                                 
-    2 PIWA2-1EX-FIRE-BAT               A          2                                 
-    2 PIWA2-1EX-FIRE-CO                A          4                                 
-    R  2 PIWA2-1EX-FIRE-CO                                                             
-    3 PIWA2-1EX-FIRE-CO-TYPE           A          1                                 
-    3 PIWA2-1EX-FIRE-CO-NUM            A          3                                 
-    2 PIWA2-1EX-SCHL-DIST-SPLIT-FLAG   A          1                                 
-    2 PIWA2-1EX-SCHL-DIST              A          2                                 
-    2 PIWA2-1EX-DYN-BLK                A          3                                 
-    2 PIWA2-1EX-POLICE-PAT-BORO        A          2                                 
-    2 PIWA2-1EX-FEATURE-TYPE           A          1                                 
-    2 PIWA2-1EX-SEGMENT-TYPE           A          1                                 
-    2 PIWA2-1EX-ALX                    A          1                                 
-    2 PIWA2-1EX-COINCIDENT-SEG-CTR     A          1                                 
-    2 FILLER-290                       A          3                                 
-    2 PIWA2-1EX-1990-CENSUS-TRACT      A          6                                 
-    2 PIWA2-1EX-2010-CENSUS-TRACT      A          6                                 
-    2 PIWA2-1EX-2010-CENSUS-BLOCK      A          4                                 
-    2 PIWA2-1EX-2010-CENSUS-BLOCK-SUF  A          1                                 
-    2 PIWA2-1EX-2000-CENSUS-TRACT      A          6 /* NA                           
-    2 PIWA2-1EX-2000-CENSUS-BLOCK      A          4 /* NA                           
-    2 PIWA2-1EX-2000-CENSUS-BLOCK-SUF  A          1 /* NA                           
-    2 PIWA2-1EX-NTA                    A          4 /*NEIGHBORHOOD                  
-    *  *                                               /*TABULATION AREA*/             
-    2 PIWA2-1EX-SANIT-SNOW-PRIORITY    A          1 /*SANITATION STRT               
-    *  *                                               /*SNOW PRIORITY                 
-    2 PIWA2-1EX-SANIT-ORGANICS         A          5                                 
-    2 PIWA2-1EX-SANIT-BULK-PICK-UP     A          5 /* V16.4 ADDITION               
-    *  2 PIWA2-1EX-SANIT-RESERVED         A          5                                 
-    2 PIWA2-1EX-HURRICANE-ZONE         A          2 /*OEM HURRICANE EVAC ZONE       
-    2 FILLER-1EX-300                   A         11                                 
-    2 PIWA2-1EX-UHNS                   A         11                                 
-    2 PIWA2-1EX-REAL-B7SC              A          8                                 
-    2 PIWA2-1EX-SEGMENT-ID             A          7                                 
-    2 PIWA2-1EX-CURVE-FLAG             A          1                                 
-    2 PIWA2-1EX-LGC                    A          8                                 
-    2 PIWA2-1EX-BOE-PTR                A          1                                 
-    2 PIWA2-1EX-AZIMUTH                A          3                                 
-    2 PIWA2-1EX-ORIENT                 A          1                                 
-    2 PIWA2-1EX-X-LOW                  A          7                                 
-    2 PIWA2-1EX-Y-LOW                  A          7                                 
-    2 PIWA2-1EX-Z-LOW                  A          7                                 
-    2 PIWA2-1EX-X-HI                   A          7                                 
-    2 PIWA2-1EX-Y-HI                   A          7                                 
-    2 PIWA2-1EX-Z-HI                   A          7                                 
-    2 PIWA2-1EX-X-CC                   A          7                                 
-    2 PIWA2-1EX-Y-CC                   A          7                                 
-    2 PIWA2-1EX-Z-CC                   A          7                                 
-    2 PIWA2-1EX-RADIUS                 A          7                                 
-    2 PIWA2-1EX-SECANT                 A          1                                 
-    2 PIWA2-1EX-ANGLE-FROM             A          5                                 
-    2 PIWA2-1EX-ANGLE-TO               A          5                                 
-    2 PIWA2-1EX-NODE-FROM              A          7                                 
-    2 PIWA2-1EX-NODE-TO                A          7                                 
-    2 PIWA2-1EX-VANITY-LION            A         10                                 
-    2 PIWA2-1EX-SOS                    A          1                                 
-    2 PIWA2-1EX-SPLIT-LOHSN            A         11                                 
-    2 PIWA2-1EX-TD                     A          1                                 
-    2 PIWA2-1EX-TR                     A         10                                 
-    2 PIWA2-1EX-CURVE-FRACTION         A          3                                 
-    2 PIWA2-1EX-ROADWAY-TYPE           A          2                                 
-    2 PIWA2-1EX-PHYSICAL-ID            A          7                                 
-    2 PIWA2-1EX-GENERIC-ID             A          7                                 
-    2 PIWA2-1EX-INTP-ID                A          7                                 
-    2 PIWA2-1EX-INTF-ID                A          7                                 
-    2 PIWA2-1EX-BIKE-LANE-2            A          2 /* V16.4 ADDITION               
-    2 PIWA2-1EX-BIKE-TRAFFIC-DIR       A          2 /* V17.1 ADDITION               
-    2 PIWA2-1EX-FILL450                A          3 /* V17.1 ALTERATION             
-    *  2 PIWA2-1EX-FILL450                A          5 /* V16.4 ALTERATION             
-    *  2 PIWA2-1EX-FILL450                A          7 /* V16.1 REPLACEMENT            
-    2 PIWA2-1EX-STREET-STATUS          A          1                                 
-    2 PIWA2-1EX-STREET-WIDTH           A          3                                 
-    2 PIWA2-1EX-STREET-IRR             A          1                                 
-    2 PIWA2-1EX-BIKE-LANE              A          1                                 
-    2 PIWA2-1EX-FED-CLASS-CODE         A          2                                 
-    2 PIWA2-1EX-ROW-TYPE               A          1                                 
-    2 PIWA2-1EX-LGC-LIST-2             A         10                                 
-    2 PIWA2-1EX-LEGACY-SEG-ID          A          7                                 
-    2 PIWA2-1EX-LGC-LIST-FROM-1        A         10                                 
-    2 PIWA2-1EX-LGC-LIST-TO-1          A         10                                 
-    2 PIWA2-1EX-LGC-LIST-FROM-2        A         10                                 
-    2 PIWA2-1EX-LGC-LIST-TO-2          A         10                                 
-    2 PIWA2-1EX-NOCROSS-FLG            A          1                                 
-    2 PIWA2-1EX-IND-SEG-LEN            A          5                                 
-    2 PIWA2-1EX-NTA-NAME               A         75                                 
-    2 PIWA2-1EX-USPS-CITY-NAME         A         25 /*USPS PREFERRED CITY NAME      
-    2 PIWA2-1EX-LATITUDE               A          9                                 
-    2 PIWA2-1EX-LONGITUDE              A         11                                 
-    2 PIWA2-1EX-SEG-FROM-NODE          A          7                                 
-    2 PIWA2-1EX-SEG-TO-NODE            A          7                                 
-    2 PIWA2-1EX-SEG-FROM-XYZ           A         21                                 
-    2 PIWA2-1EX-SEG-TO-XYZ             A         21                                 
-    2 PIWA2-1EX-BLOCKFACE-ID           A         10 /* V16.1 ADD                    
-    2 PIWA2-1EX-NBR-TRAVEL-LANES       A          2 /* V16.1 ADD                    
-    2 PIWA2-1EX-NBR-PARK-LANES         A          2 /* V16.1 ADD                    
-    2 PIWA2-1EX-NBR-TOTAL-LANES        A          2 /* V16.1 ADD                    
-    2 PIWA2-1EX-STR-WIDTH-MAX          A          3 /* V16.4 ADDITION               
-    2 FILLER-1EX-500                   A        252 /* V16.1 MOD + V16.4 MOD        
-    *  2 FILLER-1EX-500                   A        255 /* V16.1 MOD                    
-    * ** ***  THE FOLLOWING FIELDS ARE IN     ADDITION TO 1E *****************         
-    2 PIWA2-1EX-REASON-CODE            A          1                                 
-    2 PIWA2-1EX-REASON-CODE-QUAL       A          1                                 
-    2 PIWA2-1EX-WARN-CODE              A          2                                 
-    2 PIWA2-1EX-RETURN-CODE            A          2                                 
-    2 PIWA2-1EX-NUM-X-STS-LO-END       A          1                                 
-    2 PIWA2-1EX-LO-B7SC                A          8 (1:5)                           
-    2 PIWA2-1EX-NUM-X-STS-HI-END       A          1                                 
-    2 PIWA2-1EX-HI-B7SC                A          8 (1:5)                           
-    2 PIWA2-1EX-LO-ST-NAME             A         32 (1:5)                           
-    2 PIWA2-1EX-HI-ST-NAME             A         32 (1:5)                           
-    2 PIWA2-1EX-BOE-B7SC               A          8                                 
-    2 PIWA2-1EX-BOE-ST-NAME            A         32                                 
-    2 FILLER-1EX-600                   A         52                                 
-    *  *  END OF FUNCTION 1/1E LAYOUT     *       **** *******                         
-    *  - -------------------------------- -       ---- --------------------------------
-    *  *  BEGNING OF FCT 1A EXTENDED      * ********** *******                         
-    R  1 GEOLP2AL                                                                      
-    2 PIWA2-1AX-ACCESS-KEY             A         21                                 
-    2 PIWA2-1AX-CONT-PARITY            A          1 /* OR DUP ADDR IND              
-    2 PIWA2-1AX-LOW-HOUSENUM           A         11 /* SORT FORMAT                  
-    2 PIWA2-1AX-BBL                    A         10                                 
-    R  2 PIWA2-1AX-BBL                                                                 
-    3 PIWA2-1AX-BBL-BORO               A          1                                 
-    3 PIWA2-1AX-BLOCK                  A          5                                 
-    3 PIWA2-1AX-LOT                    A          4                                 
-    2 PIWA2-1AX-LOT-VERSION            A          1 /* NYI */                       
-    2 PIWA2-1AX-SCC                    A          1                                 
-    2 FILLER-1AX-100                   A          1                                 
-    2 PIWA2-1AX-GENERAL-LOT-INFO                                                    
-    3 PIWA2-1AX-RPAD-BLDG-CLASS        A          2                                 
-    3 PIWA2-1AX-CORNER-CODE            A          2                                 
-    3 PIWA2-1AX-NUM-OF-STRUCTURES      A          4                                 
-    3 PIWA2-1AX-NUM-OF-BLOCKFACES      A          2                                 
-    3 PIWA2-1AX-INTERIOR-FLAG          A          1                                 
-    3 PIWA2-1AX-VACANT-FLAG            A          1                                 
-    3 PIWA2-1AX-IRREG-LOT-FLAG         A          1                                 
-    2 PIWA2-1AX-MARBLE-RIKERS-FLAG     A          1                                 
-    2 PIWA2-1AX-ADDR-LIST-OVFLOW-FLAG  A          1                                 
-    2 PIWA2-1AX-STROLL-KEY             A         19                                 
-    R  2 PIWA2-1AX-STROLL-KEY                                                          
-    3 PIWA2-1AX-STROLL-BORO            A          1                                 
-    3 PIWA2-1AX-STROLL-5SC             A          5                                 
-    3 PIWA2-1AX-STROLL-SIDE-OF-STR     A          1 /* L OR R                       
-    3 PIWA2-1AX-STROLL-HI-HOUSENUM     A         11 /* SORT FORMAT                  
-    3 FILLER-1AX-200                   A          1                                 
-    2 FILLER-1AX-300                   A          1 /* FOR GSS USE                  
-    2 PIWA2-1AX-BIN                    A          7                                 
-    2 PIWA2-1AX-CONDO-FLAG             A          1                                 
-    2 FILLER-1AX-400                   A          1                                 
-    2 PIWA2-1AX-RPAD-CONDO-ID-NUM      A          4                                 
-    2 PIWA2-1AX-CONDO-UNIT-ID-NUM      A          7                                 
-    2 PIWA2-1AX-CONDO-BILL-BBL         A         10                                 
-    2 PIWA2-1AX-CONDO-BILL-BBL-VER     A          1                                 
-    2 PIWA2-1AX-CONDO-BILL-BBL-SCC     A          1                                 
-    2 PIWA2-1AX-CONDO-LOW-BBL          A         10                                 
-    2 PIWA2-1AX-CONDO-LOW-BBL-VER      A          1                                 
-    2 PIWA2-1AX-CONDO-HIGH-BBL         A         10                                 
-    2 PIWA2-1AX-CONDO-HIGH-BBL-VER     A          1                                 
-    2 FILLER-1AX-600                   A         15                                 
-    2 PIWA1-1AX-COOP-NUM               A          4                                 
-    2 PIWA2-1AX-SANBORN                A          8                                 
-    R  2 PIWA2-1AX-SANBORN                                                             
-    3 PIWA2-1AX-SANBORN-BORO           A          1                                 
-    3 PIWA2-1AX-SANBORN-VOL            A          3                                 
-    3 PIWA2-1AX-SANBORN-PAGE           A          4                                 
-    2 PIWA2-1AX-COMMERC-DIST           A          5                                 
-    2 PIWA2-1AX-DOF-MAP-BORO           A          1                                 
-    2 PIWA2-1AX-DOF-MAP-SECVOL         A          4                                 
-    2 PIWA2-1AX-DOF-MAP-PAGE           A          4                                 
-    2 FILLER-1AX-RESERVED-DCP          A          3                                 
-    2 PIWA2-1AX-LATITUDE               A          9                                 
-    2 PIWA2-1AX-LONGITUDE              A         11                                 
-    2 PIWA2-1AX-X-COORD                A          7                                 
-    2 PIWA2-1AX-Y-COORD                A          7                                 
-    2 PIWA2-1AX-BID                    A          6                                 
-    2 PIWA2-1AX-TPAD-BIN-ST            A          1 /* CURRENT STATUS */            
-    2 PIWA2-1AX-TPAD-NEW-BIN           A          7 /* NEW BIN */                   
-    2 PIWA2-1AX-TPAD-NEW-BIN-ST        A          1 /* NEW BIN STATUS */            
-    2 PIWA2-1AX-TPAD-CONFLICT          A          1 /* CONFLICT FLAG */             
-    2 FILLER-1AX-650                   A          9                                 
-    2 FILLER-1AX-700                   A          8 /* FOR GSS USE                  
-    2 PIWA2-1AX-REASON-CODE            A          1                                 
-    2 PIWA2-1AX-REASON-CODE-QUAL       A          1                                 
-    2 PIWA2-1AX-WARN-CODE              A          2                                 
-    2 PIWA2-1AX-RETURN-CODE            A          2                                 
-    2 FILLER-1AX-750                   A        108                                 
-    2 PIWA2-1AX-NUM-OF-ADDR            A          4                                 
-    2 PIWA2-1AX-LIST-OF-ADDR                        (1:21)                          
-    3 PIWA2-1AX-LIST-LOW-HOUSENUM      A         16 /* DISPLAY FORMAT               
-    3 PIWA2-1AX-LIST-HI-HOUSENUM       A         16 /* DISPLAY FORMAT               
-    3 PIWA2-1AX-LIST-BORO              A          1                                 
-    3 PIWA2-1AX-LIST-5SC               A          5                                 
-    3 PIWA2-1AX-LIST-LGC               A          2                                 
-    3 PIWA2-1AX-LIST-BIN               A          7                                 
-    3 PIWA2-1AX-LIST-SIDE-OF-STR       A          1 /* L OR R                       
-    3 PIWA2-1AX-ADDR-TYPE              A          1 /* P=NAP, B=NAB,          MAL   
-    R  3 PIWA2-1AX-ADDR-TYPE                           /* REDEF. BEGIN : PIWA2-1AX-ADDR
-    4 PIWA2-1AX-LIST-ADDR-TYPE         A          1 /* BLANK=NORMAL                 
-    *  *                                               /* BLANK=NORMAL                 
-    3 PIWA2-1AX-TPAD-STATUS            A          1 /* 0 - 9                        
-    R  3 PIWA2-1AX-TPAD-STATUS                         /* REDEF. BEGIN : PIWA2-1AX-TPAD
-    4 PIWA2-1AX-LIST-TPAD-STATUS       A          1                                 
-    3 PIWA2-1AX-ST-NAME                A         32 /* 0 - 9                        
-    R  3 PIWA2-1AX-ST-NAME                             /* REDEF. BEGIN : PIWA2-1AX-ST-N
-    4 PIWA2-1AX-LIST-ST-NAME           A         32                                 
-    3 FILLER-800                       A         34                                 
-    * ** END OF FUNCTION 1A EXTENDED **** * ********** ***********************         
-    * -- -------------------------------- - ---------- --------------------------      
-    * ** BEGINNING OF FUNCTION 1B ******* * ********** ***********************         
-    R  1 GEOLP2AL                                                                      
-    2 PIWA2-1B-1-ACCESS-KEY            A         21                                 
-    2 PIWA2-1B-1-CONT-PARITY           A          1 /* (OR DUP ADDR IND)            
-    2 PIWA2-1B-1-LOW-HOUSENUM          A         11 /* SORT FORMAT                  
-    2 PIWA2-1B-1-HI-HOUSENUM           A         11 /* SORT FORMAT                  
-    2 PIWA2-1B-1-PREFERRED-LGC         A          2                                 
-    2 PIWA2-1B-1-NUM-X-ST-LOW-END      A          1                                 
-    2 PIWA2-1B-1-LOW-B5SC              A          6 (1:5) /* 30-BYTES               
-    2 PIWA2-1B-1-NUM-X-ST-HI-END       A          1                                 
-    2 PIWA2-1B-1-HI-B5SC               A          6 (1:5) /* 30-BYTES               
-    2 PIWA2-1B-1-LIONKEY               A         10                                 
-    R  2 PIWA2-1B-1-LIONKEY                                                            
-    3 PIWA2-1B-1-LION-BORO             A          1                                 
-    3 PIWA2-1B-1-LION-FACECODE         A          4                                 
-    3 PIWA2-1B-1-LION-SEQ              A          5                                 
-    2 PIWA2-1B-1-SPECIAL-ADDR-FLAG     A          1                                 
-    2 PIWA2-1B-1-SIDE-OF-STR           A          1                                 
-    2 PIWA2-1B-1-SEG-LEN               A          5                                 
-    2 PIWA2-1B-1-X-COORD               A          7                                 
-    2 PIWA2-1B-1-Y-COORD               A          7                                 
-    2 FILLER-1B-1-100                  A          7 /* FOR ZCOORD                   
-    2 PIWA2-1B-1-CD-ELIGIBLE           A          1                                 
-    2 PIWA2-1B-1-MARBLE-RIKERS-FLAG    A          1                                 
-    2 PIWA2-1B-1-DOT-SLA               A          1                                 
-    2 PIWA2-1B-1-COM-DIST              A          3                                 
-    R  2 PIWA2-1B-1-COM-DIST                                                           
-    3 PIWA2-1B-1-COM-DIST-BORO         A          1                                 
-    3 PIWA2-1B-1-COM-DIST-NUM          A          2                                 
-    2 PIWA2-1B-1-ZIP                   A          5                                 
-    *  *                                  *       **** *****                           
-    *  *  THE FN1E FIELDS ARE VALID ONLY  *       **** *****                           
-    *  *  FOR FUNCTION 1E, NOT FUNC 1.    *       **** *****                           
-    2 PIWA2-1B-1-ELECT-DIST            A          3                                 
-    2 PIWA2-1B-1-ASSEM-DIST            A          2                                 
-    2 PIWA2-1B-1-SPLIT-ED-FLAG         A          1                                 
-    2 PIWA2-1B-1-CONG-DIST             A          2                                 
-    2 PIWA2-1B-1-SENATE-DIST           A          2                                 
-    2 PIWA2-1B-1-COURT-DIST            A          2                                 
-    2 PIWA2-1B-1-COUNCIL-DIST          A          2                                 
-    *  *                                  *       **** *****                           
-    2 PIWA2-1B-1-HEALTH-CENTER-DIST    A          2                                 
-    2 PIWA2-1B-1-HEALTH-AREA           A          4                                 
-    2 PIWA2-1B-1-SANI-DIST             A          3                                 
-    R  2 PIWA2-1B-1-SANI-DIST                                                          
-    3 PIWA2-1B-1-SANI-DIST-BORO        A          1                                 
-    3 PIWA2-1B-1-SANI-DIST-NUM         A          2                                 
-    2 PIWA2-1B-1-SANI-SUBSEC           A          2                                 
-    2 PIWA2-1B-1-SANI-REG              A          5                                 
-    2 PIWA2-1B-1-SANI-REC              A          3                                 
-    2 PIWA2-1B-1-POLICE-DIST           A          4                                 
-    R  2 PIWA2-1B-1-POLICE-DIST                                                        
-    3 PIWA2-1B-1-POL-PAT-BORO-CMD      A          1                                 
-    3 PIWA2-1B-1-POL-PRECINCT          A          3                                 
-    2 PIWA2-1B-1-FIRE-DIV              A          2                                 
-    2 PIWA2-1B-1-FIRE-BAT              A          2                                 
-    2 PIWA2-1B-1-FIRE-CO               A          4                                 
-    R  2 PIWA2-1B-1-FIRE-CO                                                            
-    3 PIWA2-1B-1-FIRE-CO-TYPE          A          1                                 
-    3 PIWA2-1B-1-FIRE-CO-NUM           A          3                                 
-    2 FILLER-1B-1-250                  A          1 /* WAS SPLIT COM SCHL           
-    2 PIWA2-1B-1-SCHL-DIST             A          2                                 
-    2 PIWA2-1B-1-DYN-BLK               A          3                                 
-    2 PIWA2-1B-1-POLICE-PAT-BORO       A          2                                 
-    2 PIWA2-1B-1-FEATURE-TYPE          A          1                                 
-    2 PIWA2-1B-1-SEGMENT-TYPE          A          1                                 
-    2 PIWA2-1B-1-ALX                   A          1                                 
-    2 PIWA2-1B-1-COINCIDENT-SEG-CTR    A          1                                 
-    2 FILLER-1B-1-290                  A          3                                 
-    2 PIWA2-1B-1-1990-CENSUS-TRACT     A          6                                 
-    2 PIWA2-1B-1-2010-CENSUS-TRACT     A          6                                 
-    2 PIWA2-1B-1-2010-CENSUS-BLOCK     A          4                                 
-    2 PIWA2-1B-1-2010-CENSUS-BLOCK-SUF A          1                                 
-    2 PIWA2-1B-1-2000-CENSUS-TRACT     A          6 /* NA                           
-    2 PIWA2-1B-1-2000-CENSUS-BLOCK     A          4 /* NA                           
-    2 PIWA2-1B-1-2000-CENSUS-BLOCK-SUF A          1 /* NA                           
-    2 PIWA2-1B-1-NTA                   A          4 /*NEIGHBORHOOD                  
-    *  *                                               /*TABULATION AREA               
-    2 PIWA2-1B-1-SANIT-SNOW-PRIORITY   A          1 /*SANITATION STRT               
-    *  *                                               /*SNOW PRIORITY                 
-    2 PIWA2-1B-1-SANIT-ORGANICS        A          5                                 
-    2 PIWA2-1B-1-SANIT-BULK-PICK-UP    A          5 /* V16.4 ADDITION               
-    *  2 PIWA2-1B-1-SANIT-RESERVED        A          5                                 
-    2 PIWA2-1B-1-HURRICANE-ZONE        A          2 /*OEM HURRICANE EVAC ZONE       
-    2 FILLER-1B-1-300                  A         11                                 
-    2 PIWA2-1B-1-UHNS                  A         11 /* UNDERLYING HNS               
-    2 PIWA2-1B-1-REAL-B7SC             A          8                                 
-    2 PIWA2-1B-1-SEGMENT-ID            A          7                                 
-    2 PIWA2-1B-1-CURVE-FLAG            A          1                                 
-    2 PIWA2-1B-1-LGCS                  A          8                                 
-    2 PIWA2-1B-1-BOE-PTR               A          1                                 
-    2 PIWA2-1B-1-AZIMUTH               A          3                                 
-    2 PIWA2-1B-1-ORIENT                A          1                                 
-    2 PIWA2-1B-1-X-LOW                 A          7                                 
-    2 PIWA2-1B-1-Y-LOW                 A          7                                 
-    2 PIWA2-1B-1-Z-LOW                 A          7                                 
-    2 PIWA2-1B-1-X-HI                  A          7                                 
-    2 PIWA2-1B-1-Y-HI                  A          7                                 
-    2 PIWA2-1B-1-Z-HI                  A          7                                 
-    2 PIWA2-1B-1-X-CC                  A          7                                 
-    2 PIWA2-1B-1-Y-CC                  A          7                                 
-    2 PIWA2-1B-1-Z-CC                  A          7                                 
-    2 PIWA2-1B-1-RADIUS                A          7                                 
-    2 PIWA2-1B-1-SECANT                A          1                                 
-    2 PIWA2-1B-1-ANGLE-FROM            A          5                                 
-    2 PIWA2-1B-1-ANGLE-TO              A          5                                 
-    2 PIWA2-1B-1-NODE-FROM             A          7                                 
-    2 PIWA2-1B-1-NODE-TO               A          7                                 
-    2 PIWA2-1B-1-VANITY-LION           A         10                                 
-    2 PIWA2-1B-1-SOS                   A          1                                 
-    2 PIWA2-1B-1-SPLIT-LOHSN           A         11                                 
-    2 PIWA2-1B-1-TD                    A          1                                 
-    2 PIWA2-1B-1-TR                    A         10                                 
-    2 PIWA2-1B-1-CURVE-FRACTION        A          3                                 
-    2 PIWA2-1B-1-ROADWAY-TYPE          A          2                                 
-    2 PIWA2-1B-1-PHYSICAL-ID           A          7                                 
-    2 PIWA2-1B-1-GENERIC-ID            A          7                                 
-    2 PIWA2-1B-1-INTP-ID               A          7                                 
-    2 PIWA2-1B-1-INTF-ID               A          7                                 
-    2 PIWA2-1B-1-BIKE-LANE-2           A          2                                 
-    2 PIWA2-1B-1-BIKE-TRAFFIC-DIR      A          2 /* V17.1 ADDITION               
-    2 PIWA2-1B-1-FILL450               A          3 /* V17.1 ALTERATION             
-    *  2 PIWA2-1B-1-FILL450               A          5 /* V16.4 ALTERATION             
-    *  2 PIWA2-1B-1-FILL450               A          7 /* V16.1 REPLACEMENT            
-    2 PIWA2-1B-1-STREET-STATUS         A          1                                 
-    2 PIWA2-1B-1-STREET-WIDTH          A          3                                 
-    2 PIWA2-1B-1-STREET-WIDTH-IRR      A          1                                 
-    2 PIWA2-1B-1-BIKE-LANE             A          1                                 
-    2 PIWA2-1B-1-FED-CLASS-CODE        A          2                                 
-    2 PIWA2-1B-1-ROW-TYPE              A          1                                 
-    2 PIWA2-1B-1-LGC-LIST-2            A         10                                 
-    2 PIWA2-1B-1-LEGACY-SEG-ID         A          7                                 
-    2 PIWA2-1B-1-LGC-LIST-FROM-1       A         10                                 
-    2 PIWA2-1B-1-LGC-LIST-TO-1         A         10                                 
-    2 PIWA2-1B-1-LGC-LIST-FROM-2       A         10                                 
-    2 PIWA2-1B-1-LGC-LIST-TO-2         A         10                                 
-    2 PIWA2-1B-1-NOCROSS-FLG           A          1                                 
-    2 PIWA2-1B-1-IND-SEG-LEN           A          5                                 
-    2 PIWA2-1B-1-NTA-NAME              A         75                                 
-    2 PIWA2-1B-1-USPS-CITY-NAME        A         25 /*USPS PREFERRED CITY NAME      
-    2 PIWA2-1B-1-LATITUDE              A          9                                 
-    2 PIWA2-1B-1-LONGITUDE             A         11                                 
-    2 PIWA2-1B-1-SEG-FROM-NODE         A          7                                 
-    2 PIWA2-1B-1-SEG-TO-NODE           A          7                                 
-    2 PIWA2-1B-1-SEG-FROM-XYZ          A         21                                 
-    2 PIWA2-1B-1-SEG-TO-XYZ            A         21                                 
-    2 PIWA2-1B-1-BLOCKFACE-ID          A         10 /* V16.1 ADD                    
-    2 PIWA2-1B-1-NBR-TRAVEL-LANES      A          2 /* V16.1 ADD                    
-    2 PIWA2-1B-1-NBR-PARK-LANES        A          2 /* V16.1 ADD                    
-    2 PIWA2-1B-1-NBR-TOTAL-LANES       A          2 /* V16.1 ADD                    
-    2 PIWA2-1B-1-STR-WIDTH-MAX         A          3 /* V16.4 ADDITION               
-    2 FILLER-1B-1-500                  A        252 /* V16.4 MOD                    
-    *  2 FILLER-1B-1-500                  A        255 /* V16.1 MOD                    
-    * ** **** THE FOLLOWING FIELDS ARE IN   ADDITION   TO 1/1E****************         
-    2 PIWA2-1B-1-REASON-CODE           A          1                                 
-    2 PIWA2-1B-1-REASON-CODE-QUAL      A          1                                 
-    2 PIWA2-1B-1-WARN-CODE             A          2                                 
-    2 PIWA2-1B-1-RETURN-CODE           A          2                                 
-    2 PIWA2-1B-1-NUM-X-STS-LO-END      A          1                                 
-    2 PIWA2-1B-1-LO-B7SC               A          8 (1:5)                           
-    2 PIWA2-1B-1-NUM-X-STS-HI-END      A          1                                 
-    2 PIWA2-1B-1-HI-B7SC               A          8 (1:5)                           
-    2 PIWA2-1B-1-LO-ST-NAME            A         32 (1:5)                           
-    2 PIWA2-1B-1-HI-ST-NAME            A         32 (1:5)                           
-    2 PIWA2-1B-1-BOE-B7SC              A          8                                 
-    2 PIWA2-1B-1-BOE-ST-NAME           A         32                                 
-    2 FILLER-1B-1-600                  A         52                                 
-    *  * ******************************** * ********** ******************              
-    *  * THE FOLLOWING FIELDS ARE         * ********** ********                        
-    *  *     PROPERTY LEVEL FIELDS        * ********** ********                        
-    2 PIWA2-1B-1A-ACCESS-KEY           A         21 /*CHG FROM LEVEL 3 TO 2???      
-    2 PIWA2-1B-1A-CONT-PARITY          A          1 /* OR DUP ADDR IND              
-    2 PIWA2-1B-1A-LOW-HOUSENUM         A         11 /* SORT FORMAT                  
-    2 PIWA2-1B-1A-BBL                  A         10                                 
-    R  2 PIWA2-1B-1A-BBL                                                               
-    3 PIWA2-1B-1A-BBL-BORO             A          1                                 
-    3 PIWA2-1B-1A-BLOCK                A          5                                 
-    3 PIWA2-1B-1A-LOT                  A          4                                 
-    2 PIWA2-1B-1A-LOT-VERSION          A          1 /* NYI */                       
-    2 PIWA2-1B-1A-SCC                  A          1                                 
-    2 FILLER-1B-1A-100                 A          1                                 
-    2 PIWA2-1B-1A-GENERAL-LOT-INFO                                                  
-    3 PIWA2-1B-1A-RPAD-BLDG-CLASS      A          2                                 
-    3 PIWA2-1B-1A-CORNER-CODE          A          2                                 
-    3 PIWA2-1B-1A-NUM-OF-STRUCTURES    A          4                                 
-    3 PIWA2-1B-1A-NUM-OF-BLOCKFACES    A          2                                 
-    3 PIWA2-1B-1A-INTERIOR-FLAG        A          1                                 
-    3 PIWA2-1B-1A-VACANT-FLAG          A          1                                 
-    3 PIWA2-1B-1A-IRREG-LOT-FLAG       A          1                                 
-    2 PIWA2-1B-1A-MARBLE-RIKERS-FLAG   A          1                                 
-    2 PIWA2-1B-1A-ADDR-LIST-OVFLOW-FLG A          1 /*FLAG,FLG?????????             
-    2 PIWA2-1B-1A-STROLL-KEY           A         19                                 
-    R  2 PIWA2-1B-1A-STROLL-KEY                                                        
-    3 PIWA2-1B-1A-STROLL-BORO          A          1                                 
-    3 PIWA2-1B-1A-STROLL-5SC           A          5                                 
-    3 PIWA2-1B-1A-STROLL-SIDE-OF-STR   A          1 /* L OR R                       
-    3 PIWA2-1B-1A-STROLL-HI-HOUSENUM   A         11 /* SORT FORMAT                  
-    3 FILLER-1B-1A-200                 A          1                                 
-    2 FILLER-1B-1A-300                 A          1 /* FOR GSS USE                  
-    2 PIWA2-1B-1A-BIN                  A          7                                 
-    2 PIWA2-1B-1A-CONDO-FLAG           A          1                                 
-    2 FILLER-1B-1A-400                 A          1                                 
-    2 PIWA2-1B-1A-RPAD-CONDO-ID-NUM    A          4                                 
-    2 PIWA2-1B-1A-CONDO-UNIT-ID-NUM    A          7                                 
-    2 PIWA2-1B-1A-CONDO-BILL-BBL       A         10                                 
-    2 PIWA2-1B-1A-CONDO-BILL-BBL-VER   A          1                                 
-    2 PIWA2-1B-1A-CONDO-BILL-BBL-SCC   A          1                                 
-    2 PIWA2-1B-1A-CONDO-LOW-BBL        A         10                                 
-    2 PIWA2-1B-1A-CONDO-LOW-BBL-VER    A          1                                 
-    2 PIWA2-1B-1A-CONDO-HIGH-BBL       A         10                                 
-    2 PIWA2-1B-1A-CONDO-HIGH-BBL-VER   A          1                                 
-    2 FILLER-1B-1A-500                 A         15                                 
-    2 PIWA1-1B-1A-COOP-NUM             A          4                                 
-    2 PIWA2-1B-1A-SANBORN              A          8                                 
-    R  2 PIWA2-1B-1A-SANBORN                                                           
-    3 PIWA2-1B-1A-SANBORN-BORO         A          1                                 
-    3 PIWA2-1B-1A-SANBORN-VOL          A          3                                 
-    3 PIWA2-1B-1A-SANBORN-PAGE         A          4                                 
-    2 PIWA2-1B-1A-COMMERC-DIST         A          5                                 
-    2 PIWA2-1B-1A-DOF-MAP-BORO         A          1                                 
-    2 PIWA2-1B-1A-DOF-MAP-SECVOL       A          4                                 
-    2 PIWA2-1B-1A-DOF-MAP-PAGE         A          4                                 
-    2 FILLER-1B-1A-RESERVED-DCP        A          3                                 
-    2 PIWA2-1B-1A-LATITUDE             A          9                                 
-    2 PIWA2-1B-1A-LONGITUDE            A         11                                 
-    2 PIWA2-1B-1A-X-COORD              A          7                                 
-    2 PIWA2-1B-1A-Y-COORD              A          7                                 
-    2 PIWA2-1B-1A-BID                  A          6                                 
-    2 PIWA2-1B-1A-TPAD-BIN-ST          A          1 /* CURRENT STATUS */            
-    2 PIWA2-1B-1A-TPAD-NEW-BIN         A          7 /* NEW BIN */                   
-    2 PIWA2-1B-1A-TPAD-NEW-BIN-ST      A          1 /* NEW BIN STATUS */            
-    2 PIWA2-1B-1A-TPAD-CONFLICT        A          1 /* CONFLICT FLAG */             
-    2 FILLER-1B-1A-650                 A          9                                 
-    2 FILLER-1B-1A-700                 A          8 /* FOR GSS USE                  
-    2 PIWA2-1B-1A-REASON-CODE          A          1                                 
-    2 PIWA2-1B-1A-REASON-CODE-FILL     A          1                                 
-    2 PIWA2-1B-1A-WARN-CODE            A          2                                 
-    2 PIWA2-1B-1A-RETURN-CODE          A          2                                 
-    2 FILLER-1B-1A-750                 A        108                                 
-    2 PIWA2-1B-1A-NUM-OF-ADDR          A          4                                 
-    2 PIWA2-1B-1A-LIST-OF-ADDR                      (1:21)                          
-    3 PIWA2-1B-1A-LIST-LOW-HOUSENUM    A         16 /* DISPLAY FORMAT               
-    3 PIWA2-1B-1A-LIST-HI-HOUSENUM     A         16 /* DISPLAY FORMAT               
-    3 PIWA2-1B-1A-LIST-BORO            A          1                                 
-    3 PIWA2-1B-1A-LIST-5SC             A          5                                 
-    3 PIWA2-1B-1A-LIST-LGC             A          2                                 
-    3 PIWA2-1B-1A-LIST-BIN             A          7                                 
-    3 PIWA2-1B-1A-LIST-SIDE-OF-STR     A          1 /* L OR R                       
-    3 PIWA2-1B-1A-ADDR-TYPE            A          1 /* P=NAP, B=NAB,          MAL   
-    R  3 PIWA2-1B-1A-ADDR-TYPE                         /* REDEF. BEGIN : PIWA2-1B-1A-AD
-    4 PIWA2-1B-1A-LIST-ADDR-TYPE       A          1 /* BLANK=NORMAL                 
-    3 PIWA2-1B-1A-TPAD-STATUS          A          1 /* 0 - 9                        
-    R  3 PIWA2-1B-1A-TPAD-STATUS                       /* REDEF. BEGIN : PIWA2-1B-1A-TP
-    4 PIWA2-1B-1A-LIST-TPAD-STATUS     A          1                                 
-    3 PIWA2-1B-1A-ST-NAME              A         32                                 
-    R  3 PIWA2-1B-1A-ST-NAME                           /* REDEF. BEGIN : PIWA2-1B-1A-ST
-    4 PIWA2-1B-1A-LIST-ST-NAME         A         32                                 
-    3 FILLER-1B-1A-800                 A         34                                 
-    * ** END OF FUNCTION 1B ************* * ********** **************************      
-
+## <span id="appendix14.26"><center>GEOLP2AL COPY File</center></span>
+    0010      1 GEOLP2AL                                      /* FCT 1A, BL LONG WA2    WA2    DS      0572
+    0020   *  * THE FIELD P2NAT1AL IS USED AS A     PARAMETER TO CALL GEOSUPPORT               C
+    0030      2 P2NAT1AL                         A         21                                  DK      0574
+    0040   R  2 P2NAT1AL                                                                       DRR     0575
+    0050      3 PIWA2-1AL-ACCESS-KEY             A         21                                  DFR     0576
+    0060   *  * BEGINNING OF FUNCTION 1AL LAYOUT * ********** *******************              C
+    0070      2 PIWA2-1AL-CONT-PARITY            A          1 /* OR DUP ADDR IND               DK      0577
+    0080      2 PIWA2-1AL-LOW-HOUSENUM           A         11 /* SORT FORMAT                   DK      0578
+    0090      2 PIWA2-1AL-BBL                    A         10                                  DK      0579
+    0100   R  2 PIWA2-1AL-BBL                                                                  DRR     0580
+    0110      3 PIWA2-1AL-BBL-BORO               A          1                                  DFR     0581
+    0120      3 PIWA2-1AL-BLOCK                  A          5                                  DFR     0582
+    0130      3 PIWA2-1AL-LOT                    A          4                                  DFR     0583
+    0140      2 FILLER-1AL-LOT-VERSION           A          1 /* NA                            DK      0584
+    0150      2 PIWA2-1AL-SCC                    A          1                                  DK      0585
+    0160      2 FILLER-100                       A          1                                  DK      0586
+    0170      2 PIWA2-1AL-GENERAL-LOT-INFO                                                     DS      0587
+    0180      3 PIWA2-1AL-RPAD-BLDG-CLASS        A          2                                  DK      0588
+    0190      3 PIWA2-1AL-CORNER-CODE            A          2                                  DK      0589
+    0200      3 PIWA2-1AL-NUM-OF-STRUCTURES      A          4                                  DK      0590
+    0210      3 PIWA2-1AL-NUM-OF-BLOCKFACES      A          2                                  DK      0591
+    0220      3 PIWA2-1AL-INTERIOR-FLAG          A          1                                  DK      0592
+    0230      3 PIWA2-1AL-VACANT-FLAG            A          1                                  DK      0593
+    0240      3 PIWA2-1AL-IRREG-LOT-FLAG         A          1                                  DK      0594
+    0250      2 PIWA2-1AL-MARBLE-RIKERS-FLAG     A          1                                  DK      0595
+    0260      2 PIWA2-1AL-ADDR-LIST-OVFLOW-FLAG  A          1                                  DK      0596
+    0270      2 PIWA2-1AL-STROLL-KEY             A         19                                  DK      0597
+    0280   R  2 PIWA2-1AL-STROLL-KEY                                                           DRR     0598
+    0290      3 PIWA2-1AL-STROLL-KEY-BORO        A          1                                  DFR     0599
+    0300      3 PIWA2-1AL-STROLL-KEY-5SC         A          5                                  DFR     0600
+    0310      3 PIWA2-1AL-STROLL-SIDE-OF-STR     A          1 /* L OR R                        DFR     0601
+    0320      3 PIWA2-1AL-STROLL-HI-HOUSENUM     A         11 /* SORT FORMAT                   DFR     0602
+    0330      3 FILLER-200                       A          1                                  DFR     0603
+    0340      2 FILLER-300                       A          1 /* FOR GSS USE                   DK      0604
+    0350      2 PIWA2-1AL-BIN                    A          7                                  DK      0605
+    0360      2 PIWA2-1AL-CONDO-FLAG             A          1                                  DK      0606
+    0370      2 FILLER-400                       A          1                                  DK      0607
+    0380      2 PIWA2-1AL-RPAD-CONDO-ID-NUM      A          4                                  DK      0608
+    0390      2 PIWA2-1AL-CONDO-UNIT-ID-NUM      A          7                                  DK      0609
+    0400      2 PIWA2-1AL-CONDO-BILL-BBL         A         10                                  DK      0610
+    0410      2 PIWA2-1AL-CONDO-BILL-BBL-VER     A          1                                  DK      0611
+    0420      2 PIWA2-1AL-CONDO-BILL-BBL-SCC     A          1                                  DK      0612
+    0430      2 PIWA2-1AL-CONDO-LOW-BBL          A         10                                  DK      0613
+    0440      2 PIWA2-1AL-CONDO-LOW-BBL-VER      A          1                                  DK      0614
+    0450      2 PIWA2-1AL-CONDO-HIGH-BBL         A         10                                  DK      0615
+    0460      2 PIWA2-1AL-CONDO-HIGH-BBL-VER     A          1                                  DK      0616
+    0470      2 FILLER-500                       A         15                                  DK      0617
+    0480      2 PIWA2-1AL-COOP-NUM               A          4                                  DK      0618
+    0490      2 PIWA2-1AL-SANBORN                A          8                                  DK      0619
+    0500   R  2 PIWA2-1AL-SANBORN                                                              DRR     0620
+    0510      3 PIWA2-1AL-SANBORN-BORO           A          1                                  DFR     0621
+    0520      3 PIWA2-1AL-SANBORN-VOL            A          3                                  DFR     0622
+    0530      3 PIWA2-1AL-SANBORN-PAGE           A          4                                  DFR     0623
+    0540      2 PIWA2-1AL-COMMERC-DIST           A          5                                  DK      0624
+    0550      2 PIWA2-1AL-DOF-MAP-BORO           A          1                                  DK      0625
+    0560      2 PIWA2-1AL-DOF-MAP-SECVOL         A          4                                  DK      0626
+    0570      2 PIWA2-1AL-DOF-MAP-PAGE           A          4                                  DK      0627
+    0580      2 FILLER-600                       A          3                                  DK      0628
+    0590      2 PIWA2-1AL-LATITUDE               A          9                                  DK      0629                             
+    0600      2 PIWA2-1AL-LONGITUDE              A         11                                  DK      0630
+    0610      2 PIWA2-1AL-X-COORD                A          7                                  DK      0631
+    0620      2 PIWA2-1AL-Y-COORD                A          7                                  DK      0632
+    0630      2 PIWA2-1AL-BID                    A          6                                  DK      0633
+    0640      2 PIWA2-1AL-TPAD-BIN-ST            A          1 /*CURRENT STATUS                 DK      0634
+    0650      2 PIWA2-1AL-TPAD-NEW-BIN           A          7 /*NEW BIN                        DK      0635
+    0660      2 PIWA2-1AL-TPAD-NEW-BIN-ST        A          1 /*NEW BIN STATUS                 DK      0636
+    0670      2 PIWA2-1AL-TPAD-CONFLICT          A          1 /*CONFLICT FLAG                  DK      0637
+    0680      2 PIWA2-1AL-DCP-ZONE-MAP           A          3 /* V17.4 ADDITION                DK
+    0690      2 FILLER-650                       A          6                                  DK      0638
+    0700      2 FILLER-700                       A          8 /* LGC GSS USE                   DK      0639
+    0710      2 PIWA2-1AL-NUM-OF-BINS            A          4                                  DK      0640
+    0720      2 PIWA2-1AL-TPAD-BINLIST           A      17500                                  DK      0641
+    0730   R  2 PIWA2-1AL-TPAD-BINLIST                        /* REDEF. BEGIN : PIWA2-1AL-TPAD DRR     0642
+    0740      3 PIWA2-1AL-TPAD-BINS                           (1:2187)                         DSRI1   0643     M
+    0750      4 PIWA2-1AL-TPAD-BIN               A          7                                  DKR     0644
+    0760      4 PIWA2-1AL-TPAD-BINS-STAT         A          1                                  DKR     0645
+    0770      3 PIWA2-1AL-TPAD-FILL              A          4                                  DKR     0646
+    0780   R  2 PIWA2-1AL-TPAD-BINLIST                                                         DRR     0647
+    0790      3 PIWA2-1AL-BINS                   A          7 (1:2500)                         DKRI1   0648     M
+    0800   * ** END OF FUNCTION 1AL LAYOUT ***** * ********** **********************           C
+    0810   * -- -------------------------------- - ---------- --------------------------       C
+    0820   * ** BEGINNING OF FCT 1/1E EXTENDED * * ********** **********************           C
+    0830   R  1 GEOLP2AL                                                                       DRR     0649
+    0840      2 PIWA2-1EX-ACCESS-KEY             A         21                                  DFR     0650
+    0850      2 PIWA2-1EX-CONT-PARITY            A          1 /* (OR DUP ADDR IND)             DFR     0651
+    0860      2 PIWA2-1EX-LOW-HOUSENUM           A         11 /* SORT FORMAT                   DFR     0652
+    0870      2 PIWA2-1EX-HI-HOUSENUM            A         11 /* SORT FORMAT                   DFR     0653
+    0880      2 PIWA2-1EX-PREFERRED-LGC          A          2                                  DFR     0654
+    0890      2 PIWA2-1EX-NUM-X-ST-LOW-END       A          1                                  DFR     0655
+    0900      2 PIWA2-1EX-LOW-B5SC               A          6 (1:5) /* 30-BYTES                DFRI1   0656     M
+    0910      2 PIWA2-1EX-NUM-X-ST-HI-END        A          1                                  DFR     0657
+    0920      2 PIWA2-1EX-HI-B5SC                A          6 (1:5) /* 30-BYTES                DFRI1   0658     M
+    0930      2 PIWA2-1EX-LIONKEY                A         10                                  DFR     0659
+    0940   R  2 PIWA2-1EX-LIONKEY                                                              DRR     0660
+    0950      3 PIWA2-1EX-LION-BORO              A          1                                  DFR     0661
+    0960      3 PIWA2-1EX-LION-FACECODE          A          4                                  DFR     0662
+    0970      3 PIWA2-1EX-LION-SEQ               A          5                                  DFR     0663
+    0980      2 PIWA2-1EX-SPECIAL-ADDR-FLAG      A          1                                  DFR     0664
+    0990      2 PIWA2-1EX-SIDE-OF-STR            A          1                                  DFR     0665
+    1000      2 PIWA2-1EX-SEG-LEN                A          5                                  DFR     0666
+    1010      2 PIWA2-1EX-X-COORD                A          7                                  DFR     0667
+    1020      2 PIWA2-1EX-Y-COORD                A          7                                  DFR     0668
+    1030      2 FILLER-1EX-100                   A          7 /* FOR ZCOORD                    DFR     0669
+    1040      2 FILLER-1EX-200                   A          1 /* FOR GSS USE                   DFR     0670
+    1050      2 PIWA2-1EX-MARBLE-RIKERS-FLAG     A          1                                  DFR     0671
+    1060      2 PIWA2-1EX-DOT-SLA                A          1                                  DFR     0672
+    1070      2 PIWA2-1EX-COM-DIST               A          3                                  DFR     0673
+    1080   R  2 PIWA2-1EX-COM-DIST                                                             DRR     0674
+    1090      3 PIWA2-1EX-COM-DIST-BORO          A          1                                  DFR     0675
+    1100      3 PIWA2-1EX-COM-DIST-NUM           A          2                                  DFR     0676
+    1110      2 PIWA2-1EX-ZIP                    A          5                                  DFR     0677
+    1120   *  *                                  *       **** *****                            C
+    1130   *  *  THE FN1E FIELDS ARE VALID ONLY  *       **** *****                            C
+    1140   *  *  FOR FUNCTION 1E, NOT FUNC 1.    *       **** *****                            C
+    1150      2 PIWA2-1EX-ELECT-DIST             A          3                                  DFR     0678
+    1160      2 PIWA2-1EX-ASSEM-DIST             A          2                                  DFR     0679
+    1170      2 PIWA2-1EX-SPLIT-ED-FLAG          A          1                                  DFR     0680
+    1180      2 PIWA2-1EX-CONG-DIST              A          2                                  DFR     0681
+    1190      2 PIWA2-1EX-SENATE-DIST            A          2                                  DFR     0682
+    1200      2 PIWA2-1EX-COURT-DIST             A          2                                  DFR     0683
+    1210      2 PIWA2-1EX-COUNCIL-DIST           A          2                                  DFR     0684
+    1220   *  *                                  *       **** *****                            C
+    1230      2 PIWA2-1EX-HEALTH-CENTER-DIST     A          2                                  DFR     0685
+    1240      2 PIWA2-1EX-HEALTH-AREA            A          4                                  DFR     0686
+    1250      2 PIWA2-1EX-SANI-DIST              A          3                                  DFR     0687
+    1260   R  2 PIWA2-1EX-SANI-DIST                                                            DRR     0688
+    1270      3 PIWA2-1EX-SANI-DIST-BORO         A          1                                  DFR     0689
+    1280      3 PIWA2-1EX-SANI-DIST-NUM          A          2                                  DFR     0690
+    1290      2 PIWA2-1EX-SANI-SUBSEC            A          2                                  DFR     0691
+    1300      2 PIWA2-1EX-SANI-REG               A          5                                  DFR     0692
+    1310      2 PIWA2-1EX-SANI-REC               A          3                                  DFR     0693
+    1320      2 PIWA2-1EX-POLICE-DIST            A          4                                  DFR     0694
+    1330   R  2 PIWA2-1EX-POLICE-DIST                                                          DRR     0695
+    1340      3 PIWA2-1EX-POL-PAT-BORO-CMD       A          1                                  DFR     0696
+    1350      3 PIWA2-1EX-POL-PRECINCT           A          3                                  DFR     0697
+    1360      2 PIWA2-1EX-FIRE-DIV               A          2                                  DFR     0698
+    1370      2 PIWA2-1EX-FIRE-BAT               A          2                                  DFR     0699
+    1380      2 PIWA2-1EX-FIRE-CO                A          4                                  DFR     0700
+    1390   R  2 PIWA2-1EX-FIRE-CO                                                              DRR     0701
+    1400      3 PIWA2-1EX-FIRE-CO-TYPE           A          1                                  DFR     0702
+    1410      3 PIWA2-1EX-FIRE-CO-NUM            A          3                                  DFR     0703
+    1420      2 PIWA2-1EX-SCHL-DIST-SPLIT-FLAG   A          1                                  DFR     0704
+    1430      2 PIWA2-1EX-SCHL-DIST              A          2                                  DFR     0705
+    1440      2 PIWA2-1EX-DYN-BLK                A          3                                  DFR     0706
+    1450      2 PIWA2-1EX-POLICE-PAT-BORO        A          2                                  DFR     0707
+    1460      2 PIWA2-1EX-FEATURE-TYPE           A          1                                  DFR     0708
+    1470      2 PIWA2-1EX-SEGMENT-TYPE           A          1                                  DFR     0709
+    1480      2 PIWA2-1EX-ALX                    A          1                                  DFR     0710
+    1490      2 PIWA2-1EX-COINCIDENT-SEG-CTR     A          1                                  DFR     0711
+    1500      2 FILLER-290                       A          3                                  DFR     0712
+    1510      2 PIWA2-1EX-1990-CENSUS-TRACT      A          6                                  DFR     0713
+    1520      2 PIWA2-1EX-2010-CENSUS-TRACT      A          6                                  DFR     0714
+    1530      2 PIWA2-1EX-2010-CENSUS-BLOCK      A          4                                  DFR     0715
+    1540      2 PIWA2-1EX-2010-CENSUS-BLOCK-SUF  A          1                                  DFR     0716
+    1550      2 PIWA2-1EX-2000-CENSUS-TRACT      A          6 /* NA                            DFR     0717
+    1560      2 PIWA2-1EX-2000-CENSUS-BLOCK      A          4 /* NA                            DFR     0718
+    1570      2 PIWA2-1EX-2000-CENSUS-BLOCK-SUF  A          1 /* NA                            DFR     0719
+    1580      2 PIWA2-1EX-NTA                    A          4 /*NEIGHBORHOOD                   DFR     0720
+    1590   *  *                                               /*TABULATION AREA*/              C
+    1600      2 PIWA2-1EX-SANIT-SNOW-PRIORITY    A          1 /*SANITATION STRT                DFR     0721
+    1610   *  *                                               /*SNOW PRIORITY                  C
+    1620      2 PIWA2-1EX-SANIT-ORGANICS         A          5                                  DFR     0722
+    1630      2 PIWA2-1EX-SANIT-BULK-PICK-UP     A          5 /* V16.4 ADDITION                DFR     0723
+    1640   *  2 PIWA2-1EX-SANIT-RESERVED         A          5                                  CFR     0723
+    1650      2 PIWA2-1EX-HURRICANE-ZONE         A          2 /*OEM HURRICANE EVAC ZONE        DFR     0724
+    1660      2 FILLER-1EX-300                   A         11                                  DFR     0725
+    1670      2 PIWA2-1EX-UHNS                   A         11                                  DFR     0726
+    1680      2 PIWA2-1EX-REAL-B7SC              A          8                                  DFR     0727
+    1690      2 PIWA2-1EX-SEGMENT-ID             A          7                                  DFR     0728
+    1700      2 PIWA2-1EX-CURVE-FLAG             A          1                                  DFR     0729
+    1710      2 PIWA2-1EX-LGC                    A          8                                  DFR     0730
+    1720      2 PIWA2-1EX-BOE-PTR                A          1                                  DFR     0731
+    1730      2 PIWA2-1EX-AZIMUTH                A          3                                  DFR     0732
+    1740      2 PIWA2-1EX-ORIENT                 A          1                                  DFR     0733
+    1750      2 PIWA2-1EX-X-LOW                  A          7                                  DFR     0734
+    1760      2 PIWA2-1EX-Y-LOW                  A          7                                  DFR     0735
+    1770      2 PIWA2-1EX-Z-LOW                  A          7                                  DFR     0736
+    1780      2 PIWA2-1EX-X-HI                   A          7                                  DFR     0737
+    1790      2 PIWA2-1EX-Y-HI                   A          7                                  DFR     0738
+    1800      2 PIWA2-1EX-Z-HI                   A          7                                  DFR     0739
+    1810      2 PIWA2-1EX-X-CC                   A          7                                  DFR     0740
+    1820      2 PIWA2-1EX-Y-CC                   A          7                                  DFR     0741
+    1830      2 PIWA2-1EX-Z-CC                   A          7                                  DFR     0742
+    1840      2 PIWA2-1EX-RADIUS                 A          7                                  DFR     0743
+    1850      2 PIWA2-1EX-SECANT                 A          1                                  DFR     0744
+    1860      2 PIWA2-1EX-ANGLE-FROM             A          5                                  DFR     0745
+    1870      2 PIWA2-1EX-ANGLE-TO               A          5                                  DFR     0746
+    1880      2 PIWA2-1EX-NODE-FROM              A          7                                  DFR     0747
+    1890      2 PIWA2-1EX-NODE-TO                A          7                                  DFR     0748
+    1900      2 PIWA2-1EX-VANITY-LION            A         10                                  DFR     0749
+    1910      2 PIWA2-1EX-SOS                    A          1                                  DFR     0750
+    1920      2 PIWA2-1EX-SPLIT-LOHSN            A         11                                  DFR     0751
+    1930      2 PIWA2-1EX-TD                     A          1                                  DFR     0752
+    1940      2 PIWA2-1EX-TR                     A         10                                  DFR     0753
+    1950      2 PIWA2-1EX-CURVE-FRACTION         A          3                                  DFR     0754
+    1960      2 PIWA2-1EX-ROADWAY-TYPE           A          2                                  DFR     0755
+    1970      2 PIWA2-1EX-PHYSICAL-ID            A          7                                  DFR     0756
+    1980      2 PIWA2-1EX-GENERIC-ID             A          7                                  DFR     0757
+    1990      2 PIWA2-1EX-INTP-ID                A          7                                  DFR     0758
+    2000      2 PIWA2-1EX-INTF-ID                A          7                                  DFR     0759
+    2010      2 PIWA2-1EX-BIKE-LANE-2            A          2 /* V16.4 ADDITION                DFR
+    2020      2 PIWA2-1EX-BIKE-TRAFFIC-DIR       A          2 /* V17.1 ADDITION                DFR
+    2030      2 PIWA2-1EX-FILL450                A          3 /* V17.1 ALTERATION              DFR     0760
+    2040   *  2 PIWA2-1EX-FILL450                A          5 /* V16.4 ALTERATION              CFR     0760
+    2050   *  2 PIWA2-1EX-FILL450                A          7 /* V16.1 REPLACEMENT             CFR     0760
+    2060      2 PIWA2-1EX-STREET-STATUS          A          1                                  DFR     0761
+    2070      2 PIWA2-1EX-STREET-WIDTH           A          3                                  DFR     0762
+    2080      2 PIWA2-1EX-STREET-IRR             A          1                                  DFR     0763
+    2090      2 PIWA2-1EX-BIKE-LANE              A          1                                  DFR     0764
+    2100      2 PIWA2-1EX-FED-CLASS-CODE         A          2                                  DFR     0765
+    2110      2 PIWA2-1EX-ROW-TYPE               A          1                                  DFR     0766
+    2120      2 PIWA2-1EX-LGC-LIST-2             A         10                                  DFR     0767
+    2130      2 PIWA2-1EX-LEGACY-SEG-ID          A          7                                  DFR     0768
+    2140      2 PIWA2-1EX-LGC-LIST-FROM-1        A         10                                  DFR     0769
+    2150      2 PIWA2-1EX-LGC-LIST-TO-1          A         10                                  DFR     0770
+    2160      2 PIWA2-1EX-LGC-LIST-FROM-2        A         10                                  DFR     0771
+    2170      2 PIWA2-1EX-LGC-LIST-TO-2          A         10                                  DFR     0772
+    2180      2 PIWA2-1EX-NOCROSS-FLG            A          1                                  DFR     0773
+    2190      2 PIWA2-1EX-IND-SEG-LEN            A          5                                  DFR     0774
+    2200      2 PIWA2-1EX-NTA-NAME               A         75                                  DFR     0775
+    2210      2 PIWA2-1EX-USPS-CITY-NAME         A         25 /*USPS PREFERRED CITY NAME       DFR     0776
+    2220      2 PIWA2-1EX-LATITUDE               A          9                                  DFR     0777
+    2230      2 PIWA2-1EX-LONGITUDE              A         11                                  DFR     0778
+    2240      2 PIWA2-1EX-SEG-FROM-NODE          A          7                                  DFR
+    2250      2 PIWA2-1EX-SEG-TO-NODE            A          7                                  DFR
+    2260      2 PIWA2-1EX-SEG-FROM-XYZ           A         21                                  DFR
+    2270      2 PIWA2-1EX-SEG-TO-XYZ             A         21                                  DFR
+    2280      2 PIWA2-1EX-BLOCKFACE-ID           A         10 /* V16.1 ADD                     DFR
+    2290      2 PIWA2-1EX-NBR-TRAVEL-LANES       A          2 /* V16.1 ADD                     DFR
+    2300      2 PIWA2-1EX-NBR-PARK-LANES         A          2 /* V16.1 ADD                     DFR
+    2310      2 PIWA2-1EX-NBR-TOTAL-LANES        A          2 /* V16.1 ADD                     DFR
+    2320      2 PIWA2-1EX-STR-WIDTH-MAX          A          3 /* V16.4 ADDITION                DFR
+    2330      2 PIWA2-1EX-SPEED-LIMIT            A          2 /* V17.4 ADDITION                DFR
+    2340      2 FILLER-1EX-500                   A        250 /* V16.1 MOD + V16.4 MOD         DFR     0779
+    2350   *  2 FILLER-1EX-500                   A        255 /* V16.1 MOD                     CFR     0779
+    2360   * ** ***  THE FOLLOWING FIELDS ARE IN     ADDITION TO 1E *****************          CK      0432
+    2370      2 PIWA2-1EX-REASON-CODE            A          1                                  DFR     0780
+    2380      2 PIWA2-1EX-REASON-CODE-QUAL       A          1                                  DFR     0781
+    2390      2 PIWA2-1EX-WARN-CODE              A          2                                  DFR     0782
+    2400      2 PIWA2-1EX-RETURN-CODE            A          2                                  DFR     0783
+    2410      2 PIWA2-1EX-NUM-X-STS-LO-END       A          1                                  DFR     0784
+    2420      2 PIWA2-1EX-LO-B7SC                A          8 (1:5)                            DFRI1   0785     M
+    2430      2 PIWA2-1EX-NUM-X-STS-HI-END       A          1                                  DFR     0786
+    2440      2 PIWA2-1EX-HI-B7SC                A          8 (1:5)                            DFRI1   0787     M
+    2450      2 PIWA2-1EX-LO-ST-NAME             A         32 (1:5)                            DFRI1   0788     M
+    2460      2 PIWA2-1EX-HI-ST-NAME             A         32 (1:5)                            DFRI1   0789     M
+    2470      2 PIWA2-1EX-BOE-B7SC               A          8                                  DFR     0790
+    2480      2 PIWA2-1EX-BOE-ST-NAME            A         32                                  DFR     0791
+    2490      2 FILLER-1EX-600                   A         52                                  DFR     0792
+    2500   *  *  END OF FUNCTION 1/1E LAYOUT     *       **** *******                          C
+    2510   *  - -------------------------------- -       ---- -------------------------------- C
+    2520   *  *  BEGNING OF FCT 1A EXTENDED      * ********** *******                          C
+    2530   R  1 GEOLP2AL                                                                       DRR     0793
+    2540      2 PIWA2-1AX-ACCESS-KEY             A         21                                  DFR     0794
+    2550      2 PIWA2-1AX-CONT-PARITY            A          1 /* OR DUP ADDR IND               DFR     0795
+    2560      2 PIWA2-1AX-LOW-HOUSENUM           A         11 /* SORT FORMAT                   DFR     0796
+    2570      2 PIWA2-1AX-BBL                    A         10                                  DFR     0797
+    2580   R  2 PIWA2-1AX-BBL                                                                  DRR     0798
+    2590      3 PIWA2-1AX-BBL-BORO               A          1                                  DFR     0799
+    2600      3 PIWA2-1AX-BLOCK                  A          5                                  DFR     0800
+    2610      3 PIWA2-1AX-LOT                    A          4                                  DFR     0801
+    2620      2 PIWA2-1AX-LOT-VERSION            A          1 /* NYI */                        DFR     0802
+    2630      2 PIWA2-1AX-SCC                    A          1                                  DFR     0803
+    2640      2 FILLER-1AX-100                   A          1                                  DFR     0804
+    2650      2 PIWA2-1AX-GENERAL-LOT-INFO                                                     DSR     0805
+    2660      3 PIWA2-1AX-RPAD-BLDG-CLASS        A          2                                  DKR     0806
+    2670      3 PIWA2-1AX-CORNER-CODE            A          2                                  DKR     0807
+    2680      3 PIWA2-1AX-NUM-OF-STRUCTURES      A          4                                  DKR     0808
+    2690      3 PIWA2-1AX-NUM-OF-BLOCKFACES      A          2                                  DKR     0809
+    2700      3 PIWA2-1AX-INTERIOR-FLAG          A          1                                  DKR     0810
+    2710      3 PIWA2-1AX-VACANT-FLAG            A          1                                  DKR     0811
+    2720      3 PIWA2-1AX-IRREG-LOT-FLAG         A          1                                  DKR     0812
+    2730      2 PIWA2-1AX-MARBLE-RIKERS-FLAG     A          1                                  DKR     0813
+    2740      2 PIWA2-1AX-ADDR-LIST-OVFLOW-FLAG  A          1                                  DKR     0814
+    2750      2 PIWA2-1AX-STROLL-KEY             A         19                                  DKR     0815
+    2760   R  2 PIWA2-1AX-STROLL-KEY                                                           DRR     0816
+    2770      3 PIWA2-1AX-STROLL-BORO            A          1                                  DKR     0817
+    2780      3 PIWA2-1AX-STROLL-5SC             A          5                                  DKR     0818
+    2790      3 PIWA2-1AX-STROLL-SIDE-OF-STR     A          1 /* L OR R                        DKR     0819
+    2800      3 PIWA2-1AX-STROLL-HI-HOUSENUM     A         11 /* SORT FORMAT                   DKR     0820
+    2810      3 FILLER-1AX-200                   A          1                                  DKR     0821
+    2820      2 FILLER-1AX-300                   A          1 /* FOR GSS USE                   DKR     0822
+    2830      2 PIWA2-1AX-BIN                    A          7                                  DKR     0823
+    2840      2 PIWA2-1AX-CONDO-FLAG             A          1                                  DKR     0824
+    2850      2 FILLER-1AX-400                   A          1                                  DKR     0825
+    2860      2 PIWA2-1AX-RPAD-CONDO-ID-NUM      A          4                                  DKR     0826
+    2870      2 PIWA2-1AX-CONDO-UNIT-ID-NUM      A          7                                  DKR     0827
+    2880      2 PIWA2-1AX-CONDO-BILL-BBL         A         10                                  DKR     0828
+    2890      2 PIWA2-1AX-CONDO-BILL-BBL-VER     A          1                                  DKR     0829
+    2900      2 PIWA2-1AX-CONDO-BILL-BBL-SCC     A          1                                  DKR     0830
+    2910      2 PIWA2-1AX-CONDO-LOW-BBL          A         10                                  DKR     0831
+    2920      2 PIWA2-1AX-CONDO-LOW-BBL-VER      A          1                                  DKR     0832
+    2930      2 PIWA2-1AX-CONDO-HIGH-BBL         A         10                                  DKR     0833
+    2940      2 PIWA2-1AX-CONDO-HIGH-BBL-VER     A          1                                  DKR     0834
+    2950      2 FILLER-1AX-600                   A         15                                  DKR     0835
+    2960      2 PIWA1-1AX-COOP-NUM               A          4                                  DKR     0836
+    2970      2 PIWA2-1AX-SANBORN                A          8                                  DKR     0837
+    2980   R  2 PIWA2-1AX-SANBORN                                                              DRR     0838
+    2990      3 PIWA2-1AX-SANBORN-BORO           A          1                                  DKR     0839
+    3000      3 PIWA2-1AX-SANBORN-VOL            A          3                                  DKR     0840
+    3010      3 PIWA2-1AX-SANBORN-PAGE           A          4                                  DKR     0841
+    3020      2 PIWA2-1AX-COMMERC-DIST           A          5                                  DKR     0842
+    3030      2 PIWA2-1AX-DOF-MAP-BORO           A          1                                  DKR     0843
+    3040      2 PIWA2-1AX-DOF-MAP-SECVOL         A          4                                  DKR     0844
+    3050      2 PIWA2-1AX-DOF-MAP-PAGE           A          4                                  DKR     0845
+    3060      2 FILLER-1AX-RESERVED-DCP          A          3                                  DKR     0846
+    3070      2 PIWA2-1AX-LATITUDE               A          9                                  DKR     0847
+    3080      2 PIWA2-1AX-LONGITUDE              A         11                                  DKR     0848
+    3090      2 PIWA2-1AX-X-COORD                A          7                                  DKR     0849
+    3100      2 PIWA2-1AX-Y-COORD                A          7                                  DKR     0850
+    3110      2 PIWA2-1AX-BID                    A          6                                  DKR     0851
+    3120      2 PIWA2-1AX-TPAD-BIN-ST            A          1 /* CURRENT STATUS */             DKR     0852
+    3130      2 PIWA2-1AX-TPAD-NEW-BIN           A          7 /* NEW BIN */                    DKR     0853
+    3140      2 PIWA2-1AX-TPAD-NEW-BIN-ST        A          1 /* NEW BIN STATUS */             DKR     0854
+    3150      2 PIWA2-1AX-TPAD-CONFLICT          A          1 /* CONFLICT FLAG */              DKR     0855
+    3160      2 PIWA2-1AX-DCP-ZONE-MAP           A          3 /* V17.4 ADDITION                DKR
+    3170      2 FILLER-1AX-650                   A          6                                  DKR     0856
+    3180      2 FILLER-1AX-700                   A          8 /* FOR GSS USE                   DKR     0857
+    3190      2 PIWA2-1AX-REASON-CODE            A          1                                  DKR     0858
+    3200      2 PIWA2-1AX-REASON-CODE-QUAL       A          1                                  DKR     0859
+    3210      2 PIWA2-1AX-WARN-CODE              A          2                                  DKR     0860
+    3220      2 PIWA2-1AX-RETURN-CODE            A          2                                  DKR     0861
+    3230      2 FILLER-1AX-750                   A        108                                  DKR     0862
+    3240      2 PIWA2-1AX-NUM-OF-ADDR            A          4                                  DKR     0863
+    3250      2 PIWA2-1AX-LIST-OF-ADDR                        (1:21)                           DSRI1   0864     M
+    3260      3 PIWA2-1AX-LIST-LOW-HOUSENUM      A         16 /* DISPLAY FORMAT                DKR     0865
+    3270      3 PIWA2-1AX-LIST-HI-HOUSENUM       A         16 /* DISPLAY FORMAT                DKR     0866
+    3280      3 PIWA2-1AX-LIST-BORO              A          1                                  DKR     0867
+    3290      3 PIWA2-1AX-LIST-5SC               A          5                                  DKR     0868
+    3300      3 PIWA2-1AX-LIST-LGC               A          2                                  DKR     0869
+    3310      3 PIWA2-1AX-LIST-BIN               A          7                                  DKR     0870
+    3320      3 PIWA2-1AX-LIST-SIDE-OF-STR       A          1 /* L OR R                        DKR     0871
+    3330      3 PIWA2-1AX-ADDR-TYPE              A          1 /* P=NAP, B=NAB,          MAL    DKR     0872
+    3340   R  3 PIWA2-1AX-ADDR-TYPE                           /* REDEF. BEGIN : PIWA2-1AX-ADDR DRR     0873
+    3350      4 PIWA2-1AX-LIST-ADDR-TYPE         A          1 /* BLANK=NORMAL                  DKR     0874
+    3360   *  *                                               /* BLANK=NORMAL                  C
+    3370      3 PIWA2-1AX-TPAD-STATUS            A          1 /* 0 - 9                         DKR     0875
+    3380   R  3 PIWA2-1AX-TPAD-STATUS                         /* REDEF. BEGIN : PIWA2-1AX-TPAD DRR     0876
+    3390      4 PIWA2-1AX-LIST-TPAD-STATUS       A          1                                  DKR     0877
+    3400      3 PIWA2-1AX-ST-NAME                A         32 /* 0 - 9                         DKR     0878
+    3410   R  3 PIWA2-1AX-ST-NAME                             /* REDEF. BEGIN : PIWA2-1AX-ST-N DRR     0879
+    3420      4 PIWA2-1AX-LIST-ST-NAME           A         32                                  DKR     0880
+    3430      3 FILLER-800                       A         34                                  DKR     0881
+    3440   * ** END OF FUNCTION 1A EXTENDED **** * ********** ***********************          C
+    3450   * -- -------------------------------- - ---------- --------------------------       C
+    3460   * ** BEGINNING OF FUNCTION 1B ******* * ********** ***********************          C
+    3470   R  1 GEOLP2AL                                                                       DRR     0882
+    3480      2 PIWA2-1B-1-ACCESS-KEY            A         21                                  DFR     0883
+    3490      2 PIWA2-1B-1-CONT-PARITY           A          1 /* (OR DUP ADDR IND)             DFR     0884
+    3500      2 PIWA2-1B-1-LOW-HOUSENUM          A         11 /* SORT FORMAT                   DFR     0885
+    3510      2 PIWA2-1B-1-HI-HOUSENUM           A         11 /* SORT FORMAT                   DFR     0886
+    3520      2 PIWA2-1B-1-PREFERRED-LGC         A          2                                  DFR     0887
+    3530      2 PIWA2-1B-1-NUM-X-ST-LOW-END      A          1                                  DFR     0888
+    3540      2 PIWA2-1B-1-LOW-B5SC              A          6 (1:5) /* 30-BYTES                DFRI1   0889     M
+    3550      2 PIWA2-1B-1-NUM-X-ST-HI-END       A          1                                  DFR     0890
+    3560      2 PIWA2-1B-1-HI-B5SC               A          6 (1:5) /* 30-BYTES                DFRI1   0891     M
+    3570      2 PIWA2-1B-1-LIONKEY               A         10                                  DFR     0892
+    3580   R  2 PIWA2-1B-1-LIONKEY                                                             DRR     0893
+    3590      3 PIWA2-1B-1-LION-BORO             A          1                                  DFR     0894
+    3600      3 PIWA2-1B-1-LION-FACECODE         A          4                                  DFR     0895
+    3610      3 PIWA2-1B-1-LION-SEQ              A          5                                  DFR     0896
+    3620      2 PIWA2-1B-1-SPECIAL-ADDR-FLAG     A          1                                  DFR     0897
+    3630      2 PIWA2-1B-1-SIDE-OF-STR           A          1                                  DFR     0898
+    3640      2 PIWA2-1B-1-SEG-LEN               A          5                                  DFR     0899
+    3650      2 PIWA2-1B-1-X-COORD               A          7                                  DFR     0900
+    3660      2 PIWA2-1B-1-Y-COORD               A          7                                  DFR     0901
+    3670      2 FILLER-1B-1-100                  A          7 /* FOR ZCOORD                    DFR     0902
+    3680      2 PIWA2-1B-1-CD-ELIGIBLE           A          1                                  DFR     0903
+    3690      2 PIWA2-1B-1-MARBLE-RIKERS-FLAG    A          1                                  DFR     0904
+    3700      2 PIWA2-1B-1-DOT-SLA               A          1                                  DFR     0905
+    3710      2 PIWA2-1B-1-COM-DIST              A          3                                  DFR     0906
+    3720   R  2 PIWA2-1B-1-COM-DIST                                                            DRR     0907
+    3730      3 PIWA2-1B-1-COM-DIST-BORO         A          1                                  DFR     0908
+    3740      3 PIWA2-1B-1-COM-DIST-NUM          A          2                                  DFR     0909
+    3750      2 PIWA2-1B-1-ZIP                   A          5                                  DFR     0910
+    3760   *  *                                  *       **** *****                            C
+    3770   *  *  THE FN1E FIELDS ARE VALID ONLY  *       **** *****                            C
+    3780   *  *  FOR FUNCTION 1E, NOT FUNC 1.    *       **** *****                            C
+    3790      2 PIWA2-1B-1-ELECT-DIST            A          3                                  DFR     0911
+    3800      2 PIWA2-1B-1-ASSEM-DIST            A          2                                  DFR     0912
+    3810      2 PIWA2-1B-1-SPLIT-ED-FLAG         A          1                                  DFR     0913
+    3820      2 PIWA2-1B-1-CONG-DIST             A          2                                  DFR     0914
+    3830      2 PIWA2-1B-1-SENATE-DIST           A          2                                  DFR     0915
+    3840      2 PIWA2-1B-1-COURT-DIST            A          2                                  DFR     0916
+    3850      2 PIWA2-1B-1-COUNCIL-DIST          A          2                                  DFR     0917
+    3860   *  *                                  *       **** *****                            C
+    3870      2 PIWA2-1B-1-HEALTH-CENTER-DIST    A          2                                  DFR     0918
+    3880      2 PIWA2-1B-1-HEALTH-AREA           A          4                                  DFR     0919
+    3890      2 PIWA2-1B-1-SANI-DIST             A          3                                  DFR     0920
+    3900   R  2 PIWA2-1B-1-SANI-DIST                                                           DRR     0921
+    3910      3 PIWA2-1B-1-SANI-DIST-BORO        A          1                                  DFR     0922
+    3920      3 PIWA2-1B-1-SANI-DIST-NUM         A          2                                  DFR     0923
+    3930      2 PIWA2-1B-1-SANI-SUBSEC           A          2                                  DFR     0924
+    3940      2 PIWA2-1B-1-SANI-REG              A          5                                  DFR     0925
+    3950      2 PIWA2-1B-1-SANI-REC              A          3                                  DFR     0926
+    3960      2 PIWA2-1B-1-POLICE-DIST           A          4                                  DFR     0927
+    3970   R  2 PIWA2-1B-1-POLICE-DIST                                                         DRR     0928
+    3980      3 PIWA2-1B-1-POL-PAT-BORO-CMD      A          1                                  DFR     0929
+    3990      3 PIWA2-1B-1-POL-PRECINCT          A          3                                  DFR     0930
+    4000      2 PIWA2-1B-1-FIRE-DIV              A          2                                  DFR     0931
+    4010      2 PIWA2-1B-1-FIRE-BAT              A          2                                  DFR     0932
+    4020      2 PIWA2-1B-1-FIRE-CO               A          4                                  DFR     0933
+    4030   R  2 PIWA2-1B-1-FIRE-CO                                                             DRR     0934
+    4040      3 PIWA2-1B-1-FIRE-CO-TYPE          A          1                                  DFR     0935
+    4050      3 PIWA2-1B-1-FIRE-CO-NUM           A          3                                  DFR     0936
+    4060      2 FILLER-1B-1-250                  A          1 /* WAS SPLIT COM SCHL            DFR     0937
+    4070      2 PIWA2-1B-1-SCHL-DIST             A          2                                  DFR     0938
+    4080      2 PIWA2-1B-1-DYN-BLK               A          3                                  DFR     0939
+    4090      2 PIWA2-1B-1-POLICE-PAT-BORO       A          2                                  DFR     0940
+    4100      2 PIWA2-1B-1-FEATURE-TYPE          A          1                                  DFR     0941
+    4110      2 PIWA2-1B-1-SEGMENT-TYPE          A          1                                  DFR     0942
+    4120      2 PIWA2-1B-1-ALX                   A          1                                  DFR     0943
+    4130      2 PIWA2-1B-1-COINCIDENT-SEG-CTR    A          1                                  DFR     0944
+    4140      2 FILLER-1B-1-290                  A          3                                  DFR     0945
+    4150      2 PIWA2-1B-1-1990-CENSUS-TRACT     A          6                                  DFR     0946
+    4160      2 PIWA2-1B-1-2010-CENSUS-TRACT     A          6                                  DFR     0947
+    4170      2 PIWA2-1B-1-2010-CENSUS-BLOCK     A          4                                  DFR     0948
+    4180      2 PIWA2-1B-1-2010-CENSUS-BLOCK-SUF A          1                                  DFR     0949
+    4190      2 PIWA2-1B-1-2000-CENSUS-TRACT     A          6 /* NA                            DFR     0950
+    4200      2 PIWA2-1B-1-2000-CENSUS-BLOCK     A          4 /* NA                            DFR     0951
+    4210      2 PIWA2-1B-1-2000-CENSUS-BLOCK-SUF A          1 /* NA                            DFR     0952
+    4220      2 PIWA2-1B-1-NTA                   A          4 /*NEIGHBORHOOD                   DFR     0953
+    4230   *  *                                               /*TABULATION AREA                C
+    4240      2 PIWA2-1B-1-SANIT-SNOW-PRIORITY   A          1 /*SANITATION STRT                DFR     0954
+    4250   *  *                                               /*SNOW PRIORITY                  C
+    4260      2 PIWA2-1B-1-SANIT-ORGANICS        A          5                                  DFR     0955
+    4270      2 PIWA2-1B-1-SANIT-BULK-PICK-UP    A          5 /* V16.4 ADDITION                DFR     0956
+    4280   *  2 PIWA2-1B-1-SANIT-RESERVED        A          5                                  CFR     0956
+    4290      2 PIWA2-1B-1-HURRICANE-ZONE        A          2 /*OEM HURRICANE EVAC ZONE        DFR     0957
+    4300      2 FILLER-1B-1-300                  A         11                                  DFR     0958
+    4310      2 PIWA2-1B-1-UHNS                  A         11 /* UNDERLYING HNS                DFR     0959
+    4320      2 PIWA2-1B-1-REAL-B7SC             A          8                                  DFR     0960
+    4330      2 PIWA2-1B-1-SEGMENT-ID            A          7                                  DFR     0961
+    4340      2 PIWA2-1B-1-CURVE-FLAG            A          1                                  DFR     0962
+    4350      2 PIWA2-1B-1-LGCS                  A          8                                  DFR     0963
+    4360      2 PIWA2-1B-1-BOE-PTR               A          1                                  DFR     0964
+    4370      2 PIWA2-1B-1-AZIMUTH               A          3                                  DFR     0965
+    4380      2 PIWA2-1B-1-ORIENT                A          1                                  DFR     0966
+    4390      2 PIWA2-1B-1-X-LOW                 A          7                                  DFR     0967
+    4400      2 PIWA2-1B-1-Y-LOW                 A          7                                  DFR     0968
+    4410      2 PIWA2-1B-1-Z-LOW                 A          7                                  DFR     0969
+    4420      2 PIWA2-1B-1-X-HI                  A          7                                  DFR     0970
+    4430      2 PIWA2-1B-1-Y-HI                  A          7                                  DFR     0971
+    4440      2 PIWA2-1B-1-Z-HI                  A          7                                  DFR     0972
+    4450      2 PIWA2-1B-1-X-CC                  A          7                                  DFR     0973
+    4460      2 PIWA2-1B-1-Y-CC                  A          7                                  DFR     0974
+    4470      2 PIWA2-1B-1-Z-CC                  A          7                                  DFR     0975
+    4480      2 PIWA2-1B-1-RADIUS                A          7                                  DFR     0976
+    4490      2 PIWA2-1B-1-SECANT                A          1                                  DFR     0977
+    4500      2 PIWA2-1B-1-ANGLE-FROM            A          5                                  DFR     0978
+    4510      2 PIWA2-1B-1-ANGLE-TO              A          5                                  DFR     0979
+    4520      2 PIWA2-1B-1-NODE-FROM             A          7                                  DFR     0980
+    4530      2 PIWA2-1B-1-NODE-TO               A          7                                  DFR     0981
+    4540      2 PIWA2-1B-1-VANITY-LION           A         10                                  DFR     0982
+    4550      2 PIWA2-1B-1-SOS                   A          1                                  DFR     0983
+    4560      2 PIWA2-1B-1-SPLIT-LOHSN           A         11                                  DFR     0984
+    4570      2 PIWA2-1B-1-TD                    A          1                                  DFR     0985
+    4580      2 PIWA2-1B-1-TR                    A         10                                  DFR     0986
+    4590      2 PIWA2-1B-1-CURVE-FRACTION        A          3                                  DFR     0987
+    4600      2 PIWA2-1B-1-ROADWAY-TYPE          A          2                                  DFR     0988
+    4610      2 PIWA2-1B-1-PHYSICAL-ID           A          7                                  DFR     0989
+    4620      2 PIWA2-1B-1-GENERIC-ID            A          7                                  DFR     0990
+    4630      2 PIWA2-1B-1-INTP-ID               A          7                                  DFR     0991
+    4640      2 PIWA2-1B-1-INTF-ID               A          7                                  DFR     0992
+    4650      2 PIWA2-1B-1-BIKE-LANE-2           A          2                                  DFR
+    4660      2 PIWA2-1B-1-BIKE-TRAFFIC-DIR      A          2 /* V17.1 ADDITION                DFR
+    4670      2 PIWA2-1B-1-FILL450               A          3 /* V17.1 ALTERATION              DFR     0993
+    4680   *  2 PIWA2-1B-1-FILL450               A          5 /* V16.4 ALTERATION              CFR     0993
+    4690   *  2 PIWA2-1B-1-FILL450               A          7 /* V16.1 REPLACEMENT             CFR     0993
+    4700      2 PIWA2-1B-1-STREET-STATUS         A          1                                  DFR     0994
+    4710      2 PIWA2-1B-1-STREET-WIDTH          A          3                                  DFR     0995
+    4720      2 PIWA2-1B-1-STREET-WIDTH-IRR      A          1                                  DFR     0996
+    4730      2 PIWA2-1B-1-BIKE-LANE             A          1                                  DFR     0997
+    4740      2 PIWA2-1B-1-FED-CLASS-CODE        A          2                                  DFR     0998
+    4750      2 PIWA2-1B-1-ROW-TYPE              A          1                                  DFR     0999
+    4760      2 PIWA2-1B-1-LGC-LIST-2            A         10                                  DFR     1000
+    4770      2 PIWA2-1B-1-LEGACY-SEG-ID         A          7                                  DFR     1001
+    4780      2 PIWA2-1B-1-LGC-LIST-FROM-1       A         10                                  DFR     1002
+    4790      2 PIWA2-1B-1-LGC-LIST-TO-1         A         10                                  DFR     1003
+    4800      2 PIWA2-1B-1-LGC-LIST-FROM-2       A         10                                  DFR     1004
+    4810      2 PIWA2-1B-1-LGC-LIST-TO-2         A         10                                  DFR     1005
+    4820      2 PIWA2-1B-1-NOCROSS-FLG           A          1                                  DFR     1006
+    4830      2 PIWA2-1B-1-IND-SEG-LEN           A          5                                  DFR     1007
+    4840      2 PIWA2-1B-1-NTA-NAME              A         75                                  DFR     1008
+    4850      2 PIWA2-1B-1-USPS-CITY-NAME        A         25 /*USPS PREFERRED CITY NAME       DFR     1009
+    4860      2 PIWA2-1B-1-LATITUDE              A          9                                  DFR     1010
+    4870      2 PIWA2-1B-1-LONGITUDE             A         11                                  DFR     1011
+    4880      2 PIWA2-1B-1-SEG-FROM-NODE         A          7                                  DFR
+    4890      2 PIWA2-1B-1-SEG-TO-NODE           A          7                                  DFR
+    4900      2 PIWA2-1B-1-SEG-FROM-XYZ          A         21                                  DFR
+    4910      2 PIWA2-1B-1-SEG-TO-XYZ            A         21                                  DFR
+    4920      2 PIWA2-1B-1-BLOCKFACE-ID          A         10 /* V16.1 ADD                     DFR
+    4930      2 PIWA2-1B-1-NBR-TRAVEL-LANES      A          2 /* V16.1 ADD                     DFR
+    4940      2 PIWA2-1B-1-NBR-PARK-LANES        A          2 /* V16.1 ADD                     DFR
+    4950      2 PIWA2-1B-1-NBR-TOTAL-LANES       A          2 /* V16.1 ADD                     DFR
+    4960      2 PIWA2-1B-1-STR-WIDTH-MAX         A          3 /* V16.4 ADDITION                DFR
+    4970      2 PIWA2-1B-1-SPEED-LIMIT           A          2 /* V17.4 ADDITION                DFR
+    4980      2 FILLER-1B-1-500                  A        250 /* V16.4 MOD                     DFR     1012
+    4990   *  2 FILLER-1B-1-500                  A        255 /* V16.1 MOD                     CFR     1012
+    5000   * ** **** THE FOLLOWING FIELDS ARE IN   ADDITION   TO 1/1E****************          C
+    5010      2 PIWA2-1B-1-REASON-CODE           A          1                                  DFR     1013
+    5020      2 PIWA2-1B-1-REASON-CODE-QUAL      A          1                                  DFR     1014
+    5030      2 PIWA2-1B-1-WARN-CODE             A          2                                  DFR     1015
+    5040      2 PIWA2-1B-1-RETURN-CODE           A          2                                  DFR     1016
+    5050      2 PIWA2-1B-1-NUM-X-STS-LO-END      A          1                                  DFR     1017
+    5060      2 PIWA2-1B-1-LO-B7SC               A          8 (1:5)                            DFRI1   1018     M
+    5070      2 PIWA2-1B-1-NUM-X-STS-HI-END      A          1                                  DFR     1019
+    5080      2 PIWA2-1B-1-HI-B7SC               A          8 (1:5)                            DFRI1   1020     M
+    5090      2 PIWA2-1B-1-LO-ST-NAME            A         32 (1:5)                            DFRI1   1021     M
+    5100      2 PIWA2-1B-1-HI-ST-NAME            A         32 (1:5)                            DFRI1   1022     M
+    5110      2 PIWA2-1B-1-BOE-B7SC              A          8                                  DFR     1023
+    5120      2 PIWA2-1B-1-BOE-ST-NAME           A         32                                  DFR     1024
+    5130      2 FILLER-1B-1-600                  A         52                                  DFR     1025
+    5140   *  * ******************************** * ********** ******************               C
+    5150   *  * THE FOLLOWING FIELDS ARE         * ********** ********                         C
+    5160   *  *     PROPERTY LEVEL FIELDS        * ********** ********                         C
+    5170      2 PIWA2-1B-1A-ACCESS-KEY           A         21 /*CHG FROM LEVEL 3 TO 2???       DFR     1026
+    5180      2 PIWA2-1B-1A-CONT-PARITY          A          1 /* OR DUP ADDR IND               DFR     1027
+    5190      2 PIWA2-1B-1A-LOW-HOUSENUM         A         11 /* SORT FORMAT                   DFR     1028
+    5200      2 PIWA2-1B-1A-BBL                  A         10                                  DFR     1029
+    5210   R  2 PIWA2-1B-1A-BBL                                                                DRR     1030
+    5220      3 PIWA2-1B-1A-BBL-BORO             A          1                                  DFR     1031
+    5230      3 PIWA2-1B-1A-BLOCK                A          5                                  DFR     1032
+    5240      3 PIWA2-1B-1A-LOT                  A          4                                  DFR     1033
+    5250      2 PIWA2-1B-1A-LOT-VERSION          A          1 /* NYI */                        DFR     1034
+    5260      2 PIWA2-1B-1A-SCC                  A          1                                  DFR     1035
+    5270      2 FILLER-1B-1A-100                 A          1                                  DFR     1036
+    5280      2 PIWA2-1B-1A-GENERAL-LOT-INFO                                                   DSR     1037
+    5290      3 PIWA2-1B-1A-RPAD-BLDG-CLASS      A          2                                  DKR     1038
+    5300      3 PIWA2-1B-1A-CORNER-CODE          A          2                                  DKR     1039
+    5310      3 PIWA2-1B-1A-NUM-OF-STRUCTURES    A          4                                  DKR     1040
+    5320      3 PIWA2-1B-1A-NUM-OF-BLOCKFACES    A          2                                  DKR     1041
+    5330      3 PIWA2-1B-1A-INTERIOR-FLAG        A          1                                  DKR     1042
+    5340      3 PIWA2-1B-1A-VACANT-FLAG          A          1                                  DKR     1043
+    5350      3 PIWA2-1B-1A-IRREG-LOT-FLAG       A          1                                  DKR     1044
+    5360      2 PIWA2-1B-1A-MARBLE-RIKERS-FLAG   A          1                                  DKR     1045
+    5370      2 PIWA2-1B-1A-ADDR-LIST-OVFLOW-FLG A          1 /*FLAG,FLG?????????              DKR     1046
+    5380      2 PIWA2-1B-1A-STROLL-KEY           A         19                                  DKR     1047
+    5390   R  2 PIWA2-1B-1A-STROLL-KEY                                                         DRR     1048
+    5400      3 PIWA2-1B-1A-STROLL-BORO          A          1                                  DKR     1049
+    5410      3 PIWA2-1B-1A-STROLL-5SC           A          5                                  DKR     1050
+    5420      3 PIWA2-1B-1A-STROLL-SIDE-OF-STR   A          1 /* L OR R                        DKR     1051
+    5430      3 PIWA2-1B-1A-STROLL-HI-HOUSENUM   A         11 /* SORT FORMAT                   DKR     1052
+    5440      3 FILLER-1B-1A-200                 A          1                                  DKR     1053
+    5450      2 FILLER-1B-1A-300                 A          1 /* FOR GSS USE                   DKR     1054
+    5460      2 PIWA2-1B-1A-BIN                  A          7                                  DKR     1055
+    5470      2 PIWA2-1B-1A-CONDO-FLAG           A          1                                  DKR     1056
+    5480      2 FILLER-1B-1A-400                 A          1                                  DKR     1057
+    5490      2 PIWA2-1B-1A-RPAD-CONDO-ID-NUM    A          4                                  DKR     1058
+    5500      2 PIWA2-1B-1A-CONDO-UNIT-ID-NUM    A          7                                  DKR     1059
+    5510      2 PIWA2-1B-1A-CONDO-BILL-BBL       A         10                                  DKR     1060
+    5520      2 PIWA2-1B-1A-CONDO-BILL-BBL-VER   A          1                                  DKR     1061
+    5530      2 PIWA2-1B-1A-CONDO-BILL-BBL-SCC   A          1                                  DKR     1062
+    5540      2 PIWA2-1B-1A-CONDO-LOW-BBL        A         10                                  DKR     1063
+    5550      2 PIWA2-1B-1A-CONDO-LOW-BBL-VER    A          1                                  DKR     1064
+    5560      2 PIWA2-1B-1A-CONDO-HIGH-BBL       A         10                                  DKR     1065
+    5570      2 PIWA2-1B-1A-CONDO-HIGH-BBL-VER   A          1                                  DKR     1066
+    5580      2 FILLER-1B-1A-500                 A         15                                  DKR     1067
+    5590      2 PIWA1-1B-1A-COOP-NUM             A          4                                  DKR     1068
+    5600      2 PIWA2-1B-1A-SANBORN              A          8                                  DKR     1069
+    5610   R  2 PIWA2-1B-1A-SANBORN                                                            DRR     1070
+    5620      3 PIWA2-1B-1A-SANBORN-BORO         A          1                                  DKR     1071
+    5630      3 PIWA2-1B-1A-SANBORN-VOL          A          3                                  DKR     1072
+    5640      3 PIWA2-1B-1A-SANBORN-PAGE         A          4                                  DKR     1073
+    5650      2 PIWA2-1B-1A-COMMERC-DIST         A          5                                  DKR     1074
+    5660      2 PIWA2-1B-1A-DOF-MAP-BORO         A          1                                  DKR     1075
+    5670      2 PIWA2-1B-1A-DOF-MAP-SECVOL       A          4                                  DKR     1076
+    5680      2 PIWA2-1B-1A-DOF-MAP-PAGE         A          4                                  DKR     1077
+    5690      2 FILLER-1B-1A-RESERVED-DCP        A          3                                  DKR     1078
+    5700      2 PIWA2-1B-1A-LATITUDE             A          9                                  DKR     1079
+    5710      2 PIWA2-1B-1A-LONGITUDE            A         11                                  DKR     1080
+    5720      2 PIWA2-1B-1A-X-COORD              A          7                                  DKR     1081
+    5730      2 PIWA2-1B-1A-Y-COORD              A          7                                  DKR     1082
+    5740      2 PIWA2-1B-1A-BID                  A          6                                  DKR     1083
+    5750      2 PIWA2-1B-1A-TPAD-BIN-ST          A          1 /* CURRENT STATUS */             DKR     1084
+    5760      2 PIWA2-1B-1A-TPAD-NEW-BIN         A          7 /* NEW BIN */                    DKR     1085
+    5770      2 PIWA2-1B-1A-TPAD-NEW-BIN-ST      A          1 /* NEW BIN STATUS */             DKR     1086
+    5780      2 PIWA2-1B-1A-TPAD-CONFLICT        A          1 /* CONFLICT FLAG */              DKR     1087
+    5790      2 PIWA2-1B-1A-DCP-ZONE-MAP         A          3 /* V17.4 ADDITION                DKR
+    5800      2 FILLER-1B-1A-650                 A          6                                  DKR     1088
+    5810      2 FILLER-1B-1A-700                 A          8 /* FOR GSS USE                   DKR     1089
+    5820      2 PIWA2-1B-1A-REASON-CODE          A          1                                  DKR     1090
+    5830      2 PIWA2-1B-1A-REASON-CODE-FILL     A          1                                  DKR     1091
+    5840      2 PIWA2-1B-1A-WARN-CODE            A          2                                  DKR     1092
+    5850      2 PIWA2-1B-1A-RETURN-CODE          A          2                                  DKR     1093
+    5860      2 FILLER-1B-1A-750                 A        108                                  DKR     1094
+    5870      2 PIWA2-1B-1A-NUM-OF-ADDR          A          4                                  DKR     1095
+    5880      2 PIWA2-1B-1A-LIST-OF-ADDR                      (1:21)                           DSRI1   1096     M
+    5890      3 PIWA2-1B-1A-LIST-LOW-HOUSENUM    A         16 /* DISPLAY FORMAT                DKR     1097
+    5900      3 PIWA2-1B-1A-LIST-HI-HOUSENUM     A         16 /* DISPLAY FORMAT                DKR     1098
+    5910      3 PIWA2-1B-1A-LIST-BORO            A          1                                  DKR     1099
+    5920      3 PIWA2-1B-1A-LIST-5SC             A          5                                  DKR     1100
+    5930      3 PIWA2-1B-1A-LIST-LGC             A          2                                  DKR     1101
+    5940      3 PIWA2-1B-1A-LIST-BIN             A          7                                  DKR     1102
+    5950      3 PIWA2-1B-1A-LIST-SIDE-OF-STR     A          1 /* L OR R                        DKR     1103
+    5960      3 PIWA2-1B-1A-ADDR-TYPE            A          1 /* P=NAP, B=NAB,          MAL    DKR     1104
+    5970   R  3 PIWA2-1B-1A-ADDR-TYPE                         /* REDEF. BEGIN : PIWA2-1B-1A-AD DRR     1105
+    5980      4 PIWA2-1B-1A-LIST-ADDR-TYPE       A          1 /* BLANK=NORMAL                  DKR     1106
+    5990      3 PIWA2-1B-1A-TPAD-STATUS          A          1 /* 0 - 9                         DKR     1107
+    6000   R  3 PIWA2-1B-1A-TPAD-STATUS                       /* REDEF. BEGIN : PIWA2-1B-1A-TP DRR     1108
+    6010      4 PIWA2-1B-1A-LIST-TPAD-STATUS     A          1                                  DKR     1109
+    6020      3 PIWA2-1B-1A-ST-NAME              A         32                                  DKR     1110
+    6030   R  3 PIWA2-1B-1A-ST-NAME                           /* REDEF. BEGIN : PIWA2-1B-1A-ST DRR     1111
+    6040      4 PIWA2-1B-1A-LIST-ST-NAME         A         32                                  DKR     1112
+    6050      3 FILLER-1B-1A-800                 A         34                                  DKR     1113
+    6060   * ** END OF FUNCTION 1B ************* * ********** **************************       C
+    ***** End of List *****
 
 ## <span id="appendix14.27"><center>GEOLP23S COPY File</center></span>  
 

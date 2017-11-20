@@ -1,5 +1,5 @@
 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 17.3 - unchanged since V17.1)</center></h6>
+<h6><center>(as of Geosupport System Software Version 17.4)</center></h6>
 
 
 This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup>
@@ -3202,15 +3202,30 @@ Typically, any function listed with an asterisk also includes the various forms 
 			</td>
 			<td></td>
 		</tr>
+    <tr>
+      <td>
+        Speed Limit
+      </td>
+      <td>
+        2
+      </td>
+      <td>
+        749
+      </td>
+      <td>
+        750
+      </td>
+      <td></td>
+    </tr>
 		<tr>
 			<td>
 				Filler
 			</td>
 			<td>
-				252
+				250
 			</td>
 			<td>
-				749
+				751
 			</td>
 			<td>
 				1000
@@ -4446,13 +4461,28 @@ Typically, any function listed with an asterisk also includes the various forms 
     </tr>
     <tr>
       <td>
-        Filler
+        DCP Zoning Map
       </td>
       <td>
-        9
+        3
       </td>
       <td>
         230
+      </td>
+      <td>
+        232
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        Filler
+      </td>
+      <td>
+        6
+      </td>
+      <td>
+        233
       </td>
       <td>
         238
@@ -4841,7 +4871,7 @@ Typically, any function listed with an asterisk also includes the various forms 
   </tr>
   <tr>
     <td>Same as Regular Work Area 2 – Functions 1A, BL, BN</td>
-    <td>1</td>
+    <td>246</td>
     <td>1</td>
     <td>246</td>
     <td></td>
@@ -5745,6 +5775,7 @@ Property Level Information Defined by Address</b>
     <td>478</td>
     <td></td>
   </tr>
+
   <tr>
     <td>Filler</td>
     <td>3</td>
@@ -5992,9 +6023,25 @@ Property Level Information Defined by Address</b>
 </tr>
 <tr>
   <td>
+    Speed Limit
+  </td>
+  <td>
+    2
+  </td>
+  <td>
+    749
+  </td>
+  <td>
+    750
+  </td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>
     Filler</td>
-  <td>252</td>
-  <td>749</td>
+  <td>250</td>
+  <td>751</td>
   <td>1000</td>
   <td></td>
 </tr>
@@ -6571,9 +6618,24 @@ Property Level Information Defined by Address</b>
 </tr>
 <tr>
   <td>
+    DCP Zoning Map
+  </td>
+  <td>
+    3
+  </td>
+  <td>
+    1730
+  </td>
+  <td>
+    1732
+  </td>
+  <td></td>
+</tr>
+<tr>
+  <td>
     Filler</td>
-  <td>9</td>
-  <td>1730</td>
+  <td>6</td>
+  <td>1733</td>
   <td>1738</td>
   <td></td>
 </tr>
@@ -9867,6 +9929,7 @@ Each situation has up to 20 nodes
       <td>785</td>
       <td></td>
     </tr>
+
     <tr>
       <td>Bike Traffic Direction</td>
       <td>2</td>
@@ -9875,9 +9938,16 @@ Each situation has up to 20 nodes
       <td></td>
     </tr>
     <tr>
-      <td>Filler</td>
-      <td>213</td>
+      <td>Speed Limit</td>
+      <td>2</td>
       <td>788</td>
+      <td>789</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Filler</td>
+      <td>211</td>
+      <td>790</td>
       <td>1000</td>
       <td></td>
     </tr>
@@ -10992,9 +11062,16 @@ Each situation has up to 20 nodes
     <td></td>
   </tr>
   <tr>
-    <td>Filler</td>
-    <td>298</td>
+    <td>Speed Limit</td>
+    <td>2</td>
     <td>553</td>
+    <td>554</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Filler</td>
+    <td>296</td>
+    <td>555</td>
     <td>850</td>
     <td></td>
   </tr>

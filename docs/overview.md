@@ -59,6 +59,13 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 <p>--------------------</p>
 
 
-## Version 17.3
+## Version 17.4
 
-* Internal system enhancements and minor bug fixes that are transparent to the user
+* **(COW Only) Two new fields** are returned by Geosupport.
+
+    * **Speed Limit** field contains the legal speel limit at the input location.  
+(COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br>
+    * **DCP Zoning Map** field contains the DCP Zoning Map number.  
+(COW Functions 1A/BL/BN, 1A/BL/BN Extended, 1A/BL Long WA2, 1A/BL TPAD Long WA2, 1B)<br><br>
+
+* **(MSW and COW) System Enhancements and Miscellaneous bug fixes** were implemented.
