@@ -732,9 +732,9 @@ D<sup>\* </sup> = D, DG, DN
   </tr>
   <tr>
     <td>Zip Code</td>
-    <td>14</td>
-    <td>158</td>
-    <td>171</td>
+    <td>5</td>
+    <td>153</td>
+    <td>157</td>
     <td></td>
   </tr>
   <tr>
