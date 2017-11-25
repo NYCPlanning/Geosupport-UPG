@@ -329,10 +329,10 @@ The following is a list of all of the Geosupport work areas, indicating the leng
 <td>All but D<sup>* </sup></td>
 </tr>
 <tr>
-<td> First Borough Name </td>
-<td>9</td>
-<td>361</td>
-<td>369</td>
+<td> House Number - Display Format </td>
+<td>16</td>
+<td>370</td>
+<td>385</td>
 <td>All but D<sup>* </sup></td>
 </tr>
 <tr>
