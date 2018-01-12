@@ -1,0 +1,2533 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Appendix 22: GeoX Programming Guide - DCP</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../css/main.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Appendix 22: GeoX Programming Guide";
+    var mkdocs_page_input_path = "appendices\\appendix22.md";
+    var mkdocs_page_url = "/appendices/appendix22/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script src="../../js/main.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+
+        <!-- Original -->
+        <!-- <a href="../.." class="icon icon-home" id="logoID"> DCP</a> -->
+
+        <!-- Custom -->
+        <a href="http://www1.nyc.gov/site/planning/index.page" class="icon icon-home nycplanning" ></a><br>
+        <a href="../.." class="icon icon-home homeLogo" id="logoID"></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../tableofcontents/">Table of Contents</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../overview/">Overview of the UPG</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter I: System Overview</a>
+    <!-- <span class="caption-text">Chapter I: System Overview</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/chapterI/">Chapter I</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section01/">I.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section02/">I.2 System Functionality</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section03/">I.3 Introduction to Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section04/">I.4 The Geosupport Function Suite</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section05/">I.5 Overview of System Architecture</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section06/">I.6 Technical References</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter II: Geosupport API Introduction</a>
+    <!-- <span class="caption-text">Chapter II: Geosupport API Introduction</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/chapterII/">Chapter II</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section01/">II.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section02/">II.2 Geosupport Return Codes and Reject Handling</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section03/">II.3 Geosupport API User Programming Procedure</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section04/">II.4 One-Work-Area and Two-Work-Area Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section05/">II.5 Coding Geosupport API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section06/">II.6 The Work Area C/C++ Header File and Visual Basic Typedef File</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section07/">II.7 Coding API Calls When Using Geosupport C/C++ Header Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section08/">II.8 Creating a Geosupport Desktop Edition Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section09/">II.9 Sample Programs with Descriptions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section10/">II.10 The Long Work-Area-2 Option</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section11/">II.11 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter III: Street Name Processing</a>
+    <!-- <span class="caption-text">Chapter III: Street Name Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/chapterIII/">Chapter III</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section01/">III.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section02/">III.2 Street Name Normalizing and the SNL Parameter</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section03/">III.3 Street Name Sorting and Normalization Format Options</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section04/">III.4 Partial Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section05/">III.5 The Similar Names Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section06/">III.6 Unconventional Geographic Feature Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section07/">III.7 Street Name Browsing and Functions BB and BF</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section08/">III.8 Selection of Output Street Names (COW only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IV: Street Codes</a>
+    <!-- <span class="caption-text">Chapter IV: Street Codes</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/chapterIV/">Chapter IV</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section01/">IV.1 Introduction: Street Codes and Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section02/">IV.2 Street Name Relationships: Aliases and Locally Valid Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section03/">IV.3 Five-Digit and Ten-Digit Street Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section04/">IV.4 Resynchronization of Street Codes Stored in User Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section05/">IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section06/">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section07/">IV.7 Street Codes and Non-Addressable Place Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section08/">IV.8 Street Code Input Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section09/">IV.9 Summary of Street Codes</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter V: Address Processing</a>
+    <!-- <span class="caption-text">Chapter V: Address Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/chapterV/">Chapter V</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section01/">V.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section02/">V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section03/">V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section04/">V.4 Input Address Acceptance/Rejection and its Validation Significance</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section05/">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section06/">V.6 Duplicate Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section07/">V.7 Marble Hill/Rikers Island</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section08/">V.8 Special Ruby Street Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section09/">V.9 Vanity Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section10/">V.10 Out-of-Sequence Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section11/">V.11 ZIP Code as Input Instead of Borough Code</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section12/">V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section13/">V.13 Special Place Name Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section14/">V.14 ‘No Cross Street’ Segment Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section15/">V.15 UNIT Information Feature (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</a>
+    <!-- <span class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/chapterVI/">Chapter VI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section01/">VI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section02/">VI.2 Tax Lots and BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section03/">VI.3 Buildings and Building Identification Numbers (BINs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section04/">VI.4 Condominiums and Billing BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section05/">VI.5 Vacant Street Frontages and Pseudo-Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section06/">VI.6 Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section07/">VI.7 Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section08/">VI.8 Standard and Legacy Versions of Functions 1A and BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section09/">VI.9 Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section10/">VI.10 Function AP (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section11/">VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VII: Street Configuration Processing</a>
+    <!-- <span class="caption-text">Chapter VII: Street Configuration Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/chapterVII/">Chapter VII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section01/">VII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section02/">VII.2 Intersections: Function 2 and Function 2W</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section03/">VII.3 Three-Street Configurations - Concepts and Terminology</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section04/">VII.4 Street Segments and Related Configurations: Function 3</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section05/">VII.5 Blockfaces: Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section06/">VII.6 Street Stretches: Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section07/">VII.7 Borough Boundary Processing (Functions 2, 3 and 3C)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section08/">VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VIII: Geosupport API</a>
+    <!-- <span class="caption-text">Chapter VIII: Geosupport API</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/chapterVIII/">Chapter VIII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section01/">VIII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section02/">VIII.2 Review of the Geosupport API</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section03/">VIII.3 Coding API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section04/">VIII.4 The Geosupport Copy Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section05/">VIII.5 Coding API Calls When Using Geosupport COPY Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section06/">VIII.6 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section07/">VIII.7 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section08/">VIII.8 JCL for the Execute Step (Batch Applications)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IX: Mainframe GBAT</a>
+    <!-- <span class="caption-text">Chapter IX: Mainframe GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/chapterIX/">Chapter IX</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section01/">IX.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section02/">IX.2 JCL Considerations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section03/">IX.3 GBAT Processing and Programmed Abnormal Terminations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section04/">IX.4 The Input Data File (DDNAME=INFILE or INVSAM)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section05/">IX.5 The Input Control File (DDNAME=CARDIN)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section06/">IX.6 The Input Alias File (DDNAME=ALIASES)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section07/">IX.7 The Output File of Accepted Records (DDNAME=OUTFILE)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section08/">IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section09/">IX.9 The Output Print File (DDNAME=SYSPRINT)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter X: Desktop Edition GBAT</a>
+    <!-- <span class="caption-text">Chapter X: Desktop Edition GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterX/chapterX/">Chapter X</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterX/section01/">X.1 What is GBAT?</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterX/section02/">X.2 Using GBAT</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter XI: Desktop Edition GOAT</a>
+    <!-- <span class="caption-text">Chapter XI: Desktop Edition GOAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/chapterXI/">Chapter XI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section01/">XI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section02/">XI.2 How to Use GOAT</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section03/">XI.3 Invoking Function 1 or Function 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section04/">XI.4 Invoking Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section05/">XI.5 Invoking Function 2</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section06/">XI.6 Invoking Function 3 or Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section07/">XI.7 Invoking Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section08/">XI.8 Invoking Function B</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section09/">XI.9 Invoking Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section10/">XI.10 Invoking Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section11/">XI.11 Invoking Function D</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Appendices and Glossary</a>
+    <!-- <span class="caption-text">Appendices and Glossary</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../appendices/">Appendices and Glossary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix01/">Appendix 1: Geosupport Functions - Quick Reference</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix02/">Appendix 2: Mainframe-Specific Work Area Layouts(MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix03/">Appendix 3: Data Item Dictionary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix04/">Appendix 4: Geosupport Return Codes, Reason Codes And Messages</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix05/">Appendix 5: Geosupport Copy Files (MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix06/">Appendix 6: User Feedback Procedures</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix07/">Appendix 7: Mainframe Data Centers Where Geosupport Is Installed</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix08/">Appendix 8: Sample Application Programs And JCL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix09/">Appendix 9: GBAT Reference Tables</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix10/">Appendix 10: Sample GBAT Jobs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix11/">Appendix 11: Guidelines For Application Design</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix12/">Appendix 12: Chapter-Only Work Areas (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix13/">Appendix 13: Chapter-Only Work Area LAYOUTS (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix14/">Appendix 14: Geosupport Copy Files (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix15/">Appendix 15: 2010 Census Geography – Functions 1, 1E, 2, 3, and 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix16/">Appendix 16: Neighborhood Tabulation Areas (NTAS)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix17/">Appendix 17: TPAD - Additional Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix18/">Appendix 18: GeoExcel Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix19/">Appendix 19: Work Area Layouts (COWs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix20/">Appendix 20: Geosupport Header And Typedef Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix21/">Appendix 21: Geosupport Desktop Edtion</a>
+                  </li>
+                  <li class=" current" >
+                      
+    <a class="current" href="./">Appendix 22: GeoX Programming Guide</a>
+    <ul class="subnav hideMe">
+            
+    <li class="toctree-l3"><a href="#geox-overview">GeoX Overview</a></li>
+    
+
+    <li class="toctree-l3"><a href="#setup">Setup</a></li>
+    
+
+    <li class="toctree-l3"><a href="#using-geox-in-a-net-program">Using GeoX in a .NET Program</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sample-code-for-function-1e">Sample Code for Function 1E</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sample-code-for-function-bl">Sample Code for Function BL</a></li>
+    
+
+    <li class="toctree-l3"><a href="#selecting-the-broker-to-use">Selecting the Broker to Use</a></li>
+    
+
+    <li class="toctree-l3"><a href="#which-functions-to-use">Which Functions to Use</a></li>
+    
+
+    <li class="toctree-l3"><a href="#which-options-to-use">Which Options to Use</a></li>
+    
+
+    <li class="toctree-l3"><a href="#selecting-the-proper-work-area-2">Selecting the Proper Work Area 2</a></li>
+    
+
+    <li class="toctree-l3"><a href="#list-of-classes-and-overview">List of Classes and Overview</a></li>
+    
+
+    <li class="toctree-l3"><a href="#classes">Classes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#supporting-classes-for-work-areas">Supporting Classes for Work Areas</a></li>
+    
+
+    </ul>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../glossary/">Glossary of Terms And Acronyms</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../aboutUs/">About Us</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DCP</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <span style="float: right;" class="printLogo"><a onclick="handlePrintPage()" class="printBtn">Print Page</a>  <a href="../../upg.pdf" target="_blank" class="printBtn">Print All</a></span>
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Appendices and Glossary &raquo;</li>
+        
+      
+    
+    <li>Appendix 22: GeoX Programming Guide</li>
+
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+
+
+
+  <hr/>
+
+
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 class="pdfAppendix"><center>APPENDIX 22: GeoX Programming Guide</center></h2>
+
+<p><em>This document assumes that the developer is using the 64-bit verion of GeoX which is based on EntireX 8.2.2.</em></p>
+<h2 id="geox-overview">GeoX Overview</h2>
+<p>GeoX classes allow developers to write applications that can make Geosupport calls via an EntireX Broker running on the DoITT mainframe or to a locally running Geosupport Desktop Edition (GDE).<br />
+Most Geosupport calls consist of what we call “two work area calls”.  A work area is a data structure.  These two work areas are Work Area 1 which is used for all calls and a Work Area 2 (which varies depending on the Geosupport function call and options you are using).<br />
+Work Area 1 (Wa1) consists of input fields for the various function parameters and output fields which return standardized versions of the input parameters as well as return codes and return messages.<br />
+Work Area 2 corresponds to the type of Geosupport function you are calling and the options you are using.  For example, if to make a Function 1E (geographic information for an input address) with the "extended mode switch" set to "X", then along with Wa1 you would pass in Wa2f1ex.</p>
+<h2 id="setup">Setup</h2>
+<p>Install the 64-bit Geosupport Desktop Edition on your PC.<br />
+Navigate to <b>C:\Program Files\Geosupport Desktop Edition\GeoX\Dotnet\misc</b>
+Run entirexminiruntime_64.exe (This will install the needed EntireX components)</p>
+<p>The supporting files that are needed are:</p>
+<table>
+
+<tr><td colspan="2"> Supporting Files</td></tr><tr>
+<td rowspan="3">DCP Components</td>
+<td>GeoX.dll <i>(This is the primary component.)</i></td></tr>
+<tr><td>GeoXClientStub.dll</td></tr>
+<tr><td>GeoConns.xml <i>(This is a list of Brokers that GeoX will call)</i></td></tr>
+
+
+<tr><td rowspan="3">EntireX Components</td>
+<td>SoftwareAG.EntireX.NETWrapper.Runtime.dll</td></tr>
+<tr><td>broker.dll</td></tr>
+<tr><td>erx.dll </td></tr>
+
+<tr><td>EntireX Configuration Files</td>
+<td>SoftwareAG.EntireX.NETWrapper.Runtime.xml <i>(This tells the Runtime.dll the location for erx.dll.)</i></td></tr>
+
+</table>
+
+<h2 id="using-geox-in-a-net-program">Using GeoX in a .NET Program</h2>
+<p>Create your application project.</p>
+<p>Add a reference to GeoX.dll to your project.  This should bring in the following:<br />
+<em> GeoX.dll<br />
+</em> GeoXClientStub.dll<br />
+<em> SoftwareAG.EntireX.NETWrapper.Runtime.dll<br />
+</em> SoftwareAG.EntireX.NETWrapper.Runtime.xml  </p>
+<p>To use the GeoX.Net classes without using fully qualified names include the following:</p>
+<pre><code>    Imports DCP.Geosupport.DotNet.GeoX          'for Visual Basic .Net
+    using DCP.Geosupport.DotNet.GeoX            //for C#
+</code></pre>
+<p>You are now ready to use the GeoX .Net classes in your application.</p>
+<p>Important Note on Installing EntireX</p>
+<p>When you are ready to distribute your application, you must make sure that GeoX.dll and its supporting components are copied along with your application.   Additionally, the underlying components for EntireX (broker.dll and erx.dll) must be in the application PATH.  You have two options for the underlying EntireX components:  </p>
+<ol>
+<li>
+<p>This is the preferred method.  Run entirexminiruntime_64.exe on each computer that you are going to deploy the application to.  If this is going to be run from a server, then the server is the only computer you need to run this on; you do not need to run this on clients’ computers that access the server.  If you are to run as a stand-alone application on individual computers, then you must run this on each computer your application is installed on.   </p>
+</li>
+<li>
+<p>This method is primarily used when the application is accessed from a file server and there are too many users to easily run entirexminiruntime_64.exe on each computer.  Manually copy the EntireX Components (broker.dll and erx.dll) to your application directory.  Then modify SoftwareAG.EntireX.NETWrapper.Runtime.xml to indicate the location of these components.  To do this:</p>
+</li>
+</ol>
+<p>a. Edit SoftwareAG.EntireX.NETWrapper.Runtime.xml<br />
+b. Search for “Runtime.ERX.Location”<br />
+c. Replace the existing location, likely "C:\Program Files\Common Files…"
+With “.\” [Do Not Include the Quotes]</p>
+<h2 id="sample-code-for-function-1e">Sample Code for Function 1E</h2>
+<pre><code>****************************************************************************************************
+VB.Net Code Snippet for Extended Work Area 2 Function 1E Call
+****************************************************************************************************
+Imports DCP.Geosupport.DotNet.GeoX
+
+Module Module1
+
+'--create a list of connections to use
+Dim myGeoConns as New GeoConnsCollection("GeoConns.xml")
+'---------------------------------------------------------------------------
+'ASP.Net applications will instead need to add a line similar to this:
+'     Dim myGeoConns as GeoConnCollection
+'     myGeoConns = New GeoConnCollection(Server.MapPath("GeoConns.xml"))
+'---------------------------------------------------------------------------
+
+'--create your geo object (makes calls to Geosupport
+'--create your Wa1 object (input to Geosupport)
+'--create your Wa2 object (output from Geosupport)
+Dim myGeo As New geo(myGeoConns)
+Dim myWa1 As New Wa1
+Dim myWa2f1ex As New Wa2F1ex
+
+Sub Main()
+
+   '--initialize your input
+   myWa1.Clear
+
+   '--choose the Geosupport function to call (1 returns geographic info for an address)
+   myWa1.in_func_code = "1E"
+
+   '--tell Geosupport to use platform independent work areas
+   myWa1.in_platform_ind = "C"
+
+   '--set optional processing flags (if any)
+   myWa1.in_mode_switch = "X"
+
+   '--set the input data
+   myWa1.in_B10sc1.boro = "1"
+   myWa1.in_hnd = "22"
+   myWa1.in_stname = "Reade Street"
+
+   '--make a call to Geosupport passing in the correct Work Area 2 object
+   myGeo.GeoCall(myWa1, myWa2f1ex)
+
+   '--check the return codes from your Geosupport call
+   If myWa1.out_grc = "00"
+      Console.WriteLine("Successful Geosupport Call")
+      Console.WriteLine(myWa2f1ex.Print)
+   Else If myWa1.out_grc = "01"
+      Console.WriteLine("Successful Geosupport Call with Warning")
+      Console.WriteLine(myWa2f1ex.Print)
+   Else If mywa1.out_grc = "XX"
+      Console.WriteLine("Unable to find Broker or GDE")
+      Console.WriteLine(myWa1.Print)
+   Else
+      Console.WriteLine("Unsuccessful Geosupport Call")
+      Console.WriteLine(myWa1.Print)
+   End If
+
+End Sub
+
+End Module
+</code></pre>
+<h2 id="sample-code-for-function-bl">Sample Code for Function BL</h2>
+<pre><code>    ****************************************************************************************************
+    VB.Net Code Snippet for Extended Work Area 2 Function BL Call
+    ****************************************************************************************************
+    Imports DCP.Geosupport.DotNet.GeoX
+
+    Module Module1
+
+    '--create a list of connections to use
+    Dim myGeoConns as New GeoConnsCollection("GeoConns.xml")
+    '---------------------------------------------------------------------------
+    'ASP.Net applications will instead need to add a line similar to this:
+    '     Dim myGeoConns as GeoConnCollection
+    '     myGeoConns = New GeoConnCollection(Server.MapPath("GeoConns.xml"))
+    '---------------------------------------------------------------------------
+
+    '--create your geo object (makes calls to Geosupport
+    '--create your Wa1 object (input to Geosupport)
+    '--create your Wa2 object (output from Geosupport)
+    Dim myGeo As New geo(myGeoConns)
+    Dim myWa1 As New Wa1
+    Dim myWa2f1ax As New Wa2F1ax
+
+    Sub Main()
+
+       '--initialize your input
+       myWa1.Clear
+
+       '--choose the Geosupport function to call (BL returns tax lot info for an BBL)
+       myWa1.in_func_code = "BL"
+
+       '--tell Geosupport to use platform independent work areas
+       myWa1.in_platform_ind = "C"
+
+       '--set optional processing flags (if any)
+       myWa1.in_mode_switch = "X"
+
+       '--set the input data
+       myWa1.in_bbl.boro = "1"
+       myWa1.in_bbl.block = "00154"
+       myWa1.in_bbl.lot = "0023"
+
+       '--make a call to Geosupport passing in the correct Work Area 2 object
+       myGeo.GeoCall(myWa1, myWa2f1ax)
+
+       '--check the return codes from your Geosupport call
+       If myWa1.out_grc = "00"
+          Console.WriteLine("Successful Geosupport Call")
+          Console.WriteLine(myWa2f1ax.Print)
+       Else If myWa1.out_grc = "01"
+          Console.WriteLine("Successful Geosupport Call with Warning")
+          Console.WriteLine(myWa2f1ax.Print)
+       Else If mywa1.out_grc = "XX"
+          Console.WriteLine("Unable to find Broker or GDE")
+          Console.WriteLine(myWa1.Print)
+       Else
+          Console.WriteLine("Unsuccessful Geosupport Call")
+          Console.WriteLine(myWa1.Print)
+       End If
+
+    End Sub
+
+    End Module
+</code></pre>
+<h2 id="selecting-the-broker-to-use">Selecting the Broker to Use</h2>
+<p>These classes allow developers to make calls to Geosupport running on the DoITT mainframe or a locally running Geosupport Desktop Edition.  This is done by creating a GeoConnsCollection object that points to a list of Brokers.  One of the benefits of using this collection is that if there is a problem with one of the Brokers, the classes will go to the next Broker in the list.  </p>
+<p>The best way create the GeoConnsCollection object is to point it to a GeoConns.xml file that is external to the application.  Below is a sample GeoConns.xml:  </p>
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;ArrayOfGeoConn xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;GeoConn&gt;
+    &lt;Broker&gt;mvsp.nycnet:4036&lt;/Broker&gt;
+    &lt;Server&gt;P030A/GEOXSERVER/GEOSUPPORTSERVICE&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+  &lt;GeoConn&gt;
+    &lt;Broker&gt;mvsp.nycnet:4074&lt;/Broker&gt;
+    &lt;Server&gt;P030A/GEOXSERVER/GEOSUPPORTSERVICE&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+  &lt;GeoConn&gt;
+    &lt;Broker&gt;mvsp.nycnet:4055&lt;/Broker&gt;
+    &lt;Server&gt;T030A/GEOXSERVER/GEOSUPPORTSERVICE&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+  &lt;GeoConn&gt;
+    &lt;Broker&gt;GDE&lt;/Broker&gt;
+    &lt;Server&gt;&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+&lt;/ArrayOfGeoConn&gt;
+</code></pre>
+<p>The first two GeoConn entries  </p>
+<pre><code>  &lt;GeoConn&gt;
+    &lt;Broker&gt;mvsp.nycnet:4036&lt;/Broker&gt;
+    &lt;Server&gt;P030A/GEOXSERVER/GEOSUPPORTSERVICE&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+</code></pre>
+<p>and  </p>
+<pre><code>  &lt;GeoConn&gt;
+    &lt;Broker&gt;mvsp.nycnet:4074&lt;/Broker&gt;
+    &lt;Server&gt;P030A/GEOXSERVER/GEOSUPPORTSERVICE&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+</code></pre>
+<p>point to the two production brokers (production Geosupport) on the DoITT mainframe.    </p>
+<p>The third entry  </p>
+<pre><code>  &lt;GeoConn&gt;
+    &lt;Broker&gt;mvsp.nycnet:4055&lt;/Broker&gt;
+    &lt;Server&gt;T030A/GEOXSERVER/GEOSUPPORTSERVICE&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+</code></pre>
+<p>points to the test broker (which points to the test version of Geosupport).     </p>
+<p>The final entry  </p>
+<pre><code>  &lt;GeoConn&gt;
+    &lt;Broker&gt;GDE&lt;/Broker&gt;
+    &lt;Server&gt;&lt;/Server&gt;
+  &lt;/GeoConn&gt;
+</code></pre>
+<p>means that a locally running Geosupport Desktop Edition (GDE) will be called instead of a broker.  GDE must be installed or you will get an execption.  </p>
+<h2 id="which-functions-to-use">Which Functions to Use</h2>
+<p>Overview of What the Functions Do</p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Input</th>
+<th align="left">Data Returned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">address</td>
+<td align="left">Geographic and City Service Information</td>
+</tr>
+<tr>
+<td align="left">1E</td>
+<td align="left">address</td>
+<td align="left">Geographic, City Service Information, and Political Districts</td>
+</tr>
+<tr>
+<td align="left">1A</td>
+<td align="left">address</td>
+<td align="left">Tax Property Level Information, Alternate Addresses for Property</td>
+</tr>
+<tr>
+<td align="left">1B</td>
+<td align="left">address</td>
+<td align="left">Combines 1E (Extended) with 1A (Extended) information</td>
+</tr>
+<tr>
+<td align="left">AP</td>
+<td align="left">address</td>
+<td align="left">Address Point ID and Address Point XY coordinates</td>
+</tr>
+<tr>
+<td align="left">1N</td>
+<td align="left">street name</td>
+<td align="left">Normalized Street Name and Street Code</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">intersection, node id</td>
+<td align="left">Geographic Information</td>
+</tr>
+<tr>
+<td align="left">3, 3C</td>
+<td align="left">street segment</td>
+<td align="left">Geographic Information</td>
+</tr>
+<tr>
+<td align="left">3S</td>
+<td align="left">street segment</td>
+<td align="left">List of Intersecting Streets and their Node IDs</td>
+</tr>
+<tr>
+<td align="left">BL</td>
+<td align="left">BBL</td>
+<td align="left">Same as 1A</td>
+</tr>
+<tr>
+<td align="left">BIN</td>
+<td align="left">BIN</td>
+<td align="left">Same as 1A</td>
+</tr>
+<tr>
+<td align="left">D, DG, DN</td>
+<td align="left">street code</td>
+<td align="left">Normalized Street Name for input street code</td>
+</tr>
+</tbody>
+</table>
+<h2 id="which-options-to-use">Which Options to Use</h2>
+<table>
+<tr><th colspan="2">Formatting Properties</th></tr>
+<tr><td rowspan="2">in_hn_justification</td><td>When set to “L” House Numbers in Display Format are left-justified</td></tr>
+<tr><td>When set to “R” House Numbers in Display Format are right-justified</td></tr>
+
+<tr><td rowspan="4">in_snl</td></tr>
+<tr><td>The input street names will be normalized to the indicated length</td></tr>
+<tr><td>Valid values are minimum of  4 and a maximum of 32</td></tr>
+<tr><td>Some streets may not be able to be normalized to the requested length</td></tr>
+
+<tr><td rowspan="4">in_stname_normalization</td></tr>
+<tr><td>When set to blank street names are normalized in sort format</td></tr>
+<tr><td>When set to “C” street names are normalized in compact format</td></tr>
+<tr><td>When set to “S” street names are normalized in sort format</td></tr>
+
+
+<tr><th colspan="2">Additional Information Properties (these usually require a different Work Area 2)</th></tr>
+<tr><td rowspan="3">in_auxseg_switch</td></tr>
+<tr><td>When set to “Y” the list of Segment IDs for a street segment are</td></tr>
+<tr><td>Appended to the Work Area 2;  for Functions 3 and 3C only</td></tr>
+
+
+<tr><td rowspan="4">in_long_wa2_flag</td></tr>
+<tr><td>When set to “Y” the long workarea for the function is returned</td></tr>
+<tr><td>For Functions 1A and BL a list of BINs for the tax lot are returned instead of a list of alternative addresses; Wa2F1al must be used for these calls.</td></tr>
+<tr><td>For Functions 1 and 1E additional information is returned;  Wa2F1w and Wa2F1v must be used for these calls.</td></tr>
+
+<tr><td rowspan="3">in_mode_switch</td></tr>
+<tr><td>When set to “X” the extended work area 2 is used for the call</td></tr>
+<tr><td>For Functions 1, 1E, 1A, BL, BN, 3, and 3C only; where possible, we recommend that you use this option</td></tr>
+
+
+<tr><td rowspan="2">in_tpad_switch</td></tr>
+<tr><td>When set to “Y” TPAD data is added to the work area 2; for Functions 1A, BL, and BN only</td></tr>
+
+
+<tr><td rowspan="5">in_xstreet_names_flag</td></tr>
+<tr><td>When set to “E” for Functions 1, 1E, 3, and 3C the first 5 elements in Wa1.out_stname_list contain the Street Names for the intersecting streets at the low address end of the segment and the last 5 elements in Wa1.out_stname_list contain the Street Names for the intersecting streets at the high address end of the segment</td></tr>
+<tr><td>For Functions 1 and 1E only an additional Geosupport call to Function 1A is made.  If successful the BBL and BIN obtained are returned in Wa1.out_bbl and Wa1.out_bin respectively.</td></tr>
+<tr><td>For Function 2 the first 5 elements in Wa1.out_stname_list contain the Street Names for the intersecting streets at the intersection.</td></tr>
+<tr><td>When set to space for Functions 1, 1E, 2, 3, and 3c if the Street Names of the list of intersecting streets are needed, then the user must take the street codes from Wa2 and make repeated Function D or DG calls.</td></tr>
+
+
+
+
+<tr><th colspan="2">Other</th></tr>
+
+<tr><td rowspan="5">in_browse_flag</td></tr>
+<tr><td>Sets how Geosupport should normalize your input street names when “blank” the output street name is the normalized version of the input street name</td></tr>
+<tr><td>When “P” the output street name is the Primary Street Name for the input street</td></tr>
+<tr><td>When “F” the output street name is the Principal Street Name for the input street</td></tr>
+<tr><td>When “R” the output street name is the DCP Preferred Street Name for the input street </td></tr>
+
+
+
+
+
+<tr><td rowspan="2">in_real_streets_only </td></tr>
+<tr><td>When set to “R” Function 3S will return only intersections consisting of “real streets” and not changes in district boundaries or other items</td></tr>
+
+
+
+<tr><td rowspan="2">in_roadbed_request_switch</td></tr>
+<tr><td>When set to “R” Function 1 and 1E will return geographic data for the RoadBed street segments instead of for the Generic street segments which is the default</td></tr>
+
+</table>
+
+<h2 id="selecting-the-proper-work-area-2">Selecting the Proper Work Area 2</h2>
+<table class="pdfSmallTable">
+  <tbody>
+    <tr>
+      <td rowspan="2">
+        <strong>&nbsp;</strong>
+        <strong>Function </strong>
+      </td>
+      <td colspan="4">
+        <p style="text-align: center;"><strong>Work Area 1 Options</strong>
+      </td>
+      <td rowspan="2">
+        <strong>&nbsp;</strong>
+        <strong>Work Area 2 to use</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>in_auxseg_switch</strong>
+      </td>
+      <td>
+        <strong>in_long_wa2_flag</strong>
+      </td>
+      <td>
+        <strong>in_mode_switch*</strong>
+      </td>
+      <td>
+        <strong>in_tpad_switch</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>1E</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F1E
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F1EX
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>2</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F2
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>2W</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F2W
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>3</strong>
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3X
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3XAS
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>3C</strong>
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3C
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3CAS
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3CX
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3CXAS
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>3S</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2F3S
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>1B</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1B
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1B
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>1A</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1A
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1AL
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1AX
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1AX
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        n/a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1A
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1AL_TPAD
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>BL</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1A
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1AL
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1AX
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1AX
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        n/a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1A
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>&nbsp;</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        L
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1AL_TPAD
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>BN</strong>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1A
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        WA2F1AX
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1A
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        Y
+      </td>
+      <td>
+        WA2F1AX
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <b>AP</b>
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        blank
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2FAP
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        n/a
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        X
+      </td>
+      <td>
+        n/a
+      </td>
+      <td>
+        WA2FAPX
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>We highly recommend that you use the in_mode_switch = “X” option</em></p>
+<h2 id="list-of-classes-and-overview">List of Classes and Overview</h2>
+<p>The Work Area and their Supporting classes all have the following methods:</p>
+<ul>
+<li>
+<p>default constructor  </p>
+</li>
+<li>
+<p>constructor that takes a string as a parameter  </p>
+</li>
+<li>
+<p>Clear method that reinitializes the data in the class  </p>
+</li>
+<li>
+<p>ToString method that converts the data structure to a string  </p>
+</li>
+<li>
+<p>FromString method that converts a string into the data structure  </p>
+</li>
+<li>
+<p>Display method that creates a string consisting of the data items separated by a dash  </p>
+</li>
+<li>
+<p>Display(Char) method that creates a string consisting of the data items separate by “Char”  </p>
+</li>
+<li>
+<p>Print method that creates a string with the data field names and the data values of the class  </p>
+</li>
+<li>
+<p>Get/Set Properties for the data fields (with the exception of Work Area 1 input fields, these are usually limited to Get only) for the most part the names are self-explanatory</p>
+</li>
+</ul>
+<h2 id="classes">Classes</h2>
+<table width="0">
+  <tbody>
+    <tr>
+      <td width="165">
+        <strong>Main GeoX Classes</strong>
+      </td>
+      <td width="523">
+        <strong>Description</strong>
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Geo
+      </td>
+      <td width="523">
+        Main GeoX object
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        GeoConn
+      </td>
+      <td width="523">
+        Contains information needed to connect to an EntireX Broker or a locally running Geosupport Desktop Edition (GDE)
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        GeoConnCollection
+      </td>
+      <td width="523">
+        Contains a list of GeoConn objects
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        GeoConnsException
+      </td>
+      <td width="523">
+        Information relating to an exception involving a GeoConn object
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        &nbsp;
+      </td>
+      <td width="523">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="165">
+        <strong>Work Area Classes </strong>
+      </td>
+      <td width="523">
+        <strong>Description</strong>
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa1
+      </td>
+      <td width="523">
+        Input Data, Normalized Input Data, Return Codes
+      </td>
+    </tr>
+    <tr>
+      <td width="165">&nbsp;</td>
+      <td width="523">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1
+      </td>
+      <td width="523">
+        Geographic Information about a Street Segment
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1w
+      </td>
+      <td width="523">
+        Wa2F1 with additional data
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1e
+      </td>
+      <td width="523">
+        Wa2F1 with election district information
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1v
+      </td>
+      <td width="523">
+        Wa2f1e with additional information (same as Wa2f1w with election district information)
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1ex
+      </td>
+      <td width="523">
+        Wa2F1e with additional information and street names for all street codes
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1a
+      </td>
+      <td width="523">
+        Tax Lot Information about an input Address, BBL, or BIN along with a list of alternate addresses associated with the tax lot
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1al
+      </td>
+      <td width="523">
+        Same as Wa2F1a except with a list of BINs associated with the Tax Lot instead of a list of alternate addresses.
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1al_TPAD
+      </td>
+      <td width="523">
+        Same as Wa2F1al with the addition of the TPAD status for each of the BINs in the BIN List
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1ax
+      </td>
+      <td width="523">
+        Wa2F1a with additional information and street names for the alternate addresses for the Tax Lot
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F1b
+      </td>
+      <td width="523">
+        Combination of Wa2F1ex and Wa2F1ax for input address
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F2
+      </td>
+      <td width="523">
+        Geographic Information about an Intersection
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F2w
+      </td>
+      <td width="523">
+        Same as Wa2F3x with a list of additional Segment IDs for those street segments that have multiple Segment IDs associated with them
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3
+      </td>
+      <td width="523">
+        Geographic information about an input street segment (consisting of an on-street and two succeeding cross streets for the on-street
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3as
+      </td>
+      <td width="523">
+        Same as Wa2F3 with a list of additional Segment IDs for those street segments that have multiple Segment IDs associated with them
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3x
+      </td>
+      <td width="523">
+        Same as Wa2F3 with additional information and street names for all street codes
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3xas
+      </td>
+      <td width="523">
+        Same as Wa2F3x with a list of additional Segment IDs for those street segments that have multiple Segment IDs associated with them
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3c
+      </td>
+      <td width="523">
+        Same information as Wa2F3 but for one side of the segment only
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3cas
+      </td>
+      <td width="523">
+        Same as Wa2F3c with a list of additional Segment IDs for those street segments that have multiple Segment IDs associated with them
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3cx
+      </td>
+      <td width="523">
+        Same as Wa2F3c with additional information and street names for all street codes
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3cxas
+      </td>
+      <td width="523">
+        Same as Wa2F3x with a list of additional Segment IDs for those street segments that have multiple Segment IDs associated with them
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F3s
+      </td>
+      <td width="523">
+        List of Intersection for an input Street Stretch
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2F5
+      </td>
+      <td width="523">
+        Returns a properly formatted Geosupport address key for an input address
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2Fhr
+      </td>
+      <td width="523">
+        Returns the version of Geosupport and the Release Number for the data files
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2Fap
+      </td>
+      <td width="523">
+        Address Point ID and XY Coordinates for input Address
+      </td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa2Fapx
+      </td>
+      <td width="523">
+        Same as Wa2Fap with addition of street name in address list
+      </td>
+    </tr>
+    <tr>
+      <td width="165">&nbsp;</td>
+      <td width="523">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="165">
+        Wa1Aimz
+      </td>
+      <td width="523">
+        Returns a list of Map IDs associated with the Input
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="supporting-classes-for-work-areas">Supporting Classes for Work Areas</h2>
+<ul>
+<li>AddrRange  </li>
+<li>AddrRangeX</li>
+<li>AddrRange_ap</li>
+<li>AddrRange_apx</li>
+<li>B10sc</li>
+<li>B5sc</li>
+<li>B7sc</li>
+<li>BBL</li>
+<li>BIN</li>
+<li>BusArea</li>
+<li>ComDist</li>
+<li>CrossStreetInfo</li>
+<li>DofMap</li>
+<li>FileInfo</li>
+<li>LionKey</li>
+<li>Sanborn</li>
+<li>SegSide</li>
+<li>TPADLongWa2Info</li>
+<li>VsamKey1</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../glossary/" class="btn btn-neutral float-right" id="nextButton" title="Glossary of Terms And Acronyms">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../appendix21/" class="btn btn-neutral" id="previousButton" title="Appendix 21: Geosupport Desktop Edtion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../appendix21/" style="color: #fcfcfc; float:left">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../glossary/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "dcpmanual",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "md-to-pdf": "^1.1.0",
+    "mktoc": "^1.0.10",
+    "remarkable-classy": "0.0.1",
+    "split": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ns5001/DCPmanual.git"
+  },
+  "author": "Programming Intern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ns5001/DCPmanual/issues"
+  },
+  "homepage": "https://github.com/ns5001/DCPmanual#readme",
+  "description": ""
+}
