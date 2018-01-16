@@ -78,7 +78,7 @@
     <li class="toctree-l2"><a href="#summary-of-changes-and-new-features">Summary of Changes and New Features</a></li>
     
 
-    <li class="toctree-l2"><a href="#version-174">Version 17.4</a></li>
+    <li class="toctree-l2"><a href="#version-181">Version 18.1</a></li>
     
 
     </ul>
@@ -810,19 +810,25 @@
 <p>Work Area 1 and Work Area 2 are often referred to, in this document, as <strong>WA1</strong> and <strong>WA2</strong>, respectively</p>
 <p>--------------------</p>
 
-<h2 id="version-174">Version 17.4</h2>
+<h2 id="version-181">Version 18.1</h2>
 <ul>
 <li>
-<p><strong>(COW Only) Two new fields</strong> are returned by Geosupport.</p>
+<p><strong>(COW Only) One new field</strong> is returned by Geosupport.</p>
 <ul>
-<li><strong>Speed Limit</strong> field contains the legal speel limit at the input location.<br />
-(COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br></li>
-<li><strong>DCP Zoning Map</strong> field contains the DCP Zoning Map number.<br />
-(COW Functions 1A/BL/BN, 1A/BL/BN Extended, 1A/BL Long WA2, 1A/BL TPAD Long WA2, 1B)<br><br></li>
+<li><strong>PUMA Code</strong> field contains asdfasdf?????filel this in.<br />
+  (COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br></li>
 </ul>
 </li>
 <li>
 <p><strong>(MSW and COW) System Enhancements and Miscellaneous bug fixes</strong> were implemented.</p>
+<ul>
+<li>Return the correct X-Y coordinates for Bridges and Tunnels<br />
+  (Functions 1, 1E, 1B)</li>
+<li>When input is an Intersection Name that is valid at more than one node and no compass direction is specified, return an error message<br />
+   (Function 2)</li>
+<li>The correct Police Patrol Borough is returned even when the intersection has five or more intersecting streets<br />
+    (Function 2)     </li>
+</ul>
 </li>
 </ul>
               
