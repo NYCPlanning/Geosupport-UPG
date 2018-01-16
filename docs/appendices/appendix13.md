@@ -3217,15 +3217,30 @@ Typically, any function listed with an asterisk also includes the various forms 
       </td>
       <td></td>
     </tr>
-		<tr>
+    <tr>
+      <td>
+        PUMA Code
+      </td>
+      <td>
+        5
+      </td>
+      <td>
+        751
+      </td>
+      <td>
+        755
+      </td>
+      <td></td>
+    </tr>		
+    <tr>
 			<td>
 				Filler
 			</td>
 			<td>
-				250
+				245
 			</td>
 			<td>
-				751
+				756
 			</td>
 			<td>
 				1000
@@ -6039,9 +6054,25 @@ Property Level Information Defined by Address</b>
 
 <tr>
   <td>
+    PUMA Code
+  </td>
+    <td>
+    5
+  </td>
+  <td>
+    751
+  </td>
+  <td>
+    755
+  </td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>
     Filler</td>
-  <td>250</td>
-  <td>751</td>
+  <td>245</td>
+  <td>756</td>
   <td>1000</td>
   <td></td>
 </tr>
@@ -9945,9 +9976,23 @@ Each situation has up to 20 nodes
       <td></td>
     </tr>
     <tr>
-      <td>Filler</td>
-      <td>211</td>
+      <td>Left PUMA Code</td>
+      <td>2</td>
       <td>790</td>
+      <td>794</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Right PUMA Code</td>
+      <td>2</td>
+      <td>795</td>
+      <td>799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Filler</td>
+      <td>201</td>
+      <td>800</td>
       <td>1000</td>
       <td></td>
     </tr>
@@ -11069,9 +11114,16 @@ Each situation has up to 20 nodes
     <td></td>
   </tr>
   <tr>
-    <td>Filler</td>
-    <td>296</td>
+    <td>PUMA Code</td>
+    <td>5</td>
     <td>555</td>
+    <td>559</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Filler</td>
+    <td>291</td>
+    <td>560</td>
     <td>850</td>
     <td></td>
   </tr>

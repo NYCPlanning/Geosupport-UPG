@@ -59,13 +59,16 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 <p>--------------------</p>
 
 
-## Version 17.4
+## Version 18.1
 
-* **(COW Only) Two new fields** are returned by Geosupport.
-
-    * **Speed Limit** field contains the legal speel limit at the input location.  
-(COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br>
-    * **DCP Zoning Map** field contains the DCP Zoning Map number.  
-(COW Functions 1A/BL/BN, 1A/BL/BN Extended, 1A/BL Long WA2, 1A/BL TPAD Long WA2, 1B)<br><br>
+* **(COW Only) One new field** is returned by Geosupport.
+    * **PUMA Code** field contains asdfasdf?????filel this in.  
+      (COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br>
 
 * **(MSW and COW) System Enhancements and Miscellaneous bug fixes** were implemented.
+    * Return the correct X-Y coordinates for Bridges and Tunnels  
+      (Functions 1, 1E, 1B)
+    * When input is an Intersection Name that is valid at more than one node and no compass direction is specified, return an error message  
+       (Function 2)
+    * The correct Police Patrol Borough is returned even when the intersection has five or more intersecting streets  
+        (Function 2)     
