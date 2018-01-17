@@ -25,7 +25,7 @@ If a COW application has a need to <u>display the street names of the cross stre
 
 In the Extended Function 1 and 1E work area 2, the <u>BOE Preferred LGC</u> and associated street name will be returned in new fields that are defined in the “Extended” portion of Work Area 2.  
 
-The Extended Function 1 and 1E work area 2 includes additional fields such as USPS Preferred City Name, Latitude and Longitude, Neighborhood Tabulation Area Name, Bike Lane 2, Bike Traffic Direction, Street Width, Street Width Maximum, Speed Limit, etc.  For a complete list, see the Work Area layout in [Appendix 13](/appendices/appendix13/).  
+The Extended Function 1 and 1E work area 2 includes additional fields such as USPS Preferred City Name, Latitude and Longitude, Neighborhood Tabulation Area (NTA) Name, PUMA Code, Bike Lane 2, Bike Traffic Direction, Street Width, Street Width Maximum, Speed Limit, etc.  For a complete list, see the Work Area layout in [Appendix 13](/appendices/appendix13/).  
 
 <u>** Underlying Street Name or Street Address ** </u>  
 
@@ -52,7 +52,7 @@ Function 1E handles cases where a School District boundary splits a blockface in
 
 As indicated above, Function 1E permits roadbed-specific information to be returned to the user.  For more information, refer to the description as part of Function 1.  
 
-<u> **COW Function 1/1E Extended Mode - Mode Switch set to “X”.** </u> Geosupport has an Extended Work Area 2 for COW Functions 1 and 1E called Function 1 and 1E Extended. The first 300 bytes of Function 1 and 1E with the Mode Switch set to “X” will be the same as regular Function 1 and 1E calls. Note: Please see [Appendix 13](/appendices/appendix13/) for the Extended Work Area 2 layout.  Some of the fields in the extended portion of the Function 1/1E Work Areas include: USPS Preferred City Name, NTA Name, Latitude, and Longitude.  
+<u> **COW Function 1/1E Extended Mode - Mode Switch set to “X”.** </u> Geosupport has an Extended Work Area 2 for COW Functions 1 and 1E called Function 1 and 1E Extended. The first 300 bytes of Function 1 and 1E with the Mode Switch set to “X” will be the same as regular Function 1 and 1E calls. Note: Please see [Appendix 13](/appendices/appendix13/) for the Extended Work Area 2 layout.  Some of the fields in the extended portion of the Function 1/1E Work Areas include: USPS Preferred City Name, NTA Name, PUMA Code, Latitude, and Longitude.  
 
 <u> **Note: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch “X”, since the Cross Street Names are in the Extended part of Work Area 2,** </u> although this will not create an error if the field is set to “E”.  However, the Street Names returned in Work Area 1 with the Cross Street Names flag are based on the B5SCs (thus returning the primary street names) and not based on the updated B7SCs which allow the Extended Work Area 2 to return the principal street names.  
 

@@ -1,4 +1,4 @@
-<h2 class="pdfAppendix"><center>APPENDIX 16:  NEIGHBORHOOD TABULATION AREAS (NTAS)</center></h2>
+<h2 class="pdfAppendix"><center>APPENDIX 16:  NEIGHBORHOOD TABULATION AREAS (NTAS) AND PUMAS</center></h2>
 
 Originally created as Neighborhood Projection Areas for use in population projections, these aggregations of census tracts have been updated using 2010 census tracts and renamed Neighborhood Tabulation Areas (NTAs).   The origin of Neighborhood Projection Areas as subsets of 55 Public Use Microdata Areas (PUMAs) is explained below.
 

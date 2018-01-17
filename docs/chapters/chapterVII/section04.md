@@ -68,7 +68,7 @@ Another item that Function 3 returns in WA2 is called the Curve Flag.  It indica
 In COW format, Function 3 also returns the FROM and TO node IDs.  In addition, in Extended COW format, Function 3 Extended (with or without Auxiliary Segments) returns  the X,Y coordinates associated with each of the nodes as well.
 
 
-The <u>Extended WA2 Mode Switch</u> can be used to request the Extended COW format for Function 3.  The first 450 bytes of Function 3 with the Mode Switch set to “X” will be the same as for regular COW Function 3 calls.  The additional fields consist of items such as Bike Lane 2, Bike Traffic Direction, Street Width, X-Y Coordinates, Roadway Type, Traffic Direction, Speed Limit and Neighborhood Tabulation Area Names.  For a full list of the data returned, see the COW Work Area layout in [Appendix 13](/appendices/appendix13/).
+The <u>Extended WA2 Mode Switch</u> can be used to request the Extended COW format for Function 3.  The first 450 bytes of Function 3 with the Mode Switch set to “X” will be the same as for regular COW Function 3 calls.  The additional fields consist of items such as Bike Lane 2, Bike Traffic Direction, Street Width, X-Y Coordinates, Roadway Type, Traffic Direction, Speed Limit, Neighborhood Tabulation Area (NTA) Names and PUMA codes.  For a full list of the data returned, see the COW Work Area layout in [Appendix 13](/appendices/appendix13/).
 
 The <u>long WA2 option</u> is available for the MSW Function 3.  The additional data provided in the MSW long WA2 include the census geography and the administrative fire district geography.  All this data is included in the regular COW Function 3 WA2.
 

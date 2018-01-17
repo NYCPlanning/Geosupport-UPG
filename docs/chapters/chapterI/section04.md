@@ -47,7 +47,7 @@ Table I-2 below lists all of the current Geosupport functions, indicating for ea
 ## <p class = "section_header underlineMe center">Table I-2:  List of Geosupport Functions</p>
 |<u>Function</u>|  <u>Type of Input</u> | <u>Description of Output</u> | <u>Sample Output Items</u> |
 |:------------- |:------------- |:------------- |:------------- |
-| 1 | Address or Non-Addressable Place Name |Blockface-related data |Cross streets, ZIP code, census tract and block, community district, police precinct, school district, health area, spatial coordinates COW Only: NTA, Police Patrol Borough|
+| 1 | Address or Non-Addressable Place Name |Blockface-related data |Cross streets, ZIP code, census tract and block, community district, police precinct, school district, health area, spatial coordinates; COW Only: NTA, Police Patrol Borough; COW Extended Only: PUMA Code|
 |1A |Address or Non-Addressable Place Name |Property-related data |Tax block and lot identifiers, list of all buildings, addresses and street frontages of property, condo flag, spatial coords. |
 |1B (COW Only) |Address or Non-Addressable Place Name |Combined Property and Blockface related data |See Function 1E below and Function 1A above  (COW Only) |
 |1E |Address or Non-Addressable Place Name |Blockface-related data |Same as Function 1 + political districts: Election, State Assembly and Senate, City Council, Congressional and Municipal Court Districts |

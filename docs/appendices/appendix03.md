@@ -4033,7 +4033,37 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
     <td class="topVerticalTD">Description:</td>
     <td>Police Patrol Borough Commands are sub-divided into Police Precincts which are defined by the Police Department</td>
   </tr>
-</table>  
+</table>
+
+<b>PUBLIC USE MICRODATA AREA (PUMA) CODE</b> - See PUMA CODE
+
+<table class="rightTableAlignment borderlessTable">
+  <tr>
+      <th colspan="2"><b>PUMA CODE</b></th>
+  </tr>
+  <tr>
+    <td>Field Names:</td>
+    <td>PUMA CODE</td>
+  </tr>
+  <tr>
+    <td class="widthTD">Functions:</td>
+    <td>1 Extended, 1E Extended, 1B, 3 Extended, 3C Extended</td>
+  </tr>
+  <tr>
+    <td>Work Area Format:</td>
+    <td>COW</td>
+  </tr>
+  <tr>
+    <td>Length and Format:</td>
+    <td>5 bytes</td>
+  </tr>
+  <tr>
+    <td class="topVerticalTD">Description:</td>
+    <td>PUMAs (Public Use Microdata Areas) are approximations of New York City's Community Districts which were developed for use with the Census Bureau's Public Use Microdata Samples (PUMS). In order to make the boundaries consistent with PUMAs, NTAs were created using whole census tracts, from the 2010 census, within PUMAs.  For more information on the history and significance of NTAs and PUMAs, see [Appendix 16](/appendices/appendix16/).  See also NEIGHBORHOOD TABULATION AREA (NTA) CODE</td>
+  </tr>
+
+</table>
+
 
 ## R  
 

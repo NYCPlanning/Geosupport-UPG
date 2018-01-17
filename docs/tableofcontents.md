@@ -1293,7 +1293,7 @@
   </tr>
   <!-- ======================================================================= -->
   <tr>
-    <td><b><a href="../appendices/appendix16">APPENDIX 16:  NEIGHBORHOOD TABULATION AREAS (NTAS)</a></b></td>
+    <td><b><a href="../appendices/appendix16">APPENDIX 16:  NEIGHBORHOOD TABULATION AREAS (NTAS) AND PUMAS</a></b></td>
     <td>909</td>
   </tr>
   <!-- ======================================================================= -->
