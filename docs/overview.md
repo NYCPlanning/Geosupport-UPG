@@ -62,13 +62,13 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 ## Version 18.1
 
 * **(COW Only) One new field** is returned by Geosupport.
-    * **PUMA Code** field contains asdfasdf?????filel this in.  
+    * **PUMA Code** field contains the Public Use Microdata Area Code associated with the input location.  
       (COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br>
 
 * **(MSW and COW) System Enhancements and Miscellaneous bug fixes** were implemented.
-    * Return the correct X-Y coordinates for Bridges and Tunnels  
+    * Return the correct X-Y coordinates for bridges and tunnels.
       (Functions 1, 1E, 1B)
-    * When input is an Intersection Name that is valid at more than one node and no compass direction is specified, return an error message  
+    * When input is an Intersection Name that is valid at more than one node and no compass direction is specified, return an error message.  
        (Function 2)
-    * The correct Police Patrol Borough is returned even when the intersection has five or more intersecting streets  
+    * The correct Police Patrol Borough is returned even when the intersection has five or more intersecting streets.  
         (Function 2)     
