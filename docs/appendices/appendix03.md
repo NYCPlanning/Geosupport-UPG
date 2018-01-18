@@ -4055,7 +4055,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
   </tr>
   <tr>
     <td>Length and Format:</td>
-    <td>5 bytes</td>
+    <td>5 bytes, RJZF</td>
   </tr>
   <tr>
     <td class="topVerticalTD">Description:</td>
