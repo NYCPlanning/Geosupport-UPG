@@ -1,12 +1,12 @@
 
 <h1><center>User Programming Guide</center></h1>
 
-This document, the _Geosupport System User Programming Guide_ (UPG), contains the detailed technical information necessary 
+This document, the _Geosupport System User Programming Guide_ (UPG), contains the detailed technical information necessary
 for users to design and develop their own application programs that access applications like Geosupport, GBAT and GOAT.  
 
 # How to use:
 
-## 1.Install MkDocs : 
+## 1.Install MkDocs:
 In order to manually install MkDocs you'll need Python installed on your system, as well as the Python package manager, pip.
 You can check if you have these already installed from the command line:
 
@@ -28,17 +28,40 @@ MkDocs User Guide can be explored at: http://www.mkdocs.org/user-guide/writing-y
 
 ## 2. Clone repository :
 ```
-git clone https://github.com/ns5001/DCPmanual.git 
+git clone https://github.com/NYCPlanning/Geosupport-UPG.git
 ```
 ## 3. Install Node.js :
 Install Node.js from: https://nodejs.org/en/download/
 
-Node.js is required to inorder to SAVE the UPG Document in PDF form and/or print PDF.
+Node.js is required to in order to SAVE the UPG Document in PDF form and/or print PDF.
  Steps to create PDF:
  * Switch your directory to 'docs' folder. You need to be within the 'docs' folder of mkdocs project(/docs).
  * Run following command from your terminal:
   ```
   npm install
+
+  ```
+
+----
+  * If you're running a windows machine, we need to reference ```file:///```. The following file must be updated: ```node_modules/markdown-pdf/phantom/render.js```   
+
+    1. change line 15  
+      from:    
+      ```var protocol = os.name === 'windows' ? '' : 'file://'```  
+      to:  
+      ```var protocol = os.name === 'windows' ? 'file:///' : 'file://'```
+    2. Change the following two lines to include the third line  
+      from:   
+            cssPaths.forEach(function (cssPath) {
+              var css = document.createElement('link')   
+      to:  
+            cssPaths.forEach(function (cssPath) {
+              cssPath = 'file:///' + cssPath
+              var css = document.createElement('link')      
+
+  ----
+  * Convert the document to PDF
+  ```
   node convert.js
   ```
  * Once PDF is generated you will get following message on the terminal : <b>Created upg.pdf </b>
@@ -62,6 +85,3 @@ mkdocs gh-deploy
 
 ## 6. UPG website Link :
 https://nycplanning.github.io/Geosupport-UPG/
-
-
-
