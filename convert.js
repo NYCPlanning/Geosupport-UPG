@@ -169,6 +169,7 @@ function preProcessMd() {
 
 var options = {
   cssPath: "css/pdf.css",
+//  paperFormat: 'A4',
   remarkable: {
         html: true,
         breaks: true,
