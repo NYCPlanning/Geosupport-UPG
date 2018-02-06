@@ -16,8 +16,7 @@ Hassan Adekoya, Chief Information Officer
 
   <br>
 **GEOGRAPHIC SYSTEMS SECTION**  
-Rudy Lopez, Director  
-Michele McInnes, AICP, Deputy Director  
+Michele McInnes, AICP, PMP, Interim Director  
 Nilesh Palve, Programming Manager and Solution Architect  
 Thomas Costa, AICP, Manager, Geographic Research  
 Rodrigo Zapata, Deputy Manager, Geographic Research  

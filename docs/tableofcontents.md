@@ -115,7 +115,7 @@
     <td>59</td>
   </tr>
   <tr>
-    <td class="indentRows"><a href="../chapters/chapterII/section11">II.11 The Auxiliary Segment Option(COW Only)</a></td>
+    <td class="indentRows"><a href="../chapters/chapterII/section11">II.11 The Auxiliary Segment Option (COW Only)</a></td>
     <td>60</td>
   </tr>
   <tr>
@@ -573,7 +573,7 @@
     <td>199</td>
   </tr>
   <tr>
-    <td class="indentRowsofRows"><a href="../chapters/chapterVIII/section02/#chapterVIII.2.1">Important note for CICS applications written in NATURAL:</a></td>
+    <td class="indentRowsofRows"><a href="../chapters/chapterVIII/section02/#chapterVIII.2.1">Important note for CICS applications written in NATURAL</a></td>
     <td>200</td>
   </tr>
   <tr>
