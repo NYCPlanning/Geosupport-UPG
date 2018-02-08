@@ -36,7 +36,8 @@ blockquote, .pdfPre {
   margin-top: -1.5em;
 }
 .dcpInfo {
-  margin-top: -2em;
+  /* changed margin-top from -2em to -3em */
+  margin-top: -3em;
 }
 .center {
   text-align: center;
@@ -99,6 +100,10 @@ blockquote, .pdfPre {
   page-break-before: always;
 }
 
+html {
+    zoom: 1.625; /*workaround for phantomJS2 rendering pages too small*/
+}
+
 img[alt$=">"] {
   float:right;
 }
@@ -122,7 +127,8 @@ img[alt^="NYCSeal"] {
   float: right !important;
 }
 img[alt^="NYCPlanningLogo"] {
-  margin-top: 6.5em;
+  /* changed margin-top from 6.5em to 4.5em */
+  margin-top: 4.5em;
 }
 
 
