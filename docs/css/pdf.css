@@ -36,6 +36,7 @@ blockquote, .pdfPre {
   margin-top: -1.5em;
 }
 .dcpInfo {
+  /* changed margin-top from -2em to -3em */
   margin-top: -3em;
 }
 .center {
@@ -126,6 +127,7 @@ img[alt^="NYCSeal"] {
   float: right !important;
 }
 img[alt^="NYCPlanningLogo"] {
+  /* changed margin-top from 6.5em to 4.5em */
   margin-top: 4.5em;
 }
 
