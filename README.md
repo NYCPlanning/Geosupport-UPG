@@ -1,4 +1,3 @@
-
 <h1><center>User Programming Guide</center></h1>
 
 This document, the _Geosupport System User Programming Guide_ (UPG), contains the detailed technical information necessary
