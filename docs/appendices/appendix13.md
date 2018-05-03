@@ -1,5 +1,5 @@
 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 18.1)</center></h6>
+<h6><center>(as of Geosupport System Software Version 18.2 - <span class="smallText">unchanged since</span> V18.1)</center></h6>
 
 
 This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup>

@@ -17,7 +17,7 @@ When no alias file is provided, Condition Code 12 can occur, but not Condition C
 If the control file and alias file validation processing is completed normally, GBAT processes the input data file and writes data to the output files.  Specifically, GBAT reads each record from the input data file, and uses the geographic information obtained there from as the input data for a standard API call to the Geosupport System.  If the information is accepted by Geosupport, GBAT writes a record into the output file of accepted data (unless the user has chosen not to create this optional file).  If the information is rejected by Geosupport, GBAT writes a record into the output file of rejected data.  Both types of output records consist of exact copies of the input data record together with data that GBAT has obtained from Geosupport.  At the completion of execution, GBAT writes out a small report (usually less than one page long) of summary run statistics.  
 
   * <u>Condition Code 15:</u>  
-  GBAT sets the Condition Code to 15 when GBAT execution is terminated because of a record length error for the following files: ERRFILE (COW and MSW), ERRFIL2 (COW only), and ERRFIL3 (COW only).  
+  GBAT sets the Condition Code to 15 when GBAT execution is terminated because of a record length error for the following files: ERRFILE (COW and MSW), ERRFIL2 (COW only), ERRFIL3 (COW only), ERRFIL4 (COW only) and ERRFIL5 (COW only).  
 
 If  there is a record length error for other files, e.g. OUTFILE, GBAT may ABEND with U4038.  In addition to the ABEND, other messages are generated, e.g. <span class="customPre">IBM0122S ONCODE=22 The RECORD condition was raised because the length of the record variable was greater than the record length (ONFILE = OUTFILE)</span>   
 

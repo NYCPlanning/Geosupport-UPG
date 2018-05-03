@@ -1,7 +1,7 @@
 ![geoSystemLogo <>](img/geoSystemLogo.png "Ge")
 
 <h1 class = "docName"><center>User Programming Guide (UPG)</center></h1>
-<p class = "version"><center>SOFTWARE VERSION 18.1</center></p>  
+<p class = "version"><center>SOFTWARE VERSION 18.2 Draft 1</center></p>  
 
 <center>![NYCPlanningLogo <>](img/logo2.png "NYC Logo")</center>
 
@@ -9,8 +9,8 @@
 Information Technology Division  </br>
 Geographic Systems Section </center></div> </br>  
 
-<sup>181.04</sup>  
+<sup>182.D1</sup>  
 
-<!-- <small>181.04</small>  --> 
+<!-- <small>181.04</small>  -->
 
 <!-- <pre>181.04</pre> -->
