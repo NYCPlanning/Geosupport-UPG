@@ -12,17 +12,18 @@ Jon Kaufman, Chief Operating Officer
 
   <br>
 **INFORMATION TECHNOLOGY DIVISION**  
-Hassan Adekoya, Chief Information Officer   
+Hassan Adekoya, Chief Information Officer
+Michele McInnes, AICP, PMP, Senior Advisor, IT Strategic Planning and Administration   
 
   <br>
-**GEOGRAPHIC SYSTEMS SECTION**  
-Michele McInnes, AICP, PMP, Interim Director  
-Nilesh Palve, Programming Manager and Solution Architect  
+**ENTERPRISE DATA MANAGEMENT**  
+Lynn Seirip, Director<br>
 Thomas Costa, AICP, Manager, Geographic Research  
 Rodrigo Zapata, Deputy Manager, Geographic Research  
 
-  <br>
-**PROGRAMMING STAFF**  
+**CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
+Nilesh Palve, Director  
+**Programming Staff**  
 Frank Chin  
 Jie Ding  
 Gloria Katz  
@@ -32,7 +33,19 @@ Jigar Talati
 Jasmine Tse  
 Tatyana Vechnyak
 
-  <br>
+
+**CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
+Nilesh Palve, Director  
+**PROGRAMMING STAFF**  
+Frank Chin  
+Jie Ding  
+Gloria Katz  
+Yoel Lebel  
+Steve Oliver  
+Jigar Talati  
+Jasmine Tse  
+Tatyana Vechnyak
+  <br> <br>
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  
 Geosupport Desktop Edition is a trademark of the Department of City Planning / City of New York
 

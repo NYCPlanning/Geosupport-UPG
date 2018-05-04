@@ -1,0 +1,180 @@
+[33mcommit b8844ec14083db738cae158ae08c05af19131ffb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Thu May 3 17:01:54 2018 -0400
+
+    V18.2 WA1 CH IX A9
+
+[33mcommit 776828a5d89a5bf484a4e99ea2930a9aaa91abe4[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Fri Feb 9 14:21:02 2018 -0500
+
+    Table of Contents Updated for UPG 18.1
+
+[33mcommit 386fb77c1009b2a859d204bdcfa9f8b2d2e6034c[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Fri Feb 9 10:35:25 2018 -0500
+
+    redoing deploy
+
+[33mcommit 3b6b254afe31fb19f6f257e22af565a9e3b27b5b[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Thu Feb 8 11:59:44 2018 -0500
+
+    added comments to pdf.css for margin-top changes
+
+[33mcommit 84db3e2c21aee9f00e783d9c051078e12685a8db[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Thu Feb 8 10:17:57 2018 -0500
+
+    changed upg.pdf css to zoom into windows screen, and added 18.1 changes
+
+[33mcommit ba64ba8ebafcd3c25413acf8a02e4b3f5cf9215a[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Tue Feb 6 12:14:51 2018 -0500
+
+    UPG 18.1 Final (4) Staff, TOC, COPYLIBs, Hyperlink
+
+[33mcommit f30041fc1fdeba258fa49ce7a595ca3b28d7ac98[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Fri Jan 19 12:53:28 2018 -0500
+
+    UPG V18.1 Draft 2 with PDF and new README
+
+[33mcommit 711b7dd3f06ee89f7cbf5cdc8f36a5ebfb17a406[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Thu Jan 18 13:53:51 2018 -0500
+
+    UPG V18.1 Draft 2 with PUMA RJLF
+
+[33mcommit 3519b37220a3f1b21f465c210d848411b93fe7f2[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Thu Jan 18 12:25:51 2018 -0500
+
+    UPG V18.1 Draft 2
+
+[33mcommit 6ed2b48099b0f7261c8c9a49cf69f69704a14cfd[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Wed Jan 17 15:56:49 2018 -0500
+
+    UPG Draft 2a overview only
+
+[33mcommit c01da494e50cef8ffcf706186a539b24096e2d83[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Tue Jan 16 20:38:00 2018 -0500
+
+    UPG V18.1 Draft 1
+
+[33mcommit fdfad241023d2a6315cb7add871a24eb4ab12c3a[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Tue Jan 16 16:28:24 2018 -0500
+
+    18.1 overview fixes, A13
+
+[33mcommit 05f7dde9411aee7d85ac7fd20fdfd7a3a5b10e8d[m
+Author: Gloria Katz <gkatz@planning.nyc.gov>
+Date:   Fri Jan 12 11:55:41 2018 -0500
+
+    update
+
+[33mcommit 515fb5691ea2e7e74fdd5ae12179d80bf62d6459[m
+Author: Gloria Katz <GKatz@planning.nyc.gov>
+Date:   Thu Jan 11 16:33:39 2018 -0500
+
+    V18.1 number in tables A2, A4, A13
+
+[33mcommit 67dddb761ce889f6f735ef8d51ee906eef8efd81[m
+Author: Gloria Katz <GKatz@planning.nyc.gov>
+Date:   Thu Jan 4 16:33:47 2018 -0500
+
+    18.1 Draft cover page
+
+[33mcommit a6739084cb69d8a24ea41470ddcf7fd6bffe7909[m[33m ([m[1;31morigin/upgv17.4[m[33m)[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Mon Nov 20 11:02:37 2017 -0500
+
+    17.4 Version
+
+[33mcommit 34d2fbfbe4b8e559ace3ca46393aa714db6aeaae[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Mon Oct 16 15:19:47 2017 -0400
+
+    updates rom 10-16-2017
+
+[33mcommit 42428e7dd529c2d38559a1acbb876a96e108dbd4[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 11 15:46:06 2017 -0400
+
+    updates
+
+[33mcommit 276051cedef9c228160b6676c177457f4b54ab3f[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 11 15:42:18 2017 -0400
+
+    updates
+
+[33mcommit 624490765965a7824f564104a961f33351a95562[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 11 15:37:40 2017 -0400
+
+    updates
+
+[33mcommit 1b92e888903821d287acd5f05da32be41077cff8[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 11 15:23:55 2017 -0400
+
+    mobile friendly changes
+
+[33mcommit 92d8e4ba11545ac4dcfa9c895a2c081b20d9c9e7[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 11 15:16:28 2017 -0400
+
+    mobile friendly changes
+
+[33mcommit ebc86daf71e6cb32c8e815c729e52d0677696593[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Wed Aug 9 09:42:00 2017 -0400
+
+    updates from 8-9-2017
+
+[33mcommit 4dbf94063411c489b2e42ce750ea79f18457b408[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 4 10:12:32 2017 -0400
+
+    latest 17.3 changes
+
+[33mcommit b6f5079809d81b31a51430eb7c7e01e1995d7c12[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Fri Aug 4 10:04:20 2017 -0400
+
+    new changes
+
+[33mcommit fdbdee78b12e3e0adba2cf197f11e8328a45ebe4[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Mon Jul 31 07:18:15 2017 -0400
+
+    updates
+
+[33mcommit 11c489ffeef8232084ce52b36b5b4c6d11f19375[m
+Author: nileshpalve <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Tue Jul 25 10:32:53 2017 -0400
+
+    updated version #
+
+[33mcommit 8a3810691f9bd374d1dd401001a82d255bd350fd[m
+Merge: e51cad7 5d10dcb
+Author: N_Palve2 <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Mon Jul 24 15:56:50 2017 -0400
+
+    Merge branch 'master' of https://github.com/NYCPlanning/Geosupport-UPG
+
+[33mcommit e51cad7107bf026f6bd284b4ca294ea138e30ce0[m
+Author: N_Palve2 <N_Palve2@DCP-DELL-1723.DCP.NYCNET>
+Date:   Mon Jul 24 14:57:04 2017 -0400
+
+    New upload
+
+[33mcommit 5d10dcb2410e735e03097d61bfa418563d12203b[m
+Author: nileshpalve <npalve@planning.nyc.gov>
+Date:   Mon Jul 24 14:49:14 2017 -0400
+
+    Initial commit

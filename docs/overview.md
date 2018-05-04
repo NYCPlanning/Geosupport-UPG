@@ -59,6 +59,22 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 <p>--------------------</p>
 
 
+## Version 18.2
+
+* **(COW Only) Mainframe GBAT optionally returns Work Area 1**
+    * When a GBAT input record is rejected by Geosupport, the user may now request that the entire Work Area 1 be included in the output error record.  
+      <br><br>
+
+* **System Enhancements and Miscellaneous bug fixes** were implemented.
+    * (COW and MSW) Two new house number suffixes, namely ‘SF’ and ‘ED’, are now accepted as input.<br>
+      (Functions 1, 1A, 1E, 1B, AP.  
+      The various forms of each of the functions are supported, e.g. 1E Extended, 1A Long)
+      <br><br>
+
+    * (COW Only) Function 1B now references the Street Name Normalization Format Flag (formerly known as the Compact Option) when generating the block face portion (i.e. the Function 1E Extended portion) of its output.  If the compact option is requested, all normalized street names will be compacted, including, for example, the Preferred Board of Elections Street Name and Cross Street Names.
+    <br><br>    
+
+
 ## Version 18.1
 
 * **(COW Only) One new field** is returned by Geosupport.
