@@ -1117,6 +1117,11 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
    <td>Specifies whether the work areas should be in MSW or COW format. The WORKAREA control entry is valid for all functions.  The valid variable values are COW (Character Only Work Area) and MSW (Mainframe Specific Work Area), and are self-explanatory.  If this control entry is not coded, the default value is MSW.</td>
  </tr>
  <tr>
+   <td class="topVerticalTD"><b>WORKAREA1=V</b></td>
+   <td>Specifies whether Work Area 1 is to be included at the end of each record written to the Output File of Rejected Records.  The valid variable values are YES or NO.  YES requests that Work Area 1 be included in the output records.  NO requests that Work Area 1 not be included in the output records.  When WORKAREA1=YES the records are written to ERRFIL4 and ERRFIL5; when WORKAREA1=NO, the records are written to ERRFILE and ERRFIL2 (<a href="../../chapters/chapterIX/section08/">see Chapter IX.8</a>).  WORKAREA1 is optional and is valid only when the format is COW (WORKAREA=COW).  The default value of WORKAREA1 is NO.
+</td>
+ </tr>
+ <tr>
    <td class="topVerticalTD"><b>ZIPCODE=S or ZIPCODE=S,5</b></td>
    <td>Specifies the starting position and length of the input ZIP code field.  This control
  entry is valid only for Functions 1, 1A, 1B and 1E.  An input ZIP code field must always have a length of five bytes, which may be coded explicitly as ‘5’ in this control entry or it may be left uncoded, in which case it defaults to that value.</td>
@@ -1508,6 +1513,12 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
     <td>All</td>
   </tr>
   <tr>
+    <td>WORKAREA1=V</td>
+    <td>YES, NO</td>
+    <td>NO</td>
+    <td>COW only: All</td>
+  </tr>
+  <tr>
     <td>ZIPCODE=S or ZIPCODE=S,5</td>
     <td>1
       <=S <=( LRECL+1)-5</td>
@@ -1549,7 +1560,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>1</td>
-    <td>ALIASES, <u>BORO or ZIPCODE</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW),COMPACT, CROSSSTNAMES, GEOCODE, GEOUNIT (requires WORKAREA=COW and [GEOCODE=NO or GEOCODE=ALL]), HNI xor HNS (see Note 1), HOUSENUM (see Note 2), LONGWA2 xor WORKAREA=COW, MAXREJECTS, MODE=X (valid only if WORKAREA=COW and GEOCODE=ALL or YES),  <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, UNIT (requires WORKAREA=COW), WORKAREA, VSAM</td>
+    <td>ALIASES, <u>BORO or ZIPCODE</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW),COMPACT, CROSSSTNAMES, GEOCODE, GEOUNIT (requires WORKAREA=COW and [GEOCODE=NO or GEOCODE=ALL]), HNI xor HNS (see Note 1), HOUSENUM (see Note 2), LONGWA2 xor WORKAREA=COW, MAXREJECTS, MODE=X (valid only if WORKAREA=COW and GEOCODE=ALL or YES),  <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, UNIT (requires WORKAREA=COW), WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
@@ -1569,7 +1580,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>1A</td>
-    <td>ALIASES, <u>BORO or ZIPCODE</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, GEOCODE, GEOUNIT (requires WORKAREA=COW and [GEOCODE=NO or GEOCODE=ALL]), HNI xor HNS (see Note 1 following Function 1 entry), HOUSENUM (see Note 2 following Function 1 entry), LONGWA2, MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, TPADDATA (requires WORKAREA=COW), UNIT (requires WORKAREA=COW), WORKAREA, VSAM,  1ABLVERSION</td>
+    <td>ALIASES, <u>BORO or ZIPCODE</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, GEOCODE, GEOUNIT (requires WORKAREA=COW and [GEOCODE=NO or GEOCODE=ALL]), HNI xor HNS (see Note 1 following Function 1 entry), HOUSENUM (see Note 2 following Function 1 entry), LONGWA2, MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, TPADDATA (requires WORKAREA=COW), UNIT (requires WORKAREA=COW), WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM,  1ABLVERSION</td>
   </tr>
 
   <tr>
@@ -1579,12 +1590,12 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>1B</td>
-    <td>ALIASES, <u>BORO or ZIPCODE</u> , BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG , COMPACT, CROSSSTNAMES, <u>[GEOCODE=ALL] xor [GEOCODE=YES]</u>, GEOUNIT (requires GEOCODE=ALL), HNS, HOUSENUM (see Note 2 following Function 1 entry), MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, TPADDATA, UNIT, <u>WORKAREA=COW</u>, VSAM</td>
+    <td>ALIASES, <u>BORO or ZIPCODE</u> , BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG , COMPACT, CROSSSTNAMES, <u>[GEOCODE=ALL] xor [GEOCODE=YES]</u>, GEOUNIT (requires GEOCODE=ALL), HNS, HOUSENUM (see Note 2 following Function 1 entry), MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, TPADDATA, UNIT, <u>WORKAREA=COW</u>, WORKAREA1, VSAM</td>
   </tr>
 
   <tr>
     <td>1E</td>
-    <td>ALIASES, <u>BORO or ZIPCODE</u> , BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, CROSSSTNAMES, GEOCODE, GEOUNIT (requires WORKAREA=COW and [GEOCODE=NO or GEOCODE=ALL]), HNI xor HNS (see Note 1 following Function 1 entry), HOUSENUM (see Note 2 following Function 1 entry), LONGWA2 xor WORKAREA=COW, MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, UNIT (requires WORKAREA=COW), WORKAREA, VSAM</td>
+    <td>ALIASES, <u>BORO or ZIPCODE</u> , BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, CROSSSTNAMES, GEOCODE, GEOUNIT (requires WORKAREA=COW and [GEOCODE=NO or GEOCODE=ALL]), HNI xor HNS (see Note 1 following Function 1 entry), HOUSENUM (see Note 2 following Function 1 entry), LONGWA2 xor WORKAREA=COW, MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, UNIT (requires WORKAREA=COW), WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
@@ -1599,12 +1610,12 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>2</td>
-    <td>ALIASES, <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, COMPASS, CROSSBORO1, CROSSSTNAMES, GEOCODE, MAXREJECTS, <u>[ONSTREET and CROSS1] xor [STRTCODE and CRSCOD1], RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>ALIASES, <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, COMPASS, CROSSBORO1, CROSSSTNAMES, GEOCODE, MAXREJECTS, <u>[ONSTREET and CROSS1] xor [STRTCODE and CRSCOD1], RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
     <td>3</td>
-    <td>ALIASES, AUXSEG (see Note 3), <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, CROSSBORO1, CROSSBORO2, CROSSSTNAMES, GEOCODE, LONGWA2 xor WORKAREA=COW, MAXREJECTS, <u>[ONSTREET and CROSS1 and CROSS2] xor [STRTCODE and CRSCOD1 and CRSCOD2], RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>ALIASES, AUXSEG (see Note 3), <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, CROSSBORO1, CROSSBORO2, CROSSSTNAMES, GEOCODE, LONGWA2 xor WORKAREA=COW, MAXREJECTS, <u>[ONSTREET and CROSS1 and CROSS2] xor [STRTCODE and CRSCOD1 and CRSCOD2], RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
@@ -1614,7 +1625,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>3C</td>
-    <td>ALIASES, AUXSEG (see Note 3 following Function 3 entry), <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, COMPASS, CROSSBORO1, CROSSBORO2, CROSSSTNAMES, GEOCODE, MAXREJECTS, <u>[ONSTREET and CROSS1 and CROSS2] xor [STRTCODE and CRSCOD1 and CRSCOD2], RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>ALIASES, AUXSEG (see Note 3 following Function 3 entry), <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG (valid only if WORKAREA=COW), COMPACT, COMPASS, CROSSBORO1, CROSSBORO2, CROSSSTNAMES, GEOCODE, MAXREJECTS, <u>[ONSTREET and CROSS1 and CROSS2] xor [STRTCODE and CRSCOD1 and CRSCOD2], RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
@@ -1624,7 +1635,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>3S</td>
-    <td>ALIASES, <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, COMPACT, COMPASS, COMPASS2, CROSSBORO1, CROSSBORO2, [CROSS1 and CROSS2] xor STRTCODE, [CRSCOD1 and CRSCOD2] xor ONSTREET, GEOCODE, MAXREJECTS, <u>ONSTREET xor STRTCODE</u>, REALSTREETONLY (see Note 4), <u>RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>ALIASES, <u>BORO</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, COMPACT, COMPASS, COMPASS2, CROSSBORO1, CROSSBORO2, [CROSS1 and CROSS2] xor STRTCODE, [CRSCOD1 and CRSCOD2] xor ONSTREET, GEOCODE, MAXREJECTS, <u>ONSTREET xor STRTCODE</u>, REALSTREETONLY (see Note 4), <u>RECTYPE</u>, REJECTWARNINGS, ROADBED, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
@@ -1634,7 +1645,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>AP</td>
-    <td>ALIASES, <u>BORO or ZIPCODE</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG , COMPACT, GEOCODE, HNS, HOUSENUM (see Note 2 following Function 1 entry), MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, <u>WORKAREA=COW</u>, VSAM </td>
+    <td>ALIASES, <u>BORO or ZIPCODE</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, BROWSEFLAG , COMPACT, GEOCODE, HNS, HOUSENUM (see Note 2 following Function 1 entry), MAXREJECTS, <u>ONSTREET xor STRTCODE, RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, <u>WORKAREA=COW</u>, WORKAREA1, VSAM </td>
   </tr>
 
   <tr>
@@ -1644,7 +1655,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>BL</td>
-    <td><u>BORO and BLOCK and LOT xor BBL</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, LONGWA2, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, TITLE, TPADDATA (requires WORKAREA=COW), VSAM, WORKAREA, 1ABLVERSION</u></td>
+    <td><u>BORO and BLOCK and LOT xor BBL</u>, BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, LONGWA2, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, TITLE, TPADDATA (requires WORKAREA=COW), VSAM, WORKAREA, WORKAREA1 (requires WORKAREA=COW), 1ABLVERSION</u></td>
   </tr>
 
   <tr>
@@ -1654,7 +1665,7 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
 
   <tr>
     <td>BN</td>
-    <td><u>BIN</u>, GEOCODE, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, TITLE, TPADDATA (requires WORKAREA=COW), WORKAREA, VSAM</td>
+    <td><u>BIN</u>, GEOCODE, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, TITLE, TPADDATA (requires WORKAREA=COW), WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
@@ -1663,18 +1674,18 @@ Note: for Functions 1, 1A, 1B, 1E, 2, 3, 3C and 3S, but not function 1N, input s
   </tr>
 
   <tr>
-    <td>D/td>
-    <td>BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, COMPACT, CROSSBORO1, CROSSBORO2, GEOCODE, HNI xor HNS, <u>HOUSENUM or HOUSENUM2 or [BORO and STRTCODE] or [BORO and STRTCODE and CRSCOD1] or [BORO and STRTCODE and CRSCOD1 and CRSCOD2]</u>, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>D</td>
+    <td>BRONX and BROOKLYN and MANHATTAN and QUEENS and STATEN, COMPACT, CROSSBORO1, CROSSBORO2, GEOCODE, HNI xor HNS, <u>HOUSENUM or HOUSENUM2 or [BORO and STRTCODE] or [BORO and STRTCODE and CRSCOD1] or [BORO and STRTCODE and CRSCOD1 and CRSCOD2]</u>, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
-    <td>DG/td>
-    <td>COMPACT, GEOCODE, HNI xor HNS, <u>HOUSENUM or HOUSENUM2 or B7SC1 or [B7SC1 and B7SC2] or [B7SC1 and B7SC2 and B7SC3]</u>, MAXREJECTS, RECTYPE, REJECTWARNINGS, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>DG</td>
+    <td>COMPACT, GEOCODE, HNI xor HNS, <u>HOUSENUM or HOUSENUM2 or B7SC1 or [B7SC1 and B7SC2] or [B7SC1 and B7SC2 and B7SC3]</u>, MAXREJECTS, RECTYPE, REJECTWARNINGS, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
   <tr>
-    <td>DN/td>
-    <td>COMPACT, GEOCODE, HNI xor HNS, <u>HOUSENUM or HOUSENUM2 or B10SC1 or [B10SC1 and B10SC2] or [B10SC1 and B10SC2 and B10SC3]</u>, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, VSAM</td>
+    <td>DN</td>
+    <td>COMPACT, GEOCODE, HNI xor HNS, <u>HOUSENUM or HOUSENUM2 or B10SC1 or [B10SC1 and B10SC2] or [B10SC1 and B10SC2 and B10SC3]</u>, MAXREJECTS, <u>RECTYPE</u>, REJECTWARNINGS, SNL, TITLE, WORKAREA, WORKAREA1 (requires WORKAREA=COW), VSAM</td>
   </tr>
 
 </table>
