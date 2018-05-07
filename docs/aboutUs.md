@@ -12,7 +12,7 @@ Jon Kaufman, Chief Operating Officer
 
   <br>
 **INFORMATION TECHNOLOGY DIVISION**  
-Hassan Adekoya, Chief Information Officer
+Hassan Adekoya, Chief Information Officer  
 Michele McInnes, AICP, PMP, Senior Advisor, IT Strategic Planning and Administration   
 
   <br>
@@ -24,19 +24,6 @@ Rodrigo Zapata, Deputy Manager, Geographic Research
 **CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
 Nilesh Palve, Director  
 **Programming Staff**  
-Frank Chin  
-Jie Ding  
-Gloria Katz  
-Yoel Lebel  
-Steve Oliver  
-Jigar Talati  
-Jasmine Tse  
-Tatyana Vechnyak
-
-
-**CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
-Nilesh Palve, Director  
-**PROGRAMMING STAFF**  
 Frank Chin  
 Jie Ding  
 Gloria Katz  

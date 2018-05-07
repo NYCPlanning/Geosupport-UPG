@@ -46,13 +46,13 @@ Note: Since the geography of New York City is constantly growing and changing, a
 
 
 ## **Summary of Changes and New Features**
-The updates listed below indicate changes and new features since the last release of the _User Programming Guide_ (written for Software Version 16.4 and dated November, 2016.)  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.
+The updates listed below indicate changes and new features since the last release of the _User Programming Guide_ (written for Software Version 18.1).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.
 
 Note: Entries in this summary which begin with **‘(COW Only)’** describe changes and features which are available only for applications that use the Character-Only Work Areas (COWs).  Character-Only Work Areas are described in [Appendix 12](/appendices/appendix12/).  To take advantage of the full functionality of Geosupport, it is recommended that applications be written using the Character-Only Work Areas (COWs).
 
 **Character-Only Work Areas (COWs)**, as the name implies, contain character fields only.  The Geosupport work areas that have long been in use are called the **Mainframe-Specific Work Areas (MSWs)**.  Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) and as a Microsoft Office VSTO add-in (GeoExcel).  For a detailed description of the COWs, see [Appendix 12](/appendices/appendix12/).
 
-Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** and **WA2**, respectively
+Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** and **WA2**, respectively.
 
 
 
@@ -66,25 +66,10 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
       <br><br>
 
 * **System Enhancements and Miscellaneous bug fixes** were implemented.
-    * (COW and MSW) Two new house number suffixes, namely ‘SF’ and ‘ED’, are now accepted as input.<br>
+    * **(COW and MSW)** Two new house number suffixes, namely ‘SF’ and ‘ED’, are now accepted as input.<br>
       (Functions 1, 1A, 1E, 1B, AP.  
-      The various forms of each of the functions are supported, e.g. 1E Extended, 1A Long)
+      The various forms of each of these functions are supported, e.g. 1E Extended, 1A Long.)
       <br><br>
 
-    * (COW Only) Function 1B now references the Street Name Normalization Format Flag (formerly known as the Compact Option) when generating the block face portion (i.e. the Function 1E Extended portion) of its output.  If the compact option is requested, all normalized street names will be compacted, including, for example, the Preferred Board of Elections Street Name and Cross Street Names.
+    * **(COW Only)** Function 1B now considers the Street Name Normalization Format Flag (formerly known as the Compact Option) when generating the block face portion (i.e. the Function 1E Extended portion) of its output.  If the compact option is requested, all normalized street names will be compacted, including, for example, the Preferred Board of Elections Street Name and Cross Street Names.
     <br><br>    
-
-
-## Version 18.1
-
-* **(COW Only) One new field** is returned by Geosupport.
-    * **PUMA Code** field contains the Public Use Microdata Area Code associated with the input location.  
-      (COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br>
-
-* **(MSW and COW) System Enhancements and Miscellaneous bug fixes** were implemented.
-    * Return the correct X-Y coordinates for bridges and tunnels.
-      (Functions 1, 1E, 1B)
-    * When input is an Intersection Name that is valid at more than one node and no compass direction is specified, return an error message.  
-       (Function 2)
-    * The correct Police Patrol Borough is returned even when the intersection has five or more intersecting streets.  
-        (Function 2)     
