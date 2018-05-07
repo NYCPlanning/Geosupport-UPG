@@ -81,9 +81,6 @@
     <li class="toctree-l2"><a href="#version-182">Version 18.2</a></li>
     
 
-    <li class="toctree-l2"><a href="#version-181">Version 18.1</a></li>
-    
-
     </ul>
 	    </li>
           
@@ -807,10 +804,10 @@
 <p>Appendices 1 through 5, together with Appendices 13 and 14 (for COW Work Areas), collectively can serve as a quick reference guide for experienced Geosupport users.</p>
 <p>Note: Since the geography of New York City is constantly growing and changing, any examples mentioned in this document may, occasionally, function differently from the way they are described.  The examples will, in any case, illustrate the concept being discussed.</p>
 <h2 id="summary-of-changes-and-new-features"><strong>Summary of Changes and New Features</strong></h2>
-<p>The updates listed below indicate changes and new features since the last release of the <em>User Programming Guide</em> (written for Software Version 16.4 and dated November, 2016.)  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.</p>
+<p>The updates listed below indicate changes and new features since the last release of the <em>User Programming Guide</em> (written for Software Version 18.1).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.</p>
 <p>Note: Entries in this summary which begin with <strong>‘(COW Only)’</strong> describe changes and features which are available only for applications that use the Character-Only Work Areas (COWs).  Character-Only Work Areas are described in <a href="../appendices/appendix12/">Appendix 12</a>.  To take advantage of the full functionality of Geosupport, it is recommended that applications be written using the Character-Only Work Areas (COWs).</p>
 <p><strong>Character-Only Work Areas (COWs)</strong>, as the name implies, contain character fields only.  The Geosupport work areas that have long been in use are called the <strong>Mainframe-Specific Work Areas (MSWs)</strong>.  Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) and as a Microsoft Office VSTO add-in (GeoExcel).  For a detailed description of the COWs, see <a href="../appendices/appendix12/">Appendix 12</a>.</p>
-<p>Work Area 1 and Work Area 2 are often referred to, in this document, as <strong>WA1</strong> and <strong>WA2</strong>, respectively</p>
+<p>Work Area 1 and Work Area 2 are often referred to, in this document, as <strong>WA1</strong> and <strong>WA2</strong>, respectively.</p>
 <p>--------------------</p>
 
 <h2 id="version-182">Version 18.2</h2>
@@ -826,36 +823,15 @@
 <p><strong>System Enhancements and Miscellaneous bug fixes</strong> were implemented.</p>
 <ul>
 <li>
-<p>(COW and MSW) Two new house number suffixes, namely ‘SF’ and ‘ED’, are now accepted as input.<br>
+<p><strong>(COW and MSW)</strong> Two new house number suffixes, namely ‘SF’ and ‘ED’, are now accepted as input.<br>
   (Functions 1, 1A, 1E, 1B, AP.<br />
-  The various forms of each of the functions are supported, e.g. 1E Extended, 1A Long)
+  The various forms of each of these functions are supported, e.g. 1E Extended, 1A Long.)
   <br><br></p>
 </li>
 <li>
-<p>(COW Only) Function 1B now references the Street Name Normalization Format Flag (formerly known as the Compact Option) when generating the block face portion (i.e. the Function 1E Extended portion) of its output.  If the compact option is requested, all normalized street names will be compacted, including, for example, the Preferred Board of Elections Street Name and Cross Street Names.
+<p><strong>(COW Only)</strong> Function 1B now considers the Street Name Normalization Format Flag (formerly known as the Compact Option) when generating the block face portion (i.e. the Function 1E Extended portion) of its output.  If the compact option is requested, all normalized street names will be compacted, including, for example, the Preferred Board of Elections Street Name and Cross Street Names.
 <br><br>    </p>
 </li>
-</ul>
-</li>
-</ul>
-<h2 id="version-181">Version 18.1</h2>
-<ul>
-<li>
-<p><strong>(COW Only) One new field</strong> is returned by Geosupport.</p>
-<ul>
-<li><strong>PUMA Code</strong> field contains the Public Use Microdata Area Code associated with the input location.<br />
-  (COW Functions 1/1E Extended, 1B, 3/3C Extended)<br><br></li>
-</ul>
-</li>
-<li>
-<p><strong>(MSW and COW) System Enhancements and Miscellaneous bug fixes</strong> were implemented.</p>
-<ul>
-<li>Return the correct X-Y coordinates for bridges and tunnels.
-  (Functions 1, 1E, 1B)</li>
-<li>When input is an Intersection Name that is valid at more than one node and no compass direction is specified, return an error message.<br />
-   (Function 2)</li>
-<li>The correct Police Patrol Borough is returned even when the intersection has five or more intersecting streets.<br />
-    (Function 2)     </li>
 </ul>
 </li>
 </ul>
