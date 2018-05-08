@@ -14,7 +14,6 @@ Jon Kaufman, Chief Operating Officer
 **INFORMATION TECHNOLOGY DIVISION**  
 Hassan Adekoya, Chief Information Officer  
 Michele McInnes, AICP, PMP, Senior Advisor, IT Strategic Planning and Administration   
-
   <br>
 **ENTERPRISE DATA MANAGEMENT**  
 Lynn Seirip, Director<br>
