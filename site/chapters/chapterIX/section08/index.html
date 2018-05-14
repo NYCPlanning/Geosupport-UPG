@@ -772,7 +772,8 @@
               
                 <h2>IX.8  The Output Files of Rejected Records (DDNAME=ERRFILx)</h2>
 
-<p>Each record in the Output Files of Rejected Records typically contains a Geosupport Return Code (GRC), a Reason Code and a copy of the user's input data record.  The user may optionally request (via the WORKAREA1 control entry) that Work Area 1 should also be included in the output record.  When Work Area 1 is requested, ERRFIL4 and ERRFIL5 are created instead of ERRFILE and ERRFIL2).  Work Area 1 contains the Geosupport Error Message(s) which may help the user to correct the input data.  See more detail below.
+<p>Each record in the Output Files of Rejected Records typically contains a Geosupport Return Code (GRC), a Reason Code and a copy of the user's input data record.  The user may optionally request (via the WORKAREA1 control entry) that Work Area 1 should also be included in the output record.   Work Area 1 contains the Geosupport Error Message(s) which may help the user to correct the input data.  ERRFILE and ERRFIL2 are created when Work Area 1 is not requested.  When Work Area 1 <u>is</u> requested, ERRFIL4 and ERRFIL5 are created instead of ERRFILE and ERRFIL2.      </p>
+<p>See more detail below on all the Output Files of Rejected Records, viz. ERRFILE, ERRFIL2, ERRFIL3, ERRFIL4 and ERRFIL5.
 <br><br></p>
 <!-- ## <span id="chapterIX.8.1">IX.8.1  ERRFILE not working used IX.8.2 instead. investigate later - commented out </span>  -->
 
