@@ -22,8 +22,7 @@ Rodrigo Zapata, Deputy Manager, Geographic Research
 
 **CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
 Nilesh Palve, Director  
-**Programming Staff**  
-Frank Chin  
+**Programming Staff**    
 Jie Ding  
 Gloria Katz  
 Yoel Lebel  
