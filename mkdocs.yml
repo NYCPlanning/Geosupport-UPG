@@ -3,7 +3,7 @@ pages:
 - Home: index.md
 - Table of Contents : tableofcontents.md
 - Overview of the UPG: overview.md
-- 'Chapter I: System Overview': 
+- 'Chapter I: System Overview':
     - Chapter I : chapters/chapterI/chapterI.md
     - I.1 Introduction: chapters/chapterI/section01.md
     - I.2 System Functionality: chapters/chapterI/section02.md
