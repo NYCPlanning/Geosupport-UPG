@@ -113,7 +113,7 @@ RECORD LENGTH OF THE INPUT FILE =       xxx    RECORD LENGTH OF ERRFIL3 =   yyy 
 
 Note:  If you are not using RELATEDNODES, you do not have to add ERRFIL3 to your GBAT JCL.  The file is not opened.  No changes have to be made.
 
-## IX.8.4  ERRFIL4 <span class="subSection_header" id="chapterIX.8.1">(for use with WORKAREA1=YES)</span>
+## IX.8.4  ERRFIL4 <span class="subSection_header" id="chapterIX.8.4">(for use with WORKAREA1=YES)</span>
 ERRFIL4 is mandatory when WORKAREA1=YES.  This output file contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
 
 The ERRFIL4 record is the same as the ERRFILE record, except that it also includes a copy of Work Area 1.  Each ERRFIL4 record consists of four bytes, followed by an exact copy of the input data record, followed by a copy of Work Area 1.  The four bytes consist of the two-byte GRC, followed by a one-byte filler containing a ‘-‘(dash character) for display readability, followed by the one-byte Reason Code.  The Work Area 1 is 1,200 bytes long.  The LRECL of ERRFIL4 must always be 1,204 greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFIL4 correctly in the JCL.
