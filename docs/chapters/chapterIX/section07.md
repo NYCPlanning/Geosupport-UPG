@@ -37,15 +37,15 @@ Every input data record that produces a Geosupport Return Code (GRC) of ‘00’
 
 * If OUTFILE is being created, GBAT writes a corresponding output record into OUTFILE.
 
-* Regardless of whether or not OUTFILE is being created, the record contributes to the count of accepted records that appears in the SYSPRINT report of run statistics (see [Chapter XI.9](/chapters/chapterXI/section09/))
+* Regardless of whether or not OUTFILE is being created, the record contributes to the count of accepted records that appears in the SYSPRINT report of run statistics (see [Chapter IX.9](/chapters/chapterIX/section09/))
 
-* If the record is within the scope of the MAXREJECTS triggering set (see [Chapter XI.3](/chapters/chapterXI/section03/)), it precludes a MAXREJECTS abnormal termination.  
+* If the record is within the scope of the MAXREJECTS triggering set (see [Chapter IX.3](/chapters/chapterIX/section03/)), it precludes a MAXREJECTS abnormal termination.  
 
 Every input data record that produces a GRC of greater than ‘01’ is treated as a reject;  that is, the following actions are taken:
 
 * GBAT writes a corresponding output record into ERRFILE (and ERRFIL2 and ERRFIL3 as needed), the output file of rejected records.
 
-* The record contributes to the count of rejected records that appears in the SYSPRINT report of run statistics (see [Chapter XI.9](/chapters/chapterXI/section09/))
+* The record contributes to the count of rejected records that appears in the SYSPRINT report of run statistics (see [Chapter IX.9](/chapters/chapterIX/section09/))
 
 * Unless the record is rejected for an invalid borough code, it is counted as a rejected record for the purpose of determining whether a MAXREJECTS abnormal termination is to be triggered.  
 

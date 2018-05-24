@@ -7,12 +7,12 @@ See more detail below on all the Output Files of Rejected Records, viz. ERRFILE,
 
 <!-- ## <span id="chapterIX.8.1">IX.8.1  ERRFILE not working used IX.8.2 instead. investigate later - commented out </span>  -->
 ## IX.8.1  ERRFILE <span class="subSection_header" id="chapterIX.8.1"></span>
-ERRFILE is mandatory when WORKAREA1=NO (which is the GBAT default).  This output file contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
+ERRFILE is mandatory when WORKAREA1=NO (which is the GBAT default).  This output file contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter IX.7](/chapters/chapterIX/section07/).
 
 Each ERRFILE record consists of four bytes, followed by an exact copy of the input data record.  The four bytes consist of the two-byte GRC, followed by a one-byte filler containing a ‘-‘(dash character) for display readability, followed by the one-byte Reason Code.  The LRECL of ERRFILE must always be four (4) greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFILE correctly in the JCL.
 
 ## IX.8.2  ERRFIL2 <span class="subSection_header" id="chapterIX.8.2">(for use by Function 1B only)</span>
-ERRFIL2 is mandatory with RECTYPE=1B together with WORKAREA1=NO.  It contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
+ERRFIL2 is mandatory with RECTYPE=1B together with WORKAREA1=NO.  It contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter IX.7](/chapters/chapterIX/section07/).
 
 The contents of each ERRFIL2 record is as follows:  The first 4 bytes contain the 2-byte GRC, followed by a dash, followed by the Reason Code for the Block Face level (Function 1E Extended) information. This is followed by 6 bytes of filler. Byte 11 contains the 2-byte GRC, followed by a dash, followed by the Reason Code for the Property level (Function 1A Extended) information. This is followed by 6 bytes of filler. The input record begins in byte 21. The LRECL of ERRFIL2 must always be 20 greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFIL2 correctly in the JCL.
 
@@ -114,13 +114,13 @@ RECORD LENGTH OF THE INPUT FILE =       xxx    RECORD LENGTH OF ERRFIL3 =   yyy 
 Note:  If you are not using RELATEDNODES, you do not have to add ERRFIL3 to your GBAT JCL.  The file is not opened.  No changes have to be made.
 
 ## IX.8.4  ERRFIL4 <span class="subSection_header" id="chapterIX.8.4">(for use with WORKAREA1=YES)</span>
-ERRFIL4 is mandatory when WORKAREA1=YES.  This output file contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
+ERRFIL4 is mandatory when WORKAREA1=YES.  This output file contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter IX.7](/chapters/chapterIX/section07/).
 
 The ERRFIL4 record is the same as the ERRFILE record, except that it also includes a copy of Work Area 1.  Each ERRFIL4 record consists of four bytes, followed by an exact copy of the input data record, followed by a copy of Work Area 1.  The four bytes consist of the two-byte GRC, followed by a one-byte filler containing a ‘-‘(dash character) for display readability, followed by the one-byte Reason Code.  The Work Area 1 is 1,200 bytes long.  The LRECL of ERRFIL4 must always be 1,204 greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFIL4 correctly in the JCL.
 
 
 ## IX.8.5  ERRFIL5 <span class="subSection_header" id="chapterIX.8.5">(for use by Function 1B only - with WORKAREA1=YES)</span>
-ERRFIL5 is mandatory when RECTYPE=1B together with WORKAREA1=YES.  It contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter XI.7](/chapters/chapterXI/section07/).
+ERRFIL5 is mandatory when RECTYPE=1B together with WORKAREA1=YES.  It contains a record for each ‘rejected’ input data record.  The value of the REJECTWARNINGS option that is in effect determines which input data records are treated as rejects, as explained in [Chapter IX.7](/chapters/chapterIX/section07/).
 
 The  ERRFIL5 record is the same as the ERRFIL2 record, except that it also includes a copy of Work Area 1.  The contents of each ERRFIL5 record is as follows:  The first 4 bytes contain the 2-byte GRC, followed by a dash, followed by the Reason Code for the Block Face level (Function 1E Extended) information. This is followed by 6 bytes of filler. Byte 11 contains the 2-byte GRC, followed by a dash, followed by the Reason Code for the Property level (Function 1A Extended) information. This is followed by 6 bytes of filler. The input record begins in byte 21. The 1,200-byte Work Area 1 follows the input record.  The LRECL of ERRFIL5 must always be 1,220 greater than that of the input data file.  It is the user’s responsibility to specify the LRECL of ERRFIL5 correctly in the JCL.
 
