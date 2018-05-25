@@ -16,7 +16,7 @@ Hassan Adekoya, Chief Information Officer
 Michele McInnes, AICP, PMP, Senior Advisor, IT Strategic Planning and Administration   
   <br>
 **ENTERPRISE DATA MANAGEMENT**  
-Lynn Seirip, Director<br>
+Lynn Seirup, Director<br>
 Thomas Costa, AICP, Manager, Geographic Research  
 Rodrigo Zapata, Deputy Manager, Geographic Research  
 
