@@ -1,5 +1,5 @@
 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 18.2 - <span class="smallText">unchanged since</span> V18.1)</center></h6>
+<h6><center>(as of Geosupport System Software Version 18.3 - <span class="smallText">unchanged since</span> V18.1)</center></h6>
 
 
 This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup>
@@ -297,7 +297,7 @@ The following is a list of all of the Geosupport COW work areas, indicating the 
         <td>1</td>
         <td>57</td>
         <td>57</td>
-        <td>Required for All Functions  but BL, BN. Ignored if Fn 2 has Node Number input</td>
+        <td>Required for All Functions but BL, BN. Ignored if Fn 2 has Node Number input</td>
     </tr>
     <tr>
         <td class="indentRows">10SC<sup><a href="#section13.21" id="section13.21-21">21</a></sup>-1</td>
@@ -314,7 +314,7 @@ The following is a list of all of the Geosupport COW work areas, indicating the 
         <td>All but BL, BN, D*</td>
     </tr>
     <tr>
-        <td class="indentRows">B10SC-2 (includes Borough Code 2,  B5SC-2 and B7SC-2):</td>
+        <td class="indentRows">B10SC-2 (includes Borough Code 2, B5SC-2 and B7SC-2):</td>
         <td>11</td>
         <td>100</td>
         <td>110</td>
@@ -342,7 +342,7 @@ The following is a list of all of the Geosupport COW work areas, indicating the 
         <td>2, 3*</td>
     </tr>
     <tr>
-        <td>B10SC-3 (includes Borough Code 3,  B5SC-3 and B7SC-3):</td>
+        <td>B10SC-3 (includes Borough Code 3, B5SC-3 and B7SC-3):</td>
         <td>11</td>
         <td>143</td>
         <td>153</td>
@@ -6789,7 +6789,7 @@ Property Level Information Defined by Address</b>
   <td>L - Left, R - Right</td>
 </tr>
 <tr>
-<td class="indentRows">Geographic Identifier Entry Type  Code</td>
+<td class="indentRows">Geographic Identifier Entry Type Code</td>
 <td>1</td>
 <td>(49)</td>
 <td>(49)</td>

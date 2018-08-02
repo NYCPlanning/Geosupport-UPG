@@ -27,7 +27,6 @@ Jie Ding
 Gloria Katz  
 Yoel Lebel  
 Steve Oliver  
-Jigar Talati  
 Jasmine Tse  
 Tatyana Vechnyak
   <br> <br>
