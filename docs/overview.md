@@ -67,7 +67,7 @@ Geosupport now allows more flexibility when adding high-rise buildings to the DS
 <br>
        This enhancement is transparent to the user and is available across all platforms and formats (e.g. Geosupport Desktop Edition™, Linux, etc.).
 <br><br>
-No programming changes are necessary.
-<br><br>
+No programming changes are necessary.  
+<br>
    (COW Functions 1/1E, 1/1E Extended, 1B)
       <br><br>
