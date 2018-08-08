@@ -62,7 +62,8 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 ## Version 18.3
 
 * **(COW Only) System Enhancement Implemented**  
-    * **Hi-Rise Buildings in the DSNY Organics Recycling Program**  
+<br>
+    * **Hi-Rise Buildings in the New York City Department of Sanitation (DSNY) Organics Recycling Program**  
 Geosupport now allows more flexibility when adding high-rise buildings to the DSNY Organics Recycling Program.  It is no longer necessary for DSNY to wait until the quarterly release of Geosupport files to add a hi-rise building to the program.  
 <br>
        This enhancement is transparent to the user and is available across all platforms and formats (e.g. Geosupport Desktop Edition™, Linux, etc.).
