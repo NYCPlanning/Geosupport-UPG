@@ -2597,7 +2597,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td>Length and Format:</td>
-      <td>2 bytes, numeric, LJBF </td>
+      <td>2 bytes, alphanumeric, RJBF </td>
   </tr>
   <tr>
       <td class="topVerticalTD">Description:</td>

@@ -45,7 +45,7 @@
     <td>27</td>
   </tr>
   <tr>
-    <td class="indentRowsofRows"><a href="../chapters/chapterI/section05/#chapterI.5.5">Chapter-Only Work Areas (COWs)</a></td>
+    <td class="indentRowsofRows"><a href="../chapters/chapterI/section05/#chapterI.5.5">Character-Only Work Areas (COWs)</a></td>
     <td>28</td>
   </tr>
   <tr>

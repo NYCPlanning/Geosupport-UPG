@@ -3,7 +3,7 @@
 ## <span id="appendix19.1">Character-Only Work Areas</span>  
 (as of Geosupport System Software Version 9.7.0)  
 
-This appendix contains layouts of all of the work areas used with the Geosupport System’s API. These layouts are current as of the Geosupport software version indicated above. The layouts are in the Character-Only Work Area forma<a href="#appendix19-4" id="appendix19-4-4"><sup>4</sup></a>  
+This appendix contains layouts of all of the work areas used with the Geosupport System’s API. These layouts are current as of the Geosupport software version indicated above. The layouts are in the Character-Only Work Area format<a href="#appendix19-4" id="appendix19-4-4"><sup>4</sup></a>  
 
 Some Geosupport functions can only be called using one work area, Work Area 1 (WA1). Other functions can be called using two work areas, WA1 and Work Area 2 (WA2). WA1 contains both input fields (fields used to pass data from the application to Geosupport) and output fields (fields used to pass data from Geosupport to the application). WA1 is organized so that all the input fields occur first, followed by all the output fields. WA2 contains output fields only.  
 

@@ -7,7 +7,7 @@ Bill de Blasio, Mayor
   <br>
 **DEPARTMENT OF CITY PLANNING**  
 Marisa Lago, Director  
-Purnima Kapur, Executive Director  
+Anita Laremont, Executive Director  
 Jon Kaufman, Chief Operating Officer  
 
   <br>
@@ -22,7 +22,7 @@ Rodrigo Zapata, Deputy Manager, Geographic Research
 
 **CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
 Nilesh Palve, Director  
-**Programming Staff**    
+**Programming Staff**  
 Jie Ding  
 Gloria Katz  
 Yoel Lebel  
