@@ -1,0 +1,11 @@
+/coverage
+/target
+/package
+/build
+/doc/readme
+/test
+*.log
+*.pid
+*.bak
+*.tgz
+*.rdb

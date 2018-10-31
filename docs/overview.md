@@ -58,6 +58,31 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <p>--------------------</p>
 
+## Version 18.4
+
+* **(COW Only) System Enhancements Implemented**  
+<br>
+    * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**  
+
+An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.  These words are processed as if they were the actual numbers ‘1’ through ‘9’.  The house numbers will appear in the output as ‘1’ through ‘9’.
+
+This feature will allow the user to input the address ONE BRYANT PARK, for example, by specifying the word ONE in the input house number field.
+
+‘ONE’ through ‘NINE’ will be recognized in a free-form address when that address is also defined as a NAP (Non-Addressable Place Name); however for these cases, the numeric word will not be converted to a number and the free-form NAP name output will be returned as entered.  (Note: A ‘ONE’ through ‘NINE’ free-form address will have a different street code from its standard parsed form address.)
+
+<br>
+   (COW Functions 1, 1A, 1B, AP and their various forms, e.g. Function 1E Extended)
+   <br>
+       * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**  
+
+   An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric 
+      <br>
+
+    * **Two new house number suffixes are now supported:
+o	BA 	
+o	B GARAGE.**  
+
+      An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric
 
 ## Version 18.3
 
