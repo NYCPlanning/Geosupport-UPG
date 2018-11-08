@@ -1,4 +1,3 @@
-
 ##  <div class="pdfPageBreakBefore">Overview of the <i>User Programming Guide</i></div>  
 
 This document, the _Geosupport System User Programming Guide_ (UPG), contains the detailed technical information necessary for users to design and develop their own application programs that access Geosupport, as well as to use GBAT.  (The use of GOAT and the AIMZ transaction requires no programming skills and they are not documented herein.)  The UPG serves as a comprehensive set of technical specifications for the Geosupport System, and can be incorporated into procurement documents issued by city agencies soliciting consulting services for application design and development.
@@ -75,7 +74,7 @@ This feature will allow the user to input the address ONE BRYANT PARK, for examp
    <br>
        * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**  
 
-   An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric 
+   An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric
       <br>
 
     * **Two new house number suffixes are now supported:
