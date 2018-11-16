@@ -59,9 +59,11 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 ## Version 18.4
 
-* **(COW Only) System Enhancements Implemented**  
+<!-- * **(COW Only) System Enhancements Implemented**  
 <br>
-    * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**  
+    * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
+
+* **(COW Only) The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**
 
 An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.  These words are processed as if they were the actual numbers ‘1’ through ‘9’.  The house numbers will appear in the output as ‘1’ through ‘9’.
 
@@ -72,27 +74,22 @@ This feature will allow the user to input the address ONE BRYANT PARK, for examp
 <br>
    (COW Functions 1, 1A, 1B, AP and their various forms, e.g. Function 1E Extended)
    <br>
-       * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**  
+<br>
 
-   An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric
-      <br>
 
-    * **Two new house number suffixes are now supported:
+* **(COW Only) Two new house number suffixes are now supported:  
 o	BA 	
 o	B GARAGE.**  
 
-      An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric
 
-## Version 18.3
+These suffixes were implemented to support addresses in Brooklyn and Staten Island, e.g. 165-BA QUINCY STREET and 2B GARAGE TAYLOR COURT.
 
-* **(COW Only) System Enhancement Implemented**  
+(COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)
+
 <br>
-    * **Hi-Rise Buildings in the New York City Department of Sanitation (DSNY) Organics Recycling Program**  
-Geosupport now allows more flexibility when adding high-rise buildings to the DSNY Organics Recycling Program.  It is no longer necessary for DSNY to wait until the quarterly release of Geosupport files to add a hi-rise building to the program.  
-<br>
-       This enhancement is transparent to the user and is available across all platforms and formats (e.g. Geosupport Desktop Edition™, Linux, etc.).
-<br><br>
-No programming changes are necessary.  
-<br>
-   (COW Functions 1/1E, 1/1E Extended, 1B)
-      <br><br>
+* **(COW Only) Hyphenated house numbers are now supported on a street that is partially in Edgewater Park.**  
+
+
+This feature was implemented to support hyphenated addresses on Pennyfield Avenue (that are not in Edgewater Park), e.g. 10-1 PENNYFIELD AVENUE in the Bronx.
+
+(COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)

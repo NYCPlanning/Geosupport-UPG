@@ -1397,7 +1397,7 @@
   <!-- ============Appendix 22=============================== -->
   <tr>
     <td><b><a href="../appendices/appendix22">APPENDIX 22: GeoX Programming Guide</a></b></td>
-    <td>1030/td>
+    <td>1030</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#geox-overview">GeoX Overview</a></td>
