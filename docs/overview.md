@@ -63,6 +63,8 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 <br>
     * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
 
+**THREE SYSTEM ENHANCEMENTS WERE IMPLEMENTED IN VERSION 18.4**
+
 * **(COW Only) The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**
 
 An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.  These words are processed as if they were the actual numbers ‘1’ through ‘9’.  The house numbers will appear in the output as ‘1’ through ‘9’.
@@ -87,6 +89,7 @@ These suffixes were implemented to support addresses in Brooklyn and Staten Isla
 (COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)
 
 <br>
+
 * **(COW Only) Hyphenated house numbers are now supported on a street that is partially in Edgewater Park.**  
 
 
