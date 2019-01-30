@@ -59,7 +59,7 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 ## Version 18.4
 
-<!-- * **(COW Only) System Enhancements Implemented**  
+<!-- * **(COW Only) System En??? This section  to be deleted ????hancements Implemented**  
 <br>
     * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
 
@@ -96,3 +96,38 @@ These suffixes were implemented to support addresses in Brooklyn and Staten Isla
 This feature was implemented to support hyphenated addresses on Pennyfield Avenue (that are not in Edgewater Park), e.g. 10-1 PENNYFIELD AVENUE in the Bronx.
 
 (COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)
+
+
+
+<p>--------------------</p>
+
+## Version 19.1
+
+<!-- * **(COW Only) System Enhancements Implemented**  
+<br>
+    * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
+
+**SYSTEM ENHANCEMENT IMPLEMENTED IN VERSION 19.1**
+
+* **(COW Only) New house number suffixes are now supported:  
+o	C GARAGE  
+o	E-BLDG  
+o	W-BLDG  
+o	E BLDG  
+o	W BLDG  
+ **  
+<!-- why does code look bold?.  It is not bold on screen or print -->
+These suffixes were implemented to support addresses in Brooklyn and Manhattan.
+For example: ‘C GARAGE’ supports the garage at 386C Chauncey Street in Brooklyn;  
+‘E-BLDG’ and ‘W-BLDG’ support the East Building and West Building at 626 1 Avenue in Manhattan.
+
+o	386C GARAGE CHAUNCEY STREET in Brooklyn  
+o	626 E-BLDG 1 AVENUE in Manhattan  
+o	626 W-BLDG 1 AVENUE in Manhattan  
+o	626 E BLDG 1 AVENUE in Manhattan  
+o	626 W BLDG 1 AVENUE in Manhattan  
+
+
+(COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)
+
+<br>

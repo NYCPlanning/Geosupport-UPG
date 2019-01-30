@@ -18,9 +18,9 @@ Michele McInnes, AICP, PMP, Senior Advisor, IT Strategic Planning and Administra
 **ENTERPRISE DATA MANAGEMENT**  
 Lynn Seirup, Director<br>
 Thomas Costa, AICP, Manager, Geographic Research  
-Rodrigo Zapata, Deputy Manager, Geographic Research  
+Rodrigo Zapata, Senior Technical Project Manager  
 
-**CITYWIDE GEOGRAPHIC APPLICATION SERVICES**<br>
+**CITYWIDE GEO APPLICATION SERVICES**<br>
 Nilesh Palve, Director  
 **Programming Staff**  
 Jie Ding  
@@ -28,7 +28,6 @@ Gloria Katz
 Yoel Lebel  
 Steve Oliver  
 Jasmine Tse  
-Tatyana Vechnyak
   <br> <br>
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  
 Geosupport Desktop Edition is a trademark of the Department of City Planning / City of New York
