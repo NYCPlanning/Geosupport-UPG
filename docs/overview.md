@@ -57,50 +57,6 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <p>--------------------</p>
 
-## Version 18.4
-
-<!-- * **(COW Only) System En??? This section  to be deleted ????hancements Implemented**  
-<br>
-    * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
-
-**THREE SYSTEM ENHANCEMENTS WERE IMPLEMENTED IN VERSION 18.4**
-
-* **(COW Only) The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**
-
-An increasing number of New York City buildings with an address number less than 10 are opting to post their addresses using numeric words rather than numbers, such as ONE BRYANT PARK.  The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.  These words are processed as if they were the actual numbers ‘1’ through ‘9’.  The house numbers will appear in the output as ‘1’ through ‘9’.
-
-This feature will allow the user to input the address ONE BRYANT PARK, for example, by specifying the word ONE in the input house number field.
-
-‘ONE’ through ‘NINE’ will be recognized in a free-form address when that address is also defined as a NAP (Non-Addressable Place Name); however for these cases, the numeric word will not be converted to a number and the free-form NAP name output will be returned as entered.  (Note: A ‘ONE’ through ‘NINE’ free-form address will have a different street code from its standard parsed form address.)
-
-<br>
-   (COW Functions 1, 1A, 1B, AP and their various forms, e.g. Function 1E Extended)
-   <br>
-<br>
-
-
-* **(COW Only) Two new house number suffixes are now supported:  
-o	BA 	
-o	B GARAGE.**  
-
-
-These suffixes were implemented to support addresses in Brooklyn and Staten Island, e.g. 165-BA QUINCY STREET and 2B GARAGE TAYLOR COURT.
-
-(COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)
-
-<br>
-
-* **(COW Only) Hyphenated house numbers are now supported on a street that is partially in Edgewater Park.**  
-
-
-This feature was implemented to support hyphenated addresses on Pennyfield Avenue (that are not in Edgewater Park), e.g. 10-1 PENNYFIELD AVENUE in the Bronx.
-
-(COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)
-
-
-
-<p>--------------------</p>
-
 ## Version 19.1
 
 <!-- * **(COW Only) System Enhancements Implemented**  
