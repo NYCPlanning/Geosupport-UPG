@@ -1,5 +1,5 @@
 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 19.1 - <span class="smallText">unchanged since</span> V18.1)</center></h6>
+<h6><center>(as of Geosupport System Software Version 19.21 - <span class="smallText">unchanged since</span> V18.1)</center></h6>
 
 
 This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup>
@@ -3233,14 +3233,44 @@ Typically, any function listed with an asterisk also includes the various forms 
       <td></td>
     </tr>		
     <tr>
+      <td>
+        Police Sector
+      </td>
+      <td>
+        4
+      </td>
+      <td>
+        756
+      </td>
+      <td>
+        759
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        Police Service Area
+      </td>
+      <td>
+        1
+      </td>
+      <td>
+        760
+      </td>
+      <td>
+        760
+      </td>
+      <td></td>
+    </tr>			
+    <tr>
 			<td>
 				Filler
 			</td>
 			<td>
-				245
+				240
 			</td>
 			<td>
-				756
+				761
 			</td>
 			<td>
 				1000
@@ -6070,9 +6100,39 @@ Property Level Information Defined by Address</b>
 
 <tr>
   <td>
+    Police Sector
+  </td>
+    <td>
+    4
+  </td>
+  <td>
+    756
+  </td>
+  <td>
+    759
+  </td>
+  <td></td>
+</tr>
+<tr>
+  <td>
+    Police Service Area
+  </td>
+    <td>
+    1
+  </td>
+  <td>
+    760
+  </td>
+  <td>
+    760
+  </td>
+  <td></td>
+</tr>
+<tr>
+  <td>
     Filler</td>
-  <td>245</td>
-  <td>756</td>
+  <td>240</td>
+  <td>761</td>
   <td>1000</td>
   <td></td>
 </tr>
@@ -7821,9 +7881,17 @@ Blank – Normal</td>
     <td></td>
   </tr>
   <tr>
-    <td>Filler</td>
-    <td>12</td>
+    <td>Police Sector</td>
+    <td>4</td>
     <td>189</td>
+    <td>192</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Filler</td>
+    <td>8</td>
+    <td>193</td>
     <td>200</td>
     <td></td>
   </tr>
@@ -9977,22 +10045,36 @@ Each situation has up to 20 nodes
     </tr>
     <tr>
       <td>Left PUMA Code</td>
-      <td>2</td>
+      <td>5</td>
       <td>790</td>
       <td>794</td>
       <td></td>
     </tr>
     <tr>
       <td>Right PUMA Code</td>
-      <td>2</td>
+      <td>5</td>
       <td>795</td>
       <td>799</td>
       <td></td>
     </tr>
     <tr>
-      <td>Filler</td>
-      <td>201</td>
+      <td>Left Police Sector</td>
+      <td>4</td>
       <td>800</td>
+      <td>803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Right Police Sector</td>
+      <td>4</td>
+      <td>804</td>
+      <td>807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Filler</td>
+      <td>193</td>
+      <td>808</td>
       <td>1000</td>
       <td></td>
     </tr>
@@ -11121,9 +11203,16 @@ Each situation has up to 20 nodes
     <td></td>
   </tr>
   <tr>
-    <td>Filler</td>
-    <td>291</td>
+    <td>Police Sector</td>
+    <td>4</td>
     <td>560</td>
+    <td>563</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Filler</td>
+    <td>287</td>
+    <td>564</td>
     <td>850</td>
     <td></td>
   </tr>

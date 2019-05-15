@@ -1,5 +1,27 @@
 <h2 class="pdfAppendix"><center>APPENDIX 2: MAINFRAME-SPECIFIC WORK AREA LAYOUTS(MSW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 19.1 - unchanged since 15.3)</center></h6>
+<h6><center>(as of Geosupport System Software Version 19.2 - unchanged since 15.3)</center></h6>
+
+<!--<h3><center>IMPORTANT MSW ANNOUNCEMENT"</center><h3>-->
+<!---<h3><center>SUPPORT FOR MSW WORK AREAS IS ENDING AS OF JANUARY 1, 2020</center></h3>-->
+
+
+## <span id="apppendix02.01"><center>IMPORTANT MSW ANNOUNCEMENT</center></span>
+## <span id="apppendix02.02"><center>SUPPORT FOR MSW WORK AREAS IS ENDING AS OF JANUARY 1, 2020</center></span>
+
+To provide our users with the best care and most current product, **as of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.**  Character-Only Work Areas (COWs) will continue to be supported and enhanced.  It is therefore very important that users convert their MSW applications to the COW format.
+
+User-written application programs and GBAT utilities that use the MSW format will continue to run at this time.  Note, however, that no technical support will be available for any issues that arise after January 1, 2020.
+
+To assist users in the conversion process:  
+
+   *  [Appendix 12](/appendices/appendix12/) contains information needed to create COW applications.    
+   *  [Appendix 13](/appendices/appendix13/) contains the COW Work Area Layouts.  
+   *  [Appendix 14](/appendices/appendix14/) contains the COW copy files.   
+
+Any further issues may be directed via email to: GSS_Software@planning.nyc.gov
+
+
+## <span id="apppendix02.03">Appendix 2 Begins</span>
 
 This appendix contains layouts of all of the work MSW areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  
 

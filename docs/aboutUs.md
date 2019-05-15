@@ -27,6 +27,7 @@ Jie Ding
 Gloria Katz  
 Yoel Lebel  
 Steve Oliver  
+Naveed Shah  
 Jasmine Tse  
   <br> <br>
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  

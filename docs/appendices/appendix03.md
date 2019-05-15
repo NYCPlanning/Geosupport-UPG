@@ -2661,11 +2661,11 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
   <tr>
       <td class="topVerticalTD">Description:</td>
-      <td>Indicates whether the input location is in a census tract that is eligible for Community Development Block Grant (CDBG) funding.  A census tract is eligible for CDBG funding if at least 51.00% of the residents are low- and moderate-income persons (less than 80% of the Median Family Income) <u>and</u> 50% of its total floor area must be comprised of residential usage.  All other census tracts are ineligible.</td>
+      <td>Indicates whether the input location is in a census tract that meets the U.S. Department of Housing and Urban Development (HUD) criteria to be eligible for Community Development Block Grant (CDBG) funding.  A census tract is eligible for CDBG funding if at least 51.00% of the residents are low- and moderate-income persons (less than 80% of the Median Family Income) <u>and</u> 50% of its total floor area must be comprised of residential usage.  All other census tracts are ineligible.</td>
   </tr>
   <tr>
       <td></td>
-      <td><u>Note the new residential criteria mentioned above</u>.  In Release 16D, the ‘CD Eligibility’ values were updated to reflect the new criteria.  The new values, recalculated by the Economic Development Corporation (EDC) and supplied to the Department of City Planning (DCP) by the New York City Office of Management and Budget (OMB), were revised to reflect new residential floor area data made available in DCP’s PLUTO data (16v1)</td>
+      <td>In Release 19B, the ‘CD Eligibility’ values were updated to reflect more current data.  Updated income data was provided by HUD and residential usage was calculated by the Department of City Planning (DCP) using PLUTO data (18v2.1).</td>
   </tr>
   <tr>
       <td></td>
@@ -2825,16 +2825,16 @@ See LIST OF CROSS STREET CODES (Function 3S)
   </tr>
 </table>
 
-<b>LEFT 1990 CENSUS TRACT</b> - See CENSUS TRACT.
-<b>LEFT 2000 CENSUS BLOCK </b> - See CENSUS BLOCK.
-<b>LEFT 2000 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX
-<b>LEFT 2000 CENSUS TRACT</b> - See CENSUS TRACT.
-<b>LEFT 2010 CENSUS BLOCK</b> - See CENSUS BLOCK.
-<b>LEFT 2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.
-<b>LEFT 2010 CENSUS TRACT</b> - See CENSUS TRACT.
-<b>LEFT ASSEMBLY DISTRICT</b> - See ASSEMBLY DISTRICT.
-<b>LEFT BLOCKFACE ID</b> - See BLOCKFACE ID.
-<b>LEFT ELECTION DISTRICT - See ELECTION DISTRICT</b>
+<b>LEFT 1990 CENSUS TRACT</b> - See CENSUS TRACT.  
+<b>LEFT 2000 CENSUS BLOCK </b> - See CENSUS BLOCK.  
+<b>LEFT 2000 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
+<b>LEFT 2000 CENSUS TRACT</b> - See CENSUS TRACT.  
+<b>LEFT 2010 CENSUS BLOCK</b> - See CENSUS BLOCK.  
+<b>LEFT 2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
+<b>LEFT 2010 CENSUS TRACT</b> - See CENSUS TRACT.  
+<b>LEFT ASSEMBLY DISTRICT</b> - See ASSEMBLY DISTRICT.  
+<b>LEFT BLOCKFACE ID</b> - See BLOCKFACE ID.  
+<b>LEFT ELECTION DISTRICT</b> - See ELECTION DISTRICT.  
 
 <table class="rightTableAlignment borderlessTable">
 
@@ -4035,6 +4035,61 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
   </tr>
 </table>
 
+<table class="rightTableAlignment borderlessTable">
+
+  <tr>
+      <th colspan="2" id="appendix03-police-sector"><b>POLICE SECTOR</b> </th>
+  </tr>
+  <tr>
+    <td class="widthTD">Functions:</td>
+    <td>1/1E Extended, 1B, 2, 2W, 3 Extended, 3C Extended</td>
+  </tr>
+  <tr>
+    <td>Work Area Format:</td>
+    <td>COW</td>
+  </tr>
+  <tr>
+    <td>Length and Format:</td>
+    <td>4 bytes. RJBF.</td>
+  </tr>
+  <tr>
+    <td class="topVerticalTD">Description:</td>
+    <td>In order to support Neighborhood Policing, the NYC Police Department has divided each precinct into four or five fully-staffed Police Sectors.  The Police Sectors correspond, as much as possible, to the boundaries of actual established neighborhoods.</td>
+  </tr>
+  <tr>    
+    <td></td>
+    <td>The Police Sector field consists of the Precinct Number followed by a letter, e.g. 114A.  </td>
+  </tr>
+</table>
+
+<table class="rightTableAlignment borderlessTable">
+
+  <tr>
+      <th colspan="2" id="appendix03-police-service-area"><b>POLICE SERVICE AREA</b> </th>
+  </tr>
+  <tr>
+    <td class="widthTD">Functions:</td>
+    <td>1/1E Extended, 1B</td>
+  </tr>
+  <tr>
+    <td>Work Area Format:</td>
+    <td>COW</td>
+  </tr>
+  <tr>
+    <td>Length and Format:</td>
+    <td>1 byte</td>
+  </tr>
+  <tr>
+    <td class="topVerticalTD">Description:</td>
+    <td>The NYC Police Department Housing Bureau is responsible for the safety of residents, employees, and visitors in New York City Housing Authority developments. The Housing Bureau Police are stationed in Police Service Areas (PSAs), each of which provides services to a set of housing developments.  Note that not all housing developments are assigned to a PSA.</td>
+  </tr>
+  <tr>    
+    <td></td>
+    <td>The Police Service Area field consists of one byte that designates a PSA, e.g. PSA 3 patrols housing developments in several precincts in Brooklyn North. When an address is not part of a housing development, the field is blank.
+    </td>
+  </tr>
+</table>
+
 <b>PUBLIC USE MICRODATA AREA (PUMA) CODE</b> - See PUMA CODE
 
 <table class="rightTableAlignment borderlessTable">
@@ -4096,7 +4151,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
                       </tr>
                       <tr>
                           <td>Blank</td>
-                          <td>Meaning</td>
+                          <td>All streets are returned</td>
                       </tr>
                       <tr>
                           <td>R</td>
@@ -4109,16 +4164,16 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
   </tr>
 </table>
 
-<b>RIGHT 1990 CENSUS TRACT</b> - See CENSUS TRACT.
-<b>RIGHT 2000 CENSUS BLOCK </b> - See CENSUS BLOCK.
-<b>RIGHT 2000 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.
-<b>RIGHT 2000 CENSUS TRACT</b> - See CENSUS TRACT.
-<b>RIGHT 2010 CENSUS BLOCK </b> - See CENSUS BLOCK.
-<b>RIGHT 2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.
-<b>RIGHT 2010 CENSUS TRACT</b> - See CENSUS TRACT.
-<b>RIGHT ASSEMBLY DISTRICT</b> - See ASSEMBLY DISTRICT.
-<b>RIGHT BLOCKFACE ID</b> - See BLOCKFACE ID.
-<b>RIGHT ELECTION DISTRICT</b> - See ELECTION DISTRICT.
+<b>RIGHT 1990 CENSUS TRACT</b> - See CENSUS TRACT.  
+<b>RIGHT 2000 CENSUS BLOCK </b> - See CENSUS BLOCK.  
+<b>RIGHT 2000 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
+<b>RIGHT 2000 CENSUS TRACT</b> - See CENSUS TRACT.  
+<b>RIGHT 2010 CENSUS BLOCK </b> - See CENSUS BLOCK.  
+<b>RIGHT 2010 CENSUS BLOCK SUFFIX</b> - See CENSUS BLOCK SUFFIX.  
+<b>RIGHT 2010 CENSUS TRACT</b> - See CENSUS TRACT.  
+<b>RIGHT ASSEMBLY DISTRICT</b> - See ASSEMBLY DISTRICT.  
+<b>RIGHT BLOCKFACE ID</b> - See BLOCKFACE ID.  
+<b>RIGHT ELECTION DISTRICT</b> - See ELECTION DISTRICT.  
 
 <table class="rightTableAlignment borderlessTable">
 
@@ -4217,7 +4272,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
 <table class="rightTableAlignment borderlessTable">
 
   <tr>
-      <th colspan="2"><b>RPAD SELF-CHECK CODE (SCC) FOR BBL</b> </th>
+      <th colspan="2"><b>RPAD SELF-CHECK CODE (RPAD SCC) FOR BBL</b> </th>
   </tr>
   <tr>
       <td class="widthTD">Functions:</td>
@@ -4227,10 +4282,19 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
       <td>Work Area Format:</td>
       <td>MSW and COW</td>
   </tr>
+
   <tr>
-      <td>Length and Format:</td>
-      <td>1 byte</td>
+      <td><b>ANNOUNCEMENT:</b></td>
+      <td><b>As of Geosupport Release 19C (on or about August 2019), the RPAD SCC fields will all contain blank values.  In Release 19B the RPAD SCC for some BBLs may also be affected.
+      </b>  See the background information below.</td>  
   </tr>
+
+  <tr>
+      <td> </td>      
+      <td>
+      Background information: The “RPAD SCC” values are derived from the Department of Finance’s (DOF) RPAD file. DOF’s new version of the RPAD file, now called the Property Master file, does not contain “RPAD SCC” values since DOF has phased them out.  <b>For Release 19B</b>, Geosupport will continue to return existing “RPAD SCC” values based on the old RPAD file; however, <b>with Release 19C</b>, the “RPAD SCC” fields will all contain blank values.</td>
+  </tr>
+
   <tr>
       <td class="topVerticalTD">Description:</td>
       <td>For each BBL value, the Department of Finance has computed a Self-Check Code (SCC).  This is a one-digit number computed from the BBL value using an algorithm chosen by DOF.  The purpose of the SCC is to assist in validating key-entered BBLs.  For more information on SCCs inquire to the information technology division of the Department of Finance.</td>
@@ -5299,7 +5363,7 @@ If the width is consistent along the street segment then both values are identic
   </tr>
 </table>
 
-<b>TAX LOT CENTROID</b> - See SPACIAL COORDINATES OF THE TAX LOT CENTROID
+<b>TAX LOT CENTROID</b> - See SPATIAL COORDINATES OF THE TAX LOT CENTROID
 
 <table class="rightTableAlignment borderlessTable">
 

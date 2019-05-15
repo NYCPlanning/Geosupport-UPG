@@ -37,6 +37,9 @@ The COW Work Area 2s are handled in a similar fashion, though they may not all h
 
 Tables VIII-1 and VIII-2, below, list all of the MSW and COW COPY files respectively for COBOL, Assembler, PL/1, NATURAL and C. The tables indicate the work areas for which each file contains layouts, the lengths of those work areas in bytes, and the name of each file by programming language. [Appendix 5](../../appendices/appendix05/) and [Appendix 14](../../appendices/appendix14/) contain printouts of the MSW and COW COPY files respectively.
 
+
+**Important Note: As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to th COW format.**  See [Appendix 12](../../appendices/appendix12/)
+
 <center><b>Table VIII-1: MSW COPY Files for COBOL, Assembler, PL/1, C and NATURAL</b></center>
 
 <table class="pdfSmallTable">
