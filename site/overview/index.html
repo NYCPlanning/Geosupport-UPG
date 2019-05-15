@@ -78,7 +78,7 @@
     <li class="toctree-l2"><a href="#summary-of-changes-and-new-features">Summary of Changes and New Features</a></li>
     
 
-    <li class="toctree-l2"><a href="#version-191">Version 19.1</a></li>
+    <li class="toctree-l2"><a href="#version-192">Version 19.2</a></li>
     
 
     </ul>
@@ -804,38 +804,59 @@
 <p>Appendices 1 through 5, together with Appendices 13 and 14 (for COW Work Areas), collectively can serve as a quick reference guide for experienced Geosupport users.</p>
 <p>Note: Since the geography of New York City is constantly growing and changing, any examples mentioned in this document may, occasionally, function differently from the way they are described.  The examples will, in any case, illustrate the concept being discussed.</p>
 <h2 id="summary-of-changes-and-new-features"><strong>Summary of Changes and New Features</strong></h2>
-<p>The updates listed below indicate changes and new features since the last release of the <em>User Programming Guide</em> (written for Software Version 18.1).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.</p>
-<p>Note: Entries in this summary which begin with <strong>‘(COW Only)’</strong> describe changes and features which are available only for applications that use the Character-Only Work Areas (COWs).  Character-Only Work Areas are described in <a href="../appendices/appendix12/">Appendix 12</a>.  To take advantage of the full functionality of Geosupport, it is recommended that applications be written using the Character-Only Work Areas (COWs).</p>
-<p><strong>Character-Only Work Areas (COWs)</strong>, as the name implies, contain character fields only.  The Geosupport work areas that have long been in use are called the <strong>Mainframe-Specific Work Areas (MSWs)</strong>.  Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) and as a Microsoft Office VSTO add-in (GeoExcel).  For a detailed description of the COWs, see <a href="../appendices/appendix12/">Appendix 12</a>.</p>
+<p>The updates listed below indicate changes and new features since the last release of the <em>User Programming Guide</em> (written for Software Version 19.1).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.</p>
+<p>Note: Entries in this summary which begin with <strong>‘(COW Only)’</strong> describe changes and features which are available only for applications that use the Character-Only Work Areas (COWs).  Character-Only Work Areas are described in <a href="../appendices/appendix12/">Appendix 12</a>.  To take advantage of the full functionality of Geosupport, applications need to be written using the Character-Only Work Areas (COWs).</p>
+<p><strong>Character-Only Work Areas (COWs)</strong>, as the name implies, contain character fields only.  The Geosupport work areas that have long been in use are called the <strong>Mainframe-Specific Work Areas (MSWs)</strong>.  </p>
+<p><strong>Note: As of January 1, 2020, MSWs will no longer be supported.  See announcement below in the Version 19.2 section.</strong></p>
+<p>Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) and as a Microsoft Office VSTO add-in (GeoExcel).  For a detailed description of the COWs, see <a href="../appendices/appendix12/">Appendix 12</a>.</p>
 <p>Work Area 1 and Work Area 2 are often referred to, in this document, as <strong>WA1</strong> and <strong>WA2</strong>, respectively.</p>
 <p>--------------------</p>
 
-<h2 id="version-191">Version 19.1</h2>
+<h2 id="version-192">Version 19.2</h2>
+<p><u><strong>IMPORTANT DATA ANNOUNCEMENT</strong></u>  </p>
+<p><b>RPAD Self-Check Codes (RPAD SCCs) are being phased out.</b>  As of Geosupport Release 19C (on or about August 2019), the RPAD SCC fields will all contain blank values.  In Release 19B the RPAD SCC for some BBLs may also be affected.  More detail can be found in the RPAD SCC entry in <a href="../appendices/appendix03/">Appendix 3</a>.</p>
+<p><u><strong>IMPORTANT MAINFRAME-SPECIFIC WORK AREA (MSW) ANNOUNCEMENT</strong></u>  </p>
+<p>To provide our users with the best care and most current product, <strong>as of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.</strong>  Character-Only Work Areas (COWs) will continue to be supported and enhanced.  It is therefore very important that users convert their MSW applications to the COW format.</p>
+<p>User-written application programs and GBAT utilities that use the MSW format will continue to run at this time.  Note, however, that no technical support will be available for any issues that arise after January 1, 2020.</p>
+<p>To assist users in the conversion process:<br />
+   *  a. <a href="../appendices/appendix12/">Appendix 12</a> contains information needed to create COW applications.  <br />
+   *  b. <a href="../appendices/appendix13/">Appendix 13</a> contains the COW Work Area Layouts.<br />
+   *  c. <a href="../appendices/appendix14/">Appendix 14</a> contains the COW copy files.   </p>
+<p>Any further issues may be directed via email to: GSS_Software@planning.nyc.gov</p>
 <!-- * **(COW Only) System Enhancements Implemented**  
 <br>
     * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
 
-<p><strong>SYSTEM ENHANCEMENT IMPLEMENTED IN VERSION 19.1</strong></p>
+<p><u><strong>SYSTEM ENHANCEMENTS IMPLEMENTED IN VERSION 19.2</strong></u></p>
 <ul>
-<li><strong>(COW Only) New house number suffixes are now supported:<br />
-o   C GARAGE<br />
-o   E-BLDG<br />
-o   W-BLDG<br />
-o   E BLDG<br />
-o   W BLDG<br />
-</strong><br />
-<!-- why does code look bold?.  It is not bold on screen or print -->
-These suffixes were implemented to support addresses in Brooklyn and Manhattan.
-For example: ‘C GARAGE’ supports the garage at 386C Chauncey Street in Brooklyn;<br />
-‘E-BLDG’ and ‘W-BLDG’ support the East Building and West Building at 626 1 Avenue in Manhattan.</li>
+<li>
+<p><strong>(COW Only) Two new fields are returned by Geosupport</strong>  </p>
+<ul>
+<li>
+<p><b>Police Sector</b><br />
+  (Functions 1/1E Extended, 1B, 2, 2W,3 Extended, 3C Extended)</p>
+</li>
+<li>
+<p><b>Police Service Area</b><br />
+  (Functions 1/1E Extended, 1B)<br />
+The new fields are described in  <a href="../appendices/appendix03/">Appendix 3</a>.<br />
+<br></p>
+</li>
 </ul>
-<p>o   386C GARAGE CHAUNCEY STREET in Brooklyn<br />
-o   626 E-BLDG 1 AVENUE in Manhattan<br />
-o   626 W-BLDG 1 AVENUE in Manhattan<br />
-o   626 E BLDG 1 AVENUE in Manhattan<br />
-o   626 W BLDG 1 AVENUE in Manhattan  </p>
-<p>(COW Functions 1, 1A, 1E, 1B, AP and their various forms, e.g. Function 1E Extended.)</p>
+</li>
+<li>
+<p><strong>(COW and MSW)  CD Eligibility Values have been updated.</strong></p>
+<p>Release 19B includes updated “CD Eligibility” values for census tracts.  The values of “Eligible” and “Ineligible” are assigned to tracts that meet the U.S. Department of Housing and Urban Development (HUD) criteria for whether the addresses and blocks contained therein are eligible to receive Community Development Block Grants (CDBGs) from the federal government.  For a tract to be eligible, 51.0% of the residents must be low/moderate income persons (less than 80% of the area Median Family Income), and 50% of its total floor area must be comprised of residential usage.</p>
+<p>Updated income data was provided by HUD and residential usage was calculated by the Department of City Planning (DCP) using PLUTO data (18v2.1).  </p>
+<p>There are no programming considerations for retrieving the new CD Eligibility values.</p>
+</li>
+</ul>
+<!-- why does code look bold?.  It is not bold on screen or print -->
+
 <p><br></p>
+<p>--------------------</p>
+
+<!-- why does code look bold?.  It is not bold on screen or print -->
               
             </div>
           </div>
