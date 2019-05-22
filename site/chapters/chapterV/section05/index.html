@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>V.5 Output Data Returned in Work Area 2 of Address Processing Functions - DCP</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../../css/main.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "V.5 Output Data Returned in Work Area 2 of Address Processing Functions";
+    var mkdocs_page_input_path = "chapters\\chapterV\\section05.md";
+    var mkdocs_page_url = "/chapters/chapterV/section05/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script src="../../../js/main.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+
+        <!-- Original -->
+        <!-- <a href="../../.." class="icon icon-home" id="logoID"> DCP</a> -->
+
+        <!-- Custom -->
+        <a href="http://www1.nyc.gov/site/planning/index.page" class="icon icon-home nycplanning" ></a><br>
+        <a href="../../.." class="icon icon-home homeLogo" id="logoID"></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../tableofcontents/">Table of Contents</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../overview/">Overview of the UPG</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter I: System Overview</a>
+    <!-- <span class="caption-text">Chapter I: System Overview</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/chapterI/">Chapter I</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section01/">I.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section02/">I.2 System Functionality</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section03/">I.3 Introduction to Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section04/">I.4 The Geosupport Function Suite</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section05/">I.5 Overview of System Architecture</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section06/">I.6 Technical References</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter II: Geosupport API Introduction</a>
+    <!-- <span class="caption-text">Chapter II: Geosupport API Introduction</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/chapterII/">Chapter II</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section01/">II.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section02/">II.2 Geosupport Return Codes and Reject Handling</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section03/">II.3 Geosupport API User Programming Procedure</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section04/">II.4 One-Work-Area and Two-Work-Area Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section05/">II.5 Coding Geosupport API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section06/">II.6 The Work Area C/C++ Header File and Visual Basic Typedef File</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section07/">II.7 Coding API Calls When Using Geosupport C/C++ Header Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section08/">II.8 Creating a Geosupport Desktop Edition Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section09/">II.9 Sample Programs with Descriptions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section10/">II.10 The Long Work-Area-2 Option</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section11/">II.11 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter III: Street Name Processing</a>
+    <!-- <span class="caption-text">Chapter III: Street Name Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/chapterIII/">Chapter III</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section01/">III.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section02/">III.2 Street Name Normalizing and the SNL Parameter</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section03/">III.3 Street Name Sorting and Normalization Format Options</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section04/">III.4 Partial Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section05/">III.5 The Similar Names Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section06/">III.6 Unconventional Geographic Feature Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section07/">III.7 Street Name Browsing and Functions BB and BF</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section08/">III.8 Selection of Output Street Names (COW only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IV: Street Codes</a>
+    <!-- <span class="caption-text">Chapter IV: Street Codes</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/chapterIV/">Chapter IV</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section01/">IV.1 Introduction: Street Codes and Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section02/">IV.2 Street Name Relationships: Aliases and Locally Valid Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section03/">IV.3 Five-Digit and Ten-Digit Street Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section04/">IV.4 Resynchronization of Street Codes Stored in User Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section05/">IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section06/">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section07/">IV.7 Street Codes and Non-Addressable Place Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section08/">IV.8 Street Code Input Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section09/">IV.9 Summary of Street Codes</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter V: Address Processing</a>
+    <!-- <span class="caption-text">Chapter V: Address Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../chapterV/">Chapter V</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section01/">V.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section02/">V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section03/">V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section04/">V.4 Input Address Acceptance/Rejection and its Validation Significance</a>
+                  </li>
+                  <li class=" current" >
+                      
+    <a class="current" href="./">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</a>
+    <ul class="subnav hideMe">
+            
+    <li class="toctree-l3"><a href="#function-1">Function 1</a></li>
+    
+
+    <li class="toctree-l3"><a href="#function-1e">Function 1E</a></li>
+    
+
+    <li class="toctree-l3"><a href="#function-1a">Function 1A</a></li>
+    
+
+    <li class="toctree-l3"><a href="#function-ap-cow-only">Function AP (COW Only)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#function-1b-cow-only">Function 1B (COW Only)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#work-area-2-for-function-1b">Work Area 2 for Function 1B</a></li>
+    
+
+    <li class="toctree-l3"><a href="#v51-mainframe-goat-screen-for-function-1b">V.5.1 Mainframe GOAT Screen for Function 1B</a></li>
+    
+
+    </ul>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section06/">V.6 Duplicate Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section07/">V.7 Marble Hill/Rikers Island</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section08/">V.8 Special Ruby Street Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section09/">V.9 Vanity Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section10/">V.10 Out-of-Sequence Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section11/">V.11 ZIP Code as Input Instead of Borough Code</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section12/">V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section13/">V.13 Special Place Name Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section14/">V.14 ‘No Cross Street’ Segment Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section15/">V.15 UNIT Information Feature (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</a>
+    <!-- <span class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/chapterVI/">Chapter VI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section01/">VI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section02/">VI.2 Tax Lots and BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section03/">VI.3 Buildings and Building Identification Numbers (BINs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section04/">VI.4 Condominiums and Billing BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section05/">VI.5 Vacant Street Frontages and Pseudo-Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section06/">VI.6 Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section07/">VI.7 Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section08/">VI.8 Standard and Legacy Versions of Functions 1A and BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section09/">VI.9 Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section10/">VI.10 Function AP (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section11/">VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VII: Street Configuration Processing</a>
+    <!-- <span class="caption-text">Chapter VII: Street Configuration Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/chapterVII/">Chapter VII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section01/">VII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section02/">VII.2 Intersections: Function 2 and Function 2W</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section03/">VII.3 Three-Street Configurations - Concepts and Terminology</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section04/">VII.4 Street Segments and Related Configurations: Function 3</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section05/">VII.5 Blockfaces: Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section06/">VII.6 Street Stretches: Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section07/">VII.7 Borough Boundary Processing (Functions 2, 3 and 3C)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section08/">VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VIII: Geosupport API</a>
+    <!-- <span class="caption-text">Chapter VIII: Geosupport API</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/chapterVIII/">Chapter VIII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section01/">VIII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section02/">VIII.2 Review of the Geosupport API</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section03/">VIII.3 Coding API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section04/">VIII.4 The Geosupport Copy Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section05/">VIII.5 Coding API Calls When Using Geosupport COPY Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section06/">VIII.6 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section07/">VIII.7 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVIII/section08/">VIII.8 JCL for the Execute Step (Batch Applications)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IX: Mainframe GBAT</a>
+    <!-- <span class="caption-text">Chapter IX: Mainframe GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/chapterIX/">Chapter IX</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section01/">IX.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section02/">IX.2 JCL Considerations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section03/">IX.3 GBAT Processing and Programmed Abnormal Terminations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section04/">IX.4 The Input Data File (DDNAME=INFILE or INVSAM)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section05/">IX.5 The Input Control File (DDNAME=CARDIN)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section06/">IX.6 The Input Alias File (DDNAME=ALIASES)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section07/">IX.7 The Output File of Accepted Records (DDNAME=OUTFILE)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section08/">IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section09/">IX.9 The Output Print File (DDNAME=SYSPRINT)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter X: Desktop Edition GBAT</a>
+    <!-- <span class="caption-text">Chapter X: Desktop Edition GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/chapterX/">Chapter X</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section01/">X.1 What is GBAT?</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section02/">X.2 Using GBAT</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter XI: Desktop Edition GOAT</a>
+    <!-- <span class="caption-text">Chapter XI: Desktop Edition GOAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/chapterXI/">Chapter XI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section01/">XI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section02/">XI.2 How to Use GOAT</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section03/">XI.3 Invoking Function 1 or Function 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section04/">XI.4 Invoking Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section05/">XI.5 Invoking Function 2</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section06/">XI.6 Invoking Function 3 or Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section07/">XI.7 Invoking Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section08/">XI.8 Invoking Function B</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section09/">XI.9 Invoking Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section10/">XI.10 Invoking Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section11/">XI.11 Invoking Function D</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Appendices and Glossary</a>
+    <!-- <span class="caption-text">Appendices and Glossary</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendices/">Appendices and Glossary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix01/">Appendix 1: Geosupport Functions - Quick Reference</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix02/">Appendix 2: Mainframe-Specific Work Area Layouts(MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix03/">Appendix 3: Data Item Dictionary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix04/">Appendix 4: Geosupport Return Codes, Reason Codes And Messages</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix05/">Appendix 5: Geosupport Copy Files (MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix06/">Appendix 6: User Feedback Procedures</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix07/">Appendix 7: Mainframe Data Centers Where Geosupport Is Installed</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix08/">Appendix 8: Sample Application Programs And JCL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix09/">Appendix 9: GBAT Reference Tables</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix10/">Appendix 10: Sample GBAT Jobs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix11/">Appendix 11: Guidelines For Application Design</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix12/">Appendix 12: Character-Only Work Areas (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix13/">Appendix 13: Character-Only Work Area LAYOUTS (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix14/">Appendix 14: Geosupport Copy Files (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix15/">Appendix 15: 2010 Census Geography – Functions 1, 1E, 2, 3, and 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix16/">Appendix 16: Neighborhood Tabulation Areas (NTAs) and PUMAs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix17/">Appendix 17: TPAD - Additional Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix18/">Appendix 18: GeoExcel Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix19/">Appendix 19: Work Area Layouts (COWs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix20/">Appendix 20: Geosupport Header And Typedef Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix21/">Appendix 21: Geosupport Desktop Edtion</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix22/">Appendix 22: GeoX Programming Guide</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/glossary/">Glossary of Terms And Acronyms</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../aboutUs/">About Us</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">DCP</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <span style="float: right;" class="printLogo"><a onclick="handlePrintPage()" class="printBtn">Print Page</a>  <a href="../../../upg.pdf" target="_blank" class="printBtn">Print All</a></span>
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Chapter V: Address Processing &raquo;</li>
+        
+      
+    
+    <li>V.5 Output Data Returned in Work Area 2 of Address Processing Functions</li>
+
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+
+
+
+  <hr/>
+
+
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2>V.5 Output Data Returned in Work Area 2 of Address Processing Functions</h2>
+
+<p>The address-processing functions differ significantly with respect to the output data they return.  </p>
+<h2 id="function-1"><span id="chapterV.5.1"><u>Function 1</u></span></h2>
+<p>Function 1, when called using two work areas, performs blockface-level processing.  Almost all of the items that Function 1 returns in WA2 are associated with the entire blockface, and do not vary with the specific input address within that blockface.  Among these items is a set of geographic district identifiers, such as Census Tract and Block, Police Precinct and Community District.  </p>
+<p>One piece of information returned by Function 1 that does vary with the specific input address is a pair of <u>spatial coordinates</u>. This identifies the approximate location of the given address on the earth’s surface.  </p>
+<p><u>School District (SD) boundaries split some blockfaces</u>, and in those cases, Function 1 returns the SD value that is appropriate for the specific input address.  However, the high and low house numbers returned in WA2 always correspond to the entire blockface, not to the portion of the blockface within the given SD.  When the blockface is split by a SD boundary, no indication is provided that the blockface is split.  </p>
+<p>An example of a blockface that is split by a SD boundary is the odd-address side of FARRAGUT ROAD in Brooklyn between EAST 105 STREET and EAST 108 STREET.  The address range for the entire blockface is 10501 to 10799.  The subrange from 10501 to 10599 is in SD 18; and the subrange from 10601 to 10799 is in SD 19.  If the input to a Function 1 call is 10559 FARRAGUT ROAD, ‘18’ is returned in the WA2 SD field, but 10501 and 10799 are returned as the address range for the blockface.  If the input to a Function 1 call is 10611 FARRAGUT ROAD, ‘19’ is returned in the WA2 SD field, but, again, 10501 and 10799 are returned as the address range for the blockface.  </p>
+<p>The information that regular Function 1 returns in WA2 also includes two <u>lists of street codes for the cross streets</u> at both ends of the blockface.  These cross street codes are B5SCs thus reflecting the primary street names. The <u>Extended WA2 (MODE=X)</u> also returns B7SC lists of cross streets and their street names thus reflecting the principal street names.  Applications can use these cross streets to identify address-based data to blockfaces or street segments.  In many applications, the consolidation of data for individual locations to the level of the blockface or street segment can significantly improve the efficiency of a municipal operation.  The conversion of address-based data to segment-based data is further discussed in <a href="../../../chapters/chapterVII/section03/">Chapter VII.3</a>.  </p>
+<p>If a COW application has a need to <u>display the street names of the cross streets</u>,aside from calling Function D or DG, the user can employ one of the following options:  </p>
+<p>a. <u>The Mode Switch</u> in WA1 can be set to ‘X’ and the Extended function will return cross street codes as B7SCs and their corresponding <u>principal </u> street names in the extended portion of WA2.  This is done with no processing overhead.  This can be helpful to the user since the Primary Name is not always the best name for a particular cross street.  See description of Extended Mode in <a href="../../../chapters/chapterII/section07/">Chapter II.7</a>)  </p>
+<p>b. <u>The Cross Street Names Flag</u> in WA1 can be set to ‘E’ and the cross street names will be returned in the List of Street Names in WA1 (see entries for Cross Street Names Flag and List of Street Names in <a href="../../../appendices/appendix03/">Appendix 3</a>).  The Cross Street Names will be the <u>primary</u> street names since they are based on B5SCs.  Note that the cross street names feature incurs processing overhead, and should only be used when necessary,.  It is recommended that the Extended Mode option, mentioned above, be used.  </p>
+<p><strong> NOTE: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch of “X”, since the Cross Street Names are in the Extended part of the work area, </strong> although this will not create an error if the Cross Street Names flag is set to “E”. However, the Street Names returned in Work Area 1 with the Cross Street Name flag are based on the B5SCs and not the updated B7SCs.  </p>
+<p><u><strong>Function 1 and 1E Extended Work Areas - MODE=X  (COW Only)</strong></u>  </p>
+<p>In the Extended Function 1 and 1E work area 2, the <u>BOE Preferred LGC</u> and associated street name will be returned in new fields that are defined in the “Extended” portion of Work Area 2.  </p>
+<p>The Extended Function 1 and 1E work area 2 includes additional fields such as USPS Preferred City Name, Latitude and Longitude, Neighborhood Tabulation Area (NTA) Name, PUMA Code, Bike Lane 2, Bike Traffic Direction, Street Width, Street Width Maximum, Speed Limit, etc.  For a complete list, see the Work Area layout in <a href="../../../appendices/appendix13/">Appendix 13</a>.  </p>
+<p><u><strong> Underlying Street Name or Street Address </strong> </u>  </p>
+<p>For <u>NAPs and Addressable Place Names</u>, the underlying street name or street address is returned as part of a warning message (reason code V). <u>The street code of the underlying true street</u> is not included in the list of cross streets.  For example, Fifth Avenue is an underlying street of the Empire State Building; it will not be included in the list of cross streets for the Empire State Building.  Information on the underlying true street appears in COW WA2 and MSW Long WA2.  </p>
+<p><u><strong> Additional data in COW regular WA2 and in long WA2 for MSW Functions 1 and 1E </strong> </u>  </p>
+<p>The long WA2 option is available for the MSW Functions 1 and 1E.  Since all the additional data in the long WA2 for MSW Functions 1 and 1E are included in the regular WA2 for COW Functions 1 and 1E, there is no long WA2 option for COW.  (There are extended work areas for COW Function 1/1E which are discussed below.)  The additional data in COW regular WA2 and long MSW WA2 includes the following:  </p>
+<ul>
+<li>Segment ID  </li>
+<li>Borough and 7-digit street code for the underlying true street of a NAP or Addressable Place Name  </li>
+<li>Underlying house number  </li>
+<li>2000 Census tract, block, and block suffix.  (The 2010 fields are in the regular portion of the work area.)  </li>
+<li>(COW only) Hurricane Evacuation Zone  </li>
+<li>(COW Only) Organics Recycling Schedule  </li>
+<li>(COW Only) Bulk Items Pickup Schedule  </li>
+</ul>
+<p>Functions 1, 1B, and 1E allow a user to receive <u>roadbed-specific information</u> in place of information based upon the generic center line of a multi-roadbed street.  A user requests roadbed-specific information via the ‘Roadbed Request Switch’.  This means that a Function 1, 1B, or 1E call with this switch set will return the roadbed-specific geocodes, assuming that the input street has multiple roadbeds.  Examples of geocodes that would be different include Segment ID, Segment Type Code, X-Y coordinates, LION Key and possibly cross streets and Census Tracts / Blocks.  An additional file has been added to the Geosupport system to handle this data.  Users who prefer non-roadbed-specific information, which assumes a single roadbed for all roads, are not required to make any changes.  </p>
+<h2 id="function-1e"><span id="chapterV.5.2"><u>Function 1E</u></span></h2>
+<p>Function 1E, when called using two work areas, returns all of the WA2 data items that Function 1 returns.  In addition, Function 1E returns the following political district identifiers in WA2:  Election District, State Assembly and Senate Districts, City Council District, Congressional District and Municipal Court District.  </p>
+<p>Function 1E handles cases where a School District boundary splits a blockface in the same manner as Function 1 does.  In addition, Election District boundaries can also split blockfaces, and Function 1E handles those cases similarly.  This includes the special case of the addresses 3333A through 3333E Broadway discussed in <a href="../../../chapters/chapterV/section06/">Chapter V.6</a>.  </p>
+<p>As indicated above, Function 1E permits roadbed-specific information to be returned to the user.  For more information, refer to the description as part of Function 1.  </p>
+<p><u> <strong>COW Function 1/1E Extended Mode - Mode Switch set to “X”.</strong> </u> Geosupport has an Extended Work Area 2 for COW Functions 1 and 1E called Function 1 and 1E Extended. The first 300 bytes of Function 1 and 1E with the Mode Switch set to “X” will be the same as regular Function 1 and 1E calls. Note: Please see <a href="../../../appendices/appendix13/">Appendix 13</a> for the Extended Work Area 2 layout.  Some of the fields in the extended portion of the Function 1/1E Work Areas include: USPS Preferred City Name, NTA Name, PUMA Code, Latitude, and Longitude.  </p>
+<p><u> <strong>Note: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch “X”, since the Cross Street Names are in the Extended part of Work Area 2,</strong> </u> although this will not create an error if the field is set to “E”.  However, the Street Names returned in Work Area 1 with the Cross Street Names flag are based on the B5SCs (thus returning the primary street names) and not based on the updated B7SCs which allow the Extended Work Area 2 to return the principal street names.  </p>
+<h2 id="function-1a"><span id="chapterV.5.3"><u>Function 1A</u></span></h2>
+<p>Function 1A, when called using two work areas, performs property (i.e., tax lot) and building-level processing.  Function 1A returns information in WA2 associated with the specific property and building (if any) containing the input address.  This information includes the property identifiers (tax block and tax lot numbers), and a list of all addresses of all buildings on the property (or as many as will fit in WA2) as well as the Building Identification Numbers (BINs) if any.  Function 1A’s output information is discussed in detail in <a href="../../../chapters/chapterVI/section06/">Chapter VI.6</a>.  </p>
+<p><u><strong> Function 1A Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. </strong> The first 246 bytes of the Extended Work Area 2 for Function 1A, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding the new Function 1A Reason Code, Warning Code, GRC and filler to the work area for Function 1A Extended, the only change is in the address list. <strong>The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.</strong> Note that Mode Switch of ‘X’ is not valid with the Long Work Area 2 Flag set to Y, since the Function 1A Long Work Area 2 primarily returns BINs, not street codes.  </p>
+<h2 id="function-ap-cow-only"><span id="chapterV.5.4"><u>Function AP (COW Only)</u></span></h2>
+<p>Function AP, when called using two work areas, performs Address Point processing and some property-level and building-level processing.  Function AP returns the Address Point ID and the X,Y spatial coordinates of the Address Point.  In addition, Function AP returns the Borough-Block-Lot of the Address Point and its BIN.   The tax-lot information in WA2 lists only one address in the lot, namely, the input address with the BIN number (if an) of the building at that address.  Function AP’s property output information is very similar to Function 1A’s output.  Function AP and Function 1A’s output information is discussed in detail in <a href="../../../chapters/chapterVI/section10/">Chapter VI.10</a> and <a href="../../../chapters/chapterVI/section06/">Chapter VI.6</a>.  </p>
+<p><u><strong> Function AP Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. </strong>  The first 246 bytes of the Extended Work Area 2 for Function AP, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding Function AP Reason Code, Warning Code, GRC and filler to the work area 2 for Function AP Extended, the only change is in the address list. <strong>The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.</strong>  </p>
+<h2 id="function-1b-cow-only"><span id="chapterV.5.5"><u>Function 1B (COW Only)</u></span></h2>
+<p>Function 1B returns Blockface-level information and political geography, followed by property-level information for a given input.  Work Area 2 consists of the output of a Function 1E call with Mode Switch = “X” followed by the output of a Function 1A call with Mode Switch = “X”. The input requires borough or zip code, address number if needed, and street name or street code. Function 1B processing first retrieves the property-level information (Function 1A Extended- tax lot and building) based on the input. The Function 1A Extended  processing may modify the input address (e.g. a hyphen is inserted into the address number).  In any case, the input address used by Function 1A Extended is then used to retrieve the blockface and political data (Function 1E Extended).  </p>
+<p>Function 1B (combined Function 1E Extended and 1A Extended) returns a total of 4300 bytes in Work Area 2. The first 1500 are for the Blockface portion (Function 1E, see description above) of the call. The next 2800 bytes are for the Property Level portion (Function 1A, see description above and <a href="../../../chapters/chapterVI/section06/">Chapter VI.6</a>) of the call.  </p>
+<p><strong>A second set of Geosupport Return Code (GRC), Reason Code and Error/Warning Message fields is defined in <u>Work Area 1</u> to be used for Function 1B.</strong> This new set contains the GRC, Reason Code and Error or Warning Message for the Function 1A Extended portion of the Function 1B call. The original GRC, Reason Code and Message fields in Work Area 1 contain the Return Code, Reason Code and Error or Warning Message from the Function 1E Extended portion of the Function 1B call.  It is entirely possible that Geosupport will find one set of information and not find the other.  There can be an error code and message in the new GRC and Message fields indicating property data (Function 1A) has not been found, and a 00 or 01 GRC in the original Return Code field indicating Blockface (Function 1E) information has been found or just the opposite.  </p>
+<h2 id="work-area-2-for-function-1b"><span id="chapterV.5.6">Work Area 2 for Function 1B</span></h2>
+<p>Function 1B returns a total of 4300 bytes in Work Area 2.  The first 1500 are for the Blockface (Function 1E Extended) portion of the call. The next 2800 bytes are for the Property Level (1A Extended) portion of the call.  </p>
+<p>In the Function 1B Work Area 2, the Function 1E Extended WA2 output portion includes all the Function 1E Extended fields.  There is one difference, namely that the preferred LGC that is returned  in the Function 1B Work Area 2 is the <u>DCP preferred LGC</u>, not the Board of Elections preferred LGC.  </p>
+<p>A new Return Code and Reason Code field are defined  in Work Area 2 for each of the 1E Extended and 1A Extended portions of the 1B call.  This information duplicates the original and secondary Return Code and Reason Codes in Work Area 1. <strong>GBAT does not return a Work Area 1 and therefore does not return both Return Code fields.  In order to make it easier for the GBAT user to see the results for both components of the 1B call, Work Area 2 contains a Return Code and Reason Code for each portion (1E and 1A).</strong> If data is found, either in the Blockface (Function 1E) call or the Property Level (Function 1A) call, that data will be returned to the user along with both Return Codes and Reason Codes.  </p>
+<p><strong>If data has been found for the Blockface (1E) portion of the call, there will be data in columns 1 through 1500 of Work Area 2 returned to the user.</strong> Columns 1005-1006 will contain the GRC for the 1E portion of the call (which will be either a “00” or “01” indicating a warning) and column 1001 will contain the Reason Code if there is a warning.  If data has not been found for the Blockface (1E) portion of the call, columns 1 through 1500 will be blank aside from the Error GRC in column 1005-1006 and the Error Reason Code, if any, in column 1001.  </p>
+<p><strong>If data has been found for the Property Level (1A) portion of the call, there will be data in columns 1501-4300 of Work Area 2.</strong> Columns 1751-1752 will contain the GRC for the 1A portion of the call (which will be either a “00” or a “01” indicating a warning) and column 1747 will contain the Reason Code if there is a warning.  If data has not been found for the Property Level (1A) portion of the call, columns 1501-4300 will be blank aside from the Error GRC in column 1751-1752 and the Error Reason Code, if any, in column 1747.  </p>
+<p>If data has not been found for either the Blockface or Property Level request, Function 1B’s Work Area 2 will be returned to the user with all fields blank aside from the two GRC and Reason Code
+fields mentioned above.</p>
+<h2 id="v51-mainframe-goat-screen-for-function-1b"><span id="chapterV.5.7">V.5.1 Mainframe GOAT Screen for Function 1B</span></h2>
+<p>In order to make room for more information, the Function 1B GOAT screen is formatted somewhat differently from the other GOAT screens.  Since this new screen has many changes we are making an exception and describing it in the UPG.</p>
+<p>a.There is only one field for the address number (Adr #:) and street name (Strt:).  The same field is now used for the user’s input and the normalized output.</p>
+<p>b. The screen is basically divided into two halves – with the top half giving Blockface Level Information (Function 1E) and the bottom half giving Property Level Information (Function 1A).  </p>
+<p>c. Two Return Code and Message Areas are displayed at the bottom of the screen.  The first message area will reflect the Property Level portion and the second message area will reflect the Blockface and Political Level portion.</p>
+<p>d. The Function Code input field is at the very top of the screen (Function Code:).  The same field is used to display ‘1B’ and to allow the user to transfer to another function.  </p>
+<p>e. The Unit input field is at the very top of the screen (Unit:).  The same field is used to return the normalized unit display format output.  </p>
+<p><img alt="logo4 &lt;&gt;" src="../../../img/goat_function1BScreen.png" title="Sample Goat Function 1B Screen" /><br />
+  <div class="img_tagline"> Sample Mainframe GOAT Function 1B Screen </div></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../section06/" class="btn btn-neutral float-right" id="nextButton" title="V.6 Duplicate Addresses">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../section04/" class="btn btn-neutral" id="previousButton" title="V.4 Input Address Acceptance/Rejection and its Validation Significance"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../section04/" style="color: #fcfcfc; float:left">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../section06/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+
+</body>
+</html>

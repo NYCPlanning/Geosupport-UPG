@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Appendix 4: Geosupport Return Codes, Reason Codes And Messages - DCP</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../css/main.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Appendix 4: Geosupport Return Codes, Reason Codes And Messages";
+    var mkdocs_page_input_path = "appendices\\appendix04.md";
+    var mkdocs_page_url = "/appendices/appendix04/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script src="../../js/main.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+
+        <!-- Original -->
+        <!-- <a href="../.." class="icon icon-home" id="logoID"> DCP</a> -->
+
+        <!-- Custom -->
+        <a href="http://www1.nyc.gov/site/planning/index.page" class="icon icon-home nycplanning" ></a><br>
+        <a href="../.." class="icon icon-home homeLogo" id="logoID"></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../tableofcontents/">Table of Contents</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../overview/">Overview of the UPG</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter I: System Overview</a>
+    <!-- <span class="caption-text">Chapter I: System Overview</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/chapterI/">Chapter I</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section01/">I.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section02/">I.2 System Functionality</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section03/">I.3 Introduction to Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section04/">I.4 The Geosupport Function Suite</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section05/">I.5 Overview of System Architecture</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterI/section06/">I.6 Technical References</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter II: Geosupport API Introduction</a>
+    <!-- <span class="caption-text">Chapter II: Geosupport API Introduction</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/chapterII/">Chapter II</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section01/">II.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section02/">II.2 Geosupport Return Codes and Reject Handling</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section03/">II.3 Geosupport API User Programming Procedure</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section04/">II.4 One-Work-Area and Two-Work-Area Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section05/">II.5 Coding Geosupport API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section06/">II.6 The Work Area C/C++ Header File and Visual Basic Typedef File</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section07/">II.7 Coding API Calls When Using Geosupport C/C++ Header Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section08/">II.8 Creating a Geosupport Desktop Edition Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section09/">II.9 Sample Programs with Descriptions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section10/">II.10 The Long Work-Area-2 Option</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section11/">II.11 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter III: Street Name Processing</a>
+    <!-- <span class="caption-text">Chapter III: Street Name Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/chapterIII/">Chapter III</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section01/">III.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section02/">III.2 Street Name Normalizing and the SNL Parameter</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section03/">III.3 Street Name Sorting and Normalization Format Options</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section04/">III.4 Partial Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section05/">III.5 The Similar Names Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section06/">III.6 Unconventional Geographic Feature Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section07/">III.7 Street Name Browsing and Functions BB and BF</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIII/section08/">III.8 Selection of Output Street Names (COW only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IV: Street Codes</a>
+    <!-- <span class="caption-text">Chapter IV: Street Codes</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/chapterIV/">Chapter IV</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section01/">IV.1 Introduction: Street Codes and Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section02/">IV.2 Street Name Relationships: Aliases and Locally Valid Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section03/">IV.3 Five-Digit and Ten-Digit Street Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section04/">IV.4 Resynchronization of Street Codes Stored in User Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section05/">IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section06/">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section07/">IV.7 Street Codes and Non-Addressable Place Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section08/">IV.8 Street Code Input Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIV/section09/">IV.9 Summary of Street Codes</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter V: Address Processing</a>
+    <!-- <span class="caption-text">Chapter V: Address Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/chapterV/">Chapter V</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section01/">V.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section02/">V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section03/">V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section04/">V.4 Input Address Acceptance/Rejection and its Validation Significance</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section05/">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section06/">V.6 Duplicate Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section07/">V.7 Marble Hill/Rikers Island</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section08/">V.8 Special Ruby Street Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section09/">V.9 Vanity Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section10/">V.10 Out-of-Sequence Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section11/">V.11 ZIP Code as Input Instead of Borough Code</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section12/">V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section13/">V.13 Special Place Name Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section14/">V.14 ‘No Cross Street’ Segment Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterV/section15/">V.15 UNIT Information Feature (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</a>
+    <!-- <span class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/chapterVI/">Chapter VI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section01/">VI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section02/">VI.2 Tax Lots and BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section03/">VI.3 Buildings and Building Identification Numbers (BINs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section04/">VI.4 Condominiums and Billing BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section05/">VI.5 Vacant Street Frontages and Pseudo-Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section06/">VI.6 Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section07/">VI.7 Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section08/">VI.8 Standard and Legacy Versions of Functions 1A and BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section09/">VI.9 Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section10/">VI.10 Function AP (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVI/section11/">VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VII: Street Configuration Processing</a>
+    <!-- <span class="caption-text">Chapter VII: Street Configuration Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/chapterVII/">Chapter VII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section01/">VII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section02/">VII.2 Intersections: Function 2 and Function 2W</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section03/">VII.3 Three-Street Configurations - Concepts and Terminology</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section04/">VII.4 Street Segments and Related Configurations: Function 3</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section05/">VII.5 Blockfaces: Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section06/">VII.6 Street Stretches: Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section07/">VII.7 Borough Boundary Processing (Functions 2, 3 and 3C)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVII/section08/">VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VIII: Geosupport API</a>
+    <!-- <span class="caption-text">Chapter VIII: Geosupport API</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/chapterVIII/">Chapter VIII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section01/">VIII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section02/">VIII.2 Review of the Geosupport API</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section03/">VIII.3 Coding API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section04/">VIII.4 The Geosupport Copy Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section05/">VIII.5 Coding API Calls When Using Geosupport COPY Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section06/">VIII.6 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section07/">VIII.7 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterVIII/section08/">VIII.8 JCL for the Execute Step (Batch Applications)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IX: Mainframe GBAT</a>
+    <!-- <span class="caption-text">Chapter IX: Mainframe GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/chapterIX/">Chapter IX</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section01/">IX.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section02/">IX.2 JCL Considerations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section03/">IX.3 GBAT Processing and Programmed Abnormal Terminations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section04/">IX.4 The Input Data File (DDNAME=INFILE or INVSAM)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section05/">IX.5 The Input Control File (DDNAME=CARDIN)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section06/">IX.6 The Input Alias File (DDNAME=ALIASES)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section07/">IX.7 The Output File of Accepted Records (DDNAME=OUTFILE)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section08/">IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterIX/section09/">IX.9 The Output Print File (DDNAME=SYSPRINT)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter X: Desktop Edition GBAT</a>
+    <!-- <span class="caption-text">Chapter X: Desktop Edition GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterX/chapterX/">Chapter X</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterX/section01/">X.1 What is GBAT?</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterX/section02/">X.2 Using GBAT</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter XI: Desktop Edition GOAT</a>
+    <!-- <span class="caption-text">Chapter XI: Desktop Edition GOAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/chapterXI/">Chapter XI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section01/">XI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section02/">XI.2 How to Use GOAT</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section03/">XI.3 Invoking Function 1 or Function 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section04/">XI.4 Invoking Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section05/">XI.5 Invoking Function 2</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section06/">XI.6 Invoking Function 3 or Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section07/">XI.7 Invoking Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section08/">XI.8 Invoking Function B</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section09/">XI.9 Invoking Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section10/">XI.10 Invoking Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterXI/section11/">XI.11 Invoking Function D</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Appendices and Glossary</a>
+    <!-- <span class="caption-text">Appendices and Glossary</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../appendices/">Appendices and Glossary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix01/">Appendix 1: Geosupport Functions - Quick Reference</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix02/">Appendix 2: Mainframe-Specific Work Area Layouts(MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix03/">Appendix 3: Data Item Dictionary</a>
+                  </li>
+                  <li class=" current" >
+                      
+    <a class="current" href="./">Appendix 4: Geosupport Return Codes, Reason Codes And Messages</a>
+    <ul class="subnav hideMe">
+            
+    <li class="toctree-l3"><a href="#tpad-warning-messages-and-tpad-conflict-flag-reason-code-qualifiers-in"> TPAD WARNING MESSAGES and TPAD Conflict Flag  / REASON CODE QUALIFIERS in ( ) </a></li>
+    
+
+    </ul>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix05/">Appendix 5: Geosupport Copy Files (MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix06/">Appendix 6: User Feedback Procedures</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix07/">Appendix 7: Mainframe Data Centers Where Geosupport Is Installed</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix08/">Appendix 8: Sample Application Programs And JCL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix09/">Appendix 9: GBAT Reference Tables</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix10/">Appendix 10: Sample GBAT Jobs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix11/">Appendix 11: Guidelines For Application Design</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix12/">Appendix 12: Character-Only Work Areas (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix13/">Appendix 13: Character-Only Work Area LAYOUTS (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix14/">Appendix 14: Geosupport Copy Files (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix15/">Appendix 15: 2010 Census Geography – Functions 1, 1E, 2, 3, and 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix16/">Appendix 16: Neighborhood Tabulation Areas (NTAs) and PUMAs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix17/">Appendix 17: TPAD - Additional Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix18/">Appendix 18: GeoExcel Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix19/">Appendix 19: Work Area Layouts (COWs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix20/">Appendix 20: Geosupport Header And Typedef Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix21/">Appendix 21: Geosupport Desktop Edtion</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../appendix22/">Appendix 22: GeoX Programming Guide</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../glossary/">Glossary of Terms And Acronyms</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../aboutUs/">About Us</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DCP</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <span style="float: right;" class="printLogo"><a onclick="handlePrintPage()" class="printBtn">Print Page</a>  <a href="../../upg.pdf" target="_blank" class="printBtn">Print All</a></span>
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Appendices and Glossary &raquo;</li>
+        
+      
+    
+    <li>Appendix 4: Geosupport Return Codes, Reason Codes And Messages</li>
+
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+
+
+
+  <hr/>
+
+
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 class="pdfAppendix"><center>APPENDIX 4: GEOSUPPORT RETURN CODES, REASON CODES AND MESSAGES</center> </h2>
+
+<p>This appendix consists of a table listing all of the Geosupport Return Codes (GRCs), Reason Codes and Messages, and the Geosupport function(s) that can elicit each of them.  The table is current as of the Geosupport software version indicated in the table heading.  <a href="../../chapters/chapterII/section02/">See Chapter II.2</a> for a detailed discussion of application reject handling using GRCs, Reason Codes and Messages.</p>
+<p>In the table, an asterisk in the second byte position of a function code is a 'wildcard', signifying
+all function codes that begin with the character that is in the first byte position. For example, '3<sup>* </sup>' signifies all function codes that begin with '3'(namely, as of this writing, Functions 3, 3C and
+3S).  </p>
+<p>An asterisk in the second position of a function code is used as a shorthand notation to represent all function codes having the indicated value in the first position, as follows  </p>
+<p>1<sup><em> </sup> = 1, 1A, 1B, 1E, 1N, AP<br />
+  3<sup></em> </sup> = 3, 3C, 3S<br />
+  B<sup><em> </sup> = BB, BF, BL, BN<br />
+  D<sup></em> </sup> = D, DG, DN  </p>
+<p>Typically, any function listed with an asterisk also includes the various forms of the function, e.g. Extended, Long, Auxiliary Segments etc.  </p>
+<table class="pdfSmallTable">
+  <tr>
+    <th colspan="4"><b> GEOSUPPORT SYSTEM RETURN CODES, REASON CODES AND MESSAGES <br> (As of Geosupport Software Version 19.2 - <span class="smallText">unchanged since</span> V17.1) </b>
+    </th>
+  </tr>
+  <tr>
+    <td><b>GRC</b></td>
+    <td>REASON CODE</td>
+    <td>FUNCTIONS <br> * = wildcard</td>
+    <td>MESSAGE (LITERAL TEXT IN UPPERCASE,
+      < Variable values in angled brackets>, [Comments in Square Brackets & Mixed Case])</td>
+  </tr>
+  <tr class="borderlessTable">
+    <td></td>
+  </tr>
+  <tr>
+    <td>00</td>
+    <td> </td>
+    <td>All</td>
+    <td>[Processing was unconditionally successful-no message issued]</td>
+  </tr>
+  <tr>
+    <td rowspan="39" class="topVerticalTD">01</td>
+    <td colspan="3"><b><center>[GRC 01s are warnings]</b>
+      <center>
+    </td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1,1A,1B,<br>1E,AP</td>
+    <td>ADDR NUMBER ALTERED: RANGE ASSUMED. USING DIGITS BEFORE DASH ONLY<br> ADDR NUMBER ALTERED: USING DIGITS BEFORE DASH ONLY</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDR NUMBER ALTERED: HYPHEN INSERTED</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDR NUMBER ALTERED: HYPHEN DELETED</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>BB,BF</td>
+    <td>YOU HAVE REACHED THE
+      < FIRST or LAST> STREET NAME IN THE BOROUGH OF
+        < boro. name>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>1,1A,1B,1E</td>
+    <td>INPUT IS A COMPLEX. OUTPUT DATA MAY PERTAIN TO ONLY PART OF THE COMPLEX</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>1,1A,1B,1E</td>
+    <td>OUTPUT STREET NAME/CODE DIFFER FROM INPUT [Browse Flag P/F/R and Ruby Street/Sapphire Street processing]</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>1,1A,1B,1E </td>
+    <td><span class="customPre">OUTPUT STREET NAME/CODE DIFFER FROM INPUT. ADDR NUMBER ALTERED: RANGE ASSUMED</span><br>
+      <span class="customPre">OUTPUT STREET NAME/CODE DIFFER FROM INPUT. ADDR NUMBER ALTERED: HYPHEN INSERTED</span><br>
+      <span class="customPre">OUTPUT STREET NAME/CODE DIFFER FROM INPUT. ADDR NUMBER ALTERED: HYPHEN DELETED</span> </td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>1A,1B</td>
+    <td>INPUT ADDRESS IS A PSEUDO-ADDRESS</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>1A,1B</td>
+    <td><span class="customPre">INPUT ADDRESS IS PSEUDO-ADDRESS. ADDR NUMBER ALTERED: ADDRESS RANGE ASSUMED </span><br>
+      <span class="customPre">INPUT ADDRESS IS PSEUDO-ADDRESS. ADDR NUMBER ALTERED: HYPHEN INSERTED</span><br>
+      <span class="customPre">INPUT ADDRESS IS PSEUDO-ADDRESS. ADDR NUMBER ALTERED: HYPHEN DELETED</span></td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>1A,1B,BL</td>
+    <td>LOT HAS MORE ITEMS THAN LISTED</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>1A,1B</td>
+    <td><span class="customPre">LOT HAS MORE ITEMS THAN LISTED. ADDR NUMBER ALTERED: ADDR RANGE ASSUMED</span><br>
+      <span class="customPre">LOT HAS MORE ITEMS THAN LISTED. ADDR NUMBER ALTERED: HYPHEN INSERTED</span><br>
+      <span class="customPre">LOT HAS MORE ITEMS THAN LISTED. ADDR NUMBER ALTERED: HYPHEN DELETED</span>
+    </td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>1,1A,1B,1E,2,3<sup>* </sup></td>
+    <td>IN MARBLE HILL – LEGAL BORO IS MANHATTAN<br>
+      <span class="customPre">IN MARBLE HILL - LEGAL BORO IS MANHATTAN. ADDR NUMBER ALTERED: RANGE ASSUMED</span><br>
+      <span class="customPre">IN MARBLE HILL - LEGAL BORO IS MANHATTAN. ADDR NUMBER ALTERED: HYPHEN INSERTED</span><br>
+      <span class="customPre">IN MARBLE HILL - LEGAL BORO IS MANHATTAN. ADDR NUMBER ALTERED: HYPHEN DELETED</span><br><br> ON RIKERS ISL - LEGAL BORO IS THE BRONX <br>
+      <span class="customPre">ON RIKERS ISL - LEGAL BORO IS THE BRONX. ADDR NUMBER ALTERED: RANGE ASSUMED</span><br>
+      <span class="customPre">ON RIKERS ISL - LEGAL BORO IS THE BRONX. ADDR NUMBER ALTERED: HYPHEN INSERTED</span><br>
+      <span class="customPre">ON RIKERS ISL - LEGAL BORO IS THE BRONX. ADDR NUMBER ALTERED: HYPHEN DELETED</span>
+    </td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>1<sup>* </sup>,2,3<sup>* </sup>,AP</td>
+    <td>PARTIAL STREET NAME USED TO MEET SNL REQUIREMENT </td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>1B,1E</td>
+    <td>OUTPUT ADDRESS RANGE IS SPLIT BY ELECTION DISTRICT BOUNDARY </td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>BN</td>
+    <td>THIS BIN IS TEMPORARY AND WILL BE REPLACED IN THE FUTURE</td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>1,1A,1B,1E</td>
+    <td>ADDR NUMBER ALTERED: RANGE ASSUMED. NOTE: INCONSISTENT ODD/EVEN ADDR RANGE</td>
+  </tr>
+  <tr>
+    <td>H</td>
+    <td>2,3S</td>
+    <td>THESE STREETS INTERSECT ONCE-COMPASS DIRECTION IGNORED</td>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td>1,1A,1B,1E</td>
+    <td>INPUT IS NON-ADDRESSABLE PLACE NAME (NAP) - ADDRESS NUMBER IGNORED <br> INPUT IS NAP WITH INVALID ADDRESS NUMBER. ADDRESS NUMBER IGNORED</td>
+  </tr>
+  <tr>
+    <td>J[not implemented]</td>
+    <td>1,1A,1B,1E,2,3<sup>* </sup></td>
+    <td>
+      < Full street name including EAST or WEST as first word> ASSUMED [An input Bronx or Manhattan street name is missing EAST or WEST as its first word, and the intended full street name is unambiguous]</td>
+  </tr>
+  <tr>
+    <td rowspan="2">J(cont.)</td>
+    <td>2,3<sup>* </sup></td>
+    <td>
+      < Full street name> AND
+        <other full street name> ASSUMED [Two input Bronx or Manhattan street names are missing EAST or WEST as their first words, and the intended names are unambiguous]</td>
+  </tr>
+  <tr>
+    <td>3<sup>* </sup></td>
+    <td>
+      < ALL THREE STREET NAMES ASSUMED <br>
+        [Three input Bronx or Manhattan street names are missing EAST or WEST as their first words, and the intended names are unambiguous]</td>
+  </tr>
+  <tr>
+    <td>K</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>EMBEDDED BLANK IN ADDRESS NUMBER HAS BEEN REPLACED WITH A HYPHEN</td>
+  </tr>
+  <tr>
+    <td>L or R</td>
+    <td>3,3C</td>
+    <td>
+      < LEFT or RIGHT> SIDE OF SEGMENT IS IN
+        < BROOKLYN or QUEENS>
+          <center>or</center><br>
+          < LEFT or RIGHT> SIDE OF SEGMENT IS IN
+            < NASSAU or WESTCHESTER> - NO INFO RETURNED FOR THAT SIDE</td>
+  </tr>
+  <tr>
+    <td>M</td>
+    <td>1,1A,1B,1E</td>
+    <td>INPUT ADDRESS NUMBER IS ZERO</td>
+  </tr>
+  <tr>
+    <td>N</td>
+    <td>1,1A,1B,1E,<br>2,3<sup>* </sup>,D<sup>* </sup></td>
+    <td>STREET NAME(S) AND STREET CODE(S) BOTH SPECIFIED AS INPUT -
+      < CODE(S) or NAMES> IGNORED </td>
+  </tr>
+  <tr>
+    <td>O</td>
+    <td>1,1A,1B,1E</td>
+    <td>CAUTION:
+      < BLOCK FACE or ADDRESS RANGE> CONTAINS OUT-OF-SEQUENCE AND/OR OPPOSITE PARITY ADDRESSES</td>
+  </tr>
+  <tr>
+    <td>P</td>
+    <td>1,1B,1E</td>
+    <td>IRREGULARLY CURVED STREET SEGMENT - SPATIAL COORDINATES RETURNED AS BLANKS</td>
+  </tr>
+  <tr>
+    <td>Q</td>
+    <td>3</td>
+    <td>THESE STREETS INVOLVE A ‘DOGLEG’ - SHORTEST STRETCH PROVIDED</td>
+  </tr>
+  <tr>
+    <td>S</td>
+    <td>1,1A,1B,1E,AP </td>
+    <td>
+      < HNI or HNS> AND DISPLAY ADDRESS NUMBER BOTH SPECIFIED AS INPUT-
+        < HNI or HNS> IGNORED </td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>2</td>
+    <td>NON-INTERSECTION NAME IGNORED</td>
+  </tr>
+  <tr>
+    <td>U</td>
+    <td>3</td>
+    <td>STRETCH HAS MORE ITEMS THAN LISTED</td>
+  </tr>
+  <tr>
+    <td>V</td>
+    <td>1,1B,1E</td>
+    <td>
+      < Normalized input address number>
+        < Norm’d input street name> IS ON
+          < LEFT or RIGHT> SIDE OF
+            < True street name>
+              [This warning is issued for vanity addresses, addressable place names, NAPs other than complexes (for which an underlying address is not available), and certain alternative addresses known as type ‘B’ addresses.]<br>
+              <center> or</center><br>
+              < Address number>
+                < True street name> IS THE UNDERLYING ADDRESS OF
+                  < Normalized input NAP>
+                    [This warning is issued for NAPs other than complexes, for which an underlying address is available.]
+    </td>
+  </tr>
+  <tr>
+    <td>W</td>
+    <td>1,1A,1B, 1E,AP,2,3<sup>* </sup></td>
+    <td>INPUT STREET NAME HAS BEEN MODIFIED [a. MSW: Extraneous data were deleted from the end of a free-form address.<br> COW: Same as MSW above, except that, in addition, the first 14 bytes of the extraneous data on a free-form address were processed as
+      if they were in the UNIT input field (if there was no other data in the Unit input field).] [b. Neighborhood name was deleted from Duplicate Address Pseudo-Street Name (DAPS) for Functions 2, 3<sup>* </sup>.]</td>
+  </tr>
+  <tr>
+    <td>X</td>
+    <td>1E,1B</td>
+    <td>THERE ARE NO POLITICAL DISTRICTS ASSIGNED TO THIS LOCATION</td>
+  </tr>
+  <tr>
+    <td>Y</td>
+    <td>1/1E Ext 1B COW Only</td>
+    <td>ZIP NOT IN CITY NAME TABLE. GENERIC CITY NAME RETURNED. NOTIFY DCP/GSS </td>
+  </tr>
+  <tr>
+    <td>Z</td>
+    <td>1A,1B,BL,BN </td>
+    <td>A BILLING BBL HAS NOT YET BEEN ASSIGNED TO THIS CONDOMINIUM</td>
+  </tr>
+  <tr>
+    <td>$</td>
+    <td>1<sup>* </sup> COW Only</td>
+    <td>UNIT IDENTIFIER HAS BEEN TRUNCATED<br> [This warning is generated only when the Unit Input field is used.]</td>
+  </tr>
+  <tr>
+    <td>* </td>
+    <td>1A,1B BL,BN COW Only</td>
+    <td>TPAD Warning will appear in message field. <br> [See list of TPAD Warning messages and Reason Code Qualifiers /TPAD Conflict Flag after this table.]</td>
+  </tr>
+  <tr>
+    <td colspan="4"><b><center>[GRCs greater than 01 are rejects or errors]</center></b></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td> </td>
+    <td>2</td>
+    <td>STREETS INTERSECT TWICE-
+      < number of feet> FT BETWEEN INTERSECTIONS. COMPASS DIRECTION REQ'D</td>
+  </tr>
+  <tr>
+    <td rowspan="3">03</td>
+    <td>BLANK</td>
+    <td>2 MSW Only</td>
+    <td>STREETS INTERSECT MORE THAN TWICE-CAN ONLY BE PROCESSED BY COW FUNCTION CALL <br>[Reason Code value is blank]</td>
+  </tr>
+  <tr>
+    <td>A </td>
+    <td>2 COW Only</td>
+    <td>STREETS INTERSECT MORE THAN TWICE–USE FUNCTION 2W TO FIND RELATED NODES </td>
+  </tr>
+  <tr>
+    <td>B </td>
+    <td>2 COW Only</td>
+    <td>STREETS INTERSECT MORE THAN TWICE – USE NODE AS INPUT </td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td></td>
+    <td>1A,BL <br>MSW Only</td>
+    <td>1A/BL VERSION SWITCH INVALID - MUST BE S. ONLY STANDARD IS SUPPORTED</td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td></td>
+    <td>3S</td>
+    <td>FOR FUNCTION 3S, ONLY FIRST BOROUGH CODE IS PERMITTED</td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td></td>
+    <td>1,1A,1B,1E</td>
+    <td>FOR A NAME OF A COMPLEX, 5-DIGIT STREET CODE INPUT IS NOT PERMITTED</td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td></td>
+    <td>All but B<sup>* </sup></td>
+    <td>INVALID STREET NAME NORMALIZATION FORMAT FLAG - MUST BE BLANK, C OR S</td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td></td>
+    <td>3C</td>
+    <td>
+      < Compass direction> SIDE OF STREET SEGMENT IS NOT IN
+        < borough name>
+    </td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td></td>
+    <td>All but B<sup>* </sup></td>
+    <td>INVALID SNL VALUE - MUST BE BETWEEN 4 AND 32 INCLUSIVE</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>0</td>
+    <td>1<sup>* </sup>,2,3<sup>* </sup>, AP</td>
+    <td>
+      <Street name> NOT RECOGNIZED. THERE ARE NO SIMILAR NAMES</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td></td>
+    <td>2</td>
+    <td>INTERSECTION NAME NOT FOUND</td>
+  </tr>
+  <tr>
+    <td rowspan="15" class="topVerticalTD">13</td>
+    <td>1</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> CONTAINS AN INVALID CHARACTER
+        < character> IN POSITION
+          < position number>
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> HAS MORE THAN 3 DIGITS AFTER DASH</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> HAS TOO MANY DASHES</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> HAS NO DIGITS AFTER THE DASH</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      <value> HAS TOO MANY DIGITS (MORE THAN 5)</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> IS NOT COMPLETE AS ENTERED</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> PORTION AFTER HYPHEN EXCEEDS ALLOWABLE MAXIMUM</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>1,1A,1B,1E,AP,D<sup>* </sup></td>
+    <td>ADDRESS NBR
+      < hse nr value> INVALID INTERNAL FORMAT</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>1,1A,1B,1E,AP,D<sup>* </sup></td>
+    <td>ADDRESS NBR
+      < value> HAS AN UNKNOWN OR INVALID SUFFIX/ENDING</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>INPUT CONTAINS NO ADDRESS NUMBER</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR
+      < value> HAS AN EMBEDDED BLANK</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NBR HAS INVALID FORMAT FOR EDGEWATER PARK</td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>THIS STREET HAS HYPHENATED ADDRESS NBRS ONLY. TRY
+      < address nbr with hyphen ins erted to left of last two digits> OR
+        < address nbr with hyphen inserted to left of last three digits></td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>THIS STREET HAS UNHYPHENATED ADDRESS NBRS ONLY. TRY
+      < digits of address number to left of dash only> OR
+        < digits to left and right of dash concatenated without the dash>
+    </td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NUMBER HAS INVALID HYPHENATION FOR THIS STREET [Input address number is an unhyphenated 2-digit number, but the input street has hyphenated address numbers only.]</td>
+  </tr>
+  <tr>
+    <td rowspan="2">14</td>
+    <td>BLANK</td>
+    <td>3S</td>
+    <td>INPUT DOES NOT DEFINE A STREET STRETCH, SINCE INPUT INTERSECTIONS ARE IDENTICAL</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>3S</td>
+    <td>INPUT DOES NOT DEFINE A STREET STRETCH <br>[e.g. On-street has a different 5-digit street code than the underlying street]</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td></td>
+    <td>All but B<sup>* </sup></td>
+    <td>STREET NAME CANNOT BE NORMALIZED</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td></td>
+    <td>1<sup>* </sup>,AP</td>
+    <td>STREET NAME IS MISSING</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td></td>
+    <td>All</td>
+    <td>BOROUGH CODE IS MISSING</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td></td>
+    <td>BL</td>
+    <td>TAX BLOCK NOT NUMERIC</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td></td>
+    <td>BL</td>
+    <td>TAX LOT NOT NUMERIC</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td></td>
+    <td>BN</td>
+    <td>BUILDING IDENTIFICATION NUMBER (BIN) IS MISSING</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td></td>
+    <td>BN</td>
+    <td>BUILDING IDENTIFICATION NUMBER (BIN) NOT FOUND</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td></td>
+    <td>BN</td>
+    <td>INVALID BIN FORMAT: NON-NUMERIC, FIRST DIGIT NOT 1-5 OR REST OF DIGITS ALL ZERO</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td></td>
+    <td>BN</td>
+    <td>TEMPORARY DEPARTMENT OF BUILDINGS BIN: EXISTS ONLY IN D.O.B FILES</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td></td>
+    <td>3<sup>* </sup></td>
+    <td>ON STREET IS MISSING</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td></td>
+    <td>2,3<sup>* </sup></td>
+    <td>CROSS STREET 1 IS MISSING</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td></td>
+    <td>2,3<sup>* </sup></td>
+    <td>CROSS STREET 2 IS MISSING</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td></td>
+    <td>All</td>
+    <td>INVALID WORK AREA FORMAT INDICATOR - MUST BE C OR BLANK</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td></td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>A PARTIAL STREET NAME MAY NOT BE USED IN A FREE-FORM ADDRESS</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td></td>
+    <td>1,1A,1B,1E,AP,3<sup>* </sup></td>
+    <td>INTERSECTION
+      < INTERSECTION NAME> MAY NOT SERVE AS ON-STREET</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td></td>
+    <td>2</td>
+    <td>
+      < STREET NAME> IS NOT PART OF
+        < INTERSECTION NAME>
+    </td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>1</td>
+    <td>1A,BL <br>COW Only</td>
+    <td>MODE SWITCH OF X NOT VALID WITH LONG-WORK-AREA-2 SET TO L</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td></td>
+    <td>2,2W <br>COW Only</td>
+    <td>INVALID NODE – NON-NUMERIC OR EMBEDDED BLANKS FOUND</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td></td>
+    <td>2,2W <br>COW Only</td>
+    <td>ACCESS BY NODE FAILED – NODE NOT FOUND</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td></td>
+    <td>3S</td>
+    <td>
+      < Compass direction value> IS AN INVALID COMPASS DIRECTION VALUE FOR
+        < FIRST or SECOND> INPUT INTERSECTION</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td></td>
+    <td>2,3C</td>
+    <td>INVALID COMPASS DIRECTION VALUE - MUST BE N, S, E OR W</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td></td>
+    <td>2,3C</td>
+    <td>COMPASS DIRECTION VALUE IS INVALID FOR THIS INPUT LOCATION</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td></td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>THIS STREET HAS NO ADDRESSES</td>
+  </tr>
+  <tr>
+    <td rowspan="3">42</td>
+    <td>blank</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NUMBER OUT OF RANGE</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NUMBER OUT OF RANGE. CORRECT DIGITS OR INSERT HYPHEN AS<br>
+      < AB-CD> OR
+        < A-BCD>
+          [where input was of the form ABCD]</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>ADDRESS NUMBER OUT OF RANGE. CORRECT DIGITS OR TRY<br>
+      < AB> OR
+        < ABCD> [where input was of the form AB-CD]</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td></td>
+    <td>3C</td>
+    <td>INPUT DOES NOT DEFINE A BLOCK FACE</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td></td>
+    <td>3</td>
+    <td>INPUT DOES NOT DEFINE A STREET SEGMENT</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td></td>
+    <td>3,3C</td>
+    <td>STREET COMBINATION NOT UNIQUE <br> [The input is ambiguous, i.e., it describes more than one valid street segment.]</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td></td>
+    <td>1,1A,1B,1E <br>COW Only</td>
+    <td>INVALID HNL VALUE - MUST BE BETWEEN 12 AND 16 INCLUSIVE</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td></td>
+    <td>1,1A,1B,1E <br>COW Only</td>
+    <td>INVALID HOUSE NUMBER JUSTIFICATION VALUE - MUST BE L, R OR BLANK</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td></td>
+    <td>1,1A,1B,1E <br>COW Only</td>
+    <td>ADDRESS NUMBER CANNOT BE NORMALIZED WITHIN REQUESTED HNL</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>1 thru 4</td>
+    <td>1,1A,1B,1E,2,3<sup>* </sup>,AP</td>
+    <td>
+      < Input street name> IS AN INVALID STREET NAME FOR THIS LOCATION <br>[The Reason Code indicates the number of valid street names returned in the Similar Names List.]</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td></td>
+    <td>2,3 <sup>* </sup></td>
+    <td>NON-ADDRESSABLE PLACE NAME PROCESSING IS NOT AVAILABLE FOR THIS FUNCTION</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td></td>
+    <td>1E</td>
+    <td>ADDRESS IS SPLIT AMONG MULTIPLE ELECTION DISTRICTS. ADDRESS NBR SUFFIX REQUIRED <br> [The input address is associated with more than one Election District (ED). Function 1E requires an address number suffix to be included with this address to identify
+      a portion of the building specific to one ED.]
+    </td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td></td>
+    <td>3S</td>
+    <td><span class="customPre">INPUT INCLUDES ROADBED NAME, BUT ROADBED REQUEST SWITCH IS OFF</span></td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td></td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>NON-ADDRESSABLE PLACE NAME, BRIDGE, TUNNEL OR MISC STRUCTURE NOT FOUND</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td></td>
+    <td>1<sup>* </sup>,2,3<sup>* </sup>, AP</td>
+    <td>STREET NAME CANNOT BE NORMALIZED WITHIN REQUESTED SNL</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td></td>
+    <td>3S</td>
+    <td>STREET STRETCH NOT FOUND</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td></td>
+    <td>2,3S</td>
+    <td>
+      < Street name> &
+        < other street name> DO NOT INTERSECT</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>2 thru 4</td>
+    <td>2</td>
+    <td>INPUT STREET NAMES DO NOT FORM A UNIQUE INTERSECTION [Issued when there is more than one possibility for an assumed front- truncated street name (where EAST or WEST is added at the beginning of the name). Reason Code indicates the number of possible
+      names. The possible names are returned in the List of Street Names in WA1.]</span</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td></td>
+    <td>1,1A,1B,1E,2,3<sup>* </sup>,AP,D<sup>* </sup></td>
+    <td>STREET CODE NOT FOUND</span</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td></td>
+    <td>All</td>
+    <td>INVALID ROADBED REQUEST SWITCH. MUST BE R OR BLANK</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td></td>
+    <td>3S</td>
+    <td>
+      < Street name> &
+        < other street name> INTERSECT MORE THAN TWICE-CANNOT BE PROCESSED</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>A-Z</td>
+    <td>All</td>
+    <td>ERROR ACCESSING GEOSUPPORT FILE:
+      <file name>. NOTIFY SYSTEM SUPPORT [This can be an installation error or a system error. Notify System Support.]</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td></td>
+    <td>3S</td>
+    <td>
+      < Street name> &
+        < other street name> INTERSECT TWICE-COMPASS DIRECTION REQ’D</td>
+  </tr>
+  <tr>
+    <td rowspan="4">69</td>
+    <td>A</td>
+    <td>3,3C <br>COW Only </td>
+    <td>INVALID AUXSEG REQUEST SWITCH. MUST BE Y, N OR BLANK</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>1A,1B, BL,BN <br>COW Only</td>
+    <td>INVALID TPAD REQUEST SWITCH. MUST BE Y, N OR BLANK</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>1,1E,1A,3,3C,AP BL,BN <br> COW Only</td>
+    <td>INVALID MODE SWITCH VALUE. MUST BE X OR BLANK</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>All COW Only</td>
+    <td>INVALID WTO SWITCH VALUE. MUST BE Y, N, OR BLANK</td>
+  </tr>
+  <tr>
+    <td rowspan="3">69</td>
+    <td>A</td>
+    <td>All but 3,3C <br>COW Only </td>
+    <td>AUXSEG REQUEST SWITCH NOT VALID FOR THIS FUNCTION</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>All but 1A,1B,BL,BN <br>COW Only</td>
+    <td>TPAD REQUEST SWITCH NOT VALID FOR THIS FUNCTION</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>All but 1,1E,1A,3,3C,AP,BL,BN <br> COW Only</td>
+    <td>MODE SWITCH OF X (EXTENDED) NOT VALID FOR THIS FUNCTION</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td></td>
+    <td>1,1A,1B,1E.AP</td>
+    <td>INPUT ZIP CODE IS NOT A NEW YORK CITY ZIP CODE</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td></td>
+    <td>1,1A,1B,1E,AP</td>
+    <td>INPUT ZIP CODE IS NOT ALL NUMERIC</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td></td>
+    <td>1A,BL <br>MSW Only</td>
+    <td>LEGACY VERSION OF FUNCTIONS 1A AND BL IS DISCONTINUED. SEE TECH BULLETIN 05-1</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td></td>
+    <td>2,3<sup>* </sup></td>
+    <td>ADDRESSABLE PLACE NAME PROCESSING IS NOT AVAILABLE FOR THIS FUNCTION</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td></td>
+    <td>1,1A,1B,1E</td>
+    <td>DUPLICATE ADDRESS-USE
+      < pseudo-streetname1> OR
+        < pseudo-streetname2>
+    </td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td></td>
+    <td>All but 1,1B,1E,3S</td>
+    <td>ROADBED REQUEST SWITCH NOT IMPLEMENTED FOR THIS FUNCTION</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td></td>
+    <td>BL</td>
+    <td>TAX LOT NOT FOUND</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td></td>
+    <td>All<br> COW Only</td>
+    <td>INVALID BROWSE FLAG VALUE. MUST BE P, F, R, OR BLANK</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td></td>
+    <td>3S,BL,BN,D<sup>* </sup> <br>COW Only</td>
+    <td>BROWSE FLAG NOT VALID FOR THIS REQUEST</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td></td>
+    <td>3S</td>
+    <td><span class="customPre">INPUT INCLUDES ROADBED NAME, BUT ROADBED REQUEST SWITCH IS OFF</span</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td></td>
+      <td>1,1A,1B,1E,2,3<sup>* </sup></td>
+      <td>BUSINESS IMPROVEMENT DISTRICT (BID) IS NOT VALID AS INPUT FOR THIS FUNCTION</td>
+    </tr>
+    <tr>
+      <td rowspan="2">88</td>
+      <td>Blank</td>
+      <td>All</td>
+      <td>GEOSUPPORT ERROR. EMAIL <a href="mailto:email@GSS_FEEDBACK@PLANNING.NYC.GOV">GSS_FEEDBACK@PLANNING.NYC.GOV </a> AND REPORT 88-[An internal Geosupport problem, not a user error.]</td>
+    </tr>
+    <tr>
+      <td>1-9,A-Z</td>
+      <td>All</td>
+      <td>GEOSUPPORT ERROR. EMAIL <a href="mailto:email@GSS_FEEDBACK@PLANNING.NYC.GOV">GSS_FEEDBACK@PLANNING.NYC.GOV </a> AND REPORT 88- < value > ERROR <br>[where <value> is the reason code.]<br> [An internal Geosupport problem, not a user error.]</td>
+    </tr>
+    <tr>
+      <td rowspan="2">89</td>
+      <td rowspan="2"></td>
+      <td>2,3C,3S,BN</td>
+      <td rowspan="2">LONG WORK-AREA-2 OPTION IS INVALID FOR THIS FUNCTION</td>
+    </tr>
+    <tr>
+        <td>1,1B,1E,3 <br> COW Only </td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td></td>
+      <td>1,1A,1E,3,BL</td>
+      <td>LONG WORK-AREA-2 FLAG MUST BE L OR BLANK</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td></td>
+      <td>All</td>
+      <td>FUNCTIONALITY UNDER CONSTRUCTION</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td></td>
+      <td>BB,BF</td>
+      <td>INPUT IS BEYOND THE LAST STREET NAME IN THE BOROUGH OF <borough name></td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td></td>
+      <td>All</td>
+      <td>NO INPUT DATA RECEIVED</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td></td>
+      <td>All</td>
+      <td>INVALID BOROUGH CODE. MUST BE 1, 2, 3, 4 OR 5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">EE</td>
+      <td >1</td>
+      <td>1<sup>* </sup>,2,3<sup>* </sup>,AP</td>
+      <td rowspan"2"><span class="customPre"> < Street name > NOT RECOGNIZED. IS IT < similar street name >? <br> [Issued when there is precisely one similar name.] </span></td>
+  </tr>
+  <tr>
+    <td>2 thru 9, A</td>
+    <td>1<sup>* </sup>,2,3<sup>* </sup>,AP</td>
+    <td><span class="customPre">< Street name > NOT RECOGNIZED. THERE ARE < number > SIMILAR NAMES [Issued when there is more than one similar name.  Reason Code indicates number of similar names. Reason Code ‘A’ signifies 10 similar names.  The similar names are returned in WA1.]</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2"> ?? </td>
+    <td>
+      <Blank/td>
+        <td>N/A</td>
+        <td>INVALID FUNCTION CODE</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1B,AP <br> MSW Only</td>
+    <td>INVALID FUNCTION CODE- AVAILABLE IN COW FORMAT ONLY</td>
+  </tr>
+</table>
+
+<p><br></p>
+<h2 id="tpad-warning-messages-and-tpad-conflict-flag-reason-code-qualifiers-in"><span id="appendix04.1"> TPAD WARNING MESSAGES and TPAD Conflict Flag  / REASON CODE QUALIFIERS in ( ) </span></h2>
+<p>"TPAD BBL USED, NO EXISTING PAD BBL"; (2)</p>
+<p>"TPAD BBL USED, PAD PSEUDO-ADDRESS ON DIFFERENT BBL THAN TPAD NB BIN"; (3)</p>
+<p>"TPAD BBL USED, EXISTING PAD BIN OF INPUT ADDR ON DIFF BBL THAN TPAD NB BIN"; (4)</p>
+<p>"TPAD BBL USED, PAD BIN OF INPUT ADDR W/DM-5 ON DIFF BBL THAN TPAD NB BIN"; (6)</p>
+<p>"TPAD BBL USED, PAD BIN OF INPUT ADDR W/DM-6 ON DIFF BBL THAN TPAD NB BIN"; (7)</p>
+<p>"PAD BBL USED, TPAD NB BIN WITH NB-0 ON DIFFERENT BBL THAN PAD BIN"; (8)</p>
+<p>"PAD BBL USED, TPAD NB BIN WITH NB-1 ON DIFFERENT BBL THAN PAD BIN"; (9)</p>
+<p>"PAD BBL USED, TPAD NB BIN WITH NB-2 ON DIFFERENT BBL THAN PAD BIN"; (A)</p>
+<p>"PAD BBL USED, TPAD NB BIN WITH NB-3 ON DIFFERENT BBL THAN PAD BIN"; (B)</p>
+<p>"TPAD DATA FOUND, TPAD ADDRESS OVERLAPS PAD ADDRESS"; (C)</p>
+<p>"ADDRESS FOUND IN TPAD, NOT FOUND IN PAD"; (D)</p>
+<p>"BIN FOUND IN TPAD, NOT FOUND IN PAD"; (E)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../appendix05/" class="btn btn-neutral float-right" id="nextButton" title="Appendix 5: Geosupport Copy Files (MSW)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../appendix03/" class="btn btn-neutral" id="previousButton" title="Appendix 3: Data Item Dictionary"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../appendix03/" style="color: #fcfcfc; float:left">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../appendix05/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/main.js"></script>
+
+</body>
+</html>

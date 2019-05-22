@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>VIII.4 The Geosupport Copy Files - DCP</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../../css/main.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "VIII.4 The Geosupport Copy Files";
+    var mkdocs_page_input_path = "chapters\\chapterVIII\\section04.md";
+    var mkdocs_page_url = "/chapters/chapterVIII/section04/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script src="../../../js/main.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+
+        <!-- Original -->
+        <!-- <a href="../../.." class="icon icon-home" id="logoID"> DCP</a> -->
+
+        <!-- Custom -->
+        <a href="http://www1.nyc.gov/site/planning/index.page" class="icon icon-home nycplanning" ></a><br>
+        <a href="../../.." class="icon icon-home homeLogo" id="logoID"></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../tableofcontents/">Table of Contents</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../overview/">Overview of the UPG</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter I: System Overview</a>
+    <!-- <span class="caption-text">Chapter I: System Overview</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/chapterI/">Chapter I</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section01/">I.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section02/">I.2 System Functionality</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section03/">I.3 Introduction to Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section04/">I.4 The Geosupport Function Suite</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section05/">I.5 Overview of System Architecture</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterI/section06/">I.6 Technical References</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter II: Geosupport API Introduction</a>
+    <!-- <span class="caption-text">Chapter II: Geosupport API Introduction</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/chapterII/">Chapter II</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section01/">II.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section02/">II.2 Geosupport Return Codes and Reject Handling</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section03/">II.3 Geosupport API User Programming Procedure</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section04/">II.4 One-Work-Area and Two-Work-Area Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section05/">II.5 Coding Geosupport API Calls</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section06/">II.6 The Work Area C/C++ Header File and Visual Basic Typedef File</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section07/">II.7 Coding API Calls When Using Geosupport C/C++ Header Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section08/">II.8 Creating a Geosupport Desktop Edition Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section09/">II.9 Sample Programs with Descriptions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section10/">II.10 The Long Work-Area-2 Option</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section11/">II.11 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter III: Street Name Processing</a>
+    <!-- <span class="caption-text">Chapter III: Street Name Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/chapterIII/">Chapter III</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section01/">III.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section02/">III.2 Street Name Normalizing and the SNL Parameter</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section03/">III.3 Street Name Sorting and Normalization Format Options</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section04/">III.4 Partial Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section05/">III.5 The Similar Names Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section06/">III.6 Unconventional Geographic Feature Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section07/">III.7 Street Name Browsing and Functions BB and BF</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIII/section08/">III.8 Selection of Output Street Names (COW only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IV: Street Codes</a>
+    <!-- <span class="caption-text">Chapter IV: Street Codes</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/chapterIV/">Chapter IV</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section01/">IV.1 Introduction: Street Codes and Geographic Retrieval Consistency</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section02/">IV.2 Street Name Relationships: Aliases and Locally Valid Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section03/">IV.3 Five-Digit and Ten-Digit Street Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section04/">IV.4 Resynchronization of Street Codes Stored in User Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section05/">IV.5 Seven-Digit Street Codes: Local Street Name Validity, Local Group Codes</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section06/">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section07/">IV.7 Street Codes and Non-Addressable Place Names</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section08/">IV.8 Street Code Input Feature</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIV/section09/">IV.9 Summary of Street Codes</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter V: Address Processing</a>
+    <!-- <span class="caption-text">Chapter V: Address Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/chapterV/">Chapter V</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section01/">V.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section02/">V.2 Address Numbers (‘House’ Numbers), Normalization and Formats: HNI, HNS and HND</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section03/">V.3 Specifying Input Data to the Address-Processing Functions: NAPs, Parsed-Form Addresses, Free-Form Addresses and Unit Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section04/">V.4 Input Address Acceptance/Rejection and its Validation Significance</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section05/">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section06/">V.6 Duplicate Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section07/">V.7 Marble Hill/Rikers Island</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section08/">V.8 Special Ruby Street Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section09/">V.9 Vanity Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section10/">V.10 Out-of-Sequence Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section11/">V.11 ZIP Code as Input Instead of Borough Code</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section12/">V.12 Fuzzy Search for Address Functions 1, 1A, 1B, and 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section13/">V.13 Special Place Name Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section14/">V.14 ‘No Cross Street’ Segment Processing</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterV/section15/">V.15 UNIT Information Feature (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</a>
+    <!-- <span class="caption-text">Chapter VI: Tax Lot, Building, and Address Point Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/chapterVI/">Chapter VI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section01/">VI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section02/">VI.2 Tax Lots and BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section03/">VI.3 Buildings and Building Identification Numbers (BINs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section04/">VI.4 Condominiums and Billing BBLs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section05/">VI.5 Vacant Street Frontages and Pseudo-Addresses</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section06/">VI.6 Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section07/">VI.7 Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section08/">VI.8 Standard and Legacy Versions of Functions 1A and BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section09/">VI.9 Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section10/">VI.10 Function AP (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVI/section11/">VI.11 Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VII: Street Configuration Processing</a>
+    <!-- <span class="caption-text">Chapter VII: Street Configuration Processing</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/chapterVII/">Chapter VII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section01/">VII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section02/">VII.2 Intersections: Function 2 and Function 2W</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section03/">VII.3 Three-Street Configurations - Concepts and Terminology</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section04/">VII.4 Street Segments and Related Configurations: Function 3</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section05/">VII.5 Blockfaces: Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section06/">VII.6 Street Stretches: Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section07/">VII.7 Borough Boundary Processing (Functions 2, 3 and 3C)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterVII/section08/">VII.8  Fuzzy Name Search Processing for Functions 3, 3C, and 3S – Front-truncated street names</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter VIII: Geosupport API</a>
+    <!-- <span class="caption-text">Chapter VIII: Geosupport API</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../chapterVIII/">Chapter VIII</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section01/">VIII.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section02/">VIII.2 Review of the Geosupport API</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section03/">VIII.3 Coding API Calls</a>
+                  </li>
+                  <li class=" current" >
+                      
+    <a class="current" href="./">VIII.4 The Geosupport Copy Files</a>
+    <ul class="subnav hideMe">
+            
+    <li class="toctree-l3"><a href="#overview-of-copy-files-in-general">Overview of COPY Files in General</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-geosupport-copy-libraries">The Geosupport COPY Libraries</a></li>
+    
+
+    </ul>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section05/">VIII.5 Coding API Calls When Using Geosupport COPY Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section06/">VIII.6 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section07/">VIII.7 JCL for the Compile Step</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../section08/">VIII.8 JCL for the Execute Step (Batch Applications)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter IX: Mainframe GBAT</a>
+    <!-- <span class="caption-text">Chapter IX: Mainframe GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/chapterIX/">Chapter IX</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section01/">IX.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section02/">IX.2 JCL Considerations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section03/">IX.3 GBAT Processing and Programmed Abnormal Terminations</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section04/">IX.4 The Input Data File (DDNAME=INFILE or INVSAM)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section05/">IX.5 The Input Control File (DDNAME=CARDIN)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section06/">IX.6 The Input Alias File (DDNAME=ALIASES)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section07/">IX.7 The Output File of Accepted Records (DDNAME=OUTFILE)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section08/">IX.8 The Output Files of Rejected Records (DDNAME=ERRFILx)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterIX/section09/">IX.9 The Output Print File (DDNAME=SYSPRINT)</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter X: Desktop Edition GBAT</a>
+    <!-- <span class="caption-text">Chapter X: Desktop Edition GBAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/chapterX/">Chapter X</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section01/">X.1 What is GBAT?</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterX/section02/">X.2 Using GBAT</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Chapter XI: Desktop Edition GOAT</a>
+    <!-- <span class="caption-text">Chapter XI: Desktop Edition GOAT</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/chapterXI/">Chapter XI</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section01/">XI.1 Introduction</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section02/">XI.2 How to Use GOAT</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section03/">XI.3 Invoking Function 1 or Function 1E</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section04/">XI.4 Invoking Function 1A</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section05/">XI.5 Invoking Function 2</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section06/">XI.6 Invoking Function 3 or Function 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section07/">XI.7 Invoking Function 3S</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section08/">XI.8 Invoking Function B</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section09/">XI.9 Invoking Function BL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section10/">XI.10 Invoking Function BN</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapterXI/section11/">XI.11 Invoking Function D</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="caption-text">Appendices and Glossary</a>
+    <!-- <span class="caption-text">Appendices and Glossary</span> -->
+    <ul class="subnav hideMe">
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendices/">Appendices and Glossary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix01/">Appendix 1: Geosupport Functions - Quick Reference</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix02/">Appendix 2: Mainframe-Specific Work Area Layouts(MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix03/">Appendix 3: Data Item Dictionary</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix04/">Appendix 4: Geosupport Return Codes, Reason Codes And Messages</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix05/">Appendix 5: Geosupport Copy Files (MSW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix06/">Appendix 6: User Feedback Procedures</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix07/">Appendix 7: Mainframe Data Centers Where Geosupport Is Installed</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix08/">Appendix 8: Sample Application Programs And JCL</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix09/">Appendix 9: GBAT Reference Tables</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix10/">Appendix 10: Sample GBAT Jobs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix11/">Appendix 11: Guidelines For Application Design</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix12/">Appendix 12: Character-Only Work Areas (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix13/">Appendix 13: Character-Only Work Area LAYOUTS (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix14/">Appendix 14: Geosupport Copy Files (COW)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix15/">Appendix 15: 2010 Census Geography – Functions 1, 1E, 2, 3, and 3C</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix16/">Appendix 16: Neighborhood Tabulation Areas (NTAs) and PUMAs</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix17/">Appendix 17: TPAD - Additional Information</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix18/">Appendix 18: GeoExcel Application</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix19/">Appendix 19: Work Area Layouts (COWs)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix20/">Appendix 20: Geosupport Header And Typedef Files</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix21/">Appendix 21: Geosupport Desktop Edtion</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/appendix22/">Appendix 22: GeoX Programming Guide</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../../appendices/glossary/">Glossary of Terms And Acronyms</a>
+                  </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../aboutUs/">About Us</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">DCP</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <span style="float: right;" class="printLogo"><a onclick="handlePrintPage()" class="printBtn">Print Page</a>  <a href="../../../upg.pdf" target="_blank" class="printBtn">Print All</a></span>
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Chapter VIII: Geosupport API &raquo;</li>
+        
+      
+    
+    <li>VIII.4 The Geosupport Copy Files</li>
+
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+
+
+
+  <hr/>
+
+
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2>VIII.4 The Geosupport Copy Files</h2>
+
+<p>This section describes an optional feature of Geosupport, its COPY files.  The Geosupport COPY files contain source code layouts of the Geosupport API work areas in the COBOL, Assembler, PL/1, C and NATURAL programming languages.  The use of the Geosupport COPY files can greatly facilitate user programming and is strongly recommended for all applications.  The Geosupport COPY files are contained in the Geosupport COPY libraries, which are described below.</p>
+<p>In this section, basic concepts of COPY files are explained, and the organization of the Geosupport COPY libraries is described.  In <a href="../../chapterVIII/section05">Chapter VIII.5</a>, the specific source code statements that users must code in their programs to utilize the Geosupport COPY files are described.  <a href="../../chapterVIII/section06">Chapter VIII.6</a> describes the JCL required to compile a program that utilizes the Geosupport COPY files.</p>
+<h2 id="overview-of-copy-files-in-general"><span id="chapterVIII.4.1"><center><u>Overview of COPY Files in General</u></center></span></h2>
+<p>Many programming languages, including COBOL, Assembler, PL/1, C and NATURAL, have a facility for referring, within the source code of a program, to external files (generically referred to as ‘COPY files’ in this document) containing source code to be inserted into the program at compile time. (C ‘COPY files’ are usually called header files; NATURAL ‘COPY files’ are called Local Data Areas (LDAs).)  Each programming language has a declarative command (‘COPY’ in COBOL and Assembler, ‘%INCLUDE’ in PL/1, ‘#include’ in C, ‘LOCAL USING’ in NATURAL) for referring to such external COPY files.  During program compilation, when the compiler encounters such a command, it dynamically retrieves the source code stored in the named COPY file and processes that source code as if it were an integral part of the program source code.  The source code retrieved at compile time from the COPY file serves as input to the compiler only;  it is not inserted permanently into the user’s program source code file.  Only the declarative statement that refers to the COPY file is permanently present in the program source code.  <u>Note</u>:  declarative statements referencing external source code COPY files are not to be confused with external program calls.  Declarative statements are directives to the compiler, and are processed at source code compilation time;  program calls are executable statements, performed at application execution time.</p>
+<p>For COBOL, Assembler, PL/1 and C, COPY files must reside as members of a Partitioned Data Set (PDS) called a COPY library, which must be made accessible to the compiler by coding a SYSLIB DD statement in the JCL for the compile step.  In addition, for COBOL and PL/1, an appropriate compiler option must be specified.  For NATURAL, COPY files are called Local Data Areas (LDAs) and reside in the system library in each ADABAS database.  The Database Administrator (DBA) must modify each NATURAL application’s security profile to make the LDAs accessible to the application.</p>
+<p>An ideal situation in which to use COPY files is when numerous programs in an application must all describe the same data structure(s).  Using this technique, a source code description of each data structure is stored centrally in a COPY library.  All programs requiring one or more of the data structures need only contain declarative statement(s) referring to the appropriate member file(s) in the COPY library.  This approach insures that all the programs define the given storage layout in exactly the same way, using the same data item names, data types and data lengths.  This facilitates application-wide maintenance and debugging.  Changes to a data structure need only be made centrally in the COPY file, rather than separately and redundantly in each program.</p>
+<p>Of course, the source code in a program that references a COPY file must be written so that it is compatible with the source code in that COPY file.  In particular, for fields that are defined in the COPY file and referred to in the program, the program must use the same data names and must assume the same data types and lengths as does the COPY file.</p>
+<h2 id="the-geosupport-copy-libraries"><span id="chapterVIII.4.1"><center><u>The Geosupport COPY Libraries</u></center></span></h2>
+<p>There are two Geosupport COPY libraries that collectively contain COBOL, Assembler, PL/1 and  C source code COPY files for all of the Geosupport API work area layouts.  Geosupport also has a set of NATURAL LDAs for the work area layouts.  The use of these facilities can greatly facilitate user application programming.  Among the potential productivity benefits are the following:</p>
+<ul>
+<li>
+<p>Elimination of the need for application programmers to key into their programs lengthy source code descriptions of the Geosupport work area layouts line by line.</p>
+</li>
+<li>
+<p>Standardization of Geosupport data item names among the programs in an application, facilitating troubleshooting and the reassignment of programming staff to programs written by others.</p>
+</li>
+<li>
+<p>Standardization of the descriptions (data types and lengths) of Geosupport data items in an application, fostering accuracy and compatibility among programs and files.</p>
+</li>
+<li>
+<p>Simplification of the updating of programs to reflect changes to Geosupport work area layouts.  Each time a program that references the Geosupport COPY libraries is recompiled, the latest versions of the work area layouts are automatically retrieved.</p>
+</li>
+</ul>
+<p>The Geosupport COPY libraries supporting COBOL, Assembler, PL/1 and C applications are two catalogued Partitioned Data Sets (PDSs) named A030.GEO.COPYLIB2 and A030.GEO.COPYLIB.</p>
+<p>For NATURAL applications at DoITT, <sup>the</sup> DoITT Database Administration staff is responsible for installing the Geosupport LDAs in the system library (CSCLIB) for each ADABAS database and for making the LDAs accessible to each application that needs such access by updating the application’s profile.  <u>It is the user’s responsibility to communicate with the appropriate DoITT staff to request such installation and profile updating.</u></p>
+<p>The Geosupport COPY libraries contain a complete set of COPY files for the Geosupport API work areas in COBOL, Assembler, PL/1, C and NATURAL.  Each COPY file contains source code descriptions of one or more of the work areas in one of the supported programming languages, as explained below.  The Geosupport COPY libraries support both batch and CICS applications.</p>
+<p>The MSW Work Area 2s of Functions 1, and 1E, (regular WA2), 2, 3 and 3C all have the same length, 200 bytes.  For each of the supported programming languages except C, the layouts of these work areas are stored together in a single COPY file, coded as redefinitions of the same memory area.  (In the COBOL files, this is done using REDEFINES.  In the Assembler files, it is done using an ORG to reset the Location Counter.  In the PL/1 files, it is done using BASED.  In the NATURAL LDAs, it is done using REDEFINE.)  Except for C, each of the remaining work area layouts has its own COPY file.  For C, there is a single COPY file (called a ‘header file’ in C terminology) containing the layouts of all of the work areas, including WA1.</p>
+<p>The COW Work Area 2s are handled in a similar fashion, though they may not all have the same length.</p>
+<p>Tables VIII-1 and VIII-2, below, list all of the MSW and COW COPY files respectively for COBOL, Assembler, PL/1, NATURAL and C. The tables indicate the work areas for which each file contains layouts, the lengths of those work areas in bytes, and the name of each file by programming language. <a href="../../../appendices/appendix05/">Appendix 5</a> and <a href="../../../appendices/appendix14/">Appendix 14</a> contain printouts of the MSW and COW COPY files respectively.</p>
+<p><strong>Important Note: As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to th COW format.</strong>  See <a href="../../../appendices/appendix12/">Appendix 12</a></p>
+<p><center><b>Table VIII-1: MSW COPY Files for COBOL, Assembler, PL/1, C and NATURAL</b></center></p>
+<table class="pdfSmallTable">
+<tr>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th colspan="5"><center>- - - - - - - - - - COPY File Name - - - - - - - - </center></th>
+</tr>
+<tr>
+
+  <th><u>MSW<br>WORK<br>AREA</u></th>
+  <th><u>FUNCTION(S)</u></th>
+  <th><u>LENGTH<br>(bytes)</u></th>
+  <th><u>COBOL</u></th>
+  <th><u>ASSEMBLER</u></th>
+  <th><u>PL/1</u></th>
+  <th><u>C</u></th>
+  <th><u>NATURAL</u></th>
+
+</tr>
+
+<tr>
+  <td>WA1</td>
+  <td>All</td>
+  <td>884</td>
+  <td>W1COB</td>
+  <td>W1BAL</td>
+  <td>W1PL1</td>
+  <td>WAC</td>
+  <td>GEOLW1</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1 (regular WA2), 1E (regular WA2), 2, 3 (regular WA2), 3C</td>
+  <td>200</td>
+  <td>W2COB</td>
+  <td>W2BAL</td>
+  <td>W2PL1</td>
+  <td>WAC</td>
+  <td>GEOLW2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1 (long WA2), 1E (long WA2), 3 (long WA2)</td>
+  <td>300</td>
+  <td>W2COBL</td>
+  <td>W2BALL</td>
+  <td>W2PL1L</td>
+  <td>WAC</td>
+  <td>GEOLW2L</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1A&BL (regular WA2), BN (\*)</td>
+  <td>939</td>
+  <td>W2COB1A</td>
+  <td>W2BAL1A</td>
+  <td>W2PL11A</td>
+  <td>WAC</td>
+  <td>GEOLW2LA</td>
+</tr>
+
+ <tr>
+  <td>WA2</td>
+  <td>1A&BL (long WA2)  (\**)</td>
+  <td>17,683</td>
+  <td>W2COB1AL</td>
+  <td>W2BAL1AL</td>
+  <td>W2PL11AL</td>
+  <td>WAC</td>
+  <td>GEOLW2LAL</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3S</td>
+  <td>4,224</td>
+  <td>W2COB3S</td>
+  <td>W2BAL3S</td>
+  <td>W2PL13S</td>
+  <td>WAC</td>
+  <td>GEOLW23S</td>
+</tr>
+
+</table>
+
+<p>The COW COPY Files Table (Table VIII-2) appears on the following page.</p>
+<table>
+<tr>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th colspan="5"><center>- - - - - - - - - - COPY File Name - - - - - - - - </center></th>
+</tr>
+<tr>
+
+  <th><u>MSW<br>WORK<br>AREA</u></th>
+  <th><u>FUNCTION(S)</u></th>
+  <th><u>LENGTH<br>(bytes)</u></th>
+  <th><u>COBOL</u></th>
+  <th><u>ASSEMBLER</u></th>
+  <th><u>PL/1</u></th>
+  <th><u>C</u></th>
+  <th><u>NATURAL</u></th>
+
+</tr>
+
+<tr>
+  <td>WA1</td>
+  <td>All</td>
+  <td>1,200</td>
+  <td>P1COB</td>
+  <td>P1BAL</td>
+  <td>P1PL1</td>
+  <td>PAC</td>
+  <td>GEOLP1</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1 & 1E (Regular WA2), 3C (Regular WA2)</td>
+  <td>300</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>2</td>
+  <td>200</td>
+  <td>P2COB</td>
+  <td>P2BALL</td>
+  <td>P2PL1L</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>2W</td>
+  <td>4000</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+ <tr>
+  <td>WA2</td>
+  <td>3 (Regular WA2)</td>
+  <td>450</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3 (WA2 with AUXSEG option)</td>
+  <td>950</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3C (WA2 with AUXSEG option)</td>
+  <td>800</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3C (WA2 with AUXSEG option)</td>
+  <td>800</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3 (Extended WA2)</td>
+  <td>1,000</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3C (Extended WA2)</td>
+  <td>850</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3 (Extended WA2 w/AUXSEG)</td>
+  <td>1,500</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3C (Extended WA2 w/AUXSEG)</td>
+  <td>1,350</td>
+  <td>P2COB</td>
+  <td>P2BAL</td>
+  <td>P2PL1</td>
+  <td>PAC</td>
+  <td>GEOLP2</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1A & BL (Regular WA2), BN (\*)</td>
+  <td>1,363</td>
+  <td>P2COB1A</td>
+  <td>P2BAL1A</td>
+  <td>P2PL11A</td>
+  <td>PAC</td>
+  <td>GEOLP21A</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1A & BL (Long WA2)  (\**) 1A & BL (TPAD Long WA2) (\***) </td>
+  <td>17,750</td>
+  <td>P2COB1AL</td>
+  <td>P2BAL1A</td>
+  <td>P2PL11AL</td>
+  <td>PAC</td>
+  <td>GEOLP2AL</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1A & BL & BN (Extended WA2) (****) </td>
+  <td>2,800</td>
+  <td>P2COB1AL</td>
+  <td>P2BAL1A</td>
+  <td>P2PL11AL</td>
+  <td>PAC</td>
+  <td>GEOLP2AL</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1 & 1E (Extended WA2)</td>
+  <td>1,500</td>
+  <td>P2COB1AL</td>
+  <td>P2BAL1A</td>
+  <td>P2PL11AL</td>
+  <td>PAC</td>
+  <td>GEOLP2AL</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>1B</td>
+  <td>4,300</td>
+  <td>P2COB1AL</td>
+  <td>P2BAL1A</td>
+  <td>P2PL11AL</td>
+  <td>PAC</td>
+  <td>GEOLP2AL</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>3S</td>
+  <td>19,274</td>
+  <td>P2COB3S</td>
+  <td>P2BAL3S</td>
+  <td>P2PL13S</td>
+  <td>PAC</td>
+  <td>GEOLP23S</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>AP</td>
+  <td>1,363</td>
+  <td>P2COBAP</td>
+  <td>P2BALAP</td>
+  <td>P2PL1AP</td>
+  <td>PAC</td>
+  <td>GEOL2AP</td>
+</tr>
+
+<tr>
+  <td>WA2</td>
+  <td>AP (Extended WA2)</td>
+  <td>2,800</td>
+  <td>P2COBAP</td>
+  <td>P2BALAP</td>
+  <td>P2PL1AP</td>
+  <td>PAC</td>
+  <td>GEOL2APX</td>
+</tr>
+
+</table>
+
+<p>(*)       Functions 1A, BL and BN share a single regular WA2 layout.
+(*<em>)     Functions 1A and BL share a single long WA2 layout.  (Function BN has no long WA2 option.).
+(*<strong>)   Functions 1A and BL share a single TPAD long WA2 layout.  (Function BN has no TPAD long WA2 option.).
+(*</strong></em>) Functions 1A, BL and BN share a single extended WA2 layout.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../section05/" class="btn btn-neutral float-right" id="nextButton" title="VIII.5 Coding API Calls When Using Geosupport COPY Files">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../section03/" class="btn btn-neutral" id="previousButton" title="VIII.3 Coding API Calls"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../section03/" style="color: #fcfcfc; float:left">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../section05/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+
+</body>
+</html>

@@ -1302,170 +1302,170 @@
   <!-- ======================================================================= -->
   <tr>
     <td><b><a href="../appendices/appendix16">APPENDIX 16:  NEIGHBORHOOD TABULATION AREAS (NTAS) AND PUMAS</a></b></td>
-    <td>1602</td>
+    <td>1609</td>
   </tr>
   <!-- ======================================================================= -->
   <tr>
     <td><b><a href="../appendices/appendix17">APPENDIX 17: TPAD - ADDITIONAL INFORMATION</a></b></td>
-    <td>1604</td>
-  </tr>
-  <!-- ======================================================================= -->
-  <tr>
-    <td><b><a href="../appendices/appendix18">APPENDIX 18: GeoExcel Application</a></b></td>
     <td>1611</td>
   </tr>
   <!-- ======================================================================= -->
   <tr>
+    <td><b><a href="../appendices/appendix18">APPENDIX 18: GeoExcel Application</a></b></td>
+    <td>1618</td>
+  </tr>
+  <!-- ======================================================================= -->
+  <tr>
     <td><b><a href="../appendices/appendix14">APPENDIX 19:  GEOSUPPORT COPY FILES (COW)</a></b></td>
-    <td>1617</td>
+    <td>1624</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.1">Character-Only Work Areas</a></td>
-    <td>1617</td>
+    <td>1624</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.2">Work Area 1 (COW) - All Functions</a></td>
-    <td>1618</td>
+    <td>1625</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.3">Work Area 2 (COW) - Functions 1 and 1E</a></td>
-    <td>1621</td>
+    <td>1628</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.4">Work Area 2 (COW) - Functions 1A, BL and BN</a></td>
-    <td>1623</td>
+    <td>1630</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.5">Long Work Area 2 (COW) - Functions 1A and BL</a></td>
-    <td>1627</td>
+    <td>1634</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.6">Work Area 2 (COW) - Function 2</a></td>
-    <td>1627</td>
+    <td>1634</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.7">Work Area 2 (COW) - Function 3</a></td>
-    <td>1629</td>
+    <td>1636</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.8">Work Area 2 (COW) - Function 3C</a></td>
-    <td>1632</td>
+    <td>1639</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix19/#appendix19.9">Work Area 2 (COW) - Function 3S</a></td>
-    <td>1634</td>
+    <td>1641</td>
   </tr>
   <!-- ======================================================================= -->
   <tr>
     <td><b><a href="../appendices/appendix20">APPENDIX 20:  Geosupport Header And Typedef Files</a></b></td>
-    <td>1637</td>
+    <td>1644</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix20/#appendix20.1">C/C++ Header File</a></td>
-    <td>1637</td>
+    <td>1644</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix20/#appendix20.2">Visual Basic Typedef File</a></td>
-    <td>1650</td>
+    <td>1657</td>
   </tr>
   <!-- ======================================================================= -->
   <tr>
     <td><b><a href="../appendices/appendix21">APPENDIX 21: Geosupport System And General Overview</a></b></td>
-    <td>1663</td>
-  </tr>
-  <tr>
-    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.1">Geosupport System General Overview</a></td>
-    <td>1664</td>
-  </tr>
-  <tr>
-    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.2">I Goals And Objectives of The Geosupport Systems</a></td>
-    <td>1665</td>
-  </tr>
-  <tr>
-    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.3">II System requirements, Availability And Enhancements</a></td>
-    <td>1669</td>
-  </tr>
-  <tr>
-    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.4">III Accessing Geosupport: The Application Programming Interface And Utility Programs</a></td>
     <td>1670</td>
   </tr>
   <tr>
-    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.5">IV Geosupport Update Cycles And User Feedback</a></td>
+    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.1">Geosupport System General Overview</a></td>
     <td>1671</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.2">I Goals And Objectives of The Geosupport Systems</a></td>
+    <td>1672</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.3">II System requirements, Availability And Enhancements</a></td>
+    <td>1676</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.4">III Accessing Geosupport: The Application Programming Interface And Utility Programs</a></td>
+    <td>1677</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../appendices/appendix21/#appendix21.5">IV Geosupport Update Cycles And User Feedback</a></td>
+    <td>1678</td>
   </tr>
 
   <!-- ============Appendix 22=============================== -->
   <tr>
     <td><b><a href="../appendices/appendix22">APPENDIX 22: GeoX Programming Guide</a></b></td>
-    <td>1674</td>
+    <td>1681</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#geox-overview">GeoX Overview</a></td>
-    <td>1675</td>
+    <td>1681</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#setup">Setup</a></td>
-    <td>1674</td>
+    <td>1681</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#using-geox-in-a-net-program">Using GeoX in a .NET Program</a></td>
-    <td>1675</td>
+    <td>1682</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#sample-code-for-function-1e">Sample Code for Function 1E</a></td>
-    <td>1676</td>
+    <td>1683</td>
   </tr>
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#sample-code-for-function-bl">Sample Code for Function BL</a></td>
-    <td>1678</td>
+    <td>1685</td>
   </tr>
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#selecting-the-broker-to-use">Selecting the Broker to Use</a></td>
-    <td>1680</td>
+    <td>1687</td>
   </tr>
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#which-functions-to-use">Which Functions to Use</a></td>
-    <td>1682</td>
+    <td>1689</td>
   </tr>
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#which-options-to-use">Which Options to Use</a></td>
-    <td>1683</td>
+    <td>1690</td>
   </tr>
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#selecting-the-proper-work-area-2">Selecting the Proper Work Area 2</a></td>
-    <td>1685</td>
+    <td>1692</td>
   </tr>
 
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#list-of-classes-and-overview">List of Classes and Overview</a></td>
-    <td>1687</td>
+    <td>1694</td>
   </tr>
 
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#classes">Classes</a></td>
-    <td>1688</td>
+    <td>1695</td>
   </tr>
 
 
   <tr>
     <td class="indentRows"><a href="../appendices/appendix22/#supporting-classes-for-work-areas">Supporting Classes for Work Areas</a></td>
-    <td>1690</td>
+    <td>1697</td>
   </tr>
 
 
   <!-- ============Glossary of Terms And Acronyms=============================== -->
   <tr>
     <td><b><a href="../appendices/glossary">Glossary of Terms and Acronyms</a></b></td>
-    <td>1691</td>
+    <td>1698</td>
   </tr>
   <tr>
     <td><b><a href="../aboutUs">About Us</a> </b></td>
-    <td>1709</td>
+    <td>1716</td>
   </tr>  
 </table>
