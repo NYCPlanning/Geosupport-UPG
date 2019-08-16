@@ -1,8 +1,10 @@
 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 19.21 - <span class="smallText">unchanged since</span> V18.1)</center></h6>
+<h6><center>(as of Geosupport System Software Version 19.3 - <span class="smallText">Layouts unchanged since</span> V19.2)</center></h6>
 
 
 This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup>
+
+Beginning with Geosupport Version 19.3, all new COW fields and functions will be supported  only in non-mainframe environments, e.g. Desktop Edition, GeoX, .net, and Linux.  The new fields and functions will not appear in these layouts.
 
 Some Geosupport functions can only be called using one work area, Work Area 1 (WA1). Other functions can be called using two work areas, WA1 and Work Area 2 (WA2).  WA1 contains both input fields (fields used to pass data from the application to Geosupport) and output fields (fields used to pass data from Geosupport to the application).  WA1 is organized so that all the input fields occur first, followed by all the output fields.  WA2 contains output fields only.
 

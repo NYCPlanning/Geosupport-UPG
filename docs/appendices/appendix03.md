@@ -8,15 +8,20 @@ Each entry consists of an appropriate combination of the following elements:
 
 *	<u>Field Names.</u>  A list of the field names associated with a generic entry.
 
+
 *	<u>Function(s).</u>  A list of the Geosupport functions that utilize this data item as either an input or an output item in either WA1 or WA2.  If the data item is in the added portion of WA2 that is passed when the function is called with the long WA2 option, this is so stated.  Similarly, if the data is passed when the function is called with an Extended or Auxiliary or other option, it is so stated. In the list of functions, an asterisk in the second position of a function code is a ‘wild card’ signifying all functions having the indicated value in the first position, as follows:
 
 <div class="indent">
   <p>1 * = 1, 1A, 1B, 1E, 1N; also 1Extended, 1A Extended, 1E Extended</p>
   <p>2 * = 2, 2W</p>  
-  <p>3 * = 3, 3C, 3S, 3 & 3C with Auxiliary Segments, 3 & 3C Extended (with or without Auxiliary Segments)</p>  
+  <p>3 * = 3, 3C, 3S, 3 & 3C with Auxiliary Segments, 3 & 3C Extended (with or without Auxiliary Segments), 3 & 3C Enhanced (with or without Auxiliary Segments)</p>  
   <p>B * = BB, BF, BL, BN</p>  
   <p>D * = D, DG, DN</p>
 </div>
+
+
+*	<u>Environment.</u>  If a data item is supported only in a non-mainframe environment (NMF), this element contains that information.
+
 *	<u>Work Area Format:</u> A list of the work area format(s) that apply to this entry, namely,  MSW (Mainframe-Specific Work Area) and/or COW (Character-Only Work Area).
 
 *	<u>Length and Format.</u>  The length of this data item in bytes, and a description of its format, including whether it is numeric, alphabetic or alphanumeric (these terms are defined below);  whether it contains any special editing characters;  and for numeric items, the justification and the fill character.  The following terms and abbreviations are used:
@@ -3460,16 +3465,20 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
     <td>1, 1E, 1A, 3, 3C, BL, BN</td>
   </tr>
   <tr>
-    <td>Work Area Format:</td>
-    <td>COW Only</td>
+    <td>Environment:</td>
+    <td>Mode Switch of 'E' is supported only in a non-mainframe environment (NMF).</td>
   </tr>
   <tr>
+    <td>Work Area Format:</td>
+    <td>COW Only</td>
+  </tr>  <tr>
     <td>Length and Format:</td>
     <td>1 byte</td>
   </tr>
   <tr>
     <td class="topVerticalTD">Description:</td>
-    <td>Indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](/appendices/appendix13/) for the Work Area layouts.  Also, see <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. </td>
+    <td>'X' indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](/appendices/appendix13/) for the Work Area layouts.  Also, see <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. <br>
+    <br>'E'  indicates request for Enhanced Work Area 2 for Functions 3 and 3C only.  The enhanced Work Area 2 (WA2) returns all the information in the extended WA2 and also returns more B7SCs, instead of B5SCs.  For example, Functions 3 and 3C return B7SCs in the list of cross streets at the low address end and the high address end of the segment.  This gives the user easier access to a finer definition of the streets.  </td>
   </tr>
   <tr>
       <td></td>
@@ -3486,8 +3495,12 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
                   <td>Extended information in Extended WA2 requested</td>
               </tr>
               <tr>
+                  <td>‘E’</td>
+                  <td>Enhanced information in Enhanced WA2 requested. <br>(Non-mainframe environment Functions 3 and 3C only.)</td>
+              </tr>
+          <tr>
                   <td>Blank</td>
-                  <td>Extended information not requested (default)</td>
+                  <td>Extended / Enhanced information not requested (default)</td>
               </tr>
           </table>
       </td>

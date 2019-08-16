@@ -1,18 +1,18 @@
 <h2 class="pdfAppendix"><center>APPENDIX 2: MAINFRAME-SPECIFIC WORK AREA LAYOUTS(MSW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 19.2 - unchanged since 15.3)</center></h6>
+<h6><center>(as of Geosupport System Software Version 19.3 - Layouts unchanged since 15.3)</center></h6>
 
 <!--<h3><center>IMPORTANT MSW ANNOUNCEMENT"</center><h3>-->
 <!---<h3><center>SUPPORT FOR MSW WORK AREAS IS ENDING AS OF JANUARY 1, 2020</center></h3>-->
 
 
-## <span id="apppendix02.01"><center>IMPORTANT MSW ANNOUNCEMENT</center></span>
+## <span id="apppendix02.01"><center>IMPORTANT MSW / COW ANNOUNCEMENT</center></span>
 ## <span id="apppendix02.02"><center>SUPPORT FOR MSW WORK AREAS IS ENDING AS OF JANUARY 1, 2020</center></span>
 
-To provide our users with the best care and most current product, **as of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.**  Character-Only Work Areas (COWs) will continue to be supported and enhanced.  It is therefore very important that users convert their MSW applications to the COW format.
+**As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.**    **Also, as of Version 19.3, <u>COW Work Areas will no longer be enhanced in the mainframe environment</u>.**  It is therefore <u>important for users to convert all existing MSW applications to the COW format in a non-mainframe environment</u>.  
 
-User-written application programs and GBAT utilities that use the MSW format will continue to run at this time.  Note, however, that no technical support will be available for any issues that arise after January 1, 2020.
+User-written application programs and GBAT utilities that use the MSW format will continue to run for a period of time after January 1, 2020, but no technical support will be available.  If an issue arises, users will not be able to call DCP for resolution.
 
-To assist users in the conversion process:  
+To assist users in the conversion to COW format:  
 
    *  [Appendix 12](/appendices/appendix12/) contains information needed to create COW applications.    
    *  [Appendix 13](/appendices/appendix13/) contains the COW Work Area Layouts.  

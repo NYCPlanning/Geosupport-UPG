@@ -17,7 +17,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 
 <table class="pdfSmallTable">
   <tr>
-    <th colspan="4"><b> GEOSUPPORT SYSTEM RETURN CODES, REASON CODES AND MESSAGES <br> (As of Geosupport Software Version 19.2 - <span class="smallText">unchanged since</span> V17.1) </b>
+    <th colspan="4"><b> GEOSUPPORT SYSTEM RETURN CODES, REASON CODES AND MESSAGES <br> (As of Geosupport Software Version 19.3 - <span class="smallText">unchanged since</span> V17.1) </b>
     </th>
   </tr>
   <tr>
@@ -775,7 +775,7 @@ Typically, any function listed with an asterisk also includes the various forms 
     <td>INVALID WTO SWITCH VALUE. MUST BE Y, N, OR BLANK</td>
   </tr>
   <tr>
-    <td rowspan="3">69</td>
+    <td rowspan="3">70</td>
     <td>A</td>
     <td>All but 3,3C <br>COW Only </td>
     <td>AUXSEG REQUEST SWITCH NOT VALID FOR THIS FUNCTION</td>
