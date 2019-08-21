@@ -171,6 +171,8 @@ Citations in brackets are references to sections of the UPG where the given term
 
 <b>NAUB</b> - See <b>Non-addressable Un-named Building</b>
 
+<b>NMF</b> - See <b>Non-Mainframe Environment</b>  
+
 <b>NODE [[Chapter VII.2](/chapters/chapterVII/section02)]:</b> Either a conventional intersection of a street with another street, or a <b>pseudo-intersection</b> of a street with a <b>pseudo-street or where there is a change in a significant geocode such as zip code or a Police Beat..</b>
 
 <b>NODE ID [[Chapter VII.2](/chapters/chapterVII/section02)]:</b> A unique identifier associated with each node in the Geosupport sytem.  The Node ID is sometimes referred to as the Node Number.
@@ -178,6 +180,8 @@ Citations in brackets are references to sections of the UPG where the given term
 <b>NON-ADDRESSABLE PLACE NAME (NAP) [[Chapter III.6](/chapters/chapterIII/section06)]:</b> A place name that is typically not combined with a house number to form an address.  Examples: CITY HALL, EMPIRE STATE BUILDING, PLAZA HOTEL, LINCOLN CENTER, LA GUARDIA AIRPORT.  A NAP can either be the name of a <b>simplex</b>, a <b>complex</b>, or a <b>constituent entity of a complex</b>.  Geosupport’s <b>address-processing functions</b> accept many NAPs as input data
 
 <b>NON-ADDRESSABLE UN-NAMED BUILDING (NAUB) [[Chapter VI.3](/chapters/chapterVI/section03)]:</b> A building that has neither addresses nor <b>NAP</b>s, and can only be identified by its <b>BIN</b>.  Typical example is a  storage shed on the grounds of an industrial property.
+
+<b>NON-MAINFRAME ENVIRONMENT (NMF):</b> The Geosupport System runs in many non-mainframe environments, e.g. Desktop Edition, GeoX, .net, and Linux.
 
 <b>NORMALIZE [[Chapter III.2](/chapters/chapterIII/section02) for street names, [Chapter V.2](/chapters/chapterV/section02) for house numbers]:</b> To produce a version of a data item in a standardized format.  Geosupport normalizes every input geographic feature name into one of two formats selected by the user application, called the <b>compact format</b> and the <b>sort format</b>.  Geosupport also normalizes every input house number.  Geosupport returns output normalized names and house numbers to the calling application in <b>WA1</b>.
 

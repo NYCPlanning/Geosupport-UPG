@@ -5530,12 +5530,49 @@ If the width is consistent along the street segment then both values are identic
       Additional information may be found at the following link:
 
 
-<a target="_blank" href="https://www1.nyc.gov/html/dot/html/motorist/truckrouting.shtml"> Click here for Department of Transportation (DOT} Link. </a>
+<a target="_blank" href="https://www1.nyc.gov/html/dot/html/motorist/truckrouting.shtml"> Click here for the Department of Transportation (DOT} Link. </a>
 <br>
-<br><b>Field name in non-mainframe environment:</b> truck_route_type
-
+<br><b>Field name in non-mainframe environment:</b> <i>truck_route_type</i>
+<br><br>
+The following table indicates the position of the one-byte <i>truck_route_type</i> field in the non-mainframe environment COW Work Area 2.
   </td>  
   </tr>
+  <tr>
+      <td></td>
+      <td>
+          <table class="borderlessTable">
+              <tr>
+                  <th><u>Function</u>
+                  </th>
+                  <th><u>Position</u>
+                  </th>
+              </tr>
+              <tr>
+                  <td>1.1E Extended</td>
+                  <td>761</td>
+              </tr>
+              <tr>
+                  <td>1B</td>
+                  <td>761</td>
+              </tr>
+              <tr>
+                  <td>3 Extended</td>
+                  <td>808</td>
+              </tr>
+              <tr>
+                  <td>3C Extended</td>
+                  <td>564</td>
+              </tr>
+              <tr>
+                  <td>3 Enhanced</td>
+                  <td>354</td>
+              </tr>
+              <tr>
+                  <td>3C Enhanced</td>
+                  <td>354</td>
+              </tr>          </table>
+      </td>
+  </tr>  
 </table>
 
 
