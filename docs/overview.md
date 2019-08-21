@@ -68,7 +68,7 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <u>**IMPORTANT MAINFRAME ANNOUNCEMENT**</u>  
 
-<b>Beginning with this version of Geosupport, viz. V19.3, enhancements to Geosupport (such as new fields and new functions) will be available and supported only for applications running in a non-mainframe environment, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
+<b>Beginning with this version of Geosupport, viz. V19.3, enhancements to Geosupport (such as new fields and new functions) will be available and supported only for applications running in a non-mainframe environment (NMF)</b>, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
 
 It is important for users to convert any existing mainframe applications to a non-mainframe environment.
 
