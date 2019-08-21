@@ -3,7 +3,16 @@
 
 ## <span id="appendix12.1">Introduction</span>
 
-**Important Note: As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to the COW format.**
+<u>**IMPORTANT MAINFRAME ANNOUNCEMENT**</u>  
+
+<b>Beginning with Version 19.3, enhancements to Geosupport (such as new fields and new functions) will be available and supported only for applications running in a non-mainframe environment (NMF), e.g. Desktop Edition, GeoX, .net, and Linux.</b>  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
+
+It is therefore important for users to convert any existing mainframe applications to a non-mainframe environment.
+
+
+Note also, as of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to the COW format, in a non-mainframe environment.
+
+=====================================
 
 This appendix is based on Geosupport System Technical Bulletin 02-01 (dated 15 November 2002) and Geosupport Technical Bulletin 02-01 Addendum (dated 22 November 2002).  It contains information needed to create Geosupport applications using the Character-Only Work Areas (COWs).  Included are the following topics:
 

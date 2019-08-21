@@ -1793,10 +1793,6 @@ See LIST OF CROSS STREET CODES (Function 3S)
               </tr>
               <tr>
                   <td>S</td>
-                  <td>Critical</td>
-              </tr>
-              <tr>
-                  <td>S</td>
                   <td>Sector</td>
               </tr>
               <tr>
@@ -1818,10 +1814,7 @@ See LIST OF CROSS STREET CODES (Function 3S)
     <td></td>
     <td><b>C - Critical Routes:</b> These routes are comprised of highways (main beds, entrances, exits interchanges), arterial roadways, main travel thoroughfares (single lane and multi-lane), bus routes, that contain emergency services & first responder facilities (Hospitals, EMS, FDNY, NYPD) and schools.</td>
   </tr>
-  <tr>
-    <td></td>
-    <td><b>C - Critical Routes:</b> These routes are comprised of highways (main beds, entrances, exits interchanges), arterial roadways, main travel thoroughfares (single lane and multi-lane), bus routes, that contain emergency services & first responder facilities (Hospitals, EMS, FDNY, NYPD) and schools.</td>
-  </tr>
+
   <tr>
     <td></td>
     <td><b>S - Sector Routes:</b> Designed to encompass all streets that are not classified as Critical Streets and are wide enough to accommodate a full size DSNY collection truck with a plow attached.</td>
@@ -3466,7 +3459,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
   <tr>
     <td>Environment:</td>
-    <td>Mode Switch of 'E' is supported only in a non-mainframe environment (NMF).</td>
+    <td>NMF Only - <u>Mode Switch of 'E'</u> is supported only in a non-mainframe environment.</td>
   </tr>
   <tr>
     <td>Work Area Format:</td>
@@ -5475,6 +5468,76 @@ If the width is consistent along the street segment then both values are identic
 </table>
 
 <b>TRAVEL LANES</b> - See NUMBER OF TRAVEL LANES
+
+
+<table class="rightTableAlignment borderlessTable">
+  <tr>
+      <th colspan="2"><b>TRUCK ROUTE TYPE</b></th>
+  </tr>
+  <tr>
+    <td class="widthTD">Functions:</td>
+    <td>1/1E Extended, 1B ,3 Extended, 3C Extended, 3 Enhanced, 3C Enhanced</td>
+  </tr>
+  <tr>
+    <td>Environment:</td>
+    <td>NMF Only - Truck Route Type is supported only in a non-mainframe environment.</td>
+  </tr>
+  <tr>
+    <td>Work Area Format:</td>
+    <td>COW Only</td>
+  </tr>  <tr>
+    <td>Length and Format:</td>
+    <td>1 byte</td>
+  </tr>
+  <tr>
+    <td class="topVerticalTD">Description:</td>
+    <td>This one-byte field indicates the type of truck route that is designated at the requested segment or block face.  </td>
+  </tr>
+  <tr>
+      <td></td>
+      <td>
+          <table class="borderlessTable">
+              <tr>
+                  <th><u>Value</u>
+                  </th>
+                  <th><u>Truck Route Type</u>
+                  </th>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Limited Local Truck Route</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Local Truck Route</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Through Truck Route</td>
+              </tr>
+          <tr>
+                  <td>Blank</td>
+                  <td>Non-Designated Route (default)</td>
+              </tr>
+          </table>
+      </td>
+  </tr>
+  <tr>
+      <td></td>
+      <td>The <b>Local Truck Route</b> Network is designated for trucks with an origin and destination within a borough. This includes trucks that are traveling to make a delivery, or for loading or servicing. Trucks should only use <b>Non-Designated routes</b> at the beginning or end of a trip, when traveling between their origin/destination and a truck route.  <br><br>
+      The <b>Through Truck Route</b> Network is primarily composed of major urban arterials and highways and must be used by trucks that have neither an origin or destination within the borough.<br></br>
+      Manhattan and Staten Island contain <b>Limited Truck</b> Zones with special time and size restrictions.  <br><br>
+      Additional information may be found at the following link:
+
+
+<a target="_blank" href="https://www1.nyc.gov/html/dot/html/motorist/truckrouting.shtml"> Click here for Department of Transportation (DOT} Link. </a>
+<br>
+<br><b>Field name in non-mainframe environment:</b> truck_route_type
+
+  </td>  
+  </tr>
+</table>
+
 
 ## U
 
