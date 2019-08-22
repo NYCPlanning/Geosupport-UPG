@@ -118,9 +118,14 @@
     <td class="indentRows"><a href="../chapters/chapterII/section11">II.11 The Auxiliary Segment Option (COW Only)</a></td>
     <td>89</td>
   </tr>
+
   <tr>
-    <td class="indentRows"><a href="../chapters/chapterII/section08">II.12 The Extended Work Area 2 Option- via Mode Switch(COW Only)</a></td>
+    <td class="indentRows"><a href="../chapters/chapterII/section12">II.12 The Extended Work Area 2 Option- via Mode Switch (COW Only)</a></td>
     <td>89</td>
+  </tr>
+  <tr>
+    <td class="indentRows"><a href="../chapters/chapterII/section13">II.13 The Enhanced Work Area 2 Option- via Mode Switch (NMF Only)</a></td>
+    <td>91</td>
   </tr>
   <!-- ==================================================================================== -->
   <tr>
