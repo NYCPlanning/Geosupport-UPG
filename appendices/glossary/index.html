@@ -163,7 +163,11 @@
                   </li>
                   <li class="" >
                       
-    <a class="" href="../../chapters/chapterII/section12/">II.12 The Auxiliary Segment Option (COW Only)</a>
+    <a class="" href="../../chapters/chapterII/section12/">II.12 The Extended Work Area 2 Option (COW Only)</a>
+                  </li>
+                  <li class="" >
+                      
+    <a class="" href="../../chapters/chapterII/section13/">II.13 The Enhanced Work Area 2 Option (NMF Only)</a>
                   </li>
     </ul>
 	    </li>
@@ -896,10 +900,12 @@
 <h2 id="n">N</h2>
 <p><b>NAP</b> - See <b>Non-addressable Place Name</b></p>
 <p><b>NAUB</b> - See <b>Non-addressable Un-named Building</b></p>
+<p><b>NMF</b> - See <b>Non-Mainframe Environment</b>  </p>
 <p><b>NODE [<a href="../../chapters/chapterVII/section02">Chapter VII.2</a>]:</b> Either a conventional intersection of a street with another street, or a <b>pseudo-intersection</b> of a street with a <b>pseudo-street or where there is a change in a significant geocode such as zip code or a Police Beat..</b></p>
 <p><b>NODE ID [<a href="../../chapters/chapterVII/section02">Chapter VII.2</a>]:</b> A unique identifier associated with each node in the Geosupport sytem.  The Node ID is sometimes referred to as the Node Number.</p>
 <p><b>NON-ADDRESSABLE PLACE NAME (NAP) [<a href="../../chapters/chapterIII/section06">Chapter III.6</a>]:</b> A place name that is typically not combined with a house number to form an address.  Examples: CITY HALL, EMPIRE STATE BUILDING, PLAZA HOTEL, LINCOLN CENTER, LA GUARDIA AIRPORT.  A NAP can either be the name of a <b>simplex</b>, a <b>complex</b>, or a <b>constituent entity of a complex</b>.  Geosupport’s <b>address-processing functions</b> accept many NAPs as input data</p>
 <p><b>NON-ADDRESSABLE UN-NAMED BUILDING (NAUB) [<a href="../../chapters/chapterVI/section03">Chapter VI.3</a>]:</b> A building that has neither addresses nor <b>NAP</b>s, and can only be identified by its <b>BIN</b>.  Typical example is a  storage shed on the grounds of an industrial property.</p>
+<p><b>NON-MAINFRAME ENVIRONMENT (NMF):</b> The Geosupport System runs in many non-mainframe environments, e.g. Desktop Edition, GeoX, .net, and Linux.</p>
 <p><b>NORMALIZE [<a href="../../chapters/chapterIII/section02">Chapter III.2</a> for street names, <a href="../../chapters/chapterV/section02">Chapter V.2</a> for house numbers]:</b> To produce a version of a data item in a standardized format.  Geosupport normalizes every input geographic feature name into one of two formats selected by the user application, called the <b>compact format</b> and the <b>sort format</b>.  Geosupport also normalizes every input house number.  Geosupport returns output normalized names and house numbers to the calling application in <b>WA1</b>.</p>
 <h2 id="o">O</h2>
 <p><b>OUT-OF-SEQUENCE ADDRESS [<a href="../../chapters/chapterV/section10">Chapter V.10</a>]:</b> An address such that the house number is out of sequence relative to nearby house numbers along the given street.  For an input out-of-sequence address, the output information that Functions 1 and 1E return is based on the street segment where the out-of-sequence address is actually located, including the cross streets and geographic district identifiers.   The Spatial Coordinates returned are those of a point calculated under the assumption that the building entrance is located at the midpoint of the blockface.  A warning is issued for any address on a blockface containing an out-of-sequence address.</p>
