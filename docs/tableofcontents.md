@@ -1316,7 +1316,7 @@
   </tr>
   <!-- ======================================================================= -->
   <tr>
-    <td><b><a href="../appendices/appendix18">APPENDIX 18: GeoExcel Application</a></b></td>
+    <td><b><a href="../appendices/appendix18">APPENDIX 18: RESERVED FOR FUTURE USE</a></b></td>
     <td>1622</td>
   </tr>
   <!-- ======================================================================= -->

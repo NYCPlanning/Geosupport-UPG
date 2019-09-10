@@ -375,7 +375,7 @@ The following is a table of the Preferred Unit Types and the Alternate Types tha
 
  * Input: Field labeled <pre class="preInline"> 'Unit'</pre> is available for input data.  
 
- * Output: Field labeled <pre class="preInline"> 'Norm Unit Disp' displays the Normalized Display Format
+ * Output: Field labeled <pre class="preInline"> 'Norm Unit Disp'</pre> displays the Normalized Display Format
   Unit Output field.  
 
 
@@ -428,8 +428,6 @@ The following is a table of the Preferred Unit Types and the Alternate Types tha
     * Mainframe GOAT	CICS	(Functions 1A and 1B)  
 
     * Desktop Edition GBAT	(Functions 1A and 1B)!  
-
-    * GeoExcel 2013  
 
     * Web GOAT  
 

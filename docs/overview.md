@@ -57,7 +57,7 @@ Note: Entries in this summary which begin with **‘(COW Only)’** describe cha
 **Note: As of Version 19.3, Geosupport enhancements will be supported only in a non-mainframe environment (NMF).   See the mainframe announcement below in the Version 19.3 section.**  As a result of this announcement, entries in this summary will now often begin with **'(NMF Only)'**. By definition, all non-mainframe environment applications are COW applications.  (MSW applications cannot run in a non-mainframe environment.)
 
 
-Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) , GeoX, .net, Linux and as a Microsoft Office VSTO add-in (GeoExcel).  For a detailed description of the COWs, see [Appendix 12](/appendices/appendix12/).
+Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) , GeoX, .net, and Linux.  For a detailed description of the COWs, see [Appendix 12](/appendices/appendix12/).
 
 Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** and **WA2**, respectively.
 
