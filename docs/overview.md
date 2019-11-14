@@ -45,16 +45,16 @@ Note: Since the geography of New York City is constantly growing and changing, a
 
 
 ## **Summary of Changes and New Features**
-The updates listed below indicate changes and new features since the last release of the _User Programming Guide_ (written for Software Version 19.2).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.
+The updates listed below indicate changes and new features since the last release of the _User Programming Guide_ (written for Software Version 19.3).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.
 
 Note: Entries in this summary which begin with **‘(COW Only)’** describe changes and features which are available only for applications that use the Character-Only Work Areas (COWs).  Character-Only Work Areas are described in [Appendix 12](/appendices/appendix12/).  To take advantage of the full functionality of Geosupport, applications need to be written using the Character-Only Work Areas (COWs).
 
 **Character-Only Work Areas (COWs)**, as the name implies, contain character fields only.  The Geosupport work areas that have long been in use are called the **Mainframe-Specific Work Areas (MSWs)**.  
 
-**Note: As of January 1, 2020, MSWs will no longer be supported.  See the updated MSW announcement below in the Version 19.3 section.**
+**Reminder - Note: As of January 1, 2020, MSWs will no longer be supported.  See the updated MSW announcement below in the Version 19.4 section.**
 
 
-**Note: As of Version 19.3, Geosupport enhancements will be supported only in a non-mainframe environment (NMF).   See the mainframe announcement below in the Version 19.3 section.**  As a result of this announcement, entries in this summary will now often begin with **'(NMF Only)'**. By definition, all non-mainframe environment applications are COW applications.  (MSW applications cannot run in a non-mainframe environment.)
+**Reminder - Note: As of Version 19.3, Geosupport enhancements are supported only in a non-mainframe environment (NMF).   See the mainframe announcement below in the Version 19.4 section.**  As a result of this announcement, entries in this summary often begin with **'(NMF Only)'**. By definition, all non-mainframe environment applications are COW applications.  (MSW applications cannot run in a non-mainframe environment.)
 
 
 Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) , GeoX, .net, and Linux.  For a detailed description of the COWs, see [Appendix 12](/appendices/appendix12/).
@@ -64,24 +64,24 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <p>--------------------</p>
 
-## Version 19.3
+## Version 19.4
 
-<u>**IMPORTANT MAINFRAME ANNOUNCEMENT**</u>  
+<u>**IMPORTANT MAINFRAME ANNOUNCEMENT (Reminder)**</u>  
 
-<b>Beginning with this version of Geosupport, viz. V19.3, enhancements to Geosupport (such as new fields and new functions) will be available and supported only for applications running in a non-mainframe environment (NMF)</b>, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
+<b>As of Geosupport Version 19.3, enhancements to Geosupport (such as new fields and new functions) are being made available and supported <u>only</u> for applications running in a non-mainframe environment (NMF)</b>, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
 
-It is important for users to convert any existing mainframe applications to a non-mainframe environment.
+It is important for users to convert any existing applications to a COW format in a non-mainframe environment.
 
-<u>**IMPORTANT UPDATED MSW ANNOUNCEMENT**</u>  
+<u>**IMPORTANT UPDATED MSW ANNOUNCEMENT (Reminder)**</u>  
 
 **As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.**  Character-Only Work Areas (COWs) will continue to be supported.  As mentioned above, COWs will be enhanced only in a non-mainframe environment.  It is important for users to convert any existing MSW applications to the COW format in a non-mainframe environment.
 
 User-written application programs and GBAT utilities that use the MSW format will continue to run for a period of time after January 1, 2020, but no technical support will be available.  If an issue arises, users will not be able to call DCP for resolution.
 
 To assist users in the conversion to COW format:  
-   *  a. [Appendix 12](/appendices/appendix12/) contains information needed to create COW applications.    
-   *  b. [Appendix 13](/appendices/appendix13/) contains the COW Work Area Layouts.  
-   *  c. [Appendix 14](/appendices/appendix14/) contains the COW copy files.   
+   *  [Appendix 12](/appendices/appendix12/) contains information needed to create COW applications.    
+   *  [Appendix 13](/appendices/appendix13/) contains the COW Work Area Layouts.  
+   *  [Appendix 14](/appendices/appendix14/) contains the COW copy files.   
 
 Any further issues may be directed via email to: GSS_Software@planning.nyc.gov
 
@@ -91,29 +91,20 @@ Any further issues may be directed via email to: GSS_Software@planning.nyc.gov
 <br>
     * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
 
-<u>**SYSTEM ENHANCEMENTS IMPLEMENTED IN VERSION 19.3**</u>
+<u>**SYSTEM ENHANCEMENTS IMPLEMENTED IN VERSION 19.4**</u>
 
-**Note: All V19.3 / R19C enhancements are available and supported in COW non-mainframe environments (NMF) only.**
+**Note: All V19.4 / R19D enhancements are available and supported in COW non-mainframe environments (NMF) only.**
 
-* **(NMF Only) One new field is returned by Geosupport**  
+* **(Web GOAT) Fine tuning and bug fixes were implemented**  
 
-    * <b>Truck Route Type</b>  
-The possible route types are 'local', limited local' and 'through'.  
-  (Functions 1/1E Extended, 1B, 3 Extended, 3C Extended, 3 Enhanced, 3C Enhanced)  
-  The new field is described in  [Appendix 3](/appendices/appendix03/).  
+    * <b>Function 3 displays the B7SC and Nme of the Low End and High End Cross Streets</b>
+<br>
+<br>
+    * <b>Function 3 displays the Truck Route Type even when information on only one side of the street is requested.</b>  
+
 <br>
 <br>  
 
-* **(NMF Only)  New Mode Switch of E (Enhanced) for Functions 3 and 3C supports B7SCs.**  
-  •	The new mode supports and returns more B7SCs (Borough and 7-digit street codes) instead of B5SCs.  
-  •	The mode E functions are referred to as Function 3 Enhanced (or 3E) and Function 3C Enhanced (or 3CE).
-<br>
-<br>  
-
-* **System fine-tuning and bug fixes were implemented**  
-  •	Function 3 returns more precise results.  
-    Segments that previously were rejected are now accepted.  
-    (All COW Function 3 related calls)
 
 
 

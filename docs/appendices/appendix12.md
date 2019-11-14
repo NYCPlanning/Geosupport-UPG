@@ -5,7 +5,7 @@
 
 <u>**IMPORTANT MAINFRAME ANNOUNCEMENT**</u>  
 
-<b>Beginning with Version 19.3, enhancements to Geosupport (such as new fields and new functions) will be available and supported only for applications running in a non-mainframe environment (NMF), e.g. Desktop Edition, GeoX, .net, and Linux.</b>  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
+<b>Beginning with Version 19.3, enhancements to Geosupport (such as new fields and new functions) are made available and supported only for applications running in a non-mainframe environment (NMF), e.g. Desktop Edition, GeoX, .net, and Linux.</b>  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
 
 It is therefore important for users to convert any existing mainframe applications to a non-mainframe environment.
 
