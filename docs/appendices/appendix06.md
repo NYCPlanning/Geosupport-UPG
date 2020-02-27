@@ -18,6 +18,6 @@ Feedback materials and inquiries about feedback procedures should be submitted t
 
 Email: <u style="color:blue">GSS_Feedback@planning.nyc.gov</u>  
 
-Email is the preferred mode of communication.  If email is not feasible, feedback may be submitted to: Manager of Gegraphic Reserach, Department fo City Planning 120 Broadway, 31<sup>st</sup>Floor New York, New York 10271 Phone:	(212)720-3441 FAX: (212)720-3488  
+Email is the preferred mode of communication.  If email is not feasible, feedback may be submitted to: Manager of Geographic Research, Department of City Planning 120 Broadway, 31<sup>st</sup>Floor New York, New York 10271 Phone:	(212)720-3441 FAX: (212)720-3488  
 
-Software issues may be directed to: Email: <u style="color:blue">GSS_Software@planning.nyc.gov</u>
+Software issues may be directed to: Email: <u style="color:blue">Geosupport_DL@planning.nyc.gov</u>

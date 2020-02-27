@@ -6,11 +6,11 @@
 
 
 ## <span id="apppendix02.01"><center>IMPORTANT MSW / COW ANNOUNCEMENT</center></span>
-## <span id="apppendix02.02"><center>SUPPORT FOR MSW WORK AREAS IS ENDING AS OF JANUARY 1, 2020</center></span>
+## <span id="apppendix02.02"><center>SUPPORT FOR MSW WORK AREAS ENDED ON JANUARY 1, 2020</center></span>
 
-**As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.**    **Also, as of Version 19.3, <u>COW Work Areas are no longer enhanced in the mainframe environment</u>.**  It is therefore <u>important for users to convert all existing MSW applications to the COW format in a non-mainframe environment</u>.  
+**As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) are no longer supported.**    **Also, as of Version 19.3, <u>COW Work Areas are no longer enhanced in the mainframe environment</u>.**  It is therefore <u>important for users to convert all existing MSW applications to the COW format in a non-mainframe environment</u>.  
 
-User-written application programs and GBAT utilities that use the MSW format will continue to run for a period of time after January 1, 2020, but no technical support will be available.  If an issue arises, users will not be able to call DCP for resolution.
+User-written application programs and GBAT utilities that use the MSW format may continue to run but no technical support will be available.  **If an MSW issue arises, users can no longer call DCP for resolution.**
 
 To assist users in the conversion to COW format:  
 
@@ -18,12 +18,12 @@ To assist users in the conversion to COW format:
    *  [Appendix 13](/appendices/appendix13/) contains the COW Work Area Layouts.  
    *  [Appendix 14](/appendices/appendix14/) contains the COW copy files.   
 
-Any further issues may be directed via email to: GSS_Software@planning.nyc.gov
+Any further issues may be directed via email to: Geosupport_DL@planning.nyc.gov
 
 
 ## <span id="apppendix02.03">Appendix 2 Begins</span>
 
-This appendix contains layouts of all of the work MSW areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  
+This appendix contains layouts of all of the work MSW areas used with the Geosupport System’s API.  As of January 1, 2020, these layouts are no longer supported.  
 
 Some Geosupport functions can only be called using one work area, Work Area 1 (WA1). Other functions can be called using two work areas, WA1 and Work Area 2 (WA2).  For a discussion of one-work-area and two-work-area calls, [see Chapter II.4](/chapters/chapterII/section04/).  WA1 contains both input fields (fields used to pass data from the application to Geosupport) and output fields (fields used to pass data from Geosupport to the application).  WA1 is organized so that the input fields occur first, followed by a filler, followed by the output fields.  WA2 contains output fields only.
 

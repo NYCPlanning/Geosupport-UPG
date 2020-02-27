@@ -21,7 +21,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Appendix 13: Character-Only Work Area LAYOUTS (COW)";
-    var mkdocs_page_input_path = "appendices\\appendix13.md";
+    var mkdocs_page_input_path = "appendices/appendix13.md";
     var mkdocs_page_url = "/appendices/appendix13/";
   </script>
   
@@ -824,7 +824,7 @@
               
                 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
 
-<h6><center>(as of Geosupport System Software Version 19.4 - <span class="smallText">Layouts unchanged since</span> V19.2)</center></h6>
+<h6><center>(as of Geosupport System Software Version 20.1 - <span class="smallText">Layouts unchanged since</span> V19.2)</center></h6>
 
 <p>This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup></p>
 <p>Beginning with Geosupport Version 19.3, all new COW fields and functions are supported  only in non-mainframe environments, e.g. Desktop Edition, GeoX, .net, and Linux.  The new fields and functions will not appear in these layouts.</p>
@@ -833,7 +833,8 @@
 <p>The functions that can be called using two work areas use various WA2 layouts of various lengths.  In some cases, several functions share a single WA2 layout.  For functions 1A and BL, the user has a choice of two WA2 layouts, a ‘regular’ WA2 and a ‘long’ WA2.</p>
 <p>The majority of the COW fields are identical to the MSW (Mainframe-Specific Work Area) fields.</p>
 <p><a href="../../appendices/appendix03/">Appendix 3</a> consists of a data item dictionary describing the fields that occur in the work areas.</p>
-<p><a href="../../appendices/appendix12/">Appendix 12</a> describes the differences between the COWs and MSWs.</p>
+<p><a href="../../appendices/appendix12/">Appendix 12</a> describes the differences between the COWs and MSWs.
+Note that as of January 1, 2020, MSWs are no longer supported.</p>
 <p>The Geosupport Character-Only work areas (COWs) contain no packed decimal or binary fields; all fields are character.  The work areas are divided into logical groups. For example work area 1 is divided into three parts; namely,</p>
 <ul>
 <li>Input information from user</li>
@@ -845,7 +846,7 @@
 <p>The following is a list of all of the Geosupport COW work areas, indicating the length of each in bytes.  Functions that are listed together share a single Work Area 2 layout.  </p>
 <p>____________________________</p>
 
-<p><a href="#section13.18-18"><span id="section13.18"><sup>18</sup></span></a>The mainframe version of Geosupport supports both the Character-Only Work Area (COW) format and the Mainframe-Specific Work Area (MSW (a.k.a. MFS)) format.  The layout of the MSWs is in <a href="../../appendices/appendix02/">Appendix 2</a>.  </p>
+<p><a href="#section13.18-18"><span id="section13.18"><sup>18</sup></span></a>The mainframe version of Geosupport supports the Character-Only Work Area (COW) format.  Note that as of January 1, 2020 the Mainframe-Specific Work Area (MSW (a.k.a. MFS)) format is no longer supported.  The layout of the MSWs is in <a href="../../appendices/appendix02/">Appendix 2</a>.  </p>
 <p>The following is a list of all of the Geosupport COW work areas, indicating the length of each in bytes.  Functions that are listed together share a single Work Area 2 layout.</p>
 <table class="borderlessTable rightTableAlignment">
   <tr>
@@ -1685,7 +1686,7 @@
 <p><a href="#section13.20-20"><span id="section13.20"><sup>20</sup></span></a> The Low House Number fields are for Internal Use (Fn 5).  In addition the low House Number in Sort Format can be used with Functions D*.</p>
 <p><a href="#section13.21-21"><span id="section13.21"><sup>21</sup></span></a> The user may supply either a 5-Digit, 7-Digit or 10-Digit Street code in this field.  The contents are to be left-justified and blank-filled.  </p>
 <p><a href="#section13.22-22"><span id="section13.22"><sup>22</sup></span></a> When using street name input, the second and third borough codes are required only if they differ from the first.</p>
-<p><a href="#section13.23-23"><span id="section13.23"><sup>23</sup></span></a> When this indicator, also known as the Platform Indicator, is set to C or P, the Character-Only formats of the work areas (i.e., the formats documented herein) are used.  A blank in this indicator means that the IBM mainframe specific work areas, known as MSW (a.k.a. MFS), are used.</p>
+<p><a href="#section13.23-23"><span id="section13.23"><sup>23</sup></span></a> When this indicator, also known as the Platform Indicator, is set to C or P, the Character-Only formats of the work areas (i.e., the formats documented herein) are used.  A blank in this indicator means that the IBM mainframe specific work areas, known as MSW (a.k.a. MFS), are used.  Note that as of January 1, 2020, MSWs are no longer supported.  </p>
 <p><a href="#section13.24-24"><span id="section13.24"><sup>24</sup></span></a> If the house number is to be right justified, the House Number Justification Flag is set to R and if the house number is to be left justified, the House Number Justification Flag is set to L or left blank.</p>
 <p><a href="#section13.25-25"><span id="section13.25"><sup>25</sup></span></a> The House Number Normalization Length field is used to achieve compatibility between the Main Frame Specific (MSW) work areas and the COWs.  In the COWs, the House Number is permitted to be 16 characters, but, in the MSW, it is limited to 12 characters.  It is not anticipated that users will make use of this field.  </p>
 <p><a href="#section13.26-26"><span id="section13.26"><sup>26</sup></span></a> This field, Street Name Normalization Format Flag, was formerly known as the Compact Option.  If the Street Name Normalization Format Flag is set to S or blank, then the street name is returned in sort format.  If it is set to C, then the street name is returned in compact format.</p>

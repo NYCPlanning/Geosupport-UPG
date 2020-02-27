@@ -1,5 +1,5 @@
 <h2 class="pdfAppendix"><center>APPENDIX 13:  CHARACTER-ONLY WORK AREA LAYOUTS (COW)</center></h2>
-<h6><center>(as of Geosupport System Software Version 19.4 - <span class="smallText">Layouts unchanged since</span> V19.2)</center></h6>
+<h6><center>(as of Geosupport System Software Version 20.1 - <span class="smallText">Layouts unchanged since</span> V19.2)</center></h6>
 
 
 This appendix contains layouts of all of the COW work areas used with the Geosupport System’s API.  These layouts are current as of the Geosupport software version indicated above.  The layouts are in the Character-Only Work Area (COW) format.<sup><a href="#section13.18" id="section13.18-18">18</a></sup>
@@ -17,7 +17,7 @@ The majority of the COW fields are identical to the MSW (Mainframe-Specific Work
 [Appendix 3](/appendices/appendix03/) consists of a data item dictionary describing the fields that occur in the work areas.
 
 [Appendix 12](/appendices/appendix12/) describes the differences between the COWs and MSWs.
-
+Note that as of January 1, 2020, MSWs are no longer supported.
 
 The Geosupport Character-Only work areas (COWs) contain no packed decimal or binary fields; all fields are character.  The work areas are divided into logical groups. For example work area 1 is divided into three parts; namely,
 
@@ -34,7 +34,7 @@ The following is a list of all of the Geosupport COW work areas, indicating the 
 
 
 <p>____________________________</p>
-<a href="#section13.18-18"><span id="section13.18"><sup>18</sup></span></a>The mainframe version of Geosupport supports both the Character-Only Work Area (COW) format and the Mainframe-Specific Work Area (MSW (a.k.a. MFS)) format.  The layout of the MSWs is in [Appendix 2](/appendices/appendix02/).  
+<a href="#section13.18-18"><span id="section13.18"><sup>18</sup></span></a>The mainframe version of Geosupport supports the Character-Only Work Area (COW) format.  Note that as of January 1, 2020 the Mainframe-Specific Work Area (MSW (a.k.a. MFS)) format is no longer supported.  The layout of the MSWs is in [Appendix 2](/appendices/appendix02/).  
 
 The following is a list of all of the Geosupport COW work areas, indicating the length of each in bytes.  Functions that are listed together share a single Work Area 2 layout.
 
@@ -887,7 +887,7 @@ Typically, any function listed with an asterisk also includes the various forms 
 
 <a href="#section13.22-22"><span id="section13.22"><sup>22</sup></span></a> When using street name input, the second and third borough codes are required only if they differ from the first.
 
-<a href="#section13.23-23"><span id="section13.23"><sup>23</sup></span></a> When this indicator, also known as the Platform Indicator, is set to C or P, the Character-Only formats of the work areas (i.e., the formats documented herein) are used.  A blank in this indicator means that the IBM mainframe specific work areas, known as MSW (a.k.a. MFS), are used.
+<a href="#section13.23-23"><span id="section13.23"><sup>23</sup></span></a> When this indicator, also known as the Platform Indicator, is set to C or P, the Character-Only formats of the work areas (i.e., the formats documented herein) are used.  A blank in this indicator means that the IBM mainframe specific work areas, known as MSW (a.k.a. MFS), are used.  Note that as of January 1, 2020, MSWs are no longer supported.  
 
 <a href="#section13.24-24"><span id="section13.24"><sup>24</sup></span></a> If the house number is to be right justified, the House Number Justification Flag is set to R and if the house number is to be left justified, the House Number Justification Flag is set to L or left blank.
 

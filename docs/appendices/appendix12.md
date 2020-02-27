@@ -3,14 +3,14 @@
 
 ## <span id="appendix12.1">Introduction</span>
 
-<u>**IMPORTANT MAINFRAME ANNOUNCEMENT**</u>  
+<u>**IMPORTANT MAINFRAME, COW AND MSW ANNOUNCEMENTS**</u>  
 
-<b>Beginning with Version 19.3, enhancements to Geosupport (such as new fields and new functions) are made available and supported only for applications running in a non-mainframe environment (NMF), e.g. Desktop Edition, GeoX, .net, and Linux.</b>  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
+<b>Beginning with Version 19.3, enhancements to Geosupport (such as new fields and new functions) are made available and supported only for Character-Only Work Area (COW) applications running in a non-mainframe environment (NMF), e.g. Desktop Edition, GeoX, .net, and Linux.</b>  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  
 
 It is therefore important for users to convert any existing mainframe applications to a non-mainframe environment.
 
 
-Note also, as of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to the COW format, in a non-mainframe environment.
+<b>Note also that as of January 1, 2020, Mainframe-Specific Work Areas (MSWs) are no longer  supported.  It is therefore essential that users convert their MSW applications to the COW format, in a non-mainframe environment.</b>
 
 =====================================
 
@@ -37,11 +37,11 @@ Notes:
 
 Standard work areas with pre-defined layouts are used to pass data between the Geosupport System and user-developed application programs.  The same work areas are also used by GBAT, the Geosupport batch utility program, to pass data to and from Geosupport.
 
-The Geosupport work areas that have long been in use are called the <u>Mainframe-Specific Work Areas (MSWs)</u>.  Most of the MSWs contain one or more packed decimal fields, a data encoding schema unique to IBM mainframes.  This appendix discusses an alternative set of Geosupport work areas called the <u>Character-Only Work Areas (COWs)</u> which, as the name implies, contain character fields only.  The introduction of the COW is an essential part of a long-term effort to port the Geosupport System to other platforms.
+The Geosupport work areas that have long been in use are called the <u>Mainframe-Specific Work Areas (MSWs)</u>.  Note that, as mentoined above, as of January 1, 2020, the MSWs are no londer supported.  Most of the MSWs contain one or more packed decimal fields, a data encoding schema unique to IBM mainframes.  This appendix (Appendix 12) discusses an alternative set of Geosupport work areas called the <u>Character-Only Work Areas (COWs)</u> which, as the name implies, contain character fields only.  The introduction of the COW was an essential part of a long-term effort to port the Geosupport System to other platforms.
 
 Each specific Geosupport work area (for example, Work Area 2 for Function 3S) has both a COW version and an MSW version.  User-written application programs running on mainframes now have the option to use either set of work areas when making calls to Geosupport.  GBAT users can also specify the use of either set of work areas.
 
-<b>From now on, all new applications should be designed to use the COWs.</b>  We also recommend that <b>all existing applications be converted to use the COWs.</b>  Although the MSWs will continue to be supported, as of some future date (not yet determined), only the COWs will be enhanced with new data items and functionality.  Eventually, the MSWs may be de-supported.  
+<b>Since MSWs are no longer supported, all new applications must be designed to use the COWs.</b>  We strongly recommend that <b>all existing applications be converted to use the COWs.</b>  Although the MSW applications may continue to run, no technical support will be available.  **If an MSW issue arises, users can no longer call DCP for resolution.** Only the COWs running in a non-mainframe environment are being enhanced and supported with new data items and functionality.   
 
 ## <span id="appendix12.3">Comparison of COWs and MSWs</span>
 

@@ -8,6 +8,8 @@
   "dependencies": {
     "md-to-pdf": "^1.1.0",
     "mktoc": "^1.0.10",
+    "phantom": "^6.3.0",
+    "phantomjs": "^2.1.7",
     "remarkable-classy": "0.0.1",
     "split": "^1.0.0"
   },
