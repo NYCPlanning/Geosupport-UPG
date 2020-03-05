@@ -21,7 +21,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "VIII.2 Review of the Geosupport API";
-    var mkdocs_page_input_path = "chapters\\chapterVIII\\section02.md";
+    var mkdocs_page_input_path = "chapters/chapterVIII/section02.md";
     var mkdocs_page_url = "/chapters/chapterVIII/section02/";
   </script>
   
@@ -790,7 +790,7 @@
 <p>In batch applications, the user JCL for the execute step must include JOBLIB or STEPLIB DD statements for the load libraries that contain the Geosupport foreground software.  <a href="../../chapterVIII/section08">Chapter VIII.8</a> describes the JCL required for batch execution, and <a href="../../../appendices/appendix08/">Appendix 8</a> contains examples.</p>
 <h2 id="important-note-for-cics-applications-written-in-natural"><span id="chapterVIII.2.1"><u>Important note for CICS applications written in NATURAL:</u></span></h2>
 <p>In order for Geosupport’s CICS driver to be able to pass control to the Geosupport foreground software properly, the driver must determine whether the user program is written in NATURAL.  (This is necessary because NATURAL programs make non-standard program calls in the CICS environment.  In a standard call, the address of the parameter list is passed in Register 1.  Programs written in COBOL, Assembler, PL/1 and C generate standard calls.  However, CICS NATURAL programs use Register 1 for a different purpose.  Therefore, for NATURAL programs only, the Geosupport CICS driver uses the Transaction Work Area instead of Register 1 to pass the addresses of the work areas to Geosupport.)  </p>
-<p>The Geosupport CICS driver determines whether the calling program is a NATURAL program by examining an internal Geosupport table that contains the transaction-IDs of all applications written in NATURAL.  If the transaction-ID of a CICS NATURAL program is not in that table, the transaction will terminate abnormally when attempting to call Geosupport.  At DoITT, the updating of the Geosupport NATURAL transaction-ID table is the responsibility of DoITT staff.  Therefore, <u>DoITT users developing new CICS applications written in NATURAL must make a request to the appropriate DoITT staff to enter the new transaction-IDs into the Geosupport table</u>.   NATURAL CICS users running at other computer centers should contact GSS at GSS_Software@planning.nyc.gov.</p>
+<p>The Geosupport CICS driver determines whether the calling program is a NATURAL program by examining an internal Geosupport table that contains the transaction-IDs of all applications written in NATURAL.  If the transaction-ID of a CICS NATURAL program is not in that table, the transaction will terminate abnormally when attempting to call Geosupport.  At DoITT, the updating of the Geosupport NATURAL transaction-ID table is the responsibility of DoITT staff.  Therefore, <u>DoITT users developing new CICS applications written in NATURAL must make a request to the appropriate DoITT staff to enter the new transaction-IDs into the Geosupport table</u>.   NATURAL CICS users running at other computer centers should contact the Citywide Geo Application Services group at Geosupport_DL@planning.nyc.gov.</p>
               
             </div>
           </div>

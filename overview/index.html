@@ -78,7 +78,7 @@
     <li class="toctree-l2"><a href="#summary-of-changes-and-new-features">Summary of Changes and New Features</a></li>
     
 
-    <li class="toctree-l2"><a href="#version-194">Version 19.4</a></li>
+    <li class="toctree-l2"><a href="#version-201">Version 20.1</a></li>
     
 
     </ul>
@@ -787,10 +787,10 @@
 </li>
 <li><a href="../chapters/chapterIX/chapterIX/">Chapter IX</a> discusses GBAT, Geosupport’s standalone batch utility program.  </li>
 <li><a href="../appendices/appendix01/">Appendix 1</a> contains summary reference information for each Geosupport function, including a brief description of the function and reference to relevant sections of the UPG.  </li>
-<li><a href="../appendices/appendix02/">Appendix 2</a> contains layouts of the Geosupport API Mainframe-Specific Work Areas (MSWs).  </li>
+<li><a href="../appendices/appendix02/">Appendix 2</a> contains layouts of the Geosupport API Mainframe-Specific Work Areas (MSWs).  Note: MSWs are no longer supported.  </li>
 <li><a href="../appendices/appendix03/">Appendix 3</a> is a data item dictionary, containing descriptions of the formats and contents of all of the data items that appear in the work area.  </li>
 <li><a href="../appendices/appendix04/">Appendix 4</a> is a comprehensive table of Geosupport Return Codes, Reason Codes and Messages.  </li>
-<li><a href="../appendices/appendix05/">Appendix 5</a> contains listings of the MSW Geosupport COPY files for all of the programming languages supported by the Geosupport COPY feature.  (This important feature is discussed in <a href="../chapters/chapterVIII/chapterVIII/">Chapter VIII</a>.)  </li>
+<li><a href="../appendices/appendix05/">Appendix 5</a> contains listings of the MSW Geosupport COPY files for all of the programming languages supported by the Geosupport COPY feature.  (This important feature is discussed in <a href="../chapters/chapterVIII/chapterVIII/">Chapter VIII</a>.) Note: MSWs are no longer supported.</li>
 <li><a href="../appendices/appendix06/">Appendix 6</a> describes the procedures that users should follow to report Geosupport System problems and to provide feedback to GSS of rejected input data that the user is unable to resolve.  </li>
 <li><a href="../appendices/appendix07/">Appendix 7</a> is a list of the data centers where Geosupport is installed.  </li>
 <li><a href="../appendices/appendix08/">Appendix 8</a> contains sample user programs written in various programming languages together with sample JCL.  </li>
@@ -808,46 +808,52 @@
 <p>Appendices 1 through 5, together with Appendices 13 and 14 (for COW Work Areas), collectively can serve as a quick reference guide for experienced Geosupport users.</p>
 <p>Note: Since the geography of New York City is constantly growing and changing, any examples mentioned in this document may, occasionally, function differently from the way they are described.  The examples will, in any case, illustrate the concept being discussed.</p>
 <h2 id="summary-of-changes-and-new-features"><strong>Summary of Changes and New Features</strong></h2>
-<p>The updates listed below indicate changes and new features since the last release of the <em>User Programming Guide</em> (written for Software Version 19.3).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.</p>
+<p>The updates listed below indicate changes and new features since the last release of the <em>User Programming Guide</em> (written for Software Version 19.4).  Some of the changes and features are described elsewhere in the UPG; other changes are mentioned only in this summary to make users aware of items such as general improvements or items displayed by GOAT.</p>
 <p>Note: Entries in this summary which begin with <strong>‘(COW Only)’</strong> describe changes and features which are available only for applications that use the Character-Only Work Areas (COWs).  Character-Only Work Areas are described in <a href="../appendices/appendix12/">Appendix 12</a>.  To take advantage of the full functionality of Geosupport, applications need to be written using the Character-Only Work Areas (COWs).</p>
-<p><strong>Character-Only Work Areas (COWs)</strong>, as the name implies, contain character fields only.  The Geosupport work areas that have long been in use are called the <strong>Mainframe-Specific Work Areas (MSWs)</strong>.  </p>
-<p><strong>Reminder - Note: As of January 1, 2020, MSWs will no longer be supported.  See the updated MSW announcement below in the Version 19.4 section.</strong></p>
-<p><strong>Reminder - Note: As of Version 19.3, Geosupport enhancements are supported only in a non-mainframe environment (NMF).   See the mainframe announcement below in the Version 19.4 section.</strong>  As a result of this announcement, entries in this summary often begin with <strong>'(NMF Only)'</strong>. By definition, all non-mainframe environment applications are COW applications.  (MSW applications cannot run in a non-mainframe environment.)</p>
+<p><strong>Character-Only Work Areas (COWs)</strong>, as the name implies, contain character fields only.  The original Geosupport work areas were called the <strong>Mainframe-Specific Work Areas (MSWs)</strong>.  </p>
+<p><strong>Reminder: As of January 1, 2020, MSWs are no longer supported.  See the updated MSW announcement below in the Version 20.1 section.</strong></p>
+<p><strong>Reminder: As of Version 19.3, Geosupport enhancements are supported only in a non-mainframe environment (NMF).   See the mainframe announcement below in the Version 20.1 section.</strong>  As a result of this announcement, entries in this summary often begin with <strong>'(NMF Only)'</strong>. By definition, all non-mainframe environment applications are COW applications.  (MSW applications cannot run in a non-mainframe environment.)</p>
 <p>Typically, MSWs contain some fields that are in a format which is unique to IBM mainframes.  COWs were introduced as an essential part of a long-term effort to port the Geosupport System to other platforms, e.g. the Desktop, the Internet (web version of GOAT) , GeoX, .net, and Linux.  For a detailed description of the COWs, see <a href="../appendices/appendix12/">Appendix 12</a>.</p>
 <p>Work Area 1 and Work Area 2 are often referred to, in this document, as <strong>WA1</strong> and <strong>WA2</strong>, respectively.</p>
 <p>--------------------</p>
 
-<h2 id="version-194">Version 19.4</h2>
+<h2 id="version-201">Version 20.1</h2>
 <p><u><strong>IMPORTANT MAINFRAME ANNOUNCEMENT (Reminder)</strong></u>  </p>
 <p><b>As of Geosupport Version 19.3, enhancements to Geosupport (such as new fields and new functions) are being made available and supported <u>only</u> for applications running in a non-mainframe environment (NMF)</b>, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  </p>
 <p>It is important for users to convert any existing applications to a COW format in a non-mainframe environment.</p>
-<p><u><strong>IMPORTANT UPDATED MSW ANNOUNCEMENT (Reminder)</strong></u>  </p>
-<p><strong>As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.</strong>  Character-Only Work Areas (COWs) will continue to be supported.  As mentioned above, COWs will be enhanced only in a non-mainframe environment.  It is important for users to convert any existing MSW applications to the COW format in a non-mainframe environment.</p>
-<p>User-written application programs and GBAT utilities that use the MSW format will continue to run for a period of time after January 1, 2020, but no technical support will be available.  If an issue arises, users will not be able to call DCP for resolution.</p>
+<p><u><strong>IMPORTANT UPDATED MSW ANNOUNCEMENT</strong></u><br />
+<u><strong>MSW IS NO LONGER SUPPORTED</strong></u></p>
+<p><strong>As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) are no longer supported.</strong>  Character-Only Work Areas (COWs) will continue to be supported.  As mentioned above, COWs will be enhanced only in a non-mainframe environment.  It is essential for users to convert any existing MSW applications to the COW format in a non-mainframe environment.</p>
+<p>User-written application programs and GBAT utilities that use the MSW format may continue to run but no technical support will be available.  <strong>If an MSW issue arises, users can no longer call DCP for resolution.</strong></p>
 <p>To assist users in the conversion to COW format:<br />
    *  <a href="../appendices/appendix12/">Appendix 12</a> contains information needed to create COW applications.  <br />
    *  <a href="../appendices/appendix13/">Appendix 13</a> contains the COW Work Area Layouts.<br />
    *  <a href="../appendices/appendix14/">Appendix 14</a> contains the COW copy files.   </p>
-<p>Any further issues may be directed via email to: GSS_Software@planning.nyc.gov</p>
+<p>Any further issues may be directed via email to: Geosupport_DL@planning.nyc.gov</p>
 <!-- * **(COW Only) System Enhancements Implemented**  
 <br>
     * **The numeric words ‘ONE’ through ‘NINE’ are now accepted as a house number in the Geosupport house number input field.**   -->
 
-<p><u><strong>SYSTEM ENHANCEMENTS IMPLEMENTED IN VERSION 19.4</strong></u></p>
-<p><strong>Note: All V19.4 / R19D enhancements are available and supported in COW non-mainframe environments (NMF) only.</strong></p>
+<p><u><strong>SYSTEM ENHANCEMENTS IMPLEMENTED IN VERSION 20.1</strong></u></p>
+<p><strong>Note: All enhancements (if any) are available and supported in COW non-mainframe environments (NMF) only.</strong></p>
 <ul>
 <li>
 <p><strong>(Web GOAT) Fine tuning and bug fixes were implemented</strong>  </p>
 <ul>
-<li><b>Function 3 displays the B7SC and Nme of the Low End and High End Cross Streets</b>
+<li><b>GOAT will now accept an ampersand in the street name input for all functions.</b>
 <br>
 <br></li>
-<li><b>Function 3 displays the Truck Route Type even when information on only one side of the street is requested.</b>  </li>
+</ul>
+</li>
+<li>
+<p><strong>(Geosupport System) Fine tuning and bug fixes were implemented</strong>  </p>
+<ul>
+<li><b>For functions 1, 1E and 1B, the count of cross streets in the list of the High-End Cross Streets (a.k.a ‘To Cross Streets’) is now accurate even for Addressable Place Names and Non-Addressable Place Names (NAPs).  (All COW Function 1, 1E and 1B related calls)</b></li>
 </ul>
 </li>
 </ul>
 <p><br>
-<br>  </p>
+<br></p>
 <p>--------------------</p>
 
 <!-- why does code look bold?.  It is not bold on screen or print -->
