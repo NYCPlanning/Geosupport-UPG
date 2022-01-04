@@ -12,7 +12,7 @@ Jon Kaufman, Chief Operating Officer
 
   <br>
 **INFORMATION TECHNOLOGY DIVISION**  
-Michele McInnes, Chief Information Officer  
+Michele McInnes, AICP, PMP, Chief Information Officer  
   <br>
 **ENTERPRISE DATA MANAGEMENT**  
 Lynn Seirup, Director<br>
@@ -20,10 +20,11 @@ Thomas Costa, AICP, Manager, Geographic Research
 Rodrigo Zapata, Senior Technical Project Manager  
 
 **CITYWIDE GEO APPLICATION SERVICES**<br>
+Steve Oliver, Director  
 **Programming Staff**  
-Jie Ding  
+Jie Ding   
 Yoel Lebel  
-Steve Oliver  
+Narish Singh
   <br> <br>
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  
 Geosupport Desktop Edition is a trademark of the Department of City Planning / City of New York
