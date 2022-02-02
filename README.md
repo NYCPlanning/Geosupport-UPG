@@ -51,12 +51,16 @@ Node.js is required to in order to SAVE the UPG Document in PDF form and/or prin
       ```var protocol = os.name === 'windows' ? 'file:///' : 'file://'```
     2. Change the following two lines to include the third line  
       from:   
+            ```
             cssPaths.forEach(function (cssPath) {
               var css = document.createElement('link')   
+            ```
       to:  
+            ```
             cssPaths.forEach(function (cssPath) {
               cssPath = 'file:///' + cssPath
               var css = document.createElement('link')      
+            ```
 
   ----
   * Convert the document to PDF
