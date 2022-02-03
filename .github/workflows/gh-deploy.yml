@@ -1,11 +1,12 @@
 name: gh-deploy
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
 
+  # Manual only   
   workflow_dispatch:
 
 jobs:
