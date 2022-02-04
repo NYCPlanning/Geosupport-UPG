@@ -7,7 +7,7 @@ Eric Adams, Mayor
   <br>
 **DEPARTMENT OF CITY PLANNING**  
 Dan Garodnick, Director  
-Edith Hsu-Chan, Executive Director   
+Edith Hsu-Chen, Executive Director   
 
   <br>
 **INFORMATION TECHNOLOGY DIVISION**  
