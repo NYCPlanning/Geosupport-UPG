@@ -2,13 +2,12 @@
 ![NYCSeal >](img/nyc_seal.png "NYC Logo")
 
 **CITY OF NEW YORK**  
-Bill de Blasio, Mayor  
+Eric Adams, Mayor  
 
   <br>
 **DEPARTMENT OF CITY PLANNING**  
-Marisa Lago, Director  
-Anita Laremont, Executive Director  
-Jon Kaufman, Chief Operating Officer  
+Dan Garodnick, Director  
+Edith Hsu-Chan, Executive Director   
 
   <br>
 **INFORMATION TECHNOLOGY DIVISION**  
