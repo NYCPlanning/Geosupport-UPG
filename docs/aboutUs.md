@@ -12,15 +12,15 @@ Edith Hsu-Chen, Executive Director
 Michele McInnes, AICP, PMP, Chief Information Officer  
 
 **ENTERPRISE DATA MANAGEMENT**  
-Lynn Seirup, Senior Director
+Lynn Seirup, Senior Director  
 Thomas Costa, AICP, Manager, Geographic Research  
 Rodrigo Zapata, Senior Technical Project Manager  
 
-**NYC PLANNING DIGITAL SERVICES**
-Ryan Blair, Director
+**NYC PLANNING DIGITAL SERVICES**  
+Ryan Blair, Director  
 Steve Oliver, Citywide Geosupport Team Lead  
 **Citywide Geosupport Team**  
-Jie Ding   
+Jie Ding  
 Yoel Lebel  
 Narish Singh
 
