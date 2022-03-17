@@ -73,4 +73,4 @@ As a mnemonic aid, Geosupport function codes have been chosen to be as descripti
 
 ----
 <a href="#section04-1-1"><sup id="section04-1">1</sup></a> Note that ‘AP’ is the acronym for the function AP (Address Point).  It is also the acronym for Addressable Place Name and Atomic Polygon.  The acronym’s meaning should be clear by its usage.  It will be spelled out as needed.  
-<a href="#section04-2-2"><sup id="section04-2">2</sup></a> Character-Only Work Area (COW).  [See Appendix 12](../appendices/appendix12/).
+<a href="#section04-2-2"><sup id="section04-2">2</sup></a> Character-Only Work Area (COW).  [See Appendix 12](../../appendices/appendix12/).
