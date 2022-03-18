@@ -1,6 +1,6 @@
 <h2>VI.11  Transitional Property Address Directory (TPAD) Building Identification Number (BIN) and status information for Functions 1A, 1B, BL and BN (COW Only)</h2>
 
-(Note: For more information about the TPAD feature, including error processing, be sure to see [Appendix 17](/appendices/appendix17/).)
+(Note: For more information about the TPAD feature, including error processing, be sure to see [Appendix 17](../../../appendices/appendix17/).)
 
 <b><u>The TPAD File:</u></b>  The TPAD (Transitional Property Address Directory) file, allows users to get some up‐to‐date property related information. Geosupport has four functions (1A, 1B, BL and BN) that access the Property Address Directory (PAD) file. The PAD file contains property level information and is updated on a quarterly<sup><a href="#section10.7" id="section10.7-7">7</a></sup> basis. In order for users to get more up‐to‐date information regarding the status of new building construction and/or demolition, the Department of City Planning (DCP) has created the TPAD file.
 
@@ -33,7 +33,7 @@ TPAD Status Values are as follows:
 | 6 | DM | DM Job signed off (building demolished)|
 
 
-When the TPAD Switch is set ‘on’, Geosupport will always return a value in the TPAD Conflict Flag in Work Area 2.  On occasion, when there are conflicts between the data in the PAD and the TPAD record, the Conflict Flag in Work Area 2 will be set to a value greater than ‘1’.  The possible values of the Conflict Flag are described in the table below.  See [Appendix 17](/appendices/appendix17/) for a detailed description of the contents of the Geosupport Return Code, Reason Code, Reason Code Qualifier, and Error Message, when TPAD processing is requested.
+When the TPAD Switch is set ‘on’, Geosupport will always return a value in the TPAD Conflict Flag in Work Area 2.  On occasion, when there are conflicts between the data in the PAD and the TPAD record, the Conflict Flag in Work Area 2 will be set to a value greater than ‘1’.  The possible values of the Conflict Flag are described in the table below.  See [Appendix 17](../../../appendices/appendix17/) for a detailed description of the contents of the Geosupport Return Code, Reason Code, Reason Code Qualifier, and Error Message, when TPAD processing is requested.
 
 
 
@@ -139,7 +139,7 @@ For regular 1A, 1B, BL, and BN calls, the Address List contains alternate addres
 | 6 | This status is not used here |
 
 
-The field names of the various TPAD‐related fields in COW Work Area 1 and Work Area 2 are available in [Appendix 13](/appendices/appendix13/).
+The field names of the various TPAD‐related fields in COW Work Area 1 and Work Area 2 are available in [Appendix 13](../../../appendices/appendix13/).
 
 <p>_________________________</p>
 <a href="#section10.7-7"><sup><span id="section10.7">7</span></sup></a> As of Release 17A, those users who are on the DoITT mainframe typically will have PAD data that is updated weekly via the UPAD (Update PAD) file.  Other users, e.g. Desktop users, will have PAD data that is updated quarterly.  If desired, those users can make arrangements for more frequent updates.  

@@ -8,7 +8,7 @@ The Work Area 2 layouts for Functions AP and AP Extended are very similar to tho
 
 Since the AP function is requesting the address point of only one address, Geosupport returns only one address in the Work Area 2 address list.
 
-See the Function AP work area layouts in [Appendix 13 (COW)](/appendices/appendix13/).   
+See the Function AP work area layouts in [Appendix 13 (COW)](../../../appendices/appendix13/).   
 
 See [Chapter V](../chapterV/chapterV/) for a general discussion of Geosupport address processing, much of which is applicable to Function AP.  
 
