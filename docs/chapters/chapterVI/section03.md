@@ -7,7 +7,7 @@ A critical issue for building-level processing is to be able to identify buildin
 * Many buildings have more than one address.
 * Some buildings have no addresses.
 * The same address can identify both an existing building and a demolished one.
-* New York City has a small number of instances in which two different existing buildings have the same address (see [Chapter V.6](../chapterV/section06/)).  
+* New York City has a small number of instances in which two different existing buildings have the same address (see [Chapter V.6](../../chapterV/section06/)).  
 
 Some shortcomings of using BBLs as building identifiers are as follows:  
 
