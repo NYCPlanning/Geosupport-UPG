@@ -20,7 +20,7 @@ Function 1A accepts an input address if and only if the address falls within one
 
 * <u>Valid actual address</u>. If the input address is a valid address of an existing building on a property, there is a normal completion (Geosupport Return Code = ‘00’).  
 
-* <u>Pseudo-address</u>. If the input address is a ‘pseudo-address’ , a warning is issued (GRC = ‘01’, Reason Code = ‘8’ or ‘9’).  Pseudo-addresses (not to be confused with pseudo-street names) are discussed in [Chapter VI.5](/chapters/chapterVI/section05/).  
+* <u>Pseudo-address</u>. If the input address is a ‘pseudo-address’ , a warning is issued (GRC = ‘01’, Reason Code = ‘8’ or ‘9’).  Pseudo-addresses (not to be confused with pseudo-street names) are discussed in [Chapter VI.5](..I/section05/).  
 
 If the input address is neither a valid address of an existing building nor a pseudo-address, Function 1A  <u>rejects</u> that input address.  This is true even if the input address falls within an administrative address range allocated to a blockface and is therefore accepted by Functions 1 and 1E.  Thus, Function 1A’s criterion for accepting an input address is typically more stringent than those of Functions 1 and 1E, and the validation significance of acceptance differs accordingly.  
 
@@ -33,7 +33,7 @@ Function AP’s criterion is very similar to Function 1A’s.  If the input addr
 
 ## <span id="chapterV.4.4"><u>Function 1B Input Address Processing and Return Code Processing</u></span>
 
-Function 1B makes an internal combined call to Extended Function 1A and Extended Function 1E (see descriptions of 1E and 1A above).  Extended Functions 1A and 1E return more information than the regular Functions 1A and 1E.  This is described in [Chapter V.5](/chapters/chapterV/section05/)  (Output Data Returned) below.  
+Function 1B makes an internal combined call to Extended Function 1A and Extended Function 1E (see descriptions of 1E and 1A above).  Extended Functions 1A and 1E return more information than the regular Functions 1A and 1E.  This is described in [Chapter V.5](../section05/)  (Output Data Returned) below.  
 
 Function 1B invokes Function 1A Extended processing first.  If the input address number is altered by the Function 1A Extended processing (e.g. deleting a hyphen) the altered version of the address number is passed as input to the Function 1E Extended processing.  
 
