@@ -12,7 +12,7 @@ For the convenience of applications, each of the display functions can process u
 
 For Function D, there are two different sets of fields in Work Area 1 that applications can use to pass input street code values, as follows.  
 
-• For MSW calls, if the input street codes are in the form of PB5SCs, the 4-byte input fields that are labeled PB5SC-1, PB5SC-2 and PB5SC-3 in the Work Area 1 layout in [Appendix 2](/appendices/appendix02/) are used.  
+• For MSW calls, if the input street codes are in the form of PB5SCs, the 4-byte input fields that are labeled PB5SC-1, PB5SC-2 and PB5SC-3 in the Work Area 1 layout in [Appendix 2](../../../appendices/appendix02/) are used.  
 
 •	For MSW or COW calls, if the input street codes are in the form of B5SCs, the 11-byte input fields labeled B10SC-1, B10SC-2 and B10SC-3 are used.  The input B5SC values, which are 6 bytes long, must be passed in these fields left-justified, and the contents of these fields beyond the first six bytes are ignored.  
 

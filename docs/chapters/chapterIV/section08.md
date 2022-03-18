@@ -4,7 +4,7 @@ For most functions involving street input, applications have the option to pass 
 
 The street code input feature is useful in an application that stores street codes but not street names in an application file (presumably to save disk storage space), since it enables the application to process records from that file directly through a Geosupport location-processing function, without first having to call a display function to obtain street names.  
 
-Applications can provide input street codes to any of the functions that can accept them in any of the following forms (the field names used below are the same as those used in the WA1 layouts in [Appendix 2](/appendices/appendix02/) for MSWs and [Appendix 13](/appendices/appendix13/) for COWs.):  
+Applications can provide input street codes to any of the functions that can accept them in any of the following forms (the field names used below are the same as those used in the WA1 layouts in [Appendix 2](../../../appendices/appendix02/) for MSWs and [Appendix 13](../../../appendices/appendix13/) for COWs.):  
 
 * PB5SCs (MSW only), passed in as many as necessary of the WA1 input fields PB5SC-1, PB5SC-2 and PB5SC-3.  
 
