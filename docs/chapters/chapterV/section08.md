@@ -8,6 +8,6 @@ When an address-processing function is called, and Brooklyn is specified as the 
 
 * WA2 is returned with a full complement of data.  
 
-* Geosupport issues a warning with a Reason Code value of either ‘6’ or ‘7’.  (Reason Code ‘6’ indicates simply that the output street name and street code differ from the corresponding input values.  Reason Code ‘7’ indicates in addition that the input and output house numbers differ from each other in some way, as per [Chapter V.2](/chapters/chapterV/section02/).  See [Appendix 4](/appendices/appendix04/).)  
+* Geosupport issues a warning with a Reason Code value of either ‘6’ or ‘7’.  (Reason Code ‘6’ indicates simply that the output street name and street code differ from the corresponding input values.  Reason Code ‘7’ indicates in addition that the input and output house numbers differ from each other in some way, as per [Chapter V.2](../section02/).  See [Appendix 4](../../../appendices/appendix04/).)  
 
 </br>
