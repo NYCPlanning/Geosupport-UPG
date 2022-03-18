@@ -24,11 +24,11 @@ Typical geographic features that have NAPs include named buildings, stadiums, ar
 
 * A <u>simplex</u> is a “stand-alone” named geographic feature, that is, a feature that has a NAP and is not a complex or a constituent entity of a complex.  Examples in Manhattan: EMPIRE STATE BUILDING, CARNEGIE HALL, BRYANT PARK
 
-* A <u>complex</u> is a group of related geographically identifiable features at one site.  A geographically identifiable feature is a feature that has an address, a NAP and/or a Building Identification Number (BIN).  (BINs are discussed in detail in [Chapter VI.3](/chapters/chapterVI/section03).)  Examples of Manhattan complexes: LINCOLN CENTER, JEFFERSON HOUSES, CITY COLLEGE.
+* A <u>complex</u> is a group of related geographically identifiable features at one site.  A geographically identifiable feature is a feature that has an address, a NAP and/or a Building Identification Number (BIN).  (BINs are discussed in detail in [Chapter VI.3](../../chapterVI/section03).)  Examples of Manhattan complexes: LINCOLN CENTER, JEFFERSON HOUSES, CITY COLLEGE.
 
 * A <u>constituent entity of a complex</u> is a building or other geographically identifiable feature that is part of a complex.  A constituent entity may be identified by a NAP or by a conventional street address.  Examples in Manhattan: AVERY FISHER HALL (a constituent entity of LINCOLN CENTER identified by NAP); CITY COLL SHEPARD HALL (a constituent entity of CITY COLLEGE identified by NAP); 259 CONVENT AVE (a conventional street address which identifies CITY COLL SHEPARD HALL).
 
-NAPs are accepted as input data by Function 1N and by the address-processing functions (Functions 1, 1A, 1B and 1E, but not Function AP.). <i>Currently, these functions accept a limited set of NAPs (including only some of the examples in this section).  Additional NAPs are being added over time.</i> Support of NAPs that have address numbers is described below.  For further details on NAPs, see [Chapter IV.7](/chapters/chapterIV/section07).
+NAPs are accepted as input data by Function 1N and by the address-processing functions (Functions 1, 1A, 1B and 1E, but not Function AP.). <i>Currently, these functions accept a limited set of NAPs (including only some of the examples in this section).  Additional NAPs are being added over time.</i> Support of NAPs that have address numbers is described below.  For further details on NAPs, see [Chapter IV.7](../../chapterIV/section07).
 
 ## <span id="chapterIII.6.5"><u>Support of Non-Addressable Place Names (NAPs) with address numbers</u></span>
 
@@ -43,7 +43,7 @@ In order to support this type of address (i.e. a NAP with an address number), Ge
 
 ## <span id="chapterIII.6.6"><u>Pseudo-Street Names</u></span>
 
-Pseudo-street names are special ‘invented’ names that in certain circumstances Geosupport accepts as valid input street names, as described in [Chapters V.2](/chapters/chapterV/section02), [VII.2](/chapters/chapterVII/section02) and [VII.3](/chapters/chapterVII/section03).  Three sets of pseudo-street names are:  
+Pseudo-street names are special ‘invented’ names that in certain circumstances Geosupport accepts as valid input street names, as described in [Chapters V.2](../../chapterV/section02), [VII.2](../../chapterVII/section02) and [VII.3](../../chapterVII/section03).  Three sets of pseudo-street names are:  
 
 > DEAD END and its aliases DEADEND, DEAD END STREET, CUL DE SAC and CULDESAC
 
@@ -54,13 +54,13 @@ Pseudo-street names are special ‘invented’ names that in certain circumstanc
 DEAD END and BEND, and their aliases, are valid in all five boroughs.  CITY LIMIT and its aliases are valid in all boroughs except Brooklyn.  These pseudo-street names may not be used to specify addresses, but they may be used to specify street intersections, and to specify the cross streets (but not the ‘on’ street) in other types of street configurations.
 
 ## <span id="chapterIII.6.7"><u>Duplicate Address Pseudo-Street Names (DAPSs):</u></span>
-Another type of pseudo-street name that Geosupport recognizes, for certain addresses only, is Duplicate Address Pseudo-Street Names (DAPSs).  DAPSs are used with Geosupport’s duplicate address processing feature (discussed in detail in [Chapter V.6](/chapters/chapterV/section06)).  New York City has a small number of duplicate addresses, which are not data errors in Geosupport files, but are situations where an address is valid in reality at two different locations on the same street.  DAPSs provide a means for a user to specify unambiguously a particular instance of a duplicate address.  The user may also provide ZIP Code input to enable Geosupport to recognize which duplicate street name should be used.
+Another type of pseudo-street name that Geosupport recognizes, for certain addresses only, is Duplicate Address Pseudo-Street Names (DAPSs).  DAPSs are used with Geosupport’s duplicate address processing feature (discussed in detail in [Chapter V.6](../../chapterV/section06)).  New York City has a small number of duplicate addresses, which are not data errors in Geosupport files, but are situations where an address is valid in reality at two different locations on the same street.  DAPSs provide a means for a user to specify unambiguously a particular instance of a duplicate address.  The user may also provide ZIP Code input to enable Geosupport to recognize which duplicate street name should be used.
 
 An example of a street that has duplicate addresses is Hillside Avenue in Queens.  A portion of Hillside Avenue in the Bellerose neighborhood has some of the same addresses as does another portion of Hillside Avenue in the Douglaston neighborhood.  To make it possible to process these addresses, the DAPSs HILLSIDE AVENUE BELLEROSE and HILLSIDE AVENUE DOUGLASTON have been created.  Similar DAPSs have been created for each city street that has duplicate addresses.  In general, DAPSs are formed by augmenting the conventional name of the street with a neighborhood name.  
 
 An example of using ZIP Code input in a duplicate address situation follows.  If 239-02 Hillside Avenue in Queens, with a ZIP Code set to 11426 is provided as input to Function 1, 1A, 1B, 1E or AP, Geosupport will determine that Hillside Avenue Bellerose should be used.  If the ZIP Code provided had been 11363, Geosupport would determine that Hillside Avenue Douglaston should be used.  This processing will occur even if the borough code has been provided as well.
 
-Geosupport accepts DAPSs as valid input only for certain addresses on streets that have duplicate addresses, as explained in [Chapter V.6](/chapters/chapterV/section06).  
+Geosupport accepts DAPSs as valid input only for certain addresses on streets that have duplicate addresses, as explained in [Chapter V.6](../../chapterV/section06).  
 
 If a DAPS is supplied as input to a Function 2, 3, 3C or 3S call, the associated neighborhood name (a.k.a. town name in Queens) will be stripped off to provide a valid street name for these calls.  A warning message (Reason Code W) will be issued.  For example, if the input to a Function 2 call is “Hillside Avenue Douglaston”, the word “Douglaston” will be removed and the street name “Hillside Avenue” will be used.
 
