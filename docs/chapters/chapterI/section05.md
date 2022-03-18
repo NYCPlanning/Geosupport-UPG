@@ -55,7 +55,7 @@ GSS researches feedback received from users and updates the Geosupport backgroun
 <span id="figureI-1">Figure I-1 below</span> illustrates the basic architecture of the Geosupport System.
 
 
-![figureI-1 <>](/img/figureI-1.png "GeosupportArchitecture Logo")  
+![figureI-1 <>](../../../img/figureI-1.png "GeosupportArchitecture Logo")  
 <div class="img_tagline"> Fig I-1 Geosupport architecture: components and Production Cycle </div>  
 
 Please note the following elements depicted in Figure I-1:  
