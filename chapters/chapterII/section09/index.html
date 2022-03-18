@@ -739,7 +739,7 @@ advantage of the power of Geosupport.  </p>
 <h5>Declare the Work Area Variables </h5>
 <p>VB/VBA users may use the tyepdef file found in <br>
 <span class="customPre"> c:\program files\Geosupport Desktop Edition\include\vbwadef.bas </span> <br>
-or they may choose to code their own typedefs using the character-only Work Area descriptions that can be found in <a href="/appendices/appendix02/">Appendix 2</a> as the guide. It is recommended that you use the supplied typedef file.</p>
+or they may choose to code their own typedefs using the character-only Work Area descriptions that can be found in <a href="../../../appendices/appendix02/">Appendix 2</a> as the guide. It is recommended that you use the supplied typedef file.</p>
 <p>The sample program in Listing II.16 does not use the typedef file, vbwadef.bas, but does create similar typedefs for Work Area 1 and Work Area 2 for Functions 1/1E. If the users choose to create their own typedefs, particular attention should be paid to setting up Work Area 1 as this is used in every function call. Listing II.9 shows a few examples of how to set up Work Area 1 as well as a second Work Area 1 to be used in making Function D calls (see Line 33 in Listing II.9).  </p>
 <p>If this code is part of a VBA application and is attached to a Form, you may have to declare the variables and types as Private. Because the code in Listing II.16 at the end is attached to a Form, the variables and types are declared as Private.  </p>
 <p><b>Listing II.9 Declare the Work Area Variables </b>  </p>
@@ -810,7 +810,7 @@ or they may choose to code their own typedefs using the character-only Work Area
 <pre><code>1: wgF1E vbwa1, vbwa21e
 </code></pre>
 <h5> Check the Return Code </h5>
-<p>After you've made the Geosupport call, you need to check the Return Code in the Output section of Work Area 1 (Listing II.13 below). A return code of &lt;00' indicates a successful call and a value of &lt;01' indicates a successful call but there is a warning message you should check. Any other Return Code value indicates that an error has taken place; you will want to have special processing to handle these situations. For a complete listing of the Warning and Error codes see "Geosupport Return Codes, Reason Codes, and Messages" in <a href="/appendices/appendix04/">Appendix 4</a> of this guide.  </p>
+<p>After you've made the Geosupport call, you need to check the Return Code in the Output section of Work Area 1 (Listing II.13 below). A return code of &lt;00' indicates a successful call and a value of &lt;01' indicates a successful call but there is a warning message you should check. Any other Return Code value indicates that an error has taken place; you will want to have special processing to handle these situations. For a complete listing of the Warning and Error codes see "Geosupport Return Codes, Reason Codes, and Messages" in <a href="../../../appendices/appendix04/">Appendix 4</a> of this guide.  </p>
 <p><b>Listing II.13 Check the Return Code </b>  </p>
 <pre><code>1:If vbwa1.output1.ret_code = &quot;00&quot; Then
 2: 'code to process successful call goes here
