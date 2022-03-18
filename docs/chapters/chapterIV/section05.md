@@ -8,7 +8,7 @@ If, in a two-work-area call, the input street name is not valid for the given in
 
 • The call is rejected with a Geosupport Return Code of ‘50’ and an appropriate Message.  
 
-•	Up to four locally valid street name aliases of the invalid street name are returned in the WA1 List of Street Names field.  (Specifically, the names that are returned are the principal street name of each local street name group that is valid for the given location.  The concepts of ‘principal street name’ and ‘local street name group’ are discussed below and in the [next Chapter](/chapters/chapterIV/section06/).)  
+•	Up to four locally valid street name aliases of the invalid street name are returned in the WA1 List of Street Names field.  (Specifically, the names that are returned are the principal street name of each local street name group that is valid for the given location.  The concepts of ‘principal street name’ and ‘local street name group’ are discussed below and in the [next Chapter](../../section06/).)  
 
 • The Reason Code contains the number of names returned in the List of Street Names.  
 

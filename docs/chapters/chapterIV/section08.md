@@ -16,7 +16,7 @@ Applications can provide input street codes to any of the functions that can acc
 
 For functions that involve multiple input streets, the input streets specified in a call must all be in the same form, either all street names, or all PB5SCs (MSW only), or all B5SCs, or all B7SCs, or all B10SCs.  Note that the first byte of all input street code fields is a borough code.  When input streets are specified using street code input, the contents of the separate WA1 input borough code field (MSW only) is ignored.  
 
-Local street name validation ([see Chapter IV.5](/chapters/chapterIV/section05/)) is not performed when the street input is in the form of five-digit street codes, but it is performed with seven-digit and ten-digit street code input.  
+Local street name validation ([see Chapter IV.5](../../section05/)) is not performed when the street input is in the form of five-digit street codes, but it is performed with seven-digit and ten-digit street code input.  
 
 ## <span id="chapterIV.8.1"><u>Functions 1, 1A, 1B, 1E, and AP and Street Code Input</u></span>  
 
