@@ -14,11 +14,11 @@ The procedure that a user program would follow to call Geosupport via the API ca
 
 1. Clear WA1 to blanks
 
-2. Prime WA1.  That is, move values to the appropriate input fields in WA1.  The function code is always required;  other required and optional input fields depend on the function, and are listed in [Appendix 1](/appendices/appendix01/).
+2. Prime WA1.  That is, move values to the appropriate input fields in WA1.  The function code is always required;  other required and optional input fields depend on the function, and are listed in [Appendix 1](../../../appendices/appendix01/).
 
-3. Issue a standard subroutine call to the driver, passing as calling parameter(s) either WA1 only or both WA1 and WA2.  The required calling statements are described in [Chapter VIII.3](/chapters/chapterVII/section03) and [VIII.5](/chapters/chapterVIII/section05).  The distinction between one- and two-work-area calls is discussed in [Chapter II.4](/chapters/chapterII/section04).
+3. Issue a standard subroutine call to the driver, passing as calling parameter(s) either WA1 only or both WA1 and WA2.  The required calling statements are described in [Chapter VIII.3](../../chapterVII/section03) and [VIII.5](../../chapterVIII/section05).  The distinction between one- and two-work-area calls is discussed in [Chapter II.4](../section04).
 
-4. Upon return of control to the user program, examine the GRC (and the Reason Code, if appropriate) in WA1, and take appropriate action.  A list of the GRCs and Reason Codes that can be produced by each function is in [Appendix 4](/appendices/appendix04/).
+4. Upon return of control to the user program, examine the GRC (and the Reason Code, if appropriate) in WA1, and take appropriate action.  A list of the GRCs and Reason Codes that can be produced by each function is in [Appendix 4](../../../appendices/appendix04/).
 	a. For Function 1B, examine both sets of GRC (and Reason Code, if appropriate) in WA1.
 
 <br/>

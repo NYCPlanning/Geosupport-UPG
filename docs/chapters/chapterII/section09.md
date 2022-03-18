@@ -365,7 +365,7 @@ advantage of the power of Geosupport.
 <h5>Declare the Work Area Variables </h5>  
 VB/VBA users may use the tyepdef file found in <br>
 <span class="customPre"> c:\program files\Geosupport Desktop Edition\include\vbwadef.bas </span> <br>
-or they may choose to code their own typedefs using the character-only Work Area descriptions that can be found in [Appendix 2](/appendices/appendix02/) as the guide. It is recommended that you use the supplied typedef file.
+or they may choose to code their own typedefs using the character-only Work Area descriptions that can be found in [Appendix 2](../../../appendices/appendix02/) as the guide. It is recommended that you use the supplied typedef file.
 
 The sample program in Listing II.16 does not use the typedef file, vbwadef.bas, but does create similar typedefs for Work Area 1 and Work Area 2 for Functions 1/1E. If the users choose to create their own typedefs, particular attention should be paid to setting up Work Area 1 as this is used in every function call. Listing II.9 shows a few examples of how to set up Work Area 1 as well as a second Work Area 1 to be used in making Function D calls (see Line 33 in Listing II.9).  
 
@@ -452,7 +452,7 @@ Now that we have set up Work Area 1 for the desired function we can now look at 
 ```  
 
 <h5> Check the Return Code </h5>  
-After you've made the Geosupport call, you need to check the Return Code in the Output section of Work Area 1 (Listing II.13 below). A return code of <00' indicates a successful call and a value of <01' indicates a successful call but there is a warning message you should check. Any other Return Code value indicates that an error has taken place; you will want to have special processing to handle these situations. For a complete listing of the Warning and Error codes see "Geosupport Return Codes, Reason Codes, and Messages" in [Appendix 4](/appendices/appendix04/) of this guide.  
+After you've made the Geosupport call, you need to check the Return Code in the Output section of Work Area 1 (Listing II.13 below). A return code of <00' indicates a successful call and a value of <01' indicates a successful call but there is a warning message you should check. Any other Return Code value indicates that an error has taken place; you will want to have special processing to handle these situations. For a complete listing of the Warning and Error codes see "Geosupport Return Codes, Reason Codes, and Messages" in [Appendix 4](../../../appendices/appendix04/) of this guide.  
 
 <b>Listing II.13 Check the Return Code </b>  
 ```

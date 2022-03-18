@@ -8,7 +8,7 @@ This section describes the source code statements that the user must code in C/C
 Basic/VBA application programs to call the DLL. Also described are the statements required to
 declare the DLL.  
 
-As discussed in [Chapter II.4](/chapters/chapterII/section04/), typically, the DLL can be called either with one or with two calling
+As discussed in [Chapter II.4](../section04/), typically, the DLL can be called either with one or with two calling
 parameters. The first parameter passes the address of Work Area 1 to the DLL. If the
 application program is making a two-work-area call, the second parameter passes the address of
 Work Area 2 to the DLL.  

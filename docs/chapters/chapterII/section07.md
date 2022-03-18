@@ -4,13 +4,13 @@ This section describes the source code statements that users must code in applic
 that use the Geosupport header file. The required statements consist of a declarative statement to
 reference the header file and statements calling the DLL.  
 
-In [Chapter II.5](/chapters/chapterII/section05), the forms of calls to the DLL were given using arbitrary data names for the work
+In [Chapter II.5](../../chapterII/section05), the forms of calls to the DLL were given using arbitrary data names for the work
 areas. In programs that do not use the Geosupport header file, those names are user-selectable.
 In the present section, the forms of the DLL calls are given again, this time with the specific data
 names that are required for compatibility with the header file. The C/C++ languages permit
 header file users to select their own names for the work areas (but not for the fields within the
 work areas). Prior to each call to the DLL, the program must prime Work Area 1 with the input
-data to be processed by Geosupport, as described in [Chapter II.3](/chapters/chapterII/section03).  
+data to be processed by Geosupport, as described in [Chapter II.3](../../chapterII/section03).  
 
 ## <span id="chapterII.7.1"> II.7.1 C/C++ Source Code Statement  </span>
 
@@ -87,4 +87,4 @@ For C/C++ programs that use the Geosupport header file, API calls may be coded a
 </table>
 
 An alternative method of calling NYCgeo from C/C++ appears in the sample program. Please
-see [Chapter II.9](/chapters/chapterII/section09).  
+see [Chapter II.9](../../chapterII/section09).  

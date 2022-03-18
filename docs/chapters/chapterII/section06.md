@@ -5,5 +5,5 @@ The source code layouts of all the Geosupport API work areas appear in a header 
 Use of these files is strongly recommended. A listing of the files appear in Appendix 5. A text
 description of the work area layouts is provided in Appendix 2.  
 
-For C/C++, [Chapter II.7](/chapters/chapterII/section07) describes the specific source code statements that users must code in their programs to utilize the Geosupport header file. See sample C/C++ program for what is
+For C/C++, [Chapter II.7](../../chapterII/section07) describes the specific source code statements that users must code in their programs to utilize the Geosupport header file. See sample C/C++ program for what is
 required to compile a program that utilizes the Geosupport header file.  
