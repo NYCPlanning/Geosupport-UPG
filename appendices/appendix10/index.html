@@ -423,7 +423,7 @@
    TITLE=THIS IS GBAT CONTROL FILE EXAMPLE 1;
 </code></pre>
 <p>In this example, the user has chosen to code several control entries in a single control record, followed by a second control record containing a heading for the SYSPRINT output file.  In the first control record, the order in which the control entries are coded, their precise positioning within the control record and the amount of spacing between them are immaterial.</p>
-<p>The control file in this example contains the following control entries.  (See <a href="/appendices/appendix09/#table-a9-1-gbat-control-entry-descriptions-by-keyword">Table A9-1</a> for Control Entry Descriptions)  </p>
+<p>The control file in this example contains the following control entries.  (See <a href="../appendix09/#table-a9-1-gbat-control-entry-descriptions-by-keyword">Table A9-1</a> for Control Entry Descriptions)  </p>
 <ul>
 <li>
 <p>BORO specifies that the input borough code field is in position 9 of the INFILE records and is one byte long.  </p>
@@ -441,7 +441,7 @@
 <p>TITLE specifies a title for the SYSPRINT output report.  Notice that the text of the title is terminated with a semicolon character, as required.  (The semicolon does not appear in the actual report.)  </p>
 </li>
 </ul>
-<p>The user has chosen not to code the following control entries, the default values for which are therefore in effect: (See <a href="/appendices/appendix09/#table-a9-2-summary-of-gbat-control-entries-by-keyword">Table A9-2</a> for Control Entry default values.)</p>
+<p>The user has chosen not to code the following control entries, the default values for which are therefore in effect: (See <a href="../appendix09/#table-a9-2-summary-of-gbat-control-entries-by-keyword">Table A9-2</a> for Control Entry default values.)</p>
 <ul>
 <li>
 <p>Since the control entry VSAM has not been coded, GBAT will assume that the user input data file is a sequential file.  Consequently, GBAT will access the input data file via the DDname INFILE, and the corresponding DD statement in the JCL must be coded accordingly.  </p>
@@ -459,7 +459,7 @@
 <p>Since HNI (or HNS for COW) has not been coded, GBAT will assume that input house numbers are not necessarily normalized and are in display format rather than in the HNI (or HNS for COW) format.  </p>
 </li>
 <li>
-<p>Since HOUSENUM has not been coded, GBAT will assume that the input street name field specified by ONSTREET contains a free‑form address (a house number followed by a street name).  Note that since in this GBAT run input addresses are free-form, partial street names (see <a href="/chapters/chapterIII/section04">Chapter III.4</a>) will be rejected.</p>
+<p>Since HOUSENUM has not been coded, GBAT will assume that the input street name field specified by ONSTREET contains a free‑form address (a house number followed by a street name).  Note that since in this GBAT run input addresses are free-form, partial street names (see <a href="../../chapters/chapterIII/section04">Chapter III.4</a>) will be rejected.</p>
 </li>
 <li>
 <p>Since COMPACT has not been coded, GBAT will return normalized street names in a format suitable for sorting, rather than in the compact format.  </p>
@@ -779,7 +779,7 @@
             *****  NOTE:  THIS IS A PRINTOUT OF ERRFILE.  THE FIRST FOUR BYTES CONSIST OF THE TWO-BYTE GEOSUPPORT RETURN CODE (GRC)
             *****      FOLLOWED BY A DASH ('-'), FOLLOWED BY A ONE-BYTE REASON CODE, IF ANY.  IN THIS EXAMPLE, THERE ARE 3 REJECTED
             *****      RECORDS. TWO HAVE A GRC VALUE OF '28' AND NO REASON CODE VALUE. THE THIRD REJECT HAS A GRC VALUE OF '42' AND
-            *****      NO REASON CODE VALUE. REFER TO THE GBAT STATISTICS REPORT OR TO [APPENDIX 4](/appendices/appendix04) FOR THE MESSAGES CORRESPONDING TO
+            *****      NO REASON CODE VALUE. REFER TO THE GBAT STATISTICS REPORT OR TO [APPENDIX 4](../appendix04) FOR THE MESSAGES CORRESPONDING TO
             *****      THE OCCURRING GRC'S.  AFTER THE FIRST FOUR BYTES, THE REST OF THE ERRFILE RECORD CONSISTS OF A COPY OF THE
             *****      REJECTED INFILE RECORD.
             ***********************************************************************************************************
@@ -809,10 +809,10 @@
   REJECTWARNINGS=YES <br>
   MAXREJECTS=75 <br>  </p>
 <p>In this example, the user has chosen to code each control entry in a separate control record.  The user has chosen to align the control entries vertically for aesthetic reasons, although the positioning of each control entry within its control record and the order in which the control entries is codes are immaterial.</p>
-<p>The control file in this example contains the following control entries.  (See <a href="/appendices/appendix09/#table-a9-1-gbat-control-entry-descriptions-by-keyword">Table A9-1</a> for Control Entry Descriptions.)</p>
+<p>The control file in this example contains the following control entries.  (See <a href="../appendix09/#table-a9-1-gbat-control-entry-descriptions-by-keyword">Table A9-1</a> for Control Entry Descriptions.)</p>
 <ul>
 <li>
-<p>Since ALIASES=YES has been coded, the user must provide an ALIASES file in the required format (described in <a href="/chapters/chapterXI/section06">Chapter XI  .6</a>), and must provide a DD statement in the JCL referring to that file.  GBAT will validate the user’s ALIASES file, and will then use the valid street name aliases it contains when processing INFILE.  Any invalid aliases will be ignored when processing INFILE, but will be reported in SYSPRINT.  </p>
+<p>Since ALIASES=YES has been coded, the user must provide an ALIASES file in the required format (described in <a href="../../chapters/chapterXI/section06">Chapter XI  .6</a>), and must provide a DD statement in the JCL referring to that file.  GBAT will validate the user’s ALIASES file, and will then use the valid street name aliases it contains when processing INFILE.  Any invalid aliases will be ignored when processing INFILE, but will be reported in SYSPRINT.  </p>
 </li>
 <li>
 <p>The TITLE control entry specifies a title for the SYSPRINT output report.  Notice that the text of the title is terminated with a semicolon character, as required.  (The semicolon does not appear in the actual report.)</p>
@@ -830,7 +830,7 @@
 <p>GEOCODE=ALL has been specified, so GBAT will issue a two‑work‑area call to Function 2 and will form the OUTFILE records by appending the normalized street names and street codes, as well as Work Area 2, to the successfully processed INFILE records.  </p>
 </li>
 <li>
-<p>The control entry COMPASS specifies an INFILE field for an input compass direction.  (Function 2 requires an input compass direction for intersections that are specified in terms of a pair of streets that intersect twice (see <a href="/chapters/chapterVII/section02">Chapter VII.2</a>).  If INFILE contains no such intersections, the control entry COMPASS is not required.)</p>
+<p>The control entry COMPASS specifies an INFILE field for an input compass direction.  (Function 2 requires an input compass direction for intersections that are specified in terms of a pair of streets that intersect twice (see <a href="../../chapters/chapterVII/section02">Chapter VII.2</a>).  If INFILE contains no such intersections, the control entry COMPASS is not required.)</p>
 </li>
 <li>
 <p>COMPACT=YES has been specified, directing GBAT to return all normalized street names in the compact format, which is suitable for display but not for use in sorting.  </p>
@@ -842,7 +842,7 @@
 <p>Since MAXREJECTS=75 has been coded, GBAT will terminate with an MVS Return Code of ‘20’ if the first 75 INFILE records all result in rejects or warnings for any reason other than an invalid borough code.  </p>
 </li>
 </ul>
-<p>The user has chosen not to code the following control entries, the default values for which are therefore in effect: (See <a href="/appendices/appendix09/#table-a9-2-summary-of-gbat-control-entries-by-keyword">Table A9-2</a> for Control Entry default values.)  </p>
+<p>The user has chosen not to code the following control entries, the default values for which are therefore in effect: (See <a href="../appendix09/#table-a9-2-summary-of-gbat-control-entries-by-keyword">Table A9-2</a> for Control Entry default values.)  </p>
 <ul>
 <li>
 <p>Since the control entry VSAM has not been coded, GBAT will assume that the user input data file is a sequential file.  Consequently, GBAT will access the input data file via the DDname INFILE, and the corresponding DD statement in the JCL must be coded accordingly.  </p>
@@ -1207,7 +1207,7 @@ NOTE:  ALIAS TABLE HAS ERRORS AND ALIASES=YES HAS BEEN SPECIFIED-PROCESSING CONT
  *****        FOLLOWED BY A DASH ('-'), FOLLOWED BY A ONE-BYTE REASON CODE, IF ANY.  IN THIS EXAMPLE, THERE ARE SEVEN REJECTED
  *****        RECORDS.  TWO HAVE A GRC VALUE OF '02' AND NO REASON CODE VALUE.  TWO HAVE A GRC VALUE OF '03' AND A REASON CODE
  *****        VALUE OF '3'.  ONE HAS A GRC VALUE OF '01' (WARNING) AND A REASON CODE VALUE OF 'H', ETC.  REFER TO THE GBAT
- *****        STATISTICS REPORT OR TO [APPENDIX 4](/appendices/appendix04) FOR THE MESSAGES CORRESPONDING TO THE OCCURRING GRC'S AND REASON CODES.  AFTER
+ *****        STATISTICS REPORT OR TO [APPENDIX 4](../appendix04) FOR THE MESSAGES CORRESPONDING TO THE OCCURRING GRC'S AND REASON CODES.  AFTER
  *****        THE FIRST FOUR BYTES, THE REST OF THE ERRFILE RECORD CONSISTS OF A COPY OF THE REJECTED INFILE RECORD.
  ********************************************************************************************************************************
 

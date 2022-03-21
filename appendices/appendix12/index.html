@@ -428,13 +428,13 @@
 <p>Notes:  </p>
 <ol>
 <li>
-<p>There are two versions of the sample programs in <a href="/appendices/appendix05/">Appendix 5</a> of this User Programming Guide.  One version is for MSWs and the other is for COWs.  When coding, bear in mind the differences between COWs and MSWs.</p>
+<p>There are two versions of the sample programs in <a href="../appendix05/">Appendix 5</a> of this User Programming Guide.  One version is for MSWs and the other is for COWs.  When coding, bear in mind the differences between COWs and MSWs.</p>
 </li>
 <li>
-<p>The Work Area Layouts in <a href="/appendices/appendix02/">Appendix 2</a> of this User Programming Guide are the layouts of the MSWs.  For the COW layouts, <a href="/appendices/appendix13/">see Appendix 13</a>.   </p>
+<p>The Work Area Layouts in <a href="../appendix02/">Appendix 2</a> of this User Programming Guide are the layouts of the MSWs.  For the COW layouts, <a href="../appendix13/">see Appendix 13</a>.   </p>
 </li>
 <li>
-<p>The COPY files that are printed in <a href="/appendices/appendix05/">Appendix 5</a> of this User Programming Guide are for the Mainframe-Specific Work Areas (MSWs).  For the COW COPY files, <a href="/appendices/appendix14/">see Appendix 14</a>.</p>
+<p>The COPY files that are printed in <a href="../appendix05/">Appendix 5</a> of this User Programming Guide are for the Mainframe-Specific Work Areas (MSWs).  For the COW COPY files, <a href="../appendix14/">see Appendix 14</a>.</p>
 </li>
 </ol>
 <h2 id="overview"><span id="appendix12.2">Overview </span></h2>
@@ -487,7 +487,7 @@
 <h2 id="consideration-when-using-the-cows"><span id="appendix12.4">Consideration When Using the COWs</span></h2>
 <p>The Long Work Area 2 option that is available when using the MSWs is occasionally not needed or not supported when using the COWs, as follows:</p>
 <ul>
-<li>When using the COWs, Functions 1, 1E and 3 do not have the long Work Area 2 option.  This option is unnecessary in these cases, since the COW versions of the regular Work Area 2s for these functions already accommodate all the requisite fields.  However, Functions 1A and BL continue to have the long Work Area 2 option when COWs are used.  (<a href="/chapters/chapterII/chapterII/">See Chapter II.5</a> for a general discussion of the long Work Area 2 option.)</li>
+<li>When using the COWs, Functions 1, 1E and 3 do not have the long Work Area 2 option.  This option is unnecessary in these cases, since the COW versions of the regular Work Area 2s for these functions already accommodate all the requisite fields.  However, Functions 1A and BL continue to have the long Work Area 2 option when COWs are used.  (<a href="../../chapters/chapterII/chapterII/">See Chapter II.5</a> for a general discussion of the long Work Area 2 option.)</li>
 </ul>
 <h2 id="work-area-lengths-cows-and-msws"><span id="appendix12.5">Work Area Lengths (COWs and MSWs)</span></h2>
 <p>The following table lists the lengths of the members of both sets of work areas.  Note that the lengths of corresponding members from the two sets differ in most cases.  </p>
@@ -645,8 +645,8 @@
 <p>GBAT forms each OUTFILE record by appending Geosupport information to a copy of the data input record.  The information that is appended is determined by three factors:  the set of work areas being used, the function being executed and the value of the GEOCODE control entry that is in effect.  The GEOCODE value affects the appended information as follows:</p>
 <ul>
 <li>
-<p>When  GEOCODE=NO, the appended items consist only of selected output items from Work Area 1 (and, in case of MSW Functions 1, 1A, and 1E, an item created by GBAT called the HNHPD).  <a href="#a12-2">See Table A12-2</a> below for lists of the appended COW items and their lengths by function and set of work areas.  For MSW format, see <a href="/appendices/appendix09/#table-a9-4-msw-appended-items-for-geocodeno">Table 9-4</a> and <a href="/appendices/appendix09/#table-a9-5-msw-format-length-of-gbatappended-data">Table 9-5</a>.  </p>
-<p>When GEOCODE =YES the appended information consists only of work area 2 in its entirety. <a href="#a12-1">Table A12-1</a> above lists the lengths of these work areas by function and work area format.  <a href="/appendices/appendix02/">Appendix 2</a> contains the MSW Work Area Layouts and <a href="/appendices/appendix13/">Appendix 13</a> contains the COW Work Area layouts.  </p>
+<p>When  GEOCODE=NO, the appended items consist only of selected output items from Work Area 1 (and, in case of MSW Functions 1, 1A, and 1E, an item created by GBAT called the HNHPD).  <a href="#a12-2">See Table A12-2</a> below for lists of the appended COW items and their lengths by function and set of work areas.  For MSW format, see <a href="../appendix09/#table-a9-4-msw-appended-items-for-geocodeno">Table 9-4</a> and <a href="../appendix09/#table-a9-5-msw-format-length-of-gbatappended-data">Table 9-5</a>.  </p>
+<p>When GEOCODE =YES the appended information consists only of work area 2 in its entirety. <a href="#a12-1">Table A12-1</a> above lists the lengths of these work areas by function and work area format.  <a href="../appendix02/">Appendix 2</a> contains the MSW Work Area Layouts and <a href="../appendix13/">Appendix 13</a> contains the COW Work Area layouts.  </p>
 </li>
 <li>
 <p>When GEOCODE=ALL, the appended information consists of the data for GEOCODE=NO followed by the data appended for GEOCODE=YES.  <a href="#a12-3">Table A12-3</a> lists the lengths of the appended information by function and set of work areas.  These lengths typically are the sums of the corresponding lengths listed in <a href="#a12-1">Table A12-1</a> and <a href="#a12-2">Table A12-2</a>(and <a href="#a12-2a">A12-2A</a> if GEOUNIT=YES).</p>
@@ -1038,7 +1038,7 @@
 
 <p>Table A12-3 lists the length of the data appended by GBAT, itemized by function and option within function, GEOCODE value and set of work areas being used.</p>
 <p><b><u>Note: CROSSSTNAMES=YES</u></b>
-For Functions 1, 1E, 1B, 2, 3 and 3C, when GEOCODE=ALL (and, optionally, GEOUNIT=YES) and CROSSSTNAMES=YES, the appended data consist of the concatenation of the GEOCODE=NO data, (followed, optionally, by GEOUNIT=YES data,) followed by a 320-byte block of data containing cross street names, followed by the GEOCODE=YES data.  For further information about the layout of the appended CROSSSTNAMES data, refer to the <a href="/appendices/appendix03/">Appendix 3</a> entry for the List of Street Names (see paragraph on List of Cross Street Names).</p>
+For Functions 1, 1E, 1B, 2, 3 and 3C, when GEOCODE=ALL (and, optionally, GEOUNIT=YES) and CROSSSTNAMES=YES, the appended data consist of the concatenation of the GEOCODE=NO data, (followed, optionally, by GEOUNIT=YES data,) followed by a 320-byte block of data containing cross street names, followed by the GEOCODE=YES data.  For further information about the layout of the appended CROSSSTNAMES data, refer to the <a href="../appendix03/">Appendix 3</a> entry for the List of Street Names (see paragraph on List of Cross Street Names).</p>
 <p><center><b>Table A12-3:  Length of GBAT‑Appended Data (COWs and MSWs)</b></center>
 <center>Note: The data is appended to the user’s input record</center>  </p>
 <table id="a12-3">
