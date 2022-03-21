@@ -6,7 +6,7 @@ This chapter discusses various types of geographic locations known collectively 
 
 * The <u>three-street configurations</u> are locations that are specified in terms of an ‘on’ street between two cross streets.  There are three types of three-street configurations:  street segments, blockfaces, and street stretches.  					
 
-Table VII-1 lists the types of street configurations that Geosupport can process, the data items required to specify each type, the functions that process them, and the sections of this chapter in which they are discussed.  The [final Chapter](/chapters/chapterVII/section08/) in this chapter describes borough boundary processing, a special feature of all the street configuration functions except Function 3S.
+Table VII-1 lists the types of street configurations that Geosupport can process, the data items required to specify each type, the functions that process them, and the sections of this chapter in which they are discussed.  The [final Chapter](../section08/) in this chapter describes borough boundary processing, a special feature of all the street configuration functions except Function 3S.
 
 <b><u>Table VII-1:  Street Configuration Types and the Functions that Process Them</u></b>
 
@@ -22,7 +22,7 @@ Table VII-1 lists the types of street configurations that Geosupport can process
 
 > Applications pass input streets to the street configuration functions in the appropriate WA1 input fields, either in the form of street names or in the form of street codes.  In the case of two-street configurations, the order of the two input streets is immaterial;  either input street may be passed in either WA1 input street field.  In the case of three-street configurations, the ‘on’ street must be passed in the WA1 input ‘on’ street field;  the two cross streets may be passed in either order in the two WA1 input cross street fields.  
 
-> For any of the street configuration functions, input street names may be pseudo-street names or intersection names, except for the ‘on’ street in a three-street configuration.  Place names may not serve as input street names.  (For a discussion of non-street features, pseudo-street names, place names and intersection names, [see Chapter III.6.](/chapters/chapterIII/section06/))  <u>In the remainder of this chapter, the term ‘street’ refers to a street name or street code that conforms to the above criteria.</u>
+> For any of the street configuration functions, input street names may be pseudo-street names or intersection names, except for the ‘on’ street in a three-street configuration.  Place names may not serve as input street names.  (For a discussion of non-street features, pseudo-street names, place names and intersection names, [see Chapter III.6.](../../chapterIII/section06/))  <u>In the remainder of this chapter, the term ‘street’ refers to a street name or street code that conforms to the above criteria.</u>
 
 
 Geosupport processes street configurations based on a simplified model of the city’s geography embodied in a digital map of New York City called CSCL (Citywide Street Centerline).  The CSCL is a single-line map, that is, it represents streets and other linear geographic features, including railroad lines and shorelines, as single lines with no thickness, and it represents intersections as single points with no area or internal detail.  In reality, of course, intersections occupy areas of various sizes and shapes, as reflected in a more realistic type of map known as a double-line map.  The distinction between a single-line map and a double-line map is illustrated in Figure VII-1.  The Department of City Planning extracts a version of the CSCL known as LION which may be more familiar to Geosupport Users and is available for download or for view on DCP’s website:  
@@ -31,7 +31,7 @@ Geosupport processes street configurations based on a simplified model of the ci
 
 [http://www1.nyc.gov/site/planning/data-maps/open-data.page#lion](http://www1.nyc.gov/site/planning/data-maps/open-data.page#lion)
 
-![FigureVII-1 <>](/img/figureVII-1.png "Figure VII-1")
+![FigureVII-1 <>](../../../img/figureVII-1.png "Figure VII-1")
 <div class="img_tagline"> Figure VII-1: Single Line and Double-Line Maps Contrasted </div>
 
 
@@ -39,4 +39,4 @@ Geosupport processes street configurations based on a simplified model of the ci
 
 
 <p>_________________________</p>
-<a href="#section01-9-9"><sup id="section01-9">9</sup></a> Node ID is described in [Chapter VII.2](/chapters/chapterVII/section02/).  The phrase ‘node number’ may occasionally appear in Geosupport documentation and in copy books.
+<a href="#section01-9-9"><sup id="section01-9">9</sup></a> Node ID is described in [Chapter VII.2](../section02/).  The phrase ‘node number’ may occasionally appear in Geosupport documentation and in copy books.

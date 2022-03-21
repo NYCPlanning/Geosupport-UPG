@@ -4,11 +4,11 @@ There are many applications in which geographic locations to be processed are id
 
 This section introduces concepts and terminology needed to discuss three-street configurations.  The three succeeding sections discuss the Geosupport functions that process the various types of three-street configurations:
 
-* [Chapter VII.4](/chapters/chapterVII/section04/) discusses Function 3, which processes street segments
+* [Chapter VII.4](../section04/) discusses Function 3, which processes street segments
 
-* [Chapter VII.5](/chapters/chapterVII/section05/) discusses Function 3C, which processes blockfaces
+* [Chapter VII.5](../section05/) discusses Function 3C, which processes blockfaces
 
-* [Chapter VII.6](/chapters/chapterVII/section06/) discusses Function 3S, which processes street stretches.
+* [Chapter VII.6](../section06/) discusses Function 3S, which processes street stretches.
 
 The definitions below are based on Geosupport’s single-line map model of the city’s geography, as explained in Chapter VII.1.  Also, recall that the term ‘street’ refers to a street name or street code that satisfies the criteria delineated in Chapter VII.1.  The term ‘node’ is as defined in [Chapter VII-2](/chapters/chapterVII/section02/).
 
@@ -22,7 +22,7 @@ In Geosupport, the general term ‘street segment’ is used to describe two sit
 
 * A street segment is strictly defined as a street stretch such that the two delimiting nodes are consecutive along the ‘on’ street.  Every such segment is uniquely identified by a segment ID.
 
-* For Geosupport purposes, a street segment often refers to a street stretch consisting of more than one segment, such that at least one side of the street stretch is a single entire blockface.  This street stretch is defined by multiple segments id’s, all of which may optionally be returned to the user.  For a more detailed discussion [see Chapter VII.4](/chapters/chapterVII/section04/), which describes Function 3.
+* For Geosupport purposes, a street segment often refers to a street stretch consisting of more than one segment, such that at least one side of the street stretch is a single entire blockface.  This street stretch is defined by multiple segments id’s, all of which may optionally be returned to the user.  For a more detailed discussion [see Chapter VII.4](../section04/), which describes Function 3.
 
 Every street stretch is composed of a set of one or more street segments, which do not necessarily form a continuously connected chain.  That is, a street stretch can encompass gaps in the street.
 
