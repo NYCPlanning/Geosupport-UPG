@@ -1,7 +1,7 @@
 <h2>VIII.4 The Geosupport Copy Files</h2>
 This section describes an optional feature of Geosupport, its COPY files.  The Geosupport COPY files contain source code layouts of the Geosupport API work areas in the COBOL, Assembler, PL/1, C and NATURAL programming languages.  The use of the Geosupport COPY files can greatly facilitate user programming and is strongly recommended for all applications.  The Geosupport COPY files are contained in the Geosupport COPY libraries, which are described below.
 
-In this section, basic concepts of COPY files are explained, and the organization of the Geosupport COPY libraries is described.  In [Chapter VIII.5](../chapterVIII/section05), the specific source code statements that users must code in their programs to utilize the Geosupport COPY files are described.  [Chapter VIII.6](../chapterVIII/section06) describes the JCL required to compile a program that utilizes the Geosupport COPY files.
+In this section, basic concepts of COPY files are explained, and the organization of the Geosupport COPY libraries is described.  In [Chapter VIII.5](../section05), the specific source code statements that users must code in their programs to utilize the Geosupport COPY files are described.  [Chapter VIII.6](../section06) describes the JCL required to compile a program that utilizes the Geosupport COPY files.
 
 ## <span id="chapterVIII.4.1"><center><u>Overview of COPY Files in General</u></center></span>
 
@@ -35,10 +35,10 @@ The MSW Work Area 2s of Functions 1, and 1E, (regular WA2), 2, 3 and 3C all have
 
 The COW Work Area 2s are handled in a similar fashion, though they may not all have the same length.
 
-Tables VIII-1 and VIII-2, below, list all of the MSW and COW COPY files respectively for COBOL, Assembler, PL/1, NATURAL and C. The tables indicate the work areas for which each file contains layouts, the lengths of those work areas in bytes, and the name of each file by programming language. [Appendix 5](../../appendices/appendix05/) and [Appendix 14](../../appendices/appendix14/) contain printouts of the MSW and COW COPY files respectively.
+Tables VIII-1 and VIII-2, below, list all of the MSW and COW COPY files respectively for COBOL, Assembler, PL/1, NATURAL and C. The tables indicate the work areas for which each file contains layouts, the lengths of those work areas in bytes, and the name of each file by programming language. [Appendix 5](../../../appendices/appendix05/) and [Appendix 14](../../../appendices/appendix14/) contain printouts of the MSW and COW COPY files respectively.
 
 
-**Important Note: As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to th COW format.**  See [Appendix 12](../../appendices/appendix12/)
+**Important Note: As of January 1, 2020, Mainframe-Specific Work Areas (MSWs) will no longer be supported.  It is therefore essential that users convert their MSW applications to th COW format.**  See [Appendix 12](../../../appendices/appendix12/)
 
 <center><b>Table VIII-1: MSW COPY Files for COBOL, Assembler, PL/1, C and NATURAL</b></center>
 
