@@ -8,12 +8,12 @@ It is recommended that you use GBAT on machines with the latest versions of the 
 
 ##  <span id="chapterX.2.2">X.2.2 Starting the Application </span>   
 
-To start the application, find and double-click the NYCgbat.exe program icon which appears as shown on the right side, ![Gbat_Logo>](/img/gbat_2.2.1.jpg "GBAT logo") in My Computer or Windows Explorer.  
+To start the application, find and double-click the NYCgbat.exe program icon which appears as shown on the right side, ![Gbat_Logo>](../../../img/gbat_2.2.1.jpg "GBAT logo") in My Computer or Windows Explorer.  
 
 ##  <span id="chapterX.2.3">X.2.3 Selecting an ODBC Data Source </span>   
 
 Upon starting the application, you will be presented with the following ODBC data source selection screen.  
-![GoatFunction_medium<>](/img/gbat2.3.1.jpg "GBAT DataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.3.1.jpg "GBAT DataSource")  
 
 An ODBC Data Source file is a configuration file that contains information about a database that can be accessed through ODBC. If you have previously configured the data source, it will be listed in the list displayed in the “Select Data Source” window, an example of which is shown above. In that situation, select that Data Source and click on the OK button. Then proceed to [Chapter X.2.5](#x25-function-selection) labeled “Function Selection” in this document. If you have not previously configured your data source, you need to create a new data source. This is done by clicking on the New button.  
 
@@ -25,29 +25,29 @@ Creating a data source for text files is more complicated. Follow the steps indi
 
 First, click on the New button in the Select Data Source Window, which is illustrated above. You will be presented with a list of drivers for which a data source can be set up as illustrated below on the “Create New Data Source” window. Select the Microsoft Text Driver and click on the Next button.  
 
-![GoatFunction_medium<>](/img/gbat2.4.1.jpg "GBAT TextDataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.4.1.jpg "GBAT TextDataSource")  
 
 In the ”Create New Data Source” window illustrated below, choose a name for your data source and click on the Next button.  
 
-![GoatFunction_medium<>](/img/gbat2.4.2.jpg "GBAT TextDataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.4.2.jpg "GBAT TextDataSource")  
 
 Click on the finish button in the window shown next, and you will be taken to the ODBC text driver’s configuration screen.  
 
-![GoatFunction_medium<>](/img/gbat2.4.3.jpg "GBAT TextDataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.4.3.jpg "GBAT TextDataSource")  
 
 
 The next window illustrates the “ODBC Text Setup” screen as it initially appears.  
 
-![GoatFunction_medium<>](/img/gbat2.4.4.jpg "GBAT TextDataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.4.4.jpg "GBAT TextDataSource")  
 
 In the above window, first deselect the “Use Current Directory” checkbox.  
 Next Using the “Select Directory” button, choose the directory in which your text files are located.  
 Then click on the Options button to expand the window.  
 
-![GoatFunction_medium<>](/img/gbat2.4.5.jpg "GBAT TextDataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.4.5.jpg "GBAT TextDataSource")  
 
 If the extension of the filenames in which your data is stored does not appear on the Extensions List of the above window, type it in the Extension box and click on the Add button. Then, select that extension on the list and click on the “Define Format” button.  
-![GoatFunction_medium<>](/img/gbat2.4.6.jpg "GBAT TextDataSource")  
+![GoatFunction_medium<>](../../../img/gbat2.4.6.jpg "GBAT TextDataSource")  
 
 You can use the above window labeled “Define Text Format” to specify the schema of the data in each of your text files. This is important because GBAT operates on a database paradigm rather than a flat-file paradigm. It needs to be given data in the form of Tables and Columns (also know as “fields”), rather than files and character positions, in order to make sense out of them.  
 
@@ -84,7 +84,7 @@ When you’ve finished setting up your table, you can select another text file t
 
 ## <span id="chapterX.2.5"> X.2.5 Function Selection </span>
 
-![GoatFunction_medium<>](/img/gbat2.5.1.jpg "GBAT Function_Selection")  
+![GoatFunction_medium<>](../../../img/gbat2.5.1.jpg "GBAT Function_Selection")  
 
 This is the point at which the configuration of your GBAT session proper begins. First, you will be defining the input information to be used by GBAT; that is, where the data is coming from, and what sort of processing should be carried out on it.  
 
@@ -102,7 +102,7 @@ Click on the Next button to continue on to the next screen.
 
 If you chose Function 1 on the Function Selection window, the following window will be displayed.  
 
-![GoatFunction_medium<>](/img/gbat2.6.1.jpg "GBAT Function_SetUp")
+![GoatFunction_medium<>](../../../img/gbat2.6.1.jpg "GBAT Function_SetUp")
 
 Please note that the window for Function 1E differs from the window for Function 1 only in the label at the top of the window.  
 
@@ -120,7 +120,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function 1A on the Function Selection screen, the following window will now be displayed:  
 
-![GoatFunction_medium<>](/img/gbat2.6.2.jpg "GBAT Function1A_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.2.jpg "GBAT Function1A_SetUp")  
 
 The input information required to execute Function 1A includes an address number, street name or street code, and borough as well as information defined as “Extended Data”. For information on defining the address number, street information and borough refer to the previous section which describes the input information required to execute Function 1 and 1E since this information is the same.  
 
@@ -132,7 +132,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function 1N on the Function Selection screen, the following window will be displayed:    
 
-![GoatFunction_medium<>](/img/gbat2.6.3.jpg "GBAT Function1N_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.3.jpg "GBAT Function1N_SetUp")  
 
 The input information required to execute Function 1N includes a street name and borough.  
 First select from the drop-down list the field in the table that contains the street name.  
@@ -143,7 +143,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function 2 on the Function Selection screen, the following window will now be visible:      
 
-![GoatFunction_medium<>](/img/gbat2.6.4.jpg "GBAT Function2_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.4.jpg "GBAT Function2_SetUp")  
 
 The input information required to execute Function 2 includes two streets and the borough associated with each street. If the streets intersect exactly twice, a compass direction is required as well. If the streets intersect more than twice, then the intersection cannot be processed by Geosupport.  
 
@@ -159,7 +159,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function 3 on the Function Selection screen, the following window will be displayed:      
 
-![GoatFunction_medium<>](/img/gbat2.6.5.jpg "GBAT Function3_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.5.jpg "GBAT Function3_SetUp")  
 
 The input information required to execute Function 3 includes the on-street, two cross streets and the boroughs of each street.  
 
@@ -173,7 +173,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function 3C on the Function Selection screen, the following window will now be displayed:      
 
-![GoatFunction_medium<>](/img/gbat2.6.6.jpg "GBAT Function3C_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.6.jpg "GBAT Function3C_SetUp")  
 
 The input information required to execute Function 3C includes a compass direction, an on-street name, two cross streets, and the boroughs for each of the streets.  
 
@@ -186,7 +186,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function BL on the Function Selection screen, the following window will now be displayed:  
 
-![GoatFunction_medium<>](/img/gbat2.6.7.jpg "GBAT FunctionBL_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.7.jpg "GBAT FunctionBL_SetUp")  
 
 The input information required to execute Function BL includes a borough, tax block and tax lot. Each of these items may be provided in separate fields or as a single ten-character string in one field.  
 
@@ -202,7 +202,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose Function BN on the Function Selection screen, the following window will now be displayed:    
 
-![GoatFunction_medium<>](/img/gbat2.6.8.jpg "GBAT FunctionBN_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.8.jpg "GBAT FunctionBN_SetUp")  
 
 The input information required to execute Function BN includes only the Building Identification Number (BIN). Select the field containing the list of input BINs using the drop-down menu.  
 
@@ -214,7 +214,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 If you chose a D Function on the Function Selection screen, a variation on the following window will now be displayed:      
 
-![GoatFunction_medium<>](/img/gbat2.6.9.jpg "GBAT FunctionD_SetUp")  
+![GoatFunction_medium<>](../../../img/gbat2.6.9.jpg "GBAT FunctionD_SetUp")  
 
 The input information required to execute Function D, DG or DN includes one to three street codes and their associated borough. Five digit street codes are supplied for Function D, seven digit street codes are supplied for Function DG and ten digit street codes are supplied for Function DN.  
 
@@ -230,7 +230,7 @@ Once you have finished configuring these options, click on the Next button to mo
 
 The General Input Configuration Window should now be displayed:  
 
-![GoatFunction_medium<>](/img/gbat2.7.1.jpg "GBAT FunctionD_SetUp")   
+![GoatFunction_medium<>](../../../img/gbat2.7.1.jpg "GBAT FunctionD_SetUp")   
 
 This window is used to configure various options that influence how the data is processed, but are not specific to a particular function.  
 
@@ -255,7 +255,7 @@ Once you have finished configuring the options in this window, click on the “N
 
 You should now see the following Output Configuration window:  
 
-![GoatFunction_medium<>](/img/gbat2.8.1.jpg "GBAT Output_Configuration")  
+![GoatFunction_medium<>](../../../img/gbat2.8.1.jpg "GBAT Output_Configuration")  
 
 This screen is used to configure various aspects of the behavior of GBAT during the function processing as well as describing the desired output. If you have previously configured these settings and saved them to a file, you can click on the “Load Output Configuration” button to retrieve the file. You will be presented with a window that lists the various output configuration files that are stored in your system.  
 
@@ -277,13 +277,13 @@ Click on the Next button to move to the next screen, which is described in [Chap
 
 At this point everything is prepared for the actual GBAT execution. The Function Processing window should now appear on your display unit:  
 
-![GoatFunction_medium<>](/img/gbat2.9.1.jpg "GBAT Function_Processing")  
+![GoatFunction_medium<>](../../../img/gbat2.9.1.jpg "GBAT Function_Processing")  
 
 Click on the Start button to begin execution. Output messages will periodically be displayed in the window, indicating the process’s status, as well as a blue progress bar which will indicate the percentage of the job that has been completed. If at any time you would like to halt the processing, simply click on the upper Cancel button.  
 
 When processing has completed, the window will look something like the following window.  
 
-![GoatFunction_medium<>](/img/gbat2.9.2.jpg "GBAT Function_Processing")  
+![GoatFunction_medium<>](../../../img/gbat2.9.2.jpg "GBAT Function_Processing")  
 
 If you would like to run the process again, click on the Start button. If you would like to make changes to the configuration before executing GBAT again, click on the Back button until you reach the screen that contains what you want changed.  
 To exit the application, click on the Finish button.
