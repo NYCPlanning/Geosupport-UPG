@@ -6,7 +6,7 @@ This chapter discusses various types of geographic locations known collectively 
 
 * The <u>three-street configurations</u> are locations that are specified in terms of an ‘on’ street between two cross streets.  There are three types of three-street configurations:  street segments, blockfaces, and street stretches.  					
 
-Table VII-1 lists the types of street configurations that Geosupport can process, the data items required to specify each type, the functions that process them, and the sections of this chapter in which they are discussed.  The [final Chapter](../section08/) in this chapter describes borough boundary processing, a special feature of all the street configuration functions except Function 3S.
+Table VII-1 lists the types of street configurations that Geosupport can process, the data items required to specify each type, the functions that process them, and the sections of this chapter in which they are discussed.  The [final section](../section08/) in this chapter describes borough boundary processing, a special feature of all the street configuration functions except Function 3S.
 
 <b><u>Table VII-1:  Street Configuration Types and the Functions that Process Them</u></b>
 
