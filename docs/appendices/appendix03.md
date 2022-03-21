@@ -1,6 +1,6 @@
 <h2 class="pdfAppendix"><center>APPENDIX 3:  DATA ITEM DICTIONARY</center></h2>
 
-This Data Item Dictionary is an alphabetical list of the data items for which there are fields in the Geosupport API work areas, together with descriptive information.  In general, data items are listed in this appendix under the names used in the work area layouts in [Appendix 2 (MSW)](/appendices/appendix02/) and [Appendix 13 (COW)](/appendices/appendix13/).  However, if an item is associated with multiple work area fields having varying field names, and is identical in format and range of values in all those fields, the item is documented in a generically-named entry, and there is also a separate entry for each of those fields consisting only of a reference to the generic entry.  For example, there is a generic entry for CENSUS TRACT containing full descriptive information, and there are also entries for 2000 CENSUS TRACT, LEFT 2000 CENSUS TRACT, RIGHT 2000 CENSUS TRACT, 2010 CENSUS TRACT etc., containing only a reference to the entry for CENSUS TRACT.
+This Data Item Dictionary is an alphabetical list of the data items for which there are fields in the Geosupport API work areas, together with descriptive information.  In general, data items are listed in this appendix under the names used in the work area layouts in [Appendix 2 (MSW)](../appendix02/) and [Appendix 13 (COW)](../appendix13/).  However, if an item is associated with multiple work area fields having varying field names, and is identical in format and range of values in all those fields, the item is documented in a generically-named entry, and there is also a separate entry for each of those fields consisting only of a reference to the generic entry.  For example, there is a generic entry for CENSUS TRACT containing full descriptive information, and there are also entries for 2000 CENSUS TRACT, LEFT 2000 CENSUS TRACT, RIGHT 2000 CENSUS TRACT, 2010 CENSUS TRACT etc., containing only a reference to the entry for CENSUS TRACT.
 
 Each entry consists of an appropriate combination of the following elements:
 
@@ -3470,7 +3470,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
   <tr>
     <td class="topVerticalTD">Description:</td>
-    <td>'X' indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](/appendices/appendix13/) for the Work Area layouts.  Also, see <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. <br>
+    <td>'X' indicates request for Extended Work Area 2 for the supported functions.  These extended work areas contain street names in addition to Street Codes.  Users no longer have to make separate D, DG, or DN calls to get the street names.  In addition, CSCL data is returned in the extended Work Area 2.  See [Appendix 13](../appendix13/) for the Work Area layouts.  Also, see <a href="../../chapters/chapterII/section07/">Chapter II.7</a>. <br>
     <br>'E'  indicates request for Enhanced Work Area 2 for Functions 3 and 3C only.  The enhanced Work Area 2 (WA2) returns all the information in the extended WA2 and also returns more B7SCs, instead of B5SCs.  For example, Functions 3 and 3C return B7SCs in the list of cross streets at the low address end and the high address end of the segment.  This gives the user easier access to a finer definition of the streets.  </td>
   </tr>
   <tr>
@@ -3524,7 +3524,7 @@ The LGI’s entries are ordered so that entries with non-empty BINs are listed f
   </tr>
   <tr>
     <td class="topVerticalTD">Description:</td>
-    <td>The Neighborhood Tabulation Areas (NTAs) are aggregations of census tracts that reflect the 2010 Census.  The NTAs are assigned a 4-byte code and a 75-byte name.  They are used by the Population Division of the Department of City Planning.  See [Appendix 16](/appendices/appendix16/) for a description of the NTA’s history and significance.</td>
+    <td>The Neighborhood Tabulation Areas (NTAs) are aggregations of census tracts that reflect the 2010 Census.  The NTAs are assigned a 4-byte code and a 75-byte name.  They are used by the Population Division of the Department of City Planning.  See [Appendix 16](../appendix16/) for a description of the NTA’s history and significance.</td>
   </tr>
   <tr>
     <td></td>
@@ -5709,7 +5709,7 @@ The following table indicates the position of the one-byte <i>truck_route_type</
               </tr>
               <tr>
                   <td>‘C’</td>
-                  <td>The platform-independent work areas known as the Character-Only Work Areas (COWs) are used.  These contain no packed decimal fields.  For information on using COWs on the mainframe and the differences from the MSWs, see [Appendix 12](/appendices/appendix12/).  For the  work area layouts of  the COWs, see [Appendix 13](/appendices/appendix13/).</td>
+                  <td>The platform-independent work areas known as the Character-Only Work Areas (COWs) are used.  These contain no packed decimal fields.  For information on using COWs on the mainframe and the differences from the MSWs, see [Appendix 12](../appendix12/).  For the  work area layouts of  the COWs, see [Appendix 13](../appendix13/).</td>
               </tr>
           </table>
       </td>

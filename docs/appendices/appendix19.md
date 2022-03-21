@@ -56,7 +56,7 @@ The following is a list of all of the Geosupport work areas, indicating the leng
 </tr>
 </table>  
 
-[Appendix 3](/appendices/appendix03/) consists of a data item dictionary describing the fields that occur in the work areas.  
+[Appendix 3](../appendix03/) consists of a data item dictionary describing the fields that occur in the work areas.  
 
 ## <span id="appendix19.2">Work Area 1 (COW) - All Functions </span>
 

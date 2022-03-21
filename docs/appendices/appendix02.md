@@ -14,9 +14,9 @@ User-written application programs and GBAT utilities that use the MSW format may
 
 To assist users in the conversion to COW format:  
 
-   *  [Appendix 12](/appendices/appendix12/) contains information needed to create COW applications.    
-   *  [Appendix 13](/appendices/appendix13/) contains the COW Work Area Layouts.  
-   *  [Appendix 14](/appendices/appendix14/) contains the COW copy files.   
+   *  [Appendix 12](../appendix12/) contains information needed to create COW applications.    
+   *  [Appendix 13](../appendix13/) contains the COW Work Area Layouts.  
+   *  [Appendix 14](../appendix14/) contains the COW copy files.   
 
 Any further issues may be directed via email to: Geosupport_DL@planning.nyc.gov
 
@@ -25,13 +25,13 @@ Any further issues may be directed via email to: Geosupport_DL@planning.nyc.gov
 
 This appendix contains layouts of all of the work MSW areas used with the Geosupport System’s API.  As of January 1, 2020, these layouts are no longer supported.  
 
-Some Geosupport functions can only be called using one work area, Work Area 1 (WA1). Other functions can be called using two work areas, WA1 and Work Area 2 (WA2).  For a discussion of one-work-area and two-work-area calls, [see Chapter II.4](/chapters/chapterII/section04/).  WA1 contains both input fields (fields used to pass data from the application to Geosupport) and output fields (fields used to pass data from Geosupport to the application).  WA1 is organized so that the input fields occur first, followed by a filler, followed by the output fields.  WA2 contains output fields only.
+Some Geosupport functions can only be called using one work area, Work Area 1 (WA1). Other functions can be called using two work areas, WA1 and Work Area 2 (WA2).  For a discussion of one-work-area and two-work-area calls, [see Chapter II.4](../../chapters/chapterII/section04/).  WA1 contains both input fields (fields used to pass data from the application to Geosupport) and output fields (fields used to pass data from Geosupport to the application).  WA1 is organized so that the input fields occur first, followed by a filler, followed by the output fields.  WA2 contains output fields only.
 
 All functions use the same WA1 layout, but the set of WA1 fields that are used depends on the function.  In the layout of WA1 in this appendix, the column labeled ‘Functions’ indicates which functions use each field.
 
-The functions that can be called using two work areas use various WA2 layouts of various lengths.  In some cases, several functions share a single WA2 layout.  For some functions, the user has a choice of two WA2 layouts, a ‘regular’ WA2 and a ‘long’ WA2.  For a discussion of the long WA2 option, [see Chapter II.5](/chapters/chapterII/section05/).
+The functions that can be called using two work areas use various WA2 layouts of various lengths.  In some cases, several functions share a single WA2 layout.  For some functions, the user has a choice of two WA2 layouts, a ‘regular’ WA2 and a ‘long’ WA2.  For a discussion of the long WA2 option, [see Chapter II.5](../../chapters/chapterII/section05/).
 
-The following is a list of all of the Geosupport MSW work areas, indicating the length of each in bytes.  Functions that are listed together share a single Work Area 2 layout.  [Appendix 3](/appendices/appendix03/) consists of a data item dictionary describing the fields that occur in the work area.  
+The following is a list of all of the Geosupport MSW work areas, indicating the length of each in bytes.  Functions that are listed together share a single Work Area 2 layout.  [Appendix 3](../appendix03/) consists of a data item dictionary describing the fields that occur in the work area.  
 
 | Mainframe-Specific Work Area (MSW)    | Length     |
 | :------------- | :------------- |

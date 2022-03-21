@@ -89,7 +89,7 @@ The Geosupport COPY files contain source code layouts of the Geosupport work are
 
 (\*)   Functions 1A, BL and BN share a single regular WA2 layout.
 (\**) Functions 1A and BL share a single long WA2 layout.  (Function BN does not have the long WA2 option.)
-See [Chapter VIII.4](/chapters/chapterVIII/section04) for a detailed discussion of the Geosupport COPY feature.
+See [Chapter VIII.4](../../chapters/chapterVIII/section04) for a detailed discussion of the Geosupport COPY feature.
 
 ## <span id="appendix05.1"><center>COBOL COPY Files (MSW)</center></span>
 

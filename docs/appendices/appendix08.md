@@ -6,7 +6,7 @@ For each sample program, this appendix contains a printout of the job-stream inp
 
 Please note that the sample application programs are not guaranteed to run exactly as shown in this appendix.  The samples are here as an aid in developing Geosupport application programs.
 
-All of the sample programs use the Geosupport COPY facility.  Since this appendix displays un-compiled source code rather than compilation output listings, the source code is shown without the COPY file expansions.  Therefore, the source code as shown contains references to fields in Geosupport work areas but does not contain the definitions of those fields.  To see those definitions, refer to the listings of the COPY file contents in [Appendix 5](/appendices/appendix05/) (for MSW) and [Appendix 14](/appendices/appendix14/) (for COW).
+All of the sample programs use the Geosupport COPY facility.  Since this appendix displays un-compiled source code rather than compilation output listings, the source code is shown without the COPY file expansions.  Therefore, the source code as shown contains references to fields in Geosupport work areas but does not contain the definitions of those fields.  To see those definitions, refer to the listings of the COPY file contents in [Appendix 5](../appendix05/) (for MSW) and [Appendix 14](../appendix14/) (for COW).
 
 There are two sample programs in each programming language, referred to as Sample Programs #1 and #2.  The processing performed in Sample Program #1 is similar for all of the programming languages, as is the processing performed in Sample Program #2.  Note: there is an MSW and COW version of each of the sample programs.  
 
@@ -16,7 +16,7 @@ Sample Program #2 performs similar processing, but its input file contains stree
 
 Both sample programs use the Compact Names feature to direct Geosupport to return street names in a format suitable for display in the output report.  In addition, Sample Program #1, but not Sample Program #2, uses the Street Name Normalization Length Limit (SNL) feature to limit the lengths of normalized street names so they will fit into that program’s output report.
 
-In both sample programs, Function D is called to generate the cross street names.  Note, that Geosupport will generate all the cross street names automatically if the user specifies the Cross Street Names Flag in the initial Function 1 or Function 2 call or if the user calls Functions 1/1E Extended or Function 1B.  (See Cross Street Names Flag in [Appendix 3](/appendices/appendix03/).)  The Function D call, however, is used in the sample programs to demonstrate use of Function D and a one work-area-call.
+In both sample programs, Function D is called to generate the cross street names.  Note, that Geosupport will generate all the cross street names automatically if the user specifies the Cross Street Names Flag in the initial Function 1 or Function 2 call or if the user calls Functions 1/1E Extended or Function 1B.  (See Cross Street Names Flag in [Appendix 3](../appendix03/).)  The Function D call, however, is used in the sample programs to demonstrate use of Function D and a one work-area-call.
 
 In detail, the processing performed by Sample Program #1 is as follows:
 

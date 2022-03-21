@@ -4,21 +4,21 @@
 
 This appendix contains a summary description of each Geosupport function.  The entry for each function includes the following elements:
 
-* <u>Description of function and UPG citations:</u>  A brief narrative description of the function’s purposes, main features and principal output data, with references to relevant sections in the body of the UPG.  (For a comprehensive list of output data items, see the corresponding work area layouts in [Appendix 2.](/appendices/appendix02/))
+* <u>Description of function and UPG citations:</u>  A brief narrative description of the function’s purposes, main features and principal output data, with references to relevant sections in the body of the UPG.  (For a comprehensive list of output data items, see the corresponding work area layouts in [Appendix 2.](../appendix02/))
 
-* <u><b>Validation:</b></u>  A description of the validation significance of a successful two-work area call to the function.  (The nature of the validation significance of a one-work area call is described in [Chapter II.4.](/chapters/chapterII/section04/))  Entries in this appendix for functions that cannot be called using two work areas do not have a validation section.
+* <u><b>Validation:</b></u>  A description of the validation significance of a successful two-work area call to the function.  (The nature of the validation significance of a one-work area call is described in [Chapter II.4.](../../chapters/chapterII/section04/))  Entries in this appendix for functions that cannot be called using two work areas do not have a validation section.
 
-* <u>Input fields:</u>  A list of mandatory and optional WA1 input fields used to call the function.  All input field names are listed in this appendix as they appear in the WA1 layout in [Appendix 2](/appendices/appendix02/) for MSWs and [Appendix 13](/appendices/appendix13/) for COWs, except for street and house number input fields, which are listed as follows:
+* <u>Input fields:</u>  A list of mandatory and optional WA1 input fields used to call the function.  All input field names are listed in this appendix as they appear in the WA1 layout in [Appendix 2](../appendix02/) for MSWs and [Appendix 13](../appendix13/) for COWs, except for street and house number input fields, which are listed as follows:
 
-* Input street fields are usually listed in this appendix generically, using the terms ‘Street-1’, ‘Street-2’ and ‘Street-3’.  Input street data may be in the form of either street names or street codes; input street code data may be in several forms (see [Chapter IV.8](/chapters/chapterIV/section08/)).  The terms ‘Street-1’, ‘Street-2’ and ‘Street-3’ refer to any of the following three sets of WA1 input fields, the choice of which is at the discretion of the application designer:   Street Name-1, Street Name-2 and Street Name-3;  or PB5SC-1, PB5SC-2 and PB5SC-3 (MSW only); or B10SC-1, B10SC-2 and B10SC-3.  (<u>Note:</u> B5SC-x (where x = 1, 2 or 3) input and B7SC-x input is located left-justified and space-filled in the corresponding B10SC-x input fields.)
+* Input street fields are usually listed in this appendix generically, using the terms ‘Street-1’, ‘Street-2’ and ‘Street-3’.  Input street data may be in the form of either street names or street codes; input street code data may be in several forms (see [Chapter IV.8](../../chapters/chapterIV/section08/)).  The terms ‘Street-1’, ‘Street-2’ and ‘Street-3’ refer to any of the following three sets of WA1 input fields, the choice of which is at the discretion of the application designer:   Street Name-1, Street Name-2 and Street Name-3;  or PB5SC-1, PB5SC-2 and PB5SC-3 (MSW only); or B10SC-1, B10SC-2 and B10SC-3.  (<u>Note:</u> B5SC-x (where x = 1, 2 or 3) input and B7SC-x input is located left-justified and space-filled in the corresponding B10SC-x input fields.)
 
 The generic street input field names, ‘Street-1’, ‘Street-2’ and ‘Street-3’, are not used in the entries for Function 1N, which accepts input street names only, and Functions D, DG and DN, which accept input street codes only.
 
-* <u>Input house number fields</u> are listed generically using the term ‘House Number’.  Input house numbers may be in a displayable, character format, using the WA1 input field called House Number, or they may be in HNI format (MSW, see [Chapter V.2](/chapters/chapterV/section02/)), using the WA1 input field House Number in Internal Format (HNI), or they may be in HNS format (COW, see [Chapter V.2](/chapters/chapterV/section02/)); using the WA1 input field House Number in Sort Format (HNS).
+* <u>Input house number fields</u> are listed generically using the term ‘House Number’.  Input house numbers may be in a displayable, character format, using the WA1 input field called House Number, or they may be in HNI format (MSW, see [Chapter V.2](../../chapters/chapterV/section02/)), using the WA1 input field House Number in Internal Format (HNI), or they may be in HNS format (COW, see [Chapter V.2](../../chapters/chapterV/section02/)); using the WA1 input field House Number in Sort Format (HNS).
 
-* <u>Selected Geosupport Return Codes:</u> A list of selected Geosupport Return Codes (GRCs) and Reason Codes that the function can issue, with brief explanations.  Only certain notable GRCs specific to the function are included.  GRCs that are self-explanatory or that apply to many functions, such as those relating to system errors or to street name normalization and recognition problems, are not included.  For a complete list of GRCs, Reason Codes and Messages, see [Appendix 4](/appendices/appendix04/).
+* <u>Selected Geosupport Return Codes:</u> A list of selected Geosupport Return Codes (GRCs) and Reason Codes that the function can issue, with brief explanations.  Only certain notable GRCs specific to the function are included.  GRCs that are self-explanatory or that apply to many functions, such as those relating to system errors or to street name normalization and recognition problems, are not included.  For a complete list of GRCs, Reason Codes and Messages, see [Appendix 4](../appendix04/).
 
-[Appendix 2](/appendices/appendix02/) (MSW) and [Appendix 13](/appendices/appendix13/) (COW) contain the work area layouts of all of the Geosupport functions.  The abbreviated notation for street code items listed in Table IV-1 (at the end of [Chapter IV](/chapters/chapterIV/chapterIV/)) is used throughout Appendices [1](/appendices/appendix01/), [2](/appendices/appendix02/) and [13](/appendices/appendix03/).   Below is a summary list of the Geosupport functions.
+[Appendix 2](../appendix02/) (MSW) and [Appendix 13](../appendix13/) (COW) contain the work area layouts of all of the Geosupport functions.  The abbreviated notation for street code items listed in Table IV-1 (at the end of [Chapter IV](../../chapters/chapterIV/chapterIV/)) is used throughout Appendices [1](../appendix01/), [2](../appendix02/) and [13](../appendix03/).   Below is a summary list of the Geosupport functions.
 
 <table>
 <tr>
@@ -120,11 +120,11 @@ The generic street input field names, ‘Street-1’, ‘Street-2’ and ‘Stre
 
 ## <span id="appendix01.2"> Function 1 </span>
 
-<u><b>Description:</b></u>  Function 1 processes an input address or input Non-Addressable Place name (NAP) (see [Chapter III.6](/chapters/chapterIII/section06/)).  When called using two work areas, Function 1 returns information about the blockface containing the input address or NAP.  This information includes the cross streets at the two intersections delimiting the blockface, and a set of geographic district identifiers including ZIP code, census tract and community district.  MSW Function 1 can be called with the long WA2 option.  COW Function 1 may be called with the Extended Mode Switch.      
+<u><b>Description:</b></u>  Function 1 processes an input address or input Non-Addressable Place name (NAP) (see [Chapter III.6](../../chapters/chapterIII/section06/)).  When called using two work areas, Function 1 returns information about the blockface containing the input address or NAP.  This information includes the cross streets at the two intersections delimiting the blockface, and a set of geographic district identifiers including ZIP code, census tract and community district.  MSW Function 1 can be called with the long WA2 option.  COW Function 1 may be called with the Extended Mode Switch.      
 
-See [Chapter V](/chapters/chapterV/chapterV/) for a detailed discussion of Function 1 and how it differs from Function 1A.
+See [Chapter V](../../chapters/chapterV/chapterV/) for a detailed discussion of Function 1 and how it differs from Function 1A.
 
-<u><b>Validation:</b></u>  A successful outcome of a two-work area call to Function 1 signifies (assuming address rather than NAP input) only that the input address falls within a valid range of addresses of the same parity (odd or even house numbers) allocated to some blockface;  it does <u>not</u> signify that there is an actual building having the input address.  (To validate the latter condition, Function 1A or AP must be used.  See [Chapter V.4](/chapters/chapterV/section04/) and [Chapter VI.10](/chapters/chapterVI/section10/) for Function 1A and Function AP respectively.)  
+<u><b>Validation:</b></u>  A successful outcome of a two-work area call to Function 1 signifies (assuming address rather than NAP input) only that the input address falls within a valid range of addresses of the same parity (odd or even house numbers) allocated to some blockface;  it does <u>not</u> signify that there is an actual building having the input address.  (To validate the latter condition, Function 1A or AP must be used.  See [Chapter V.4](../../chapters/chapterV/section04/) and [Chapter VI.10](../../chapters/chapterVI/section10/) for Function 1A and Function AP respectively.)  
 
 <u><b>Input Fields:</b></u>
 
@@ -225,18 +225,18 @@ Default (blank) requests use of input street name / code.  See <a href="../../ch
 
 ## <span id="appendix01.3">Function 1A</span>
 
-<u><b>Description:</b></u>  Function 1A processes an input address or input NAP.  When successfully called using two work areas, it returns information in WA2 about the tax lot and the building (if any) identified by the input address or NAP.  See [Chapter VI](/chapters/chapterVI/chapterVI/) and particularly [Chapters VI.6](/chapters/chapterVI/section06/).
+<u><b>Description:</b></u>  Function 1A processes an input address or input NAP.  When successfully called using two work areas, it returns information in WA2 about the tax lot and the building (if any) identified by the input address or NAP.  See [Chapter VI](../../chapters/chapterVI/chapterVI/) and particularly [Chapters VI.6](../../chapters/chapterVI/section06/).
 
-The information that is returned in WA2 consists of information about the tax lot and the building (if any) identified by the input address or NAP.  This information includes the Borough‑Block‑and‑Lot (BBL), which is the Department of Finance’s (DOF) identifier for the tax lot;  the DOF building class code;  the number of buildings on the lot;  the number of street frontages of the lot;  a flag indicating whether the lot is a condominium; the Building Identification Number (BIN) (see [Chapter VI.3](/chapters/chapterVI/section03/)) of the building identified by the input address, if any; and the Business Improvement District (BID) if the property is in such a district.  Function 1A can be called with the long WA2 option.  The regular WA2 includes a List of Geographic Identifiers (LGI) for the tax lot, including address ranges, BINs and street frontages.  The long WA2 includes, instead of the LGI, a List of BINs for all the buildings in the tax lot.
+The information that is returned in WA2 consists of information about the tax lot and the building (if any) identified by the input address or NAP.  This information includes the Borough‑Block‑and‑Lot (BBL), which is the Department of Finance’s (DOF) identifier for the tax lot;  the DOF building class code;  the number of buildings on the lot;  the number of street frontages of the lot;  a flag indicating whether the lot is a condominium; the Building Identification Number (BIN) (see [Chapter VI.3](../../chapters/chapterVI/section03/)) of the building identified by the input address, if any; and the Business Improvement District (BID) if the property is in such a district.  Function 1A can be called with the long WA2 option.  The regular WA2 includes a List of Geographic Identifiers (LGI) for the tax lot, including address ranges, BINs and street frontages.  The long WA2 includes, instead of the LGI, a List of BINs for all the buildings in the tax lot.
 
-Function 1A normally returns information that is updated on a quarterly basis.  COW users may request more up-to-date information on new buildings and demolitions using the TPAD Request Switch.  The TPAD information will include the status of new building construction and/or demolition.  See [Chapter VI.11](/chapters/chapterVI/section11/).
+Function 1A normally returns information that is updated on a quarterly basis.  COW users may request more up-to-date information on new buildings and demolitions using the TPAD Request Switch.  The TPAD information will include the status of new building construction and/or demolition.  See [Chapter VI.11](../../chapters/chapterVI/section11/).
 
 The regular, long, and extended WA2s for Function 1A are identical to those for Function BL.  Function 1A enables the user to retrieve this information by address, while Function BL enables retrieval by BBL.
 
 The regular and extended WA2s for Function 1A is identical to that for Function BN.  Function 1A enables the user to retrieve this information by address, while Function BN enables retrieval by BIN.
 
 
-<u><b>Validation:</b></u>  An unconditionally successful outcome of a two-work-area call to Function 1A signifies that a building having the given input address exists.  A warning is issued if the input is a pseudo-address (see [Chapter VI.5](/chapters/chapterVI/section05/)).
+<u><b>Validation:</b></u>  An unconditionally successful outcome of a two-work-area call to Function 1A signifies that a building having the given input address exists.  A warning is issued if the input is a pseudo-address (see [Chapter VI.5](../../chapters/chapterVI/section05/)).
 
 
 <u><b>Input Fields:</b></u>
@@ -372,7 +372,7 @@ Function 1E’s possible GRC values include all of the ones for Function 1, and 
 
 ## <span id="appendix01.5">Function 1B</span>
 
-<u><b>Description:</b></u>  Function 1B processes an input address or input Non-Addressable Place name (NAP) (see [Chapter III.6](/chapters/chapterIII/section06/)).  When called using two work areas, Function 1B returns information about the blockface as well as information about the tax lot and the building (if any) identified by the input address or NAP.   The information that is returned in WA2 includes the cross streets at the two intersections delimiting the blockface, and a set of geographic district identifiers including ZIP code, census tract and community district. Information about the tax lot and the building (if any) identified by the input address or NAP is also returned.  This information includes the Borough‑Block‑and‑Lot (BBL), which is the Department of Finance’s (DOF) identifier for the tax lot;  the DOF building class code;  the number of buildings on the lot;  the number of street frontages of the lot;  a flag indicating whether the lot is a condominium; and the Building Identification Number (BIN) (see [Chapter VI.3](/chapters/chapterVI/section03/)) of the building identified by the input address
+<u><b>Description:</b></u>  Function 1B processes an input address or input Non-Addressable Place name (NAP) (see [Chapter III.6](../../chapters/chapterIII/section06/)).  When called using two work areas, Function 1B returns information about the blockface as well as information about the tax lot and the building (if any) identified by the input address or NAP.   The information that is returned in WA2 includes the cross streets at the two intersections delimiting the blockface, and a set of geographic district identifiers including ZIP code, census tract and community district. Information about the tax lot and the building (if any) identified by the input address or NAP is also returned.  This information includes the Borough‑Block‑and‑Lot (BBL), which is the Department of Finance’s (DOF) identifier for the tax lot;  the DOF building class code;  the number of buildings on the lot;  the number of street frontages of the lot;  a flag indicating whether the lot is a condominium; and the Building Identification Number (BIN) (see [Chapter VI.3](../../chapters/chapterVI/section03/)) of the building identified by the input address
 
 <u><b>Function 1B Input Fields:</b></u>
 
@@ -503,9 +503,9 @@ Blank = input street name / code</td>
 
 ## <span id="appendix01.7">Function 2 (and 2W) </span>
 
-<u><b>Description:</b></u>  Function 2 processes an input intersection specified either in terms of an intersection name, or in terms of two streets (and, when necessary, a compass direction), or in terms of a node ID.  If two input streets intersect exactly once, the user should not specify an input compass direction.  If the two input streets intersect at two distinct locations, a compass direction must be specified; it serves to identify which of the two intersections the user wishes Geosupport to process.  Geosupport has the ability to process a pair of input streets that intersect more than twice, only if the user can identify the intersection by its node ID.  If the user does not know the node ID, the user may issue Function 2W to find the node ID.  Function 2W is basically identical to Function 2 except when streets intersect more than twice, Function 2W will reject the call and return a Work Area 2 that includes the node IDs and street codes/street names for all the intersections at the various nodes.  Function 2 and Function 2W are discussed in detail in [Chapter VII.2](/chapters/chapterVII/section02/).
+<u><b>Description:</b></u>  Function 2 processes an input intersection specified either in terms of an intersection name, or in terms of two streets (and, when necessary, a compass direction), or in terms of a node ID.  If two input streets intersect exactly once, the user should not specify an input compass direction.  If the two input streets intersect at two distinct locations, a compass direction must be specified; it serves to identify which of the two intersections the user wishes Geosupport to process.  Geosupport has the ability to process a pair of input streets that intersect more than twice, only if the user can identify the intersection by its node ID.  If the user does not know the node ID, the user may issue Function 2W to find the node ID.  Function 2W is basically identical to Function 2 except when streets intersect more than twice, Function 2W will reject the call and return a Work Area 2 that includes the node IDs and street codes/street names for all the intersections at the various nodes.  Function 2 and Function 2W are discussed in detail in [Chapter VII.2](../../chapters/chapterVII/section02/).
 
-When successfully called using two work areas, Function 2 returns information about the input intersection in WA2.  If there are more than two streets at an intersection, Function 2 accepts any pair of those streets as user input for that intersection.  An intersection that lies on a borough boundary can be specified in terms of one street from each borough, by using the WA1 input field Borough Code 2, as described in [Chapter VII.7](/chapters/chapterVII/section07/).
+When successfully called using two work areas, Function 2 returns information about the input intersection in WA2.  If there are more than two streets at an intersection, Function 2 accepts any pair of those streets as user input for that intersection.  An intersection that lies on a borough boundary can be specified in terms of one street from each borough, by using the WA1 input field Borough Code 2, as described in [Chapter VII.7](../../chapters/chapterVII/section07/).
 
 The information that Function 2 returns in WA2 includes a list of street codes for all streets at the intersection (including the input streets), spatial coordinates for the intersection, and a set of geographic area identifiers including community district, census tract, police precinct and others.  If the intersection lies on the boundary of two or more areas of a given type, the information for one of those areas is returned..
 
@@ -568,7 +568,7 @@ Optional at other nodes.  May be used instead of borough and street names.</td>
 <tr>
 <td>SNL</td>
 <td>A number between 4 and 32</td>
-<td>Optional; default is 32. See Chapter III.2](/chapters/chapterIII/section02/).</td>
+<td>Optional; default is 32. See Chapter III.2](../../chapters/chapterIII/section02/).</td>
 </tr>
 <tr>
 <td>Street Name Normalization Format Flag</td>
@@ -674,7 +674,7 @@ Default (blank) requests use of input street names / codes.  See <a href="../../
 
 ## <span id="appendix01.7">Function 3 </span>
 
-<u><b>Description:</b></u>   Function 3 processes street segments and closely related three-street configurations.  A street segment is a part of a street (called the ‘on' street) between two consecutive cross streets.  For example, Madison Avenue (in Manhattan) between East 51st Street and East 52nd Street is a street segment.  Madison Avenue between East 51st Street and East 53rd Street is not a street segment, because there is an intervening street, East 52nd Street, between the given cross streets.  An exception to the requirement that the input cross streets be consecutive along the ‘on’ street is the case of a T‑intersection: Function 3 accepts as input a street configuration that defines the long blockface of a T‑intersection.  (For precise definitions of the terms ‘three-street configuration’, ‘street segment’, and ‘T-intersection’, see [Chapter VII.3](/chapters/chapterVII/section03/).)  A street segment intersecting with or lying on a borough boundary can be specified in terms of streets from both boroughs, by using the WA1 input fields Borough Code 2 and Borough Code 3, as described in [Chapter VII.7](/chapters/chapterVII/section07/).
+<u><b>Description:</b></u>   Function 3 processes street segments and closely related three-street configurations.  A street segment is a part of a street (called the ‘on' street) between two consecutive cross streets.  For example, Madison Avenue (in Manhattan) between East 51st Street and East 52nd Street is a street segment.  Madison Avenue between East 51st Street and East 53rd Street is not a street segment, because there is an intervening street, East 52nd Street, between the given cross streets.  An exception to the requirement that the input cross streets be consecutive along the ‘on’ street is the case of a T‑intersection: Function 3 accepts as input a street configuration that defines the long blockface of a T‑intersection.  (For precise definitions of the terms ‘three-street configuration’, ‘street segment’, and ‘T-intersection’, see [Chapter VII.3](../../chapters/chapterVII/section03/).)  A street segment intersecting with or lying on a borough boundary can be specified in terms of streets from both boroughs, by using the WA1 input fields Borough Code 2 and Borough Code 3, as described in [Chapter VII.7](../../chapters/chapterVII/section07/).
 
 The information returned by a successful two‑work‑area Function 3 call includes two lists of street codes for all cross streets at the two intersections defined by the input streets;  and geographic area codes for the left and right sides of the street, such as the left and right community districts, ZIP codes, census tracts, etc.  ‘Left’ and ‘right’ are defined relative to the ‘on’ street’s ‘logical direction’, which in general is the direction of increasing address.  The WA2 information also includes two items called the Segment Azimuth and the Segment Orientation that indicate how the street segment is oriented with respect to the points of the compass.  Applications can use either of these items to determine compass direction descriptors for the left and right sides of the street.  Another WA2 item, the Cross Street Reversal Flag, can be used to determine left and right relative to the order in which the input cross streets were specified.
 
@@ -682,11 +682,11 @@ In COW format, Function 3 also returns the FROM and TO node IDs. 
 
 In COW Extended format, Function 3 also returns Latitude and Longitude.   
 
-Function 3 in MSW format has the Long Work Area 2 Option (see [Chapter II.5](/chapters/chapterII/section05/)).  
+Function 3 in MSW format has the Long Work Area 2 Option (see [Chapter II.5](../../chapters/chapterII/section05/)).  
 
-Function 3 in COW format has the Auxiliary Segment Option (see [Chapter II.6](/chapters/chapterII/section06/)).  
+Function 3 in COW format has the Auxiliary Segment Option (see [Chapter II.6](../../chapters/chapterII/section06/)).  
 
-For a detailed discussion of Function 3, see [Chapter VII.4](/chapters/chapterVII/section04/).
+For a detailed discussion of Function 3, see [Chapter VII.4](../../chapters/chapterVII/section04/).
 
 <u><b>Validation:</b></u>  A successful outcome of a two-work-area call to Function 3 signifies that the input
 ‘on’ street and two cross streets define a valid street segment or long blockface of a T-intersection.
@@ -836,13 +836,13 @@ Blank = input street names / codes</td>
 
 ## <span id="appendix01.8">Function 3C </span>
 
-<u><b>Description:</b></u>  Function 3C processes blockfaces specified in terms of an input ‘on’ street, two cross streets and a compass direction designating the side of the street, such as ‘the west side of Madison Avenue between East 53rd Street and East 54th Street’.  A blockface intersecting with or lying on a borough boundary can be specified in terms of streets from both boroughs, by using the WA1 input fields Borough Code 2 and Borough Code 3, as described in [Chapter VII.7](/chapters/chapterVI/section07/).
+<u><b>Description:</b></u>  Function 3C processes blockfaces specified in terms of an input ‘on’ street, two cross streets and a compass direction designating the side of the street, such as ‘the west side of Madison Avenue between East 53rd Street and East 54th Street’.  A blockface intersecting with or lying on a borough boundary can be specified in terms of streets from both boroughs, by using the WA1 input fields Borough Code 2 and Borough Code 3, as described in [Chapter VII.7](../../chapters/chapterVI/section07/).
 
 When called using two work areas, function 3C returns blockface related information in WA2.  This information is a subset of the set of items returned in WA2 by Function 3, consisting of those items that are related to the specified side of the street. 
 
-Function 3C in COW format has the Auxiliary Segment Option (see [Chapter II.6](/chapters/chapterII/section06/)).  
+Function 3C in COW format has the Auxiliary Segment Option (see [Chapter II.6](../../chapters/chapterII/section06/)).  
 
-Function 3C is discussed in detail in [Chapter VII.5](/chapters/chapterVII/section05/).
+Function 3C is discussed in detail in [Chapter VII.5](../../chapters/chapterVII/section05/).
 
 <u><b>Validation:</b></u>  A successful outcome of a two-work-area call to Function 3C signifies that the input ‘on’ street and two cross streets define a valid street segment or long blockface of a T-intersection, and that the input compass direction is a valid designation of a side of this segment.  The validity of an input compass direction is determined by the spatial orientation of the segment.
 
@@ -995,7 +995,7 @@ In a COW function 3S call, if the user requests Real Street Only output, only re
 
 For each entry in the WA2 list of intersections of the street stretch, there are fields for a distance and a gap flag.  The distance is the approximate distance in feet between the given intersection and its predecessor in the list; the gap flag indicates whether the intersection and its predecessor are connected by the ‘on’ street.  The gap flag also indicates the nature of the gap.  The first entry within a list will always have a zero in the distance field and a blank in the gap flag.
 
-Function 3S is discussed in detail in [Chapter VII.6](/chapters/chapterVII/section06/).
+Function 3S is discussed in detail in [Chapter VII.6](../../chapters/chapterVII/section06/).
 
 <u><b>Validation:</b></u>  A successful outcome of a two-work-area call to Function 3S using input cross streets signifies that each of the input cross streets intersects the input ‘on’ street.
 
@@ -1130,11 +1130,11 @@ Blank = Generic info requested</td>
 
 ## <span id="appendix01.10">Function AP </span>
 
-<u><b>Description:</b></u>  Function AP processes an input address.  When successfully called using two work areas, it returns information in WA2 about the CSCL Address Point identified by the input address.  See [Chapter VI](/chapters/chapterVI/chapterVI/) and particularly [Chapter VI.10](/chapters/chapterVI/section10/).  Function AP and its data are currently available to Geosupport users.
+<u><b>Description:</b></u>  Function AP processes an input address.  When successfully called using two work areas, it returns information in WA2 about the CSCL Address Point identified by the input address.  See [Chapter VI](../../chapters/chapterVI/chapterVI/) and particularly [Chapter VI.10](../../chapters/chapterVI/section10/).  Function AP and its data are currently available to Geosupport users.
 
 The information that is returned in WA2 consists of information about the address point and the tax lot and the building (if any) identified by the input address.  This information includes the CSCL Address Point ID, the spatial coordinates of the Address Point, the Building Identification Number (BIN) and the Borough‑Block‑and‑Lot (BBL), which is the Department of Finance’s (DOF) identifier for the tax lot.  By geocoding to a CSCL Address Point, the user application will presumably geocode to a ‘real’ posted address – not an address that might be part of an administrative range.
 
-Function AP is also available in an Extended Mode.  It includes that Principal Street Name in WA2.  See the Function AP work area layouts in [Appendix 13](/appendices/appendix13/).
+Function AP is also available in an Extended Mode.  It includes that Principal Street Name in WA2.  See the Function AP work area layouts in [Appendix 13](../appendix13/).
 
 <u><b>Validation:</b></u>  An unconditionally successful outcome of a two-work-area call to Function AP signifies that a building having the given input address exists.  
 
@@ -1242,7 +1242,7 @@ Each call to one of these functions returns up to ten such names in alphabetical
 
 To start a browse sequence, the user application calls either of the browse functions , passing a borough code and character string in the WA1 input fields called Borough Code 1 and  Street Name 1, respectively.  The input character string can be from one to 32 bytes long.  When the last set of ten or fewer names in the given borough is reached, a warning is issued.
 
-For a detailed discussion of Functions BB and BF, see [Chapter III.7](/chapters/chapterIII/section07/).
+For a detailed discussion of Functions BB and BF, see [Chapter III.7](../../chapters/chapterIII/section07/).
 
 <u><b>Input Fields:</b></u>
 
@@ -1306,7 +1306,7 @@ Blank = all street names</td>
 
 <u><b>Description:</b></u>  Function BL processes a parcel of real property, or tax lot, specified in terms of a standard Department of Finance set of tax lot identifiers, consisting of a combination of a borough code, a tax block number and a tax lot number, collectively called the BBL.  When successfully called using two work areas, Function BL returns information about the tax lot in WA2.  The WA2 layouts for Function BL are identical to those for Function 1A.  Function 1A enables the user to retrieve this information by address, while Function BL enables retrieval by BBL.
 
-For a detailed discussion of Function BL, see [Chapter VI](/chapters/chapterVI/chapterVI/) and particularly [Chapter VI.7](/chapters/chapterVI/section07/).
+For a detailed discussion of Function BL, see [Chapter VI](../../chapters/chapterVI/chapterVI/) and particularly [Chapter VI.7](../../chapters/chapterVI/section07/).
 
 <u><b>Validation:</b></u>  A successful outcome of a two-work-area call to Function BL signifies that the input BBL is valid.
 
@@ -1398,11 +1398,11 @@ Blank = standard version; valid only for COW</td>
 
 ## <span id="appendix01.13">Function BN </span>
 
-<u><b>Description:</b></u> Function BN processes a building specified by an input Building Identification Number (BIN).  For a discussion of BINs, see [Chapter VI.3](/chapters/chapterVI/section03/).
+<u><b>Description:</b></u> Function BN processes a building specified by an input Building Identification Number (BIN).  For a discussion of BINs, see [Chapter VI.3](../../chapters/chapterVI/section03/).
 
-A successful Function BN call using two work areas returns information about the building in WA2.  This includes the building's borough‑tax block‑tax lot (BBL);  a list of geographic identifiers associated with the building (in contrast to Functions 1A and BL, which return geographic identifiers for the entire tax lot, subject to the list’s space limitation);  a building status flag and date <i>[not implemented]</i>;  and a condominium flag.  Condominiums have unique characteristics discussed in [Chapter VI.4](/chapters/chapterVI/section04/).
+A successful Function BN call using two work areas returns information about the building in WA2.  This includes the building's borough‑tax block‑tax lot (BBL);  a list of geographic identifiers associated with the building (in contrast to Functions 1A and BL, which return geographic identifiers for the entire tax lot, subject to the list’s space limitation);  a building status flag and date <i>[not implemented]</i>;  and a condominium flag.  Condominiums have unique characteristics discussed in [Chapter VI.4](../../chapters/chapterVI/section04/).
 
-Function BN is discussed in detail in [Chapter VI](/chapters/chapterIV/chapterIV/) and particularly in [Chapter VI.9](/chapters/chapterVI/section09/).
+Function BN is discussed in detail in [Chapter VI](../../chapters/chapterIV/chapterIV/) and particularly in [Chapter VI.9](../../chapters/chapterVI/section09/).
 
 <u><b>Validation:</b></u>  A successful outcome of a two-work-area call to Function BN signifies that the input BIN is valid.
 
@@ -1472,7 +1472,7 @@ Blank = normal mode</td>
 
 <u><b>Description:</b></u>  Functions D, DG and DN are the ‘display’ functions.  They do not actually display anything themselves, but can be used to obtain data items that applications can use to format geographic locations for display on reports, screens, mailing labels etc.  
 
-The display functions do not have a WA2 and can only be called using one work area.  Each of them can process any combination of up to two input House Numbers in Internal format (HNI) for MSWs or up to two input House Numbers in Sort format (HNS) for COWs and up to three input street codes.  For each successfully processed input HNI/HNS, the corresponding House Number in Display format (HND) is returned in WA1.  (House number processing by the display functions is discussed in detail in [Chapter V.2](/chapters/chapterV/section02/).)  For each successfully processed input street code, a corresponding street name is returned in WA1.  (Street code processing by the display functions is discussed in [Chapter IV.6](/chapters/chapterIV/section06/).)  For each unsuccessfully processed input street code, the corresponding output field is returned containing all question marks.  If one input HNI/HNS is supplied, it may be passed in either input HNI/HNS field.  Input street codes may not ‘skip’ any input street code fields.
+The display functions do not have a WA2 and can only be called using one work area.  Each of them can process any combination of up to two input House Numbers in Internal format (HNI) for MSWs or up to two input House Numbers in Sort format (HNS) for COWs and up to three input street codes.  For each successfully processed input HNI/HNS, the corresponding House Number in Display format (HND) is returned in WA1.  (House number processing by the display functions is discussed in detail in [Chapter V.2](../../chapters/chapterV/section02/).)  For each successfully processed input street code, a corresponding street name is returned in WA1.  (Street code processing by the display functions is discussed in [Chapter IV.6](../../chapters/chapterIV/section06/).)  For each unsuccessfully processed input street code, the corresponding output field is returned containing all question marks.  If one input HNI/HNS is supplied, it may be passed in either input HNI/HNS field.  Input street codes may not ‘skip’ any input street code fields.
 
 The display functions process each input item independently of the others, and the input data are not treated as collectively forming a geographic location. In particular, a successful call to a display function does not imply the validation of a geographic location.  For example, if there is an input house number and an input street code, these are not treated or validated as forming an address, but are independently processed for conversion to display format.  If the input consists of two street codes, these are not treated or validated as forming an intersection, etc.
 
@@ -1480,7 +1480,7 @@ Functions D, DG and DN differ in the type of street code each processes and in t
 
 * Function D processes input borough-code-and-five-digit street codes, specified either in the form of B5SCs or PB5SCs (MSW only).  Input B5SCs are passed left-justified and space-filled in the corresponding WA1 input B10SC fields.  Input PB5SCs are passed in the corresponding MSW WA1 input PB5SC fields.  For each successfully processed input B5SC or PB5SC (MSW only), Function D returns the corresponding ‘primary’ name for the street ( a name from among all of the street’s aliases that GSS has designated as ‘best’ representing the street as a whole).
 
-* Function DG processes input borough-code-and-seven-digit street codes (B7SCs).  Input B7SCs are passed left-justified and space-filled in the corresponding WA1 input B10SC fields.  For each input B7SC, Function DG returns a street name that GSS has designated as the ‘principal’ street name of the local group of names represented by the given B7SC.  Function DG can be used in conjunction with a geographic location-processing function to obtain the ‘preferred street name’ customized for a particular geographic location.  (For a discussion of seven-digit street codes and local groups, see [Chapter IV.5](/chapters/chapterIV/section05/).)
+* Function DG processes input borough-code-and-seven-digit street codes (B7SCs).  Input B7SCs are passed left-justified and space-filled in the corresponding WA1 input B10SC fields.  For each input B7SC, Function DG returns a street name that GSS has designated as the ‘principal’ street name of the local group of names represented by the given B7SC.  Function DG can be used in conjunction with a geographic location-processing function to obtain the ‘preferred street name’ customized for a particular geographic location.  (For a discussion of seven-digit street codes and local groups, see [Chapter IV.5](../../chapters/chapterIV/section05/).)
 
 * Function DN processes input borough-code-and-ten-digit street codes (B10SCs).  For each input B10SC, Function DN returns the unique street name spelling corresponding to it.
 

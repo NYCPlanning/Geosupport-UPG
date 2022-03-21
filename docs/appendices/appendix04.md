@@ -1,6 +1,6 @@
 <h2 class="pdfAppendix"><center>APPENDIX 4: GEOSUPPORT RETURN CODES, REASON CODES AND MESSAGES</center> </h2>  
 
-This appendix consists of a table listing all of the Geosupport Return Codes (GRCs), Reason Codes and Messages, and the Geosupport function(s) that can elicit each of them.  The table is current as of the Geosupport software version indicated in the table heading.  [See Chapter II.2](/chapters/chapterII/section02/) for a detailed discussion of application reject handling using GRCs, Reason Codes and Messages.
+This appendix consists of a table listing all of the Geosupport Return Codes (GRCs), Reason Codes and Messages, and the Geosupport function(s) that can elicit each of them.  The table is current as of the Geosupport software version indicated in the table heading.  [See Chapter II.2](../../chapters/chapterII/section02/) for a detailed discussion of application reject handling using GRCs, Reason Codes and Messages.
 
 In the table, an asterisk in the second byte position of a function code is a 'wildcard', signifying
 all function codes that begin with the character that is in the first byte position. For example, '3<sup>* </sup>' signifies all function codes that begin with '3'(namely, as of this writing, Functions 3, 3C and

@@ -14,9 +14,9 @@ The functions that can be called using two work areas use various WA2 layouts of
 
 The majority of the COW fields are identical to the MSW (Mainframe-Specific Work Area) fields.
 
-[Appendix 3](/appendices/appendix03/) consists of a data item dictionary describing the fields that occur in the work areas.
+[Appendix 3](../appendix03/) consists of a data item dictionary describing the fields that occur in the work areas.
 
-[Appendix 12](/appendices/appendix12/) describes the differences between the COWs and MSWs.
+[Appendix 12](../appendix12/) describes the differences between the COWs and MSWs.
 Note that as of January 1, 2020, MSWs are no longer supported.
 
 The Geosupport Character-Only work areas (COWs) contain no packed decimal or binary fields; all fields are character.  The work areas are divided into logical groups. For example work area 1 is divided into three parts; namely,
@@ -34,7 +34,7 @@ The following is a list of all of the Geosupport COW work areas, indicating the 
 
 
 <p>____________________________</p>
-<a href="#section13.18-18"><span id="section13.18"><sup>18</sup></span></a>The mainframe version of Geosupport supports the Character-Only Work Area (COW) format.  Note that as of January 1, 2020 the Mainframe-Specific Work Area (MSW (a.k.a. MFS)) format is no longer supported.  The layout of the MSWs is in [Appendix 2](/appendices/appendix02/).  
+<a href="#section13.18-18"><span id="section13.18"><sup>18</sup></span></a>The mainframe version of Geosupport supports the Character-Only Work Area (COW) format.  Note that as of January 1, 2020 the Mainframe-Specific Work Area (MSW (a.k.a. MFS)) format is no longer supported.  The layout of the MSWs is in [Appendix 2](../appendix02/).  
 
 The following is a list of all of the Geosupport COW work areas, indicating the length of each in bytes.  Functions that are listed together share a single Work Area 2 layout.
 

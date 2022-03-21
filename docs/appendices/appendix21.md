@@ -33,7 +33,7 @@ User documentation can be found in C:\Program Files\Geosupport Desktop Editon\Do
 
   * If you are interested in geocoding an existing PC database, go to Chapter IV: GBAT in the <u>Geosupport Desktop Edition User Programming Guide</u>.  
 
-  * If you are interested in writing your own programs see [Chapter II](/chapters/chapterII/chapterII): Geosupport Desktop Edition API in the <u>Geosupport Desktop Edition User Programming Guide</u>.  
+  * If you are interested in writing your own programs see [Chapter II](../../chapters/chapterII/chapterII): Geosupport Desktop Edition API in the <u>Geosupport Desktop Edition User Programming Guide</u>.  
 
 View C:\Program Files\Geosupport Desktop Edition\readme.txt for additional items.  
 
@@ -102,11 +102,11 @@ Geosupport Desktop Edition<sup>™</sup> is available to the general public thro
 
 The Geosupport System is available in both batch and online environments. Within each of these environments, Geosupport may be accessed either through user-written programs or via Geosupport utility programs. The two methods of access are described below.  
 
-  1.User-written programs communicate with Geosupport via its <u>Application Programming Interface</u> (API). Using the API, the user program supplies geographic locations to Geosupport for processing. Geosupport determines if a user location is valid, and if so, returns geographic information about the location to the user program. (For a partial list of data items provided, see [Appendix I](/appendices/appendix01/) When the user data are unrecognizable or invalid, Geosupport returns codes and messages to the user program that specify the nature of the problem. By virtue of the API mechanism, the user’s programming efforts can be concentrated on the specific needs of the application, such as screen design and database updating, and the geographic processing can be left to Geosupport.  
+  1.User-written programs communicate with Geosupport via its <u>Application Programming Interface</u> (API). Using the API, the user program supplies geographic locations to Geosupport for processing. Geosupport determines if a user location is valid, and if so, returns geographic information about the location to the user program. (For a partial list of data items provided, see [Appendix I](../appendix01/) When the user data are unrecognizable or invalid, Geosupport returns codes and messages to the user program that specify the nature of the problem. By virtue of the API mechanism, the user’s programming efforts can be concentrated on the specific needs of the application, such as screen design and database updating, and the geographic processing can be left to Geosupport.  
 
   The Geosupport API is easy for programmers to use. Geosupport technical documents describe how to program user applications to interact with Geosupport via the API.  
 
-  2.Geosupport contains two general purpose <u>utility programs</u> that perform many common geographic processing functions. While not specifically tailored to the needs of any one user, these utility programs allow many users to use Geosupport while minimizing or eliminating their own programming efforts. The utility programs are called GOAT and GBAT and are described below. The API, GOAT and GBAT provide basically the same set of information. A partial list of the information that they provide is in [Appendix I](/appendices/appendix01/).  
+  2.Geosupport contains two general purpose <u>utility programs</u> that perform many common geographic processing functions. While not specifically tailored to the needs of any one user, these utility programs allow many users to use Geosupport while minimizing or eliminating their own programming efforts. The utility programs are called GOAT and GBAT and are described below. The API, GOAT and GBAT provide basically the same set of information. A partial list of the information that they provide is in [Appendix I](../appendix01/).  
 
   a. <u>GOAT</u>:  
         Geosupport’s online utility program is called the Geosupport Online Address Translator (GOAT). GOAT enables users to enter a geographic location on a computer screen, and if the location is valid, to immediately receive a display of a set of geographic information about that location. If the user’s location is rejected as invalid, an error message is displayed to indicate the specific reason for the rejection.  
@@ -136,7 +136,7 @@ The Geosupport utility programs cannot, by themselves, satisfy every need of eve
 
   Geosupport may reject a user-supplied geographic location as invalid. For example, Geosupport appropriately rejects the inter of Second Avenue and Third Avenue in Manhattan as a non-existent inter. Moreover, Geosupport geographic files may contain an error or may not be up to date, causing Geosupport to reject a valid location.  
 
-  For rejected items that the user considers valid, a reject feedback procedure exists. The user can submit such data for review to GSS’s Data Management Unit by filling out and submitting a Geosupport System User Feedback Form (see [Appendix VI](/appendices/appendix06/)). Printouts, sketch maps or other material documenting the rejects should be attached to the form when available.  
+  For rejected items that the user considers valid, a reject feedback procedure exists. The user can submit such data for review to GSS’s Data Management Unit by filling out and submitting a Geosupport System User Feedback Form (see [Appendix VI](../appendix06/)). Printouts, sketch maps or other material documenting the rejects should be attached to the form when available.  
 
   Based on its research of user feedback, the GSS staff updates or corrects Geosupport files as appropriate. The corrections are reflected in the Geosupport System in a future Geosupport release. Before submitting rejected data to GSS, users should screen their data for misspellings, data entry errors or other obvious mistakes.  
 

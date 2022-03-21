@@ -2,7 +2,7 @@
 
 <h6><center>Geosupport Warnings, TPAD Conflict Flag, Reason Code Qualifier and Error Message</center></h6>
 
-The TPAD Option allows users to get up-to-date property-level information.  The TPAD Option is available for Function 1A, BL, BN, and 1B calls (PAD calls).  When users turn the TPAD Switch ‘on’ in their applications, Geosupport reads the Transitional PAD file (TPAD) for intra-cycle PAD data and if any is found, Geosupport returns the TPAD data to the calling application.  [See Chapter VI.11](/chapters/chapterVI/section11/) for a more detailed description of the TPAD option and the information it returns.
+The TPAD Option allows users to get up-to-date property-level information.  The TPAD Option is available for Function 1A, BL, BN, and 1B calls (PAD calls).  When users turn the TPAD Switch ‘on’ in their applications, Geosupport reads the Transitional PAD file (TPAD) for intra-cycle PAD data and if any is found, Geosupport returns the TPAD data to the calling application.  [See Chapter VI.11](../../chapters/chapterVI/section11/) for a more detailed description of the TPAD option and the information it returns.
 
 This appendix describes the special return code and error message handling with respect to TPAD.  <b>If your applications make function 1A, BL, BN or 1B calls with the TPAD Option ‘on’, then you must read this description.</b>
 

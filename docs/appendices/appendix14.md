@@ -212,7 +212,7 @@
 (✶✶✶) Functions 1A and BL share a single TPAD long WA2 layout.  (Function BN has no TPAD long WA2 option.).  
 (✶✶✶✶) Functions 1A, BL and BN share a single extended WA2 layout.
 
-[See Chapter VIII.4](/chapters/chapterVIII/section04/) for a detailed discussion of the Geosupport COPY feature.  
+[See Chapter VIII.4](../../chapters/chapterVIII/section04/) for a detailed discussion of the Geosupport COPY feature.  
 
 
 ## <span id="appendix14.1"><center>COBOL COPY Files (COW)</center></span>  

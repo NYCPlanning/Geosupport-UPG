@@ -1,6 +1,6 @@
 <h2 class="pdfAppendix"><center>APPENDIX 15:  2010 CENSUS GEOGRAPHY – FUNCTIONS 1, 1E, 2, 3, and 3C</center></h2>
 
-This appendix is based on the Geosupport System Technical Bulletin 11-01 for Geosupport Version 11.0.  If you need a copy of the Bulletin, please be in touch with the GSS Manager of Geographic Research.  Contact information is available in [Appendix 6](/appendices/appendix06/): Geosupport Feedback Procedures.
+This appendix is based on the Geosupport System Technical Bulletin 11-01 for Geosupport Version 11.0.  If you need a copy of the Bulletin, please be in touch with the GSS Manager of Geographic Research.  Contact information is available in [Appendix 6](../appendix06/): Geosupport Feedback Procedures.
 
 <b>As of Geosupport Software Version 11.0 / Release 11A, Geosupport returns the new 2010 Census geography (e.g. census tract and census block).  As of Software Version 11.4 / Release 12B, health areas are based on 2010 Census geography.  Note that other tract based district information (e.g. community development eligibility) will still be based on the 2000 Census geography until further notice.</b>  
 
