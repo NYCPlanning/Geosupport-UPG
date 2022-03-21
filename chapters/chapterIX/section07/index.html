@@ -413,8 +413,8 @@
  GBAT creates either two or three output files, depending on the (coded or default) value in effect for the GEOCODE control entry.  If GEOCODE=VAL is explicitly coded (it is never the default), only ERRFILE and SYSPRINT are created.  If the value in effect for GEOCODE is other than VAL, then OUTFILE, the file of accepted records, is also created.  When GEOCODE=YES or ALL, then ERRFIL2 or ERRFIL3 may also be created.  </p>
 <p>The purpose of the option GEOCODE=VAL is to enable the user to validate the input data file while avoiding the execution-time overhead that would be incurred to create OUTFILE.  The user can execute GBAT repeatedly with GEOCODE=VAL, each time correcting as many rejected input data records as possible, until the rejection rate is acceptable to the user.  At that point, a final execution with GEOCODE=NO, YES or ALL can be run to obtain OUTFILE.</p>
 <p>In all cases in which OUTFILE is created, its records are formed by appending data obtained from Geosupport to exact copies of the accepted input data records.  The length and layout of the appended Geosupport data depend on the function requested and on the GEOCODE option that is in effect (and, for COW Functions 1, 1E, 1A and 1B, the GEOUNIT option that is in effect) as described below.</p>
-<p><u>For GEOCODE=NO</u>, the appended items consist generally of output items from Work Area 1 appropriate to the given function.   For MSW format, <a href="/appendices/appendix09/#appendix09-tblA9-4">Table A9-4</a> in Appendix 9 lists, by function, the precise layout of the data appended for GEOCODE=NO. For the COW format, see <a href="/appendices/appendix12/#appendix12-tblA12-2">Table A12-2</a> in Appendix 12.  </p>
-<p><u>For GEOUNIT=YES (which is a COW only option)</u>, the additional appended items consist of one output item from COW Work Area 1 appropriate to the Unit input for Functions 1, 1E, 1A and 1B.  <a href="/appendices/appendix12/#appendix12-tblA12-2A">Table A12-2A</a> in Appendix 12 shows the format of the appended data.</p>
+<p><u>For GEOCODE=NO</u>, the appended items consist generally of output items from Work Area 1 appropriate to the given function.   For MSW format, <a href="../../../appendices/appendix09/#appendix09-tblA9-4">Table A9-4</a> in Appendix 9 lists, by function, the precise layout of the data appended for GEOCODE=NO. For the COW format, see <a href="../../../appendices/appendix12/#appendix12-tblA12-2">Table A12-2</a> in Appendix 12.  </p>
+<p><u>For GEOUNIT=YES (which is a COW only option)</u>, the additional appended items consist of one output item from COW Work Area 1 appropriate to the Unit input for Functions 1, 1E, 1A and 1B.  <a href="../../../appendices/appendix12/#appendix12-tblA12-2A">Table A12-2A</a> in Appendix 12 shows the format of the appended data.</p>
 <p>In general terms, the items that are appended <u>for GEOCODE=NO (and GEOUNIT=YES)</u> are as follows:  </p>
 <ul>
 <li>
@@ -424,7 +424,7 @@
 <p>For functions involving house numbers, normalized house numbers are appended.  For Functions 1, 1A, 1E, and 1B each normalized house number is returned as follows: the normalized House Number in Display format (HND) which will be either a 12 byte item in MSW format or a 16-byte item in COW format.  Also, for MSW format only, the normalized House Number is returned in a special format for the Department of Housing Preservation and Development (HNHPD), an 8 byte item.  For Functions D, DG and DN, the HNHPD is not returned.</p>
 </li>
 <li>
-<p>In addition, for COW Functions 1, 1E, 1A and 1B, if <u>GEOUNIT=YES</u> is in effect, the 14-byte Normalized Display Format Unit Output field is also appended.  <a href="/appendices/appendix12/#appendix12-tblA12-2A">Table A12-2A</a> in Appendix 12 shows the format of the appended data</p>
+<p>In addition, for COW Functions 1, 1E, 1A and 1B, if <u>GEOUNIT=YES</u> is in effect, the 14-byte Normalized Display Format Unit Output field is also appended.  <a href="../../../appendices/appendix12/#appendix12-tblA12-2A">Table A12-2A</a> in Appendix 12 shows the format of the appended data</p>
 </li>
 <li>
 <p>For Function BL, the 10-byte BBL in standard format is appended.  (The standard BBL consists of the borough code, the 5-byte tax block and the 4-byte tax lot.)</p>
@@ -433,9 +433,9 @@
 <p>For Function BN, the 7-byte BIN is appended.</p>
 </li>
 </ul>
-<p><u>For GEOCODE=YES</u>, each OUTFILE record is formed by appending to a copy of the input record the entire Work Area 2.  (See <a href="/appendices/appendix02/">Appendix 2</a> and <a href="/appendices/appendix13/">Appendix 13</a> for Geosupport work area layouts, MSW and COW respectively.)  GEOCODE=YES is invalid for functions that do not have a WA2.  For functions that have the long WA2 option, the long WA2 is appended only if the user has explicitly specified LONGWA2=YES in the GBAT control file; if the user specifies LONGWA2=NO, or does not specify a LONGWA2 control entry, then the regular WA2 is appended.  Similarly for COW functions that have the Extended Mode option (MODE=X) and/or the Auxiliary Segment option (AUXSEG=YES) the larger WA2 will be appended only if the option is specifically requested.</p>
-<p><u>For GEOCODE=ALL</u>, each OUTFILE record is formed by concatenating an exact copy of the input record, followed by the data appended for the given function when GEOCODE=NO is specified (as listed in Table A9-4 in <a href="/appendices/appendix09/#appendix09-tblA9-4">Appendix 9</a> for MSW and <a href="/appendices/appendix12/#appendix12-tblA12-2">Table A12-2</a>  in Appendix 12 for COW), followed by the data appended when <u>GEOCODE=YES</u> is specified.  Note, for COW Functions 1, 1E, 1A and 1B when GEOUNIT=YES is specified, the GEOUNIT=YES data appears between the GEOCODE=NO data and the GEOCODE=YES data.  GEOCODE=ALL is invalid for functions that do not have a WA2.</p>
-<p>For MSW, <a href="/appendices/appendix09/#appendix09-tblA9-5">Table A9-5</a> in Appendix 9 lists the length of the appended data by function and GEOCODE value.  For COW, see <a href="/appendices/appendix12/#a12-3">Table A12-3</a> in Appendix 12.  When setting up the JCL, the user must specify the LRECL parameter in the OUTFILE DD statement to equal the sum of the LRECL of the input data file and the length of the appended data as indicated in Table A9-5 for MSW, and Table A12-3 for COW.</p>
+<p><u>For GEOCODE=YES</u>, each OUTFILE record is formed by appending to a copy of the input record the entire Work Area 2.  (See <a href="../../../appendices/appendix02/">Appendix 2</a> and <a href="../../../appendices/appendix13/">Appendix 13</a> for Geosupport work area layouts, MSW and COW respectively.)  GEOCODE=YES is invalid for functions that do not have a WA2.  For functions that have the long WA2 option, the long WA2 is appended only if the user has explicitly specified LONGWA2=YES in the GBAT control file; if the user specifies LONGWA2=NO, or does not specify a LONGWA2 control entry, then the regular WA2 is appended.  Similarly for COW functions that have the Extended Mode option (MODE=X) and/or the Auxiliary Segment option (AUXSEG=YES) the larger WA2 will be appended only if the option is specifically requested.</p>
+<p><u>For GEOCODE=ALL</u>, each OUTFILE record is formed by concatenating an exact copy of the input record, followed by the data appended for the given function when GEOCODE=NO is specified (as listed in Table A9-4 in <a href="../../../appendices/appendix09/#appendix09-tblA9-4">Appendix 9</a> for MSW and <a href="../../../appendices/appendix12/#appendix12-tblA12-2">Table A12-2</a>  in Appendix 12 for COW), followed by the data appended when <u>GEOCODE=YES</u> is specified.  Note, for COW Functions 1, 1E, 1A and 1B when GEOUNIT=YES is specified, the GEOUNIT=YES data appears between the GEOCODE=NO data and the GEOCODE=YES data.  GEOCODE=ALL is invalid for functions that do not have a WA2.</p>
+<p>For MSW, <a href="../../../appendices/appendix09/#appendix09-tblA9-5">Table A9-5</a> in Appendix 9 lists the length of the appended data by function and GEOCODE value.  For COW, see <a href="../../../appendices/appendix12/#a12-3">Table A12-3</a> in Appendix 12.  When setting up the JCL, the user must specify the LRECL parameter in the OUTFILE DD statement to equal the sum of the LRECL of the input data file and the length of the appended data as indicated in Table A9-5 for MSW, and Table A12-3 for COW.</p>
 <p><u>Controlling the Treatment of Warnings with REJECTWARNINGS</u><br />
 Every input data record that produces a Geosupport Return Code (GRC) of ‘00’ is treated as an accepted record;  that is, the following actions are taken:</p>
 <ul>
@@ -443,10 +443,10 @@ Every input data record that produces a Geosupport Return Code (GRC) of ‘00’
 <p>If OUTFILE is being created, GBAT writes a corresponding output record into OUTFILE.</p>
 </li>
 <li>
-<p>Regardless of whether or not OUTFILE is being created, the record contributes to the count of accepted records that appears in the SYSPRINT report of run statistics (see <a href="/chapters/chapterIX/section09/">Chapter IX.9</a>)</p>
+<p>Regardless of whether or not OUTFILE is being created, the record contributes to the count of accepted records that appears in the SYSPRINT report of run statistics (see <a href="../section09/">Chapter IX.9</a>)</p>
 </li>
 <li>
-<p>If the record is within the scope of the MAXREJECTS triggering set (see <a href="/chapters/chapterIX/section03/">Chapter IX.3</a>), it precludes a MAXREJECTS abnormal termination.  </p>
+<p>If the record is within the scope of the MAXREJECTS triggering set (see <a href="../section03/">Chapter IX.3</a>), it precludes a MAXREJECTS abnormal termination.  </p>
 </li>
 </ul>
 <p>Every input data record that produces a GRC of greater than ‘01’ is treated as a reject;  that is, the following actions are taken:</p>
@@ -455,7 +455,7 @@ Every input data record that produces a Geosupport Return Code (GRC) of ‘00’
 <p>GBAT writes a corresponding output record into ERRFILE (and ERRFIL2 and ERRFIL3 as needed), the output file of rejected records.</p>
 </li>
 <li>
-<p>The record contributes to the count of rejected records that appears in the SYSPRINT report of run statistics (see <a href="/chapters/chapterIX/section09/">Chapter IX.9</a>)</p>
+<p>The record contributes to the count of rejected records that appears in the SYSPRINT report of run statistics (see <a href="../section09/">Chapter IX.9</a>)</p>
 </li>
 <li>
 <p>Unless the record is rejected for an invalid borough code, it is counted as a rejected record for the purpose of determining whether a MAXREJECTS abnormal termination is to be triggered.  </p>
