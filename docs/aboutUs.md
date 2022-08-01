@@ -9,10 +9,11 @@ Dan Garodnick, Director
 Edith Hsu-Chen, Executive Director   
 
 **INFORMATION TECHNOLOGY DIVISION**  
-Michele McInnes, AICP, PMP, Chief Information Officer  
+Ryan Blair, Acting Chief Information Officer  
 
 **ENTERPRISE DATA MANAGEMENT**  
-Lynn Seirup, Senior Director  
+Lynn Seirup, Senior Director 
+Amanda Doyle, Director
 Thomas Costa, AICP, Manager, Geographic Research  
 Rodrigo Zapata, Senior Technical Project Manager  
 
