@@ -1,5 +1,5 @@
 site_name: DCP
-pages:
+nav:
 - Home: index.md
 - Table of Contents : tableofcontents.md
 - Overview of the UPG: overview.md
