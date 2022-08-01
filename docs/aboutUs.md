@@ -13,7 +13,8 @@ Ryan Blair, Acting Chief Information Officer
 
 **ENTERPRISE DATA MANAGEMENT**  
 Lynn Seirup, Senior Director 
-Amanda Doyle, Director 
+Amanda Doyle, Director
+
 Thomas Costa, AICP, Manager, Geographic Research  
 Rodrigo Zapata, Senior Technical Project Manager  
 
