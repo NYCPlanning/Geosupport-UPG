@@ -21,8 +21,7 @@ Rodrigo Zapata, Senior Technical Project Manager
 Ryan Blair, Director  
 Steve Oliver, Citywide Geosupport Team Lead  
 **Citywide Geosupport Team**  
-Jie Ding  
-Yoel Lebel  
+Jie Ding   
 Narish Singh
 
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  
