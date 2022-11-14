@@ -100,7 +100,7 @@ Census_Block_Suffix_2020 1 byte
 NTA_2020 6 bytes 
 CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] 
 
-*Function 3X (please note - new fields will not be in regular Function 3 Work Area)**
+**Function 3X (please note - new fields will not be in regular Function 3 Work Area)**
 Left_Census_Tract_2020 6 bytes 
 Left_Census_Block_2020 4 bytes 
 Left_Census_Block_Suffix_2020 1 byte 
