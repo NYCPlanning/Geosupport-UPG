@@ -64,6 +64,17 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <p>--------------------</p>
 
+## Version 21.4
+
+**Condo Base BBL 
+Starting with release 21D, Geosupport includes a new field called the Condo Base BBL field that has been added to Work Area 2 for functions 1A, 1AX, BL, BLX, BN, and BNX. This field will only be populated for condos without a Condo Billing BBL; otherwise, the field will contain spaces. 
+For Condos, Geosupport returns the Condo Billing BBL as the BBL to use for the condo complex. Early in the condo conversion process DOF often has not provided a Condo Billing BBL so this field will contain all zeroes. In these cases, Geosupport will return all zeroes in the BBL. Geosupport also returns high and low condo unit BBLs but many users do not want to rely on these as a substitute because it can lead to official notices being sent to a condo unit and not the managers of the condo complex. Therefore, we are adding this new Condo Base BBL field to provide users with a BBL that may be used on a temporary basis. 
+
+In WA2F1A and WA2F1AX the field is called condo_base_bbl and its location starts at position 136 and has a length of 10 bytes. In pac.h this is after the single byte filler08 that follows the condo_hi_bbl field. 
+
+Additionally, this new field is returned in the GeoX .Net classes, Geoservice calls, and NYCgbat.
+
+
 ## Version 20.1
 
 <u>**IMPORTANT MAINFRAME ANNOUNCEMENT (Reminder)**</u>  
