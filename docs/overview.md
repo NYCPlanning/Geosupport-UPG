@@ -77,7 +77,9 @@ Additionally, this new field is returned in the GeoX .Net classes, Geoservice ca
 
 ## Version 21.3
 
-This Geosupport Release, v21.3/21C, is due to be released on or after August 8, 2021, and will include new fields for the 2020 Census geography. The information below is to aid users in planning to implement these changes. Several new fields specifically related to the new 2020 Census geography have been added. An existing field has been renamed to avoid confusion about which Census the values are derived from. The former NTA field based on the 2010 Census geography has been renamed to NTA_2010. 
+**2020 Census Geography** 
+
+This Geosupport Release, v21.3/21C, will include new fields for the 2020 Census geography. The information below is to aid users in planning to implement these changes. Several new fields specifically related to the new 2020 Census geography have been added. An existing field has been renamed to avoid confusion about which Census the values are derived from. The former NTA field based on the 2010 Census geography has been renamed to NTA_2010. 
 
 While these new fields appear in the mainframe version of Geosupport, we will be providing limited support to users who don’t make efforts to port their applications to other platforms. Users are encouraged to use Geosupport Desktop Edition, Geosupport Linux Edition, GeoX classes for .Net, GeoX classes for Java, or Geoservice instead of the mainframe version of Geosupport. 
 
