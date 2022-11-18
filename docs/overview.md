@@ -64,6 +64,18 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <p>--------------------</p>
 
+## Version 22.3
+
+**Sanborn Volume and Page Information** 
+Please be informed that the Sanborn Volume and Page information returned in functions 1A, 2, BL, and BN of the Geosupport System has been deprecated, as no source data is available to maintain a reliable level of accuracy or currency. For now, the field will continue to exist and be populated with data; however, users are hereby advised of the obsolete nature of this data, and the plan to eliminate this field in a future release. Users that rely on retrieving this information from Geosupport should plan accordingly.
+
+**DSNY Commercial Waste Zones** 
+As part of the Department of Sanitation’s (DSNY) comprehensive plan for reforming the private carting industry, it has established Commercial Waste Zones (CWZ). These 20 zones were designed to limit the number of carters that serve the commercial establishments of a geographic area of the city, thereby reducing noise pollution, reducing greenhouse gas emissions, and increasing public safety.
+Starting with this release (22.3/22C) Geoupport will be returning the CWZ designations via Function 1E and Function 1E Extended calls. The new field will contain 4 characters consisting of the borough initials MN, BX, BK, QN, and SI, a one-digit number, and an optional suffix letter (currently “A” or “B”).
+This new field, san_commercial_waste_zone, will be available in all the versions of Geosupport Desktop Edition, via the GeoX Classes, and via our webservice Geoservice.
+It’s location in Wa2F1e and Wa2F1ex will be 263 – 266.
+
+
 ## Version 21.4
 
 **Condo Base BBL** 
