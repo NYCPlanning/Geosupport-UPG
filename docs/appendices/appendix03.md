@@ -4649,56 +4649,56 @@ COW: Fns 1, 1E, 3, 3C - 5 bytes numeric</td>
                       <tr>
                           <td>E</td>
                           <td>Approximately due east</td>
-                          <td>325-335</td>
-                          <td>0-5 and 355-359</td>
+                          <td>320-340</td>
+                          <td>0-10 and 350-360</td>
                       </tr>
                       <tr>
                           <td>1</td>
                           <td>First quadrant, i.e. northeasterly</td>
-                          <td>336-359</td>
-                          <td>6-84</td>
+                          <td>341-359</td>
+                          <td>11-79</td>
                       </tr>
                       <tr>
                           <td></td>
                           <td></td>
-                          <td>and 0-54</td>
+                          <td>and 0-49</td>
                           <td></td>
                       </tr>
                       <tr>
                           <td>N</td>
                           <td>Approximately due north</td>
-                          <td>55-65</td>
-                          <td>85-95</td>
+                          <td>50-70</td>
+                          <td>80-100</td>
                       </tr>
                       <tr>
                           <td>2</td>
                           <td>Second quadrant, i.e. northwesterly</td>
-                          <td>66-144</td>
-                          <td>96-174</td>
+                          <td>71-139</td>
+                          <td>101-169</td>
                       </tr>
                       <tr>
                           <td>W</td>
                           <td>Approximately due west</td>
-                          <td>145-155</td>
-                          <td>175-185</td>
+                          <td>140-160</td>
+                          <td>170-190</td>
                       </tr>
                       <tr>
                           <td>3</td>
                           <td>Third quadrant, i.e. southwesterly</td>
-                          <td>156-234</td>
-                          <td>186-264</td>
+                          <td>161-229</td>
+                          <td>191-259</td>
                       </tr>
                       <tr>
                           <td>S</td>
                           <td>Approximately due south</td>
-                          <td>235-245</td>
-                          <td>265-275</td>
+                          <td>230-250</td>
+                          <td>260-280</td>
                       </tr>
                       <tr>
                           <td>4</td>
                           <td>Fourth quadrant, i.e. southeasterly</td>
-                          <td>246-324</td>
-                          <td>276-354</td>
+                          <td>251-319</td>
+                          <td>281-349</td>
                       </tr>
                   </table>
               </td>
