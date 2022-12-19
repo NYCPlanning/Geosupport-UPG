@@ -4311,7 +4311,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
 
 <table class="rightTableAlignment borderlessTable">
   <tr>
-      <th colspan="2"><b>SANBORN VOLUME AND PAGE</b> </th>
+      <th colspan="2"><b>SANBORN VOLUME AND PAGE (Deprecated)</b> </th>
   </tr>
   <tr>
       <td class="widthTD">Functions:</td>
@@ -4327,7 +4327,7 @@ Note: It is recommended that you use the POLICE PATROL BOROUGH field (not the PO
   </tr>
   <tr>
       <td class="topVerticalTD">Description:</td>
-      <td>The Sanborn Map Company maintains a 79 volume atlas of New York City geography that is widely used by New York city agencies.  The atlases contain approximately 6000 maps covering all five boroughs</td>
+      <td>Due to the lack of updates available to DCP, this field is deprecated.  The Sanborn Map Company maintains a 79 volume atlas of New York City geography that is widely used by New York city agencies.  The atlases contain approximately 6000 maps covering all five boroughs</td>
   </tr>-
 
 </table>

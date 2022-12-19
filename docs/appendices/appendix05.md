@@ -1,5 +1,7 @@
 <h2 class="pdfAppendix"><center>APPENDIX 5:  GEOSUPPORT COPY FILES (MSW)</center></h2>
 
+As of January 1, 2020 DCP no longer supports Mainframe Specific Workareas (MSW).
+
 This appendix contains printouts of the Geosupport MSW COPY files for COBOL, Assembler, PL/1, C and  NATURAL.  (For C, COPY files take the form of header files.  For NATURAL, COPY files take the form of Local Data Areas.)  
 
 The Geosupport COPY files contain source code layouts of the Geosupport work areas.  These files are stored in a COPY library that can be accessed by user application programs at compile time.  Each supported programming language has an appropriate declarative statement for referencing COPY files at compile time.  The Geosupport COPY files are listed below.
