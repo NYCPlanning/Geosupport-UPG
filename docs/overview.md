@@ -61,8 +61,37 @@ Typically, MSWs contain some fields that are in a format which is unique to IBM 
 
 Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** and **WA2**, respectively.
 
-
 <p>--------------------</p>
+
+## Version 23.2
+
+**2020 PUMA Field Added** 
+
+The 2020 PUMA field contains the Public Use Microdata Area Code associated with the input location. The 2020 PUMA is related to 2020 Census tract and NTA applications.  The existing field called PUMA Code is based on the 2010 Census geography.  
+
+Available in Functions 1EX, 1B, 3X, 3CX, 3E, 3CE 
+
+**Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)** 
+F1EX	Puma_2020			783		5
+F1B		Puma_2020			783		5
+
+**Function 3X, 3E (please note - new fields will not be in regular Function 3 Work Area)** 
+F3X		Left_Puma_2020		851		5	
+		Right_Puma_2020	    856		5
+F3CX	Puma_2020			586		5
+F3E		Left_Puma_2020		358		5
+		Right_Puma_2020	    363		5
+F3CE	Puma_2020			358		5
+
+Available across all Geosupport platforms:
+
+Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) 
+GeoX.Net classes
+Geoservice
+NYCgbat
+New Desktop GBAT (beta)
+GOAT 
+
 
 ## Version 22.3
 
