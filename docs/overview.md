@@ -137,43 +137,56 @@ While these new fields appear in the mainframe version of Geosupport, we will be
 The new Census 2020 fields will be returned in Geosupport Functions as follows: 
 
 **Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)** 
-Census_Tract_2020 6 bytes 
-Census_Block_2020 4 bytes 
-Census_Block_Suffix_2020 1 byte [this field will be blank] 
-NTA_2020 6 bytes 
-CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] 
+| Field Name             | Length  | Note                     |
+|:-----------------------|:-------:|:-------------------------|
+|Census_Tract_2020       | 6 bytes |                          |
+|Census_Block_2020       | 4 bytes |                          |
+|Census_Block_Suffix_2020| 1 byte  | this field will be blank |
+|NTA_2020                | 6 bytes |                          |
+|CDTA_2020               | 4 bytes | the CDTA did not exist for the 2010 Census |  
+
 Existing NTA field will be renamed NTA_2010 
 
 **Function 2 (only the Census Tract for 2020 will be in the regular Function 2 Work Area)**
-Census_Tract_2020 6 bytes 
+| Field Name             | Length  | Note                     |
+|:-----------------------|:-------:|:-------------------------|
+|Census_Tract_2020       | 6 bytes |                          |
 
 **Function 2W (other than Census Tract 2020, the new fields will not be in regular Function 2 Work Area)**
-Census_Block_2020 4 bytes 
-Census_Block_Suffix_2020 1 byte 
-NTA_2020 6 bytes 
-CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] 
+| Field Name             | Length  | Note                                       |
+|:-----------------------|:-------:|:-------------------------------------------|
+|Census_Block_2020       | 4 bytes |                                            |
+|Census_Block_Suffix_2020| 1 byte  |                                            |
+|NTA_2020                | 6 bytes |                                            |
+|CDTA_2020               | 4 bytes | the CDTA did not exist for the 2010 Census |  
 
 **Function 3X (please note - new fields will not be in regular Function 3 Work Area)**
-Left_Census_Tract_2020 6 bytes 
-Left_Census_Block_2020 4 bytes 
-Left_Census_Block_Suffix_2020 1 byte 
-Left_NTA_2020 6 bytes (2 char boro + 4 digits) 
-Left_CDTA_2020 4 bytes (2 char boro + 2 digits) 
-Right_Census_Tract_2020 6 bytes 
-Right_Census_Block_2020 4 bytes 
-Right_Census_Block_Suffix_2020 1 byte 
-Right_NTA_2020 6 bytes (2 char boro + 4 digits) 
-Right_CDTA_2020 4 bytes (2 char boro + 2 digits) 
-[the CDTA did not exist for the 2010 Census]
+| Field Name                    | Length  | Note                                       |
+|:------------------------------|:-------:|:-------------------------------------------|
+|Left_Census_Tract_2020         | 6 bytes |                                            |
+|Left_Census_Block_2020         | 4 bytes |                                            | 
+|Left_Census_Block_Suffix_2020  | 1 byte  |                                            |
+|Left_NTA_2020                  | 6 bytes | (2 char boro + 4 digits)                   | 
+|Left_CDTA_2020                 | 4 bytes | (2 char boro + 2 digits)                   |
+|Right_Census_Tract_2020        | 6 bytes |                                            |
+|Right_Census_Block_2020        | 4 bytes |                                            |  
+|Right_Census_Block_Suffix_2020 | 1 byte  |                                            |
+|Right_NTA_2020                 |6 bytes  | (2 char boro + 4 digits)                   |
+|Right_CDTA_2020                | 4 bytes | (2 char boro + 2 digits) [the CDTA did not exist for the 2010 Census] |  
+
 Existing NTA field in Segside will be renamed NTA_2010 
 
-**Function 3E (please note - new fields will not be in regular Function 3 Work Area)**
-SegsideB7sc structure with left and right array entries 
-Census_Tract_2020 6 bytes 
-Census_Block_2020 4 bytes 
-Census_Block_Suffix_2020 1 byte 
-NTA_2020 6 bytes 
-CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] 
+**Function 3E (please note - new fields will not be in regular Function 3 Work Area)**  
+
+SegsideB7sc structure with left and right array entries   
+| Field Name                    | Length  | Note                                         |
+|:------------------------------|:-------:|:---------------------------------------------|
+|Census_Tract_2020              | 6 bytes |                                              |
+|Census_Block_2020              | 4 bytes |                                              |
+|Census_Block_Suffix_2020       | 1 byte  |                                              |
+|NTA_2020                       | 6 bytes |                                              |
+|CDTA_2020                      | 4 bytes | [the CDTA did not exist for the 2010 Census] |   
+
 Existing NTA field will be renamed NTA_2010
 
 ## Version 20.1
