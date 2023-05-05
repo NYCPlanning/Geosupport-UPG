@@ -73,23 +73,23 @@ Available in Functions 1EX, 1B, 3X, 3CX, 3E, 3CE
 
 **Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)** 
 
-F1EX	Puma_2020			783		5
+| Function   | Field Name     | Start | Length |
+|:-----------|:---------------|------:|:------:|
+| F1EX	     |Puma_2020	      |  783  |  5     |
+| F1B	     |Puma_2020	      |  783  |  5     |
 
-F1B		Puma_2020			783		5
 
 **Function 3X, 3E (please note - new fields will not be in regular Function 3 Work Area)** 
 
-F3X		Left_Puma_2020		851		5	
+| Function   | Field Name      | Start | Length |
+|:-----------|:----------------|------:|:------:|
+| F3X	     |Left_Puma_2020   |  851  |  5     |
+|    	     |Right_Puma_2020  |  856  |  5     |
+| F3CX	     |Puma_2020        |  586  |  5     |
+| F3E	     |Left_Puma_2020   |  358  |  5     |
+|    	     |Right_Puma_2020  |  363  |  5     |
+| F3CE	     |Puma_2020        |  358  |  5     |
 
-		Right_Puma_2020	    856		5
-
-F3CX	Puma_2020			586		5
-
-F3E		Left_Puma_2020		358		5
-
-		Right_Puma_2020	    363		5
-
-F3CE	Puma_2020			358		5
 
 Available across all Geosupport platforms:
 
