@@ -88,17 +88,17 @@ Available in Functions 1EX, 1B, 3X, 3CX, 3E, 3CE
 | F3CX	     |Puma_2020        |  586  |  5     |
 | F3E	     |Left_Puma_2020   |  358  |  5     |
 |    	     |Right_Puma_2020  |  363  |  5     |
-| F3CE	     |Puma_2020        |  358  |  5     |
+| F3CE	     |Puma_2020        |  358  |  5     |  
+  
+  
+**Available across all Geosupport platforms:**  
 
-
-Available across all Geosupport platforms:
-
-Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) 
-GeoX.Net classes
-Geoservice
-NYCgbat
-New Desktop GBAT (beta)
-GOAT 
+- Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) 
+- GeoX.Net classes
+- Geoservice
+- NYCgbat
+- New Desktop GBAT (beta)
+- GOAT 
 
 
 ## Version 22.3
