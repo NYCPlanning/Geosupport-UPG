@@ -124,8 +124,8 @@ For Condos, Geosupport returns the Condo Billing BBL as the BBL to use for the c
 
 Available in Functions F1A, F1AX, FBL, FBLX, FBN, FBNX. In pac.h this is after the single byte filler08 that follows the condo_hi_bbl field. 
 
-| Function   | Field Name      | Start | Length | Notes  |
-|:-----------|:----------------|------:|:------:|        |
+| Function   | Field Name      | Start | Length | Notes  |  
+|:-----------|:----------------|------:|:------:|        |  
 | F1A, F1AX  |condo_base_bbl   |  136  |  10    | in pac.h this is after the single byte filler08 that follows the condo_hi_bbl field|  
 
 **Available across all Geosupport platforms:**  
