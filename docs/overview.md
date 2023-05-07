@@ -148,7 +148,8 @@ While these new fields appear in the mainframe version of Geosupport, we will be
 
 The new Census 2020 fields will be returned in Geosupport Functions as follows: 
 
-**Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)** 
+**Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)**  
+  
 | Field Name             | Length  | Note                     |
 |:-----------------------|:-------:|:-------------------------|
 |Census_Tract_2020       | 6 bytes |                          |
@@ -159,12 +160,14 @@ The new Census 2020 fields will be returned in Geosupport Functions as follows:
 
 Existing NTA field will be renamed NTA_2010 
 
-**Function 2 (only the Census Tract for 2020 will be in the regular Function 2 Work Area)**
+**Function 2 (only the Census Tract for 2020 will be in the regular Function 2 Work Area)**  
+
 | Field Name             | Length  | Note                     |
 |:-----------------------|:-------:|:-------------------------|
 |Census_Tract_2020       | 6 bytes |                          |
 
-**Function 2W (other than Census Tract 2020, the new fields will not be in regular Function 2 Work Area)**
+**Function 2W (other than Census Tract 2020, the new fields will not be in regular Function 2 Work Area)**  
+
 | Field Name             | Length  | Note                                       |
 |:-----------------------|:-------:|:-------------------------------------------|
 |Census_Block_2020       | 4 bytes |                                            |
@@ -172,7 +175,8 @@ Existing NTA field will be renamed NTA_2010
 |NTA_2020                | 6 bytes |                                            |
 |CDTA_2020               | 4 bytes | the CDTA did not exist for the 2010 Census |  
 
-**Function 3X (please note - new fields will not be in regular Function 3 Work Area)**
+**Function 3X (please note - new fields will not be in regular Function 3 Work Area)**  
+
 | Field Name                    | Length  | Note                                       |
 |:------------------------------|:-------:|:-------------------------------------------|
 |Left_Census_Tract_2020         | 6 bytes |                                            |
@@ -190,7 +194,8 @@ Existing NTA field in Segside will be renamed NTA_2010
 
 **Function 3E (please note - new fields will not be in regular Function 3 Work Area)**  
 
-SegsideB7sc structure with left and right array entries   
+SegsideB7sc structure with left and right array entries  
+
 | Field Name                    | Length  | Note                                         |
 |:------------------------------|:-------:|:---------------------------------------------|
 |Census_Tract_2020              | 6 bytes |                                              |
