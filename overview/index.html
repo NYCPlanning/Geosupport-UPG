@@ -533,9 +533,37 @@
 <p>Please be informed that the Sanborn Volume and Page information returned in functions 1A, 2, BL, and BN of the Geosupport System has been deprecated, as no source data is available to maintain a reliable level of accuracy or currency. For now, the field will continue to exist and be populated with data; however, users are hereby advised of the obsolete nature of this data, and the plan to eliminate this field in a future release. Users that rely on retrieving this information from Geosupport should plan accordingly.</p>
 <p><strong>DSNY Commercial Waste Zones</strong> </p>
 <p>As part of the Department of Sanitation’s (DSNY) comprehensive plan for reforming the private carting industry, it has established Commercial Waste Zones (CWZ). These 20 zones were designed to limit the number of carters that serve the commercial establishments of a geographic area of the city, thereby reducing noise pollution, reducing greenhouse gas emissions, and increasing public safety.
-Starting with this release (22.3/22C) Geoupport will be returning the CWZ designations via Function 1E and Function 1E Extended calls. The new field will contain 4 characters consisting of the borough initials MN, BX, BK, QN, and SI, a one-digit number, and an optional suffix letter (currently “A” or “B”).
-This new field, san_commercial_waste_zone, will be available in all the versions of Geosupport Desktop Edition, via the GeoX Classes, and via our webservice Geoservice.
-It’s location in Wa2F1e and Wa2F1ex will be 263 – 266.</p>
+Starting with this release (22.3/22C) Geoupport will be returning the CWZ designations via Function 1E and Function 1E Extended calls. The new field san_commercial_waste_zone will contain 4 characters consisting of the borough initials MN, BX, BK, QN, and SI, a one-digit number, and an optional suffix letter (currently “A” or “B”).  </p>
+<p>Available in Functions F1E and F1EX </p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Field Name</th>
+<th align="right">Start</th>
+<th align="center">Length</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">F1E, F1EX</td>
+<td align="left">san_commercial_waste_zone</td>
+<td align="right">263</td>
+<td align="center">4</td>
+<td>in pac.h this is after the hurricane_zone</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Available across all Geosupport platforms:</strong>  </p>
+<ul>
+<li>Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) </li>
+<li>GeoX.Net classes</li>
+<li>Geoservice</li>
+<li>NYCgbat</li>
+<li>New Desktop GBAT (beta)</li>
+<li>GOAT (web version only)</li>
+</ul>
 <h2 id="version-214">Version 21.4</h2>
 <p><strong>Condo Base BBL</strong> </p>
 <p>Starting with release 21D, Geosupport includes a new field called the Condo Base BBL field that has been added to Work Area 2 for functions 1A, 1AX, BL, BLX, BN, and BNX. This field will only be populated for condos without a Condo Billing BBL; otherwise, the field will contain spaces. 
@@ -763,7 +791,16 @@ For Condos, Geosupport returns the Condo Billing BBL as the BBL to use for the c
 </tr>
 </tbody>
 </table>
-<p>Existing NTA field will be renamed NTA_2010</p>
+<p>Existing NTA field will be renamed NTA_2010  </p>
+<p><strong>Available across all Geosupport platforms:</strong>  </p>
+<ul>
+<li>Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) </li>
+<li>GeoX.Net classes</li>
+<li>Geoservice</li>
+<li>NYCgbat</li>
+<li>New Desktop GBAT (beta)</li>
+<li>GOAT (web version only)  </li>
+</ul>
 <h2 id="version-201">Version 20.1</h2>
 <p><u><strong>IMPORTANT MAINFRAME ANNOUNCEMENT (Reminder)</strong></u>  </p>
 <p><b>As of Geosupport Version 19.3, enhancements to Geosupport (such as new fields and new functions) are being made available and supported <u>only</u> for applications running in a non-mainframe environment (NMF)</b>, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  </p>
