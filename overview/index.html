@@ -35,7 +35,7 @@
           <a href=".." class="icon icon-home"> DCP
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -378,7 +378,7 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
       <li>Overview of the UPG</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -441,6 +441,93 @@
 <p>Work Area 1 and Work Area 2 are often referred to, in this document, as <strong>WA1</strong> and <strong>WA2</strong>, respectively.</p>
 <p>--------------------</p>
 
+<h2 id="version-232">Version 23.2</h2>
+<p><strong>2020 PUMA Field Added</strong> </p>
+<p>The 2020 PUMA field contains the Public Use Microdata Area Code associated with the input location. The 2020 PUMA is related to 2020 Census tract and NTA applications.  The existing field called PUMA Code is based on the 2010 Census geography.  </p>
+<p>Available in Functions 1EX, 1B, 3X, 3CX, 3E, 3CE </p>
+<p><strong>Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)</strong> </p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Field Name</th>
+<th align="right">Start</th>
+<th align="center">Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">F1EX</td>
+<td align="left">Puma_2020</td>
+<td align="right">783</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">F1B</td>
+<td align="left">Puma_2020</td>
+<td align="right">783</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function 3X, 3E (please note - new fields will not be in regular Function 3 Work Area)</strong> </p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Field Name</th>
+<th align="right">Start</th>
+<th align="center">Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">F3X</td>
+<td align="left">Left_Puma_2020</td>
+<td align="right">851</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Right_Puma_2020</td>
+<td align="right">856</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">F3CX</td>
+<td align="left">Puma_2020</td>
+<td align="right">586</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">F3E</td>
+<td align="left">Left_Puma_2020</td>
+<td align="right">358</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Right_Puma_2020</td>
+<td align="right">363</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">F3CE</td>
+<td align="left">Puma_2020</td>
+<td align="right">358</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Available across all Geosupport platforms:</strong>  </p>
+<ul>
+<li>Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) </li>
+<li>GeoX.Net classes</li>
+<li>Geoservice</li>
+<li>NYCgbat</li>
+<li>New Desktop GBAT (beta)</li>
+<li>GOAT (web version only)</li>
+</ul>
 <h2 id="version-223">Version 22.3</h2>
 <p><strong>Sanborn Volume and Page Information</strong> </p>
 <p>Please be informed that the Sanborn Volume and Page information returned in functions 1A, 2, BL, and BN of the Geosupport System has been deprecated, as no source data is available to maintain a reliable level of accuracy or currency. For now, the field will continue to exist and be populated with data; however, users are hereby advised of the obsolete nature of this data, and the plan to eliminate this field in a future release. Users that rely on retrieving this information from Geosupport should plan accordingly.</p>
@@ -453,48 +540,85 @@ It’s location in Wa2F1e and Wa2F1ex will be 263 – 266.</p>
 <p><strong>Condo Base BBL</strong> </p>
 <p>Starting with release 21D, Geosupport includes a new field called the Condo Base BBL field that has been added to Work Area 2 for functions 1A, 1AX, BL, BLX, BN, and BNX. This field will only be populated for condos without a Condo Billing BBL; otherwise, the field will contain spaces. 
 For Condos, Geosupport returns the Condo Billing BBL as the BBL to use for the condo complex. Early in the condo conversion process DOF often has not provided a Condo Billing BBL so this field will contain all zeroes. In these cases, Geosupport will return all zeroes in the BBL. Geosupport also returns high and low condo unit BBLs but many users do not want to rely on these as a substitute because it can lead to official notices being sent to a condo unit and not the managers of the condo complex. Therefore, we are adding this new Condo Base BBL field to provide users with a BBL that may be used on a temporary basis. </p>
-<p>In WA2F1A and WA2F1AX the field is called condo_base_bbl and its location starts at position 136 and has a length of 10 bytes. In pac.h this is after the single byte filler08 that follows the condo_hi_bbl field. </p>
-<p>Additionally, this new field is returned in the GeoX .Net classes, Geoservice calls, and NYCgbat.</p>
+<p>Available in Functions F1A, F1AX, FBL, FBLX, FBN, FBNX. In pac.h this is after the single byte filler08 that follows the condo_hi_bbl field. </p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Field Name</th>
+<th align="right">Start</th>
+<th align="center">Length</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">F1A, F1AX</td>
+<td align="left">condo_base_bbl</td>
+<td align="right">136</td>
+<td align="center">10</td>
+<td>in pac.h this is after the single byte filler08 that follows the condo_hi_bbl field</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Available across all Geosupport platforms:</strong>  </p>
+<ul>
+<li>Geosupport Desktop Edition (Windows 32-bit and 64-bit; LINUX) </li>
+<li>GeoX.Net classes</li>
+<li>Geoservice</li>
+<li>NYCgbat</li>
+<li>New Desktop GBAT (beta)</li>
+<li>GOAT (web version only)</li>
+</ul>
 <h2 id="version-213">Version 21.3</h2>
 <p><strong>2020 Census Geography</strong> </p>
 <p>This Geosupport Release, v21.3/21C, will include new fields for the 2020 Census geography. The information below is to aid users in planning to implement these changes. Several new fields specifically related to the new 2020 Census geography have been added. An existing field has been renamed to avoid confusion about which Census the values are derived from. The former NTA field based on the 2010 Census geography has been renamed to NTA_2010. </p>
 <p>While these new fields appear in the mainframe version of Geosupport, we will be providing limited support to users who don’t make efforts to port their applications to other platforms. Users are encouraged to use Geosupport Desktop Edition, Geosupport Linux Edition, GeoX classes for .Net, GeoX classes for Java, or Geoservice instead of the mainframe version of Geosupport. </p>
 <p>The new Census 2020 fields will be returned in Geosupport Functions as follows: </p>
 <p><strong>Function 1X, 1EX, 1B (please note - new fields will not be in regular Function 1 Work Area)</strong> 
-Census_Tract_2020 6 bytes 
-Census_Block_2020 4 bytes 
-Census_Block_Suffix_2020 1 byte [this field will be blank] 
-NTA_2020 6 bytes 
-CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] 
-Existing NTA field will be renamed NTA_2010 </p>
+| Field Name             | Length  | Note                     |
+|:-----------------------|:-------:|:-------------------------|
+|Census_Tract_2020       | 6 bytes |                          |
+|Census_Block_2020       | 4 bytes |                          |
+|Census_Block_Suffix_2020| 1 byte  | this field will be blank |
+|NTA_2020                | 6 bytes |                          |
+|CDTA_2020               | 4 bytes | the CDTA did not exist for the 2010 Census |  </p>
+<p>Existing NTA field will be renamed NTA_2010 </p>
 <p><strong>Function 2 (only the Census Tract for 2020 will be in the regular Function 2 Work Area)</strong>
-Census_Tract_2020 6 bytes </p>
+| Field Name             | Length  | Note                     |
+|:-----------------------|:-------:|:-------------------------|
+|Census_Tract_2020       | 6 bytes |                          |</p>
 <p><strong>Function 2W (other than Census Tract 2020, the new fields will not be in regular Function 2 Work Area)</strong>
-Census_Block_2020 4 bytes 
-Census_Block_Suffix_2020 1 byte 
-NTA_2020 6 bytes 
-CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] </p>
+| Field Name             | Length  | Note                                       |
+|:-----------------------|:-------:|:-------------------------------------------|
+|Census_Block_2020       | 4 bytes |                                            |
+|Census_Block_Suffix_2020| 1 byte  |                                            |
+|NTA_2020                | 6 bytes |                                            |
+|CDTA_2020               | 4 bytes | the CDTA did not exist for the 2010 Census |  </p>
 <p><strong>Function 3X (please note - new fields will not be in regular Function 3 Work Area)</strong>
-Left_Census_Tract_2020 6 bytes 
-Left_Census_Block_2020 4 bytes 
-Left_Census_Block_Suffix_2020 1 byte 
-Left_NTA_2020 6 bytes (2 char boro + 4 digits) 
-Left_CDTA_2020 4 bytes (2 char boro + 2 digits) 
-Right_Census_Tract_2020 6 bytes 
-Right_Census_Block_2020 4 bytes 
-Right_Census_Block_Suffix_2020 1 byte 
-Right_NTA_2020 6 bytes (2 char boro + 4 digits) 
-Right_CDTA_2020 4 bytes (2 char boro + 2 digits) 
-[the CDTA did not exist for the 2010 Census]
-Existing NTA field in Segside will be renamed NTA_2010 </p>
-<p><strong>Function 3E (please note - new fields will not be in regular Function 3 Work Area)</strong>
-SegsideB7sc structure with left and right array entries 
-Census_Tract_2020 6 bytes 
-Census_Block_2020 4 bytes 
-Census_Block_Suffix_2020 1 byte 
-NTA_2020 6 bytes 
-CDTA_2020 4 bytes [the CDTA did not exist for the 2010 Census] 
-Existing NTA field will be renamed NTA_2010</p>
+| Field Name                    | Length  | Note                                       |
+|:------------------------------|:-------:|:-------------------------------------------|
+|Left_Census_Tract_2020         | 6 bytes |                                            |
+|Left_Census_Block_2020         | 4 bytes |                                            | 
+|Left_Census_Block_Suffix_2020  | 1 byte  |                                            |
+|Left_NTA_2020                  | 6 bytes | (2 char boro + 4 digits)                   | 
+|Left_CDTA_2020                 | 4 bytes | (2 char boro + 2 digits)                   |
+|Right_Census_Tract_2020        | 6 bytes |                                            |
+|Right_Census_Block_2020        | 4 bytes |                                            |<br />
+|Right_Census_Block_Suffix_2020 | 1 byte  |                                            |
+|Right_NTA_2020                 |6 bytes  | (2 char boro + 4 digits)                   |
+|Right_CDTA_2020                | 4 bytes | (2 char boro + 2 digits) [the CDTA did not exist for the 2010 Census] |  </p>
+<p>Existing NTA field in Segside will be renamed NTA_2010 </p>
+<p><strong>Function 3E (please note - new fields will not be in regular Function 3 Work Area)</strong>  </p>
+<p>SegsideB7sc structure with left and right array entries <br />
+| Field Name                    | Length  | Note                                         |
+|:------------------------------|:-------:|:---------------------------------------------|
+|Census_Tract_2020              | 6 bytes |                                              |
+|Census_Block_2020              | 4 bytes |                                              |
+|Census_Block_Suffix_2020       | 1 byte  |                                              |
+|NTA_2020                       | 6 bytes |                                              |
+|CDTA_2020                      | 4 bytes | [the CDTA did not exist for the 2010 Census] |   </p>
+<p>Existing NTA field will be renamed NTA_2010</p>
 <h2 id="version-201">Version 20.1</h2>
 <p><u><strong>IMPORTANT MAINFRAME ANNOUNCEMENT (Reminder)</strong></u>  </p>
 <p><b>As of Geosupport Version 19.3, enhancements to Geosupport (such as new fields and new functions) are being made available and supported <u>only</u> for applications running in a non-mainframe environment (NMF)</b>, e.g. Desktop Edition, GeoX, .net, and Linux.  Enhancements to Geosupport will continue to be implemented for non-mainframe environments.  </p>
