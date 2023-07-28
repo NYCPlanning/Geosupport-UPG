@@ -9,7 +9,7 @@ Dan Garodnick, Director
 Edith Hsu-Chen, Executive Director   
 
 **INFORMATION TECHNOLOGY DIVISION**  
-Ryan Blair, Acting Chief Information Officer  
+Varghese Abraham, Chief Information Officer  
 
 **ENTERPRISE DATA MANAGEMENT**  
 Lynn Seirup, Senior Director  

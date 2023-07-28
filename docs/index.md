@@ -3,7 +3,7 @@
 <h1 class = "docName"><center>User Programming Guide (UPG)</center></h1>
 <!-- <p class = "version"><center>SOFTWARE VERSION 18.4 <font color="red">Draft</font></center></p>   -->
 
-<p class = "version"><center>SOFTWARE VERSION 23.2</center></p>
+<p class = "version"><center>SOFTWARE VERSION 23.3</center></p>
 
 <center>![NYCPlanningLogo <>](img/logo2.png "NYC Logo")</center>
 
