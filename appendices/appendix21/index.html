@@ -8,7 +8,7 @@
     <title>Appendix 21: Geosupport Desktop Edtion - DCP</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -380,7 +379,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Appendices and Glossary &raquo;</li>
-      <li>Appendix 21: Geosupport Desktop Edtion</li>
+      <li class="breadcrumb-item active">Appendix 21: Geosupport Desktop Edtion</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -505,13 +504,13 @@
         GBAT (Geosupport Batch Address Translator) is the Geosupport batch utility program. GBAT allows users to process large files containing geographic locations. It validates these locations and writes out an output file containing a set of geographic information for each valid input location.  </p>
 <p>The Geosupport utility programs cannot, by themselves, satisfy every need of every application. For example, GOAT does not allow users to design their own screens or update their own files. Those types of functions can only be done by user-written programs accessing Geosupport via the API. Nevertheless, the Geosupport utility programs are powerful tools, particularly when used in conjunction with user-written programs.  </p>
 <h2 id="iv-geosupport-update-cycles-and-user-feedback"><span id="appendix21.5">IV Geosupport Update Cycles And User Feedback  </span></h2>
-<p>1.<strong> Updates Cycles </strong>  </p>
+<p>1.** Updates Cycles **  </p>
 <p>The Geosupport System is updated continually. Updated information becomes accessible to users when new releases of Geosupport are released for user access several times a year. New Geosupport releases reflect changes in the city’s geography (new street names, new inters, new addresses, changes to various district boundaries, tax lot mergers and subdivisions, etc.), as well as correction of Geosupport data errors. Software enhancements and corrections are also implemented from time to time. Geosupport technical bulletins explaining new software features are distributed as needed.  </p>
-<p>2.<strong> Resynchronizing User Files to Reflect New Geosupport Releases </strong>  </p>
+<p>2.** Resynchronizing User Files to Reflect New Geosupport Releases **  </p>
 <p>Applications are often designed so that items obtained from Geosupport are stored in user files. Some online applications use such items as ‘keys’ to retrieve data from the user’s own files by geographic location. (For example, as mentioned in Chapter I, five-digit street codes are often stored and used as retrieval keys in order to make geographic retrieval independent of street name spellings.) In designing applications that store Geosupport-provided data items in user files, the user must consider the issue of updating or “resynchronizing” those stored items to reflect data changes reflected in new Geosupport releases, particularly when the application is using those items as retrieval keys. In cases where such resynchronization is necessary, it is the user’s responsibility to set up a resynchronization procedure and to run it in conjunction with the deployment of each new Geosupport release.    </p>
-<p>3.<strong> User Feedback </strong>  </p>
+<p>3.** User Feedback **  </p>
 <p>The users of Geosupport are a crucial resource for providing feedback to GSS on changes required to the Geosupport geographic data and software. Although we cannot respond to individual user feedback, all reported problems are logged and appropriate action is taken. If in the course of reviewing user feedback it is determined that clarification is needed, users may be contacted directly. Feedback procedures are described below.  </p>
-<p><strong> Geographic Feedback </strong></p>
+<p>** Geographic Feedback **</p>
 <p>Geosupport may reject a user-supplied geographic location as invalid. For example, Geosupport appropriately rejects the inter of Second Avenue and Third Avenue in Manhattan as a non-existent inter. Moreover, Geosupport geographic files may contain an error or may not be up to date, causing Geosupport to reject a valid location.  </p>
 <p>For rejected items that the user considers valid, a reject feedback procedure exists. The user can submit such data for review to GSS’s Data Management Unit by filling out and submitting a Geosupport System User Feedback Form (see <a href="../appendix06/">Appendix VI</a>). Printouts, sketch maps or other material documenting the rejects should be attached to the form when available.  </p>
 <p>Based on its research of user feedback, the GSS staff updates or corrects Geosupport files as appropriate. The corrections are reflected in the Geosupport System in a future Geosupport release. Before submitting rejected data to GSS, users should screen their data for misspellings, data entry errors or other obvious mistakes.  </p>
@@ -552,15 +551,16 @@
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../js/main.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/main.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

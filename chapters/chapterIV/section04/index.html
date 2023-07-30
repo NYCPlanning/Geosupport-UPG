@@ -8,7 +8,7 @@
     <title>IV.4 Resynchronization of Street Codes Stored in User Files - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -380,7 +379,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter IV: Street Codes &raquo;</li>
-      <li>IV.4 Resynchronization of Street Codes Stored in User Files</li>
+      <li class="breadcrumb-item active">IV.4 Resynchronization of Street Codes Stored in User Files</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -413,42 +412,42 @@
 <table>
 <thead>
 <tr>
-<th align="left"><u>Field</u></th>
-<th align="right"><u>Size</u></th>
-<th align="right"><u>Positions</u></th>
-<th align="left"><u>Comments</u></th>
+<th style="text-align: left;"><u>Field</u></th>
+<th style="text-align: right;"><u>Size</u></th>
+<th style="text-align: right;"><u>Positions</u></th>
+<th style="text-align: left;"><u>Comments</u></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Header constant</td>
-<td align="right">42</td>
-<td align="right">1 - 42</td>
-<td align="left"><strong>Literal constant:</strong>  ‘GEOSUPPORT SYSTEM FOREGROUND HEADER RECORD’</td>
+<td style="text-align: left;">Header constant</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">1 - 42</td>
+<td style="text-align: left;"><strong>Literal constant:</strong>  ‘GEOSUPPORT SYSTEM FOREGROUND HEADER RECORD’</td>
 </tr>
 <tr>
-<td align="left">DDNAME of File</td>
-<td align="right">8</td>
-<td align="right">43 - 50</td>
-<td align="left"><strong>Literal constant:</strong>  ‘SCCF ’</td>
+<td style="text-align: left;">DDNAME of File</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">43 - 50</td>
+<td style="text-align: left;"><strong>Literal constant:</strong>  ‘SCCF ’</td>
 </tr>
 <tr>
-<td align="left">Geosupport Release Identifier</td>
-<td align="right">4</td>
-<td align="right">51 - 54</td>
-<td align="left">e.g. ‘15B <strong>‘ (4th byte is generally blank) </strong></td>
+<td style="text-align: left;">Geosupport Release Identifier</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">51 - 54</td>
+<td style="text-align: left;">e.g. ‘15B **‘ (4th byte is generally blank) **</td>
 </tr>
 <tr>
-<td align="left">Date of File Creation</td>
-<td align="right">6</td>
-<td align="right">55 - 60</td>
-<td align="left">yymmdd format</td>
+<td style="text-align: left;">Date of File Creation</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">55 - 60</td>
+<td style="text-align: left;">yymmdd format</td>
 </tr>
 <tr>
-<td align="left">Filler</td>
-<td align="right">20</td>
-<td align="right">61 - 80</td>
-<td align="left"></td>
+<td style="text-align: left;">Filler</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">61 - 80</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -517,15 +516,16 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

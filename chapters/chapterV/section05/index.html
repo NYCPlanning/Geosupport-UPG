@@ -8,7 +8,7 @@
     <title>V.5 Output Data Returned in Work Area 2 of Address Processing Functions - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -380,7 +379,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter V: Address Processing &raquo;</li>
-      <li>V.5 Output Data Returned in Work Area 2 of Address Processing Functions</li>
+      <li class="breadcrumb-item active">V.5 Output Data Returned in Work Area 2 of Address Processing Functions</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -401,13 +400,13 @@
 <p>If a COW application has a need to <u>display the street names of the cross streets</u>,aside from calling Function D or DG, the user can employ one of the following options:  </p>
 <p>a. <u>The Mode Switch</u> in WA1 can be set to ‘X’ and the Extended function will return cross street codes as B7SCs and their corresponding <u>principal </u> street names in the extended portion of WA2.  This is done with no processing overhead.  This can be helpful to the user since the Primary Name is not always the best name for a particular cross street.  See description of Extended Mode in <a href="../../chapterII/section07/">Chapter II.7</a>)  </p>
 <p>b. <u>The Cross Street Names Flag</u> in WA1 can be set to ‘E’ and the cross street names will be returned in the List of Street Names in WA1 (see entries for Cross Street Names Flag and List of Street Names in <a href="../../../appendices/appendix03/">Appendix 3</a>).  The Cross Street Names will be the <u>primary</u> street names since they are based on B5SCs.  Note that the cross street names feature incurs processing overhead, and should only be used when necessary,.  It is recommended that the Extended Mode option, mentioned above, be used.  </p>
-<p><strong> NOTE: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch of “X”, since the Cross Street Names are in the Extended part of the work area, </strong> although this will not create an error if the Cross Street Names flag is set to “E”. However, the Street Names returned in Work Area 1 with the Cross Street Name flag are based on the B5SCs and not the updated B7SCs.  </p>
+<p>** NOTE: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch of “X”, since the Cross Street Names are in the Extended part of the work area, ** although this will not create an error if the Cross Street Names flag is set to “E”. However, the Street Names returned in Work Area 1 with the Cross Street Name flag are based on the B5SCs and not the updated B7SCs.  </p>
 <p><u><strong>Function 1 and 1E Extended Work Areas - MODE=X  (COW Only)</strong></u>  </p>
 <p>In the Extended Function 1 and 1E work area 2, the <u>BOE Preferred LGC</u> and associated street name will be returned in new fields that are defined in the “Extended” portion of Work Area 2.  </p>
 <p>The Extended Function 1 and 1E work area 2 includes additional fields such as USPS Preferred City Name, Latitude and Longitude, Neighborhood Tabulation Area (NTA) Name, PUMA Code, Bike Lane 2, Bike Traffic Direction, Street Width, Street Width Maximum, Speed Limit, etc.  For a complete list, see the Work Area layout in <a href="../../../appendices/appendix13/">Appendix 13</a>.  </p>
-<p><u><strong> Underlying Street Name or Street Address </strong> </u>  </p>
+<p><u>** Underlying Street Name or Street Address ** </u>  </p>
 <p>For <u>NAPs and Addressable Place Names</u>, the underlying street name or street address is returned as part of a warning message (reason code V). <u>The street code of the underlying true street</u> is not included in the list of cross streets.  For example, Fifth Avenue is an underlying street of the Empire State Building; it will not be included in the list of cross streets for the Empire State Building.  Information on the underlying true street appears in COW WA2 and MSW Long WA2.  </p>
-<p><u><strong> Additional data in COW regular WA2 and in long WA2 for MSW Functions 1 and 1E </strong> </u>  </p>
+<p><u>** Additional data in COW regular WA2 and in long WA2 for MSW Functions 1 and 1E ** </u>  </p>
 <p>The long WA2 option is available for the MSW Functions 1 and 1E.  Since all the additional data in the long WA2 for MSW Functions 1 and 1E are included in the regular WA2 for COW Functions 1 and 1E, there is no long WA2 option for COW.  (There are extended work areas for COW Function 1/1E which are discussed below.)  The additional data in COW regular WA2 and long MSW WA2 includes the following:  </p>
 <ul>
 <li>Segment ID  </li>
@@ -427,10 +426,10 @@
 <p><u> <strong>Note: There is no longer a need to set the Cross Street Names Flag to “E” when using Function 1 and 1E with Mode Switch “X”, since the Cross Street Names are in the Extended part of Work Area 2,</strong> </u> although this will not create an error if the field is set to “E”.  However, the Street Names returned in Work Area 1 with the Cross Street Names flag are based on the B5SCs (thus returning the primary street names) and not based on the updated B7SCs which allow the Extended Work Area 2 to return the principal street names.  </p>
 <h2 id="function-1a"><span id="chapterV.5.3"><u>Function 1A</u></span></h2>
 <p>Function 1A, when called using two work areas, performs property (i.e., tax lot) and building-level processing.  Function 1A returns information in WA2 associated with the specific property and building (if any) containing the input address.  This information includes the property identifiers (tax block and tax lot numbers), and a list of all addresses of all buildings on the property (or as many as will fit in WA2) as well as the Building Identification Numbers (BINs) if any.  Function 1A’s output information is discussed in detail in <a href="../../chapterVI/section06/">Chapter VI.6</a>.  </p>
-<p><u><strong> Function 1A Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. </strong> The first 246 bytes of the Extended Work Area 2 for Function 1A, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding the new Function 1A Reason Code, Warning Code, GRC and filler to the work area for Function 1A Extended, the only change is in the address list. <strong>The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.</strong> Note that Mode Switch of ‘X’ is not valid with the Long Work Area 2 Flag set to Y, since the Function 1A Long Work Area 2 primarily returns BINs, not street codes.  </p>
+<p><u><strong> Function 1A Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. ** The first 246 bytes of the Extended Work Area 2 for Function 1A, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding the new Function 1A Reason Code, Warning Code, GRC and filler to the work area for Function 1A Extended, the only change is in the address list. </strong>The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.** Note that Mode Switch of ‘X’ is not valid with the Long Work Area 2 Flag set to Y, since the Function 1A Long Work Area 2 primarily returns BINs, not street codes.  </p>
 <h2 id="function-ap-cow-only"><span id="chapterV.5.4"><u>Function AP (COW Only)</u></span></h2>
 <p>Function AP, when called using two work areas, performs Address Point processing and some property-level and building-level processing.  Function AP returns the Address Point ID and the X,Y spatial coordinates of the Address Point.  In addition, Function AP returns the Borough-Block-Lot of the Address Point and its BIN.   The tax-lot information in WA2 lists only one address in the lot, namely, the input address with the BIN number (if an) of the building at that address.  Function AP’s property output information is very similar to Function 1A’s output.  Function AP and Function 1A’s output information is discussed in detail in <a href="..I/section10/">Chapter VI.10</a> and <a href="../../ChapterVI/section06/">Chapter VI.6</a>.  </p>
-<p><u><strong> Function AP Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. </strong>  The first 246 bytes of the Extended Work Area 2 for Function AP, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding Function AP Reason Code, Warning Code, GRC and filler to the work area 2 for Function AP Extended, the only change is in the address list. <strong>The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.</strong>  </p>
+<p><u><strong> Function AP Extended Work Area 2 (Mode Switch set to ‘X’)</u> – COW Only. **  The first 246 bytes of the Extended Work Area 2 for Function AP, up to the “Number of Entries in List of Geographic Identifiers” field, are the same as with regular Work Area 2. Aside from adding Function AP Reason Code, Warning Code, GRC and filler to the work area 2 for Function AP Extended, the only change is in the address list. </strong>The Principal Street Name (based on the B7SC in the address list) has been added to each element in the address list for the user’s convenience.**  </p>
 <h2 id="function-1b-cow-only"><span id="chapterV.5.5"><u>Function 1B (COW Only)</u></span></h2>
 <p>Function 1B returns Blockface-level information and political geography, followed by property-level information for a given input.  Work Area 2 consists of the output of a Function 1E call with Mode Switch = “X” followed by the output of a Function 1A call with Mode Switch = “X”. The input requires borough or zip code, address number if needed, and street name or street code. Function 1B processing first retrieves the property-level information (Function 1A Extended- tax lot and building) based on the input. The Function 1A Extended  processing may modify the input address (e.g. a hyphen is inserted into the address number).  In any case, the input address used by Function 1A Extended is then used to retrieve the blockface and political data (Function 1E Extended).  </p>
 <p>Function 1B (combined Function 1E Extended and 1A Extended) returns a total of 4300 bytes in Work Area 2. The first 1500 are for the Blockface portion (Function 1E, see description above) of the call. The next 2800 bytes are for the Property Level portion (Function 1A, see description above and <a href="../../ChapterVI/section06/">Chapter VI.6</a>) of the call.  </p>
@@ -489,15 +488,16 @@ fields mentioned above.</p>
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

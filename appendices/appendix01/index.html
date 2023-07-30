@@ -8,7 +8,7 @@
     <title>Appendix 1: Geosupport Functions - Quick Reference - DCP</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -380,7 +379,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Appendices and Glossary &raquo;</li>
-      <li>Appendix 1: Geosupport Functions - Quick Reference</li>
+      <li class="breadcrumb-item active">Appendix 1: Geosupport Functions - Quick Reference</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -602,50 +601,50 @@ Default (blank) requests use of input street name / code.  See <a href="../../ch
 <table>
 <thead>
 <tr>
-<th align="left"><u><b> GRC Value/ Reason Code Value</b></u></th>
-<th align="left"><u><b>Meaning</b></u></th>
+<th style="text-align: left;"><u><b> GRC Value/ Reason Code Value</b></u></th>
+<th style="text-align: left;"><u><b>Meaning</b></u></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">01/V</td>
-<td align="left">(Warning) The input was a vanity address, an addressable place name, or a NAP. This message returns the underlying address or street name when available</td>
+<td style="text-align: left;">01/V</td>
+<td style="text-align: left;">(Warning) The input was a vanity address, an addressable place name, or a NAP. This message returns the underlying address or street name when available</td>
 </tr>
 <tr>
-<td align="left">01/P</td>
-<td align="left">(Warning) The street segment containing the input address is an irregular curve (i.e., it is curved but not as an arc of a circle).  No values are returned in the WA2 Spatial Coordinate fields.</td>
+<td style="text-align: left;">01/P</td>
+<td style="text-align: left;">(Warning) The street segment containing the input address is an irregular curve (i.e., it is curved but not as an arc of a circle).  No values are returned in the WA2 Spatial Coordinate fields.</td>
 </tr>
 <tr>
-<td align="left">07</td>
-<td align="left">The input street was specified as a B5SC (or PB5SC) representing a NAP that is the name of a complex.  Five-digit street code input is not permitted for the name of a complex.  Either the NAP (the name of the complex) must be specified in the input street name field, or its B7SC or B10SC must be specified in the appropriate input street code field.</td>
+<td style="text-align: left;">07</td>
+<td style="text-align: left;">The input street was specified as a B5SC (or PB5SC) representing a NAP that is the name of a complex.  Five-digit street code input is not permitted for the name of a complex.  Either the NAP (the name of the complex) must be specified in the input street name field, or its B7SC or B10SC must be specified in the appropriate input street code field.</td>
 </tr>
 <tr>
-<td align="left">28</td>
-<td align="left">Partial Street name is not valid for free-form address</td>
+<td style="text-align: left;">28</td>
+<td style="text-align: left;">Partial Street name is not valid for free-form address</td>
 </tr>
 <tr>
-<td align="left">29</td>
-<td align="left">Intersection name cannot be used as ‘on’ Street.</td>
+<td style="text-align: left;">29</td>
+<td style="text-align: left;">Intersection name cannot be used as ‘on’ Street.</td>
 </tr>
 <tr>
-<td align="left">41</td>
-<td align="left">The input street name is valid but this entire street has no addresses</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">The input street name is valid but this entire street has no addresses</td>
 </tr>
 <tr>
-<td align="left">42</td>
-<td align="left">The input address does not fall within a valid range of addresses for a blockface of the input street.</td>
+<td style="text-align: left;">42</td>
+<td style="text-align: left;">The input address does not fall within a valid range of addresses for a blockface of the input street.</td>
 </tr>
 <tr>
-<td align="left">50</td>
-<td align="left">The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
 </tr>
 <tr>
-<td align="left">75</td>
-<td align="left">The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user data error, but an address that is duplicated on this street in reality.)  See <a href="../../chapters/chapterV/section06/"> Chapter V.6</a>.</td>
+<td style="text-align: left;">75</td>
+<td style="text-align: left;">The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user data error, but an address that is duplicated on this street in reality.)  See <a href="../../chapters/chapterV/section06/"> Chapter V.6</a>.</td>
 </tr>
 <tr>
-<td align="left">89</td>
-<td align="left">Long workarea2 option is invalid for COW format for function 1.  It is only valid for MSW for this function</td>
+<td style="text-align: left;">89</td>
+<td style="text-align: left;">Long workarea2 option is invalid for COW format for function 1.  It is only valid for MSW for this function</td>
 </tr>
 </tbody>
 </table>
@@ -740,58 +739,58 @@ Default (blank) requests use of input street name / code.  See <a href="../../ch
 <table>
 <thead>
 <tr>
-<th align="left">GRC Value/ Reason Code Value</th>
-<th align="left">Meaning</th>
+<th style="text-align: left;">GRC Value/ Reason Code Value</th>
+<th style="text-align: left;">Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">01/8</td>
-<td align="left">(Warning) Input address is a pseudo-address.</td>
+<td style="text-align: left;">01/8</td>
+<td style="text-align: left;">(Warning) Input address is a pseudo-address.</td>
 </tr>
 <tr>
-<td align="left">01/A</td>
-<td align="left">(Warning) Function 1A has been called with the regular WA2, but the tax lot identified by the input address or NAP has the List of Geographic Identifiers (LGI) overflow condition, and therefore the LGI in WA2 is incomplete.  If a complete list of BINs for the tax lot is required, Function 1A may be called with the long WA2 option for the same input data to retrieve the BINs of all buildings on the tax lot.</td>
+<td style="text-align: left;">01/A</td>
+<td style="text-align: left;">(Warning) Function 1A has been called with the regular WA2, but the tax lot identified by the input address or NAP has the List of Geographic Identifiers (LGI) overflow condition, and therefore the LGI in WA2 is incomplete.  If a complete list of BINs for the tax lot is required, Function 1A may be called with the long WA2 option for the same input data to retrieve the BINs of all buildings on the tax lot.</td>
 </tr>
 <tr>
-<td align="left">01/*</td>
-<td align="left">(Warning) [related to TPAD]See <a href="../../chapters/chapterVI/section11/">Chapter VI.11</a>.Various messages are returned with this reason code.  The Conflict flag is set to correspond to the specific warning message</td>
+<td style="text-align: left;">01/*</td>
+<td style="text-align: left;">(Warning) [related to TPAD]See <a href="../../chapters/chapterVI/section11/">Chapter VI.11</a>.Various messages are returned with this reason code.  The Conflict flag is set to correspond to the specific warning message</td>
 </tr>
 <tr>
-<td align="left">04</td>
-<td align="left">An invalid value has been specified for the 1A/BL Version Switch.  Must be ‘S’ for standard.  See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>.</td>
+<td style="text-align: left;">04</td>
+<td style="text-align: left;">An invalid value has been specified for the 1A/BL Version Switch.  Must be ‘S’ for standard.  See <a href="../../chapters/chapterVI/section08/">Chapter VI.8</a>.</td>
 </tr>
 <tr>
-<td align="left">07</td>
-<td align="left">The input street was specified as a B5SC (or PB5SC) representing a NAP that is the name of a complex.  Five-digit street code input is not permitted for the name of a complex.  Either the NAP itself (the name of the complex) must be specified in the input street name field, or its B7SC or B10SC must be specified in the appropriate input street code field.</td>
+<td style="text-align: left;">07</td>
+<td style="text-align: left;">The input street was specified as a B5SC (or PB5SC) representing a NAP that is the name of a complex.  Five-digit street code input is not permitted for the name of a complex.  Either the NAP itself (the name of the complex) must be specified in the input street name field, or its B7SC or B10SC must be specified in the appropriate input street code field.</td>
 </tr>
 <tr>
-<td align="left">41</td>
-<td align="left">The input street name is valid but this entire street has no addresses.</td>
+<td style="text-align: left;">41</td>
+<td style="text-align: left;">The input street name is valid but this entire street has no addresses.</td>
 </tr>
 <tr>
-<td align="left">42</td>
-<td align="left">The input address is not valid (as defined in <a href="../../chapters/chapterV/section04/">Chapter V.4</a>).</td>
+<td style="text-align: left;">42</td>
+<td style="text-align: left;">The input address is not valid (as defined in <a href="../../chapters/chapterV/section04/">Chapter V.4</a>).</td>
 </tr>
 <tr>
-<td align="left">50</td>
-<td align="left">The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">The input street name is not valid for the portion of the street where the input house number is located.  See <a href="../../chapters/chapterIV/section05/">Chapter IV.5</a>.</td>
 </tr>
 <tr>
-<td align="left">69/B</td>
-<td align="left">Invalid TPAD Request Switch. Must be Y, N or blank</td>
+<td style="text-align: left;">69/B</td>
+<td style="text-align: left;">Invalid TPAD Request Switch. Must be Y, N or blank</td>
 </tr>
 <tr>
-<td align="left">73</td>
-<td align="left">Legacy version of Function 1A is discontinued.  See Technical Bulletin 05-1.</td>
+<td style="text-align: left;">73</td>
+<td style="text-align: left;">Legacy version of Function 1A is discontinued.  See Technical Bulletin 05-1.</td>
 </tr>
 <tr>
-<td align="left">75</td>
-<td align="left">The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user input data error, but an address duplication that exists in reality.)  See <a href="../../chapters/chapterV/section06/">Chapter V.6</a>.</td>
+<td style="text-align: left;">75</td>
+<td style="text-align: left;">The input address is a ‘duplicate address’ - i.e., the same address exists at two different locations on the given input street.  (Note: this is not a user input data error, but an address duplication that exists in reality.)  See <a href="../../chapters/chapterV/section06/">Chapter V.6</a>.</td>
 </tr>
 <tr>
-<td align="left">90</td>
-<td align="left">Invalid value specified for Long WA2 Flag – must be ‘L’ or blank</td>
+<td style="text-align: left;">90</td>
+<td style="text-align: left;">Invalid value specified for Long WA2 Flag – must be ‘L’ or blank</td>
 </tr>
 </tbody>
 </table>
@@ -819,18 +818,18 @@ Optional; may be used to select output street name / code.<br> Default (blank) r
 <table>
 <thead>
 <tr>
-<th align="left">GRC Value/ Reason Code Value</th>
-<th align="left">Meaning</th>
+<th style="text-align: left;">GRC Value/ Reason Code Value</th>
+<th style="text-align: left;">Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">01/E</td>
-<td align="left">(Warning) The output address range returned in WA2 is split by an election district boundary.  Therefore, the election district value returned in WA2 applies to only a portion of that address range.</td>
+<td style="text-align: left;">01/E</td>
+<td style="text-align: left;">(Warning) The output address range returned in WA2 is split by an election district boundary.  Therefore, the election district value returned in WA2 applies to only a portion of that address range.</td>
 </tr>
 <tr>
-<td align="left">56</td>
-<td align="left">The input address is associated with more than one Election District (ED). Function 1E requires that this address be specified with a house number suffix to identify a portion of the building specific to one ED.  See <a href="../../chapters/chapterV/section04/">Chapter V.4</a>.</td>
+<td style="text-align: left;">56</td>
+<td style="text-align: left;">The input address is associated with more than one Election District (ED). Function 1E requires that this address be specified with a house number suffix to identify a portion of the building specific to one ED.  See <a href="../../chapters/chapterV/section04/">Chapter V.4</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -896,14 +895,14 @@ See <a href="../../chapters/chapterIII/section08/">Chapter III.8</a>.</td>
 <table>
 <thead>
 <tr>
-<th align="left">GRC Value / Reason Code Value</th>
-<th align="left">Meaning</th>
+<th style="text-align: left;">GRC Value / Reason Code Value</th>
+<th style="text-align: left;">Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">??/1 (MSW Only)</td>
-<td align="left">INVALID FUNCTION CODE – AVAILABLE IN COW FORMAT ONLY</td>
+<td style="text-align: left;">??/1 (MSW Only)</td>
+<td style="text-align: left;">INVALID FUNCTION CODE – AVAILABLE IN COW FORMAT ONLY</td>
 </tr>
 </tbody>
 </table>
@@ -2007,15 +2006,16 @@ Blank = sort format </td>
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../js/main.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/main.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

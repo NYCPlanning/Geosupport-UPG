@@ -8,7 +8,7 @@
     <title>VIII.3 Coding API Calls - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -378,7 +377,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter VIII: Geosupport API &raquo;</li>
-      <li>VIII.3 Coding API Calls</li>
+      <li class="breadcrumb-item active">VIII.3 Coding API Calls</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -405,36 +404,36 @@ long GBI(void *,... );</p>
 <table>
 <thead>
 <tr>
-<th align="left"><b>Language</b></th>
-<th align="left"><b>One-Work-Area Call </b></th>
-<th align="left"><b>Two-Work-Area Call</b></th>
+<th style="text-align: left;"><b>Language</b></th>
+<th style="text-align: left;"><b>One-Work-Area Call </b></th>
+<th style="text-align: left;"><b>Two-Work-Area Call</b></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">COBOL</td>
-<td align="left">CALL ‘GBI’ USING WA1.</td>
-<td align="left">CALL ‘GBI’ USING WA1, WA2.</td>
+<td style="text-align: left;">COBOL</td>
+<td style="text-align: left;">CALL ‘GBI’ USING WA1.</td>
+<td style="text-align: left;">CALL ‘GBI’ USING WA1, WA2.</td>
 </tr>
 <tr>
-<td align="left">Assembler</td>
-<td align="left">CALL GBI,WA1,VL</td>
-<td align="left">CALL GBI,(WA1,WA2),VL</td>
+<td style="text-align: left;">Assembler</td>
+<td style="text-align: left;">CALL GBI,WA1,VL</td>
+<td style="text-align: left;">CALL GBI,(WA1,WA2),VL</td>
 </tr>
 <tr>
-<td align="left">PL/1</td>
-<td align="left">CALL GBI (WA1);</td>
-<td align="left">CALL GBI (WA1, WA2);</td>
+<td style="text-align: left;">PL/1</td>
+<td style="text-align: left;">CALL GBI (WA1);</td>
+<td style="text-align: left;">CALL GBI (WA1, WA2);</td>
 </tr>
 <tr>
-<td align="left">IBM/C</td>
-<td align="left">GBI(&amp;WA1);</td>
-<td align="left">GBI(&amp;WA1,&amp;WA2);</td>
+<td style="text-align: left;">IBM/C</td>
+<td style="text-align: left;">GBI(&amp;WA1);</td>
+<td style="text-align: left;">GBI(&amp;WA1,&amp;WA2);</td>
 </tr>
 <tr>
-<td align="left">NATURAL</td>
-<td align="left">CALL ‘GBI’ USING WA1</td>
-<td align="left">CALL ‘GBI’ USING WA1 WA2</td>
+<td style="text-align: left;">NATURAL</td>
+<td style="text-align: left;">CALL ‘GBI’ USING WA1</td>
+<td style="text-align: left;">CALL ‘GBI’ USING WA1 WA2</td>
 </tr>
 </tbody>
 </table>
@@ -473,15 +472,16 @@ long GBI(void *,... );</p>
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

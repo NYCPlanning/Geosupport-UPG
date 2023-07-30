@@ -8,7 +8,7 @@
     <title>V.15 UNIT Information Feature (COW Only) - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -378,7 +377,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter V: Address Processing &raquo;</li>
-      <li>V.15 UNIT Information Feature (COW Only)</li>
+      <li class="breadcrumb-item active">V.15 UNIT Information Feature (COW Only)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -401,7 +400,7 @@
     e.g. STE 3102  </p>
 </li>
 </ul>
-<p><strong> Unit </strong> information consists of a <strong> Type </strong> and an <strong> Identifier </strong> .  For example, ‘APT 5’ consists of a Unit Type of ‘APT’ (apartment) and a Unit Identifier of ‘5’.  (Unit Type and Unit Identifier are similar to NENA (National Emergency Number Association) terminology.)  NENA and USPS (US Postal Service) have defined Preferred Types with a length of up to 4 characters.  Geosupport converts the input Type to the Preferred Type.  See Table of Preferred Types later in this section.  If the unit information does not have a recognized type, the Type will be set to a pound sign, viz. #, and the data will be considered as the Identifier.  If the data is longer than the space available in the Unit fields, the identifier will be truncated and a warning message (Reason Code $) will be issued.  </p>
+<p>** Unit ** information consists of a ** Type ** and an ** Identifier ** .  For example, ‘APT 5’ consists of a Unit Type of ‘APT’ (apartment) and a Unit Identifier of ‘5’.  (Unit Type and Unit Identifier are similar to NENA (National Emergency Number Association) terminology.)  NENA and USPS (US Postal Service) have defined Preferred Types with a length of up to 4 characters.  Geosupport converts the input Type to the Preferred Type.  See Table of Preferred Types later in this section.  If the unit information does not have a recognized type, the Type will be set to a pound sign, viz. #, and the data will be considered as the Identifier.  If the data is longer than the space available in the Unit fields, the identifier will be truncated and a warning message (Reason Code $) will be issued.  </p>
 <p>Unit information is supplied by the user in the Work Area 1 (WA1) Unit Input field for a length of 14, or at the end of a free-form address.  In either case, the unit information is normalized and returned in the Output Area of WA1 in two formats – Display format and Sort format.  </p>
 <ul>
 <li>
@@ -767,7 +766,7 @@
  </tr>
  </table>
 
-<p><u><strong> Mainframe GOAT (CICS) Support of Unit - Functions 1A and 1B </strong> </u>  </p>
+<p><u>** Mainframe GOAT (CICS) Support of Unit - Functions 1A and 1B ** </u>  </p>
 <ul>
 <li>
 <p><u>Function:1A</u>  </p>
@@ -789,15 +788,15 @@
 <p>Output: To save screen space, the Field labeled <pre class="preInline">'Unit'</pre> that was used for input is also used for output and displays the Normalized Display Format Unit Output field.  </p>
 </li>
 </ul>
-<p><u><strong> Mainframe GBAT Support - Functions 1A and 1B </strong> </u>  </p>
+<p><u>** Mainframe GBAT Support - Functions 1A and 1B ** </u>  </p>
 <ul>
 <li>
-<p><strong> Required </strong> GBAT Control Entries<br />
+<p>** Required ** GBAT Control Entries<br />
       WORKAREA=COW<br />
       RECTYPE=1A or 1B  </p>
 </li>
 <li>
-<p><strong> Optional </strong> GBAT Control Entries  </p>
+<p>** Optional ** GBAT Control Entries  </p>
 </li>
 </ul>
 <table class="table">
@@ -817,14 +816,14 @@
 
 <ul>
 <li>
-<p><strong> Optional LRECL </strong> change<br />
+<p>** Optional LRECL ** change<br />
   If GEOUNIT=YES is in effect, the LRECL of OUTFILE must be increased by 70.  </p>
 </li>
 <li>
 <p>For more detail on GBAT Unit processing, see Chapter IX, Appendix 9, and Appendix 12.  </p>
 </li>
 </ul>
-<p><strong> <u>Summary of Geosupport support of Unit processing</u> </strong>  </p>
+<p>** <u>Summary of Geosupport support of Unit processing</u> **  </p>
 <ul>
 <li>
 <p>As of this writing, Unit Processing is supported by:  </p>
@@ -906,15 +905,16 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

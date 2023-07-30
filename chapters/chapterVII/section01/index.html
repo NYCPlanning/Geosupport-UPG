@@ -8,7 +8,7 @@
     <title>VII.1 Introduction - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -378,7 +377,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter VII: Street Configuration Processing &raquo;</li>
-      <li>VII.1 Introduction</li>
+      <li class="breadcrumb-item active">VII.1 Introduction</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -403,36 +402,36 @@
 <table>
 <thead>
 <tr>
-<th align="left">Street Configuration Type</th>
-<th align="left">Specified By</th>
-<th align="left">Function</th>
-<th align="left">Section</th>
+<th style="text-align: left;">Street Configuration Type</th>
+<th style="text-align: left;">Specified By</th>
+<th style="text-align: left;">Function</th>
+<th style="text-align: left;">Section</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Intersections</td>
-<td align="left"><p> ● 2 intersecting streets and, if the 2 streets intersect twice, a compass direction specifying which intersection to process, -or-</p>  <p> ● one intersection name –or-</p>  <p> ● <strong>(COW Only)</strong> one node ID (required if streets intersect more than twice)</p></td>
-<td align="left">2 or 2W</td>
-<td align="left">VII.2</td>
+<td style="text-align: left;">Intersections</td>
+<td style="text-align: left;"><p> ● 2 intersecting streets and, if the 2 streets intersect twice, a compass direction specifying which intersection to process, -or-</p>  <p> ● one intersection name –or-</p>  <p> ● <strong>(COW Only)</strong> one node ID (required if streets intersect more than twice)</p></td>
+<td style="text-align: left;">2 or 2W</td>
+<td style="text-align: left;">VII.2</td>
 </tr>
 <tr>
-<td align="left">Street Segments (and related configurations)</td>
-<td align="left">● ‘On’ street and 2 consecutive (or ‘nearly’ consecutive) cross streets</td>
-<td align="left">3</td>
-<td align="left">VII.3 &amp; VII.4</td>
+<td style="text-align: left;">Street Segments (and related configurations)</td>
+<td style="text-align: left;">● ‘On’ street and 2 consecutive (or ‘nearly’ consecutive) cross streets</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">VII.3 &amp; VII.4</td>
 </tr>
 <tr>
-<td align="left">Blockfaces</td>
-<td align="left">● ‘On’ street, 2 consecutive cross streets, and compass direction specifying side of street</td>
-<td align="left">3C</td>
-<td align="left">VII.3 &amp; VII.5</td>
+<td style="text-align: left;">Blockfaces</td>
+<td style="text-align: left;">● ‘On’ street, 2 consecutive cross streets, and compass direction specifying side of street</td>
+<td style="text-align: left;">3C</td>
+<td style="text-align: left;">VII.3 &amp; VII.5</td>
 </tr>
 <tr>
-<td align="left">Street Stretches</td>
-<td align="left">● ‘On’ street and (optionally) any 2 cross streets and, if the ‘on’ street intersects a cross street twice, a compass direction specifying which intersection to process</td>
-<td align="left">3S</td>
-<td align="left">VII.3 &amp; VII.6</td>
+<td style="text-align: left;">Street Stretches</td>
+<td style="text-align: left;">● ‘On’ street and (optionally) any 2 cross streets and, if the ‘on’ street intersects a cross street twice, a compass direction specifying which intersection to process</td>
+<td style="text-align: left;">3S</td>
+<td style="text-align: left;">VII.3 &amp; VII.6</td>
 </tr>
 </tbody>
 </table>
@@ -482,15 +481,16 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

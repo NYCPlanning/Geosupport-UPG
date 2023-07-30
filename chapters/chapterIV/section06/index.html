@@ -8,7 +8,7 @@
     <title>IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -380,7 +379,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter IV: Street Codes &raquo;</li>
-      <li>IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</li>
+      <li class="breadcrumb-item active">IV.6 Functions D, DG and DN;  Primary, Principal and Preferred Street Names</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -432,7 +431,7 @@
 <p>• The application calls Function DG using this B7SC value as input, obtaining ADAM C POWELL BOULEVARD as the preferred street name corresponding to the address 2019 SEVENTH AVENUE.  The application may now display the address as 2019 ADAM C POWELL BOULEVARD.  </p>
 <p>In summary, the MSW application began with the address 2019 SEVENTH AVENUE, and by following the outlined procedure, in which first Function 1 and then Function DG was called, the application formed the ‘preferred’ address 2109 ADAM C POWELL BOULEVARD for display.  </p>
 <p>If either the COW or MSW application had started with the address 375 SEVENTH AVENUE, which is located south of Central Park, then either procedure would have resulted in the address 375 7 AVENUE, since 7 AVENUE is the principal name of the DCP-preferred local group for all locations on Seventh Avenue south of Central Park.  </p>
-<p><strong> Please note: </strong> There is a new switch defined in COW Work Area 1 that will allow a user to call Geosupport and get a new, extended Work Area 2 for various functions.  Functions 1, 1E, 1A, 3, 3C, BL and BN have extended work areas.  These extended Work Areas contain Street Names of cross streets, etc. in addition to Street Codes. Users will rarely have to make separate D, DG, or DN calls (as explained above) to get the street names.</p>
+<p>** Please note: ** There is a new switch defined in COW Work Area 1 that will allow a user to call Geosupport and get a new, extended Work Area 2 for various functions.  Functions 1, 1E, 1A, 3, 3C, BL and BN have extended work areas.  These extended Work Areas contain Street Names of cross streets, etc. in addition to Street Codes. Users will rarely have to make separate D, DG, or DN calls (as explained above) to get the street names.</p>
               
             </div>
           </div><footer>
@@ -468,15 +467,16 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

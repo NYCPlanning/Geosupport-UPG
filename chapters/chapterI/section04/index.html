@@ -8,7 +8,7 @@
     <title>I.4 The Geosupport Function Suite - DCP</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../css/main.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -380,7 +379,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Chapter I: System Overview &raquo;</li>
-      <li>I.4 The Geosupport Function Suite</li>
+      <li class="breadcrumb-item active">I.4 The Geosupport Function Suite</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -413,46 +412,46 @@
 <table>
 <thead>
 <tr>
-<th align="left"><u>Types of Locations</u></th>
-<th align="left"><u>Input Items Required to Specify Location, <br><em>Example</em><u></th>
+<th style="text-align: left;"><u>Types of Locations</u></th>
+<th style="text-align: left;"><u>Input Items Required to Specify Location, <br><em>Example</em><u></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Address</td>
-<td align="left">Borough (or ZIP code) + address number + street: <br><em>Bronx, 307 East Tremont Avenue</em></td>
+<td style="text-align: left;">Address</td>
+<td style="text-align: left;">Borough (or ZIP code) + address number + street: <br><em>Bronx, 307 East Tremont Avenue</em></td>
 </tr>
 <tr>
-<td align="left">Non-Addressable Place Name</td>
-<td align="left">Borough (or ZIP code) + place name: <br><em>Manhattan, Carnegie Hall</em></td>
+<td style="text-align: left;">Non-Addressable Place Name</td>
+<td style="text-align: left;">Borough (or ZIP code) + place name: <br><em>Manhattan, Carnegie Hall</em></td>
 </tr>
 <tr>
-<td align="left">Addressable Place Name</td>
-<td align="left">Borough (or ZIP code) + address number + place name: <br><em>Manhattan, 2 Penn Plaza</em></td>
+<td style="text-align: left;">Addressable Place Name</td>
+<td style="text-align: left;">Borough (or ZIP code) + address number + place name: <br><em>Manhattan, 2 Penn Plaza</em></td>
 </tr>
 <tr>
-<td align="left">Street Intersection</td>
-<td align="left">Borough + two intersecting streets: <br><em>Brooklyn, intersection of Flatbush Avenue and Atlantic Avenue </em><br>OR (if a pair of streets has two points of intersection), Borough + two intersecting streets + compass direction: <br><em>Queens, east intersection of Alderton Street and Cromwell Crescent</em> <br>OR Borough + Intersection Name: <br> <em>Manhattan, Isaac Stern Place</em> <br>OR Node ID: <br><em>0015376 (intersection of Broadway and Reade St, Manhattan)</em></td>
+<td style="text-align: left;">Street Intersection</td>
+<td style="text-align: left;">Borough + two intersecting streets: <br><em>Brooklyn, intersection of Flatbush Avenue and Atlantic Avenue </em><br>OR (if a pair of streets has two points of intersection), Borough + two intersecting streets + compass direction: <br><em>Queens, east intersection of Alderton Street and Cromwell Crescent</em> <br>OR Borough + Intersection Name: <br> <em>Manhattan, Isaac Stern Place</em> <br>OR Node ID: <br><em>0015376 (intersection of Broadway and Reade St, Manhattan)</em></td>
 </tr>
 <tr>
-<td align="left">Street Segment</td>
-<td align="left">Borough + ‘on’ street + two consecutive cross streets:<br> <em>Manhattan, Broadway between W 38th St and W 39th St</em></td>
+<td style="text-align: left;">Street Segment</td>
+<td style="text-align: left;">Borough + ‘on’ street + two consecutive cross streets:<br> <em>Manhattan, Broadway between W 38th St and W 39th St</em></td>
 </tr>
 <tr>
-<td align="left">Blockface</td>
-<td align="left">Borough + street segment + compass direction specifying side of street:<br><em>Manhattan, east side of Broadway between W 38th St and W 39th St</em></td>
+<td style="text-align: left;">Blockface</td>
+<td style="text-align: left;">Borough + street segment + compass direction specifying side of street:<br><em>Manhattan, east side of Broadway between W 38th St and W 39th St</em></td>
 </tr>
 <tr>
-<td align="left">Street Stretch</td>
-<td align="left">Borough + ‘on’ street + any two cross streets: <br><em>Manhattan, Broadway between W 38th St and W 54th St</em> <br>OR (if either or both of the cross streets has two points of intersection with the ‘on’ street), Borough + ‘on’ street + two intersecting streets + compass direction(s):<br><em>Queens, Alderton Street between East intersection with Cromwell Crescent and intersection with 63rd Drive</em> <br>OR Borough + ‘on’ street: <br> <em>Manhattan, Broadway</em></td>
+<td style="text-align: left;">Street Stretch</td>
+<td style="text-align: left;">Borough + ‘on’ street + any two cross streets: <br><em>Manhattan, Broadway between W 38th St and W 54th St</em> <br>OR (if either or both of the cross streets has two points of intersection with the ‘on’ street), Borough + ‘on’ street + two intersecting streets + compass direction(s):<br><em>Queens, Alderton Street between East intersection with Cromwell Crescent and intersection with 63rd Drive</em> <br>OR Borough + ‘on’ street: <br> <em>Manhattan, Broadway</em></td>
 </tr>
 <tr>
-<td align="left">Tax Lot</td>
-<td align="left">Borough + tax block + tax lot:<br><em>Staten Island, Block 247 Lot 16</em></td>
+<td style="text-align: left;">Tax Lot</td>
+<td style="text-align: left;">Borough + tax block + tax lot:<br><em>Staten Island, Block 247 Lot 16</em></td>
 </tr>
 <tr>
-<td align="left">Building</td>
-<td align="left">Building Identification Number (BIN):<br><em>5006708</em></td>
+<td style="text-align: left;">Building</td>
+<td style="text-align: left;">Building Identification Number (BIN):<br><em>5006708</em></td>
 </tr>
 </tbody>
 </table>
@@ -461,120 +460,120 @@
 <table>
 <thead>
 <tr>
-<th align="left"><u>Function</u></th>
-<th align="left"><u>Type of Input</u></th>
-<th align="left"><u>Description of Output</u></th>
-<th align="left"><u>Sample Output Items</u></th>
+<th style="text-align: left;"><u>Function</u></th>
+<th style="text-align: left;"><u>Type of Input</u></th>
+<th style="text-align: left;"><u>Description of Output</u></th>
+<th style="text-align: left;"><u>Sample Output Items</u></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">1</td>
-<td align="left">Address or Non-Addressable Place Name</td>
-<td align="left">Blockface-related data</td>
-<td align="left">Cross streets, ZIP code, census tract and block, community district, police precinct, school district, health area, spatial coordinates; COW Only: NTA, Police Patrol Borough; COW Extended Only: PUMA Code</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Address or Non-Addressable Place Name</td>
+<td style="text-align: left;">Blockface-related data</td>
+<td style="text-align: left;">Cross streets, ZIP code, census tract and block, community district, police precinct, school district, health area, spatial coordinates; COW Only: NTA, Police Patrol Borough; COW Extended Only: PUMA Code</td>
 </tr>
 <tr>
-<td align="left">1A</td>
-<td align="left">Address or Non-Addressable Place Name</td>
-<td align="left">Property-related data</td>
-<td align="left">Tax block and lot identifiers, list of all buildings, addresses and street frontages of property, condo flag, spatial coords.</td>
+<td style="text-align: left;">1A</td>
+<td style="text-align: left;">Address or Non-Addressable Place Name</td>
+<td style="text-align: left;">Property-related data</td>
+<td style="text-align: left;">Tax block and lot identifiers, list of all buildings, addresses and street frontages of property, condo flag, spatial coords.</td>
 </tr>
 <tr>
-<td align="left">1B (COW Only)</td>
-<td align="left">Address or Non-Addressable Place Name</td>
-<td align="left">Combined Property and Blockface related data</td>
-<td align="left">See Function 1E below and Function 1A above  (COW Only)</td>
+<td style="text-align: left;">1B (COW Only)</td>
+<td style="text-align: left;">Address or Non-Addressable Place Name</td>
+<td style="text-align: left;">Combined Property and Blockface related data</td>
+<td style="text-align: left;">See Function 1E below and Function 1A above  (COW Only)</td>
 </tr>
 <tr>
-<td align="left">1E</td>
-<td align="left">Address or Non-Addressable Place Name</td>
-<td align="left">Blockface-related data</td>
-<td align="left">Same as Function 1 + political districts: Election, State Assembly and Senate, City Council, Congressional and Municipal Court Districts</td>
+<td style="text-align: left;">1E</td>
+<td style="text-align: left;">Address or Non-Addressable Place Name</td>
+<td style="text-align: left;">Blockface-related data</td>
+<td style="text-align: left;">Same as Function 1 + political districts: Election, State Assembly and Senate, City Council, Congressional and Municipal Court Districts</td>
 </tr>
 <tr>
-<td align="left">1N</td>
-<td align="left">Street Name or Place Name</td>
-<td align="left">Normalized name,  street code</td>
-<td align="left"></td>
+<td style="text-align: left;">1N</td>
+<td style="text-align: left;">Street Name or Place Name</td>
+<td style="text-align: left;">Normalized name,  street code</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">2</td>
-<td align="left">Street Intersection or Named Intersection or Node ID</td>
-<td align="left">Intersection-related data</td>
-<td align="left">Additional streets at intersection (other than input streets), census tract, community district, spatial coordinates COW Only: Some Political Geography</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Street Intersection or Named Intersection or Node ID</td>
+<td style="text-align: left;">Intersection-related data</td>
+<td style="text-align: left;">Additional streets at intersection (other than input streets), census tract, community district, spatial coordinates COW Only: Some Political Geography</td>
 </tr>
 <tr>
-<td align="left">3</td>
-<td align="left">Street Segment</td>
-<td align="left">Segment-related data + data related to left and right blockfaces</td>
-<td align="left">Cross streets, left and right ZIP code, left and right census tract and block, left and right community district, node ID</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Street Segment</td>
+<td style="text-align: left;">Segment-related data + data related to left and right blockfaces</td>
+<td style="text-align: left;">Cross streets, left and right ZIP code, left and right census tract and block, left and right community district, node ID</td>
 </tr>
 <tr>
-<td align="left">3C</td>
-<td align="left">Blockface</td>
-<td align="left">Blockface-related data</td>
-<td align="left">Cross streets, ZIP code, census tract and block, community district, node ID</td>
+<td style="text-align: left;">3C</td>
+<td style="text-align: left;">Blockface</td>
+<td style="text-align: left;">Blockface-related data</td>
+<td style="text-align: left;">Cross streets, ZIP code, census tract and block, community district, node ID</td>
 </tr>
 <tr>
-<td align="left">3S</td>
-<td align="left">Street Stretch</td>
-<td align="left">Street stretch-related data order along the stretch, approximate</td>
-<td align="left">Number of and list of intersections in distance in feet between intersections</td>
+<td style="text-align: left;">3S</td>
+<td style="text-align: left;">Street Stretch</td>
+<td style="text-align: left;">Street stretch-related data order along the stretch, approximate</td>
+<td style="text-align: left;">Number of and list of intersections in distance in feet between intersections</td>
 </tr>
 <tr>
-<td align="left">AP (COW only)</td>
-<td align="left">Address</td>
-<td align="left">Property-related data of CSCL Address Point</td>
-<td align="left">BBL, BIN, Spatial coordinates of CSCL Address Point, Address Point ID</td>
+<td style="text-align: left;">AP (COW only)</td>
+<td style="text-align: left;">Address</td>
+<td style="text-align: left;">Property-related data of CSCL Address Point</td>
+<td style="text-align: left;">BBL, BIN, Spatial coordinates of CSCL Address Point, Address Point ID</td>
 </tr>
 <tr>
-<td align="left">BB, BF</td>
-<td align="left">Character String</td>
-<td align="left">See right-hand column</td>
-<td align="left">Set of ten normalized street names in alphabetical order</td>
+<td style="text-align: left;">BB, BF</td>
+<td style="text-align: left;">Character String</td>
+<td style="text-align: left;">See right-hand column</td>
+<td style="text-align: left;">Set of ten normalized street names in alphabetical order</td>
 </tr>
 <tr>
-<td align="left">BL</td>
-<td align="left">Tax Lot</td>
-<td align="left">Property-related data Same as Function 1A</td>
-<td align="left"></td>
+<td style="text-align: left;">BL</td>
+<td style="text-align: left;">Tax Lot</td>
+<td style="text-align: left;">Property-related data Same as Function 1A</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">BN</td>
-<td align="left">Building</td>
-<td align="left">Property- and building-related data</td>
-<td align="left">Tax block and lot identifiers, list of all addresses of building, condo flag, spatial coordinates</td>
+<td style="text-align: left;">BN</td>
+<td style="text-align: left;">Building</td>
+<td style="text-align: left;">Property- and building-related data</td>
+<td style="text-align: left;">Tax block and lot identifiers, list of all addresses of building, condo flag, spatial coordinates</td>
 </tr>
 <tr>
-<td align="left">D</td>
-<td align="left">5-Digit Street Code</td>
-<td align="left">Normalized ‘primary’ name of street</td>
-<td align="left"></td>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">5-Digit Street Code</td>
+<td style="text-align: left;">Normalized ‘primary’ name of street</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">DG</td>
-<td align="left">7-Digit Street Code</td>
-<td align="left">Normalized ‘principal’ name of local group</td>
-<td align="left"></td>
+<td style="text-align: left;">DG</td>
+<td style="text-align: left;">7-Digit Street Code</td>
+<td style="text-align: left;">Normalized ‘principal’ name of local group</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">DN</td>
-<td align="left">10-Digit Street Code</td>
-<td align="left">Normalized street name</td>
-<td align="left"></td>
+<td style="text-align: left;">DN</td>
+<td style="text-align: left;">10-Digit Street Code</td>
+<td style="text-align: left;">Normalized street name</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">HR</td>
-<td align="left">None –  CICS GOAT</td>
-<td align="left">Geosupport Data Set Information</td>
-<td align="left">Creation date, Geosupport release cycle, number of records</td>
+<td style="text-align: left;">HR</td>
+<td style="text-align: left;">None –  CICS GOAT</td>
+<td style="text-align: left;">Geosupport Data Set Information</td>
+<td style="text-align: left;">Creation date, Geosupport release cycle, number of records</td>
 </tr>
 <tr>
-<td align="left">N*</td>
-<td align="left">Street Name</td>
-<td align="left">Normalized street name</td>
-<td align="left">Name is normalized without a borough, therefore no consideration of validity.</td>
+<td style="text-align: left;">N*</td>
+<td style="text-align: left;">Street Name</td>
+<td style="text-align: left;">Normalized street name</td>
+<td style="text-align: left;">Name is normalized without a borough, therefore no consideration of validity.</td>
 </tr>
 </tbody>
 </table>
@@ -617,15 +616,16 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../js/main.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/main.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
