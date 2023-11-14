@@ -12,15 +12,12 @@ Edith Hsu-Chen, Executive Director
 Varghese Abraham, Chief Information Officer  
 
 **ENTERPRISE DATA MANAGEMENT**  
-Lynn Seirup, Senior Director  
 Amanda Doyle, Director  
-Thomas Costa, AICP, Manager, Geographic Research  
-Rodrigo Zapata, Senior Technical Project Manager  
+Rodrigo Zapata, Manager, Geographic Research  
 
-**NYC PLANNING DIGITAL SERVICES**  
-Ryan Blair, Director  
-Steve Oliver, Citywide Geosupport Team Lead  
-**Citywide Geosupport Team**  
+**NYC PLANNING GEOSUPPORT SERVICES**  
+Steve Oliver, Director, GeoSupport Services  
+**GeoSupport Services Team**  
 Jie Ding   
 Narish Singh
 
