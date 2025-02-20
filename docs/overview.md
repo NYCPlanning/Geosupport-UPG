@@ -63,6 +63,21 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 <p>--------------------</p>
 
+## Version 25.1
+
+Release 25A includes updated “CD Eligibility” values for census tracts. The values of “Eligible” and 
+“Ineligible” are assigned to tracts that meet the U.S. Department of Housing and Urban Development 
+(HUD) criteria for whether the addresses and blocks contained therein are eligible to receive Community 
+Development Block Grants (CDBGs) from the federal government. For a tract to be eligible, 51% of the 
+residents must be low/moderate income persons (less than 80% of the area Median Family Income), and 
+50% of its total floor area must be comprised of residential usage. 
+
+Updated income data was provided by HUD and residential usage was calculated by the Department of 
+City Planning (DCP) using PLUTO data (24v4). 
+
+There are no programming considerations for retrieving the new CD Eligibility values.
+
+
 ## Version 23.2
 
 **2020 PUMA Field Added** 
