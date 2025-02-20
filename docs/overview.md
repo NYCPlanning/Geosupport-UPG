@@ -65,6 +65,8 @@ Work Area 1 and Work Area 2 are often referred to, in this document, as **WA1** 
 
 ## Version 25.1
 
+**CD Eligibility Field Values Updated**
+
 Release 25A includes updated “CD Eligibility” values for census tracts. The values of “Eligible” and 
 “Ineligible” are assigned to tracts that meet the U.S. Department of Housing and Urban Development 
 (HUD) criteria for whether the addresses and blocks contained therein are eligible to receive Community 
