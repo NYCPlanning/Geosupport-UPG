@@ -439,10 +439,12 @@
 
 <p><a href="#appendix08-14-14"><sup id="appendix08-14">14</sup></a> <u>Note:</u>  The sample programs have been written in a skeletal fashion to illustrate the use of the Geosupport API as clearly as possible.  Thus, for example, Sample Program #1 assumes, when it gets a ’hit’ for an input address, that WA2 contains at least one cross street at each end of the block face containing the address.  In reality, this is not necessarily the case; in a real application, the program would check for the presence of cross street codes before calling Function D.</p>
 <h2 id="cobol-sample-program-1"><span id="appendix08.1"><center>COBOL SAMPLE PROGRAM #1</center></span></h2>
-<p><center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
+<center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
 <center class="middle-sub-text"><b>- Input Job Stream - COW</b></center>
-<center class="middle-sub-text"><b>- Output Report</b></center></p>
-<p><center><b>COBOL SAMPLE PROGRAM #1-JOB Stream-MSW</b></center></p>
+<center class="middle-sub-text"><b>- Output Report</b></center>
+
+<center><b>COBOL SAMPLE PROGRAM #1-JOB Stream-MSW</b></center>
+
 <pre><code>          //COBF1SRC JOB   YOUR-JOB-CARD-INFORMATION
           //*
           //********************************************************************
@@ -780,7 +782,8 @@
           /*
           //
 </code></pre>
-<p><center>COBOL SAMPLE PROGRAM #1 – Job Stream - COW</center></p>
+<center>COBOL SAMPLE PROGRAM \#1 – Job Stream - COW</center>
+
 <pre><code>      //COBC1SRC JOB   YOUR-JOB-CARD-INFORMATION
       //*
       //********************************************************************
@@ -1133,7 +1136,8 @@
       /*
       //
 </code></pre>
-<p><center><b>COBOL SAMPLE PROGRAM #1 – Output Report</b></center></p>
+<center><b>COBOL SAMPLE PROGRAM \#1 – Output Report</b></center>
+
 <pre><code>          SAMPLE COBOL PROGRAM \#1 EXECUTION OUTPUT
 
            *****---------- INPUT ADDRESS ------------***** *****--------------------- SELECTED OUTPUT ITEMS -----------------------*****
@@ -1156,10 +1160,12 @@
                                                            *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 </code></pre>
 <h2 id="cobol-sample-program-2"><span id="appendix08.2"><center>COBOL SAMPLE PROGRAM #2</center></span></h2>
-<p><center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
+<center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
 <center class="middle-sub-text"><b>- Input Job Stream - COW</b></center>
-<center class="middle-sub-text"><b>- Output Report - COW</b></center></p>
-<p><center><b>COBOL SAMPLE PROGRAM #2- Job Stream - MSW </b></center></p>
+<center class="middle-sub-text"><b>- Output Report - COW</b></center>
+
+<center><b>COBOL SAMPLE PROGRAM #2- Job Stream - MSW </b></center>
+
 <pre><code>      //COBF2SRC JOB   YOUR-JOB-CARD-INFORMATION
       //*
       //********************************************************************
@@ -1487,7 +1493,8 @@
       /*
       //
 </code></pre>
-<p><center><b>COBOL SAMPLE PROGRAM #2- Job Stream- COW</b></center></p>
+<center><b>COBOL SAMPLE PROGRAM #2- Job Stream- COW</b></center>
+
 <pre><code>  //COBC2SRC JOB   YOUR-JOB-CARD-INFORMATION
   //*
   //********************************************************************
@@ -1821,7 +1828,8 @@
   /*
   //
 </code></pre>
-<p><center><b>SAMPLE COBOL PROGRAM #2 EXECUTION OUTPUT</b></center></p>
+<center><b>SAMPLE COBOL PROGRAM \#2 EXECUTION OUTPUT</b></center>
+
 <pre><code>        *****----------------- INPUT INTERSECTION ----------------------***** *****------------ SELECTED OUTPUT ITEMS ---*****
 
          B IN-STREET-NAME-1                 B IN-STREET-NAME-2                   ZIP CD NYPD-PCT SCHLDST INTERSECTING STREET NM
@@ -1839,10 +1847,12 @@
          1 DUANE ST                         1 READE ST
 </code></pre>
 <h2 id="assembler-sample-program-1"><span id="appendix08.3"><center>ASSEMBLER SAMPLE PROGRAM #1</center></span></h2>
-<p><center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
+<center class="middle-sub-text"><b>- Input Job Stream - MSW</b></center>
 <center class="middle-sub-text"><b>- Input Job Stream - COW</b></center>
-<center class="middle-sub-text"><b>- Output Report</b></center></p>
-<p><center><b>ASSEMBLER SAMPLE PROGRAM #1 –Job Stream-MSW</b></center></p>
+<center class="middle-sub-text"><b>- Output Report</b></center>
+
+<center><b>ASSEMBLER SAMPLE PROGRAM \#1 –Job Stream-MSW</b></center>
+
 <pre><code>                //ASMF1SRC JOB   YOUR-JOB-CARD-INFORMATION
                 //*
                 //********************************************************************
@@ -2237,7 +2247,8 @@
                 /*
                 //
 </code></pre>
-<p><center><b>ASSEMBLER SAMPLE PROGRAM #1 –Job Stream-MSW</b></center></p>
+<center><b>ASSEMBLER SAMPLE PROGRAM \#1 –Job Stream-MSW</b></center>
+
 <pre><code>          //ASMC1SRC JOB   YOUR-JOB-CARD-INFORMATION
           //*
           //********************************************************************
@@ -3031,7 +3042,8 @@
           /*
           //
 </code></pre>
-<p><center><b>ASSEMBLER SAMPLE PROGRAM #1 –Job Stream-COW</b></center></p>
+<center><b>ASSEMBLER SAMPLE PROGRAM \#1 –Job Stream-COW</b></center>
+
 <pre><code>          //ASMC1SRC JOB   YOUR-JOB-CARD-INFORMATION
           //*
           //********************************************************************
@@ -3427,7 +3439,8 @@
           /*
           //
 </code></pre>
-<p><center><b>SAMPLE ASSEMBLER #1 EXECUTION OUTPUT</b></center></p>
+<center><b>SAMPLE ASSEMBLER \#1 EXECUTION OUTPUT</b></center>
+
 <pre><code>          *****---------- INPUT ADDRESS ------------***** *****--------------------- SELECTED OUTPUT ITEMS ----------------*****
 
            B HOUSE NUMBER IN-STREET-NAME                     ZIP CD NYPD-PCT SCHLDST LOW CROSS STREET          HIGH CROSS STREET
@@ -3448,10 +3461,12 @@
                                                            *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 </code></pre>
 <h2 id="assembler-sample-program-1_1"><span id="appendix08.4"><center>ASSEMBLER SAMPLE PROGRAM #1</center></span></h2>
-<p><center><b>- Input Job Stream - MSW</b></center>
+<center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
-<center><b>- Output Report </b></center></p>
-<p><center><b>ASSEMBLER SAMPLE PROGRAM #2- Job Stream -MSW</b></center></p>
+<center><b>- Output Report </b></center>
+
+<center><b>ASSEMBLER SAMPLE PROGRAM #2- Job Stream -MSW</b></center>
+
 <pre><code>            //ASMF2SRC JOB   YOUR-JOB-CARD-INFORMATION
             //*
             //********************************************************************
@@ -3848,7 +3863,8 @@
             /*
             //
 </code></pre>
-<p><center><b>ASSEMBLER SAMPLE PROGRAM #2- Job Stream - COW </b></center></p>
+<center><b>ASSEMBLER SAMPLE PROGRAM #2- Job Stream - COW </b></center>
+
 <pre><code>            //ASMC2SRC JOB   YOUR-JOB-CARD-INFORMATION
             //*
             //********************************************************************
@@ -4280,10 +4296,12 @@
            1 DUANE ST                         1 READE ST
 </code></pre>
 <h2 id="pl1-sample-program-1"><span id="appendix08.5"><center>PL/1 SAMPLE PROGRAM #1</center></span></h2>
-<p><center><b>- Input Job Stream - MSW</b></center>
+<center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
-<center><b>- Output Report </b></center></p>
-<p><center><b>PL/1 SAMPLE PROGRAM #1 – Job Stream - MSW</b></center></p>
+<center><b>- Output Report </b></center>
+
+<center><b>PL/1 SAMPLE PROGRAM \#1 – Job Stream - MSW</b></center>
+
 <pre><code>        //PL1F1BAT  JOB YOUR-JOB-CARD-INFORMATION
         //*
         //********************************************************************
@@ -4492,7 +4510,8 @@
         /*
         //
 </code></pre>
-<p><center><b>PL/1 SAMPLE PROGRAM #1 – Job Stream - COW</b></center></p>
+<center><b>PL/1 SAMPLE PROGRAM \#1 – Job Stream - COW</b></center>
+
 <pre><code>        //PL1C1SRC  JOB YOUR-JOB-CARD-INFORMATION
         //*
         //********************************************************************
@@ -4712,7 +4731,8 @@
         /*
         //
 </code></pre>
-<p><center><b>SAMPLE PL/1 PROGRAM #1 EXECUTION OUTPUT</b></center></p>
+<center><b>SAMPLE PL/1 PROGRAM \#1 EXECUTION OUTPUT</b></center>
+
 <pre><code>        *****---------- INPUT ADDRESS ------------***** *****--------------------- SELECTED OUTPUT ITEMS -----------------------*****
 
          B HOUSE NUMBER IN-STREET-NAME                     ZIP CD NYPD-PCT SCHLDST LOW CROSS STREET          HIGH CROSS STREET
@@ -4733,10 +4753,12 @@
                                                          *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 </code></pre>
 <h2 id="pl1-sample-program-2"><span id="appendix08.6"><center>PL/1 SAMPLE PROGRAM #2</center><span></h2>
-<p><center><b>- Input Job Stream - MSW</b></center>
+<center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
-<center><b>- Output Report</b></center></p>
-<p><center><b>PL/1 SAMPLE PROGRAM #2 –Job Stream - MSW</b></center></p>
+<center><b>- Output Report</b></center>
+
+<center><b>PL/1 SAMPLE PROGRAM \#2 –Job Stream - MSW</b></center>
+
 <pre><code>          //PL1F2SRC  JOB YOUR-JOB-CARD-INFORMATION
           //*
           //********************************************************************
@@ -4935,7 +4957,8 @@
           /*
           //
 </code></pre>
-<p><center><b>SAMPLE PL1 PROGRAM #2 EXECUTION OUTPUT</b></center></p>
+<center><b>SAMPLE PL1 PROGRAM \#2 EXECUTION OUTPUT</b></center>
+
 <pre><code>          *****----------------- INPUT INTERSECTION ----------------------***** *****------------ SELECTED OUTPUT ITEMS -------------*****
 
            B IN-STREET-NAME-1                 B IN-STREET-NAME-2                   ZIP CD NYPD-PCT SCHLDST INTERSECTING STREET NAMES
@@ -4953,10 +4976,12 @@
            1 DUANE ST                         1 READE ST
 </code></pre>
 <h2 id="c-sample-program-1"><span id="appendix08.7"><center>C SAMPLE PROGRAM #1</center></span></h2>
-<p><center><b>- Input Job Stream - MSW</b></center>
+<center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
-<center><b>- Output Report</b></center></p>
-<p><center><b>C SAMPLE PROGRAM #1 – Job Stream -MSW</b></center></p>
+<center><b>- Output Report</b></center>
+
+<center><b>C SAMPLE PROGRAM \#1 – Job Stream -MSW</b></center>
+
 <pre><code>        //CCCF1SRC JOB YOUR-JOB-CARD-INFORMATION
         //*
         //********************************************************************
@@ -5177,7 +5202,8 @@
         /*
         //
 </code></pre>
-<p><center><b>C SAMPLE PROGRAM #1 –Job Stream - COW</b></center></p>
+<center><b>C SAMPLE PROGRAM \#1 –Job Stream - COW</b></center>
+
 <pre><code>        //CCCC1SRC JOB YOUR-JOB-CARD-INFORMATION
         //*
         //********************************************************************
@@ -5412,7 +5438,8 @@
         /*
         //
 </code></pre>
-<p><center><b>C SAMPLE PROGRAM #1 – Output Report</b></center></p>
+<center><b>C SAMPLE PROGRAM \#1 – Output Report</b></center>
+
 <pre><code>     *****---------- INPUT ADDRESS ------------***** *****--------------------- SELECTED OUTPUT ITEMS -----------------------*****
 
      B HOUSE NUMBER IN-STREET-NAME                     ZIP CD NYPD-PCT SCHLDST LOW CROSS STREET          HIGH CROSS STREET
@@ -5433,10 +5460,12 @@
                                                      *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 </code></pre>
 <h2 id="c-sample-program-2"><span id="appendix08.8"><center>C SAMPLE PROGRAM #2</center></span></h2>
-<p><center><b>- Input Job Stream - MSW</b></center>
+<center><b>- Input Job Stream - MSW</b></center>
 <center><b>- Input Job Stream - COW</b></center>
-<center><b>- Output Report</b></center></p>
-<p><center><b>C SAMPLE PROGRAM #2 – Job Stream - MSW</b></center></p>
+<center><b>- Output Report</b></center>
+
+<center><b>C SAMPLE PROGRAM \#2 – Job Stream - MSW</b></center>
+
 <pre><code>    //CCCF2SRC JOB YOUR-JOB-CARD-INFORMATION
     //*
     //********************************************************************
@@ -5905,11 +5934,13 @@
        1 DUANE ST                         1 READE ST
 </code></pre>
 <h2 id="natural-sample-program-1"><span id="appendix08.9"><center>NATURAL SAMPLE PROGRAM #1</center></span></h2>
-<p><center><b>‑ Program Source Code - MSW</b></center>
+<center><b>‑ Program Source Code - MSW</b></center>
 <center><b>- Program Source Code - COW</b></center>
 <center><b>- Input Job Stream</b></center>
-<center><b>- Output Report </b></center></p>
-<p><center><b>NATURAL SAMPLE PROGRAM #1 – Program Source- MSW</b></center></p>
+<center><b>- Output Report </b></center>
+
+<center><b>NATURAL SAMPLE PROGRAM #1 – Program Source- MSW</b></center>
+
 <pre><code>          0010 ************************************************************************
            0020 * PGM NAME: GEOBUPG1    DATE: 08-18-98                                 *
            0030 *                                                                      *
@@ -6081,7 +6112,8 @@
            1690  END-SUBROUTINE
            1700  END
 </code></pre>
-<p><center><b>NATURAL SAMPLE PROGRAM #1 – Program Source code - COW</b></center></p>
+<center><b>NATURAL SAMPLE PROGRAM \#1 – Program Source code - COW</b></center>
+
 <pre><code>           0010 ************************************************************************
            0020 * PGM NAME: GEOBUPGA    DATE: 08-18-98         MODIFIED : 08-28-06     *
            0030 *                                                                      *
@@ -6268,7 +6300,8 @@
            1840  END-SUBROUTINE
            1850  END
 </code></pre>
-<p><center><b>NATURAL SAMPLE PROGRAM #1- Job Stream</b></center></p>
+<center><b>NATURAL SAMPLE PROGRAM #1- Job Stream</b></center>
+
 <pre><code>            //GEOBUPG1 JOB    YOUR-JOB-CARD-INFORMATION
             //*      
             //**********************************************************************
@@ -6320,7 +6353,8 @@
             //SYSUDUMP    DD DUMMY
             //
 </code></pre>
-<p><center><b>SAMPLE NATURAL PROGRAM #1 EXECUTION OUTPUT</b></center></p>
+<center><b>SAMPLE NATURAL PROGRAM \#1 EXECUTION OUTPUT</b></center>
+
 <pre><code>             *****---------- INPUT ADDRESS ------------***** *****--------------------- SELECTED OUTPUT ITEMS -----------------------*****
 
              B HOUSE NUMBER IN-STREET-NAME                     ZIP CD NYPD-PCT SCHLDST LOW CROSS STREET          HIGH CROSS STREET
@@ -6341,11 +6375,13 @@
                                                              *** ADDRESS NBR 165-1000  HAS MORE THAN 3 DIGITS AFTER THE DASH.
 </code></pre>
 <h2 id="natural-sample-program-2"><span id="appendix08.10"><center>NATURAL SAMPLE PROGRAM #2</center><span></h2>
-<p><center><b>‑ Program Source Code - MSW</b></center>
+<center><b>‑ Program Source Code - MSW</b></center>
 <center><b>- Program Source Code - COW</b></center>
 <center><b>- Input Job Stream</b></center>
-<center><b>- Output Report </b></center></p>
-<p><center><b>NATURAL SAMPLE PROGRAM #2 – Program Source Code - MSW</b></center></p>
+<center><b>- Output Report </b></center>
+
+<center><b>NATURAL SAMPLE PROGRAM \#2 – Program Source Code - MSW</b></center>
+
 <pre><code>             0010************************************************************************
              0020 * PGM NAME: GEOBUPG2    DATE: 08-18-98                                 *
              0030 *                                                                      *
@@ -6512,7 +6548,8 @@
              1640 END-SUBROUTINE
              1650 END
 </code></pre>
-<p><center><b>NATURAL SAMPLE PROGRAM #2 – Program Source Code - COW</b></center></p>
+<center><b>NATURAL SAMPLE PROGRAM \#2 – Program Source Code - COW</b></center>
+
 <pre><code>             0010 ************************************************************************
              0020 * PGM NAME: GEOBUPGB    DATE: 08-18-98     MODIFIED : 08-28-06         *
              0030 *                                                                      *
@@ -6697,7 +6734,8 @@
              1820 END-SUBROUTINE                                                           
              1830 END
 </code></pre>
-<p><center><b>NATURAL SAMPLE PROGRAM #2 – Job stream</b></center></p>
+<center><b>NATURAL SAMPLE PROGRAM \#2 – Job stream</b></center>
+
 <pre><code>            //GEOBUPG2 JOB    YOUR-JOB-CARD-INFORMATION
             //*              
             //**********************************************************************
@@ -6746,7 +6784,8 @@
             //* * * * * * *  * * * * * * * * * * * * * * * * * * * * * * * * * * \*//
             //SYSUDUMP    DD DUMMY
 </code></pre>
-<p><center><b>SAMPLE NATURAL PROGRAM #2 EXECUTION OUTPUT</b></center></p>
+<center><b>SAMPLE NATURAL PROGRAM \#2 EXECUTION OUTPUT</b></center>
+
 <pre><code>             *****----------------- INPUT INTERSECTION ----------------------***** *****------------ SELECTED OUTPUT ITEMS -------------*****
 
              B IN-STREET-NAME-1                 B IN-STREET-NAME-2                   ZIP CD NYPD-PCT SCHLDST INTERSECTING STREET NAMES

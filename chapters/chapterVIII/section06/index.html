@@ -463,9 +463,10 @@
 <p>For C applications, note that the compiler requires access only to COPYLIB, not to COPYLIB2, and furthermore, care must be taken to insure that COPYLIB is <u>concatenated</u> to the IBM/C header file library, rather than <u>overriding</u> it.  Overriding is prevented by coding one DD statement with a blank operand field followed by the DD statement for the Geosupport COPY library, as shown.</p>
 <p>For COBOL applications, in addition to providing the DD statements for SYSLIB, the appropriate compiler option, LIB, must also be in effect.  Since LIB is the default, it does not have to be explicitly specified.</p>
 <p>For PL/1 applications being compiled by a compiler other than the IBM Enterprise PL/1 Compiler, in addition to providing the DD statements for SYSLIB, the appropriate compiler option, MACRO or INCLUDE, must also be in effect.  If %INCLUDE is the <u>only</u> kind of preprocessor statement in the program, then the INCLUDE option should be used instead of the MACRO option.  This will make compilation faster.  If other kinds of preprocessor statements are in the program in addition to the %INCLUDE statement(s), then the MACRO option <u>must</u> be used. For example:</p>
-<p><center>// EXEC IBMZC,PARM.PLI=’ MACRO’</center>
+<center>// EXEC IBMZC,PARM.PLI=’ MACRO’</center>
 <center>or</center>
-<center>// EXEC IBMZC,PARM.PLI=’ INCLUDE’</center></p>
+<center>// EXEC IBMZC,PARM.PLI=’ INCLUDE’</center>
+
 <p>In the IBM Enterprise PL/1 Compiler, the meaning of the INCLUDE compiler option has changed.  As a result, if %INCLUDE is the <u>only</u> kind of preprocessor statement in the program, then <u>no</u> compiler option reflecting that fact should be coded.   If other kinds of preprocessor statements are in the program in addition to the %INCLUDE statement(s), then as is the case with other PL/1 compilers, the MACRO option <u>must</u> be used.  </p>
               
             </div>

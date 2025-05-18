@@ -675,8 +675,9 @@
 </ul>
 <p>Table A12-2 below lists the appended items when GEOCODE=NO, itemized by function and set of work areas.  When an item of appended data has no value for a particular record (such as a house number item, when the input location is a non-addressable place name), the given field is still present in the appended data but it contains all blanks.  The only exception to this involves the display functions (D, DG and DN) when using MSWs, where there is no field for the second house number unless it is provided as an input datum by the user.</p>
 <p>Table <a href="#a12-2a">A12-2A</a>, which follows Table <a href="#a12-2">A12-2</a>, lists the additional appended items when GEOUNIT=YES.  Note that that the GEOUNIT option is for COW only.  The GEOUNIT items are appended in the output file record immediately after the GEOCODE=NO items (when GEOCODE=NO or GEOCODE=ALL).  </p>
-<p><span id="appendix12-tblA12-2"><b><center>Table A12-2: GBAT-Appended Items when GEOCODE=NO (COWs and MSWs)</center></b></span>
-<center>See Table A12-2A for additional GBAT-Appended Items when GEOUNIT=YES(COW Only)</center></p>
+<p><span id="appendix12-tblA12-2"><b><center>Table A12-2: GBAT-Appended Items when GEOCODE=NO (COWs and MSWs)</center></b></span></p>
+<center>See Table A12-2A for additional GBAT-Appended Items when GEOUNIT=YES(COW Only)</center>
+
 <table id="a12-2">
   <tr>
     <th rowspan="2"> Functions </br> [Options]</th>
@@ -1019,8 +1020,9 @@
 <p>Table A12-3 lists the length of the data appended by GBAT, itemized by function and option within function, GEOCODE value and set of work areas being used.</p>
 <p><b><u>Note: CROSSSTNAMES=YES</u></b>
 For Functions 1, 1E, 1B, 2, 3 and 3C, when GEOCODE=ALL (and, optionally, GEOUNIT=YES) and CROSSSTNAMES=YES, the appended data consist of the concatenation of the GEOCODE=NO data, (followed, optionally, by GEOUNIT=YES data,) followed by a 320-byte block of data containing cross street names, followed by the GEOCODE=YES data.  For further information about the layout of the appended CROSSSTNAMES data, refer to the <a href="../appendix03/">Appendix 3</a> entry for the List of Street Names (see paragraph on List of Cross Street Names).</p>
-<p><center><b>Table A12-3:  Length of GBAT‑Appended Data (COWs and MSWs)</b></center>
-<center>Note: The data is appended to the user’s input record</center>  </p>
+<center><b>Table A12-3:  Length of GBAT‑Appended Data (COWs and MSWs)</b></center>
+<center>Note: The data is appended to the user’s input record</center>
+
 <table id="a12-3">
   <tr>
     <th rowspan="2">Functions</th>

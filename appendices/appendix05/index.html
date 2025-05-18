@@ -393,7 +393,8 @@
 <p>As of January 1, 2020 DCP no longer supports Mainframe Specific Workareas (MSW).</p>
 <p>This appendix contains printouts of the Geosupport MSW COPY files for COBOL, Assembler, PL/1, C and  NATURAL.  (For C, COPY files take the form of header files.  For NATURAL, COPY files take the form of Local Data Areas.)  </p>
 <p>The Geosupport COPY files contain source code layouts of the Geosupport work areas.  These files are stored in a COPY library that can be accessed by user application programs at compile time.  Each supported programming language has an appropriate declarative statement for referencing COPY files at compile time.  The Geosupport COPY files are listed below.</p>
-<p><center><b><u>GEOSUPPORT SYSTEM COPY FILES (MSW)</u></b></center></p>
+<center><b><u>GEOSUPPORT SYSTEM COPY FILES (MSW)</u></b></center>
+
 <table class="pdfSmallTable">
   <tr>
     <th></th>
@@ -478,7 +479,8 @@
 (**) Functions 1A and BL share a single long WA2 layout.  (Function BN does not have the long WA2 option.)
 See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a detailed discussion of the Geosupport COPY feature.</p>
 <h2 id="cobol-copy-files-msw"><span id="appendix05.1"><center>COBOL COPY Files (MSW)</center></span></h2>
-<p><center><b>W1COB COPY File</b></center></p>
+<center><b>W1COB COPY File</b></center>
+
 <pre><code>       ******************************************************************** 00000100
        *****  THIS IS GEOSUPPORT SYSTEM COPY FILE W1COB, CONTAINING   ***** 00000200
        *****  LAYOUT OF WORK AREA 1.        COPYLIB2       04/07/98   ***** 00000300
@@ -590,7 +592,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                 05  GEO-WA1-OUT-SIMILAR-NAMES            PIC X(32)          00012104
                                                          OCCURS 10 TIMES.   00013002
 </code></pre>
-<p><center><b>W2COB COPY File</b></center></p>
+<center><b>W2COB COPY File</b></center>
+
 <pre><code>        ******************************************************************  00010040
         ***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2COB, CONTAINING THE ***  00020040
         ***  LAYOUT OF WORK AREA 2 FOR FUNCTIONS: 1, 1E, 2, 2C, 3, 3C, ***  00030040
@@ -912,7 +915,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                   10  GEO-WA2-FN5-ADDR-MATCHING-KEY     PIC X(28).          03220040
                   10  FILLER                            PIC X(172).         03230040
 </code></pre>
-<p><center><b>W2COBL COPY File</b></center></p>
+<center><b>W2COBL COPY File</b></center>
+
 <pre><code>        ******************************************************************  00010021
         ***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2COBL, CONTAINING  ***    00020021
         ***  THE LAYOUT OF THE OPTIONAL LONG WORK AREA 2 FOR FUNCTIONS *    00030021
@@ -1167,7 +1171,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                   10  GEO-WA2-3L-R-2000-CENS-BLOCK     PIC X(4).            02550024
                   10  GEO-WA2-3L-R-2000-CENS-BLK-SUF   PIC X.               02560024
 </code></pre>
-<p><center><b>W2COB1A COPY File</b></center></p>
+<center><b>W2COB1A COPY File</b></center>
+
 <pre><code>         *****************************************************************  00000100
          **  THIS IS GEOSUPPORT SYSTEM COPY FILE W2COB1A, CONTAINING   **   00000200
          **  THE LAYOUT OF WORK AREA 2 FOR FUNCTIONS 1A AND BL WHICH   **   00000300
@@ -1237,7 +1242,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                   10  FILLER                            PIC X.              00006706
                   10  GEO-WA2-1A-LIST-SOS               PIC X.              00007002
 </code></pre>
-<p><center><b>W2COB1AL COPY File</b></center></p>
+<center><b>W2COB1AL COPY File</b></center>
+
 <pre><code>         *****************************************************************  00000100
          **  THIS IS GEOSUPPORT SYSTEM COPY FILE W2COB1AL, CONTAINING   **  00000200
          **  THE LAYOUT OF LONG WORK AREA 2 FOR FUNCTIONS 1A AND BL     **  00000300
@@ -1299,7 +1305,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                05  GEO-WA2-1AL-BINS                      PIC X(7)           00005909
                                                         OCCURS 2500 TIMES.  00006004
 </code></pre>
-<p><center><b>W2COB3S COPY File</b></center></p>
+<center><b>W2COB3S COPY File</b></center>
+
 <pre><code>        ******************************************************************  00010000
         ***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2COB3S, CONTAINING    **  00020000
         ***  THE LAYOUT OF WORK AREA 2 FOR FUNCTION 3S.         9/22/93 **  00030000
@@ -1313,7 +1320,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                   10 GEO-WA2-3S-GAP-FLAG                PIC X.              00110000
 </code></pre>
 <h2 id="assembler-copy-files-msw"><span id="appendix05.2"><center>ASSEMBLER COPY FILES (MSW)</center></span></h2>
-<p><center><b>W1BAL COPY File</b></center></p>
+<center><b>W1BAL COPY File</b></center>
+
 <pre><code>    \*/********************************************************************/ 00000100
     \*/*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE W1BAL,    \***/ 00000200
     \*/*****  CONTAINING THE LAYOUT OF WORK AREA 1.                     \***/ 00000300
@@ -1409,7 +1417,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
     W1END    EQU   *                                                        00008800
     W1LENGTH EQU   W1END-W1BAL    LENGTH OF W1BAL                           00008900
 </code></pre>
-<p><center><b>W2BAL COPY File</b></center></p>
+<center><b>W2BAL COPY File</b></center>
+
 <pre><code>    \*/********************************************************************/ 00010000
     \*/*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE W2BAL,    \***/ 00020000
     \*/*****  CONTAINING THE LAYOUT OF WORK AREA 2 FOR FUNCTIONS        \***/ 00030000
@@ -1677,7 +1686,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
     W2END    EQU   *                                                        02530000
     W2LENGTH EQU   W2END-W2BAL   LENGTH OF W2BAL                            02540000
 </code></pre>
-<p><center><b>W2BALL COPY File</b></center></p>
+<center><b>W2BALL COPY File</b></center>
+
 <pre><code>    \*/********************************************************************/ 00000100
     \*/*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE W2BALL,   \***/ 00000200
     \*/*****  CONTAINING THE LAYOUT OF THE OPTIONAL LONG WORK AREA 2    \***/ 00000300
@@ -1862,7 +1872,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
     W23LEND  EQU   *                                                        00008402
     W23LLEN  EQU   W23LEND-W2BALL    LENGTH OF W2BALL                       00008502
 </code></pre>
-<p><center><b>W2BAL1A COPY File</b></center></p>
+<center><b>W2BAL1A COPY File</b></center>
+
 <pre><code>    \*/********************************************************************/ 00000100
     \*/*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE W2BAL1A,  \***/ 00000200
     \*/*****  CONTAINING THE LAYOUT OF WORK AREA 2 FOR FUNCTION         \***/ 00000300
@@ -1935,7 +1946,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
     W21AEND  EQU   *                                                        00007003
     W21ALEN  EQU   W21AEND-W2BAL1A    LENGTH OF W2BAL1A                     00008003
 </code></pre>
-<p><center><b>W2BAL1AL COPY File</b></center></p>
+<center><b>W2BAL1AL COPY File</b></center>
+
 <pre><code>    \*/********************************************************************/ 00000100
     \*/*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE W2BAL1AL, \***/ 00000200
     \*/*****  CONTAINING THE LONG LAYOUT OF WORK AREA 2 FOR FUNCTION    \***/ 00000300
@@ -1996,7 +2008,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
     W21ALEND EQU   *                                                        00005802
     W21ALLEN EQU   W21ALEND-W2BAL1AL    Length of W2BAL1AL                  00006002
 </code></pre>
-<p><center><b>W2BAL3S COPY File</b></center></p>
+<center><b>W2BAL3S COPY File</b></center>
+
 <pre><code>    \*/********************************************************************/ 00000100
     \*/*****  THIS IS GEOSUPPORT INFORMATION SYSTEM COPY FILE W2BAL3S,  \***/ 00000200
     \*/*****  CONTAINING THE LAYOUT OF WORK AREA 2 FOR FUNCTION 3S.     \***/ 00000300
@@ -2023,7 +2036,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
     W23SLEN  EQU   W23SEND-W2BAL3S     LENGTH OF W2BAL3S                    00002400
 </code></pre>
 <h2 id="pl1-copy-files-msw"><span id="appendix05.3"><center>PL/1 COPY Files (MSW)</center></span></h2>
-<p><center><b>W1PL1 COPY File</b></center></p>
+<center><b>W1PL1 COPY File</b></center>
+
 <pre><code>      /******************************************************************/  00000100
       /***  THIS IS GEOSUPPORT SYSTEM COPY FILE W1PL1, CONTAINING THE \***/  00000200
       /\***  LAYOUT OF WORK AREA 1.     COPYLIB2             04/07/98  \***/  00000300
@@ -2151,7 +2165,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                                                                             00014502
        PW1=ADDR(W1PL1);                                                     00015000
 </code></pre>
-<p><center><b>W2PL1 COPY File</b></center></p>
+<center><b>W2PL1 COPY File</b></center>
+
 <pre><code>     /******************************************************************/   00000100
      /***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2PL1, CONTAINING THE \***/   00000300
      /***  LAYOUT OF WORK AREA 2 FOR FUNCTIONS: 1, 1E, 2, 2C, 3, 3C, \***/   00000400
@@ -2548,7 +2563,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                                                                             00043001
      PW2=ADDR(W2PL1);                                                       00050000
 </code></pre>
-<p><center><b>W2PL1L COPY File</b></center></p>
+<center><b>W2PL1L COPY File</b></center>
+
 <pre><code>     /********************************************************************/ 00000100
      /***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2PL1L, CONTAINING      \***/ 00000200
      /***  THE LAYOUT OF THE OPTIONAL LONG WORK AREA 2 FOR             \***/ 00000300
@@ -2858,7 +2874,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                                                                             00031025
      /********************************************************************/ 00040012
 </code></pre>
-<p><center><b>W2PL11A COPY File</b></center></p>
+<center><b>W2PL11A COPY File</b></center>
+
 <pre><code>     /********************************************************************/ 00000100
      /***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2PL11A, CONTAINING THE \***/ 00000200
      /***  LAYOUT OF WORK AREA 2 FOR FUNCTIONS 1A AND BL WHICH SHARE   \***/ 00000300
@@ -2933,7 +2950,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
      DCL  GEO_WA2_1A_SANBORN_BVOLPAGE            CHAR(8)                    00007309
             BASED(ADDR(GEO_WA2_1A_SANBORN_BORO));                           00008009
 </code></pre>
-<p><center><b>W2PL11AL COPY File</b></center></p>
+<center><b>W2PL11AL COPY File</b></center>
+
 <pre><code>     /********************************************************************/ 00000100
      /***  THIS IS GEOSUPPORT SYSTEM COPY FILE W2PL11AL, CONTAINING THE***/ 00000200
      /***  LAYOUT OF LONG WORK AREA 2 FOR FUNCTIONS 1A AND BL WHICH    \***/ 00000300
@@ -2999,7 +3017,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
      DCL  GEO_WA2_1AL_SANBORN_BVOLPAGE            CHAR(8)                   00006410
             BASED(ADDR(GEO_WA2_1AL_SANBORN_BORO));                          00007009
 </code></pre>
-<p><center><b>W2PL13S COPY File</b></center></p>
+<center><b>W2PL13S COPY File</b></center>
+
 <pre><code>     /*******************************************************************/  00000010
      /** THIS IS GEOSUPPORT SYSTEM COPY FILE W2PL13S, CONTAINING THE   \**/  00000020
      /** LAYOUT OF WORK AREA 2 FOR FUNCTION 3S.               9/22/93  \**/  00000030
@@ -3015,7 +3034,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
             3 GEO_WA2_3S_GAP_FLAG                CHAR(1);                   00000130
 </code></pre>
 <h2 id="c-copy-file-msw"><span id="appendix05.1"><center>C COPY File (MSW)</center></span></h2>
-<p><center><b>WAC COPY File</b></center></p>
+<center><b>WAC COPY File</b></center>
+
 <pre><code>      /********************************************************************/
       /* Modified - 2 June  2011 (added fields: 2010 Census Tract,Block   \*/
       /*                          and Suffix for funcions 1,1E,2,3,3c).   \*/
@@ -3504,7 +3524,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                      } C_WA2_F3S;
 </code></pre>
 <h2 id="natural-ldas-msw"><span id="appendix05.5"><center>NATURAL LDAs (MSW)</center></span></h2>
-<p><center><b>GEOLW1 COPY File</b></center></p>
+<center><b>GEOLW1 COPY File</b></center>
+
 <pre><code>                \*    USER PROGRAMS MUST RESET GEOLW1        BEFORE PRIMING WORKAREA 1               
                    1 GEOLW1                                        /* LRECL=200                     
                 \*    THE FIELD W1NAT IS USED AS A        PARAMETER TO CALL GEOSUPPORT        RT     
@@ -3613,7 +3634,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                    2 GEO-WA1-OUT-NUM-SIMILAR-NAMES    P          3                                  
                    2 GEO-WA1-OUT-SIMILAR-NAMES        A         32 (1:10)
 </code></pre>
-<p><center><b>GEOLW2 COPY File</b></center></p>
+<center><b>GEOLW2 COPY File</b></center>
+
 <pre><code>                   1 GEOLW2                                                                      
                 *    THE FIELD W2NAT IS USED AS A        PARAMETER TO CALL GEOSUPPORT FOR ALLLL  
                 *        FUNCTIONS THAT ARE REDEFINED           ON GEOLW2                        
@@ -3954,7 +3976,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                 \*  *  END OF FUNCTION 5 LAYOUT        *       **** *******                       
                 \*  - -------------------------------- -       ---- ------------------------------
 </code></pre>
-<p><center><b>GEOLW2L COPY File</b></center></p>
+<center><b>GEOLW2L COPY File</b></center>
+
 <pre><code>                1 GEOLW2L
                 \*  * THE FIELD W2NATL IS USED AS A       PARAMETER TO CALL GEOSUPPORT             
                 2 W2NATL                           A         21                                
@@ -4219,7 +4242,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                 \*  * END OF FUNCTION 3                        LONG WORKAREA LAYOUT ******           
                 \*  - -------------------------------- -       ---- ----------------------------
 </code></pre>
-<p><center><b>GEOLW21A COPY File</b></center></p>
+<center><b>GEOLW21A COPY File</b></center>
+
 <pre><code>                 1 GEOLW21A                                      /\*FCT 1A,BL USE SAME WA2
                                                                    LAYOUT
               \*  * THE FIELD W2NAT1A IS USED AS A      PARAMETER TO CALL GEOSUPPORT              
@@ -4288,8 +4312,11 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                  3 FILLER-WA2-1A-310                A          1                                 
                  3 GEO-WA2-1A-LIST-SOS              A          1
 </code></pre>
-<p><center><b>GEOLW2AL COPY File</b></center>           </p>
-<pre><code>                  1 GEOLW2AL                                /\*FCT 1A,BL USE SAME LONG WA2      
+<center><b>GEOLW2AL COPY File</b></center>
+
+<pre><code>
+
+                  1 GEOLW2AL                                /\*FCT 1A,BL USE SAME LONG WA2      
                 \* * THE FIELD W2NAT1AL IS USED AS A  P  ARA METER TO CALL GEOSUPPORT           
                   2 W2NAT1AL                         A   21                                    
                 R 2 W2NAT1AL                                                                   
@@ -4348,7 +4375,8 @@ See <a href="../../chapters/chapterVIII/section04">Chapter VIII.4</a> for a deta
                   2 GEO-WA2-1AL-LIST-OF-BINS                (1:2500)                           
                   3 GEO-WA2-1AL-BINS                 N    7
 </code></pre>
-<p><center><b>GEOLW23S COPY File</b></center></p>
+<center><b>GEOLW23S COPY File</b></center>
+
 <pre><code>                   1 GEOLW23S                                                                   
                 \*  * THE FIELD W2NAT3S IS USED AS A      PARAMETER TO CALL GEOSUPPORT           
                    2 W2NAT3S                          A         21                              

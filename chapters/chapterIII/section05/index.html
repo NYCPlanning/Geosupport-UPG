@@ -405,9 +405,11 @@
 </li>
 </ul>
 <p>If there is exactly one similar name, the message explicitly indicates that name.  For example, if the input is the invalid Manhattan name DUFFEY SQUARE, there is a single similar name, DUFFY SQUARE.  The message in this case would be:</p>
-<p><center>‘DUFFEY SQUARE’ NOT RECOGNIZED. IS IT ‘DUFFY SQUARE’?</center></p>
+<center>‘DUFFEY SQUARE’ NOT RECOGNIZED. IS IT ‘DUFFY SQUARE’?</center>
+
 <p>If there is more than one similar name, then the message indicates the number of similar names but does not contain the similar names themselves.  For example, the invalid Staten Island name ABBNER ROAD has three similar names.  The message in this case would be:</p>
-<p><center>‘ABBNER ROAD’ NOT RECOGNIZED. THERE ARE 003 SIMILAR NAMES.</center></p>
+<center>‘ABBNER ROAD’ NOT RECOGNIZED. THERE ARE 003 SIMILAR NAMES.</center>
+
 <p>To utilize the similar names feature, the user might program the application as follows.</p>
 <ul>
 <li>
@@ -433,7 +435,8 @@
 </ul>
 <p>Although users need not be concerned with the criteria that Geosupport uses to generate similar names, the general criteria are listed here.  A valid full street name is deemed ‘similar’ to an invalid input street name if it is in the specified input borough and any of the following conditions holds:</p>
 <p>(A) The valid full street name is at least as long as the input street name, and the two names are identical for the length of the input street name.  </p>
-<p><center>For example, in Manhattan, the valid full street names YORK AVENUE and YORK STREET would be deemed similar to the invalid name YORK.  (YORK is invalid because it is an ambiguous partial street name.)</center></p>
+<center>For example, in Manhattan, the valid full street names YORK AVENUE and YORK STREET would be deemed similar to the invalid name YORK.  (YORK is invalid because it is an ambiguous partial street name.)</center>
+
 <p>or</p>
 <p>(B) There are no valid full street names in the specified borough that satisfy criterion (A), and the input street name begins with a compass direction word (NORTH, SOUTH, EAST or WEST) followed by a blank, and the input street name and the given valid full street name are identical up to and including the first three bytes following that blank.</p>
 <blockquote>
