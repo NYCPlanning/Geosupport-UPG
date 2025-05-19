@@ -5,7 +5,7 @@
 
 <p class = "version"><center>SOFTWARE VERSION 25.2</center></p>
 
-<center>![NYCPlanningLogo <>](img/logo2.png "NYC Logo")</center>
+![NYCPlanningLogo <>](img/logo2.png "NYC Logo")
 
 <div class="dcpInfo"><center>Department of City Planning / City of New York </br>
 Information Technology Division  </br>
