@@ -20,7 +20,6 @@ Steve Oliver, Director, GeoSupport Services
 **GeoSupport Services Team**  
 Jie Ding   
 Narish Singh  
-Hitesh Savalia  
 Rafat Khandaker 
 
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  
