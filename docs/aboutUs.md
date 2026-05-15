@@ -2,10 +2,10 @@
 ![NYCSeal >](img/nyc_seal.png "NYC Logo")
 
 **CITY OF NEW YORK**  
-Eric Adams, Mayor  
+Zohran Mamdani, Mayor  
 
 **DEPARTMENT OF CITY PLANNING**  
-Dan Garodnick, Director  
+Sideya Sherman, Director  
 Edith Hsu-Chen, Executive Director   
 
 **INFORMATION TECHNOLOGY DIVISION**  
@@ -19,8 +19,7 @@ Rodrigo Zapata, Manager, Geographic Research
 Steve Oliver, Director, GeoSupport Services  
 **GeoSupport Services Team**  
 Jie Ding   
-Narish Singh  
-Rafat Khandaker 
+Narish Singh
 
 The Geosupport logo is a trademark of the Department of City Planning / City of New York.  
 Geosupport Desktop Edition is a trademark of the Department of City Planning / City of New York 
