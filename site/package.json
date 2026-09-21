@@ -6,7 +6,7 @@
     "doc": "docs"
   },
   "dependencies": {
-    "md-to-pdf": "^1.1.0",
+    "md-to-pdf": "^5.0.0",
     "mktoc": "^1.0.10",
     "phantom": "^6.3.0",
     "phantomjs": "^2.1.7",
