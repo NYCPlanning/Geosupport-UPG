@@ -1,5 +1,7 @@
 <h1><center>User Programming Guide</center></h1>
 
+[![gh-deploy](https://github.com/NYCPlanning/Geosupport-UPG/actions/workflows/gh-deploy.yml/badge.svg)](https://github.com/NYCPlanning/Geosupport-UPG/actions/workflows/gh-deploy.yml)
+
 This document, the _Geosupport System User Programming Guide_ (UPG), contains the detailed technical information necessary
 for users to design and develop their own application programs that access applications like Geosupport, GBAT and GOAT.  
 
